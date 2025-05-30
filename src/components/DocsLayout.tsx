@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { 
@@ -38,7 +37,6 @@ const menuItems = [
       { title: 'Terms & Disclaimers', path: '/docs/terms', icon: '⚖️' },
       { title: 'Website', path: 'https://dehub.io/', icon: '🌐', external: true },
       { title: 'App', path: 'https://dehub.io/d', icon: '👤', external: true },
-      { title: 'DeHub', path: '/docs/dehub', icon: '/lovable-uploads/92949273-77b4-496a-b638-7b36b5078df9.png', external: true, isImage: true },
       { title: 'X', path: 'https://x.com/dehub_official', icon: '/lovable-uploads/4c5f32a0-dc0b-4846-a78d-cd3381206fa9.png', external: true, isImage: true },
       { title: 'Instagram', path: 'https://www.instagram.com/dehub_official/', icon: '📸', external: true },
     ]
