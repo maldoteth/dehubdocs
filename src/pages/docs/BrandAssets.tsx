@@ -76,7 +76,7 @@ const BrandAssets = () => {
         </CardContent>
       </Card>
 
-      {/* Brand Guidelines Presentation */}
+      {/* Brand Guidelines Presentation with Watermark Overlay */}
       <Card>
         <CardHeader>
           <CardTitle>Brand Guidelines</CardTitle>
@@ -85,7 +85,7 @@ const BrandAssets = () => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="w-full overflow-hidden rounded-lg">
+          <div className="w-full overflow-hidden rounded-lg relative">
             <iframe 
               src="https://docs.google.com/presentation/d/e/2PACX-1vQgLJgskx5DzNQhbHmteH7CR9QqzsboG8RaVYZ7IwSW-PfoXRic3K9SX2gyrydR-7qwlL5UkvlLTObH/pubembed?start=false&loop=false&delayms=30000" 
               frameBorder="0" 
@@ -94,6 +94,8 @@ const BrandAssets = () => {
               allowFullScreen={true}
               className="w-full"
             />
+            {/* Overlay to hide Google Slides watermark */}
+            <div className="absolute bottom-0 left-0 w-32 h-16 bg-white z-10 pointer-events-none"></div>
           </div>
         </CardContent>
       </Card>
