@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import { DocsLayout } from "./components/DocsLayout";
 import DocsHome from "./pages/docs/DocsHome";
 import Overview from "./pages/docs/Overview";
+import DePIN from "./pages/docs/DePIN";
 import QuickStart from "./pages/docs/QuickStart";
 import Installation from "./pages/docs/Installation";
 import ApiEndpoints from "./pages/docs/ApiEndpoints";
@@ -28,7 +28,7 @@ const App = () => (
             <Route path="overview" element={<Overview />} />
             <Route path="dapps" element={<div className="p-8 text-center text-slate-600">Dapps documentation coming soon...</div>} />
             <Route path="token" element={<div className="p-8 text-center text-slate-600">Token documentation coming soon...</div>} />
-            <Route path="depin" element={<div className="p-8 text-center text-slate-600">DePIN documentation coming soon...</div>} />
+            <Route path="depin" element={<DePIN />} />
             <Route path="team" element={<div className="p-8 text-center text-slate-600">Team documentation coming soon...</div>} />
             <Route path="roadmap" element={<div className="p-8 text-center text-slate-600">Roadmap documentation coming soon...</div>} />
             <Route path="terms" element={<div className="p-8 text-center text-slate-600">Terms & Disclaimers documentation coming soon...</div>} />
