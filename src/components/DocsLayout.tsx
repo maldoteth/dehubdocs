@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { 
@@ -38,7 +39,7 @@ const menuItems = [
       { title: 'Website', path: 'https://dehub.io/', icon: '🌐', external: true },
       { title: 'App', path: 'https://dehub.io/d', icon: '👤', external: true },
       { title: 'DeHub', path: '/docs/dehub', icon: '⚫', external: true },
-      { title: 'X', path: 'https://x.com/dehub_official', icon: '❌', external: true },
+      { title: 'X', path: 'https://x.com/dehub_official', icon: '/lovable-uploads/4c5f32a0-dc0b-4846-a78d-cd3381206fa9.png', external: true, isImage: true },
       { title: 'Instagram', path: 'https://www.instagram.com/dehub_official/', icon: '📸', external: true },
     ]
   }
@@ -112,7 +113,15 @@ export const DocsLayout = () => {
                               className="flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                             >
                               <div className="flex items-center space-x-3">
-                                <span className="text-base">{item.icon}</span>
+                                {item.isImage ? (
+                                  <img 
+                                    src={item.icon} 
+                                    alt={item.title} 
+                                    className="w-4 h-4 filter brightness-0" 
+                                  />
+                                ) : (
+                                  <span className="text-base">{item.icon}</span>
+                                )}
                                 <span>{item.title}</span>
                               </div>
                               <ExternalLink className="w-3 h-3 text-slate-400" />
@@ -130,7 +139,15 @@ export const DocsLayout = () => {
                               `}
                             >
                               <div className="flex items-center space-x-3">
-                                <span className="text-base">{item.icon}</span>
+                                {item.isImage ? (
+                                  <img 
+                                    src={item.icon} 
+                                    alt={item.title} 
+                                    className="w-4 h-4 filter brightness-0" 
+                                  />
+                                ) : (
+                                  <span className="text-base">{item.icon}</span>
+                                )}
                                 <span>{item.title}</span>
                               </div>
                               {item.hasSubmenu && (
