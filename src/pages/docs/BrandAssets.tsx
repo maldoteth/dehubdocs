@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Download, Image, FileText, Package } from 'lucide-react';
+
 const BrandAssets = () => {
   const handleDownload = (imagePath: string, filename: string) => {
     const link = document.createElement('a');
@@ -11,22 +12,27 @@ const BrandAssets = () => {
     link.click();
     document.body.removeChild(link);
   };
-  const logoAssets = [{
-    id: 1,
-    name: "DeHub Logo - Full",
-    description: "Main logo for light backgrounds",
-    imagePath: "/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png",
-    filename: "dehub-logo-primary.png",
-    type: "PNG"
-  }, {
-    id: 2,
-    name: "DeHub Logo - Icon",
-    description: "Alternative logo variation",
-    imagePath: "/lovable-uploads/5e136fdf-d23f-4cdb-b8ec-54babb5d375b.png",
-    filename: "dehub-logo-alternative.png",
-    type: "PNG"
-  }];
-  return <div className="space-y-8">
+
+  const logoAssets = [
+    {
+      id: 1,
+      name: "DeHub Logo - Full",
+      description: "Main logo for light backgrounds",
+      imagePath: "/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png",
+      filename: "dehub-logo-primary.png",
+      type: "PNG"
+    }, {
+      id: 2,
+      name: "DeHub Logo - Icon",
+      description: "Alternative logo variation",
+      imagePath: "/lovable-uploads/5e136fdf-d23f-4cdb-b8ec-54babb5d375b.png",
+      filename: "dehub-logo-alternative.png",
+      type: "PNG"
+    }
+  ];
+
+  return (
+    <div className="space-y-8">
       {/* Header */}
       <div className="space-y-4">
         <h1 className="text-4xl font-bold text-slate-900">Brand Assets</h1>
@@ -48,7 +54,8 @@ const BrandAssets = () => {
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-2 gap-6">
-            {logoAssets.map(asset => <div key={asset.id} className="border border-slate-200 rounded-lg p-6 space-y-4">
+            {logoAssets.map(asset => (
+              <div key={asset.id} className="border border-slate-200 rounded-lg p-6 space-y-4">
                 <div className="aspect-video rounded-lg flex items-center justify-center p-4 bg-zinc-950">
                   <img src={asset.imagePath} alt={asset.name} className="max-w-full max-h-full object-contain" />
                 </div>
@@ -63,7 +70,30 @@ const BrandAssets = () => {
                     </Button>
                   </div>
                 </div>
-              </div>)}
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Brand Guidelines Presentation */}
+      <Card>
+        <CardHeader>
+          <CardTitle>Brand Guidelines</CardTitle>
+          <CardDescription>
+            Complete brand guidelines and style guide for DeHub.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="w-full overflow-hidden rounded-lg">
+            <iframe 
+              src="https://docs.google.com/presentation/d/e/2PACX-1vQgLJgskx5DzNQhbHmteH7CR9QqzsboG8RaVYZ7IwSW-PfoXRic3K9SX2gyrydR-7qwlL5UkvlLTObH/pubembed?start=false&loop=false&delayms=30000" 
+              frameBorder="0" 
+              width="100%" 
+              height="569" 
+              allowFullScreen={true}
+              className="w-full"
+            />
           </div>
         </CardContent>
       </Card>
@@ -145,6 +175,8 @@ const BrandAssets = () => {
           </p>
         </CardContent>
       </Card>
-    </div>;
+    </div>
+  );
 };
+
 export default BrandAssets;
