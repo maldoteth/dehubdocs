@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { 
@@ -32,7 +31,7 @@ const menuItems = [
     ]
   },
   {
-    title: 'LEGALS',
+    title: 'Key Links',
     items: [
       { title: 'Terms & Disclaimers', path: '/docs/terms', icon: '⚖️' },
       { title: 'Website', path: '/docs/website', icon: '🌐', external: true },
