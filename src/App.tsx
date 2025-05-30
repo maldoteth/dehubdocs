@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { DocsLayout } from "./components/DocsLayout";
 import DocsHome from "./pages/docs/DocsHome";
+import Overview from "./pages/docs/Overview";
 import QuickStart from "./pages/docs/QuickStart";
 import Installation from "./pages/docs/Installation";
 import ApiEndpoints from "./pages/docs/ApiEndpoints";
