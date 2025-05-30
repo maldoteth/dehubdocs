@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,6 +14,7 @@ import QuickStart from "./pages/docs/QuickStart";
 import Installation from "./pages/docs/Installation";
 import ApiEndpoints from "./pages/docs/ApiEndpoints";
 import Team from "./pages/docs/Team";
+import BrandGuidelines from "./pages/docs/BrandGuidelines";
 
 const queryClient = new QueryClient();
 
@@ -39,7 +41,7 @@ const App = () => (
             <Route path="x" element={<div className="p-8 text-center text-slate-600">X documentation coming soon...</div>} />
             <Route path="instagram" element={<div className="p-8 text-center text-slate-600">Instagram documentation coming soon...</div>} />
             <Route path="brand-assets" element={<div className="p-8 text-center text-slate-600">Brand Assets documentation coming soon...</div>} />
-            <Route path="brand-guidelines" element={<div className="p-8 text-center text-slate-600">Brand Guidelines documentation coming soon...</div>} />
+            <Route path="brand-guidelines" element={<BrandGuidelines />} />
             <Route path="quickstart" element={<QuickStart />} />
             <Route path="installation" element={<Installation />} />
             <Route path="architecture" element={<div className="p-8 text-center text-slate-600">Architecture documentation coming soon...</div>} />
