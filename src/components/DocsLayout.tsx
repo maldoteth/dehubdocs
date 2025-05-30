@@ -111,9 +111,7 @@ export const DocsLayout = () => {
               <Menu className="w-5 h-5" />
             </button>
             <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-slate-800">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center border border-slate-200">
-                <img alt="DeHub" className="w-6 h-6 filter brightness-0" src="/lovable-uploads/c1763933-60c3-452c-9318-a6fc5a87c34a.png" />
-              </div>
+              
               <span>Docs</span>
             </Link>
           </div>
