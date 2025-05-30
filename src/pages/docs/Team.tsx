@@ -26,7 +26,7 @@ const teamMembers = [
       { platform: 'X', url: '#' }
     ],
     initials: 'MJ',
-    photo: '/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png'
+    photo: '/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png'
   },
   {
     name: 'Mike Hales',
@@ -68,7 +68,7 @@ const teamMembers = [
     ],
     socials: [],
     initials: 'BY',
-    photo: '/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png'
+    photo: '/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png'
   }
 ];
 
