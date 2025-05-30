@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { 
@@ -14,7 +15,8 @@ import {
   Shield,
   Zap,
   Users,
-  ExternalLink
+  ExternalLink,
+  ChevronDown
 } from 'lucide-react';
 
 const menuItems = [
@@ -24,9 +26,22 @@ const menuItems = [
       { title: 'Home', path: '/docs', icon: '🏠' },
       { title: 'Overview', path: '/docs/overview', icon: '📋' },
       { title: 'Dapps', path: '/docs/dapps', icon: '🖥️', hasSubmenu: true },
-      { title: 'Token', path: '/docs/token', icon: '🪙', hasSubmenu: true },
+      { 
+        title: 'Token', 
+        path: '/docs/token', 
+        icon: '🪙', 
+        hasSubmenu: true,
+        submenuItems: [
+          { title: 'Economics & Emissions', path: '/docs/token/economics' },
+          { title: 'Utility / Holder Benefits', path: '/docs/token/utility' },
+          { title: 'Where to Buy', path: '/docs/token/where-to-buy' },
+          { title: 'Governance', path: '/docs/token/governance' },
+          { title: 'Security', path: '/docs/token/security' },
+          { title: 'Bugs', path: '/docs/token/bugs' }
+        ]
+      },
       { title: 'DePIN', path: '/docs/depin', icon: '🔧' },
-      { title: 'Team', path: '/docs/team', icon: '👥', hasSubmenu: true },
+      { title: 'Team', path: '/docs/team', icon: '👥' },
       { title: 'Roadmap', path: '/docs/roadmap', icon: '🗺️', hasSubmenu: true },
       { title: 'Brand Assets', path: '/docs/brand-assets', icon: '🏷️' },
     ]
@@ -45,10 +60,18 @@ const menuItems = [
 
 export const DocsLayout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [expandedMenus, setExpandedMenus] = useState<{[key: string]: boolean}>({});
   const location = useLocation();
 
   const isActivePath = (path: string) => {
     return location.pathname === path;
+  };
+
+  const toggleSubmenu = (itemTitle: string) => {
+    setExpandedMenus(prev => ({
+      ...prev,
+      [itemTitle]: !prev[itemTitle]
+    }));
   };
 
   return (
@@ -68,7 +91,7 @@ export const DocsLayout = () => {
                 <img 
                   src="/lovable-uploads/92949273-77b4-496a-b638-7b36b5078df9.png" 
                   alt="DeHub" 
-                  className="w-6 h-6" 
+                  className="w-6 h-6 filter brightness-0" 
                 />
               </div>
               <span>Docs</span>
@@ -129,36 +152,80 @@ export const DocsLayout = () => {
                               <ExternalLink className="w-3 h-3 text-slate-400" />
                             </a>
                           ) : (
-                            <Link
-                              to={item.path}
-                              onClick={() => setSidebarOpen(false)}
-                              className={`
-                                flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
-                                ${isActivePath(item.path)
-                                  ? 'bg-blue-100 text-blue-700 font-medium border-l-4 border-blue-500 ml-0'
-                                  : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
-                                }
-                              `}
-                            >
-                              <div className="flex items-center space-x-3">
-                                {item.isImage ? (
-                                  <img 
-                                    src={item.icon} 
-                                    alt={item.title} 
-                                    className="w-4 h-4 filter brightness-0" 
-                                  />
-                                ) : (
-                                  <span className="text-base">{item.icon}</span>
-                                )}
-                                <span>{item.title}</span>
-                              </div>
-                              {item.hasSubmenu && (
-                                <ChevronRight className="w-4 h-4 text-slate-400" />
+                            <div>
+                              {item.hasSubmenu && item.submenuItems ? (
+                                <div>
+                                  <button
+                                    onClick={() => toggleSubmenu(item.title)}
+                                    className={`
+                                      w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
+                                      ${isActivePath(item.path)
+                                        ? 'bg-blue-100 text-blue-700 font-medium border-l-4 border-blue-500 ml-0'
+                                        : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
+                                      }
+                                    `}
+                                  >
+                                    <div className="flex items-center space-x-3">
+                                      <span className="text-base">{item.icon}</span>
+                                      <span>{item.title}</span>
+                                    </div>
+                                    <ChevronDown className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${expandedMenus[item.title] ? 'rotate-180' : ''}`} />
+                                  </button>
+                                  {expandedMenus[item.title] && (
+                                    <ul className="ml-6 mt-1 space-y-1">
+                                      {item.submenuItems.map((subItem) => (
+                                        <li key={subItem.path}>
+                                          <Link
+                                            to={subItem.path}
+                                            onClick={() => setSidebarOpen(false)}
+                                            className={`
+                                              flex items-center px-3 py-2 rounded-lg text-sm transition-all duration-200
+                                              ${isActivePath(subItem.path)
+                                                ? 'bg-blue-50 text-blue-700 font-medium'
+                                                : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                                              }
+                                            `}
+                                          >
+                                            <span>{subItem.title}</span>
+                                          </Link>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  )}
+                                </div>
+                              ) : (
+                                <Link
+                                  to={item.path}
+                                  onClick={() => setSidebarOpen(false)}
+                                  className={`
+                                    flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
+                                    ${isActivePath(item.path)
+                                      ? 'bg-blue-100 text-blue-700 font-medium border-l-4 border-blue-500 ml-0'
+                                      : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
+                                    }
+                                  `}
+                                >
+                                  <div className="flex items-center space-x-3">
+                                    {item.isImage ? (
+                                      <img 
+                                        src={item.icon} 
+                                        alt={item.title} 
+                                        className="w-4 h-4 filter brightness-0" 
+                                      />
+                                    ) : (
+                                      <span className="text-base">{item.icon}</span>
+                                    )}
+                                    <span>{item.title}</span>
+                                  </div>
+                                  {item.hasSubmenu && !item.submenuItems && (
+                                    <ChevronRight className="w-4 h-4 text-slate-400" />
+                                  )}
+                                  {item.external && (
+                                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                                  )}
+                                </Link>
                               )}
-                              {item.external && (
-                                <ExternalLink className="w-3 h-3 text-slate-400" />
-                              )}
-                            </Link>
+                            </div>
                           )}
                         </li>
                       ))}
