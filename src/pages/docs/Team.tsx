@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Users } from 'lucide-react';
 
@@ -41,7 +41,8 @@ const teamMembers = [
       { platform: 'TikTok', url: '#' },
       { platform: 'Instagram', url: '#' }
     ],
-    initials: 'MH'
+    initials: 'MH',
+    photo: '/lovable-uploads/4cc7ad51-0d4d-49fd-9307-b932b6dc7246.png'
   },
   {
     name: 'Indi Jay Cammish',
@@ -90,6 +91,9 @@ export default function Team() {
           <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
             <CardHeader className="text-center space-y-4">
               <Avatar className="w-20 h-20 mx-auto">
+                {member.photo ? (
+                  <AvatarImage src={member.photo} alt={member.name} className="object-cover" />
+                ) : null}
                 <AvatarFallback className="text-lg font-semibold bg-gradient-to-br from-blue-500 to-purple-600 text-white">
                   {member.initials}
                 </AvatarFallback>
