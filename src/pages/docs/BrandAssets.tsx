@@ -159,7 +159,7 @@ const BrandAssets = () => {
         </CardHeader>
         <CardContent>
           <p className="text-slate-600">
-            Email: <a href="mailto:brand@dehub.io" className="text-blue-600 hover:underline">brand@dehub.io</a>
+            Email: <a href="mailto:marketing@dehub.net" className="text-blue-600 hover:underline">marketing@dehub.net</a>
           </p>
         </CardContent>
       </Card>
