@@ -20,7 +20,7 @@ const BrandAssets = () => {
     type: "PNG"
   }, {
     id: 2,
-    name: "DeHub Logo - Alternative",
+    name: "DeHub Logo - Icon",
     description: "Alternative logo variation",
     imagePath: "/lovable-uploads/5e136fdf-d23f-4cdb-b8ec-54babb5d375b.png",
     filename: "dehub-logo-alternative.png",
