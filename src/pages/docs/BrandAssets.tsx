@@ -119,17 +119,8 @@ const BrandAssets = () => {
 
       {/* Contact */}
       <Card>
-        <CardHeader>
-          <CardTitle className="text-center">Questions about Brand Assets?</CardTitle>
-          <CardDescription className="text-center">
-            For licensing questions, additional formats, or custom requests.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="text-slate-600 text-center">
-            Email: <a href="mailto:marketing@dehub.net" className="text-blue-600 hover:underline">marketing@dehub.net</a>
-          </p>
-        </CardContent>
+        
+        
       </Card>
     </div>;
 };
