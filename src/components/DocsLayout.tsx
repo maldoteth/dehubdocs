@@ -29,6 +29,7 @@ const menuItems = [
       { title: 'DePIN', path: '/docs/depin', icon: '🔧' },
       { title: 'Team', path: '/docs/team', icon: '👥', hasSubmenu: true },
       { title: 'Roadmap', path: '/docs/roadmap', icon: '🗺️', hasSubmenu: true },
+      { title: 'Brand Assets', path: '/docs/brand-assets', icon: '🏷️' },
     ]
   },
   {
@@ -40,7 +41,6 @@ const menuItems = [
       { title: 'DeHub', path: '/docs/dehub', icon: '⚫', external: true },
       { title: 'X', path: 'https://x.com/dehub_official', icon: '❌', external: true },
       { title: 'Instagram', path: 'https://www.instagram.com/dehub_official/', icon: '📸', external: true },
-      { title: 'Brand Assets', path: '/docs/brand-assets', icon: '🏷️', external: true },
       { title: 'Brand Guidelines', path: 'https://docs.google.com/presentation/d/1_JnsyJxeUBqVfGSHcpG1_XQbVMp7Boq53AAI6QfdIjI/edit?usp=sharing', icon: '📝', external: true },
     ]
   }
