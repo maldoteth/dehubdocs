@@ -38,7 +38,7 @@ const menuItems = [
       { title: 'Terms & Disclaimers', path: '/docs/terms', icon: '⚖️' },
       { title: 'Website', path: 'https://dehub.io/', icon: '🌐', external: true },
       { title: 'App', path: 'https://dehub.io/d', icon: '👤', external: true },
-      { title: 'DeHub', path: '/docs/dehub', icon: '/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png', external: true, isImage: true },
+      { title: 'DeHub', path: '/docs/dehub', icon: '/lovable-uploads/46336bd8-1249-48d9-8adc-c3f95c49d34a.png', external: true, isImage: true },
       { title: 'X', path: 'https://x.com/dehub_official', icon: '/lovable-uploads/4c5f32a0-dc0b-4846-a78d-cd3381206fa9.png', external: true, isImage: true },
       { title: 'Instagram', path: 'https://www.instagram.com/dehub_official/', icon: '📸', external: true },
     ]
@@ -66,8 +66,12 @@ export const DocsLayout = () => {
               <Menu className="w-5 h-5" />
             </button>
             <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-slate-800">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <Book className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center border border-slate-200">
+                <img 
+                  src="/lovable-uploads/46336bd8-1249-48d9-8adc-c3f95c49d34a.png" 
+                  alt="DeHub" 
+                  className="w-6 h-6 filter brightness-0" 
+                />
               </div>
               <span>Docs</span>
             </Link>
