@@ -36,7 +36,7 @@ const menuItems = [
     items: [
       { title: 'Terms & Disclaimers', path: '/docs/terms', icon: '⚖️' },
       { title: 'Website', path: 'https://dehub.io/', icon: '🌐', external: true },
-      { title: 'App', path: 'https://dehub.io/', icon: '👤', external: true },
+      { title: 'App', path: 'https://dehub.io/d', icon: '👤', external: true },
       { title: 'DeHub', path: '/docs/dehub', icon: '⚫', external: true },
       { title: 'X', path: 'https://x.com/dehub_official', icon: '❌', external: true },
       { title: 'Instagram', path: 'https://www.instagram.com/dehub_official/', icon: '📸', external: true },
