@@ -13,7 +13,7 @@ const BrandAssets = () => {
   };
   const logoAssets = [{
     id: 1,
-    name: "DeHub Logo - Primary",
+    name: "DeHub Logo - Full",
     description: "Main logo for light backgrounds",
     imagePath: "/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png",
     filename: "dehub-logo-primary.png",
