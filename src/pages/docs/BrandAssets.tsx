@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Download, Image, FileText, Package } from 'lucide-react';
-
 const BrandAssets = () => {
   const handleDownload = (imagePath: string, filename: string) => {
     const link = document.createElement('a');
@@ -13,28 +11,22 @@ const BrandAssets = () => {
     link.click();
     document.body.removeChild(link);
   };
-
-  const logoAssets = [
-    {
-      id: 1,
-      name: "DeHub Logo - Primary",
-      description: "Main logo for light backgrounds",
-      imagePath: "/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png",
-      filename: "dehub-logo-primary.png",
-      type: "PNG"
-    },
-    {
-      id: 2,
-      name: "DeHub Logo - Alternative",
-      description: "Alternative logo variation",
-      imagePath: "/lovable-uploads/5e136fdf-d23f-4cdb-b8ec-54babb5d375b.png",
-      filename: "dehub-logo-alternative.png",
-      type: "PNG"
-    }
-  ];
-
-  return (
-    <div className="space-y-8">
+  const logoAssets = [{
+    id: 1,
+    name: "DeHub Logo - Primary",
+    description: "Main logo for light backgrounds",
+    imagePath: "/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png",
+    filename: "dehub-logo-primary.png",
+    type: "PNG"
+  }, {
+    id: 2,
+    name: "DeHub Logo - Alternative",
+    description: "Alternative logo variation",
+    imagePath: "/lovable-uploads/5e136fdf-d23f-4cdb-b8ec-54babb5d375b.png",
+    filename: "dehub-logo-alternative.png",
+    type: "PNG"
+  }];
+  return <div className="space-y-8">
       {/* Header */}
       <div className="space-y-4">
         <h1 className="text-4xl font-bold text-slate-900">Brand Assets</h1>
@@ -56,32 +48,22 @@ const BrandAssets = () => {
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-2 gap-6">
-            {logoAssets.map((asset) => (
-              <div key={asset.id} className="border border-slate-200 rounded-lg p-6 space-y-4">
-                <div className="aspect-video bg-slate-50 rounded-lg flex items-center justify-center p-4">
-                  <img 
-                    src={asset.imagePath} 
-                    alt={asset.name}
-                    className="max-w-full max-h-full object-contain"
-                  />
+            {logoAssets.map(asset => <div key={asset.id} className="border border-slate-200 rounded-lg p-6 space-y-4">
+                <div className="aspect-video rounded-lg flex items-center justify-center p-4 bg-zinc-950">
+                  <img src={asset.imagePath} alt={asset.name} className="max-w-full max-h-full object-contain" />
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-semibold text-lg">{asset.name}</h3>
                   <p className="text-sm text-slate-600">{asset.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs bg-slate-100 px-2 py-1 rounded">{asset.type}</span>
-                    <Button 
-                      onClick={() => handleDownload(asset.imagePath, asset.filename)}
-                      size="sm"
-                      className="flex items-center gap-2"
-                    >
+                    <Button onClick={() => handleDownload(asset.imagePath, asset.filename)} size="sm" className="flex items-center gap-2">
                       <Download className="w-4 h-4" />
                       Download
                     </Button>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </CardContent>
       </Card>
@@ -163,8 +145,6 @@ const BrandAssets = () => {
           </p>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default BrandAssets;
