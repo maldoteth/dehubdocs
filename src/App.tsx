@@ -24,6 +24,20 @@ const App = () => (
           <Route path="/" element={<Navigate to="/docs" replace />} />
           <Route path="/docs" element={<DocsLayout />}>
             <Route index element={<DocsHome />} />
+            <Route path="overview" element={<div className="p-8 text-center text-slate-600">Overview documentation coming soon...</div>} />
+            <Route path="dapps" element={<div className="p-8 text-center text-slate-600">Dapps documentation coming soon...</div>} />
+            <Route path="token" element={<div className="p-8 text-center text-slate-600">Token documentation coming soon...</div>} />
+            <Route path="depin" element={<div className="p-8 text-center text-slate-600">DePIN documentation coming soon...</div>} />
+            <Route path="team" element={<div className="p-8 text-center text-slate-600">Team documentation coming soon...</div>} />
+            <Route path="roadmap" element={<div className="p-8 text-center text-slate-600">Roadmap documentation coming soon...</div>} />
+            <Route path="terms" element={<div className="p-8 text-center text-slate-600">Terms & Disclaimers documentation coming soon...</div>} />
+            <Route path="website" element={<div className="p-8 text-center text-slate-600">Website documentation coming soon...</div>} />
+            <Route path="app" element={<div className="p-8 text-center text-slate-600">App documentation coming soon...</div>} />
+            <Route path="dehub" element={<div className="p-8 text-center text-slate-600">DeHub documentation coming soon...</div>} />
+            <Route path="x" element={<div className="p-8 text-center text-slate-600">X documentation coming soon...</div>} />
+            <Route path="instagram" element={<div className="p-8 text-center text-slate-600">Instagram documentation coming soon...</div>} />
+            <Route path="brand-assets" element={<div className="p-8 text-center text-slate-600">Brand Assets documentation coming soon...</div>} />
+            <Route path="brand-guidelines" element={<div className="p-8 text-center text-slate-600">Brand Guidelines documentation coming soon...</div>} />
             <Route path="quickstart" element={<QuickStart />} />
             <Route path="installation" element={<Installation />} />
             <Route path="architecture" element={<div className="p-8 text-center text-slate-600">Architecture documentation coming soon...</div>} />

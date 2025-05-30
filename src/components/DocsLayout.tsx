@@ -14,44 +14,34 @@ import {
   Database,
   Shield,
   Zap,
-  Users
+  Users,
+  ExternalLink
 } from 'lucide-react';
 
 const menuItems = [
   {
-    title: 'Getting Started',
-    icon: Home,
+    title: 'Main',
     items: [
-      { title: 'Introduction', path: '/docs' },
-      { title: 'Quick Start', path: '/docs/quickstart' },
-      { title: 'Installation', path: '/docs/installation' },
+      { title: 'Home', path: '/docs', icon: '🏠' },
+      { title: 'Overview', path: '/docs/overview', icon: '📋' },
+      { title: 'Dapps', path: '/docs/dapps', icon: '🖥️', hasSubmenu: true },
+      { title: 'Token', path: '/docs/token', icon: '🪙', hasSubmenu: true },
+      { title: 'DePIN', path: '/docs/depin', icon: '🔧' },
+      { title: 'Team', path: '/docs/team', icon: '👥', hasSubmenu: true },
+      { title: 'Roadmap', path: '/docs/roadmap', icon: '🗺️', hasSubmenu: true },
     ]
   },
   {
-    title: 'Core Concepts',
-    icon: Book,
+    title: 'LEGALS',
     items: [
-      { title: 'Architecture', path: '/docs/architecture' },
-      { title: 'Configuration', path: '/docs/configuration' },
-      { title: 'Data Models', path: '/docs/data-models' },
-    ]
-  },
-  {
-    title: 'API Reference',
-    icon: Code,
-    items: [
-      { title: 'Authentication', path: '/docs/auth' },
-      { title: 'Endpoints', path: '/docs/endpoints' },
-      { title: 'Webhooks', path: '/docs/webhooks' },
-    ]
-  },
-  {
-    title: 'Guides',
-    icon: FileText,
-    items: [
-      { title: 'Best Practices', path: '/docs/best-practices' },
-      { title: 'Troubleshooting', path: '/docs/troubleshooting' },
-      { title: 'Examples', path: '/docs/examples' },
+      { title: 'Terms & Disclaimers', path: '/docs/terms', icon: '⚖️' },
+      { title: 'Website', path: '/docs/website', icon: '🌐', external: true },
+      { title: 'App', path: '/docs/app', icon: '👤', external: true },
+      { title: 'DeHub', path: '/docs/dehub', icon: '⚫', external: true },
+      { title: 'X', path: '/docs/x', icon: '❌', external: true },
+      { title: 'Instagram', path: '/docs/instagram', icon: '📸', external: true },
+      { title: 'Brand Assets', path: '/docs/brand-assets', icon: '🏷️', external: true },
+      { title: 'Brand Guidelines', path: '/docs/brand-guidelines', icon: '📝', external: true },
     ]
   }
 ];
@@ -108,10 +98,11 @@ export const DocsLayout = () => {
               <nav className="px-4 space-y-6">
                 {menuItems.map((section) => (
                   <div key={section.title}>
-                    <h3 className="flex items-center text-sm font-semibold text-slate-600 uppercase tracking-wider mb-3">
-                      <section.icon className="w-4 h-4 mr-2" />
-                      {section.title}
-                    </h3>
+                    {section.title !== 'Main' && (
+                      <h3 className="text-sm font-semibold text-slate-600 uppercase tracking-wider mb-3">
+                        {section.title}
+                      </h3>
+                    )}
                     <ul className="space-y-1">
                       {section.items.map((item) => (
                         <li key={item.path}>
@@ -119,14 +110,23 @@ export const DocsLayout = () => {
                             to={item.path}
                             onClick={() => setSidebarOpen(false)}
                             className={`
-                              block px-3 py-2 rounded-lg text-sm transition-all duration-200
+                              flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
                               ${isActivePath(item.path)
                                 ? 'bg-blue-100 text-blue-700 font-medium border-l-4 border-blue-500 ml-0'
                                 : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
                               }
                             `}
                           >
-                            {item.title}
+                            <div className="flex items-center space-x-3">
+                              <span className="text-base">{item.icon}</span>
+                              <span>{item.title}</span>
+                            </div>
+                            {item.hasSubmenu && (
+                              <ChevronRight className="w-4 h-4 text-slate-400" />
+                            )}
+                            {item.external && (
+                              <ExternalLink className="w-3 h-3 text-slate-400" />
+                            )}
                           </Link>
                         </li>
                       ))}
