@@ -41,7 +41,7 @@ const menuItems = [
       { title: 'X', path: 'https://x.com/dehub_official', icon: '❌', external: true },
       { title: 'Instagram', path: 'https://www.instagram.com/dehub_official/', icon: '📸', external: true },
       { title: 'Brand Assets', path: '/docs/brand-assets', icon: '🏷️', external: true },
-      { title: 'Brand Guidelines', path: '/docs/brand-guidelines', icon: '📝', external: true },
+      { title: 'Brand Guidelines', path: 'https://docs.google.com/presentation/d/1_JnsyJxeUBqVfGSHcpG1_XQbVMp7Boq53AAI6QfdIjI/edit?usp=sharing', icon: '📝', external: true },
     ]
   }
 ];
