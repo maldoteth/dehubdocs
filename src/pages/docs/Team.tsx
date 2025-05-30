@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -26,7 +25,8 @@ const teamMembers = [
       { platform: 'LinkedIn', url: '#' },
       { platform: 'X', url: '#' }
     ],
-    initials: 'MJ'
+    initials: 'MJ',
+    photo: '/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png'
   },
   {
     name: 'Mike Hales',
@@ -54,7 +54,8 @@ const teamMembers = [
       "Co-founder of First Class, the UK's leading TikTok partner agency"
     ],
     socials: [],
-    initials: 'IC'
+    initials: 'IC',
+    photo: '/lovable-uploads/e06bb6aa-5093-4691-98a1-7bf09b02a71d.png'
   },
   {
     name: 'Bailey Young',
@@ -66,7 +67,8 @@ const teamMembers = [
       "Former professional gamer, ranking globally in the top 3 COD MW2 and top 100 on Warzone under the tag RickyBobby"
     ],
     socials: [],
-    initials: 'BY'
+    initials: 'BY',
+    photo: '/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png'
   }
 ];
 
