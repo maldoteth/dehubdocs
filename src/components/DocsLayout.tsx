@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { 
@@ -41,7 +40,6 @@ const menuItems = [
       { title: 'DeHub', path: '/docs/dehub', icon: '⚫', external: true },
       { title: 'X', path: 'https://x.com/dehub_official', icon: '❌', external: true },
       { title: 'Instagram', path: 'https://www.instagram.com/dehub_official/', icon: '📸', external: true },
-      { title: 'Brand Guidelines', path: 'https://docs.google.com/presentation/d/1_JnsyJxeUBqVfGSHcpG1_XQbVMp7Boq53AAI6QfdIjI/edit?usp=sharing', icon: '📝', external: true },
     ]
   }
 ];
