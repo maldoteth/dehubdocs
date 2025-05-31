@@ -55,7 +55,7 @@ const DocsHome = () => {
         <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
           Welcome to Our
           <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">
-            Documentation
+            Documentation and Whitepaper
           </span>
         </h1>
         
