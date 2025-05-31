@@ -70,7 +70,7 @@ const menuItems = [
       icon: '⚖️'
     }, {
       title: 'Website',
-      path: 'https://dehub.io/',
+      path: 'https://dehub.net/',
       icon: '🌐',
       external: true
     }, {
