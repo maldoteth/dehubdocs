@@ -58,7 +58,7 @@ const DocsHome = () => {
   }, {
     icon: Users,
     title: 'Budding Community',
-    description: 'Established community who are always on hand to help'
+    description: 'Established community supporting since 2021'
   }];
   return <div className="space-y-12">
       {/* Hero Section */}
