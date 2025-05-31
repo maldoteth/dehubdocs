@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -23,6 +22,7 @@ import TokenWhereToBuy from "./pages/docs/TokenWhereToBuy";
 import TokenGovernance from "./pages/docs/TokenGovernance";
 import TokenSecurity from "./pages/docs/TokenSecurity";
 import Terms from "./pages/docs/Terms";
+import ComingSoonPage from "./components/ComingSoonPage";
 
 const queryClient = new QueryClient();
 
@@ -38,7 +38,7 @@ const App = () => (
             <Route index element={<DocsHome />} />
             <Route path="overview" element={<Overview />} />
             <Route path="dapps" element={<Dapp />} />
-            <Route path="token" element={<div className="p-8 text-center text-slate-600">Token documentation coming soon...</div>} />
+            <Route path="token" element={<ComingSoonPage title="Token Documentation" description="Comprehensive information about DeHub tokens and tokenomics." />} />
             <Route path="token/economics" element={<TokenEconomics />} />
             <Route path="token/utility" element={<TokenUtility />} />
             <Route path="token/where-to-buy" element={<TokenWhereToBuy />} />
@@ -46,26 +46,26 @@ const App = () => (
             <Route path="depin" element={<DePIN />} />
             <Route path="team" element={<Team />} />
             <Route path="security" element={<TokenSecurity />} />
-            <Route path="roadmap" element={<div className="p-8 text-center text-slate-600">Roadmap documentation coming soon...</div>} />
+            <Route path="roadmap" element={<ComingSoonPage title="Roadmap" description="Discover our exciting journey ahead and upcoming milestones." />} />
             <Route path="terms" element={<Terms />} />
-            <Route path="website" element={<div className="p-8 text-center text-slate-600">Website documentation coming soon...</div>} />
-            <Route path="app" element={<div className="p-8 text-center text-slate-600">App documentation coming soon...</div>} />
-            <Route path="dehub" element={<div className="p-8 text-center text-slate-600">DeHub documentation coming soon...</div>} />
-            <Route path="x" element={<div className="p-8 text-center text-slate-600">X documentation coming soon...</div>} />
-            <Route path="instagram" element={<div className="p-8 text-center text-slate-600">Instagram documentation coming soon...</div>} />
+            <Route path="website" element={<ComingSoonPage title="Website Documentation" description="Learn about our website features and capabilities." />} />
+            <Route path="app" element={<ComingSoonPage title="App Documentation" description="Mobile and desktop application guides and features." />} />
+            <Route path="dehub" element={<ComingSoonPage title="DeHub Platform" description="Complete guide to using the DeHub decentralized platform." />} />
+            <Route path="x" element={<ComingSoonPage title="X Integration" description="Social media integration and X platform features." />} />
+            <Route path="instagram" element={<ComingSoonPage title="Instagram Integration" description="Instagram connectivity and social features." />} />
             <Route path="brand-assets" element={<BrandAssets />} />
             <Route path="brand-guidelines" element={<BrandGuidelines />} />
             <Route path="quickstart" element={<QuickStart />} />
             <Route path="installation" element={<Installation />} />
-            <Route path="architecture" element={<div className="p-8 text-center text-slate-600">Architecture documentation coming soon...</div>} />
-            <Route path="configuration" element={<div className="p-8 text-center text-slate-600">Configuration documentation coming soon...</div>} />
-            <Route path="data-models" element={<div className="p-8 text-center text-slate-600">Data Models documentation coming soon...</div>} />
-            <Route path="auth" element={<div className="p-8 text-center text-slate-600">Authentication documentation coming soon...</div>} />
+            <Route path="architecture" element={<ComingSoonPage title="Architecture" description="System architecture and technical infrastructure details." />} />
+            <Route path="configuration" element={<ComingSoonPage title="Configuration" description="Setup and configuration guides for developers." />} />
+            <Route path="data-models" element={<ComingSoonPage title="Data Models" description="Database schemas and data structure documentation." />} />
+            <Route path="auth" element={<ComingSoonPage title="Authentication" description="Security protocols and authentication methods." />} />
             <Route path="endpoints" element={<ApiEndpoints />} />
-            <Route path="webhooks" element={<div className="p-8 text-center text-slate-600">Webhooks documentation coming soon...</div>} />
-            <Route path="best-practices" element={<div className="p-8 text-center text-slate-600">Best Practices documentation coming soon...</div>} />
-            <Route path="troubleshooting" element={<div className="p-8 text-center text-slate-600">Troubleshooting documentation coming soon...</div>} />
-            <Route path="examples" element={<div className="p-8 text-center text-slate-600">Examples documentation coming soon...</div>} />
+            <Route path="webhooks" element={<ComingSoonPage title="Webhooks" description="Real-time notifications and webhook integration guides." />} />
+            <Route path="best-practices" element={<ComingSoonPage title="Best Practices" description="Recommended approaches and coding standards." />} />
+            <Route path="troubleshooting" element={<ComingSoonPage title="Troubleshooting" description="Common issues and solutions for developers." />} />
+            <Route path="examples" element={<ComingSoonPage title="Examples" description="Code examples and implementation samples." />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
