@@ -43,14 +43,15 @@ const DocsHome = () => {
     color: 'from-middle-blue to-royal-blue',
     external: true
   }];
+  
   const features = [{
     icon: Zap,
     title: 'Fast & Reliable',
-    description: 'High-performance architecture built for scale'
+    description: 'Built on the safest & fastest EVM L2\'s and L1s.'
   }, {
     icon: Shield,
     title: 'Secure by Default',
-    description: 'Built on the safest & fastest EVM L2\'s and L1s.'
+    description: 'Token holders can run nodes to secure the network'
   }, {
     icon: Code,
     title: 'Dev Support',
@@ -60,6 +61,7 @@ const DocsHome = () => {
     title: 'Budding Community',
     description: 'We fund community projects and initiatives where we can'
   }];
+
   return <div className="space-y-12">
       {/* Hero Section */}
       <div className="text-center space-y-6">
