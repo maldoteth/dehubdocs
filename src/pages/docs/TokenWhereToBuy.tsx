@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink } from 'lucide-react';
@@ -6,7 +5,6 @@ import { ExternalLink } from 'lucide-react';
 const TokenWhereToBuy = () => {
   const exchanges = [
     { name: "Uniswap", network: "Base", url: "https://uniswap.org" },
-    { name: "Uniswap", network: "ETH", url: "https://uniswap.org" },
     { name: "Pancakeswap / Marketplace", network: "BNB", url: "https://pancakeswap.finance" }
   ];
 
