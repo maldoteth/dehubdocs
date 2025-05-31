@@ -39,11 +39,11 @@ const DocsHome = () => {
   }, {
     icon: Database,
     title: 'Data-Driven',
-    description: 'Powerful analytics and insights platform'
+    description: 'Grants and apprenticeships always available'
   }, {
     icon: Users,
     title: 'Budding Community',
-    description: 'Grants and apprenticeships always available'
+    description: 'Access our established community who are always on hand to help'
   }];
   return <div className="space-y-12">
       {/* Hero Section */}
