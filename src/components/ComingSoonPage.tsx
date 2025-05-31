@@ -15,14 +15,9 @@ const ComingSoonPage = ({
   return <div className="min-h-[60vh] flex items-center justify-center">
       <Card className="max-w-2xl w-full mx-4 border-sky-blue/20 bg-gradient-to-br from-white to-sky-blue/5">
         <CardContent className="p-8 text-center space-y-6">
-          <div className="inline-flex items-center px-4 py-2 bg-sky-blue/10 text-royal-blue rounded-full text-sm font-medium">
-            <Clock className="w-4 h-4 mr-2" />
-            Coming Soon
-          </div>
           
-          <h1 className="text-3xl font-bold text-royal-blue font-exo">
-            {title}
-          </h1>
+          
+          
           
           <AnimatedBuildingBlocks />
           
