@@ -22,7 +22,7 @@ const DocsHome = () => {
     color: 'from-middle-blue to-sky-blue',
     external: true
   }, {
-    title: 'BSCScan DHB',
+    title: 'BSCScan',
     description: 'View DHB on BNB Smart Chain',
     icon: ExternalLink,
     path: 'https://bscscan.com/token/0x680d3113caf77b61b510f332d5ef4cf5b41a761d',
