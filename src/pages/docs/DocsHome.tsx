@@ -65,7 +65,7 @@ const DocsHome = () => {
         
         
         <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
-          Welcome to Our
+          Welcome to
           <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">Our Docs</span>
         </h1>
         
