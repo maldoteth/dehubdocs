@@ -7,9 +7,10 @@ import AnimatedBuildingBlocks from './AnimatedBuildingBlocks';
 interface ComingSoonPageProps {
   title: string;
   description?: string;
+  additionalNote?: React.ReactNode;
 }
 
-const ComingSoonPage = ({ title, description }: ComingSoonPageProps) => {
+const ComingSoonPage = ({ title, description, additionalNote }: ComingSoonPageProps) => {
   return (
     <div className="min-h-[60vh] flex items-center justify-center">
       <Card className="max-w-2xl w-full mx-4 border-sky-blue/20 bg-gradient-to-br from-white to-sky-blue/5">
@@ -32,6 +33,11 @@ const ComingSoonPage = ({ title, description }: ComingSoonPageProps) => {
             <p className="text-royal-blue/60 font-exo">
               We're building something amazing! Check back soon for updates.
             </p>
+            {additionalNote && (
+              <div className="pt-4 border-t border-sky-blue/20">
+                {additionalNote}
+              </div>
+            )}
           </div>
           
           <div className="flex justify-center space-x-2 pt-4">

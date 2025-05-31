@@ -46,7 +46,17 @@ const App = () => (
             <Route path="depin" element={<DePIN />} />
             <Route path="team" element={<Team />} />
             <Route path="security" element={<TokenSecurity />} />
-            <Route path="roadmap" element={<ComingSoonPage title="Roadmap" description="Discover our exciting journey ahead and upcoming milestones." />} />
+            <Route path="roadmap" element={
+              <ComingSoonPage 
+                title="Roadmap" 
+                description="Discover our exciting journey ahead and upcoming milestones." 
+                additionalNote={
+                  <p className="text-royal-blue/60 font-exo text-sm">
+                    Find our old roadmap here: <a href="https://dehub.gitbook.io" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">dehub.gitbook.io</a>
+                  </p>
+                }
+              />
+            } />
             <Route path="terms" element={<Terms />} />
             <Route path="website" element={<ComingSoonPage title="Website Documentation" description="Learn about our website features and capabilities." />} />
             <Route path="app" element={<ComingSoonPage title="App Documentation" description="Mobile and desktop application guides and features." />} />
