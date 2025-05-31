@@ -40,6 +40,7 @@ const App = () => (
             <Route index element={<DocsHome />} />
             <Route path="overview" element={<Overview />} />
             <Route path="dapps" element={<Dapp />} />
+            <Route path="games" element={<Games />} />
             <Route path="token" element={<ComingSoonPage title="Token Documentation" description="Comprehensive information about DeHub tokens and tokenomics." />} />
             <Route path="token/economics" element={<TokenEconomics />} />
             <Route path="token/utility" element={<TokenUtility />} />
