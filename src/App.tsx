@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -22,6 +21,7 @@ import TokenUtility from "./pages/docs/TokenUtility";
 import TokenWhereToBuy from "./pages/docs/TokenWhereToBuy";
 import TokenGovernance from "./pages/docs/TokenGovernance";
 import TokenSecurity from "./pages/docs/TokenSecurity";
+import TokenBugs from "./pages/docs/TokenBugs";
 
 const queryClient = new QueryClient();
 
@@ -43,7 +43,7 @@ const App = () => (
             <Route path="token/where-to-buy" element={<TokenWhereToBuy />} />
             <Route path="token/governance" element={<TokenGovernance />} />
             <Route path="token/security" element={<TokenSecurity />} />
-            <Route path="token/bugs" element={<div className="p-8 text-center text-slate-600">Bugs documentation coming soon...</div>} />
+            <Route path="token/bugs" element={<TokenBugs />} />
             <Route path="depin" element={<DePIN />} />
             <Route path="team" element={<Team />} />
             <Route path="roadmap" element={<div className="p-8 text-center text-slate-600">Roadmap documentation coming soon...</div>} />
