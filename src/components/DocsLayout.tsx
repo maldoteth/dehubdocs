@@ -91,6 +91,7 @@ const menuItems = [{
     external: true
   }]
 }];
+
 export const DocsLayout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [expandedMenus, setExpandedMenus] = useState<{

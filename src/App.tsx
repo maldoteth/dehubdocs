@@ -22,7 +22,6 @@ import TokenUtility from "./pages/docs/TokenUtility";
 import TokenWhereToBuy from "./pages/docs/TokenWhereToBuy";
 import TokenGovernance from "./pages/docs/TokenGovernance";
 import TokenSecurity from "./pages/docs/TokenSecurity";
-import TokenBugs from "./pages/docs/TokenBugs";
 
 const queryClient = new QueryClient();
 
@@ -46,7 +45,6 @@ const App = () => (
             <Route path="depin" element={<DePIN />} />
             <Route path="team" element={<Team />} />
             <Route path="security" element={<TokenSecurity />} />
-            <Route path="bugs" element={<TokenBugs />} />
             <Route path="roadmap" element={<div className="p-8 text-center text-slate-600">Roadmap documentation coming soon...</div>} />
             <Route path="terms" element={<div className="p-8 text-center text-slate-600">Terms & Disclaimers documentation coming soon...</div>} />
             <Route path="website" element={<div className="p-8 text-center text-slate-600">Website documentation coming soon...</div>} />
