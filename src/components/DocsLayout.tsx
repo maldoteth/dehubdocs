@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Lizard } from 'lucide-react';
+import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const menuItems = [
@@ -97,13 +98,12 @@ const menuItems = [
     }, {
       title: 'CoinMarketCap',
       path: 'https://coinmarketcap.com/currencies/dehub/',
-      icon: '/lovable-uploads/b16ff11b-1aa9-448e-a5ea-2f841d26a67f.png',
-      external: true,
-      isImage: true
+      icon: '📊',
+      external: true
     }, {
       title: 'CoinGecko',
       path: 'https://www.coingecko.com/en/coins/dehub',
-      iconComponent: Lizard,
+      icon: '🦎',
       external: true
     }]
   }
