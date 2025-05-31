@@ -2,18 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-
 const DocsHome = () => {
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
       title: "Coming Soon",
-      description: "This feature is currently under development and will be available soon.",
+      description: "This feature is currently under development and will be available soon."
     });
   };
-
   const quickLinks = [{
     title: 'Basescan',
     description: 'View on Base network',
@@ -43,7 +42,6 @@ const DocsHome = () => {
     color: 'from-middle-blue to-royal-blue',
     external: true
   }];
-  
   const features = [{
     icon: Zap,
     title: 'Fast & Reliable',
@@ -61,7 +59,6 @@ const DocsHome = () => {
     title: 'Budding Community',
     description: 'We fund community projects and initiatives where we can'
   }];
-
   return <div className="space-y-12">
       {/* Hero Section */}
       <div className="text-center space-y-6">
@@ -69,9 +66,7 @@ const DocsHome = () => {
         
         <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
           Welcome to Our
-          <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">
-            Documentation
-          </span>
+          <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">Our Docs</span>
         </h1>
         
         <p className="text-xl text-royal-blue/70 max-w-3xl mx-auto leading-relaxed font-exo">
@@ -91,9 +86,7 @@ const DocsHome = () => {
 
       {/* Quick Links */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {quickLinks.map(link => 
-          link.external ? (
-            <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+        {quickLinks.map(link => link.external ? <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
               <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
                 <link.icon className="w-6 h-6 text-plain-white" />
               </div>
@@ -103,9 +96,7 @@ const DocsHome = () => {
                 Visit site
                 <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
               </div>
-            </a>
-          ) : (
-            <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+            </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
               <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
                 <link.icon className="w-6 h-6 text-plain-white" />
               </div>
@@ -115,9 +106,7 @@ const DocsHome = () => {
                 Learn more
                 <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
               </div>
-            </Link>
-          )
-        )}
+            </Link>)}
       </div>
 
       {/* Features */}
@@ -151,5 +140,4 @@ const DocsHome = () => {
       </div>
     </div>;
 };
-
 export default DocsHome;
