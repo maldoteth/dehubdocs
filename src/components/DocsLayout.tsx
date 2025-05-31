@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
+import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Lizard } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const menuItems = [
@@ -104,9 +103,8 @@ const menuItems = [
     }, {
       title: 'CoinGecko',
       path: 'https://www.coingecko.com/en/coins/dehub',
-      icon: '/lovable-uploads/3ccc8c17-5cfe-4148-aa95-64d49901065e.png',
-      external: true,
-      isImage: true
+      iconComponent: Lizard,
+      external: true
     }]
   }
 ];
