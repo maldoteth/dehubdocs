@@ -18,7 +18,7 @@ const DocsHome = () => {
     title: 'Basescan DHB',
     description: 'View DHB on Base network',
     icon: ExternalLink,
-    path: 'https://basescan.org',
+    path: 'https://basescan.org/token/0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c',
     color: 'from-middle-blue to-sky-blue',
     external: true
   }, {
