@@ -54,7 +54,11 @@ const teamMembers = [
       "Performed at the Platinum Party at The Palace event for her majesty, the Queen of England in the summer of 2022",
       "Co-founder of First Class, the UK's leading TikTok partner agency"
     ],
-    socials: [],
+    socials: [
+      { platform: 'Instagram', url: 'https://www.instagram.com/indijayofficial/?hl=es' },
+      { platform: 'X', url: 'https://x.com/indijaycammish' },
+      { platform: 'TikTok', url: 'https://www.tiktok.com/@indijaycammish' }
+    ],
     initials: 'IC',
     photo: '/lovable-uploads/e06bb6aa-5093-4691-98a1-7bf09b02a71d.png'
   },
