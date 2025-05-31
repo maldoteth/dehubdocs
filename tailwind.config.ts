@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,19 +19,30 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Exo', 'sans-serif'],
+				'exo': ['Exo', 'sans-serif'],
+			},
 			colors: {
+				// Brand Colors
+				'jet-black': '#000000',
+				'plain-white': '#FFFFFF',
+				'sky-blue': '#76A7E3',
+				'middle-blue': '#45BFD6',
+				'royal-blue': '#091d4b',
+				
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#091d4b', // Royal Blue
+					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#76A7E3', // Sky Blue
+					foreground: '#000000'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -41,8 +53,8 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: '#45BFD6', // Middle Blue
+					foreground: '#000000'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -55,12 +67,12 @@ export default {
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					primary: '#091d4b', // Royal Blue
+					'primary-foreground': '#FFFFFF',
+					accent: '#76A7E3', // Sky Blue
+					'accent-foreground': '#000000',
 					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					ring: '#45BFD6' // Middle Blue
 				}
 			},
 			borderRadius: {
