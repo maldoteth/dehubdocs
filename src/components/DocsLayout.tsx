@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins } from 'lucide-react';
+import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const menuItems = [{
@@ -49,10 +50,6 @@ const menuItems = [{
     path: '/docs/security',
     icon: '🔒'
   }, {
-    title: 'Bugs',
-    path: '/docs/bugs',
-    icon: '🐛'
-  }, {
     title: 'Roadmap',
     path: '/docs/roadmap',
     icon: '🗺️',
@@ -88,6 +85,11 @@ const menuItems = [{
     title: 'Instagram',
     path: 'https://www.instagram.com/dehub_official/',
     icon: '📸',
+    external: true
+  }, {
+    title: 'GitHub',
+    path: 'https://github.com/dehubtoken',
+    iconComponent: Github,
     external: true
   }]
 }];
