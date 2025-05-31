@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -49,7 +50,7 @@ const App = () => (
             <Route path="roadmap" element={
               <ComingSoonPage 
                 title="Roadmap" 
-                description="Discover our exciting journey ahead and upcoming milestones." 
+                description="Our new roadmap is in the works. The original core development roadmap with all the features set out to build in 2021 was completed. So check back soon for updates!" 
                 additionalNote={
                   <p className="text-royal-blue/60 font-exo text-sm">
                     Find our old roadmap here: <a href="https://dehub.gitbook.io" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">dehub.gitbook.io</a>
