@@ -1,7 +1,10 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { SearchProvider, useSearch } from '@/contexts/SearchContext';
+import { SearchDialog } from '@/components/SearchDialog';
 
 const menuItems = [
   {
@@ -109,12 +112,13 @@ const menuItems = [
   }
 ];
 
-export const DocsLayout = () => {
+const DocsLayoutContent = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [expandedMenus, setExpandedMenus] = useState<{
     [key: string]: boolean;
   }>({});
   const location = useLocation();
+  const { setIsSearchOpen } = useSearch();
   
   const isActivePath = (path: string) => {
     return location.pathname === path;
@@ -127,8 +131,14 @@ export const DocsLayout = () => {
     }));
   };
 
+  const handleSearchClick = () => {
+    setIsSearchOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-blue/10 to-middle-blue/10">
+      <SearchDialog />
+      
       {/* Header */}
       <header className="bg-plain-white/90 backdrop-blur-sm border-b border-sky-blue/20 sticky top-0 z-40">
         <div className="flex items-center justify-between px-4 h-16">
@@ -142,10 +152,22 @@ export const DocsLayout = () => {
           </div>
           
           <div className="flex items-center space-x-4">
-            <div className="relative hidden md:block">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-royal-blue/60 w-4 h-4" />
-              <input type="text" placeholder="Search docs..." className="pl-10 pr-4 py-2 bg-sky-blue/10 border border-sky-blue/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-middle-blue focus:border-transparent w-64" />
-            </div>
+            <button 
+              onClick={handleSearchClick}
+              className="relative hidden md:flex items-center px-4 py-2 bg-sky-blue/10 border border-sky-blue/30 rounded-lg hover:bg-sky-blue/20 transition-colors w-64 text-left"
+            >
+              <Search className="w-4 h-4 text-royal-blue/60 mr-3" />
+              <span className="text-royal-blue/60 text-sm">Search docs...</span>
+              <kbd className="ml-auto text-xs text-royal-blue/50 bg-sky-blue/20 px-2 py-1 rounded">
+                ⌘K
+              </kbd>
+            </button>
+            <button 
+              onClick={handleSearchClick}
+              className="md:hidden p-2 rounded-md hover:bg-sky-blue/10 transition-colors"
+            >
+              <Search className="w-5 h-5 text-royal-blue" />
+            </button>
           </div>
         </div>
       </header>
@@ -256,5 +278,13 @@ export const DocsLayout = () => {
         </main>
       </div>
     </div>
+  );
+};
+
+export const DocsLayout = () => {
+  return (
+    <SearchProvider>
+      <DocsLayoutContent />
+    </SearchProvider>
   );
 };
