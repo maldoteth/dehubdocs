@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -63,7 +64,7 @@ const DocsHome = () => {
     {
       icon: Users,
       title: 'Budding Community',
-      description: 'We fund community projects and initiatives where we can'
+      description: 'An established and supportive community here since 2021'
     }
   ];
 
