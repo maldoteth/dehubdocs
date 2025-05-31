@@ -23,7 +23,16 @@ const TokenSecurity = () => {
               <Shield className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-semibold text-slate-700 mb-1">Audit</h4>
-                <p className="text-slate-600">Certik</p>
+                <p className="text-slate-600">
+                  <a 
+                    href="https://skynet.certik.com/projects/dehub?__cf_chl_rt_tk=N_M44mFcDWKtLmLVGNEC1rDps5hWVdQyhr3m1jLOTNM-1748707726-1.0.1.1-dfgolPAmeQ8KnvRDO3y0pFse0jC2Q1ro5bKRvE5WJPo" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                  >
+                    Certik
+                  </a>
+                </p>
               </div>
             </div>
 
