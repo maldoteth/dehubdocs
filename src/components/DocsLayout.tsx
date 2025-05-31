@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
@@ -84,7 +83,7 @@ const menuItems = [{
   }, {
     title: 'Instagram',
     path: 'https://www.instagram.com/dehub_official/',
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png',
+    icon: '/lovable-uploads/aa06bc35-7031-46a8-8eda-64eda26de8b4.png',
     external: true,
     isImage: true
   }, {
