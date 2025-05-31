@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -17,6 +16,7 @@ import Team from "./pages/docs/Team";
 import BrandGuidelines from "./pages/docs/BrandGuidelines";
 import BrandAssets from "./pages/docs/BrandAssets";
 import Dapp from "./pages/docs/Dapp";
+import TokenEconomics from "./pages/docs/TokenEconomics";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +33,12 @@ const App = () => (
             <Route path="overview" element={<Overview />} />
             <Route path="dapps" element={<Dapp />} />
             <Route path="token" element={<div className="p-8 text-center text-slate-600">Token documentation coming soon...</div>} />
+            <Route path="token/economics" element={<TokenEconomics />} />
+            <Route path="token/utility" element={<div className="p-8 text-center text-slate-600">Token Utility documentation coming soon...</div>} />
+            <Route path="token/where-to-buy" element={<div className="p-8 text-center text-slate-600">Where to Buy documentation coming soon...</div>} />
+            <Route path="token/governance" element={<div className="p-8 text-center text-slate-600">Governance documentation coming soon...</div>} />
+            <Route path="token/security" element={<div className="p-8 text-center text-slate-600">Security documentation coming soon...</div>} />
+            <Route path="token/bugs" element={<div className="p-8 text-center text-slate-600">Bugs documentation coming soon...</div>} />
             <Route path="depin" element={<DePIN />} />
             <Route path="team" element={<Team />} />
             <Route path="roadmap" element={<div className="p-8 text-center text-slate-600">Roadmap documentation coming soon...</div>} />
