@@ -58,7 +58,7 @@ const DocsHome = () => {
     {
       icon: Code,
       title: 'Dev Support',
-      description: 'Comprehensive developer tools and documentation'
+      description: 'We fund community projects and initiatives where we can'
     },
     {
       icon: Users,
