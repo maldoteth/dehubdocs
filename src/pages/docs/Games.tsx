@@ -98,6 +98,20 @@ const Games = () => {
                     Rid the streets of the greedy banking mafia and save the club at all cost in this endless fighter that's free for all, yet comes with full play and earn for Lean Chad Fight Club (LCFC) holders. LCFC are our genesis NFT mint partners and the first of many coming to the DeHub ecosystem.
                   </p>
                 </div>
+
+                <div className="mt-6 pt-4 border-t border-sky-blue/20">
+                  <p className="text-royal-blue/90 mb-3">
+                    Play all these games and more at our arcade:
+                  </p>
+                  <a 
+                    href="https://arcade.dehub.net" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-middle-blue hover:text-royal-blue underline font-semibold"
+                  >
+                    arcade.dehub.net
+                  </a>
+                </div>
               </div>
             </div>
           </TabsContent>
