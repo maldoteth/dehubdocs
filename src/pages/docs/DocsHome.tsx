@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+
 const DocsHome = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
@@ -13,6 +13,7 @@ const DocsHome = () => {
       description: "This feature is currently under development and will be available soon."
     });
   };
+
   const quickLinks = [{
     title: 'Basescan',
     description: 'View on Base network',
@@ -42,24 +43,32 @@ const DocsHome = () => {
     color: 'from-middle-blue to-royal-blue',
     external: true
   }];
-  const features = [{
-    icon: Zap,
-    title: 'Fast & Reliable',
-    description: 'Built on the safest & fastest EVM L2\'s and L1s.'
-  }, {
-    icon: Shield,
-    title: 'Secure by Default',
-    description: 'Token holders can run nodes to secure the network'
-  }, {
-    icon: Code,
-    title: 'Dev Support',
-    description: 'Comprehensive developer tools and documentation'
-  }, {
-    icon: Users,
-    title: 'Budding Community',
-    description: 'We fund community projects and initiatives where we can'
-  }];
-  return <div className="space-y-12">
+
+  const features = [
+    {
+      icon: Zap,
+      title: 'Fast & Reliable',
+      description: 'Built on the safest & fastest EVM L2\'s and L1s.'
+    },
+    {
+      icon: Shield,
+      title: 'Global Holder Nodes',
+      description: 'Token holders run nodes globally to power the network and earn rewards'
+    },
+    {
+      icon: Code,
+      title: 'Dev Support',
+      description: 'Comprehensive developer tools and documentation'
+    },
+    {
+      icon: Users,
+      title: 'Budding Community',
+      description: 'We fund community projects and initiatives where we can'
+    }
+  ];
+
+  return (
+    <div className="space-y-12">
       {/* Hero Section */}
       <div className="text-center space-y-6">
         
@@ -117,13 +126,15 @@ const DocsHome = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map(feature => <div key={feature.title} className="text-center">
+          {features.map((feature) => (
+            <div key={feature.title} className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-sky-blue/20 to-middle-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <feature.icon className="w-8 h-8 text-royal-blue" />
               </div>
               <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{feature.title}</h3>
               <p className="text-royal-blue/70 text-sm font-exo">{feature.description}</p>
-            </div>)}
+            </div>
+          ))}
         </div>
       </div>
 
@@ -138,6 +149,8 @@ const DocsHome = () => {
           <ArrowRight className="w-4 h-4 ml-2" />
         </Link>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default DocsHome;
