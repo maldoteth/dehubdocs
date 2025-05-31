@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
@@ -98,8 +97,9 @@ const menuItems = [
     }, {
       title: 'CoinMarketCap',
       path: 'https://coinmarketcap.com/currencies/dehub/',
-      icon: '📊',
-      external: true
+      icon: '/lovable-uploads/df505550-7e48-4148-acbb-1617520a6abc.png',
+      external: true,
+      isImage: true
     }, {
       title: 'CoinGecko',
       path: 'https://www.coingecko.com/en/coins/dehub',
