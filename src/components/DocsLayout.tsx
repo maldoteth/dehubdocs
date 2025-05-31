@@ -89,8 +89,9 @@ const menuItems = [{
   }, {
     title: 'GitHub',
     path: 'https://github.com/dehubtoken',
-    iconComponent: Github,
-    external: true
+    icon: '/lovable-uploads/b39e5777-ed91-489c-a58a-3639ea5bf3bc.png',
+    external: true,
+    isImage: true
   }]
 }];
 
