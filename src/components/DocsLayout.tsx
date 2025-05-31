@@ -84,8 +84,9 @@ const menuItems = [{
   }, {
     title: 'Instagram',
     path: 'https://www.instagram.com/dehub_official/',
-    icon: '📸',
-    external: true
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png',
+    external: true,
+    isImage: true
   }, {
     title: 'GitHub',
     path: 'https://github.com/dehubtoken',
