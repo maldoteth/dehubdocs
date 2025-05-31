@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle } from 'lucide-react';
-
 const DocsHome = () => {
   const quickLinks = [{
     title: 'Quick Start',
@@ -29,7 +27,6 @@ const DocsHome = () => {
     path: '/docs/best-practices',
     color: 'from-middle-blue to-royal-blue'
   }];
-
   const features = [{
     icon: Zap,
     title: 'Fast & Reliable',
@@ -47,9 +44,7 @@ const DocsHome = () => {
     title: 'Team Collaboration',
     description: 'Built for teams of all sizes'
   }];
-
-  return (
-    <div className="space-y-12">
+  return <div className="space-y-12">
       {/* Hero Section */}
       <div className="text-center space-y-6">
         <div className="inline-flex items-center px-4 py-2 bg-sky-blue/10 text-royal-blue rounded-full text-sm font-medium">
@@ -69,17 +64,11 @@ const DocsHome = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link 
-            to="/docs/quickstart" 
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo"
-          >
+          <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
             Get Started
             <ArrowRight className="w-4 h-4 ml-2" />
           </Link>
-          <Link 
-            to="/docs/endpoints" 
-            className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo"
-          >
+          <Link to="/docs/endpoints" className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
             View API Reference
           </Link>
         </div>
@@ -87,12 +76,7 @@ const DocsHome = () => {
 
       {/* Quick Links */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {quickLinks.map(link => (
-          <Link 
-            key={link.path} 
-            to={link.path} 
-            className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg"
-          >
+        {quickLinks.map(link => <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
             <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
               <link.icon className="w-6 h-6 text-plain-white" />
             </div>
@@ -102,8 +86,7 @@ const DocsHome = () => {
               Learn more
               <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
             </div>
-          </Link>
-        ))}
+          </Link>)}
       </div>
 
       {/* Features */}
@@ -116,34 +99,27 @@ const DocsHome = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map(feature => (
-            <div key={feature.title} className="text-center">
+          {features.map(feature => <div key={feature.title} className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-sky-blue/20 to-middle-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <feature.icon className="w-8 h-8 text-royal-blue" />
               </div>
               <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{feature.title}</h3>
               <p className="text-royal-blue/70 text-sm font-exo">{feature.description}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
 
       {/* Getting Started */}
       <div className="bg-gradient-to-r from-royal-blue to-middle-blue rounded-2xl p-8 text-center">
         <h2 className="text-3xl font-bold mb-4 text-plain-white font-exo">Ready to Get Started?</h2>
-        <p className="text-sky-blue/90 mb-6 max-w-2xl mx-auto font-exo">
+        <p className="text-sky-blue/90 mb-6 max-w-2xl mx-auto font-exo text-zinc-50">
           Follow our step-by-step guide to integrate our platform in minutes.
         </p>
-        <Link 
-          to="/docs/quickstart" 
-          className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo"
-        >
+        <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
           Start Building
           <ArrowRight className="w-4 h-4 ml-2" />
         </Link>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default DocsHome;
