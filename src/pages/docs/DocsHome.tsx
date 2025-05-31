@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle } from 'lucide-react';
+import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const DocsHome = () => {
@@ -15,29 +15,33 @@ const DocsHome = () => {
   };
 
   const quickLinks = [{
-    title: 'Quick Start',
-    description: 'Get up and running in minutes',
-    icon: Rocket,
-    path: '/docs/quickstart',
-    color: 'from-middle-blue to-sky-blue'
+    title: 'Basescan DHB',
+    description: 'View DHB on Base network',
+    icon: ExternalLink,
+    path: 'https://basescan.org',
+    color: 'from-middle-blue to-sky-blue',
+    external: true
   }, {
-    title: 'API Reference',
-    description: 'Complete API documentation',
-    icon: Code,
-    path: '/docs/endpoints',
-    color: 'from-sky-blue to-middle-blue'
+    title: 'BSCScan DHB',
+    description: 'View DHB on BNB Smart Chain',
+    icon: ExternalLink,
+    path: 'https://bscscan.com',
+    color: 'from-sky-blue to-middle-blue',
+    external: true
   }, {
-    title: 'Examples',
-    description: 'See real-world implementations',
-    icon: Star,
-    path: '/docs/examples',
-    color: 'from-royal-blue to-sky-blue'
+    title: 'DHBScan',
+    description: 'DeHub network explorer',
+    icon: ExternalLink,
+    path: 'https://dhbscan.com',
+    color: 'from-royal-blue to-sky-blue',
+    external: true
   }, {
-    title: 'Best Practices',
-    description: 'Learn from the experts',
-    icon: CheckCircle,
-    path: '/docs/best-practices',
-    color: 'from-middle-blue to-royal-blue'
+    title: 'DeHub App',
+    description: 'Access the DeHub application',
+    icon: ExternalLink,
+    path: 'https://dehub.io',
+    color: 'from-middle-blue to-royal-blue',
+    external: true
   }];
   const features = [{
     icon: Zap,
@@ -85,17 +89,33 @@ const DocsHome = () => {
 
       {/* Quick Links */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {quickLinks.map(link => <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
-            <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
-              <link.icon className="w-6 h-6 text-plain-white" />
-            </div>
-            <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-            <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
-            <div className="flex items-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
-              Learn more
-              <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
-            </div>
-          </Link>)}
+        {quickLinks.map(link => 
+          link.external ? (
+            <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+              <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                <link.icon className="w-6 h-6 text-plain-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
+              <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
+              <div className="flex items-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                Visit site
+                <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </a>
+          ) : (
+            <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+              <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                <link.icon className="w-6 h-6 text-plain-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
+              <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
+              <div className="flex items-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                Learn more
+                <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Link>
+          )
+        )}
       </div>
 
       {/* Features */}
