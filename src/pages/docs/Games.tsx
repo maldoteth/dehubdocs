@@ -52,14 +52,14 @@ const Games = () => {
                   Hyper realistic and gory battle royale featuring top UFC stars, game developers from Ubisoft and leading memes with their own skins.
                 </p>
                 <div className="mt-4">
-                  <span className="font-semibold text-royal-blue">Trailer: </span>
+                  <span className="font-semibold text-royal-blue">Website: </span>
                   <a 
-                    href="https://dehub.io/stream/2008" 
+                    href="https://lastchadstanding.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-middle-blue hover:text-royal-blue underline"
                   >
-                    https://dehub.io/stream/2008
+                    lastchadstanding.com
                   </a>
                 </div>
               </div>
