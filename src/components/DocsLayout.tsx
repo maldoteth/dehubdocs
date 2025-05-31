@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
@@ -78,7 +79,7 @@ const menuItems = [
       external: true
     }, {
       title: 'App',
-      path: 'https://dehub.io/d',
+      path: 'https://dehub.io',
       icon: '/lovable-uploads/ca557554-cea2-41f1-8139-d456861beacb.png',
       external: true,
       isImage: true
