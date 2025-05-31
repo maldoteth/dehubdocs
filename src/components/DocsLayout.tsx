@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
@@ -19,8 +20,7 @@ const menuItems = [
     }, {
       title: 'Dapp',
       path: '/docs/dapps',
-      icon: '🖥️',
-      hasSubmenu: true
+      icon: '🖥️'
     }, {
       title: 'Games',
       path: '/docs/games',
