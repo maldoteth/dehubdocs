@@ -48,6 +48,14 @@ const Dapp = () => {
               className="w-full rounded-lg border border-slate-200 shadow-sm"
             />
           </div>
+
+          <div className="my-6">
+            <img 
+              src="/lovable-uploads/3f101ce6-83a6-435b-8a41-58668a7fdb53.png" 
+              alt="Upload settings interface showing Lock Content, Pay Per View, Watch2Earn, and Add Subscription options" 
+              className="w-full rounded-lg border border-slate-200 shadow-sm"
+            />
+          </div>
           
           <ul className="list-disc pl-6 space-y-2 text-slate-700">
             <li><strong>Watch2earn:</strong> every token now has sustainable watch2earn utility at the click of a button</li>
