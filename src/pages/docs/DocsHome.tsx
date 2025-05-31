@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -49,7 +50,7 @@ const DocsHome = () => {
     {
       icon: Zap,
       title: 'Fast & Reliable',
-      description: 'Built on the safest & fastest EVM L2\'s and L1s.'
+      description: 'Building on the safest and speediest chains across L1s and EVM L2s.'
     },
     {
       icon: Shield,
