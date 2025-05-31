@@ -1,16 +1,10 @@
-
 import React from 'react';
 import { Cpu, Network, Shield, Zap, Calculator } from 'lucide-react';
-
 const DePIN = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
-        <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
-          <Cpu className="w-4 h-4 mr-2" />
-          ⛏️ DePIN
-        </div>
+        
         
         <h1 className="text-4xl font-bold text-slate-900">
           DePIN
@@ -37,7 +31,7 @@ const DePIN = () => {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">System Architecture</h2>
             <div className="bg-slate-100 p-6 rounded-lg font-mono text-sm mb-6">
               <pre className="whitespace-pre-wrap text-slate-700">
-{`----------------------        -----------------
+              {`----------------------        -----------------
 |  DeHub Application |        |   End Users   |   - Start of data flow
 ----------------------        -----------------
          ⬇ ⬆                       ⬇ ⬆                                     
@@ -195,7 +189,7 @@ const DePIN = () => {
             <h3 className="text-lg font-semibold text-slate-800 mb-4">Miner Client Code</h3>
             <div className="bg-slate-900 p-6 rounded-lg mb-6 overflow-x-auto">
               <pre className="text-green-400 text-sm">
-{`import requests
+              {`import requests
 import time
 import hashlib
 
@@ -292,8 +286,6 @@ class MinerClient:
           </section>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default DePIN;
