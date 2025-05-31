@@ -39,7 +39,7 @@ const DocsHome = () => {
   }, {
     icon: Database,
     title: 'Data-Driven',
-    description: 'Powered by holder nodes across the globe'
+    description: 'Grants and apprenticeships always available'
   }, {
     icon: Users,
     title: 'Budding Community',
