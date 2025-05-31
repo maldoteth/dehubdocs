@@ -33,12 +33,6 @@ const menuItems = [{
     }, {
       title: 'Governance',
       path: '/docs/token/governance'
-    }, {
-      title: 'Security',
-      path: '/docs/token/security'
-    }, {
-      title: 'Bugs',
-      path: '/docs/token/bugs'
     }]
   }, {
     title: 'DePIN',
@@ -48,6 +42,14 @@ const menuItems = [{
     title: 'Team',
     path: '/docs/team',
     icon: '👥'
+  }, {
+    title: 'Security',
+    path: '/docs/security',
+    icon: '🔒'
+  }, {
+    title: 'Bugs',
+    path: '/docs/bugs',
+    icon: '🐛'
   }, {
     title: 'Roadmap',
     path: '/docs/roadmap',

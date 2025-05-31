@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -42,10 +43,10 @@ const App = () => (
             <Route path="token/utility" element={<TokenUtility />} />
             <Route path="token/where-to-buy" element={<TokenWhereToBuy />} />
             <Route path="token/governance" element={<TokenGovernance />} />
-            <Route path="token/security" element={<TokenSecurity />} />
-            <Route path="token/bugs" element={<TokenBugs />} />
             <Route path="depin" element={<DePIN />} />
             <Route path="team" element={<Team />} />
+            <Route path="security" element={<TokenSecurity />} />
+            <Route path="bugs" element={<TokenBugs />} />
             <Route path="roadmap" element={<div className="p-8 text-center text-slate-600">Roadmap documentation coming soon...</div>} />
             <Route path="terms" element={<div className="p-8 text-center text-slate-600">Terms & Disclaimers documentation coming soon...</div>} />
             <Route path="website" element={<div className="p-8 text-center text-slate-600">Website documentation coming soon...</div>} />
