@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle } from 'lucide-react';
+
 const DocsHome = () => {
   const quickLinks = [{
     title: 'Quick Start',
@@ -42,7 +43,7 @@ const DocsHome = () => {
   }, {
     icon: Users,
     title: 'Budding Community',
-    description: 'Built for teams of all sizes'
+    description: 'Access our established community who are always on hand to help'
   }];
   return <div className="space-y-12">
       {/* Hero Section */}
@@ -117,4 +118,5 @@ const DocsHome = () => {
       </div>
     </div>;
 };
+
 export default DocsHome;
