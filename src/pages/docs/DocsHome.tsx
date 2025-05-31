@@ -89,7 +89,7 @@ const DocsHome = () => {
       {/* Features */}
       <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-royal-blue mb-4 font-exo">Why Choose Our Platform?</h2>
+          <h2 className="text-3xl font-bold text-royal-blue mb-4 font-exo">Why Build On DeHub?</h2>
           <p className="text-royal-blue/70 max-w-2xl mx-auto font-exo">
             Built with modern technologies and best practices to help you ship faster and scale effortlessly.
           </p>
