@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown } from 'lucide-react';
+import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const menuItems = [{
@@ -21,7 +21,7 @@ const menuItems = [{
   }, {
     title: 'Token',
     path: '/docs/token',
-    icon: '🪙',
+    iconComponent: Coins,
     hasSubmenu: true,
     submenuItems: [{
       title: 'Economics & Emissions',
@@ -172,7 +172,11 @@ export const DocsLayout = () => {
                                       ${isActivePath(item.path) ? 'bg-middle-blue/20 text-royal-blue font-medium border-l-4 border-middle-blue ml-0' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
                                     `}>
                                     <div className="flex items-center space-x-3">
-                                      <span className="text-base">{item.icon}</span>
+                                      {item.iconComponent ? (
+                                        <item.iconComponent className="w-4 h-4 text-royal-blue/70" />
+                                      ) : (
+                                        <span className="text-base">{item.icon}</span>
+                                      )}
                                       <span>{item.title}</span>
                                     </div>
                                     <ChevronDown className={`w-4 h-4 text-royal-blue/50 transition-transform duration-200 ${expandedMenus[item.title] ? 'rotate-180' : ''}`} />
@@ -198,7 +202,9 @@ export const DocsLayout = () => {
                                     ${isActivePath(item.path) ? 'bg-middle-blue/20 text-royal-blue font-medium border-l-4 border-middle-blue ml-0' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
                                   `}>
                                   <div className="flex items-center space-x-3">
-                                    {item.isImage ? (
+                                    {item.iconComponent ? (
+                                      <item.iconComponent className="w-4 h-4 text-royal-blue/70" />
+                                    ) : item.isImage ? (
                                       <img src={item.icon} alt={item.title} className="w-4 h-4 filter brightness-0" />
                                     ) : (
                                       <span className="text-base">{item.icon}</span>
