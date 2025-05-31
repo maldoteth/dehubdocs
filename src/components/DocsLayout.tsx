@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
@@ -69,10 +68,6 @@ const menuItems = [
   }, {
     title: 'Key Links',
     items: [{
-      title: 'Terms & Disclaimers',
-      path: '/docs/terms',
-      icon: '⚖️'
-    }, {
       title: 'Website',
       path: 'https://dehub.net/',
       icon: '🌐',
@@ -112,6 +107,13 @@ const menuItems = [
       path: 'https://www.coingecko.com/en/coins/dehub',
       icon: '🦎',
       external: true
+    }]
+  }, {
+    title: '',
+    items: [{
+      title: 'Terms & Disclaimers',
+      path: '/docs/terms',
+      icon: '⚖️'
     }]
   }
 ];
