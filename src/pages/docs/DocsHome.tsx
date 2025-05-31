@@ -16,14 +16,14 @@ const DocsHome = () => {
 
   const quickLinks = [{
     title: 'Basescan',
-    description: 'View DHB on Base network',
+    description: 'View on Base network',
     icon: ExternalLink,
     path: 'https://basescan.org/token/0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c',
     color: 'from-middle-blue to-sky-blue',
     external: true
   }, {
     title: 'BSCScan',
-    description: 'View DHB on BNB Smart Chain',
+    description: 'View on BNB Smart Chain',
     icon: ExternalLink,
     path: 'https://bscscan.com/token/0x680d3113caf77b61b510f332d5ef4cf5b41a761d',
     color: 'from-sky-blue to-middle-blue',
@@ -50,11 +50,11 @@ const DocsHome = () => {
   }, {
     icon: Shield,
     title: 'Secure by Default',
-    description: 'Powered nodes across the world'
+    description: 'Powered by holder nodes across the world'
   }, {
     icon: Database,
     title: 'Data-Driven',
-    description: 'Powered by holder nodes across the world'
+    description: 'Powered nodes across the world'
   }, {
     icon: Users,
     title: 'Budding Community',
