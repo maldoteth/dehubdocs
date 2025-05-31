@@ -50,7 +50,7 @@ const DocsHome = () => {
   }, {
     icon: Shield,
     title: 'Secure by Default',
-    description: 'Powered by holder nodes across the world'
+    description: 'Built on the safest & fastest EVM L2\'s and L1s.'
   }, {
     icon: Database,
     title: 'Data-Driven',
