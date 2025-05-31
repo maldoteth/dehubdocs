@@ -1,3 +1,4 @@
+
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 
@@ -39,6 +40,14 @@ const Dapp = () => {
           <p className="text-slate-700 leading-relaxed mb-4">
             On the above user upload dashboard, notice how simple it is for anyone to instantly upload content and in a few clicks enable the following:
           </p>
+          
+          <div className="my-6">
+            <img 
+              src="/lovable-uploads/c6d5f1cc-f829-445e-8a5d-c5ea9fa4c720.png" 
+              alt="Content uploading interface showing video info form and upload preview" 
+              className="w-full rounded-lg border border-slate-200 shadow-sm"
+            />
+          </div>
           
           <ul className="list-disc pl-6 space-y-2 text-slate-700">
             <li><strong>Watch2earn:</strong> every token now has sustainable watch2earn utility at the click of a button</li>
