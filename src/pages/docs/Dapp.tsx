@@ -1,4 +1,5 @@
 import React from 'react';
+import BadgeFlowchart from '../../components/BadgeFlowchart';
 
 const Dapp = () => {
   return (
@@ -95,19 +96,7 @@ const Dapp = () => {
             The more you $DHB tokens you hold, the more rewarding it is, simple as that. This includes but is not limited to the Badge of Honour system that unlocks improved cosmetics on your public profile as well as further enhanced, premium features.
           </p>
           
-          <div className="bg-slate-50 p-6 rounded-lg mb-8">
-            <h4 className="text-lg font-medium text-slate-800 mb-4">Badge of Honour Flowchart</h4>
-            <div className="flex justify-center">
-              <img 
-                src="/lovable-uploads/6a2d87f8-214e-48e0-aa81-3857c249ae2a.png" 
-                alt="Badge of Honour decision flowchart showing token requirements for different badges" 
-                className="max-w-full h-auto rounded-lg shadow-md"
-              />
-            </div>
-            <p className="text-sm text-slate-600 mt-4 text-center italic">
-              Badge system based on $DHB token holdings - higher holdings unlock exclusive badges and enhanced features
-            </p>
-          </div>
+          <BadgeFlowchart />
         </section>
 
         <section>
