@@ -1,16 +1,10 @@
-
 import React from 'react';
 import { ScrollText, Gamepad2, Users, Shield, Zap, Globe } from 'lucide-react';
-
 const Overview = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
-        <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-          <ScrollText className="w-4 h-4 mr-2" />
-          📜 Overview
-        </div>
+        
         
         <h1 className="text-4xl font-bold text-slate-900">
           Overview
@@ -100,8 +94,6 @@ const Overview = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Overview;
