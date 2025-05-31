@@ -83,9 +83,17 @@ const Dapp = () => {
 
         <section>
           <h2 className="text-2xl font-semibold text-slate-800 mb-4">Customise and update your public profile or channel</h2>
-          <p className="text-slate-700 leading-relaxed">
+          <p className="text-slate-700 leading-relaxed mb-6">
             Control what users can or can't see while being able to export your followers' data at any time. This gives you full ownership of your channel and allows you to take your business anywhere with you, no matter what happens.
           </p>
+          
+          <div className="my-6">
+            <img 
+              src="/lovable-uploads/05231fa1-3aa1-4ba6-973c-775c8e39c297.png" 
+              alt="User profile interface showing customizable profile settings and follower management" 
+              className="w-full rounded-lg border border-slate-200 shadow-sm"
+            />
+          </div>
         </section>
 
         <section>
