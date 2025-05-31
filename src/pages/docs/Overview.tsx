@@ -19,15 +19,19 @@ const Overview = () => {
       <div className="bg-white rounded-2xl border border-slate-200 p-8">
         <div className="prose prose-slate max-w-none">
           <p className="text-lg leading-relaxed text-slate-700 mb-6">
-            DeHub is a gaming and streaming protocol powered sustainably scaled through our proprietary DePIN infrastructure for content hosting, transcoding, and delivery. We utilise cutting edge advancements in blockchain, AI and open source technology to pioneer the future we want to see as a team of gamers and streamers, solving major problems with legacy media apps such as censorship, demonetisation, deplatforming, P2P payments, algorithm manipulation, true data ownership and earning transparency.
+            DeHub is a next-generation gaming and streaming protocol, sustainably scaled through our proprietary DePIN infrastructure for content hosting, transcoding, and delivery. Built by a team of gamers and streamers, we harness cutting-edge advances in blockchain, AI, and open-source technology to tackle the limitations of legacy media platforms—such as censorship, demonetisation, deplatforming, algorithm manipulation, opaque earnings, and lack of data ownership.
           </p>
 
           <p className="text-lg leading-relaxed text-slate-700 mb-6">
-            The entire user journey is fluid by abstracting wallet generation, onboarding and transaction confirmations, ensuring all interactions remain on-chain and publicly verifiable via our public leaderboards while requiring no crypto knowledge or experience.
+            Our seamless user experience abstracts away the complexities of crypto—wallet creation, onboarding, and transaction confirmations—while ensuring that every interaction remains on-chain and publicly verifiable through our leaderboards. No crypto knowledge required.
           </p>
 
           <p className="text-lg leading-relaxed text-slate-700 mb-6">
-            Our app provides innovative tools for content creation, monetisation, engagement and community building. You can create your own PPV events, launch Watch2Earn experiences, or upload token-gated content—all without the need for banks or KYC. Retain full ownership of your and your subscribers' data, enabling a censorship-resistant and deplatforming-free environment. Join us in powering the network of the future: a user-owned creator economy that rewards participants while eliminating intermediaries.
+            DeHub empowers creators with innovative tools for content creation, monetisation, and community building. Host PPV events, launch Watch2Earn experiences, or share token-gated content—all without banks or KYC. Retain full ownership of your content and audience data in a censorship-resistant, creator-first ecosystem.
+          </p>
+
+          <p className="text-lg leading-relaxed text-slate-700 mb-6">
+            Join us in building the network of the future—a user-owned creator economy where value flows directly to those who earn it, free from intermediaries.
           </p>
 
           <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200 my-8">
