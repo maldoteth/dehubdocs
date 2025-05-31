@@ -1,8 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const DocsHome = () => {
+  const { toast } = useToast();
+
+  const handleComingSoonClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Coming Soon",
+      description: "This feature is currently under development and will be available soon.",
+    });
+  };
+
   const quickLinks = [{
     title: 'Quick Start',
     description: 'Get up and running in minutes',
@@ -66,9 +77,9 @@ const DocsHome = () => {
             Get Started
             <ArrowRight className="w-4 h-4 ml-2" />
           </Link>
-          <Link to="/docs/endpoints" className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+          <button onClick={handleComingSoonClick} className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
             View API Reference
-          </Link>
+          </button>
         </div>
       </div>
 
