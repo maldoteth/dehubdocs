@@ -17,6 +17,7 @@ import Team from "./pages/docs/Team";
 import BrandGuidelines from "./pages/docs/BrandGuidelines";
 import BrandAssets from "./pages/docs/BrandAssets";
 import Dapp from "./pages/docs/Dapp";
+import Games from "./pages/docs/Games";
 import TokenEconomics from "./pages/docs/TokenEconomics";
 import TokenUtility from "./pages/docs/TokenUtility";
 import TokenWhereToBuy from "./pages/docs/TokenWhereToBuy";
