@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { ScrollText, Gamepad2, Users, Shield, Zap, Globe } from 'lucide-react';
 const Overview = () => {
@@ -52,7 +53,7 @@ const Overview = () => {
           <div>
             <h3 className="text-lg font-semibold text-amber-800 mb-3">Disclaimer</h3>
             <p className="text-amber-700 text-sm leading-relaxed">
-              DeHub tokens are strictly for utility purposes in the same way that any in-game or in-app digital tokens or currencies and strictly not an investment. As our token lives on-chain, we can offer added utility as well as unprecedented levels of verifiable transparency. The above data is solely compiled for transparency, educational and informative purposes only. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs we release. Markets are highly volatile. You could also lose all your money due to any unforeseen errors such as competency failures, technical error, hacks and so on. Therefore, you should only ever spend what you can afford to lose.
+              DeHub tokens are strictly for utility purposes in the same way that any in-game or in-app digital tokens or currencies and strictly not an investment. As our token lives on-chain, we can offer added utility as well as unprecedented levels of verifiable transparency. The above data is solely compiled for transparency, educational and informative purposes only. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs we release. Markets are highly volatile. You could also lose all your money due to any unforeseen errors such as competency failures, technical error, hacks and so on. Therefore, you should only ever spend what you can comfortably afford to lose.
             </p>
           </div>
         </div>
@@ -60,3 +61,4 @@ const Overview = () => {
     </div>;
 };
 export default Overview;
+
