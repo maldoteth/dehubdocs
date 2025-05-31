@@ -52,9 +52,9 @@ const DocsHome = () => {
     title: 'Secure by Default',
     description: 'Built on the safest & fastest EVM L2\'s and L1s.'
   }, {
-    icon: Database,
-    title: 'Data-Driven',
-    description: 'Powered nodes across the world'
+    icon: Code,
+    title: 'Dev Support',
+    description: 'Comprehensive developer tools and documentation'
   }, {
     icon: Users,
     title: 'Budding Community',
