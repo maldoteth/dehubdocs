@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -17,6 +18,9 @@ import BrandGuidelines from "./pages/docs/BrandGuidelines";
 import BrandAssets from "./pages/docs/BrandAssets";
 import Dapp from "./pages/docs/Dapp";
 import TokenEconomics from "./pages/docs/TokenEconomics";
+import TokenUtility from "./pages/docs/TokenUtility";
+import TokenWhereToBuy from "./pages/docs/TokenWhereToBuy";
+import TokenGovernance from "./pages/docs/TokenGovernance";
 
 const queryClient = new QueryClient();
 
@@ -34,9 +38,9 @@ const App = () => (
             <Route path="dapps" element={<Dapp />} />
             <Route path="token" element={<div className="p-8 text-center text-slate-600">Token documentation coming soon...</div>} />
             <Route path="token/economics" element={<TokenEconomics />} />
-            <Route path="token/utility" element={<div className="p-8 text-center text-slate-600">Token Utility documentation coming soon...</div>} />
-            <Route path="token/where-to-buy" element={<div className="p-8 text-center text-slate-600">Where to Buy documentation coming soon...</div>} />
-            <Route path="token/governance" element={<div className="p-8 text-center text-slate-600">Governance documentation coming soon...</div>} />
+            <Route path="token/utility" element={<TokenUtility />} />
+            <Route path="token/where-to-buy" element={<TokenWhereToBuy />} />
+            <Route path="token/governance" element={<TokenGovernance />} />
             <Route path="token/security" element={<div className="p-8 text-center text-slate-600">Security documentation coming soon...</div>} />
             <Route path="token/bugs" element={<div className="p-8 text-center text-slate-600">Bugs documentation coming soon...</div>} />
             <Route path="depin" element={<DePIN />} />
