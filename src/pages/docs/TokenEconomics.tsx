@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-
 const TokenEconomics = () => {
-  return (
-    <div className="max-w-4xl mx-auto space-y-8">
+  return <div className="max-w-4xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Economics & Emissions</h1>
         <p className="text-lg text-slate-600 leading-relaxed">
@@ -51,10 +48,10 @@ const TokenEconomics = () => {
             </div>
             <Separator />
             <div>
-              <h4 className="font-semibold text-slate-700 mb-2">DEX Tax</h4>
-              <p className="text-slate-600">2% buy, 4% sell</p>
+              
+              
             </div>
-            <Separator />
+            
             <div>
               <h4 className="font-semibold text-slate-700 mb-2">Seed or Private Unlocks</h4>
               <p className="text-slate-600">0 on launch as no VCs were involved in building DeHub</p>
@@ -129,8 +126,6 @@ const TokenEconomics = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default TokenEconomics;
