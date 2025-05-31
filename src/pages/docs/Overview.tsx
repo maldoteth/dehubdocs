@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ScrollText, Gamepad2, Users, Shield, Zap, Globe, Edit3, Save, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Overview = () => {
   const [isEditing, setIsEditing] = useState(false);
+  const [showEditControls, setShowEditControls] = useState(false);
   const [editableContent, setEditableContent] = useState({
     title: "Overview",
     subtitle: "An overview of our past, present and future.",
@@ -20,6 +21,21 @@ const Overview = () => {
     disclaimerText: "DeHub tokens are strictly for utility purposes in the same way that any in-game or in-app digital tokens or currencies and strictly not an investment. As our token lives on-chain, we can offer added utility as well as unprecedented levels of verifiable transparency. The above data is solely compiled for transparency, educational and informative purposes only. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs we release. Markets are highly volatile. You could also lose all your money due to any unforeseen errors such as competency failures, technical error, hacks and so on. Therefore, you should only ever spend what you can comfortably afford to lose."
   });
 
+  useEffect(() => {
+    const checkUserIP = async () => {
+      try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        setShowEditControls(data.ip === '80.103.61.100');
+      } catch (error) {
+        console.log('Could not determine IP address');
+        setShowEditControls(false);
+      }
+    };
+
+    checkUserIP();
+  }, []);
+
   const handleSave = () => {
     setIsEditing(false);
     // Content is automatically saved in state
@@ -32,40 +48,42 @@ const Overview = () => {
 
   return (
     <div className="space-y-8">
-      {/* Edit Controls */}
-      <div className="flex justify-end">
-        {!isEditing ? (
-          <Button 
-            onClick={() => setIsEditing(true)}
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-2"
-          >
-            <Edit3 className="w-4 h-4" />
-            Edit Content
-          </Button>
-        ) : (
-          <div className="flex gap-2">
+      {/* Edit Controls - Only show for authorized IP */}
+      {showEditControls && (
+        <div className="flex justify-end">
+          {!isEditing ? (
             <Button 
-              onClick={handleSave}
-              size="sm"
-              className="flex items-center gap-2"
-            >
-              <Save className="w-4 h-4" />
-              Save
-            </Button>
-            <Button 
-              onClick={handleCancel}
+              onClick={() => setIsEditing(true)}
               variant="outline"
               size="sm"
               className="flex items-center gap-2"
             >
-              <X className="w-4 h-4" />
-              Cancel
+              <Edit3 className="w-4 h-4" />
+              Edit Content
             </Button>
-          </div>
-        )}
-      </div>
+          ) : (
+            <div className="flex gap-2">
+              <Button 
+                onClick={handleSave}
+                size="sm"
+                className="flex items-center gap-2"
+              >
+                <Save className="w-4 h-4" />
+                Save
+              </Button>
+              <Button 
+                onClick={handleCancel}
+                variant="outline"
+                size="sm"
+                className="flex items-center gap-2"
+              >
+                <X className="w-4 h-4" />
+                Cancel
+              </Button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Header */}
       <div className="text-center space-y-4">
