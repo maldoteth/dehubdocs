@@ -39,6 +39,14 @@ const Dapp = () => {
           
           <div className="my-6">
             <img 
+              src="/lovable-uploads/d06e2852-219e-4946-960f-0830ebb81716.png" 
+              alt="DeHub Games streaming platform interface showing video content grid with leaderboard" 
+              className="w-full rounded-lg border border-slate-200 shadow-sm"
+            />
+          </div>
+          
+          <div className="my-6">
+            <img 
               src="/lovable-uploads/c6d5f1cc-f829-445e-8a5d-c5ea9fa4c720.png" 
               alt="Content uploading interface showing video info form and upload preview" 
               className="w-full rounded-lg border border-slate-200 shadow-sm"
