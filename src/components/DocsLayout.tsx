@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown } from 'lucide-react';
+import { ScrollArea } from '@/components/ui/scroll-area';
+
 const menuItems = [{
   title: 'Main',
   items: [{
@@ -95,16 +97,20 @@ export const DocsLayout = () => {
     [key: string]: boolean;
   }>({});
   const location = useLocation();
+  
   const isActivePath = (path: string) => {
     return location.pathname === path;
   };
+  
   const toggleSubmenu = (itemTitle: string) => {
     setExpandedMenus(prev => ({
       ...prev,
       [itemTitle]: !prev[itemTitle]
     }));
   };
-  return <div className="min-h-screen bg-gradient-to-br from-sky-blue/10 to-middle-blue/10">
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-sky-blue/10 to-middle-blue/10">
       {/* Header */}
       <header className="bg-plain-white/90 backdrop-blur-sm border-b border-sky-blue/20 sticky top-0 z-40">
         <div className="flex items-center justify-between px-4 h-16">
@@ -129,26 +135,38 @@ export const DocsLayout = () => {
       <div className="flex">
         {/* Sidebar */}
         <aside className={`
-          fixed lg:static inset-y-0 left-0 z-30 w-80 bg-plain-white/95 backdrop-blur-sm border-r border-sky-blue/20 transform transition-transform duration-300 ease-in-out
+          fixed lg:sticky lg:top-16 inset-y-0 lg:inset-y-auto left-0 z-30 w-80 h-screen lg:h-[calc(100vh-4rem)] bg-plain-white/95 backdrop-blur-sm border-r border-sky-blue/20 transform transition-transform duration-300 ease-in-out
           ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}>
-          <div className="flex flex-col h-full">
-            <div className="flex-1 overflow-y-auto py-6">
+          <ScrollArea className="h-full">
+            <div className="py-6">
               <nav className="px-4 space-y-6">
-                {menuItems.map(section => <div key={section.title}>
-                    {section.title !== 'Main' && <h3 className="text-sm font-semibold text-royal-blue/70 uppercase tracking-wider mb-3">
+                {menuItems.map(section => (
+                  <div key={section.title}>
+                    {section.title !== 'Main' && (
+                      <h3 className="text-sm font-semibold text-royal-blue/70 uppercase tracking-wider mb-3">
                         {section.title}
-                      </h3>}
+                      </h3>
+                    )}
                     <ul className="space-y-1">
-                      {section.items.map(item => <li key={item.path}>
-                          {item.external && (item.path.startsWith('http') || item.path.startsWith('https')) ? <a href={item.path} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue">
+                      {section.items.map(item => (
+                        <li key={item.path}>
+                          {item.external && (item.path.startsWith('http') || item.path.startsWith('https')) ? (
+                            <a href={item.path} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue">
                               <div className="flex items-center space-x-3">
-                                {item.isImage ? <img src={item.icon} alt={item.title} className="w-4 h-4 filter brightness-0" /> : <span className="text-base">{item.icon}</span>}
+                                {item.isImage ? (
+                                  <img src={item.icon} alt={item.title} className="w-4 h-4 filter brightness-0" />
+                                ) : (
+                                  <span className="text-base">{item.icon}</span>
+                                )}
                                 <span>{item.title}</span>
                               </div>
                               <ExternalLink className="w-3 h-3 text-royal-blue/50" />
-                            </a> : <div>
-                              {item.hasSubmenu && item.submenuItems ? <div>
+                            </a>
+                          ) : (
+                            <div>
+                              {item.hasSubmenu && item.submenuItems ? (
+                                <div>
                                   <button onClick={() => toggleSubmenu(item.title)} className={`
                                       w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
                                       ${isActivePath(item.path) ? 'bg-middle-blue/20 text-royal-blue font-medium border-l-4 border-middle-blue ml-0' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
@@ -159,34 +177,48 @@ export const DocsLayout = () => {
                                     </div>
                                     <ChevronDown className={`w-4 h-4 text-royal-blue/50 transition-transform duration-200 ${expandedMenus[item.title] ? 'rotate-180' : ''}`} />
                                   </button>
-                                  {expandedMenus[item.title] && <ul className="ml-6 mt-1 space-y-1">
-                                      {item.submenuItems.map(subItem => <li key={subItem.path}>
+                                  {expandedMenus[item.title] && (
+                                    <ul className="ml-6 mt-1 space-y-1">
+                                      {item.submenuItems.map(subItem => (
+                                        <li key={subItem.path}>
                                           <Link to={subItem.path} onClick={() => setSidebarOpen(false)} className={`
                                               flex items-center px-3 py-2 rounded-lg text-sm transition-all duration-200
                                               ${isActivePath(subItem.path) ? 'bg-sky-blue/20 text-royal-blue font-medium' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
                                             `}>
                                             <span>{subItem.title}</span>
                                           </Link>
-                                        </li>)}
-                                    </ul>}
-                                </div> : <Link to={item.path} onClick={() => setSidebarOpen(false)} className={`
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  )}
+                                </div>
+                              ) : (
+                                <Link to={item.path} onClick={() => setSidebarOpen(false)} className={`
                                     flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
                                     ${isActivePath(item.path) ? 'bg-middle-blue/20 text-royal-blue font-medium border-l-4 border-middle-blue ml-0' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
                                   `}>
                                   <div className="flex items-center space-x-3">
-                                    {item.isImage ? <img src={item.icon} alt={item.title} className="w-4 h-4 filter brightness-0" /> : <span className="text-base">{item.icon}</span>}
+                                    {item.isImage ? (
+                                      <img src={item.icon} alt={item.title} className="w-4 h-4 filter brightness-0" />
+                                    ) : (
+                                      <span className="text-base">{item.icon}</span>
+                                    )}
                                     <span>{item.title}</span>
                                   </div>
                                   {item.hasSubmenu && !item.submenuItems && <ChevronRight className="w-4 h-4 text-royal-blue/50" />}
                                   {item.external && <ExternalLink className="w-3 h-3 text-royal-blue/50" />}
-                                </Link>}
-                            </div>}
-                        </li>)}
+                                </Link>
+                              )}
+                            </div>
+                          )}
+                        </li>
+                      ))}
                     </ul>
-                  </div>)}
+                  </div>
+                ))}
               </nav>
             </div>
-          </div>
+          </ScrollArea>
         </aside>
 
         {/* Overlay for mobile */}
@@ -199,5 +231,6 @@ export const DocsLayout = () => {
           </div>
         </main>
       </div>
-    </div>;
+    </div>
+  );
 };
