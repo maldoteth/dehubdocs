@@ -15,7 +15,7 @@ const DocsHome = () => {
   };
 
   const quickLinks = [{
-    title: 'Basescan DHB',
+    title: 'Basescan',
     description: 'View DHB on Base network',
     icon: ExternalLink,
     path: 'https://basescan.org/token/0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c',
