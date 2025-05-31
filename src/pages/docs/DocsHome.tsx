@@ -41,7 +41,7 @@ const DocsHome = () => {
     description: 'Powerful analytics and insights platform'
   }, {
     icon: Users,
-    title: 'Team Collaboration',
+    title: 'Budding Community',
     description: 'Built for teams of all sizes'
   }];
   return <div className="space-y-12">
