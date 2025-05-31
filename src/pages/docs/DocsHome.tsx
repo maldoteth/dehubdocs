@@ -35,7 +35,7 @@ const DocsHome = () => {
   }, {
     icon: Shield,
     title: 'Secure by Default',
-    description: 'Enterprise-grade security features included'
+    description: 'Powered nodes across the world'
   }, {
     icon: Database,
     title: 'Data-Driven',
