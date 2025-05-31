@@ -98,13 +98,15 @@ const menuItems = [
     }, {
       title: 'CoinMarketCap',
       path: 'https://coinmarketcap.com/currencies/dehub/',
-      icon: '📊',
-      external: true
+      icon: '/lovable-uploads/b16ff11b-1aa9-448e-a5ea-2f841d26a67f.png',
+      external: true,
+      isImage: true
     }, {
       title: 'CoinGecko',
       path: 'https://www.coingecko.com/en/coins/dehub',
-      icon: '🦎',
-      external: true
+      icon: '/lovable-uploads/3ccc8c17-5cfe-4148-aa95-64d49901065e.png',
+      external: true,
+      isImage: true
     }]
   }
 ];
