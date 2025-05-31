@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -39,8 +38,9 @@ const teamMembers = [
       "Owner of the UK's leading cobra bag provider that recently merged with NGNE"
     ],
     socials: [
-      { platform: 'TikTok', url: '#' },
-      { platform: 'Instagram', url: '#' }
+      { platform: 'TikTok', url: 'https://www.tiktok.com/@mikehalesmma?lang=en' },
+      { platform: 'X', url: 'https://x.com/Mikehalesmma' },
+      { platform: 'Instagram', url: 'https://www.instagram.com/mikehalesmma' }
     ],
     initials: 'MH',
     photo: '/lovable-uploads/4cc7ad51-0d4d-49fd-9307-b932b6dc7246.png'
