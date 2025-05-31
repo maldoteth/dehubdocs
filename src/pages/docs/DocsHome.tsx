@@ -47,15 +47,12 @@ const DocsHome = () => {
   return <div className="space-y-12">
       {/* Hero Section */}
       <div className="text-center space-y-6">
-        <div className="inline-flex items-center px-4 py-2 bg-sky-blue/10 text-royal-blue rounded-full text-sm font-medium">
-          <Book className="w-4 h-4 mr-2" />
-          Documentation
-        </div>
+        
         
         <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
           Welcome to Our
           <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">
-            Documentation and Whitepaper
+            Documentation
           </span>
         </h1>
         
