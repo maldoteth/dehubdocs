@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ScrollText, Gamepad2, Users, Shield, Zap, Globe } from 'lucide-react';
 const Overview = () => {
@@ -33,48 +34,6 @@ const Overview = () => {
           <p className="text-lg leading-relaxed text-slate-700 mb-6">
             Join us in building the network of the future—a user-owned creator economy where value flows directly to those who earn it, free from intermediaries.
           </p>
-
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200 my-8">
-            <div className="flex items-start space-x-3">
-              <Gamepad2 className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-semibold text-green-800 mb-2">Last Chad Standing - MMA Battle Royale</h3>
-                <p className="text-green-700">
-                  Our in-house game studio—featuring developers from Ubisoft with credits on iconic titles like GTA and Diablo—is also preparing to launch the world's first MMA Battle Royale in 2025: Last Chad Standing. Several top UFC stars are already confirmed to join this groundbreaking game.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-200 my-8">
-            <div className="flex items-start space-x-3">
-              <Zap className="w-6 h-6 text-purple-600 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-semibold text-purple-800 mb-2">Mini-Game Arcade</h3>
-                <p className="text-purple-700 mb-3">
-                  Gamers can already dive into our mini-game arcade, packed with custom classics including:
-                </p>
-                <ul className="text-purple-700 space-y-1 ml-4 list-disc">
-                  <li><strong>Street Slayer</strong> - Battle adversaries like SBF and Gary Gensler</li>
-                  <li><strong>Whack-A-Schiff</strong> - A mole-whacking game featuring Peter Schiff</li>
-                  <li><strong>Gas Guzzler</strong> - Endless driver collecting ETH gas, NOS dispensers, and DeHub coins</li>
-                  <li>And more exciting games!</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-xl border border-blue-200 my-8">
-            <div className="flex items-start space-x-3">
-              <Users className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-semibold text-blue-800 mb-2">Proven Team & Track Record</h3>
-                <p className="text-blue-700">
-                  Since 2020, DeHub has been developed by a proven team of top streamers, gamers, developers, and business professionals, each with multi-million-pound businesses and successful exits to their name. Co-founders Mike Hales and Indi Cammish also lead the UK's largest TikTok partner agency, directly employed by TikTok, managing nearly 1,000 exclusively signed streamers—many of whom are preparing to transition into Web3.
-                </p>
-              </div>
-            </div>
-          </div>
 
           <p className="text-lg leading-relaxed text-slate-700 mb-6">
             Before rebranding, we proudly operated as Futurov (FTV), earning a growing user base on our Web2 streaming app with rave reviews on the Google Play Store.
