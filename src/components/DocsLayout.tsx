@@ -1,100 +1,102 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
-const menuItems = [{
-  title: 'Main',
-  items: [{
-    title: 'Home',
-    path: '/docs',
-    icon: '🏠'
-  }, {
-    title: 'Overview',
-    path: '/docs/overview',
-    icon: '📋'
-  }, {
-    title: 'Dapp',
-    path: '/docs/dapps',
-    icon: '🖥️',
-    hasSubmenu: true
-  }, {
-    title: 'Token',
-    path: '/docs/token',
-    iconComponent: Coins,
-    hasSubmenu: true,
-    submenuItems: [{
-      title: 'Economics & Emissions',
-      path: '/docs/token/economics'
+const menuItems = [
+  {
+    title: 'Main',
+    items: [{
+      title: 'Home',
+      path: '/docs',
+      icon: '🏠'
     }, {
-      title: 'Utility / Holder Benefits',
-      path: '/docs/token/utility'
+      title: 'Overview',
+      path: '/docs/overview',
+      icon: '📋'
     }, {
-      title: 'Where to Buy',
-      path: '/docs/token/where-to-buy'
+      title: 'Dapp',
+      path: '/docs/dapps',
+      icon: '🖥️',
+      hasSubmenu: true
     }, {
-      title: 'Governance',
-      path: '/docs/token/governance'
+      title: 'Token',
+      path: '/docs/token',
+      iconComponent: Coins,
+      hasSubmenu: true,
+      submenuItems: [{
+        title: 'Economics & Emissions',
+        path: '/docs/token/economics'
+      }, {
+        title: 'Utility / Holder Benefits',
+        path: '/docs/token/utility'
+      }, {
+        title: 'Where to Buy',
+        path: '/docs/token/where-to-buy'
+      }, {
+        title: 'Governance',
+        path: '/docs/token/governance'
+      }]
+    }, {
+      title: 'DePIN',
+      path: '/docs/depin',
+      icon: '🔧'
+    }, {
+      title: 'Team',
+      path: '/docs/team',
+      icon: '👥'
+    }, {
+      title: 'Security',
+      path: '/docs/security',
+      icon: '🔒'
+    }, {
+      title: 'Roadmap',
+      path: '/docs/roadmap',
+      icon: '🗺️',
+      hasSubmenu: true
+    }, {
+      title: 'Brand Assets',
+      path: '/docs/brand-assets',
+      icon: '🏷️'
     }]
   }, {
-    title: 'DePIN',
-    path: '/docs/depin',
-    icon: '🔧'
-  }, {
-    title: 'Team',
-    path: '/docs/team',
-    icon: '👥'
-  }, {
-    title: 'Security',
-    path: '/docs/security',
-    icon: '🔒'
-  }, {
-    title: 'Roadmap',
-    path: '/docs/roadmap',
-    icon: '🗺️',
-    hasSubmenu: true
-  }, {
-    title: 'Brand Assets',
-    path: '/docs/brand-assets',
-    icon: '🏷️'
-  }]
-}, {
-  title: 'Key Links',
-  items: [{
-    title: 'Terms & Disclaimers',
-    path: '/docs/terms',
-    icon: '⚖️'
-  }, {
-    title: 'Website',
-    path: 'https://dehub.io/',
-    icon: '🌐',
-    external: true
-  }, {
-    title: 'App',
-    path: 'https://dehub.io/d',
-    icon: '👤',
-    external: true
-  }, {
-    title: 'X',
-    path: 'https://x.com/dehub_official',
-    icon: '/lovable-uploads/4c5f32a0-dc0b-4846-a78d-cd3381206fa9.png',
-    external: true,
-    isImage: true
-  }, {
-    title: 'Instagram',
-    path: 'https://www.instagram.com/dehub_official/',
-    icon: '/lovable-uploads/3fb7f494-e111-4949-b66d-9269f163c74e.png',
-    external: true,
-    isImage: true
-  }, {
-    title: 'GitHub',
-    path: 'https://github.com/dehubtoken',
-    icon: '/lovable-uploads/b39e5777-ed91-489c-a58a-3639ea5bf3bc.png',
-    external: true,
-    isImage: true
-  }]
-}];
+    title: 'Key Links',
+    items: [{
+      title: 'Terms & Disclaimers',
+      path: '/docs/terms',
+      icon: '⚖️'
+    }, {
+      title: 'Website',
+      path: 'https://dehub.io/',
+      icon: '🌐',
+      external: true
+    }, {
+      title: 'App',
+      path: 'https://dehub.io/d',
+      icon: '/lovable-uploads/ca557554-cea2-41f1-8139-d456861beacb.png',
+      external: true,
+      isImage: true
+    }, {
+      title: 'X',
+      path: 'https://x.com/dehub_official',
+      icon: '/lovable-uploads/4c5f32a0-dc0b-4846-a78d-cd3381206fa9.png',
+      external: true,
+      isImage: true
+    }, {
+      title: 'Instagram',
+      path: 'https://www.instagram.com/dehub_official/',
+      icon: '/lovable-uploads/3fb7f494-e111-4949-b66d-9269f163c74e.png',
+      external: true,
+      isImage: true
+    }, {
+      title: 'GitHub',
+      path: 'https://github.com/dehubtoken',
+      icon: '/lovable-uploads/b39e5777-ed91-489c-a58a-3639ea5bf3bc.png',
+      external: true,
+      isImage: true
+    }]
+  }
+];
 
 export const DocsLayout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
