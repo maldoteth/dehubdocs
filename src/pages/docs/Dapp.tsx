@@ -98,6 +98,15 @@ const Dapp = () => {
 
         <section>
           <h2 className="text-2xl font-semibold text-slate-800 mb-4">Explore your feed, the leaderboard charts and 24/7 community live chat forum</h2>
+          
+          <div className="my-6">
+            <img 
+              src="/lovable-uploads/e66cc5a1-ea1a-4e5b-8760-490c174f0b24.png" 
+              alt="DeHub streaming platform interface showing content feed with trending topics and creator leaderboard" 
+              className="w-full rounded-lg border border-slate-200 shadow-sm"
+            />
+          </div>
+          
           <p className="text-slate-700 leading-relaxed mb-4">
             Search bars aggregate YouTube and other major streaming app APIs to save you juggling multiple apps, while the explore page also houses our live community chat and dedicated leaderboards for:
           </p>
