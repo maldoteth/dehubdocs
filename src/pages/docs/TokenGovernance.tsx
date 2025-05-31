@@ -67,7 +67,7 @@ const TokenGovernance = () => {
           </p>
           <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
             <p className="text-blue-800 font-medium">
-              DeHub's governance protocol is set to launch officially in early 2023.
+              DeHub's governance protocol is set to launch officially in early 2026.
             </p>
             <p className="text-blue-700 mt-2">Stay tuned for more...</p>
           </div>
