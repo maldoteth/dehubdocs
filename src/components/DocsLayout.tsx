@@ -12,7 +12,7 @@ const menuItems = [{
     path: '/docs/overview',
     icon: '📋'
   }, {
-    title: 'Dapps',
+    title: 'Dapp',
     path: '/docs/dapps',
     icon: '🖥️',
     hasSubmenu: true
