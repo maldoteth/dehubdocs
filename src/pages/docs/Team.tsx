@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -22,8 +23,8 @@ const teamMembers = [
       "NEBOSH qualified and trained HSE consultant"
     ],
     socials: [
-      { platform: 'LinkedIn', url: '#' },
-      { platform: 'X', url: '#' }
+      { platform: 'LinkedIn', url: 'https://uk.linkedin.com/in/malik-jan-turkistani-842b4b195' },
+      { platform: 'X', url: 'https://x.com/maldoteth' }
     ],
     initials: 'MJ',
     photo: '/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png'
