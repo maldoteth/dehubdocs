@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 const TippingFlowchart = () => {
   const tippingTiers = [
     { 
-      threshold: "1-1,000", 
+      threshold: "0-1,000", 
       effect: "No Live Display", 
       description: "No visual effects on screen"
     },
