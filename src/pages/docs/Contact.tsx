@@ -8,7 +8,7 @@ const Contact = () => {
     {
       title: 'Telegram',
       description: 'Join our Telegram community',
-      link: 'https://t.me/dehubportal',
+      link: 'https://t.me/portal',
       icon: Send,
       color: 'from-sky-blue to-middle-blue'
     },
