@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, MessageCircle, Users, Send } from 'lucide-react';
+import { Mail, MessageCircle, Send } from 'lucide-react';
 
 const Contact = () => {
   const contactOptions = [
@@ -16,7 +16,7 @@ const Contact = () => {
       title: 'Discord',
       description: 'Connect with us on Discord',
       link: 'https://discord.gg/dehub',
-      icon: Users,
+      iconImage: '/lovable-uploads/71547e53-6be8-428a-b088-3c07a9c9a1ff.png',
       color: 'from-middle-blue to-royal-blue'
     },
     {
@@ -71,7 +71,11 @@ const Contact = () => {
               <Card className="border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
                 <CardContent className="p-6 text-center">
                   <div className={`w-16 h-16 bg-gradient-to-r ${option.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                    <option.icon className="w-8 h-8 text-plain-white" />
+                    {option.iconImage ? (
+                      <img src={option.iconImage} alt={option.title} className="w-8 h-8" />
+                    ) : (
+                      <option.icon className="w-8 h-8 text-plain-white" />
+                    )}
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{option.title}</h3>
                   <p className="text-royal-blue/70 text-sm font-exo">{option.description}</p>
