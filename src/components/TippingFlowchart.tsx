@@ -4,14 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 const TippingFlowchart = () => {
   const tippingTiers = [
-    { amount: "1-10", effect: "Sparks", color: "bg-green-500", description: "Basic sparkle effects and simple animations" },
-    { amount: "11-50", effect: "Confetti", color: "bg-blue-500", description: "Colorful confetti burst across the screen" },
-    { amount: "51-100", effect: "Fireworks", color: "bg-purple-500", description: "Animated firework display with sound effects" },
-    { amount: "101-500", effect: "Hearts", color: "bg-pink-500", description: "Floating heart animations with music" },
-    { amount: "501-1000", effect: "Lightning", color: "bg-yellow-500", description: "Electric lightning effects across the screen" },
-    { amount: "1001-5000", effect: "Galaxy", color: "bg-indigo-500", description: "Cosmic galaxy animation with space themes" },
-    { amount: "5001-10000", effect: "Dragon", color: "bg-red-500", description: "Mythical dragon animation with epic effects" },
-    { amount: "10001+", effect: "Ultimate", color: "bg-gray-900", description: "Maximum tier with custom premium effects" }
+    { amount: "10-50", effect: "Sparks", color: "bg-green-500", description: "Basic sparkle effects and simple animations" },
+    { amount: "51-100", effect: "Confetti", color: "bg-blue-500", description: "Colorful confetti burst across the screen" },
+    { amount: "101-500", effect: "Fireworks", color: "bg-purple-500", description: "Animated firework display with sound effects" },
+    { amount: "501-1000", effect: "Hearts", color: "bg-pink-500", description: "Floating heart animations with music" },
+    { amount: "1001-5000", effect: "Lightning", color: "bg-yellow-500", description: "Electric lightning effects across the screen" },
+    { amount: "5001-10000", effect: "Galaxy", color: "bg-indigo-500", description: "Cosmic galaxy animation with space themes" },
+    { amount: "10001+", effect: "Ultimate", color: "bg-red-500", description: "Maximum tier with custom premium effects" }
   ];
 
   return (
