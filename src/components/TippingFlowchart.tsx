@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 const TippingFlowchart = () => {
   const tippingTiers = [
     { 
-      threshold: "0-1,000", 
+      threshold: "0", 
       effect: "No Live Display", 
       description: "No visual effects on screen"
     },
@@ -37,7 +36,7 @@ const TippingFlowchart = () => {
     { 
       threshold: "100,000-199,999", 
       effect: "Magic Ring Emoji Pops up on screen", 
-      description: "Magic ring emoji appears on stream"
+      description: "Magic ring emoji appears on screen"
     },
     { 
       threshold: "200,000-299,999", 
