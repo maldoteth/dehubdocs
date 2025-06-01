@@ -5,12 +5,13 @@ const ModerationFlowchart = () => {
   return (
     <div className="my-8 p-8 bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl border border-slate-200">
       <div className="flex flex-col items-center space-y-6 max-w-4xl mx-auto">
+        
         {/* Creator uploads video */}
         <div className="bg-royal-blue text-white px-8 py-4 rounded-xl text-center font-medium shadow-lg">
           Creator uploads video
         </div>
         
-        {/* Arrow down */}
+        {/* Vertical line */}
         <div className="w-px h-8 bg-slate-400"></div>
         
         {/* Viewer clicks to vote */}
@@ -18,21 +19,17 @@ const ModerationFlowchart = () => {
           Viewer clicks to vote
         </div>
         
-        {/* Arrow down */}
+        {/* Vertical line */}
         <div className="w-px h-8 bg-slate-400"></div>
         
-        {/* Main flow with side branches */}
-        <div className="relative flex items-start justify-center w-full">
-          {/* Left side - Video removed outcome */}
-          <div className="absolute left-0 top-12">
+        {/* Moderator? decision point with side branches */}
+        <div className="relative w-full flex justify-center">
+          {/* Left branch - Video removed */}
+          <div className="absolute left-8 top-0 flex items-center">
             <div className="bg-red-500 text-white px-6 py-3 rounded-xl text-center font-medium shadow-lg">
               Video removed
             </div>
-          </div>
-          
-          {/* Left side arrow and Yes label */}
-          <div className="absolute left-32 top-16 flex items-center">
-            <div className="w-16 h-px bg-slate-400"></div>
+            <div className="w-16 h-px bg-slate-400 ml-4"></div>
             <span className="text-sm font-medium text-slate-700 ml-2">Yes</span>
           </div>
           
@@ -42,24 +39,20 @@ const ModerationFlowchart = () => {
           </div>
         </div>
         
-        {/* Arrow down with No label */}
+        {/* No branch down */}
         <div className="flex flex-col items-center">
           <span className="text-sm font-medium text-slate-700 mb-2">No</span>
           <div className="w-px h-6 bg-slate-400"></div>
         </div>
         
-        {/* Second decision with side branch */}
-        <div className="relative flex items-start justify-center w-full">
-          {/* Left side - Vote unavailable */}
-          <div className="absolute left-0 top-12">
+        {/* Staking DeHub? decision point with side branches */}
+        <div className="relative w-full flex justify-center">
+          {/* Left branch - Vote unavailable */}
+          <div className="absolute left-8 top-0 flex items-center">
             <div className="bg-purple-500 text-white px-6 py-3 rounded-xl text-center font-medium shadow-lg">
               Vote unavailable
             </div>
-          </div>
-          
-          {/* Left side arrow and No label */}
-          <div className="absolute left-32 top-16 flex items-center">
-            <div className="w-16 h-px bg-slate-400"></div>
+            <div className="w-16 h-px bg-slate-400 ml-4"></div>
             <span className="text-sm font-medium text-slate-700 ml-2">No</span>
           </div>
           
@@ -69,24 +62,20 @@ const ModerationFlowchart = () => {
           </div>
         </div>
         
-        {/* Arrow down with Yes label */}
+        {/* Yes branch down */}
         <div className="flex flex-col items-center">
           <span className="text-sm font-medium text-slate-700 mb-2">Yes</span>
           <div className="w-px h-6 bg-slate-400"></div>
         </div>
         
-        {/* Third decision with side branch */}
-        <div className="relative flex items-start justify-center w-full">
-          {/* Left side - Video removed */}
-          <div className="absolute left-0 top-12">
+        {/* Over 50m? decision point with side branches */}
+        <div className="relative w-full flex justify-center">
+          {/* Left branch - Video removed */}
+          <div className="absolute left-8 top-0 flex items-center">
             <div className="bg-red-500 text-white px-6 py-3 rounded-xl text-center font-medium shadow-lg">
               Video removed
             </div>
-          </div>
-          
-          {/* Left side arrow and Yes label */}
-          <div className="absolute left-32 top-16 flex items-center">
-            <div className="w-16 h-px bg-slate-400"></div>
+            <div className="w-16 h-px bg-slate-400 ml-4"></div>
             <span className="text-sm font-medium text-slate-700 ml-2">Yes</span>
           </div>
           
@@ -96,7 +85,7 @@ const ModerationFlowchart = () => {
           </div>
         </div>
         
-        {/* Arrow down with No label */}
+        {/* No branch down */}
         <div className="flex flex-col items-center">
           <span className="text-sm font-medium text-slate-700 mb-2">No</span>
           <div className="w-px h-6 bg-slate-400"></div>
@@ -107,7 +96,7 @@ const ModerationFlowchart = () => {
           Staking weight<br />calculator
         </div>
         
-        {/* Arrow down */}
+        {/* Vertical line */}
         <div className="w-px h-8 bg-slate-400"></div>
         
         {/* Vote Registered */}
@@ -115,21 +104,17 @@ const ModerationFlowchart = () => {
           Vote Registered
         </div>
         
-        {/* Arrow down */}
+        {/* Vertical line */}
         <div className="w-px h-8 bg-slate-400"></div>
         
-        {/* Final decision with side branch */}
-        <div className="relative flex items-start justify-center w-full">
-          {/* Left side - Bounty and Ad revenue shared */}
-          <div className="absolute left-0 top-12">
+        {/* 90% cancel rate decision point with side branch */}
+        <div className="relative w-full flex justify-center">
+          {/* Left branch - Bounty and Ad revenue shared */}
+          <div className="absolute left-0 top-0 flex items-center">
             <div className="bg-royal-blue text-white px-6 py-3 rounded-xl text-center font-medium shadow-lg max-w-48">
               Bounty and Ad revenue shared between all voting wallets
             </div>
-          </div>
-          
-          {/* Left side connecting line */}
-          <div className="absolute left-48 top-16">
-            <div className="w-16 h-px bg-slate-400"></div>
+            <div className="w-16 h-px bg-slate-400 ml-4"></div>
           </div>
           
           {/* Center - 90% cancel rate after 1000 views? */}
@@ -138,7 +123,7 @@ const ModerationFlowchart = () => {
           </div>
         </div>
         
-        {/* Arrow down with No label */}
+        {/* No branch down */}
         <div className="flex flex-col items-center">
           <span className="text-sm font-medium text-slate-700 mb-2">No</span>
           <div className="w-px h-6 bg-slate-400"></div>
@@ -149,19 +134,21 @@ const ModerationFlowchart = () => {
           Video remains live
         </div>
         
-        {/* Connecting line from bounty to video removed */}
-        <div className="relative w-full flex justify-center mt-8">
-          <div className="absolute left-24 top-0">
-            <div className="w-px h-12 bg-slate-400"></div>
-            <div className="w-32 h-px bg-slate-400"></div>
-            <div className="absolute left-32 -top-12">
-              <div className="w-px h-12 bg-slate-400"></div>
+        {/* Connecting line from bounty box down and across to Video removed */}
+        <div className="relative w-full mt-8">
+          <div className="flex justify-center">
+            <div className="bg-red-500 text-white px-8 py-4 rounded-xl text-center font-medium shadow-lg">
+              Video removed
             </div>
           </div>
           
-          {/* Video removed (final) */}
-          <div className="bg-red-500 text-white px-8 py-4 rounded-xl text-center font-medium shadow-lg">
-            Video removed
+          {/* L-shaped connector from bounty box to final video removed */}
+          <div className="absolute left-24 -top-32">
+            <div className="w-px h-24 bg-slate-400"></div>
+            <div className="w-80 h-px bg-slate-400"></div>
+            <div className="absolute left-80 top-0">
+              <div className="w-px h-32 bg-slate-400"></div>
+            </div>
           </div>
         </div>
       </div>
