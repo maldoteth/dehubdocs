@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, MessageCircle, Send, Users } from 'lucide-react';
@@ -62,14 +61,14 @@ const Contact = () => {
       color: 'from-middle-blue to-royal-blue'
     },
     {
-      title: 'Holders Channel',
+      title: 'Holders',
       description: 'Exclusive channel for token holders',
       link: 'https://t.me/c/2488788799/1/10563',
       icon: Users,
       color: 'from-royal-blue to-sky-blue'
     },
     {
-      title: 'Whales Channel',
+      title: 'Whales',
       description: 'Channel for large holders and whales',
       link: 'https://t.me/c/2488788799/1/10563',
       icon: Users,
