@@ -1,6 +1,7 @@
+
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Book, ChevronRight, Menu, X, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
+import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { SearchProvider, useSearch } from '@/contexts/SearchContext';
 import { SearchDialog } from '@/components/SearchDialog';
@@ -163,6 +164,7 @@ const DocsLayoutContent = () => {
   };
 
   return <div className="min-h-screen bg-gradient-to-br from-sky-blue/10 to-middle-blue/10">
+      <SearchDialog />
       
       {/* Header */}
       <header className="bg-plain-white/90 backdrop-blur-sm border-b border-sky-blue/20 sticky top-0 z-40">
@@ -181,7 +183,18 @@ const DocsLayoutContent = () => {
             <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
           </Link>
           
-          
+          <div className="flex items-center space-x-4">
+            <button onClick={handleSearchClick} className="relative hidden md:flex items-center px-4 py-2 bg-sky-blue/10 border border-sky-blue/30 rounded-lg hover:bg-sky-blue/20 transition-colors w-64 text-left">
+              <Search className="w-4 h-4 text-royal-blue/60 mr-3" />
+              <span className="text-royal-blue/60 text-sm">Search docs...</span>
+              <kbd className="ml-auto text-xs text-royal-blue/50 bg-sky-blue/20 px-2 py-1 rounded">
+                ⌘K
+              </kbd>
+            </button>
+            <button onClick={handleSearchClick} className="md:hidden p-2 rounded-md hover:bg-sky-blue/10 transition-colors">
+              <Search className="w-5 h-5 text-royal-blue" />
+            </button>
+          </div>
         </div>
       </header>
 
@@ -271,5 +284,7 @@ const DocsLayoutContent = () => {
 };
 
 export const DocsLayout = () => {
-  return <DocsLayoutContent />;
+  return <SearchProvider>
+      <DocsLayoutContent />
+    </SearchProvider>;
 };
