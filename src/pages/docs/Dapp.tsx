@@ -1,20 +1,13 @@
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
-import ModerationFlowchart from '../../components/ModerationFlowchart';
-
 const Dapp = () => {
-  return (
-    <div className="prose prose-slate max-w-none">
+  return <div className="prose prose-slate max-w-none">
       <h1 className="text-4xl font-bold text-slate-800 mb-8">Stream</h1>
       <p className="text-xl text-slate-600 mb-8">A user centric streaming protocol designed to empower creators and viewers simultaneously</p>
       
       <div className="my-6">
-        <img 
-          src="/lovable-uploads/d06e2852-219e-4946-960f-0830ebb81716.png" 
-          alt="DeHub Games streaming platform interface showing video content grid with leaderboard" 
-          className="w-full rounded-lg border border-slate-200 shadow-sm"
-        />
+        <img src="/lovable-uploads/d06e2852-219e-4946-960f-0830ebb81716.png" alt="DeHub Games streaming platform interface showing video content grid with leaderboard" className="w-full rounded-lg border border-slate-200 shadow-sm" />
       </div>
       
       <div className="space-y-8">
@@ -48,19 +41,11 @@ const Dapp = () => {
           <h2 className="text-2xl font-semibold text-slate-800 mb-4">Content uploading page</h2>
           
           <div className="my-6">
-            <img 
-              src="/lovable-uploads/c6d5f1cc-f829-445e-8a5d-c5ea9fa4c720.png" 
-              alt="Content uploading interface showing video info form and upload preview" 
-              className="w-full rounded-lg border border-slate-200 shadow-sm"
-            />
+            <img src="/lovable-uploads/c6d5f1cc-f829-445e-8a5d-c5ea9fa4c720.png" alt="Content uploading interface showing video info form and upload preview" className="w-full rounded-lg border border-slate-200 shadow-sm" />
           </div>
           
           <div className="my-6">
-            <img 
-              src="/lovable-uploads/3f101ce6-83a6-435b-8a41-58668a7fdb53.png" 
-              alt="Upload settings interface showing Lock Content, Pay Per View, Watch2Earn, and Add Subscription options" 
-              className="w-full rounded-lg border border-slate-200 shadow-sm"
-            />
+            <img src="/lovable-uploads/3f101ce6-83a6-435b-8a41-58668a7fdb53.png" alt="Upload settings interface showing Lock Content, Pay Per View, Watch2Earn, and Add Subscription options" className="w-full rounded-lg border border-slate-200 shadow-sm" />
           </div>
 
           <p className="text-slate-700 leading-relaxed mb-4">
@@ -90,11 +75,7 @@ const Dapp = () => {
           </p>
           
           <div className="my-6">
-            <img 
-              src="/lovable-uploads/05231fa1-3aa1-4ba6-973c-775c8e39c297.png" 
-              alt="User profile interface showing customizable profile settings and follower management" 
-              className="w-full rounded-lg border border-slate-200 shadow-sm"
-            />
+            <img src="/lovable-uploads/05231fa1-3aa1-4ba6-973c-775c8e39c297.png" alt="User profile interface showing customizable profile settings and follower management" className="w-full rounded-lg border border-slate-200 shadow-sm" />
           </div>
         </section>
 
@@ -126,11 +107,7 @@ const Dapp = () => {
         </section>
 
         <div className="my-6">
-          <img 
-            src="/lovable-uploads/e66cc5a1-ea1a-4e5b-8760-490c174f0b24.png" 
-            alt="DeHub streaming platform interface showing content feed with trending topics and creator leaderboard" 
-            className="w-full rounded-lg border border-slate-200 shadow-sm"
-          />
+          <img src="/lovable-uploads/e66cc5a1-ea1a-4e5b-8760-490c174f0b24.png" alt="DeHub streaming platform interface showing content feed with trending topics and creator leaderboard" className="w-full rounded-lg border border-slate-200 shadow-sm" />
         </div>
 
         <section>
@@ -160,11 +137,6 @@ const Dapp = () => {
           <h2 className="text-2xl font-semibold text-slate-800 mb-4">Decentralised Moderation Mining</h2>
           <h3 className="text-xl font-medium text-slate-800 mb-3">Decentralised moderation mining and revenue share model</h3>
           
-          <ModerationFlowchart />
-          
-          <p className="text-slate-700 leading-relaxed mb-4">
-            In order to keep the streaming app clean, we've invented the above model that incentivises good actors and empowers users of the d'app to determine what should and shouldn't be on the platform, barring the unlawful.
-          </p>
           
           <p className="text-slate-700 leading-relaxed mb-4">
             Only a few wallets hold over 50m $DHB tokens, of which most are operational wallets, with the remaining being known community members.
@@ -274,8 +246,6 @@ const Dapp = () => {
           </ul>
         </section>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Dapp;
