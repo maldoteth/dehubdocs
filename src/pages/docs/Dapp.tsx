@@ -1,7 +1,6 @@
+
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
-import TippingFlowchart from '../../components/TippingFlowchart';
-import ModerationFlowchart from '../../components/ModerationFlowchart';
 
 const Dapp = () => {
   return (
@@ -149,11 +148,9 @@ const Dapp = () => {
             Our Integrated tipping services across all uploads and live streams only come with a 10% fee, compared to the usual 60% charged by the likes of TikTok and other industry leaders while also having the ability to vote on video cancellations putting the power back into the viewer's hands.
           </p>
           
-          <p className="text-slate-700 leading-relaxed mb-6">
+          <p className="text-slate-700 leading-relaxed">
             Tips received for creators and tips given by viewers are logged in separate leaderboards along with viewer counts and subscribers that determine shares in ad revenue. Stakeholders of DeHub tokens receive their proportionate shares of overall protocol profit.
           </p>
-          
-          <TippingFlowchart />
         </section>
 
         <section>
@@ -171,11 +168,9 @@ const Dapp = () => {
             Only the core team or significant investors will have the power to instantly remove a video by burning the NFT associated. Subsequently, all the ad revenue generated and any play to earn bounties strapped to the video will be shared with all voting wallets to further deter bad actors and incentivise an engaged community.
           </p>
           
-          <p className="text-sm italic text-slate-600 mb-6">
+          <p className="text-sm italic text-slate-600">
             *Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.
           </p>
-          
-          <ModerationFlowchart />
         </section>
 
         <section>
