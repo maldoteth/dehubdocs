@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
@@ -9,7 +10,7 @@ const TippingFlowchart = () => {
       description: "No visual effects on screen"
     },
     { 
-      threshold: "17-999", 
+      threshold: "1-999", 
       effect: "Rose Emoji Pop up on screen", 
       description: "Rose emoji appears on stream"
     },
