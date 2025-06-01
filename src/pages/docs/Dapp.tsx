@@ -1,7 +1,6 @@
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
-import ModerationFlowchart from '../../components/ModerationFlowchart';
 
 const Dapp = () => {
   return (
@@ -159,9 +158,6 @@ const Dapp = () => {
         <section>
           <h2 className="text-2xl font-semibold text-slate-800 mb-4">Decentralised Moderation Mining</h2>
           <h3 className="text-xl font-medium text-slate-800 mb-3">Decentralised moderation mining and revenue share model</h3>
-          
-          <ModerationFlowchart />
-          
           <p className="text-slate-700 leading-relaxed mb-4">
             In order to keep the streaming app clean, we've invented the above model that incentivises good actors and empowers users of the d'app to determine what should and shouldn't be on the platform, barring the unlawful.
           </p>
