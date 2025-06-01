@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
@@ -152,7 +153,7 @@ const DocsLayoutContent = () => {
               <Menu className="w-5 h-5 text-royal-blue" />
             </button>
             <Link to="/docs" className="flex items-center space-x-3 font-bold text-xl text-royal-blue">
-              <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-8 h-8" />
+              <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
               <span>Docs</span>
             </Link>
           </div>
