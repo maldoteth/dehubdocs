@@ -35,8 +35,8 @@ const Games = () => {
         <Tabs defaultValue="upcoming" className="w-full">
           <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="upcoming">Upcoming</TabsTrigger>
-            <TabsTrigger value="released">Titles Released</TabsTrigger>
-            <TabsTrigger value="features">Key Features</TabsTrigger>
+            <TabsTrigger value="released">Released</TabsTrigger>
+            <TabsTrigger value="features">Features</TabsTrigger>
           </TabsList>
 
           <TabsContent value="upcoming" className="space-y-6">
