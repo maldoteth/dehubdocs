@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, MessageCircle, Send, Users } from 'lucide-react';
@@ -44,6 +42,37 @@ const Contact = () => {
       title: 'Human Resources',
       email: 'hr@dehub.net',
       description: 'For career opportunities and HR matters'
+    }
+  ];
+
+  const communityChannels = [
+    {
+      title: 'Turkish Community',
+      description: 'Join our Turkish speaking community',
+      link: 'https://t.me/Dehub_Turkish',
+      icon: Send,
+      color: 'from-sky-blue to-middle-blue'
+    },
+    {
+      title: 'Arabic Community',
+      description: 'Join our Arabic speaking community',
+      link: 'https://t.me/Dehub_Arabic',
+      icon: Send,
+      color: 'from-middle-blue to-royal-blue'
+    },
+    {
+      title: 'Holders Channel',
+      description: 'Exclusive channel for token holders',
+      link: 'https://t.me/c/2488788799/1/10563',
+      icon: Users,
+      color: 'from-royal-blue to-sky-blue'
+    },
+    {
+      title: 'Whales Channel',
+      description: 'Channel for large holders and whales',
+      link: 'https://t.me/c/2488788799/1/10563',
+      icon: Users,
+      color: 'from-sky-blue to-royal-blue'
     }
   ];
 
@@ -113,6 +142,32 @@ const Contact = () => {
         </div>
       </div>
 
+      {/* Community Channels */}
+      <div className="space-y-6">
+        <h2 className="text-2xl font-bold text-royal-blue font-exo">Community Channels</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {communityChannels.map((channel) => (
+            <a
+              key={channel.title}
+              href={channel.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block"
+            >
+              <Card className="border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+                <CardContent className="p-6 text-center">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${channel.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                    <channel.icon className="w-8 h-8 text-plain-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{channel.title}</h3>
+                  <p className="text-royal-blue/70 text-sm font-exo">{channel.description}</p>
+                </CardContent>
+              </Card>
+            </a>
+          ))}
+        </div>
+      </div>
+
       {/* Additional Info */}
       <Card className="bg-gradient-to-r from-royal-blue to-middle-blue border-0">
         <CardContent className="p-8 text-center">
@@ -147,4 +202,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
