@@ -5,79 +5,61 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 const TippingFlowchart = () => {
   const tippingTiers = [
     { 
-      threshold: "1-16", 
-      effect: "No Live Display", 
-      description: "No visual effects on screen"
+      threshold: "1-1,000", 
+      effect: "Sparks", 
+      description: "Spark effects appear on stream"
     },
     { 
-      threshold: "17-999", 
-      effect: "Rose Emoji Pop up on screen", 
-      description: "Rose emoji appears on stream"
+      threshold: "1,001-10,000", 
+      effect: "Confetti", 
+      description: "Confetti animation plays"
     },
     { 
-      threshold: "1,000-9,999", 
-      effect: "Love Heart Emoji Pop up on screen", 
-      description: "Love heart emoji appears on stream"
+      threshold: "10,001-25,000", 
+      effect: "Fireworks", 
+      description: "Fireworks animation displays"
     },
     { 
-      threshold: "10,000-24,999", 
-      effect: "Box of Chocolate Emoji Pops Up on Screen", 
-      description: "Chocolate box emoji appears on stream"
+      threshold: "25,001-50,000", 
+      effect: "Hearts", 
+      description: "Heart animations appear"
     },
     { 
-      threshold: "25,000-49,999", 
-      effect: "Bouquet of Flowers Emoji Pops up on screen", 
-      description: "Flower bouquet emoji appears on stream"
+      threshold: "50,001-100,000", 
+      effect: "Stars", 
+      description: "Star effects play"
     },
     { 
-      threshold: "50,000-99,999", 
-      effect: "Crown Emoji Pops up on screen", 
-      description: "Crown emoji appears on stream"
+      threshold: "100,001-250,000", 
+      effect: "Flowers", 
+      description: "Flower animations display"
     },
     { 
-      threshold: "100,000-199,999", 
-      effect: "Magic Ring Emoji Pops up on screen", 
-      description: "Magic ring emoji appears on stream"
+      threshold: "250,001-500,000", 
+      effect: "Diamonds", 
+      description: "Diamond effects appear"
     },
     { 
-      threshold: "200,000-299,999", 
-      effect: "Spartans army run on screen", 
-      description: "Spartan army animation plays"
+      threshold: "500,001-1,000,000", 
+      effect: "Crown", 
+      description: "Crown animation plays"
     },
     { 
-      threshold: "300,000-499,999", 
-      effect: "Party starts, confetti flies, disco balls spin", 
-      description: "Full party animation with confetti and disco balls"
-    },
-    { 
-      threshold: "500,000-749,999", 
-      effect: "Screen goes gold and coins drop from sky with sirens (3 seconds)", 
-      description: "Golden screen effect with falling coins and siren sounds"
-    },
-    { 
-      threshold: "750,000-999,999", 
-      effect: "Screen goes gold and coins drop from sky with sirens (10 seconds)", 
-      description: "Extended golden screen effect with falling coins and siren sounds"
-    },
-    { 
-      threshold: "1,000,000+", 
-      effect: "All previous emojis together with extra confetti and party music", 
-      description: "Ultimate celebration with all effects combined plus extra confetti and party music"
+      threshold: "1,000,001+", 
+      effect: "Ultimate", 
+      description: "All effects combined with special celebration"
     }
   ];
 
   const getColorForTier = (index: number) => {
     const colors = [
-      "bg-gray-400",
-      "bg-pink-400", 
+      "bg-yellow-400",
+      "bg-green-500", 
+      "bg-blue-500",
       "bg-red-500",
-      "bg-amber-600",
       "bg-purple-500",
-      "bg-yellow-500",
-      "bg-blue-600",
-      "bg-red-600",
-      "bg-purple-600",
-      "bg-yellow-600",
+      "bg-pink-500",
+      "bg-indigo-500",
       "bg-orange-500",
       "bg-gradient-to-r from-purple-500 to-pink-500"
     ];
