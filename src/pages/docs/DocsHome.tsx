@@ -63,7 +63,7 @@ const DocsHome = () => {
     },
     {
       icon: Users,
-      title: 'Budding Community',
+      title: 'Community',
       description: 'An established and supportive community here since 2021'
     }
   ];
