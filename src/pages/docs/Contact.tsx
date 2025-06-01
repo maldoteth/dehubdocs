@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, MessageCircle, Send, Users } from 'lucide-react';
@@ -117,7 +118,7 @@ const Contact = () => {
         <CardContent className="p-8 text-center">
           <h3 className="text-2xl font-bold text-plain-white mb-4 font-exo">Need Help?</h3>
           <p className="text-sky-blue/90 mb-6 font-exo">
-            Our community is active and ready to help. Join our Telegram or Discord for real-time support and discussions.
+            Join our community for real-time support and discussions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -146,3 +147,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
