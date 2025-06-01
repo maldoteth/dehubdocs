@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, MessageCircle, Send } from 'lucide-react';
+import { Mail, MessageCircle, Send, Users } from 'lucide-react';
 
 const Contact = () => {
   const contactOptions = [
@@ -121,7 +120,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://t.me/dehubportal"
+              href="https://t.me/portal"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo"
