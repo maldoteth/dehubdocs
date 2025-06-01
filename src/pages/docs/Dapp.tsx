@@ -1,6 +1,6 @@
-
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
+import TippingFlowchart from '../../components/TippingFlowchart';
 
 const Dapp = () => {
   return (
@@ -148,9 +148,11 @@ const Dapp = () => {
             Our Integrated tipping services across all uploads and live streams only come with a 10% fee, compared to the usual 60% charged by the likes of TikTok and other industry leaders while also having the ability to vote on video cancellations putting the power back into the viewer's hands.
           </p>
           
-          <p className="text-slate-700 leading-relaxed">
+          <p className="text-slate-700 leading-relaxed mb-6">
             Tips received for creators and tips given by viewers are logged in separate leaderboards along with viewer counts and subscribers that determine shares in ad revenue. Stakeholders of DeHub tokens receive their proportionate shares of overall protocol profit.
           </p>
+          
+          <TippingFlowchart />
         </section>
 
         <section>
