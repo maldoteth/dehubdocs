@@ -152,11 +152,6 @@ const DocsLayoutContent = () => {
             </Link>
           </div>
           
-          {/* Center Logo */}
-          <div className="flex-1 flex justify-center">
-            <img src="/lovable-uploads/4b8ed8f7-174f-4219-902c-34ab75457ba2.png" alt="DeHub Center Logo" className="w-6 h-6" />
-          </div>
-          
           <div className="flex items-center space-x-4">
             <button onClick={handleSearchClick} className="relative hidden md:flex items-center px-4 py-2 bg-sky-blue/10 border border-sky-blue/30 rounded-lg hover:bg-sky-blue/20 transition-colors w-64 text-left">
               <Search className="w-4 h-4 text-royal-blue/60 mr-3" />
