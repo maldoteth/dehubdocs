@@ -4,7 +4,6 @@ import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Da
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { SearchProvider, useSearch } from '@/contexts/SearchContext';
 import { SearchDialog } from '@/components/SearchDialog';
-
 const menuItems = [{
   title: 'Main',
   items: [{
@@ -114,7 +113,6 @@ const menuItems = [{
     icon: '⚖️'
   }]
 }];
-
 const DocsLayoutContent = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [expandedMenus, setExpandedMenus] = useState<{
@@ -141,35 +139,7 @@ const DocsLayoutContent = () => {
       
       {/* Header */}
       <header className="bg-plain-white/90 backdrop-blur-sm border-b border-sky-blue/20 sticky top-0 z-40">
-        <div className="flex items-center justify-between px-4 h-16">
-          <div className="flex items-center space-x-4">
-            <button onClick={() => setSidebarOpen(!sidebarOpen)} className="lg:hidden p-2 rounded-md hover:bg-sky-blue/10 transition-colors">
-              <Menu className="w-5 h-5 text-royal-blue" />
-            </button>
-            <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-royal-blue">
-              <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
-              <span>Docs</span>
-            </Link>
-          </div>
-          
-          {/* Center Logo */}
-          <div className="flex-1 flex justify-center">
-            <img src="/lovable-uploads/4b8ed8f7-174f-4219-902c-34ab75457ba2.png" alt="DeHub Center Logo" className="w-6 h-6" />
-          </div>
-          
-          <div className="flex items-center space-x-4">
-            <button onClick={handleSearchClick} className="relative hidden md:flex items-center px-4 py-2 bg-sky-blue/10 border border-sky-blue/30 rounded-lg hover:bg-sky-blue/20 transition-colors w-64 text-left">
-              <Search className="w-4 h-4 text-royal-blue/60 mr-3" />
-              <span className="text-royal-blue/60 text-sm">Search docs...</span>
-              <kbd className="ml-auto text-xs text-royal-blue/50 bg-sky-blue/20 px-2 py-1 rounded">
-                ⌘K
-              </kbd>
-            </button>
-            <button onClick={handleSearchClick} className="md:hidden p-2 rounded-md hover:bg-sky-blue/10 transition-colors">
-              <Search className="w-5 h-5 text-royal-blue" />
-            </button>
-          </div>
-        </div>
+        
       </header>
 
       <div className="flex">
@@ -247,7 +217,6 @@ const DocsLayoutContent = () => {
       </div>
     </div>;
 };
-
 export const DocsLayout = () => {
   return <SearchProvider>
       <DocsLayoutContent />
