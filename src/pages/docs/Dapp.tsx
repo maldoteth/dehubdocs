@@ -1,6 +1,7 @@
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
+import ModerationFlowchart from '../../components/ModerationFlowchart';
 
 const Dapp = () => {
   return (
@@ -170,9 +171,11 @@ const Dapp = () => {
             Only the core team or significant investors will have the power to instantly remove a video by burning the NFT associated. Subsequently, all the ad revenue generated and any play to earn bounties strapped to the video will be shared with all voting wallets to further deter bad actors and incentivise an engaged community.
           </p>
           
-          <p className="text-sm italic text-slate-600">
+          <p className="text-sm italic text-slate-600 mb-6">
             *Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.
           </p>
+          
+          <ModerationFlowchart />
         </section>
 
         <section>
