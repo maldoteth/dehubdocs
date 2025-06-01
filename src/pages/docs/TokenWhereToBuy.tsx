@@ -1,11 +1,12 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink } from 'lucide-react';
 
 const TokenWhereToBuy = () => {
   const exchanges = [
-    { name: "Uniswap", network: "Base", url: "https://uniswap.org" },
-    { name: "Pancakeswap / Marketplace", network: "BNB", url: "https://pancakeswap.finance" }
+    { name: "Uniswap", network: "Base", url: "https://app.uniswap.org/explore/tokens/base/0xd20ab1015f6a2de4a6fddebab270113f689c2f7c" },
+    { name: "Pancakeswap / Marketplace", network: "BNB", url: "https://pancakeswap.finance/swap?inputCurrency=0x680d3113caf77b61b510f332d5ef4cf5b41a761d&outputCurrency=0x55d398326f99059ff775485246999027b3197955&ref=coingecko&user=Coingecko&discount=0&perps=false" }
   ];
 
   return (
@@ -21,13 +22,19 @@ const TokenWhereToBuy = () => {
         <CardContent>
           <div className="space-y-4">
             {exchanges.map((exchange, index) => (
-              <div key={index} className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border">
+              <a 
+                key={index} 
+                href={exchange.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
+              >
                 <div>
                   <h4 className="font-semibold text-slate-700">{exchange.network}</h4>
                   <p className="text-slate-600">{exchange.name}</p>
                 </div>
                 <ExternalLink className="w-5 h-5 text-slate-400" />
-              </div>
+              </a>
             ))}
           </div>
           
