@@ -95,28 +95,30 @@ const DocsHome = () => {
       </div>
 
       {/* Quick Links */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {quickLinks.map(link => link.external ? <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
-              <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                <link.icon className="w-6 h-6 text-plain-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-              <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
-              <div className="flex items-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
-                Visit site
-                <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
-              </div>
-            </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
-              <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                <link.icon className="w-6 h-6 text-plain-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-              <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
-              <div className="flex items-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
-                Learn more
-                <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
-              </div>
-            </Link>)}
+      <div className="flex flex-col items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-sm sm:max-w-none">
+          {quickLinks.map(link => link.external ? <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+                <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                  <link.icon className="w-6 h-6 text-plain-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
+                <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
+                <div className="flex items-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                  Visit site
+                  <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                </div>
+              </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+                <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                  <link.icon className="w-6 h-6 text-plain-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
+                <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
+                <div className="flex items-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                  Learn more
+                  <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                </div>
+              </Link>)}
+        </div>
       </div>
 
       {/* Features */}
