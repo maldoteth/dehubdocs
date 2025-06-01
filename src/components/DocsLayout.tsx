@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github } from 'lucide-react';
+import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { SearchProvider, useSearch } from '@/contexts/SearchContext';
 import { SearchDialog } from '@/components/SearchDialog';
@@ -58,6 +59,10 @@ const menuItems = [{
     path: '/docs/roadmap',
     icon: '🗺️',
     hasSubmenu: true
+  }, {
+    title: 'Contact',
+    path: '/docs/contact',
+    iconComponent: Phone,
   }, {
     title: 'Brand Assets',
     path: '/docs/brand-assets',
