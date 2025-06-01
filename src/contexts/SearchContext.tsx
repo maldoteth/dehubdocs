@@ -20,7 +20,7 @@ interface SearchContextType {
 
 const SearchContext = createContext<SearchContextType | undefined>(undefined);
 
-// Real content extracted from documentation pages
+// Real content extracted from actual documentation pages
 const searchData: SearchItem[] = [
   {
     title: 'Home',
@@ -35,39 +35,51 @@ const searchData: SearchItem[] = [
     category: 'Main'
   },
   {
+    title: 'Contact Us',
+    path: '/docs/contact',
+    content: 'Contact support help assistance tech@dehub.net marketing@dehub.net hr@dehub.net technical support business inquiries partnerships media press investor relations Telegram portal https://t.me/portal Discord dehub.io/d Turkish community Dehub_Turkish Arabic community Dehub_Arabic holders whales exclusive channels token holders community management customer service business development media inquiries community engagement social media presence communication channels support resources',
+    category: 'Main'
+  },
+  {
     title: 'Stream',
     path: '/docs/dapps',
-    content: 'Stream dapp user-centric streaming protocol empower creators viewers censorship resistance moderation mining watch-to-earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content streaming platform video content live broadcasting decentralized video platform blockchain streaming content creation monetization creator economy viewer rewards tokenomics streaming rewards content discovery social features community building live chat interactive streaming censorship resistant platform',
+    content: 'Stream dapp decentralized streaming platform user-centric protocol empower creators viewers censorship resistance content moderation watch-to-earn watch2earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour badge of honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content streaming rewards creator economy viewer rewards tokenomics streaming monetization content discovery social features live chat interactive streaming',
     category: 'dApps'
   },
   {
     title: 'Games',
     path: '/docs/games',
-    content: 'Games sustainable play win earn no dilution inflation arcade casual games web3 gaming Whack A Schifff Gas Guzzler Rocket Blaster Street Slayer Last Chad Standing UFC stars battle royale memes skins arcade.dehub.net lastchadstanding.com LCFC Lean Chad Fight Club genesis NFT play-to-earn tournaments leaderboards achievements rewards gaming economy virtual assets digital collectibles game marketplace competitive gaming esports blockchain games NFT gaming assets gaming tokenomics virtual worlds metaverse gaming community gaming tournaments competitive play',
+    content: 'Games sustainable play-to-earn play2earn no dilution inflation arcade casual games web3 gaming Whack A Schifff Gas Guzzler Rocket Blaster Street Slayer Last Chad Standing UFC stars battle royale memes skins arcade.dehub.net lastchadstanding.com LCFC Lean Chad Fight Club genesis NFT tournaments leaderboards achievements rewards gaming economy virtual assets digital collectibles game marketplace competitive gaming esports blockchain games NFT gaming assets gaming tokenomics virtual worlds metaverse gaming community',
     category: 'Main'
   },
   {
     title: 'Token Economics & Emissions',
     path: '/docs/token/economics',
-    content: 'Token economics emissions tokenomics distribution supply DHB DeHub token allocation vesting schedule inflation deflation burn mechanisms staking rewards governance tokens utility value proposition economic model sustainability token metrics circulation market cap total supply max supply distribution schedule team allocation community treasury ecosystem development marketing partnerships advisors strategic reserves liquidity mining yield farming staking APY annual percentage yield token distribution model economic incentives token utility mechanisms burn rate inflation control deflationary mechanisms staking economics reward distribution governance participation economic sustainability long-term value creation token holder benefits ecosystem growth incentives network effects value accrual mechanisms',
+    content: 'Token economics emissions tokenomics DHB DeHub token BASE BNB chain total supply 8000000000 8 billion burn LGE 3360000000 3.36 billion circulating supply 2154403105 final supply 1000000000 1 billion burn schedule 42% launch periodic dynamic team allocation 8% operational allocation research development partnerships licensing burn wallet 42% buy back stakeholders proportion holdings net negative emission FDV fully diluted valuation no premine no VCs venture capital contributors rewards tradable allocation percentage',
     category: 'Token'
   },
   {
     title: 'Token Utility & Holder Benefits',
     path: '/docs/token/utility',
-    content: 'Token utility benefits holders rewards staking governance voting premium features badge honour exclusive access discounts revenue sharing protocol fees community rewards loyalty program tier system unlock benefits holding requirements DHB token utility use cases payment method transaction fees governance rights staking rewards premium subscriptions exclusive content access voting power platform benefits holder privileges community governance participation revenue sharing mechanisms premium tier access exclusive features discount benefits loyalty rewards token-gated content utility token ecosystem benefits network participation rewards',
+    content: 'Token utility benefits holders DHB access games content events enhanced features dapps transact globally instantly gas fees permissionless deposit contract tip creators reward viewers bounties token locked content purchase products digital collectables assets services Phygital NFT Marketplace propose vote protocol decisions content productions cancellations stake earn real yield protocol revenue buy backs x-2-earn rewards secure network enhanced rights mine dispute management content moderation Hub Improvement Proposals HIPS development regulatory advancements utility purposes in-game in-app digital tokens currencies on-chain transparency educational informative DeHub affiliates liability financial losses volatile unforeseen errors competency failures technical error hacks afford lose',
     category: 'Token'
   },
   {
     title: 'Where to Buy Token',
     path: '/docs/token/where-to-buy',
-    content: 'Buy token exchange purchase trade DEX CEX Uniswap Pancakeswap Base BNB chain decentralized exchange centralized exchange trading pairs liquidity pools swap tokens marketplace official tradable tokenomics on-chain transactions Base network BNB Smart Chain Ethereum Polygon Arbitrum Optimism layer 2 scaling solutions DEX aggregators slippage tolerance transaction fees gas fees network fees wallet connection MetaMask Trust Wallet WalletConnect exchange listings trading platforms cryptocurrency exchanges DeFi protocols automated market makers AMM liquidity provision trading volume price discovery market making arbitrage opportunities cross-chain swaps bridge protocols multi-chain compatibility',
+    content: 'Buy token exchange purchase trade DEX Uniswap Base https://app.uniswap.org/explore/tokens/base/0xd20ab1015f6a2de4a6fddebab270113f689c2f7c Pancakeswap BNB https://pancakeswap.finance/swap marketplace decentralized exchange centralized exchange trading pairs liquidity pools swap tokens officially tradable decentralised exchanges tokenomics on-chain transactions disclaimer utility purposes in-game in-app digital tokens currencies transparency educational informative DeHub affiliates liability financial losses volatile unforeseen errors competency failures technical error hacks afford lose',
     category: 'Token'
   },
   {
     title: 'Token Governance',
     path: '/docs/token/governance',
-    content: 'Governance voting proposals DAO community decisions stakeholder voting rights consensus mechanisms protocol upgrades community governance treasury management proposal submission voting power delegation governance tokens democratic process decentralized autonomous organization on-chain governance off-chain governance snapshot voting Aragon Governor contract timelock executor community treasury allocation protocol parameters fee structures upgrade mechanisms governance participation community decision making decentralized governance mechanisms voting procedures proposal lifecycle governance token rights stakeholder representation democratic processes consensus building community involvement protocol evolution governance framework',
+    content: 'Governance voting proposals DAO community decisions fair voting logic stakeholder weight multiplied limited amounts single entity control protocol larger investors rewarded proportionally game theory vote burn DHB currently 50 disincentives bad actors manipulation incentivises engagement users vote poll whale manipulation preventing novel voting logic rewarding larger investors burn requirement voting meaningful participation frivolous malicious voting solving governance issues whale manipulation lack engagement wider holder base novel solution token governance skeptics launch officially early 2026 disclaimer utility purposes in-game in-app digital tokens currencies on-chain transparency educational informative DeHub affiliates liability financial losses volatile unforeseen errors competency failures technical error hacks afford lose',
+    category: 'Token'
+  },
+  {
+    title: 'Token Security',
+    path: '/docs/token/security',
+    content: 'Security audit smart contracts safety measures contract security Certik https://skynet.certik.com/projects/dehub bug bounty tech@dehub.net security protocols vulnerability assessment penetration testing security measures disclaimer utility purposes in-game in-app digital tokens currencies on-chain transparency educational informative DeHub affiliates liability financial losses volatile unforeseen errors competency failures technical error hacks afford lose',
     category: 'Token'
   },
   {
@@ -79,20 +91,20 @@ const searchData: SearchItem[] = [
   {
     title: 'Team',
     path: '/docs/team',
-    content: 'Team members founders developers contributors advisors core team leadership development team community managers marketing partnerships business development technical expertise blockchain experience startup background industry veterans software engineers product managers designers UX UI researchers data scientists DevOps engineers security auditors legal advisors regulatory compliance business strategy tokenomics specialists team composition leadership structure advisory board technical team business development marketing team community management product development engineering team design team operations team executive leadership founding team',
+    content: 'Team Malik Jan Co-Founder DeLabs LTD Puso group SEC licensed construction development Philippines Guide Dogs fundraising manager Randstad senior consultant Blue Arrow biggest biller award winning consultant ITS Construction Sussex regional manager Biomedical Science Portsmouth University Queen Alexander Hospital Laboratory BTEC Business Diploma Distinction Star NEBOSH qualified HSE consultant LinkedIn https://uk.linkedin.com/in/malik-jan-turkistani-842b4b195 X https://x.com/maldoteth Mike Hales Co-founder social media star TikTok partner agency First Class 400 influencers TikTok executives live streams digital mixed martial artist Lean Chad Fight Club Rapz Sport cobra bag provider NGNE TikTok https://www.tiktok.com/@mikehalesmma Instagram https://www.instagram.com/mikehalesmma Indi Jay Cammish Co-Founder social media content dance expert communications corporate relations Mabel world tours Platinum Party Palace Queen England 2022 First Class TikTok partner agency Instagram https://www.instagram.com/indijayofficial TikTok https://www.tiktok.com/@indijaycammish Bailey Young Co-Founder operational powerhouse pro-gamer gaming music entertainment investments tokenomics expert DeHub growth 2021 Blocjerk fundraise 1000000 peak ROI 1000% professional gamer top 3 COD MW2 top 100 Warzone RickyBobby',
     category: 'Main'
   },
   {
-    title: 'Security',
-    path: '/docs/security',
-    content: 'Security audit smart contracts safety measures code review vulnerability assessment penetration testing security best practices multi-signature wallets cold storage encryption data protection privacy compliance regulatory standards security protocols incident response bug bounty program responsible disclosure security researchers smart contract audits formal verification code coverage testing automated testing continuous integration deployment security OWASP top 10 cybersecurity frameworks blockchain security smart contract security audit reports vulnerability management security assessment penetration testing security monitoring threat detection incident response security policies compliance frameworks',
-    category: 'Main'
+    title: 'Installation',
+    path: '/docs/installation',
+    content: 'Installation setup platform project npm yarn pnpm package manager system requirements Node.js environment TypeScript browser support Chrome Firefox Safari Edge CDN environment variables API configuration verification SDK version client initialization complete next steps quick start configuration authentication',
+    category: 'Developer'
   },
   {
-    title: 'Contact',
-    path: '/docs/contact',
-    content: 'Contact support help assistance customer service technical support business inquiries partnerships media press investor relations community management social media Discord Telegram Twitter LinkedIn GitHub email contact form support tickets FAQ frequently asked questions troubleshooting documentation feedback suggestions feature requests bug reports customer support technical assistance business development partnerships media inquiries investor relations community engagement social media presence communication channels support resources help documentation customer service contact information business contacts tech@dehub.net marketing@dehub.net hr@dehub.net telegram t.me/portal discord dehub.io/d Dehub_Turkish Dehub_Arabic holders whales community channels',
-    category: 'Main'
+    title: 'API Endpoints',
+    path: '/docs/api/endpoints',
+    content: 'API endpoints reference documentation authentication bearer token authorization GET POST PUT DELETE users data pagination filters response schemas curl examples JSON API key management rate limiting error codes 400 401 403 404 429 500 base URL api.yourplatform.com REST API endpoints user management data retrieval filtering sorting pagination request examples response examples error handling API documentation developer resources integration guides SDK libraries HTTP methods query parameters request headers response headers status codes API versioning',
+    category: 'Developer'
   },
   {
     title: 'Brand Assets',
@@ -105,12 +117,6 @@ const searchData: SearchItem[] = [
     path: '/docs/terms',
     content: 'Terms conditions disclaimers legal privacy policy user agreement service terms liability limitation intellectual property rights data protection GDPR compliance cookie policy age restrictions prohibited activities termination conditions governing law dispute resolution arbitration terms of service privacy notice data processing user rights consent withdrawal cookies tracking analytics third party services legal compliance regulatory requirements jurisdiction applicable law enforcement legal documentation terms of use privacy policy user agreement service agreement legal disclaimers liability limitations intellectual property data protection compliance regulatory compliance',
     category: 'Legal'
-  },
-  {
-    title: 'API Endpoints',
-    path: '/docs/api/endpoints',
-    content: 'API endpoints reference documentation authentication bearer token authorization GET POST PUT DELETE users data pagination filters response schemas curl examples JSON API key management rate limiting error codes 400 401 403 404 429 500 base URL api.yourplatform.com REST API endpoints user management data retrieval filtering sorting pagination request examples response examples error handling API documentation developer resources integration guides SDK libraries HTTP methods query parameters request headers response headers status codes API versioning',
-    category: 'Developer'
   }
 ];
 
@@ -127,14 +133,14 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
     }
 
     const lowercaseQuery = query.toLowerCase();
-    const queryTerms = lowercaseQuery.split(' ').filter(term => term.length > 2);
+    const queryTerms = lowercaseQuery.split(' ').filter(term => term.length > 1);
     
     const results = searchData.filter(item => {
       const titleLower = item.title.toLowerCase();
       const contentLower = item.content.toLowerCase();
       const categoryLower = item.category.toLowerCase();
       
-      // Check for exact phrase match first
+      // Check for exact phrase match first (high priority)
       if (titleLower.includes(lowercaseQuery) || 
           contentLower.includes(lowercaseQuery) || 
           categoryLower.includes(lowercaseQuery)) {
@@ -167,6 +173,12 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
       const bTitleMatch = bTitle.includes(lowercaseQuery);
       if (aTitleMatch && !bTitleMatch) return -1;
       if (!aTitleMatch && bTitleMatch) return 1;
+      
+      // Exact phrase match in content gets third priority
+      const aExactContent = aContent.includes(lowercaseQuery);
+      const bExactContent = bContent.includes(lowercaseQuery);
+      if (aExactContent && !bExactContent) return -1;
+      if (!aExactContent && bExactContent) return 1;
       
       // Count term matches for better relevance
       const aTermMatches = queryTerms.filter(term => 
