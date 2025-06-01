@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -54,7 +53,7 @@ const DocsHome = () => {
     },
     {
       icon: Shield,
-      title: 'Global Holder Nodes',
+      title: 'Secure',
       description: 'Token holders run nodes globally to power the network and earn rewards'
     },
     {
