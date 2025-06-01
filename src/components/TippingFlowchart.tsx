@@ -62,7 +62,7 @@ const TippingFlowchart = () => {
       threshold: "500,000-749,999", 
       effect: "Screen goes gold and coins drop from sky with sirens (3 seconds)", 
       description: "Golden screen effect with falling coins and siren sounds",
-      emoji: "🪙"
+      emoji: "🟡"
     },
     { 
       threshold: "750,000-999,999", 
