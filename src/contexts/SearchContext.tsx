@@ -20,30 +20,30 @@ interface SearchContextType {
 
 const SearchContext = createContext<SearchContextType | undefined>(undefined);
 
-// Comprehensive search data with full content from documentation pages
+// Real content extracted from documentation pages
 const searchData: SearchItem[] = [
   {
     title: 'Home',
     path: '/docs',
-    content: 'Welcome to DeHub Documentation hub decentralized streaming platform blockchain gaming marketplace ecosystem Web3 DePIN physical infrastructure network community developers getting started overview features capabilities Why Build On DeHub Fast Reliable Secure Dev Support Community building safest speediest chains L1s EVM L2s token holders run nodes globally power network earn rewards fund community projects initiatives established supportive community here since 2021',
+    content: 'Welcome to DeHub Documentation everything you need to use integrate build scale platform quick start guides advanced configurations API reference development resources fast reliable secure dev support community building safest speediest chains L1s EVM L2s token holders run nodes globally power network earn rewards fund community projects initiatives established supportive community since 2021 Basescan Base network BSCScan BNB Smart Chain DHBScan DeHub network explorer dehub.io application',
     category: 'Main'
   },
   {
     title: 'Overview',
     path: '/docs/overview',
-    content: 'DeHub Overview platform ecosystem decentralized applications streaming gaming marketplace token utility governance community driven blockchain technology Web3 infrastructure DePIN network physical computing resources user-centric protocols censorship resistance content creators viewers monetization revenue sharing next-generation gaming streaming protocol sustainable token economy building safest speediest chains across L1s EVM L2s token holders run nodes globally power network earn rewards fund community projects initiatives established supportive community since 2021 comprehensive documentation hub everything need use integrate build scale platform quick start guides advanced configurations API reference development resources',
+    content: 'DeHub Overview decentralized streaming gaming marketplace token utility governance community driven blockchain technology Web3 infrastructure DePIN network physical computing resources user-centric protocols censorship resistance content creators viewers monetization revenue sharing next-generation gaming streaming protocol sustainable token economy DHB tokens ecosystem platform capabilities features building decentralized applications',
     category: 'Main'
   },
   {
     title: 'Stream',
     path: '/docs/dapps',
-    content: 'Stream dapp user-centric streaming protocol empower creators viewers simultaneously censorship resistance moderation mining watch-to-earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content pay per view bounty rewards streaming platform video content live broadcasting decentralized video platform blockchain streaming content creation monetization creator economy viewer rewards watch-to-earn tokenomics streaming rewards content discovery social features community building live chat interactive streaming censorship resistant platform',
-    category: 'Main'
+    content: 'Stream dapp user-centric streaming protocol empower creators viewers censorship resistance moderation mining watch-to-earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content streaming platform video content live broadcasting decentralized video platform blockchain streaming content creation monetization creator economy viewer rewards tokenomics streaming rewards content discovery social features community building live chat interactive streaming censorship resistant platform',
+    category: 'dApps'
   },
   {
     title: 'Games',
     path: '/docs/games',
-    content: 'Games gaming platform blockchain Web3 gaming NFT collectibles play-to-earn game development community tournaments leaderboards achievements rewards gaming economy virtual assets digital collectibles game marketplace competitive gaming esports blockchain games decentralized gaming platform NFT gaming assets play-to-earn mechanics gaming tokenomics virtual worlds metaverse gaming community gaming tournaments competitive play gaming rewards achievement system gaming marketplace digital asset trading gaming economy blockchain integration Web3 gaming features decentralized game development',
+    content: 'Games sustainable play win earn no dilution inflation arcade casual games web3 gaming Whack A Schifff Gas Guzzler Rocket Blaster Street Slayer Last Chad Standing UFC stars battle royale memes skins arcade.dehub.net lastchadstanding.com LCFC Lean Chad Fight Club genesis NFT play-to-earn tournaments leaderboards achievements rewards gaming economy virtual assets digital collectibles game marketplace competitive gaming esports blockchain games NFT gaming assets gaming tokenomics virtual worlds metaverse gaming community gaming tournaments competitive play',
     category: 'Main'
   },
   {
@@ -73,7 +73,7 @@ const searchData: SearchItem[] = [
   {
     title: 'DePIN',
     path: '/docs/depin',
-    content: 'DePIN decentralized physical infrastructure network hardware nodes computing resources distributed network blockchain infrastructure physical devices edge computing network rewards mining nodes validators infrastructure providers network security scalability bandwidth sharing storage sharing compute sharing GPU mining CPU mining proof of work proof of stake consensus mechanisms network topology mesh networks peer-to-peer networking IoT devices smart contracts oracles data feeds real-world assets tokenization physical infrastructure decentralization hardware network node operation infrastructure rewards decentralized computing distributed systems edge networks physical asset tokenization infrastructure as a service decentralized cloud computing',
+    content: 'DePIN decentralized physical infrastructure network shared computing power miners data hosting transcoding delivery mobile devices PCs servers contributors revenue pool inflation-free model proof-of-computation verification rewards mining nodes validators infrastructure providers network security scalability bandwidth sharing storage sharing compute sharing GPU mining CPU mining hardware requirements staking amounts 100000 DHB mobile phones 1000000 DHB PCs laptops 10000000 DHB dedicated servers depin-coordinator.dehub.net miner client registration device allocation task assignment reward calculator dynamic scaling',
     category: 'Main'
   },
   {
@@ -91,13 +91,13 @@ const searchData: SearchItem[] = [
   {
     title: 'Contact',
     path: '/docs/contact',
-    content: 'Contact support help assistance customer service technical support business inquiries partnerships media press investor relations community management social media Discord Telegram Twitter LinkedIn GitHub email contact form support tickets FAQ frequently asked questions troubleshooting documentation feedback suggestions feature requests bug reports customer support technical assistance business development partnerships media inquiries investor relations community engagement social media presence communication channels support resources help documentation customer service contact information business contacts',
+    content: 'Contact support help assistance customer service technical support business inquiries partnerships media press investor relations community management social media Discord Telegram Twitter LinkedIn GitHub email contact form support tickets FAQ frequently asked questions troubleshooting documentation feedback suggestions feature requests bug reports customer support technical assistance business development partnerships media inquiries investor relations community engagement social media presence communication channels support resources help documentation customer service contact information business contacts tech@dehub.net marketing@dehub.net hr@dehub.net telegram t.me/portal discord dehub.io/d Dehub_Turkish Dehub_Arabic holders whales community channels',
     category: 'Main'
   },
   {
     title: 'Brand Assets',
     path: '/docs/brand-assets',
-    content: 'Brand assets logo guidelines design resources download PNG SVG EPS vector formats brand identity color palette typography usage guidelines marketing materials presentation templates brand package contact brand team official branding trademark copyright intellectual property press kit media assets high resolution images logos icons fonts brand colors hex codes RGB CMYK pantone brand voice tone messaging style guide logo downloads high-quality files various formats use cases brand guidelines style guide design resources marketing materials press kit media assets brand identity visual identity corporate identity brand standards',
+    content: 'Brand assets logo guidelines design resources download PNG SVG EPS vector formats brand identity color palette typography usage guidelines marketing materials presentation templates brand package contact brand team official branding trademark copyright intellectual property press kit media assets high resolution images logos icons fonts brand colors hex codes RGB CMYK pantone brand voice tone messaging style guide logo downloads high-quality files various formats use cases brand guidelines style guide design resources marketing materials press kit media assets brand identity visual identity corporate identity brand standards DeHub logo primary alternative brand guidelines presentation',
     category: 'Main'
   },
   {
@@ -105,6 +105,12 @@ const searchData: SearchItem[] = [
     path: '/docs/terms',
     content: 'Terms conditions disclaimers legal privacy policy user agreement service terms liability limitation intellectual property rights data protection GDPR compliance cookie policy age restrictions prohibited activities termination conditions governing law dispute resolution arbitration terms of service privacy notice data processing user rights consent withdrawal cookies tracking analytics third party services legal compliance regulatory requirements jurisdiction applicable law enforcement legal documentation terms of use privacy policy user agreement service agreement legal disclaimers liability limitations intellectual property data protection compliance regulatory compliance',
     category: 'Legal'
+  },
+  {
+    title: 'API Endpoints',
+    path: '/docs/api/endpoints',
+    content: 'API endpoints reference documentation authentication bearer token authorization GET POST PUT DELETE users data pagination filters response schemas curl examples JSON API key management rate limiting error codes 400 401 403 404 429 500 base URL api.yourplatform.com REST API endpoints user management data retrieval filtering sorting pagination request examples response examples error handling API documentation developer resources integration guides SDK libraries HTTP methods query parameters request headers response headers status codes API versioning',
+    category: 'Developer'
   }
 ];
 
@@ -121,23 +127,59 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
     }
 
     const lowercaseQuery = query.toLowerCase();
-    const results = searchData.filter(item =>
-      item.title.toLowerCase().includes(lowercaseQuery) ||
-      item.content.toLowerCase().includes(lowercaseQuery) ||
-      item.category.toLowerCase().includes(lowercaseQuery)
-    );
-
-    // Sort results by relevance (title matches first, then content matches)
-    results.sort((a, b) => {
-      const aTitle = a.title.toLowerCase().includes(lowercaseQuery);
-      const bTitle = b.title.toLowerCase().includes(lowercaseQuery);
+    const queryTerms = lowercaseQuery.split(' ').filter(term => term.length > 2);
+    
+    const results = searchData.filter(item => {
+      const titleLower = item.title.toLowerCase();
+      const contentLower = item.content.toLowerCase();
+      const categoryLower = item.category.toLowerCase();
       
-      if (aTitle && !bTitle) return -1;
-      if (!aTitle && bTitle) return 1;
-      return 0;
+      // Check for exact phrase match first
+      if (titleLower.includes(lowercaseQuery) || 
+          contentLower.includes(lowercaseQuery) || 
+          categoryLower.includes(lowercaseQuery)) {
+        return true;
+      }
+      
+      // Check for individual term matches
+      return queryTerms.some(term => 
+        titleLower.includes(term) || 
+        contentLower.includes(term) || 
+        categoryLower.includes(term)
+      );
     });
 
-    setSearchResults(results);
+    // Enhanced relevance scoring
+    results.sort((a, b) => {
+      const aTitle = a.title.toLowerCase();
+      const bTitle = b.title.toLowerCase();
+      const aContent = a.content.toLowerCase();
+      const bContent = b.content.toLowerCase();
+      
+      // Exact title match gets highest priority
+      const aExactTitle = aTitle === lowercaseQuery;
+      const bExactTitle = bTitle === lowercaseQuery;
+      if (aExactTitle && !bExactTitle) return -1;
+      if (!aExactTitle && bExactTitle) return 1;
+      
+      // Title contains query gets second priority
+      const aTitleMatch = aTitle.includes(lowercaseQuery);
+      const bTitleMatch = bTitle.includes(lowercaseQuery);
+      if (aTitleMatch && !bTitleMatch) return -1;
+      if (!aTitleMatch && bTitleMatch) return 1;
+      
+      // Count term matches for better relevance
+      const aTermMatches = queryTerms.filter(term => 
+        aTitle.includes(term) || aContent.includes(term)
+      ).length;
+      const bTermMatches = queryTerms.filter(term => 
+        bTitle.includes(term) || bContent.includes(term)
+      ).length;
+      
+      return bTermMatches - aTermMatches;
+    });
+
+    setSearchResults(results.slice(0, 10)); // Limit to top 10 results
   };
 
   return (
