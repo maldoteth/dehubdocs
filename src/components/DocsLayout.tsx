@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -67,57 +66,59 @@ const menuItems = [{
     title: 'Brand Assets',
     path: '/docs/brand-assets',
     icon: '🏷️'
-  }]
-}, {
-  title: 'Key Links',
-  items: [{
-    title: 'Website',
-    path: 'https://dehub.net/',
-    icon: '🌐',
-    external: true
   }, {
-    title: 'App',
-    path: 'https://dehub.io',
-    icon: '/lovable-uploads/ca557554-cea2-41f1-8139-d456861beacb.png',
-    external: true,
-    isImage: true
-  }, {
-    title: 'X',
-    path: 'https://x.com/dehub_official',
-    icon: '/lovable-uploads/4c5f32a0-dc0b-4846-a78d-cd3381206fa9.png',
-    external: true,
-    isImage: true
-  }, {
-    title: 'Instagram',
-    path: 'https://www.instagram.com/dehub_official/',
-    icon: '/lovable-uploads/3fb7f494-e111-4949-b66d-9269f163c74e.png',
-    external: true,
-    isImage: true
-  }, {
-    title: 'GitHub',
-    path: 'https://github.com/dehubtoken',
-    icon: '/lovable-uploads/b39e5777-ed91-489c-a58a-3639ea5bf3bc.png',
-    external: true,
-    isImage: true
-  }, {
-    title: 'CoinMarketCap',
-    path: 'https://coinmarketcap.com/currencies/dehub/',
-    icon: '/lovable-uploads/df505550-7e48-4148-acbb-1617520a6abc.png',
-    external: true,
-    isImage: true
-  }, {
-    title: 'CoinGecko',
-    path: 'https://www.coingecko.com/en/coins/dehub',
-    icon: '🦎',
-    external: true
-  }]
-}, {
-  title: '',
-  items: [{
     title: 'Terms & Disclaimers',
     path: '/docs/terms',
     icon: '⚖️'
   }]
+}, {
+  title: 'Key Links',
+  items: [
+    {
+      title: 'Website',
+      path: 'https://dehub.net/',
+      icon: '🌐',
+      external: true
+    }, {
+      title: 'App',
+      path: 'https://dehub.io',
+      icon: '/lovable-uploads/ca557554-cea2-41f1-8139-d456861beacb.png',
+      external: true,
+      isImage: true
+    }, {
+      title: 'X',
+      path: 'https://x.com/dehub_official',
+      icon: '/lovable-uploads/4c5f32a0-dc0b-4846-a78d-cd3381206fa9.png',
+      external: true,
+      isImage: true
+    }, {
+      title: 'Instagram',
+      path: 'https://www.instagram.com/dehub_official/',
+      icon: '/lovable-uploads/3fb7f494-e111-4949-b66d-9269f163c74e.png',
+      external: true,
+      isImage: true
+    }, {
+      title: 'GitHub',
+      path: 'https://github.com/dehubtoken',
+      icon: '/lovable-uploads/b39e5777-ed91-489c-a58a-3639ea5bf3bc.png',
+      external: true,
+      isImage: true
+    }, {
+      title: 'CoinMarketCap',
+      path: 'https://coinmarketcap.com/currencies/dehub/',
+      icon: '/lovable-uploads/df505550-7e48-4148-acbb-1617520a6abc.png',
+      external: true,
+      isImage: true
+    }, {
+      title: 'CoinGecko',
+      path: 'https://www.coingecko.com/en/coins/dehub',
+      icon: '🦎',
+      external: true
+    }
+  ]
+}, {
+  title: '',
+  items: []
 }];
 
 const DocsLayoutContent = () => {
