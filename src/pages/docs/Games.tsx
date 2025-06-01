@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-
 const Games = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       {/* Header Section */}
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-royal-blue mb-4">Games</h1>
@@ -37,7 +34,7 @@ const Games = () => {
         {/* Tabs for different sections */}
         <Tabs defaultValue="upcoming" className="w-full">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="upcoming">Upcoming Releases</TabsTrigger>
+            <TabsTrigger value="upcoming">Upcoming</TabsTrigger>
             <TabsTrigger value="released">Titles Released</TabsTrigger>
             <TabsTrigger value="features">Key Features</TabsTrigger>
           </TabsList>
@@ -53,12 +50,7 @@ const Games = () => {
                 </p>
                 <div className="mt-4">
                   <span className="font-semibold text-royal-blue">Website: </span>
-                  <a 
-                    href="https://lastchadstanding.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-middle-blue hover:text-royal-blue underline"
-                  >
+                  <a href="https://lastchadstanding.com" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">
                     lastchadstanding.com
                   </a>
                 </div>
@@ -103,12 +95,7 @@ const Games = () => {
                   <p className="text-royal-blue/90 mb-3">
                     Play all these games and more at our arcade:
                   </p>
-                  <a 
-                    href="https://arcade.dehub.net" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-middle-blue hover:text-royal-blue underline font-semibold"
-                  >
+                  <a href="https://arcade.dehub.net" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline font-semibold">
                     arcade.dehub.net
                   </a>
                 </div>
@@ -145,8 +132,6 @@ const Games = () => {
           </TabsContent>
         </Tabs>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Games;
