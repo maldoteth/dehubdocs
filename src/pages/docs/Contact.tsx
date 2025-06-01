@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, MessageCircle, Send, Users } from 'lucide-react';
@@ -47,14 +48,14 @@ const Contact = () => {
 
   const communityChannels = [
     {
-      title: 'Turkish Community',
+      title: 'Turkish',
       description: 'Join our Turkish speaking community',
       link: 'https://t.me/Dehub_Turkish',
       icon: Send,
       color: 'from-sky-blue to-middle-blue'
     },
     {
-      title: 'Arabic Community',
+      title: 'Arabic',
       description: 'Join our Arabic speaking community',
       link: 'https://t.me/Dehub_Arabic',
       icon: Send,
