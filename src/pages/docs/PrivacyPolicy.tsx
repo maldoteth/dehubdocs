@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Users, Key, Globe } from 'lucide-react';
@@ -8,11 +7,6 @@ const PrivacyPolicy = () => {
     <div className="space-y-8">
       {/* Header */}
       <div className="space-y-4">
-        <div className="inline-flex items-center px-4 py-2 bg-sky-blue/10 text-royal-blue rounded-full text-sm font-medium">
-          <Shield className="w-4 h-4 mr-2" />
-          Privacy & Data Protection
-        </div>
-        
         <h1 className="text-4xl font-bold text-royal-blue font-exo">
           Privacy Policy
         </h1>
