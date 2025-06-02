@@ -119,34 +119,37 @@ const searchData: SearchItem[] = [
   }
 ];
 
-// Simplified and more reliable search function
+// Fixed and simplified search function
 const searchInText = (text: string, query: string): boolean => {
   const textLower = text.toLowerCase();
   const queryLower = query.toLowerCase().trim();
   
-  console.log(`Searching for "${queryLower}" in text snippet: "${textLower.substring(0, 100)}..."`);
+  console.log(`🔍 Searching for "${queryLower}" in text: "${textLower.substring(0, 100)}..."`);
   
-  // Direct substring match
+  // Direct substring match (this should catch "malik" in "malik jan")
   if (textLower.includes(queryLower)) {
-    console.log(`✓ Direct match found for "${queryLower}"`);
+    console.log(`✅ DIRECT MATCH: "${queryLower}" found in text`);
     return true;
   }
   
-  // Split query into individual words and check each
-  const queryWords = queryLower.split(/\s+/).filter(word => word.length >= 2);
-  
-  for (const word of queryWords) {
-    // Check if any word in the text contains the search word as substring
-    const textWords = textLower.split(/\s+/);
-    const hasMatch = textWords.some(textWord => textWord.includes(word));
-    
-    if (hasMatch) {
-      console.log(`✓ Partial word match found: "${word}" in text`);
+  // Word boundary match - check if query matches start of any word
+  const words = textLower.split(/\s+/);
+  for (const word of words) {
+    if (word.startsWith(queryLower)) {
+      console.log(`✅ WORD START MATCH: "${queryLower}" matches start of word "${word}"`);
       return true;
     }
   }
   
-  console.log(`✗ No match found for "${queryLower}"`);
+  // Partial word match - check if any word contains the query
+  for (const word of words) {
+    if (word.includes(queryLower)) {
+      console.log(`✅ PARTIAL WORD MATCH: "${queryLower}" found in word "${word}"`);
+      return true;
+    }
+  }
+  
+  console.log(`❌ NO MATCH: "${queryLower}" not found in text`);
   return false;
 };
 
@@ -182,7 +185,7 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
 
   const performSearch = (query: string) => {
-    console.log(`🔍 Performing search for: "${query}"`);
+    console.log(`🔍 === STARTING SEARCH FOR: "${query}" ===`);
     
     if (!query.trim()) {
       console.log('Empty query, clearing results');
@@ -199,12 +202,12 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
       const categoryMatch = searchInText(item.category, query);
       
       const hasMatch = titleMatch || contentMatch || categoryMatch;
-      console.log(`Final result for "${item.title}": ${hasMatch ? 'MATCH' : 'NO MATCH'}`);
+      console.log(`🎯 FINAL RESULT for "${item.title}": ${hasMatch ? '✅ MATCH' : '❌ NO MATCH'}`);
       
       return hasMatch;
     });
 
-    console.log(`Found ${results.length} results:`, results.map(r => r.title));
+    console.log(`\n🎉 SEARCH COMPLETE: Found ${results.length} results:`, results.map(r => r.title));
 
     // Sort by relevance score
     results.sort((a, b) => {
