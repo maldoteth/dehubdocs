@@ -61,6 +61,11 @@ const extractRelevantExcerpt = (content: string, query: string, maxLength: numbe
   return excerpt;
 };
 
+// Function to escape special regex characters
+const escapeRegExp = (string: string) => {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+};
+
 const highlightMatchingTerms = (text: string, query: string) => {
   if (!query.trim()) return text;
   
@@ -68,7 +73,9 @@ const highlightMatchingTerms = (text: string, query: string) => {
   let highlightedText = text;
   
   queryTerms.forEach(term => {
-    const regex = new RegExp(`(${term})`, 'gi');
+    // Escape special regex characters before creating the RegExp
+    const escapedTerm = escapeRegExp(term);
+    const regex = new RegExp(`(${escapedTerm})`, 'gi');
     highlightedText = highlightedText.replace(regex, '<mark class="bg-yellow-200 px-1 rounded">$1</mark>');
   });
   
