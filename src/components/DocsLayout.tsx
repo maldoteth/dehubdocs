@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -71,6 +70,10 @@ const menuItems = [{
     title: 'Terms & Disclaimers',
     path: '/docs/terms',
     icon: '⚖️'
+  }, {
+    title: 'Privacy Policy',
+    path: '/docs/privacy',
+    icon: '🔒'
   }]
 }, {
   title: 'Key Links',
