@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -120,50 +119,16 @@ const searchData: SearchItem[] = [
   }
 ];
 
-// Ultra-simplified search function with extensive logging
-const basicSearch = (text: string, query: string): boolean => {
-  const normalizedText = text.toLowerCase();
-  const normalizedQuery = query.toLowerCase().trim();
-  
-  console.log(`🔍 BASIC SEARCH: Looking for "${normalizedQuery}" in "${normalizedText.substring(0, 50)}..."`);
-  console.log(`📝 Text length: ${normalizedText.length}, Query length: ${normalizedQuery.length}`);
-  
-  // Most basic possible search
-  const found = normalizedText.includes(normalizedQuery);
-  console.log(`🎯 Result: ${found ? '✅ FOUND' : '❌ NOT FOUND'}`);
-  
-  if (found) {
-    const index = normalizedText.indexOf(normalizedQuery);
-    console.log(`📍 Found at position: ${index}`);
-    console.log(`🔤 Context: "${normalizedText.substring(Math.max(0, index - 10), index + normalizedQuery.length + 10)}"`);
-  }
-  
-  return found;
-};
-
-// Calculate relevance score
-const calculateRelevance = (item: SearchItem, query: string): number => {
-  const titleLower = item.title.toLowerCase();
-  const contentLower = item.content.toLowerCase();
+// Absolutely minimal search - just check if query exists in text
+const simpleSearch = (text: string, query: string): boolean => {
+  const textLower = text.toLowerCase();
   const queryLower = query.toLowerCase().trim();
   
-  let score = 0;
+  console.log(`🔍 SIMPLE: "${queryLower}" in "${textLower.substring(0, 30)}..."`);
+  const result = textLower.includes(queryLower);
+  console.log(`Result: ${result ? '✅' : '❌'}`);
   
-  // Title exact match
-  if (titleLower === queryLower) score += 100;
-  else if (titleLower.includes(queryLower)) score += 50;
-  
-  // Content match
-  if (contentLower.includes(queryLower)) score += 20;
-  
-  // Partial word matches
-  const queryWords = queryLower.split(/\s+/).filter(word => word.length >= 2);
-  queryWords.forEach(word => {
-    if (titleLower.includes(word)) score += 15;
-    if (contentLower.includes(word)) score += 5;
-  });
-  
-  return score;
+  return result;
 };
 
 export const SearchProvider = ({ children }: { children: ReactNode }) => {
@@ -173,52 +138,34 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
 
   const performSearch = (query: string) => {
-    console.log(`\n🔍 === ULTRA-SIMPLE SEARCH FOR: "${query}" ===`);
-    console.log(`📊 Search data has ${searchData.length} items`);
+    console.log(`\n🔍 === SEARCH: "${query}" ===`);
     
     if (!query.trim()) {
-      console.log('❌ Empty query, clearing results');
       setSearchResults([]);
       return;
     }
 
     const results: SearchItem[] = [];
 
-    // Test each item with ultra-basic search
     searchData.forEach((item, index) => {
-      console.log(`\n--- Testing item ${index + 1}: "${item.title}" ---`);
+      console.log(`\n${index + 1}. "${item.title}"`);
       
-      // Test title
-      console.log(`🏷️ Testing TITLE: "${item.title}"`);
-      const titleMatch = basicSearch(item.title, query);
+      const titleMatch = simpleSearch(item.title, query);
+      const contentMatch = simpleSearch(item.content, query);
+      const categoryMatch = simpleSearch(item.category, query);
       
-      // Test content (show first part)
-      console.log(`📄 Testing CONTENT (first 100 chars): "${item.content.substring(0, 100)}..."`);
-      const contentMatch = basicSearch(item.content, query);
-      
-      // Test category
-      console.log(`🏭 Testing CATEGORY: "${item.category}"`);
-      const categoryMatch = basicSearch(item.category, query);
-      
-      const hasMatch = titleMatch || contentMatch || categoryMatch;
-      console.log(`🎯 FINAL RESULT for "${item.title}": ${hasMatch ? '✅ MATCH' : '❌ NO MATCH'}`);
-      
-      if (hasMatch) {
+      if (titleMatch || contentMatch || categoryMatch) {
+        console.log(`✅ ADDING: ${item.title}`);
         results.push(item);
+      } else {
+        console.log(`❌ SKIPPING: ${item.title}`);
       }
     });
 
-    console.log(`\n🎉 SEARCH COMPLETE: Found ${results.length} results out of ${searchData.length} total items`);
-    console.log(`📋 Results: ${results.map(r => r.title).join(', ')}`);
+    console.log(`\n🎉 FINAL RESULTS: ${results.length} items`);
+    results.forEach(r => console.log(`- ${r.title}`));
 
-    // Sort by relevance score
-    results.sort((a, b) => {
-      const scoreA = calculateRelevance(a, query);
-      const scoreB = calculateRelevance(b, query);
-      return scoreB - scoreA;
-    });
-
-    setSearchResults(results.slice(0, 10));
+    setSearchResults(results);
   };
 
   return (
