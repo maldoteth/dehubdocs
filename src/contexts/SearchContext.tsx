@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -124,9 +125,8 @@ const simpleSearch = (text: string, query: string): boolean => {
   const textLower = text.toLowerCase();
   const queryLower = query.toLowerCase().trim();
   
-  console.log(`🔍 SIMPLE: "${queryLower}" in "${textLower.substring(0, 30)}..."`);
   const result = textLower.includes(queryLower);
-  console.log(`Result: ${result ? '✅' : '❌'}`);
+  console.log(`🔍 "${queryLower}" in "${textLower.substring(0, 30)}..." = ${result ? '✅' : '❌'}`);
   
   return result;
 };
@@ -138,9 +138,11 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
 
   const performSearch = (query: string) => {
-    console.log(`\n🔍 === SEARCH: "${query}" ===`);
+    console.log(`\n🔍 === SEARCH START: "${query}" ===`);
+    console.log(`📝 Query length: ${query.length}, trimmed: "${query.trim()}"`);
     
     if (!query.trim()) {
+      console.log('❌ Empty query, clearing results');
       setSearchResults([]);
       return;
     }
@@ -148,25 +150,28 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
     const results: SearchItem[] = [];
 
     searchData.forEach((item, index) => {
-      console.log(`\n${index + 1}. "${item.title}"`);
+      console.log(`\n${index + 1}. Checking "${item.title}"`);
       
       const titleMatch = simpleSearch(item.title, query);
       const contentMatch = simpleSearch(item.content, query);
       const categoryMatch = simpleSearch(item.category, query);
       
       if (titleMatch || contentMatch || categoryMatch) {
-        console.log(`✅ ADDING: ${item.title}`);
+        console.log(`✅ MATCH found in "${item.title}"`);
         results.push(item);
-      } else {
-        console.log(`❌ SKIPPING: ${item.title}`);
       }
     });
 
-    console.log(`\n🎉 FINAL RESULTS: ${results.length} items`);
-    results.forEach(r => console.log(`- ${r.title}`));
-
+    console.log(`\n🎉 Search complete. Found ${results.length} results`);
+    console.log(`📋 Results:`, results.map(r => r.title));
+    
+    console.log(`🔄 Setting search results...`);
     setSearchResults(results);
+    
+    console.log(`✨ Search state updated. Current results count: ${results.length}`);
   };
+
+  console.log(`🏪 SearchProvider render - current results count: ${searchResults.length}`);
 
   return (
     <SearchContext.Provider value={{
