@@ -65,6 +65,7 @@ const App = () => (
             } />
             <Route path="contact" element={<Contact />} />
             <Route path="terms" element={<Terms />} />
+            <Route path="terms-of-service" element={<TermsOfService />} />
             <Route path="privacy" element={<PrivacyPolicy />} />
             <Route path="website" element={<ComingSoonPage title="Website Documentation" description="Learn about our website features and capabilities." />} />
             <Route path="app" element={<ComingSoonPage title="App Documentation" description="Mobile and desktop application guides and features." />} />
