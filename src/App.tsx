@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -23,6 +24,7 @@ import TokenWhereToBuy from "./pages/docs/TokenWhereToBuy";
 import TokenGovernance from "./pages/docs/TokenGovernance";
 import TokenSecurity from "./pages/docs/TokenSecurity";
 import Terms from "./pages/docs/Terms";
+import TermsOfService from "./pages/docs/TermsOfService";
 import Contact from "./pages/docs/Contact";
 import ComingSoonPage from "./components/ComingSoonPage";
 import PrivacyPolicy from "./pages/docs/PrivacyPolicy";

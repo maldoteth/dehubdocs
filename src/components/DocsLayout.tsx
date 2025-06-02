@@ -71,6 +71,10 @@ const menuItems = [{
     path: '/docs/terms',
     icon: '⚖️'
   }, {
+    title: 'Terms of Service',
+    path: '/docs/terms-of-service',
+    icon: '📋'
+  }, {
     title: 'Privacy Policy',
     path: '/docs/privacy',
     icon: '🔒'
