@@ -119,69 +119,57 @@ const searchData: SearchItem[] = [
   }
 ];
 
-// Improved fuzzy matching function
-const fuzzyMatch = (text: string, query: string): boolean => {
+// Simplified and more reliable search function
+const searchInText = (text: string, query: string): boolean => {
   const textLower = text.toLowerCase();
-  const queryLower = query.toLowerCase();
+  const queryLower = query.toLowerCase().trim();
   
-  // Exact match
+  console.log(`Searching for "${queryLower}" in text snippet: "${textLower.substring(0, 100)}..."`);
+  
+  // Direct substring match
   if (textLower.includes(queryLower)) {
+    console.log(`✓ Direct match found for "${queryLower}"`);
     return true;
   }
   
-  // Split query into words and check each word
-  const queryWords = queryLower.split(' ').filter(word => word.length > 1);
+  // Split query into individual words and check each
+  const queryWords = queryLower.split(/\s+/).filter(word => word.length >= 2);
   
-  for (const queryWord of queryWords) {
-    // Check if any word in the text starts with the query word
+  for (const word of queryWords) {
+    // Check if any word in the text contains the search word as substring
     const textWords = textLower.split(/\s+/);
-    const hasPartialMatch = textWords.some(textWord => 
-      textWord.startsWith(queryWord) || queryWord.length >= 3 && textWord.includes(queryWord)
-    );
+    const hasMatch = textWords.some(textWord => textWord.includes(word));
     
-    if (hasPartialMatch) {
+    if (hasMatch) {
+      console.log(`✓ Partial word match found: "${word}" in text`);
       return true;
     }
   }
   
+  console.log(`✗ No match found for "${queryLower}"`);
   return false;
 };
 
-// Calculate relevance score for better sorting
+// Calculate relevance score
 const calculateRelevance = (item: SearchItem, query: string): number => {
   const titleLower = item.title.toLowerCase();
   const contentLower = item.content.toLowerCase();
-  const categoryLower = item.category.toLowerCase();
-  const queryLower = query.toLowerCase();
-  const queryWords = queryLower.split(' ').filter(word => word.length > 1);
+  const queryLower = query.toLowerCase().trim();
   
   let score = 0;
   
-  // Exact title match gets highest score
+  // Title exact match
   if (titleLower === queryLower) score += 100;
   else if (titleLower.includes(queryLower)) score += 50;
   
-  // Category match
-  if (categoryLower.includes(queryLower)) score += 30;
-  
-  // Exact content match
+  // Content match
   if (contentLower.includes(queryLower)) score += 20;
   
   // Partial word matches
+  const queryWords = queryLower.split(/\s+/).filter(word => word.length >= 2);
   queryWords.forEach(word => {
-    // Title word matches
-    const titleWords = titleLower.split(/\s+/);
-    titleWords.forEach(titleWord => {
-      if (titleWord.startsWith(word)) score += 15;
-      else if (titleWord.includes(word) && word.length >= 3) score += 10;
-    });
-    
-    // Content word matches
-    const contentWords = contentLower.split(/\s+/);
-    contentWords.forEach(contentWord => {
-      if (contentWord.startsWith(word)) score += 5;
-      else if (contentWord.includes(word) && word.length >= 3) score += 2;
-    });
+    if (titleLower.includes(word)) score += 15;
+    if (contentLower.includes(word)) score += 5;
   });
   
   return score;
@@ -194,17 +182,29 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
 
   const performSearch = (query: string) => {
+    console.log(`🔍 Performing search for: "${query}"`);
+    
     if (!query.trim()) {
+      console.log('Empty query, clearing results');
       setSearchResults([]);
       return;
     }
 
-    // Filter items using fuzzy matching
+    // Filter items using the simplified search
     const results = searchData.filter(item => {
-      return fuzzyMatch(item.title, query) || 
-             fuzzyMatch(item.content, query) || 
-             fuzzyMatch(item.category, query);
+      console.log(`\n--- Checking item: ${item.title} ---`);
+      
+      const titleMatch = searchInText(item.title, query);
+      const contentMatch = searchInText(item.content, query);
+      const categoryMatch = searchInText(item.category, query);
+      
+      const hasMatch = titleMatch || contentMatch || categoryMatch;
+      console.log(`Final result for "${item.title}": ${hasMatch ? 'MATCH' : 'NO MATCH'}`);
+      
+      return hasMatch;
     });
+
+    console.log(`Found ${results.length} results:`, results.map(r => r.title));
 
     // Sort by relevance score
     results.sort((a, b) => {
@@ -213,7 +213,7 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
       return scoreB - scoreA;
     });
 
-    setSearchResults(results.slice(0, 10)); // Limit to top 10 results
+    setSearchResults(results.slice(0, 10));
   };
 
   return (
