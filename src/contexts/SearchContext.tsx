@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -120,6 +119,74 @@ const searchData: SearchItem[] = [
   }
 ];
 
+// Improved fuzzy matching function
+const fuzzyMatch = (text: string, query: string): boolean => {
+  const textLower = text.toLowerCase();
+  const queryLower = query.toLowerCase();
+  
+  // Exact match
+  if (textLower.includes(queryLower)) {
+    return true;
+  }
+  
+  // Split query into words and check each word
+  const queryWords = queryLower.split(' ').filter(word => word.length > 1);
+  
+  for (const queryWord of queryWords) {
+    // Check if any word in the text starts with the query word
+    const textWords = textLower.split(/\s+/);
+    const hasPartialMatch = textWords.some(textWord => 
+      textWord.startsWith(queryWord) || queryWord.length >= 3 && textWord.includes(queryWord)
+    );
+    
+    if (hasPartialMatch) {
+      return true;
+    }
+  }
+  
+  return false;
+};
+
+// Calculate relevance score for better sorting
+const calculateRelevance = (item: SearchItem, query: string): number => {
+  const titleLower = item.title.toLowerCase();
+  const contentLower = item.content.toLowerCase();
+  const categoryLower = item.category.toLowerCase();
+  const queryLower = query.toLowerCase();
+  const queryWords = queryLower.split(' ').filter(word => word.length > 1);
+  
+  let score = 0;
+  
+  // Exact title match gets highest score
+  if (titleLower === queryLower) score += 100;
+  else if (titleLower.includes(queryLower)) score += 50;
+  
+  // Category match
+  if (categoryLower.includes(queryLower)) score += 30;
+  
+  // Exact content match
+  if (contentLower.includes(queryLower)) score += 20;
+  
+  // Partial word matches
+  queryWords.forEach(word => {
+    // Title word matches
+    const titleWords = titleLower.split(/\s+/);
+    titleWords.forEach(titleWord => {
+      if (titleWord.startsWith(word)) score += 15;
+      else if (titleWord.includes(word) && word.length >= 3) score += 10;
+    });
+    
+    // Content word matches
+    const contentWords = contentLower.split(/\s+/);
+    contentWords.forEach(contentWord => {
+      if (contentWord.startsWith(word)) score += 5;
+      else if (contentWord.includes(word) && word.length >= 3) score += 2;
+    });
+  });
+  
+  return score;
+};
+
 export const SearchProvider = ({ children }: { children: ReactNode }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<SearchItem[]>([]);
@@ -132,63 +199,18 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
       return;
     }
 
-    const lowercaseQuery = query.toLowerCase();
-    const queryTerms = lowercaseQuery.split(' ').filter(term => term.length > 1);
-    
+    // Filter items using fuzzy matching
     const results = searchData.filter(item => {
-      const titleLower = item.title.toLowerCase();
-      const contentLower = item.content.toLowerCase();
-      const categoryLower = item.category.toLowerCase();
-      
-      // Check for exact phrase match first (high priority)
-      if (titleLower.includes(lowercaseQuery) || 
-          contentLower.includes(lowercaseQuery) || 
-          categoryLower.includes(lowercaseQuery)) {
-        return true;
-      }
-      
-      // Check for individual term matches
-      return queryTerms.some(term => 
-        titleLower.includes(term) || 
-        contentLower.includes(term) || 
-        categoryLower.includes(term)
-      );
+      return fuzzyMatch(item.title, query) || 
+             fuzzyMatch(item.content, query) || 
+             fuzzyMatch(item.category, query);
     });
 
-    // Enhanced relevance scoring
+    // Sort by relevance score
     results.sort((a, b) => {
-      const aTitle = a.title.toLowerCase();
-      const bTitle = b.title.toLowerCase();
-      const aContent = a.content.toLowerCase();
-      const bContent = b.content.toLowerCase();
-      
-      // Exact title match gets highest priority
-      const aExactTitle = aTitle === lowercaseQuery;
-      const bExactTitle = bTitle === lowercaseQuery;
-      if (aExactTitle && !bExactTitle) return -1;
-      if (!aExactTitle && bExactTitle) return 1;
-      
-      // Title contains query gets second priority
-      const aTitleMatch = aTitle.includes(lowercaseQuery);
-      const bTitleMatch = bTitle.includes(lowercaseQuery);
-      if (aTitleMatch && !bTitleMatch) return -1;
-      if (!aTitleMatch && bTitleMatch) return 1;
-      
-      // Exact phrase match in content gets third priority
-      const aExactContent = aContent.includes(lowercaseQuery);
-      const bExactContent = bContent.includes(lowercaseQuery);
-      if (aExactContent && !bExactContent) return -1;
-      if (!aExactContent && bExactContent) return 1;
-      
-      // Count term matches for better relevance
-      const aTermMatches = queryTerms.filter(term => 
-        aTitle.includes(term) || aContent.includes(term)
-      ).length;
-      const bTermMatches = queryTerms.filter(term => 
-        bTitle.includes(term) || bContent.includes(term)
-      ).length;
-      
-      return bTermMatches - aTermMatches;
+      const scoreA = calculateRelevance(a, query);
+      const scoreB = calculateRelevance(b, query);
+      return scoreB - scoreA;
     });
 
     setSearchResults(results.slice(0, 10)); // Limit to top 10 results
