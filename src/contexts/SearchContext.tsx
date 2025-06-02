@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -119,38 +120,25 @@ const searchData: SearchItem[] = [
   }
 ];
 
-// Fixed and simplified search function
-const searchInText = (text: string, query: string): boolean => {
-  const textLower = text.toLowerCase();
-  const queryLower = query.toLowerCase().trim();
+// Ultra-simplified search function with extensive logging
+const basicSearch = (text: string, query: string): boolean => {
+  const normalizedText = text.toLowerCase();
+  const normalizedQuery = query.toLowerCase().trim();
   
-  console.log(`🔍 Searching for "${queryLower}" in text: "${textLower.substring(0, 100)}..."`);
+  console.log(`🔍 BASIC SEARCH: Looking for "${normalizedQuery}" in "${normalizedText.substring(0, 50)}..."`);
+  console.log(`📝 Text length: ${normalizedText.length}, Query length: ${normalizedQuery.length}`);
   
-  // Direct substring match (this should catch "malik" in "malik jan")
-  if (textLower.includes(queryLower)) {
-    console.log(`✅ DIRECT MATCH: "${queryLower}" found in text`);
-    return true;
+  // Most basic possible search
+  const found = normalizedText.includes(normalizedQuery);
+  console.log(`🎯 Result: ${found ? '✅ FOUND' : '❌ NOT FOUND'}`);
+  
+  if (found) {
+    const index = normalizedText.indexOf(normalizedQuery);
+    console.log(`📍 Found at position: ${index}`);
+    console.log(`🔤 Context: "${normalizedText.substring(Math.max(0, index - 10), index + normalizedQuery.length + 10)}"`);
   }
   
-  // Word boundary match - check if query matches start of any word
-  const words = textLower.split(/\s+/);
-  for (const word of words) {
-    if (word.startsWith(queryLower)) {
-      console.log(`✅ WORD START MATCH: "${queryLower}" matches start of word "${word}"`);
-      return true;
-    }
-  }
-  
-  // Partial word match - check if any word contains the query
-  for (const word of words) {
-    if (word.includes(queryLower)) {
-      console.log(`✅ PARTIAL WORD MATCH: "${queryLower}" found in word "${word}"`);
-      return true;
-    }
-  }
-  
-  console.log(`❌ NO MATCH: "${queryLower}" not found in text`);
-  return false;
+  return found;
 };
 
 // Calculate relevance score
@@ -185,29 +173,43 @@ export const SearchProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
 
   const performSearch = (query: string) => {
-    console.log(`🔍 === STARTING SEARCH FOR: "${query}" ===`);
+    console.log(`\n🔍 === ULTRA-SIMPLE SEARCH FOR: "${query}" ===`);
+    console.log(`📊 Search data has ${searchData.length} items`);
     
     if (!query.trim()) {
-      console.log('Empty query, clearing results');
+      console.log('❌ Empty query, clearing results');
       setSearchResults([]);
       return;
     }
 
-    // Filter items using the simplified search
-    const results = searchData.filter(item => {
-      console.log(`\n--- Checking item: ${item.title} ---`);
+    const results: SearchItem[] = [];
+
+    // Test each item with ultra-basic search
+    searchData.forEach((item, index) => {
+      console.log(`\n--- Testing item ${index + 1}: "${item.title}" ---`);
       
-      const titleMatch = searchInText(item.title, query);
-      const contentMatch = searchInText(item.content, query);
-      const categoryMatch = searchInText(item.category, query);
+      // Test title
+      console.log(`🏷️ Testing TITLE: "${item.title}"`);
+      const titleMatch = basicSearch(item.title, query);
+      
+      // Test content (show first part)
+      console.log(`📄 Testing CONTENT (first 100 chars): "${item.content.substring(0, 100)}..."`);
+      const contentMatch = basicSearch(item.content, query);
+      
+      // Test category
+      console.log(`🏭 Testing CATEGORY: "${item.category}"`);
+      const categoryMatch = basicSearch(item.category, query);
       
       const hasMatch = titleMatch || contentMatch || categoryMatch;
       console.log(`🎯 FINAL RESULT for "${item.title}": ${hasMatch ? '✅ MATCH' : '❌ NO MATCH'}`);
       
-      return hasMatch;
+      if (hasMatch) {
+        results.push(item);
+      }
     });
 
-    console.log(`\n🎉 SEARCH COMPLETE: Found ${results.length} results:`, results.map(r => r.title));
+    console.log(`\n🎉 SEARCH COMPLETE: Found ${results.length} results out of ${searchData.length} total items`);
+    console.log(`📋 Results: ${results.map(r => r.title).join(', ')}`);
 
     // Sort by relevance score
     results.sort((a, b) => {
