@@ -106,17 +106,25 @@ export const SearchDialog = () => {
   }, [isSearchOpen, setIsSearchOpen]);
 
   useEffect(() => {
+    console.log(`🎯 SearchDialog: Query changed to "${searchQuery}", performing search...`);
     performSearch(searchQuery);
   }, [searchQuery, performSearch]);
 
   const handleSelect = (path: string) => {
+    console.log(`🚀 SearchDialog: Navigating to ${path}`);
     setIsSearchOpen(false);
     setSearchQuery('');
     navigate(path);
   };
 
+  console.log(`🎨 SearchDialog render: ${searchResults.length} results available`);
+
   return (
-    <CommandDialog open={isSearchOpen} onOpenChange={setIsSearchOpen}>
+    <CommandDialog 
+      open={isSearchOpen} 
+      onOpenChange={setIsSearchOpen}
+      shouldFilter={false}
+    >
       <CommandInput
         placeholder="Search documentation..."
         value={searchQuery}
@@ -126,15 +134,16 @@ export const SearchDialog = () => {
         <CommandEmpty>No results found.</CommandEmpty>
         {searchResults.length > 0 && (
           <CommandGroup heading="Documentation">
-            {searchResults.map((result) => {
+            {searchResults.map((result, index) => {
               const IconComponent = getCategoryIcon(result.category);
               const excerpt = extractRelevantExcerpt(result.content, searchQuery);
               const highlightedExcerpt = highlightMatchingTerms(excerpt, searchQuery);
               
+              console.log(`📝 SearchDialog: Rendering result ${index + 1}: "${result.title}"`);
+              
               return (
                 <CommandItem
                   key={result.path}
-                  value={result.title}
                   onSelect={() => handleSelect(result.path)}
                   className="cursor-pointer py-3"
                 >
