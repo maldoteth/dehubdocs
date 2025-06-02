@@ -14,7 +14,7 @@ const Terms = () => {
         </div>
         
         <h1 className="text-4xl font-bold text-royal-blue font-exo">
-          Terms & Disclaimers
+          Legal Disclaimer
         </h1>
         
         <div className="text-royal-blue/70 space-y-1 font-exo">
