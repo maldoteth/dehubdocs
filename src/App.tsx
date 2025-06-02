@@ -25,6 +25,7 @@ import TokenGovernance from "./pages/docs/TokenGovernance";
 import TokenSecurity from "./pages/docs/TokenSecurity";
 import Terms from "./pages/docs/Terms";
 import Contact from "./pages/docs/Contact";
+import Suggestions from "./pages/docs/Suggestions";
 import ComingSoonPage from "./components/ComingSoonPage";
 
 const queryClient = new QueryClient();
@@ -62,6 +63,7 @@ const App = () => (
               />
             } />
             <Route path="contact" element={<Contact />} />
+            <Route path="suggestions" element={<Suggestions />} />
             <Route path="terms" element={<Terms />} />
             <Route path="website" element={<ComingSoonPage title="Website Documentation" description="Learn about our website features and capabilities." />} />
             <Route path="app" element={<ComingSoonPage title="App Documentation" description="Mobile and desktop application guides and features." />} />
