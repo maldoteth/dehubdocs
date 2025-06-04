@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -57,8 +56,7 @@ const menuItems = [{
   }, {
     title: 'Roadmap',
     path: '/docs/roadmap',
-    icon: '🗺️',
-    hasSubmenu: true
+    icon: '🗺️'
   }, {
     title: 'Contact',
     path: '/docs/contact',
