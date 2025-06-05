@@ -6,7 +6,7 @@ import { CheckCircle } from 'lucide-react';
 const TokenUtility = () => {
   const benefits = [
     "Access games, content, events & enhanced features across all current & future d'apps",
-    "Transact freely, globally and instantly with no gas fees on our permissionless deposit contract",
+    "Transact freely, globally and instantly on our permissionless deposit contract",
     "Tip creators & reward viewers by strapping bounties to published or token locked content",
     "Purchase products, digital collectables, assets and services on our Phygital NFT Marketplace",
     "Propose & vote on protocol decisions, content productions, cancellations & more",
