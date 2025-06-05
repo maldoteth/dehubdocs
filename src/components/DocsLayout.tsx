@@ -40,6 +40,9 @@ const menuItems = [{
     }, {
       title: 'Governance',
       path: '/docs/token/governance'
+    }, {
+      title: 'Stake',
+      path: '/docs/token/stake'
     }]
   }, {
     title: 'DePIN',
