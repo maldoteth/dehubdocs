@@ -2,11 +2,23 @@ import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Coins, Lock, TrendingUp, Users, Zap, Shield } from 'lucide-react';
+import { Coins, Lock, TrendingUp, Users, Zap, Shield, ExternalLink } from 'lucide-react';
+
 const TokenStake = () => {
   return <div className="space-y-8">
       <div>
-        <h1 className="text-4xl font-bold text-royal-blue mb-4 font-exo">Stake</h1>
+        <div className="flex items-center space-x-4 mb-4">
+          <h1 className="text-4xl font-bold text-royal-blue font-exo">Stake</h1>
+          <a 
+            href="https://dehub.net/staking" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center space-x-1 text-middle-blue hover:text-royal-blue transition-colors text-sm font-medium bg-sky-blue/10 px-3 py-1 rounded-lg hover:bg-sky-blue/20"
+          >
+            <span>Stake Now</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
         <p className="text-lg text-royal-blue/80 leading-relaxed">
           Stake to access different club tiers the enhanced features across all d'apps and provide your computing power or storage space from with little as a mobile to mine your share of protocol revenue.
         </p>
@@ -227,4 +239,5 @@ const TokenStake = () => {
       </Card>
     </div>;
 };
+
 export default TokenStake;
