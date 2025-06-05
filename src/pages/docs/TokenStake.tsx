@@ -1,13 +1,10 @@
-
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Coins, Lock, TrendingUp, Users, Zap, Shield } from 'lucide-react';
-
 const TokenStake = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-royal-blue mb-4 font-exo">Stake</h1>
         <p className="text-lg text-royal-blue/80 leading-relaxed">
@@ -44,9 +41,7 @@ const TokenStake = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-royal-blue/80">
-              Stake & lock 1 or 2 quarters, and share 25% of rewards
-            </p>
+            <p className="text-royal-blue/80">Stake 1 to 2 quarters, and share 25% of rewards</p>
           </CardContent>
         </Card>
 
@@ -234,8 +229,6 @@ const TokenStake = () => {
           </p>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default TokenStake;
