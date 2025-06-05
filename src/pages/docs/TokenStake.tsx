@@ -65,9 +65,7 @@ const TokenStake = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-royal-blue/80">
-              Stake & lock 5+ quarters, and share 50% of rewards
-            </p>
+            <p className="text-royal-blue/80">Stake 5+ quarters, and share 50% of rewards</p>
           </CardContent>
         </Card>
       </div>
