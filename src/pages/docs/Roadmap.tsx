@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -16,32 +17,28 @@ const Roadmap = () => {
           status: 'completed',
           title: 'First Beta Launch',
           description: '• Launched first beta app on App Store',
-          icon: <Sparkles className="w-4 h-4" />,
-          category: 'Product'
+          icon: <Sparkles className="w-4 h-4" />
         },
         {
           quarter: 'Q2 2021',
           status: 'completed',
           title: 'Token V1 Launch',
           description: '• Launched v1 token',
-          icon: <Coins className="w-4 h-4" />,
-          category: 'Token'
+          icon: <Coins className="w-4 h-4" />
         },
         {
           quarter: 'Q3 2021',
           status: 'completed',
           title: 'V2 Release & Rebuild',
           description: '• Released V2 and started full app rebuild',
-          icon: <Zap className="w-4 h-4" />,
-          category: 'Product'
+          icon: <Zap className="w-4 h-4" />
         },
         {
           quarter: 'Q4 2021',
           status: 'completed',
           title: 'Gaming & Exchange Listing',
           description: '• Released prediction and raffle games\n• Listed on gate.io (later discovered listing agent scam)',
-          icon: <Gamepad2 className="w-4 h-4" />,
-          category: 'Gaming'
+          icon: <Gamepad2 className="w-4 h-4" />
         }
       ]
     },
@@ -53,32 +50,28 @@ const Roadmap = () => {
           status: 'completed',
           title: 'Arcade Release',
           description: '• Released arcade with first games',
-          icon: <Gamepad2 className="w-4 h-4" />,
-          category: 'Gaming'
+          icon: <Gamepad2 className="w-4 h-4" />
         },
         {
           quarter: 'Q2 2022',
           status: 'completed',
           title: 'Streaming & NFTs',
           description: '• Released stream app for licensed content\n• First tokenised documentary featuring Jorge Masvidal, Brad Pickett & more by Luke Barnatt\n• Genesis mint for Chads',
-          icon: <Video className="w-4 h-4" />,
-          category: 'Content'
+          icon: <Video className="w-4 h-4" />
         },
         {
           quarter: 'Q3 2022',
           status: 'completed',
           title: 'Corporate Formation',
           description: '• Incorporated DeLabs LTD\n• Acquired $1,000,000 home for largest crypto raffle ever',
-          icon: <Trophy className="w-4 h-4" />,
-          category: 'Business'
+          icon: <Trophy className="w-4 h-4" />
         },
         {
           quarter: 'Q4 2022',
           status: 'completed',
           title: 'Token Relaunch',
           description: '• LP issues forced token relaunch due to contract congestion',
-          icon: <Coins className="w-4 h-4" />,
-          category: 'Token'
+          icon: <Coins className="w-4 h-4" />
         }
       ]
     },
@@ -90,32 +83,28 @@ const Roadmap = () => {
           status: 'completed',
           title: 'Alpha D\'app Launch',
           description: '• Alpha launch of final complete d\'app with all ecosystem in one place\n• Released tokenised uploads with onchain ad rev share',
-          icon: <Zap className="w-4 h-4" />,
-          category: 'Product'
+          icon: <Zap className="w-4 h-4" />
         },
         {
           quarter: 'Q2 2023',
           status: 'completed',
           title: 'Industry Recognition',
           description: '• Won most innovative company award at UK\'s Corporate Livewire\n• Backed by Sony and Samsung',
-          icon: <Trophy className="w-4 h-4" />,
-          category: 'Achievement'
+          icon: <Trophy className="w-4 h-4" />
         },
         {
           quarter: 'Q3 2023',
           status: 'completed',
           title: 'Partner Airdrop',
           description: '• Announced partner airdrop for BJ, the adult fork of DeHub lead by community members',
-          icon: <Users className="w-4 h-4" />,
-          category: 'Partnership'
+          icon: <Users className="w-4 h-4" />
         },
         {
           quarter: 'Q4 2023',
           status: 'completed',
           title: 'DEX Commitment',
           description: '• Voluntary delisting from gate.io\n• Commitment to decentralisation & transparency with all DEX policy',
-          icon: <Shield className="w-4 h-4" />,
-          category: 'Governance'
+          icon: <Shield className="w-4 h-4" />
         }
       ]
     },
@@ -127,32 +116,28 @@ const Roadmap = () => {
           status: 'completed',
           title: 'Base Listing & Funding',
           description: '• Base listing for DHB\n• $1,000,000 raise for adult fork BJ (now fan.site)',
-          icon: <Coins className="w-4 h-4" />,
-          category: 'Token'
+          icon: <Coins className="w-4 h-4" />
         },
         {
           quarter: 'Q2 2024',
           status: 'completed',
           title: 'Global Events & Agency',
           description: '• DeHub London & Dubai Events\n• Team opened TikTok agency in partnership with TikTok',
-          icon: <Globe className="w-4 h-4" />,
-          category: 'Business'
+          icon: <Globe className="w-4 h-4" />
         },
         {
           quarter: 'Q3 2024',
           status: 'completed',
           title: 'Major Rebrand',
           description: '• Major app rebrand reveal\n• Trailer for Last Chad Standing (first ever MMA battle royale) released',
-          icon: <Video className="w-4 h-4" />,
-          category: 'Product'
+          icon: <Video className="w-4 h-4" />
         },
         {
           quarter: 'Q4 2024',
           status: 'completed',
           title: 'Subscriptions & Agency Growth',
           description: '• Released onchain subscriptions\n• Agency grew to UK #1 with 1000 live streamers signed exclusively',
-          icon: <Users className="w-4 h-4" />,
-          category: 'Business'
+          icon: <Users className="w-4 h-4" />
         }
       ]
     },
@@ -164,32 +149,28 @@ const Roadmap = () => {
           status: 'completed',
           title: 'Onchain Live Streams',
           description: '• Released onchain live streams functionality',
-          icon: <Video className="w-4 h-4" />,
-          category: 'Product'
+          icon: <Video className="w-4 h-4" />
         },
         {
           quarter: 'Q2 2025',
           status: 'completed',
           title: 'UGC Ambassador Program',
           description: '• Revealed UGC ambassadorship program',
-          icon: <Users className="w-4 h-4" />,
-          category: 'Community'
+          icon: <Users className="w-4 h-4" />
         },
         {
           quarter: 'Q3 2025',
           status: 'upcoming',
           title: 'AI Content Moderation',
           description: '• Launch AI-powered content moderation system with token-based dispute resolution\n• Implement creator AI tools for automatic highlights and content optimization',
-          icon: <Shield className="w-4 h-4" />,
-          category: 'AI/Tech'
+          icon: <Shield className="w-4 h-4" />
         },
         {
           quarter: 'Q4 2025',
           status: 'upcoming',
           title: 'Global Creator Fund',
           description: '• Launch $5M creator fund with tiered rewards system\n• Introduce cross-platform content syndication\n• Launch mobile app V3 with AR features',
-          icon: <Coins className="w-4 h-4" />,
-          category: 'Creator Economy'
+          icon: <Coins className="w-4 h-4" />
         }
       ]
     },
@@ -201,32 +182,28 @@ const Roadmap = () => {
           status: 'planned',
           title: 'DAO Governance Launch',
           description: '• Official launch of token governance protocol with fair voting logic\n• Begin quarterly community-driven protocol upgrades',
-          icon: <Shield className="w-4 h-4" />,
-          category: 'Governance'
+          icon: <Shield className="w-4 h-4" />
         },
         {
           quarter: 'Q2 2026',
           status: 'planned',
           title: 'Enterprise Partnerships',
           description: '• Partner with major sports leagues for exclusive content\n• Launch white-label solutions for other platforms',
-          icon: <Globe className="w-4 h-4" />,
-          category: 'Business'
+          icon: <Globe className="w-4 h-4" />
         },
         {
           quarter: 'Q3 2026',
           status: 'planned',
           title: 'Metaverse Integration',
           description: '• Launch virtual worlds integration for live events\n• Introduce 3D avatar system and virtual meet-ups',
-          icon: <Gamepad2 className="w-4 h-4" />,
-          category: 'Metaverse'
+          icon: <Gamepad2 className="w-4 h-4" />
         },
         {
           quarter: 'Q4 2026',
           status: 'planned',
           title: 'DePIN Network Launch',
           description: '• Launch decentralized infrastructure network\n• Begin community-owned content delivery network rollout',
-          icon: <Zap className="w-4 h-4" />,
-          category: 'DePIN'
+          icon: <Zap className="w-4 h-4" />
         }
       ]
     },
@@ -238,32 +215,28 @@ const Roadmap = () => {
           status: 'planned',
           title: 'Global Expansion',
           description: '• Launch in 50+ countries with localized content and compliance\n• Introduce multi-language AI translation for live streams',
-          icon: <Globe className="w-4 h-4" />,
-          category: 'Global'
+          icon: <Globe className="w-4 h-4" />
         },
         {
           quarter: 'Q2 2027',
           status: 'planned',
           title: 'Advanced Gaming Suite',
           description: '• Launch full gaming ecosystem with play-to-earn mechanics\n• Introduce esports tournaments with million-dollar prize pools',
-          icon: <Gamepad2 className="w-4 h-4" />,
-          category: 'Gaming'
+          icon: <Gamepad2 className="w-4 h-4" />
         },
         {
           quarter: 'Q3 2027',
           status: 'planned',
           title: 'Creator Economy 2.0',
           description: '• Launch advanced creator tools with AI-powered analytics\n• Introduce automated revenue optimization and predictive content suggestions',
-          icon: <Users className="w-4 h-4" />,
-          category: 'Creator Tools'
+          icon: <Users className="w-4 h-4" />
         },
         {
           quarter: 'Q4 2027',
           status: 'planned',
           title: 'Institutional Integration',
           description: '• Partner with traditional media companies for hybrid content distribution\n• Launch enterprise blockchain solutions',
-          icon: <Trophy className="w-4 h-4" />,
-          category: 'Enterprise'
+          icon: <Trophy className="w-4 h-4" />
         }
       ]
     },
@@ -275,32 +248,28 @@ const Roadmap = () => {
           status: 'planned',
           title: 'Web3 Social Network',
           description: '• Launch full social network with onchain social graph\n• Introduce reputation system and trust networks',
-          icon: <Users className="w-4 h-4" />,
-          category: 'Social'
+          icon: <Users className="w-4 h-4" />
         },
         {
           quarter: 'Q2 2028',
           status: 'planned',
           title: 'AI-Native Features',
           description: '• Launch AI agents for content creation and community management\n• Introduce personalized AI assistants for creators',
-          icon: <Sparkles className="w-4 h-4" />,
-          category: 'AI'
+          icon: <Sparkles className="w-4 h-4" />
         },
         {
           quarter: 'Q3 2028',
           status: 'planned',
           title: 'Ecosystem Maturity',
           description: '• Achieve 10M+ monthly active users\n• Launch graduate program for creators to traditional media',
-          icon: <Trophy className="w-4 h-4" />,
-          category: 'Milestone'
+          icon: <Trophy className="w-4 h-4" />
         },
         {
           quarter: 'Q4 2028',
           status: 'planned',
           title: 'Platform Evolution',
           description: '• Begin development of next-generation platform architecture\n• Research quantum-resistant security implementations',
-          icon: <Zap className="w-4 h-4" />,
-          category: 'Innovation'
+          icon: <Zap className="w-4 h-4" />
         }
       ]
     }
@@ -310,39 +279,9 @@ const Roadmap = () => {
     switch (status) {
       case 'completed':
         return 'bg-green-100 text-green-800 border-green-200';
-      case 'upcoming':
-        return 'bg-blue-100 text-blue-800 border-blue-200';
-      case 'planned':
-        return 'bg-gray-100 text-gray-800 border-gray-200';
       default:
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
-  };
-
-  const getCategoryColor = (category: string) => {
-    const colors: { [key: string]: string } = {
-      'Product': 'bg-purple-100 text-purple-800',
-      'Token': 'bg-yellow-100 text-yellow-800',
-      'Gaming': 'bg-red-100 text-red-800',
-      'Content': 'bg-blue-100 text-blue-800',
-      'Business': 'bg-green-100 text-green-800',
-      'Achievement': 'bg-orange-100 text-orange-800',
-      'Partnership': 'bg-pink-100 text-pink-800',
-      'Governance': 'bg-indigo-100 text-indigo-800',
-      'Community': 'bg-teal-100 text-teal-800',
-      'AI/Tech': 'bg-cyan-100 text-cyan-800',
-      'Creator Economy': 'bg-emerald-100 text-emerald-800',
-      'Metaverse': 'bg-violet-100 text-violet-800',
-      'DePIN': 'bg-lime-100 text-lime-800',
-      'Global': 'bg-sky-100 text-sky-800',
-      'Creator Tools': 'bg-rose-100 text-rose-800',
-      'Enterprise': 'bg-amber-100 text-amber-800',
-      'Social': 'bg-fuchsia-100 text-fuchsia-800',
-      'AI': 'bg-slate-100 text-slate-800',
-      'Milestone': 'bg-stone-100 text-stone-800',
-      'Innovation': 'bg-zinc-100 text-zinc-800'
-    };
-    return colors[category] || 'bg-gray-100 text-gray-800';
   };
 
   return (
@@ -388,14 +327,9 @@ const Roadmap = () => {
                       <div className="flex-1 space-y-2">
                         <div className="flex items-center justify-between">
                           <h3 className="font-semibold text-slate-900">{item.title}</h3>
-                          <div className="flex space-x-2">
-                            <Badge variant="outline" className={getCategoryColor(item.category)}>
-                              {item.category}
-                            </Badge>
-                            <Badge variant="outline" className={getStatusColor(item.status)}>
-                              {item.status}
-                            </Badge>
-                          </div>
+                          <Badge variant="outline" className={getStatusColor(item.status)}>
+                            {item.status === 'completed' ? 'Completed' : 'Not Completed'}
+                          </Badge>
                         </div>
                         <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">{item.description}</p>
                         <div className="text-xs text-slate-500 font-medium">{item.quarter}</div>
