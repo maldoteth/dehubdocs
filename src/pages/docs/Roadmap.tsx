@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -16,7 +15,7 @@ const Roadmap = () => {
           quarter: 'Q1 2021',
           status: 'completed',
           title: 'First Beta Launch',
-          description: 'Launched first beta app on App Store',
+          description: '• Launched first beta app on App Store',
           icon: <Sparkles className="w-4 h-4" />,
           category: 'Product'
         },
@@ -24,7 +23,7 @@ const Roadmap = () => {
           quarter: 'Q2 2021',
           status: 'completed',
           title: 'Token V1 Launch',
-          description: 'Launched v1 token',
+          description: '• Launched v1 token',
           icon: <Coins className="w-4 h-4" />,
           category: 'Token'
         },
@@ -32,7 +31,7 @@ const Roadmap = () => {
           quarter: 'Q3 2021',
           status: 'completed',
           title: 'V2 Release & Rebuild',
-          description: 'Released V2 and started full app rebuild',
+          description: '• Released V2 and started full app rebuild',
           icon: <Zap className="w-4 h-4" />,
           category: 'Product'
         },
@@ -40,7 +39,7 @@ const Roadmap = () => {
           quarter: 'Q4 2021',
           status: 'completed',
           title: 'Gaming & Exchange Listing',
-          description: 'Released prediction and raffle games\n• Listed on gate.io (later discovered listing agent scam)',
+          description: '• Released prediction and raffle games\n• Listed on gate.io (later discovered listing agent scam)',
           icon: <Gamepad2 className="w-4 h-4" />,
           category: 'Gaming'
         }
@@ -53,7 +52,7 @@ const Roadmap = () => {
           quarter: 'Q1 2022',
           status: 'completed',
           title: 'Arcade Release',
-          description: 'Released arcade with first games',
+          description: '• Released arcade with first games',
           icon: <Gamepad2 className="w-4 h-4" />,
           category: 'Gaming'
         },
@@ -77,7 +76,7 @@ const Roadmap = () => {
           quarter: 'Q4 2022',
           status: 'completed',
           title: 'Token Relaunch',
-          description: 'LP issues forced token relaunch due to contract congestion',
+          description: '• LP issues forced token relaunch due to contract congestion',
           icon: <Coins className="w-4 h-4" />,
           category: 'Token'
         }
@@ -106,7 +105,7 @@ const Roadmap = () => {
           quarter: 'Q3 2023',
           status: 'completed',
           title: 'Partner Airdrop',
-          description: 'Announced partner airdrop for BJ, the adult fork of DeHub lead by community members',
+          description: '• Announced partner airdrop for BJ, the adult fork of DeHub lead by community members',
           icon: <Users className="w-4 h-4" />,
           category: 'Partnership'
         },
@@ -164,7 +163,7 @@ const Roadmap = () => {
           quarter: 'Q1 2025',
           status: 'completed',
           title: 'Onchain Live Streams',
-          description: 'Released onchain live streams functionality',
+          description: '• Released onchain live streams functionality',
           icon: <Video className="w-4 h-4" />,
           category: 'Product'
         },
@@ -172,7 +171,7 @@ const Roadmap = () => {
           quarter: 'Q2 2025',
           status: 'completed',
           title: 'UGC Ambassador Program',
-          description: 'Revealed UGC ambassadorship program',
+          description: '• Revealed UGC ambassadorship program',
           icon: <Users className="w-4 h-4" />,
           category: 'Community'
         },
