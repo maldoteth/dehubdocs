@@ -8,9 +8,7 @@ const Dapp = () => {
       {/* Header */}
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-royal-blue font-exo">A Complete Ecosystem</h1>
-        <p className="text-xl text-royal-blue/70 max-w-2xl mx-auto font-exo">
-          A user centric streaming protocol designed to empower creators and viewers simultaneously
-        </p>
+        <p className="text-xl text-royal-blue/70 max-w-2xl mx-auto font-exo"></p>
       </div>
       
       <div className="my-6">
