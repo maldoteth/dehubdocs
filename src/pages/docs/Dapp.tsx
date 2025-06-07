@@ -1,6 +1,8 @@
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Video, Coins, Shield, Users, Settings, Eye, Zap } from 'lucide-react';
 
 const Dapp = () => {
   return (
@@ -252,6 +254,212 @@ const Dapp = () => {
           </ul>
         </section>
       </div>
+
+      <section>
+        <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+          <Video className="w-8 h-8" />
+          Livestreaming Platform
+        </h2>
+        
+        <div className="bg-gradient-to-r from-royal-blue/10 to-sky-blue/10 p-6 rounded-lg border border-royal-blue/20 mb-6">
+          <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Platform Overview</h3>
+          <p className="text-royal-blue/80 leading-relaxed font-exo">
+            Our livestreaming platform leverages Livepeer for video streaming infrastructure, powered by a NestJS backend and Next.js frontend. 
+            Every livestream is fully integrated into the on-chain ecosystem, offering creators unprecedented control and monetization opportunities 
+            while providing viewers with engaging, token-enabled experiences.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 mb-8">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                <Zap className="w-5 h-5" />
+                Key Features
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-royal-blue/80 font-exo">
+                <li>• NFT-backed livestreams minted on BNB or Base chain</li>
+                <li>• Integrated tipping with visual effects and tiers</li>
+                <li>• Token-gated access for exclusive content</li>
+                <li>• Pay-per-view and bounty reward systems</li>
+                <li>• Real-time chat and engagement metrics</li>
+                <li>• Support for OBS/Streamlabs integration</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                <Coins className="w-5 h-5" />
+                Supported Tokens
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {['DHB', 'FLOKI', 'USDC', 'USDT'].map((token) => (
+                  <span key={token} className="px-3 py-1 bg-royal-blue/10 text-royal-blue rounded-full text-sm font-medium font-exo">
+                    {token}
+                  </span>
+                ))}
+              </div>
+              <p className="text-sm text-royal-blue/70 mt-3 font-exo">
+                All tipping, token-gating, and bounty systems support these tokens
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="space-y-6">
+          <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Livestream Features</h3>
+          
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <Card className="border-green-200 bg-green-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
+                  <Zap className="w-4 h-4" />
+                  Stream Creation
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-green-700 space-y-1 font-exo">
+                  <li>• Instant NFT minting</li>
+                  <li>• On-chain registration</li>
+                  <li>• Customizable settings</li>
+                  <li>• Multi-network support</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                  <Coins className="w-4 h-4" />
+                  Tipping System
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-blue-700 space-y-1 font-exo">
+                  <li>• Visual effects & tiers</li>
+                  <li>• Custom minimum amounts</li>
+                  <li>• Message attachments</li>
+                  <li>• Real-time rewards</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-purple-200 bg-purple-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                  <Shield className="w-4 h-4" />
+                  Token Gating
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-purple-700 space-y-1 font-exo">
+                  <li>• Balance-based access</li>
+                  <li>• Exclusive content</li>
+                  <li>• Multi-token support</li>
+                  <li>• Instant verification</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-orange-200 bg-orange-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-orange-800 font-exo flex items-center gap-2">
+                  <Users className="w-4 h-4" />
+                  PPV & Bounties
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-orange-700 space-y-1 font-exo">
+                  <li>• One-time payments</li>
+                  <li>• Viewer rewards</li>
+                  <li>• First-come basis</li>
+                  <li>• Custom distributions</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 mt-8">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                <Settings className="w-5 h-5" />
+                Streaming Methods
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="p-3 bg-royal-blue/5 rounded-lg">
+                  <h4 className="font-semibold text-royal-blue font-exo">Web Streaming</h4>
+                  <p className="text-sm text-royal-blue/70 font-exo">Go live directly from your browser using your webcam</p>
+                </div>
+                <div className="p-3 bg-royal-blue/5 rounded-lg">
+                  <h4 className="font-semibold text-royal-blue font-exo">External Streaming</h4>
+                  <p className="text-sm text-royal-blue/70 font-exo">Use OBS, Streamlabs, or other software with custom stream keys and server URLs</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                <Eye className="w-5 h-5" />
+                Analytics & Metrics
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-royal-blue/80 font-exo">Live Viewers</span>
+                  <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded font-exo">Real-time</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-royal-blue/80 font-exo">Tips Received</span>
+                  <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded font-exo">Multi-token</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-royal-blue/80 font-exo">Stream Likes</span>
+                  <span className="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded font-exo">Engagement</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-royal-blue/80 font-exo">Chat Activity</span>
+                  <span className="text-sm bg-orange-100 text-orange-800 px-2 py-1 rounded font-exo">Interactive</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <Card className="mt-6 border-sky-blue/30 bg-gradient-to-r from-sky-blue/10 to-royal-blue/10">
+          <CardHeader>
+            <CardTitle className="text-royal-blue font-exo">Technical Infrastructure</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="p-3 bg-white/50 rounded-lg">
+                <h4 className="font-semibold text-royal-blue font-exo">Backend</h4>
+                <p className="text-sm text-royal-blue/80 font-exo">NestJS manages stream lifecycle, token-gating logic, NFT minting, and tipping systems</p>
+              </div>
+              <div className="p-3 bg-white/50 rounded-lg">
+                <h4 className="font-semibold text-royal-blue font-exo">Frontend</h4>
+                <p className="text-sm text-royal-blue/80 font-exo">Next.js provides responsive UI/UX for streaming, chat, tipping, and stream management</p>
+              </div>
+              <div className="p-3 bg-white/50 rounded-lg">
+                <h4 className="font-semibold text-royal-blue font-exo">Streaming</h4>
+                <p className="text-sm text-royal-blue/80 font-exo">Livepeer handles video ingestion, delivery, and generates custom stream keys for external apps</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
     </div>
   );
 };
