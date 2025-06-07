@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -40,7 +39,7 @@ const Roadmap = () => {
           quarter: 'Q4 2021',
           status: 'completed',
           title: 'Gaming & Exchange Listing',
-          description: 'Released prediction and raffle games, listed on gate.io (later discovered listing agent scam)',
+          description: 'Released prediction and raffle games • Listed on gate.io (later discovered listing agent scam)',
           icon: <Gamepad2 className="w-4 h-4" />,
           category: 'Gaming'
         }
@@ -61,7 +60,7 @@ const Roadmap = () => {
           quarter: 'Q2 2022',
           status: 'completed',
           title: 'Streaming & NFTs',
-          description: 'Released stream app for licensed content, first tokenised documentary featuring Jorge Masvidal, Brad Pickett & more by Luke Barnatt. Genesis mint for Chads',
+          description: 'Released stream app for licensed content • First tokenised documentary featuring Jorge Masvidal, Brad Pickett & more by Luke Barnatt • Genesis mint for Chads',
           icon: <Video className="w-4 h-4" />,
           category: 'Content'
         },
@@ -69,7 +68,7 @@ const Roadmap = () => {
           quarter: 'Q3 2022',
           status: 'completed',
           title: 'Corporate Formation',
-          description: 'Incorporated DeLabs LTD and acquired $1,000,000 home for largest crypto raffle ever',
+          description: 'Incorporated DeLabs LTD • Acquired $1,000,000 home for largest crypto raffle ever',
           icon: <Trophy className="w-4 h-4" />,
           category: 'Business'
         },
@@ -90,7 +89,7 @@ const Roadmap = () => {
           quarter: 'Q1 2023',
           status: 'completed',
           title: 'Alpha D\'app Launch',
-          description: 'Alpha launch of final complete d\'app with all ecosystem in one place, released tokenised uploads with onchain ad rev share',
+          description: 'Alpha launch of final complete d\'app with all ecosystem in one place • Released tokenised uploads with onchain ad rev share',
           icon: <Zap className="w-4 h-4" />,
           category: 'Product'
         },
@@ -98,7 +97,7 @@ const Roadmap = () => {
           quarter: 'Q2 2023',
           status: 'completed',
           title: 'Industry Recognition',
-          description: 'Won most innovative company award at UK\'s Corporate Livewire, backed by Sony and Samsung',
+          description: 'Won most innovative company award at UK\'s Corporate Livewire • Backed by Sony and Samsung',
           icon: <Trophy className="w-4 h-4" />,
           category: 'Achievement'
         },
@@ -114,7 +113,7 @@ const Roadmap = () => {
           quarter: 'Q4 2023',
           status: 'completed',
           title: 'DEX Commitment',
-          description: 'Voluntary delisting from gate.io and commitment to decentralisation & transparency with all DEX policy',
+          description: 'Voluntary delisting from gate.io • Commitment to decentralisation & transparency with all DEX policy',
           icon: <Shield className="w-4 h-4" />,
           category: 'Governance'
         }
@@ -127,7 +126,7 @@ const Roadmap = () => {
           quarter: 'Q1 2024',
           status: 'completed',
           title: 'Base Listing & Funding',
-          description: 'Base listing for DHB, $1,000,000 raise for adult fork BJ (now fan.site)',
+          description: 'Base listing for DHB • $1,000,000 raise for adult fork BJ (now fan.site)',
           icon: <Coins className="w-4 h-4" />,
           category: 'Token'
         },
@@ -135,7 +134,7 @@ const Roadmap = () => {
           quarter: 'Q2 2024',
           status: 'completed',
           title: 'Global Events & Agency',
-          description: 'DeHub London & Dubai Events, team opened TikTok agency in partnership with TikTok',
+          description: 'DeHub London & Dubai Events • Team opened TikTok agency in partnership with TikTok',
           icon: <Globe className="w-4 h-4" />,
           category: 'Business'
         },
@@ -143,7 +142,7 @@ const Roadmap = () => {
           quarter: 'Q3 2024',
           status: 'completed',
           title: 'Major Rebrand',
-          description: 'Major app rebrand reveal, trailer for Last Chad Standing (first ever MMA battle royale) released',
+          description: 'Major app rebrand reveal • Trailer for Last Chad Standing (first ever MMA battle royale) released',
           icon: <Video className="w-4 h-4" />,
           category: 'Product'
         },
@@ -151,7 +150,7 @@ const Roadmap = () => {
           quarter: 'Q4 2024',
           status: 'completed',
           title: 'Subscriptions & Agency Growth',
-          description: 'Released onchain subscriptions, agency grew to UK #1 with 1000 live streamers signed exclusively',
+          description: 'Released onchain subscriptions • Agency grew to UK #1 with 1000 live streamers signed exclusively',
           icon: <Users className="w-4 h-4" />,
           category: 'Business'
         }
@@ -180,7 +179,7 @@ const Roadmap = () => {
           quarter: 'Q3 2025',
           status: 'upcoming',
           title: 'AI Content Moderation',
-          description: 'Launch AI-powered content moderation system with token-based dispute resolution. Implement creator AI tools for automatic highlights and content optimization.',
+          description: 'Launch AI-powered content moderation system with token-based dispute resolution • Implement creator AI tools for automatic highlights and content optimization',
           icon: <Shield className="w-4 h-4" />,
           category: 'AI/Tech'
         },
@@ -188,7 +187,7 @@ const Roadmap = () => {
           quarter: 'Q4 2025',
           status: 'upcoming',
           title: 'Global Creator Fund',
-          description: 'Launch $5M creator fund with tiered rewards system. Introduce cross-platform content syndication and launch mobile app V3 with AR features.',
+          description: 'Launch $5M creator fund with tiered rewards system • Introduce cross-platform content syndication • Launch mobile app V3 with AR features',
           icon: <Coins className="w-4 h-4" />,
           category: 'Creator Economy'
         }
@@ -201,7 +200,7 @@ const Roadmap = () => {
           quarter: 'Q1 2026',
           status: 'planned',
           title: 'DAO Governance Launch',
-          description: 'Official launch of token governance protocol with fair voting logic. Begin quarterly community-driven protocol upgrades.',
+          description: 'Official launch of token governance protocol with fair voting logic • Begin quarterly community-driven protocol upgrades',
           icon: <Shield className="w-4 h-4" />,
           category: 'Governance'
         },
@@ -209,7 +208,7 @@ const Roadmap = () => {
           quarter: 'Q2 2026',
           status: 'planned',
           title: 'Enterprise Partnerships',
-          description: 'Partner with major sports leagues for exclusive content. Launch white-label solutions for other platforms.',
+          description: 'Partner with major sports leagues for exclusive content • Launch white-label solutions for other platforms',
           icon: <Globe className="w-4 h-4" />,
           category: 'Business'
         },
@@ -217,7 +216,7 @@ const Roadmap = () => {
           quarter: 'Q3 2026',
           status: 'planned',
           title: 'Metaverse Integration',
-          description: 'Launch virtual worlds integration for live events. Introduce 3D avatar system and virtual meet-ups.',
+          description: 'Launch virtual worlds integration for live events • Introduce 3D avatar system and virtual meet-ups',
           icon: <Gamepad2 className="w-4 h-4" />,
           category: 'Metaverse'
         },
@@ -225,7 +224,7 @@ const Roadmap = () => {
           quarter: 'Q4 2026',
           status: 'planned',
           title: 'DePIN Network Launch',
-          description: 'Launch decentralized infrastructure network. Begin community-owned content delivery network rollout.',
+          description: 'Launch decentralized infrastructure network • Begin community-owned content delivery network rollout',
           icon: <Zap className="w-4 h-4" />,
           category: 'DePIN'
         }
@@ -238,7 +237,7 @@ const Roadmap = () => {
           quarter: 'Q1 2027',
           status: 'planned',
           title: 'Global Expansion',
-          description: 'Launch in 50+ countries with localized content and compliance. Introduce multi-language AI translation for live streams.',
+          description: 'Launch in 50+ countries with localized content and compliance • Introduce multi-language AI translation for live streams',
           icon: <Globe className="w-4 h-4" />,
           category: 'Global'
         },
@@ -246,7 +245,7 @@ const Roadmap = () => {
           quarter: 'Q2 2027',
           status: 'planned',
           title: 'Advanced Gaming Suite',
-          description: 'Launch full gaming ecosystem with play-to-earn mechanics. Introduce esports tournaments with million-dollar prize pools.',
+          description: 'Launch full gaming ecosystem with play-to-earn mechanics • Introduce esports tournaments with million-dollar prize pools',
           icon: <Gamepad2 className="w-4 h-4" />,
           category: 'Gaming'
         },
@@ -254,7 +253,7 @@ const Roadmap = () => {
           quarter: 'Q3 2027',
           status: 'planned',
           title: 'Creator Economy 2.0',
-          description: 'Launch advanced creator tools with AI-powered analytics. Introduce automated revenue optimization and predictive content suggestions.',
+          description: 'Launch advanced creator tools with AI-powered analytics • Introduce automated revenue optimization and predictive content suggestions',
           icon: <Users className="w-4 h-4" />,
           category: 'Creator Tools'
         },
@@ -262,7 +261,7 @@ const Roadmap = () => {
           quarter: 'Q4 2027',
           status: 'planned',
           title: 'Institutional Integration',
-          description: 'Partner with traditional media companies for hybrid content distribution. Launch enterprise blockchain solutions.',
+          description: 'Partner with traditional media companies for hybrid content distribution • Launch enterprise blockchain solutions',
           icon: <Trophy className="w-4 h-4" />,
           category: 'Enterprise'
         }
@@ -275,7 +274,7 @@ const Roadmap = () => {
           quarter: 'Q1 2028',
           status: 'planned',
           title: 'Web3 Social Network',
-          description: 'Launch full social network with onchain social graph. Introduce reputation system and trust networks.',
+          description: 'Launch full social network with onchain social graph • Introduce reputation system and trust networks',
           icon: <Users className="w-4 h-4" />,
           category: 'Social'
         },
@@ -283,7 +282,7 @@ const Roadmap = () => {
           quarter: 'Q2 2028',
           status: 'planned',
           title: 'AI-Native Features',
-          description: 'Launch AI agents for content creation and community management. Introduce personalized AI assistants for creators.',
+          description: 'Launch AI agents for content creation and community management • Introduce personalized AI assistants for creators',
           icon: <Sparkles className="w-4 h-4" />,
           category: 'AI'
         },
@@ -291,7 +290,7 @@ const Roadmap = () => {
           quarter: 'Q3 2028',
           status: 'planned',
           title: 'Ecosystem Maturity',
-          description: 'Achieve 10M+ monthly active users. Launch graduate program for creators to traditional media.',
+          description: 'Achieve 10M+ monthly active users • Launch graduate program for creators to traditional media',
           icon: <Trophy className="w-4 h-4" />,
           category: 'Milestone'
         },
@@ -299,7 +298,7 @@ const Roadmap = () => {
           quarter: 'Q4 2028',
           status: 'planned',
           title: 'Platform Evolution',
-          description: 'Begin development of next-generation platform architecture. Research quantum-resistant security implementations.',
+          description: 'Begin development of next-generation platform architecture • Research quantum-resistant security implementations',
           icon: <Zap className="w-4 h-4" />,
           category: 'Innovation'
         }
