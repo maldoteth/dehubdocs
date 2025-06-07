@@ -3,8 +3,10 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap } from 'lucide-react';
+
 const Dapp = () => {
-  return <div className="space-y-8">
+  return (
+    <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-royal-blue font-exo">A Complete Ecosystem</h1>
@@ -18,7 +20,7 @@ const Dapp = () => {
       <div className="space-y-8">
         <section>
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            As a streaming d'app, there is only a certain level of censorship resistance that would be deemed acceptable, given the illegal and immoral content that could be uploaded.
+            As a social & streaming app, there is only a certain level of censorship resistance that would be deemed acceptable, given the illegal and immoral content that could be uploaded.
           </p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
@@ -454,6 +456,8 @@ const Dapp = () => {
           </CardContent>
         </Card>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default Dapp;
