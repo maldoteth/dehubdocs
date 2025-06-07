@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -16,7 +15,7 @@ const Roadmap = () => {
           quarter: 'Q1 2021',
           status: 'completed',
           title: 'First Beta Launch',
-          description: '• Launched first beta app on App Store with 500+ initial testers\n• Assembled core development team of 8 engineers\n• Conducted 50+ user interviews to validate product-market fit\n• Overcame initial Apple App Store review challenges\n• Established basic content moderation framework\n• Implemented core streaming infrastructure on AWS',
+          description: '• Launched first beta app on App Store with 500+ initial testers\n• Assembled core development team\n• Conducted 50+ user interviews to validate product-market fit\n• Overcame initial Apple App Store review challenges\n• Established basic content moderation framework\n• Implemented core streaming infrastructure on AWS',
           icon: <Sparkles className="w-4 h-4" />
         },
         {
