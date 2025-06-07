@@ -1,13 +1,10 @@
-
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap } from 'lucide-react';
-
 const Dapp = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-royal-blue font-exo">A Complete Ecosystem</h1>
@@ -443,7 +440,7 @@ const Dapp = () => {
             <div className="grid gap-4 md:grid-cols-3">
               <div className="p-3 bg-white/50 rounded-lg">
                 <h4 className="font-semibold text-royal-blue font-exo">Backend</h4>
-                <p className="text-sm text-royal-blue/80 font-exo">NestJS manages stream lifecycle, token-gating logic, NFT minting, and tipping systems</p>
+                <p className="text-sm text-royal-blue/80 font-exo">Next.JS manages stream lifecycle, token-gating logic, NFT minting, and tipping systems</p>
               </div>
               <div className="p-3 bg-white/50 rounded-lg">
                 <h4 className="font-semibold text-royal-blue font-exo">Frontend</h4>
@@ -457,8 +454,6 @@ const Dapp = () => {
           </CardContent>
         </Card>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Dapp;
