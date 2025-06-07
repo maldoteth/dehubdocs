@@ -1,3 +1,4 @@
+
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
@@ -297,7 +298,7 @@ const Dapp = () => {
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
-                {['DHB', 'FLOKI', 'USDC', 'USDT'].map(token => <span key={token} className="px-3 py-1 bg-royal-blue/10 text-royal-blue rounded-full text-sm font-medium font-exo">
+                {['DHB', 'FLOKI', 'USDC', 'USDT', 'BNB', 'ETH', 'PEPE', 'DOGE'].map(token => <span key={token} className="px-3 py-1 bg-royal-blue/10 text-royal-blue rounded-full text-sm font-medium font-exo">
                     {token}
                   </span>)}
               </div>
