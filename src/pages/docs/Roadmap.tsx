@@ -517,7 +517,6 @@ const Roadmap = () => {
                       <div>• Built custom CDN reducing latency to sub-200ms globally</div>
                       <div>• Achieved 99.99% uptime across all streaming services</div>
                       <div>• Introduced interactive features like live polls and Q&A</div>
-                      <div>• Processed 1M+ onchain transactions during live events</div>
                     </div>
                     <div className="text-xs text-slate-500 font-medium">Q1 2025</div>
                   </div>
