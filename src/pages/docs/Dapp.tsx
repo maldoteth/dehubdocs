@@ -3,13 +3,11 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap } from 'lucide-react';
-
 const Dapp = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-royal-blue font-exo">Stream</h1>
+        <h1 className="text-4xl font-bold text-royal-blue font-exo">A Complete Ecosystem</h1>
         <p className="text-xl text-royal-blue/70 max-w-2xl mx-auto font-exo">
           A user centric streaming protocol designed to empower creators and viewers simultaneously
         </p>
@@ -299,11 +297,9 @@ const Dapp = () => {
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
-                {['DHB', 'FLOKI', 'USDC', 'USDT'].map((token) => (
-                  <span key={token} className="px-3 py-1 bg-royal-blue/10 text-royal-blue rounded-full text-sm font-medium font-exo">
+                {['DHB', 'FLOKI', 'USDC', 'USDT'].map(token => <span key={token} className="px-3 py-1 bg-royal-blue/10 text-royal-blue rounded-full text-sm font-medium font-exo">
                     {token}
-                  </span>
-                ))}
+                  </span>)}
               </div>
               <p className="text-sm text-royal-blue/70 mt-3 font-exo">
                 All tipping, token-gating, and bounty systems support these tokens
@@ -460,8 +456,6 @@ const Dapp = () => {
           </CardContent>
         </Card>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Dapp;
