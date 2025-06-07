@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -588,8 +587,6 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Launch $5M creator fund with tiered rewards based on engagement metrics</div>
-                      <div>• Introduce cross-platform content syndication to YouTube, TikTok, and Instagram</div>
-                      <div>• Launch mobile app V3 with AR features for virtual meet-and-greets</div>
                       <div>• Implement automated content distribution optimization</div>
                       <div>• Build creator analytics dashboard with predictive insights</div>
                       <div>• Establish partnerships with traditional media companies for content crossover</div>
