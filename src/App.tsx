@@ -28,6 +28,7 @@ import Contact from "./pages/docs/Contact";
 import ComingSoonPage from "./components/ComingSoonPage";
 import PrivacyPolicy from "./pages/docs/PrivacyPolicy";
 import TokenStake from "./pages/docs/TokenStake";
+import Roadmap from "./pages/docs/Roadmap";
 
 const queryClient = new QueryClient();
 
@@ -53,17 +54,7 @@ const App = () => (
             <Route path="depin" element={<DePIN />} />
             <Route path="team" element={<Team />} />
             <Route path="security" element={<TokenSecurity />} />
-            <Route path="roadmap" element={
-              <ComingSoonPage 
-                title="Roadmap" 
-                description="Our new roadmap is in the works. The original core development roadmap with all the features set out to build in 2021 was completed. So check back soon for updates!" 
-                additionalNote={
-                  <p className="text-royal-blue/60 font-exo text-sm">
-                    Find our old roadmap here: <a href="https://dehub.gitbook.io" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">dehub.gitbook.io</a>
-                  </p>
-                }
-              />
-            } />
+            <Route path="roadmap" element={<Roadmap />} />
             <Route path="contact" element={<Contact />} />
             <Route path="terms" element={<Terms />} />
             <Route path="terms-of-service" element={<TermsOfService />} />
