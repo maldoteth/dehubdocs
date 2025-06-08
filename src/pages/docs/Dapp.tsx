@@ -591,19 +591,7 @@ const Dapp = () => {
               </ul>
             </div>
 
-            <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo flex items-center gap-2">
-                <Settings className="w-5 h-5" />
-                🏗️ Stack (for actual implementation)
-              </h4>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-6">
-                <li><strong>Blockchain:</strong> Base</li>
-                <li><strong>Storage:</strong> IPFS + Filecoin / Arweave for content</li>
-                <li><strong>DAO Framework:</strong> Safe + Zodiac modules / Tally / DAOhaus</li>
-                <li><strong>Token Management:</strong> ERC-20 + soulbound rep tokens (ERC-1155)</li>
-                <li><strong>Frontend:</strong> Next.js + WalletConnect + The Graph for indexing</li>
-              </ul>
-            </div>
+            
           </div>
 
           <div className="mt-8">
