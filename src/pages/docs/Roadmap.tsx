@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -530,8 +529,8 @@ const Roadmap = () => {
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-slate-900">Q3 2025</h3>
-                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                        Planned
+                      <Badge variant="outline" className="bg-orange-100 text-orange-800 border-orange-200">
+                        Pending
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
