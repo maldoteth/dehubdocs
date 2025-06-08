@@ -9,16 +9,16 @@ const Overview = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [showEditControls, setShowEditControls] = useState(false);
   const [editableContent, setEditableContent] = useState({
-    title: "Overview",
-    subtitle: "An overview of our past, present and future.",
-    paragraph1: "DeHub is a next-generation gaming and streaming protocol, sustainably scaled through our proprietary DePIN infrastructure for content hosting, transcoding, and delivery. Built by a team of gamers and streamers, we harness cutting-edge advances in blockchain, AI, and open-source technology to tackle the limitations of legacy media platforms—such as censorship, demonetisation, deplatforming, algorithm manipulation, opaque earnings, and lack of data ownership.",
-    paragraph2: "Our seamless user experience abstracts away the complexities of crypto—wallet creation, onboarding, and transaction confirmations—while ensuring that every interaction remains on-chain and publicly verifiable through our leaderboards. No crypto knowledge required.",
-    paragraph3: "DeHub empowers creators with innovative tools for content creation, monetisation, and community building. Host PPV events, launch Watch2Earn experiences, or share token-gated content—all without banks or KYC. Retain full ownership of your content and audience data in a censorship-resistant, creator-first ecosystem.",
-    paragraph4: "Join us in building the network of the future—a user-owned creator economy where value flows directly to those who earn it, free from intermediaries.",
-    paragraph5: "Before rebranding, we proudly operated as Futurov (FTV), earning a growing user base on our Web2 streaming app with rave reviews on the Google Play Store.",
-    paragraph6: "An in-depth overview of our dApps and technical infrastructure follows.",
-    disclaimerTitle: "Disclaimer",
-    disclaimerText: "DeHub tokens are strictly for utility purposes in the same way that any in-game or in-app digital tokens or currencies and strictly not an investment. As our token lives on-chain, we can offer added utility as well as unprecedented levels of verifiable transparency. The above data is solely compiled for transparency, educational and informative purposes only. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs we release. Markets are highly volatile. You could also lose all your money due to any unforeseen errors such as competency failures, technical error, hacks and so on. Therefore, you should only ever spend what you can comfortably afford to lose."
+    title: "DeHub: The Future of Creator Economy",
+    subtitle: "Where creators own their content, earnings, and destiny—no intermediaries, no limits.",
+    paragraph1: "Imagine a world where creators earn 100% of their revenue, own their audience data, and never fear censorship or demonetization. DeHub makes this reality through our revolutionary gaming and streaming protocol, powered by cutting-edge DePIN infrastructure that's reshaping how content is hosted, transcoded, and delivered globally.",
+    paragraph2: "Built by gamers for gamers, we've solved the crypto complexity problem. Our platform delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Just pure creative freedom with blockchain-verified earnings visible on our public leaderboards.",
+    paragraph3: "Launch pay-per-view events, create Watch2Earn experiences, or distribute exclusive token-gated content—all without traditional banking or lengthy KYC processes. Your content, your rules, your revenue. Direct creator-to-fan relationships in a censorship-resistant ecosystem where your success is entirely in your hands.",
+    paragraph4: "Join thousands of creators already building the user-owned economy of tomorrow, where value flows directly to those who create it—completely free from corporate gatekeepers and algorithmic manipulation.",
+    paragraph5: "Our journey began as Futurov (FTV), where we built a thriving community of streamers and gamers who loved our Web2 app and gave us incredible reviews on Google Play Store. Now we're taking everything they loved and making it unstoppable.",
+    paragraph6: "Ready to see how we're revolutionizing digital content? Dive into our technical infrastructure and discover the dApps powering this creator renaissance.",
+    disclaimerTitle: "Important Notice",
+    disclaimerText: "DeHub tokens serve as utility tokens within our ecosystem, similar to in-game currencies, and are not investment vehicles. While our blockchain infrastructure provides unprecedented transparency and verifiable on-chain data for educational purposes, all markets carry inherent risks. You could lose your entire investment due to market volatility, technical issues, security breaches, or unforeseen circumstances. Only participate with funds you can afford to lose completely. DeHub and its affiliates assume no responsibility for any financial losses incurred."
   });
 
   useEffect(() => {
