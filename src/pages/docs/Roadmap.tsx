@@ -532,6 +532,7 @@ const Roadmap = () => {
                       <div>• Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as
                         <span className="block ml-4">financial transactions and guidance</span>
                       </div>
+                      <div>• Custom advertising stack with advanced user targeting based on wallet balance & activity</div>
                     </div>
                   </div>
                 </div>
