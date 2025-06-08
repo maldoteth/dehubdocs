@@ -692,7 +692,7 @@ const Dapp = () => {
             <p className="text-royal-blue/80 leading-relaxed font-exo">
               Our revolutionary fee structure rewards $DHB token holders with significantly reduced platform fees. 
               Starting at a standard 10% fee, each badge tier earned through increased $DHB holdings reduces fees by 0.69%, 
-              ultimately reaching just 1% for Megalodon badge holders - a 90% fee reduction for our most dedicated community members.
+              ultimately reaching just 1% for Megalodon badge holders - a 99% fee reduction for our most dedicated community members.
             </p>
           </div>
 
@@ -740,7 +740,7 @@ const Dapp = () => {
               <CardContent>
                 <ul className="text-sm text-green-700 space-y-2 font-exo">
                   <li>• Linear 0.69% reduction per badge tier</li>
-                  <li>• Maximum 90% fee reduction for Megalodons</li>
+                  <li>• Maximum 99% fee reduction for Megalodons</li>
                   <li>• Applies to all platform transactions</li>
                   <li>• Instant activation upon badge qualification</li>
                   <li>• Encourages long-term $DHB holding</li>
