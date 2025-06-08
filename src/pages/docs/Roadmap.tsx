@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -594,11 +595,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Released trailer for Last Chad Standing (first ever MMA battle royale) with 1M+ views</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Redesigned user interface & back end speed by 200%</span>
+                        <span>Overhauled user interface & improved back end speed by 200%</span>
                       </div>
                     </div>
                   </div>
@@ -620,6 +617,10 @@ const Roadmap = () => {
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Released onchain tradable subscriptions</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released trailer for Last Chad Standing (first ever MMA battle royale) with 1M+ views</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
