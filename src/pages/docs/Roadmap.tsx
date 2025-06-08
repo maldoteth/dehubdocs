@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -102,7 +99,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released v2 with rebrand to DeHub</div>
+                      <div>• Rebranded to DeHub</div>
                       <div>• Started full app rebuild using React Native for better cross-platform support</div>
                       <div>• Airdropped all holders automatically</div>
                       <div>• Addressed security vulnerabilities from v1</div>
@@ -577,5 +574,3 @@ const Roadmap = () => {
     </div>;
 };
 export default Roadmap;
-
-
