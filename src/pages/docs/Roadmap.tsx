@@ -130,6 +130,7 @@ const Roadmap = () => {
                       <div>• Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP</div>
                       <div>• Discovered listing agent was fraudulent, stole our fundraise and dumped our chart instead of 
                         <span className="block ml-4">airdropping Gate users, Gate investigated and apologised but could</span>
+                        <span className="block ml-4">not identify the rogue employee as they lost the records, apparently.</span>
                       </div>
                       <div>• Implemented game mechanics with provably fair randomization</div>
                       <div>• Community grew to 8,000+ active members</div>
