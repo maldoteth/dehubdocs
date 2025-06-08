@@ -86,21 +86,9 @@ const highlightMatchingTerms = (text: string, query: string) => {
 const highlightTextInSection = (searchResult: any, searchQuery: string, sectionId?: string) => {
   if (!searchQuery.trim()) return;
   
-  // Extract meaningful terms from the search result's title and content
-  const resultTitle = searchResult?.title?.toLowerCase() || '';
-  const resultContent = searchResult?.content?.toLowerCase() || '';
-  
-  // Get query terms but also consider the result's title for context
-  const queryTerms = searchQuery.toLowerCase().split(' ').filter(term => term.length > 1);
-  const titleWords = resultTitle.split(' ').filter(word => word.length > 2);
-  
-  // Combine and prioritize terms, giving preference to title words and longer query terms
-  const searchTerms = [...new Set([...titleWords, ...queryTerms])].sort((a, b) => b.length - a.length);
-  
-  console.log(`🎯 Enhanced search for result: "${resultTitle}"`);
-  console.log(`🔍 Using search terms: ${searchTerms.join(', ')}`);
-  
-  if (searchTerms.length === 0) return;
+  console.log(`🎯 Enhanced search for result: "${searchResult?.title}"`);
+  console.log(`🎯 Target section: ${sectionId || 'none specified'}`);
+  console.log(`🔍 Search query: "${searchQuery}"`);
   
   // Remove any existing highlights first
   const existingHighlights = document.querySelectorAll('.search-highlight');
@@ -112,37 +100,134 @@ const highlightTextInSection = (searchResult: any, searchQuery: string, sectionI
     }
   });
   
-  // Determine search scope - if we have a section ID, ONLY search within that section
-  let searchScope = document.body;
+  // If we have a specific section ID, scroll to it first
   if (sectionId) {
     const sectionElement = document.getElementById(sectionId);
     if (sectionElement) {
-      searchScope = sectionElement;
-      console.log(`🎯 Restricting search to section: ${sectionId}`);
-      console.log(`📍 Section element:`, sectionElement);
+      console.log(`📍 Found target section: ${sectionId}`);
+      
+      // Scroll to the section immediately
+      sectionElement.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start',
+        inline: 'nearest'
+      });
+      
+      // Add temporary highlight to the entire section
+      sectionElement.classList.add('bg-blue-100', 'border-l-4', 'border-blue-400', 'pl-4', 'rounded-r');
+      
+      // Remove the section highlight after 3 seconds
+      setTimeout(() => {
+        sectionElement.classList.remove('bg-blue-100', 'border-l-4', 'border-blue-400', 'pl-4', 'rounded-r');
+      }, 3000);
+      
+      // Now search for specific terms within this section only
+      const queryTerms = searchQuery.toLowerCase().split(' ').filter(term => term.length > 1);
+      
+      const walker = document.createTreeWalker(
+        sectionElement,
+        NodeFilter.SHOW_TEXT,
+        {
+          acceptNode: (node) => {
+            const parent = node.parentElement;
+            if (parent && (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE')) {
+              return NodeFilter.FILTER_REJECT;
+            }
+            return NodeFilter.FILTER_ACCEPT;
+          }
+        }
+      );
+      
+      let firstMatch: Element | null = null;
+      let node;
+      
+      // Look for query terms within the target section
+      while (node = walker.nextNode()) {
+        const textContent = node.textContent?.toLowerCase() || '';
+        
+        for (const term of queryTerms) {
+          if (term.length > 2 && textContent.includes(term)) {
+            const parent = node.parentElement;
+            if (parent) {
+              const text = node.textContent || '';
+              const lowerText = text.toLowerCase();
+              const index = lowerText.indexOf(term);
+              
+              if (index !== -1) {
+                console.log(`✅ Found term "${term}" in target section`);
+                
+                const before = text.substring(0, index);
+                const match = text.substring(index, index + term.length);
+                const after = text.substring(index + term.length);
+                
+                const span = document.createElement('span');
+                span.className = 'search-highlight bg-yellow-300 px-1 rounded font-semibold';
+                span.textContent = match;
+                
+                const fragment = document.createDocumentFragment();
+                if (before) fragment.appendChild(document.createTextNode(before));
+                fragment.appendChild(span);
+                if (after) fragment.appendChild(document.createTextNode(after));
+                
+                parent.replaceChild(fragment, node);
+                
+                if (!firstMatch) {
+                  firstMatch = span;
+                }
+                
+                // Reset walker since we modified the DOM
+                walker.currentNode = sectionElement;
+                break;
+              }
+            }
+          }
+        }
+      }
+      
+      // If we found specific matches, scroll to the first one after a delay
+      if (firstMatch) {
+        setTimeout(() => {
+          firstMatch.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'center',
+            inline: 'nearest'
+          });
+          
+          // Add extra emphasis to the first match
+          firstMatch.classList.add('bg-blue-400', 'shadow-lg');
+          firstMatch.classList.remove('bg-yellow-300');
+          
+          setTimeout(() => {
+            firstMatch.classList.remove('bg-blue-400', 'shadow-lg');
+            firstMatch.classList.add('bg-yellow-300');
+            
+            setTimeout(() => {
+              firstMatch.classList.remove('bg-yellow-300');
+            }, 3000);
+          }, 2000);
+        }, 1000);
+      }
+      
+      return;
     } else {
       console.warn(`⚠️ Section element not found: ${sectionId}`);
-      return; // Don't search if the target section doesn't exist
     }
   }
   
-  // Create a more targeted search that looks for the most relevant terms first
+  // Fallback: search the entire page if no section specified or section not found
+  console.log(`🔍 Performing fallback search on entire page`);
+  
+  const queryTerms = searchQuery.toLowerCase().split(' ').filter(term => term.length > 1);
+  
   const walker = document.createTreeWalker(
-    searchScope,
+    document.body,
     NodeFilter.SHOW_TEXT,
     {
       acceptNode: (node) => {
-        // Skip script and style elements
         const parent = node.parentElement;
         if (parent && (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE')) {
           return NodeFilter.FILTER_REJECT;
         }
-        
-        // If we have a sectionId, make sure we're actually inside that section
-        if (sectionId && !searchScope.contains(node)) {
-          return NodeFilter.FILTER_REJECT;
-        }
-        
         return NodeFilter.FILTER_ACCEPT;
       }
     }
@@ -150,17 +235,12 @@ const highlightTextInSection = (searchResult: any, searchQuery: string, sectionI
   
   let firstMatch: Element | null = null;
   let node;
-  const foundMatches = new Set<string>();
   
-  console.log(`🔍 Starting contextual search in ${sectionId ? 'section ' + sectionId : 'page'}`);
-  
-  // First pass: look for longer, more specific terms that are likely to be in the target section
   while (node = walker.nextNode()) {
     const textContent = node.textContent?.toLowerCase() || '';
     
-    // Try to find the most specific terms first (from title or longer query terms)
-    for (const term of searchTerms) {
-      if (term.length > 3 && textContent.includes(term) && !foundMatches.has(term)) {
+    for (const term of queryTerms) {
+      if (term.length > 2 && textContent.includes(term)) {
         const parent = node.parentElement;
         if (parent) {
           const text = node.textContent || '';
@@ -168,14 +248,14 @@ const highlightTextInSection = (searchResult: any, searchQuery: string, sectionI
           const index = lowerText.indexOf(term);
           
           if (index !== -1) {
-            console.log(`✅ Found contextual term "${term}" in: "${text.substring(0, 50)}..."`);
+            console.log(`✅ Found fallback term "${term}"`);
             
             const before = text.substring(0, index);
             const match = text.substring(index, index + term.length);
             const after = text.substring(index + term.length);
             
             const span = document.createElement('span');
-            span.className = 'search-highlight bg-yellow-300 px-1 rounded font-semibold transition-all duration-1000';
+            span.className = 'search-highlight bg-yellow-300 px-1 rounded font-semibold';
             span.textContent = match;
             
             const fragment = document.createDocumentFragment();
@@ -184,15 +264,13 @@ const highlightTextInSection = (searchResult: any, searchQuery: string, sectionI
             if (after) fragment.appendChild(document.createTextNode(after));
             
             parent.replaceChild(fragment, node);
-            foundMatches.add(term);
             
             if (!firstMatch) {
               firstMatch = span;
-              console.log(`🎯 Setting first contextual match to:`, span);
             }
             
             // Reset walker since we modified the DOM
-            walker.currentNode = searchScope;
+            walker.currentNode = document.body;
             break;
           }
         }
@@ -200,35 +278,14 @@ const highlightTextInSection = (searchResult: any, searchQuery: string, sectionI
     }
   }
   
-  // If we found contextual matches, scroll to the first one
   if (firstMatch) {
-    console.log(`📍 Scrolling to contextual match in ${sectionId ? 'section ' + sectionId : 'page'}`);
     setTimeout(() => {
       firstMatch.scrollIntoView({ 
         behavior: 'smooth', 
         block: 'center',
         inline: 'nearest'
       });
-      console.log(`🎯 Scrolled to contextual match in ${sectionId ? 'section ' + sectionId : 'page'}`);
-      
-      // Add prominent temporary highlight
-      firstMatch.classList.add('bg-blue-400', 'shadow-lg', 'scale-110');
-      firstMatch.classList.remove('bg-yellow-300');
-      
-      // Fade back to normal highlighting after 2 seconds
-      setTimeout(() => {
-        firstMatch.classList.remove('bg-blue-400', 'shadow-lg', 'scale-110');
-        firstMatch.classList.add('bg-yellow-300');
-        
-        // Remove highlight completely after another 3 seconds
-        setTimeout(() => {
-          firstMatch.classList.remove('bg-yellow-300');
-          firstMatch.classList.add('bg-transparent');
-        }, 3000);
-      }, 2000);
-    }, 200);
-  } else {
-    console.log(`❌ No contextual matches found for "${resultTitle}" in ${sectionId ? 'section ' + sectionId : 'page'}`);
+    }, 500);
   }
 };
 
@@ -262,6 +319,8 @@ export const SearchDialog = () => {
 
   const handleSelect = (result: any, query?: string) => {
     console.log(`🚀 SearchDialog: Navigating to ${result.path}${result.anchor ? '#' + result.anchor : ''} for result "${result.title}"`);
+    console.log(`🎯 Target anchor: ${result.anchor || 'none'}`);
+    
     setIsSearchOpen(false);
     const currentQuery = query || searchQuery;
     setSearchQuery('');
@@ -269,26 +328,15 @@ export const SearchDialog = () => {
     // Navigate to the path first
     navigate(result.path);
     
-    // Handle scrolling and highlighting with proper context awareness
+    // Handle scrolling and highlighting with proper section targeting
     setTimeout(() => {
       if (result.anchor) {
-        const element = document.getElementById(result.anchor);
-        if (element) {
-          // First scroll to the anchor section
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          console.log(`📍 Scrolled to anchor: ${result.anchor}`);
-          
-          // After scrolling to anchor, highlight search terms ONLY within that section with context
-          setTimeout(() => {
-            highlightTextInSection(result, currentQuery, result.anchor);
-          }, 800); // Delay to ensure scroll and DOM are stable
-        } else {
-          console.warn(`⚠️ Anchor element not found: ${result.anchor}`);
-          // If anchor not found, fall back to general page highlighting with context
-          highlightTextInSection(result, currentQuery);
-        }
+        console.log(`🎯 Processing anchor-based navigation to: ${result.anchor}`);
+        // We have a specific section to target
+        highlightTextInSection(result, currentQuery, result.anchor);
       } else {
-        // No anchor, highlight search terms on the entire page with context
+        console.log(`🎯 Processing general page navigation`);
+        // No specific anchor, search the entire page
         highlightTextInSection(result, currentQuery);
       }
     }, 100);
@@ -316,7 +364,7 @@ export const SearchDialog = () => {
               const excerpt = extractRelevantExcerpt(result.content, searchQuery);
               const highlightedExcerpt = highlightMatchingTerms(excerpt, searchQuery);
               
-              console.log(`📝 SearchDialog: Rendering result ${index + 1}: "${result.title}"`);
+              console.log(`📝 SearchDialog: Rendering result ${index + 1}: "${result.title}" (anchor: ${result.anchor || 'none'})`);
               
               return (
                 <CommandItem
