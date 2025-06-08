@@ -575,9 +575,7 @@ const Dapp = () => {
                 <li>Governance participants (voters on proposals) get small boosts for activity.</li>
               </ul>
               <div className="bg-purple-50 border-l-4 border-purple-400 p-4 mb-6">
-                <p className="text-purple-800 font-medium font-exo">
-                  This creates a circular economy that rewards all participation types.
-                </p>
+                <p className="text-purple-800 font-medium font-exo">This creates a circular economy that drives participation & incentivises good beh</p>
               </div>
             </div>
 
