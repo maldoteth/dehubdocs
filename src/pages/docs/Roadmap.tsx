@@ -3,10 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
-
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
-
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
@@ -15,14 +13,10 @@ const Roadmap = () => {
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
-
-  return (
-    <div className="max-w-6xl mx-auto space-y-8">
+  return <div className="max-w-6xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">DeHub Roadmap</h1>
-        <p className="text-lg text-slate-600 leading-relaxed">
-          From humble beginnings to global platform - our journey through innovation, challenges, and growth.
-        </p>
+        <p className="text-lg text-slate-600 leading-relaxed">From humble beginnings to a complete platform - our journey through the ups </p>
       </div>
 
       <Tabs value={selectedYear} onValueChange={setSelectedYear} className="w-full">
@@ -574,8 +568,6 @@ const Roadmap = () => {
           </p>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default Roadmap;
