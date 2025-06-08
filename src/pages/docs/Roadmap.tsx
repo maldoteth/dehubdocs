@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -214,7 +215,6 @@ const Roadmap = () => {
                       <div>• Incorporated DeLabs LTD with proper legal structure and compliance</div>
                       <div>• Acquired $1,000,000 home for largest crypto raffle ever (15,000+ participants)</div>
                       <div>• Established partnerships with real estate and legal firms</div>
-                      <div>• Implemented KYC/AML procedures for high-value raffles</div>
                       <div>• Created transparent raffle mechanics with on-chain verification</div>
                       <div>• Achieved regulatory compliance in 5 jurisdictions</div>
                     </div>
