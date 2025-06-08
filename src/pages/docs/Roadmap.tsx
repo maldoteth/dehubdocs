@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -23,12 +22,13 @@ const Roadmap = () => {
       </div>
 
       <Tabs value={selectedYear} onValueChange={setSelectedYear} className="w-full">
-        <TabsList className="grid w-full grid-cols-5">
+        <TabsList className="grid w-full grid-cols-6">
           <TabsTrigger value="2021" className="text-sm">21</TabsTrigger>
           <TabsTrigger value="2022" className="text-sm">22</TabsTrigger>
           <TabsTrigger value="2023" className="text-sm">23</TabsTrigger>
           <TabsTrigger value="2024" className="text-sm">24</TabsTrigger>
           <TabsTrigger value="2025" className="text-sm">25</TabsTrigger>
+          <TabsTrigger value="2026" className="text-sm">26</TabsTrigger>
         </TabsList>
 
         {/* 2021 - Foundation Year */}
@@ -827,6 +827,135 @@ const Roadmap = () => {
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Multi-posting software so users can post to all major web2+3 socials from one place</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        {/* 2026 - Future Vision */}
+        <TabsContent value="2026" className="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center space-x-2">
+                <Calendar className="w-5 h-5" />
+                <span>2026 - Future Vision</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-4">
+                
+                {/* Q1 2026 */}
+                <div id="q1-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                  <div className="flex-shrink-0">
+                    <Calendar className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-semibold text-slate-900">Q1 2026</h3>
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
+                      </Badge>
+                    </div>
+                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Leading licensing partners, latest blockbusters and major PPVs</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Commercial integrations with existing streaming and home entertainment brands</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Aggregation of All APIs of current web2+3 Streaming Platforms</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Windows, MAC OS, TV & game console apps</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>V/AR profile hub & consumer data metrics</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Q2 2026 */}
+                <div id="q2-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                  <div className="flex-shrink-0">
+                    <Calendar className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-semibold text-slate-900">Q2 2026</h3>
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
+                      </Badge>
+                    </div>
+                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Major platform integrations and partnerships</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Enhanced streaming capabilities and quality improvements</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Q3 2026 */}
+                <div id="q3-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                  <div className="flex-shrink-0">
+                    <Calendar className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-semibold text-slate-900">Q3 2026</h3>
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
+                      </Badge>
+                    </div>
+                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Cross-platform synchronization and unified experience</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Advanced analytics and user insights platform</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Q4 2026 */}
+                <div id="q4-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                  <div className="flex-shrink-0">
+                    <Calendar className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-semibold text-slate-900">Q4 2026</h3>
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
+                      </Badge>
+                    </div>
+                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Next-generation immersive experiences</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Complete ecosystem maturation and global expansion</span>
                       </div>
                     </div>
                   </div>
