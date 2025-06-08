@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
@@ -15,7 +14,7 @@ const BadgeFlowchart = () => {
     { threshold: "3m", badge: "Tiger Shark Badge", color: "bg-slate-600", image: "/lovable-uploads/6be493f1-51b4-481b-9ca1-340c030b2ef8.png" },
     { threshold: "5m", badge: "Killer Whale Badge", color: "bg-gray-900", image: "/lovable-uploads/fcc288eb-67d7-49a0-b561-94bb5d1b8896.png" },
     { threshold: "10m", badge: "Great White Shark Badge", color: "bg-blue-800", image: "/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png" },
-    { threshold: "25m", badge: "Blue Whale Badge", color: "bg-indigo-700", image: "/lovable-uploads/7f234add-b739-40e4-b315-e712af2be68d.png" },
+    { threshold: "25m", badge: "Blue Whale Badge", color: "bg-indigo-700", image: "/lovable-uploads/fb9dfd31-d278-49fa-8ec8-1eee9ab74aef.png" },
     { threshold: "50m", badge: "Megalodon Badge", color: "bg-purple-800", image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png" }
   ];
 
