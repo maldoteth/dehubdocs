@@ -20,12 +20,13 @@ const Roadmap = () => {
       </div>
 
       <Tabs value={selectedYear} onValueChange={setSelectedYear} className="w-full">
-        <TabsList className="grid w-full grid-cols-5">
+        <TabsList className="grid w-full grid-cols-6">
           <TabsTrigger value="2021" className="text-sm">21</TabsTrigger>
           <TabsTrigger value="2022" className="text-sm">22</TabsTrigger>
           <TabsTrigger value="2023" className="text-sm">23</TabsTrigger>
           <TabsTrigger value="2024" className="text-sm">24</TabsTrigger>
           <TabsTrigger value="2025" className="text-sm">25</TabsTrigger>
+          <TabsTrigger value="2026" className="text-sm">26</TabsTrigger>
         </TabsList>
 
         {/* 2021 - Foundation Year */}
@@ -546,7 +547,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Raised $1,000,000 for adult fork BJ (now fan.site) from tier-1 investors</span>
+                        <span>Raised $1,000,000 for adult fork BJ (now fan.site)</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
