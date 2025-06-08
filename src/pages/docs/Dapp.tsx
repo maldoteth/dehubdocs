@@ -118,9 +118,7 @@ const Dapp = () => {
             Given that data is the new oil, it may be wise to build your core community base here and utilise your existing social media apps to funnel users in to grow your own valuable database and ensure you remain censorship resistant. No matter what happens, never lose touch with your audience, fans, community or customers.
           </p>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            We earn 10% of every bounty, PPV or fee generated in the d'app in any token while users all earn proportionate shares of ad revenue which is funded by the advertisers and sponsors on our website.
-          </p>
+          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">We earn up to 10% of every bounty, PPV or fee generated in the d'app in any token while users all earn proportionate shares of ad revenue which is funded by the advertisers and sponsors on our website.</p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
             Working in cohesion with our gaming and marketplace d'apps and offering a platform to showcase developments and sell our products, the streaming app upgrade is scheduled for launch December 20th 2022 though bear in mind this is a soft date. In the meantime, enjoy some teasers below of the actually built d'app now officially on test net and dive deeper into the mechanics further down.
