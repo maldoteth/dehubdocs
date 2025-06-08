@@ -668,7 +668,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Implemented Livepeer & WebRTC infrastructure supporting 50,000+ concurrent viewers</span>
+                        <span>Implemented Livepeer &amp; WebRTC infrastructure supporting 50,000+ concurrent viewers with the ability of unlimited (in theory) on higher spend tiers.</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
