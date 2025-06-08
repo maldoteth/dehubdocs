@@ -1,4 +1,3 @@
-
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
@@ -10,19 +9,7 @@ const Dapp = () => {
     <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
-        <div className="flex items-center justify-center gap-4 mb-4">
-          <img 
-            src="/lovable-uploads/fc2f8e07-0d7e-4ad0-b8cc-eb81e2d45a31.png" 
-            alt="Killer Whale Icon" 
-            className="w-16 h-16 object-contain"
-          />
-          <h1 className="text-4xl font-bold text-royal-blue font-exo">A Complete Ecosystem</h1>
-          <img 
-            src="/lovable-uploads/fc2f8e07-0d7e-4ad0-b8cc-eb81e2d45a31.png" 
-            alt="Killer Whale Icon" 
-            className="w-16 h-16 object-contain scale-x-[-1]"
-          />
-        </div>
+        <h1 className="text-4xl font-bold text-royal-blue font-exo">A Complete Ecosystem</h1>
         <p className="text-xl text-royal-blue/70 max-w-2xl mx-auto font-exo"></p>
       </div>
       
