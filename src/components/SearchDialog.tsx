@@ -82,6 +82,92 @@ const highlightMatchingTerms = (text: string, query: string) => {
   return highlightedText;
 };
 
+// Helper function to find and highlight text in the page
+const highlightTextInPage = (searchQuery: string) => {
+  if (!searchQuery.trim()) return;
+  
+  const queryTerms = searchQuery.toLowerCase().split(' ').filter(term => term.length > 1);
+  if (queryTerms.length === 0) return;
+  
+  // Remove any existing highlights first
+  const existingHighlights = document.querySelectorAll('.search-highlight');
+  existingHighlights.forEach(el => {
+    const parent = el.parentNode;
+    if (parent) {
+      parent.replaceChild(document.createTextNode(el.textContent || ''), el);
+      parent.normalize();
+    }
+  });
+  
+  // Find and highlight the first occurrence of any search term
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode: (node) => {
+        // Skip script and style elements
+        const parent = node.parentElement;
+        if (parent && (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+  
+  let firstMatch: Element | null = null;
+  let node;
+  
+  while (node = walker.nextNode()) {
+    const textContent = node.textContent?.toLowerCase() || '';
+    
+    for (const term of queryTerms) {
+      if (textContent.includes(term)) {
+        const parent = node.parentElement;
+        if (parent) {
+          const text = node.textContent || '';
+          const lowerText = text.toLowerCase();
+          const index = lowerText.indexOf(term);
+          
+          if (index !== -1) {
+            const before = text.substring(0, index);
+            const match = text.substring(index, index + term.length);
+            const after = text.substring(index + term.length);
+            
+            const span = document.createElement('span');
+            span.className = 'search-highlight bg-yellow-300 px-1 rounded font-semibold';
+            span.textContent = match;
+            
+            const fragment = document.createDocumentFragment();
+            if (before) fragment.appendChild(document.createTextNode(before));
+            fragment.appendChild(span);
+            if (after) fragment.appendChild(document.createTextNode(after));
+            
+            parent.replaceChild(fragment, node);
+            
+            if (!firstMatch) {
+              firstMatch = span;
+            }
+            break;
+          }
+        }
+      }
+    }
+  }
+  
+  // Scroll to the first match
+  if (firstMatch) {
+    setTimeout(() => {
+      firstMatch.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center',
+        inline: 'nearest'
+      });
+      console.log(`🎯 Scrolled to and highlighted search term in page`);
+    }, 200);
+  }
+};
+
 export const SearchDialog = () => {
   const { 
     isSearchOpen, 
@@ -110,26 +196,37 @@ export const SearchDialog = () => {
     performSearch(searchQuery);
   }, [searchQuery, performSearch]);
 
-  const handleSelect = (path: string, anchor?: string) => {
-    console.log(`🚀 SearchDialog: Navigating to ${path}${anchor ? '#' + anchor : ''}`);
+  const handleSelect = (path: string, anchor?: string, query?: string) => {
+    console.log(`🚀 SearchDialog: Navigating to ${path}${anchor ? '#' + anchor : ''} with query "${query}"`);
     setIsSearchOpen(false);
+    const currentQuery = query || searchQuery;
     setSearchQuery('');
     
     // Navigate to the path first
     navigate(path);
     
-    // If there's an anchor, scroll to it after a brief delay to ensure the page loads
-    if (anchor) {
-      setTimeout(() => {
+    // Handle scrolling and highlighting
+    setTimeout(() => {
+      if (anchor) {
         const element = document.getElementById(anchor);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
           console.log(`📍 Scrolled to anchor: ${anchor}`);
+          
+          // After scrolling to anchor, highlight the search terms
+          setTimeout(() => {
+            highlightTextInPage(currentQuery);
+          }, 300);
         } else {
           console.warn(`⚠️ Anchor element not found: ${anchor}`);
+          // If anchor not found, just highlight the search terms on the page
+          highlightTextInPage(currentQuery);
         }
-      }, 100);
-    }
+      } else {
+        // No anchor, just highlight search terms on the page
+        highlightTextInPage(currentQuery);
+      }
+    }, 100);
   };
 
   console.log(`🎨 SearchDialog render: ${searchResults.length} results available`);
@@ -159,7 +256,7 @@ export const SearchDialog = () => {
               return (
                 <CommandItem
                   key={`${result.path}-${result.anchor || 'main'}`}
-                  onSelect={() => handleSelect(result.path, result.anchor)}
+                  onSelect={() => handleSelect(result.path, result.anchor, searchQuery)}
                   className="cursor-pointer py-3"
                 >
                   <IconComponent className="mr-3 h-4 w-4 flex-shrink-0 mt-1" />
