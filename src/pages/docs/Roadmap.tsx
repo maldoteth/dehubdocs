@@ -1,9 +1,9 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
+
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
   const getStatusColor = (status: string) => {
@@ -292,7 +292,9 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       
-                      <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies in a vote based system backed by Sony, Samsung and other industry giants.</div>
+                      <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies 
+                        <span className="block ml-2">in a vote based system backed by Sony, Samsung and other industry giants.</span>
+                      </div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
                       
                       
