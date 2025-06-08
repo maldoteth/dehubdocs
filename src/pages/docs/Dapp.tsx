@@ -120,9 +120,7 @@ const Dapp = () => {
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">We earn up to 10% of every bounty, PPV or fee generated in the d'app in any token while users all earn proportionate shares of ad revenue which is funded by the advertisers and sponsors on our website.</p>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
-            Working in cohesion with our gaming and marketplace d'apps and offering a platform to showcase developments and sell our products, the streaming app upgrade is scheduled for launch December 20th 2022 though bear in mind this is a soft date. In the meantime, enjoy some teasers below of the actually built d'app now officially on test net and dive deeper into the mechanics further down.
-          </p>
+          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo"></p>
         </section>
 
         <section>
