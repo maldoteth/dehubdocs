@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Bot, Code, Zap, Users } from 'lucide-react';
+import { Bot, MessageSquare, DollarSign, TrendingUp, Globe, Search } from 'lucide-react';
 
 const AIToolkits = () => {
   return (
@@ -9,21 +9,24 @@ const AIToolkits = () => {
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">AI Toolkits</h1>
         <p className="text-lg text-slate-600 leading-relaxed">
-          Comprehensive AI development tools and frameworks for building intelligent applications
+          DeHub users will soon have their very own uncensored AI assistant and full toolkit suite directly in-app.
         </p>
       </div>
 
-      <Card>
+      <Card className="border-blue-200 bg-blue-50">
         <CardHeader>
-          <CardTitle className="text-xl text-slate-800 flex items-center space-x-2">
-            <Bot className="w-5 h-5 text-blue-500" />
-            <span>AI Framework Integration</span>
+          <CardTitle className="text-xl text-blue-800 flex items-center space-x-2">
+            <Bot className="w-5 h-5 text-blue-600" />
+            <span>DeHub AI Assistant</span>
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-slate-600 leading-relaxed">
-            DeHub provides seamless integration with popular AI frameworks and models, enabling developers to build intelligent applications with ease.
+          <p className="text-blue-700 leading-relaxed mb-4">
+            An uncensored AI assistant built directly into the DeHub platform, providing comprehensive support for content creators and users.
           </p>
+          <div className="text-sm text-blue-600">
+            Features include but are not limited to:
+          </div>
         </CardContent>
       </Card>
 
@@ -31,13 +34,13 @@ const AIToolkits = () => {
         <Card>
           <CardHeader>
             <CardTitle className="text-lg text-slate-800 flex items-center space-x-2">
-              <Code className="w-5 h-5 text-green-500" />
-              <span>Development Tools</span>
+              <MessageSquare className="w-5 h-5 text-green-500" />
+              <span>Content Creation</span>
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-slate-600 leading-relaxed">
-              Advanced development tools for building, testing, and deploying AI-powered applications.
+              Help create & perfect content with AI-powered assistance for writing, editing, and optimizing your posts.
             </p>
           </CardContent>
         </Card>
@@ -45,39 +48,81 @@ const AIToolkits = () => {
         <Card>
           <CardHeader>
             <CardTitle className="text-lg text-slate-800 flex items-center space-x-2">
-              <Zap className="w-5 h-5 text-yellow-500" />
-              <span>Performance Optimization</span>
+              <Bot className="w-5 h-5 text-blue-500" />
+              <span>Automated Engagement</span>
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-slate-600 leading-relaxed">
-              Optimize your AI applications for better performance and reduced resource consumption.
+              Automate engagement and tipping based on your preferences and criteria to maximize your social interactions.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg text-slate-800 flex items-center space-x-2">
+              <DollarSign className="w-5 h-5 text-purple-500" />
+              <span>Finance Management</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-slate-600 leading-relaxed">
+              Aid with finance management and payments, helping you track earnings, manage tips, and optimize monetization.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg text-slate-800 flex items-center space-x-2">
+              <TrendingUp className="w-5 h-5 text-orange-500" />
+              <span>Performance Analytics</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-slate-600 leading-relaxed">
+              Track, analyse, and monitor performance & trends to understand your audience and optimize your content strategy.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg text-slate-800 flex items-center space-x-2">
+              <Globe className="w-5 h-5 text-cyan-500" />
+              <span>Global Translation</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-slate-600 leading-relaxed">
+              Translate and clarify content for a global audience, breaking down language barriers in your interactions.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg text-slate-800 flex items-center space-x-2">
+              <Search className="w-5 h-5 text-indigo-500" />
+              <span>Content Analysis</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-slate-600 leading-relaxed">
+              Get context on or explain posts with AI-powered content analysis and interpretation capabilities.
             </p>
           </CardContent>
         </Card>
       </div>
 
-      <Card>
+      <Card className="border-amber-200 bg-amber-50">
         <CardHeader>
-          <CardTitle className="text-xl text-slate-800 flex items-center space-x-2">
-            <Users className="w-5 h-5 text-purple-500" />
-            <span>Community Resources</span>
-          </CardTitle>
+          <CardTitle className="text-xl text-amber-800">Coming Soon</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-slate-600 leading-relaxed">
-            Access community-driven AI toolkits, templates, and best practices to accelerate your development process.
-          </p>
-        </CardContent>
-      </Card>
-
-      <Card className="border-blue-200 bg-blue-50">
-        <CardHeader>
-          <CardTitle className="text-xl text-blue-800">Coming Soon</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-blue-700 leading-relaxed">
-            Enhanced AI toolkit features are currently in development. Stay tuned for updates on advanced machine learning integrations and automated deployment tools.
+          <p className="text-amber-700 leading-relaxed">
+            The DeHub AI toolkit is currently in development and will be integrated directly into the platform. Stay tuned for updates as we prepare to launch this comprehensive AI assistant suite.
           </p>
         </CardContent>
       </Card>
