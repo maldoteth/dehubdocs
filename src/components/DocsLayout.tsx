@@ -18,33 +18,7 @@ const menuItems = [{
   }, {
     title: 'Dapp',
     path: '/docs/dapps',
-    icon: '🖥️',
-    hasSubmenu: true,
-    submenuItems: [{
-      title: 'Ecosystem',
-      path: '/docs/dapps#ecosystem'
-    }, {
-      title: 'Tokenised Content',
-      path: '/docs/dapps#tokenised-content'
-    }, {
-      title: 'Fee Tier System',
-      path: '/docs/dapps#fee-tier-system'
-    }, {
-      title: 'Social Features',
-      path: '/docs/dapps#social-features'
-    }, {
-      title: 'Content Discovery',
-      path: '/docs/dapps#content-discovery'
-    }, {
-      title: 'Monetization',
-      path: '/docs/dapps#monetization'
-    }, {
-      title: 'Privacy & Security',
-      path: '/docs/dapps#privacy-security'
-    }, {
-      title: 'Mobile Experience',
-      path: '/docs/dapps#mobile-experience'
-    }]
+    icon: '🖥️'
   }, {
     title: 'Games',
     path: '/docs/games',
