@@ -571,7 +571,7 @@ const Dapp = () => {
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Watchers earn token rewards for passive viewing (engagement mining).</li>
                 <li>Curators earn more if their promoted content performs well.</li>
-                <li>Moderators earn based on accuracy.</li>
+                <li>Moderators earn based on accuracy, rewarding good behaviour</li>
                 <li>Governance participants (voters on proposals) get small boosts for activity.</li>
               </ul>
               <div className="bg-purple-50 border-l-4 border-purple-400 p-4 mb-6">
