@@ -509,7 +509,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Launched UGC ambassadorship program with 200+ selected creators</div>
+                      <div>• Launched UGC ambassadorship program with 50 vacancies</div>
                       <div>• Implemented comprehensive creator education curriculum</div>
                       <div>• Built automated content quality scoring using AI</div>
                       <div>• Established creator mentorship network spanning 25 countries</div>
