@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -124,7 +125,9 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Released prediction and raffle games</div>
                       <div>• Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP</div>
-                      <div>• Discovered listing agent was fraudulent, stole our fundraise and dumped our chart instead of airdropping Gate users, Gate investigated and apologised but could </div>
+                      <div>• Discovered listing agent was fraudulent, stole our fundraise and dumped our chart instead of 
+                        <span className="block ml-4">airdropping Gate users, Gate investigated and apologised but could </span>
+                      </div>
                       <div>• Implemented game mechanics with provably fair randomization</div>
                       <div>• Community grew to 8,000+ active members</div>
                     </div>
@@ -209,7 +212,9 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Incorporated DeLabs LTD with proper legal structure and compliance</div>
                       <div>• Acquired $1,000,000 home for largest crypto raffle ever (15,000+ participants)</div>
-                      <div>• Secured power of attorney for multiple islands and sea front strip in Palawan worth over $15,000,000 in an attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC</div>
+                      <div>• Secured power of attorney for multiple islands and sea front strip in Palawan worth over $15,000,000 in an 
+                        <span className="block ml-4">attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC</span>
+                      </div>
                       <div>• Established partnerships with real estate and legal firms</div>
                       <div>• Created transparent raffle mechanics with on-chain verification</div>
                       <div>• Achieved regulatory compliance in 5 jurisdictions</div>
@@ -292,7 +297,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       
                       <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies 
-                        <span className="block ml-2">in a vote based system backed by Sony, Samsung and other industry giants.</span>
+                        <span className="block ml-4">in a vote based system backed by Sony, Samsung and other industry giants.</span>
                       </div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
                       
@@ -426,7 +431,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Completed major app rebrand with 95% positive user feedback</div>
                       <div>• Released trailer for Last Chad Standing (first ever MMA battle royale) with 1M+ views</div>
-                      <div>• Redesigned user interface & back end speed by 200%</div>
+                      <div>• Redesigned user interface & back end speed by 200%</div>
                       <div></div>
                       <div></div>
                       <div></div>
@@ -491,7 +496,7 @@ const Roadmap = () => {
                       <div>• Implemented WebRTC infrastructure supporting 250,000+ concurrent viewers</div>
                       <div>• Built custom CDN reducing latency to sub-200ms globally</div>
                       <div>• Achieved 99.99% uptime across all streaming services</div>
-                      <div>• DePIN (Decentralized Physical Infrastructure Network) reveal phase 1</div>
+                      <div>• DePIN (Decentralized Physical Infrastructure Network) reveal phase 1</div>
                     </div>
                   </div>
                 </div>
@@ -513,9 +518,8 @@ const Roadmap = () => {
                       <div>• Implemented comprehensive creator education curriculum</div>
                       <div>• Built automated content quality scoring using AI</div>
                       <div>• Established creator mentorship network spanning 25 countries</div>
-                      <div className="pl-0">
-                        • Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly 
-                        <span className="block pl-2">in-app and use instantly with free gas</span>
+                      <div>• Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly 
+                        <span className="block ml-4">in-app and use instantly with free gas</span>
                       </div>
                     </div>
                   </div>
@@ -534,12 +538,13 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div>• Release live stream keys so users can stream on multiple apps simultaneously</div>
                       <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
-                      <div>• Release live stream keys so users can stream on multiple apps simultaneously ✅</div>
                       <div>• DePIN (Decentralized Physical Infrastructure Network) phase 2 release</div>
+                      <div>• Launch Solana, Hyperliquid and Sui integrations for in-app use</div>
                       <div>• Deploy comprehensive CRM system for agency management and client tracking</div>
                       <div>• Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as
-                        <span className="block ml-2">financial transactions and guidance</span>
+                        <span className="block ml-4">financial transactions and guidance</span>
                       </div>
                     </div>
                   </div>
