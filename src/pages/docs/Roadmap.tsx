@@ -517,7 +517,6 @@ const Roadmap = () => {
                       <div>• Implemented comprehensive creator education curriculum</div>
                       <div>• Built automated content quality scoring using AI</div>
                       <div>• Ambassadors generated 500,000+ pieces of quality content</div>
-                      <div>• Created creator reward pool distributing $100K+ monthly</div>
                       <div>• Established creator mentorship network spanning 25 countries</div>
                     </div>
                   </div>
