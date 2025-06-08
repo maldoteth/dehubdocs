@@ -81,7 +81,7 @@ const Roadmap = () => {
                       <div>• Established first liquidity pools on Pancake Swap</div>
                       <div>• Built community of 2,000+ early adopters</div>
                       <div>• Implemented basic governance voting mechanism</div>
-                      <div>• Faced initial smart contract optimization challenges</div>
+                      <div>• Smart contract security issue d</div>
                     </div>
                   </div>
                 </div>
