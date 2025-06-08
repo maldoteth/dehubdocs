@@ -680,10 +680,6 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>DePIN (Decentralized Physical Infrastructure Network) reveal phase 1</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
                         <span>Discontinue Ethereum Mainnet support</span>
                       </div>
                       <div className="flex">
