@@ -403,7 +403,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Listed $DHB on Base L2</div>
                       <div>• Dubai event expanded Middle East presence w</div>
-                      <div>• Co Founders Mike Hales & Indi Cammish open TikTok agency in partnership with TikTok execs directly</div>
+                      <div>• Opened TikTok agency in partnership with TikTok execs directly</div>
                       <div>• Established creator partnerships in 15 countries</div>
                       <div></div>
                       
@@ -425,11 +425,11 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Completed major app rebrand with 95% positive user feedback</div>
-                      <div>• Released trailer for Last Chad Standing (first ever MMA battle royale) with 2M+ views</div>
-                      <div>• Redesigned user interface increasing engagement by 150%</div>
-                      <div>• Implemented new brand identity across 12 platforms</div>
-                      <div>• MMA event planning involved 50+ fighters and $1M+ production budget</div>
-                      <div>• Rebrand resulted in 40% increase in new user acquisitions</div>
+                      <div>• Released trailer for Last Chad Standing (first ever MMA battle royale) with 1M+ views</div>
+                      <div>• Redesigned user interface & back end speed by 200%</div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
                     </div>
                   </div>
                 </div>
