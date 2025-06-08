@@ -849,14 +849,14 @@ const Roadmap = () => {
             <CardContent>
               <div className="grid gap-4">
                 
-                {/* Q1 2026 */}
-                <div id="q1-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                {/* Q1-4 2026 */}
+                <div id="q1-4-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
                   <div className="flex-shrink-0">
                     <Calendar className="w-6 h-6 text-blue-500" />
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q1 2026</h3>
+                      <h3 className="font-semibold text-slate-900">Q1-4 2026</h3>
                       <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
                         Planned
                       </Badge>
@@ -882,23 +882,6 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>V/AR profile hub & consumer data metrics</span>
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Q2 2026 */}
-                <div id="q2-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
-                  <div className="flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q2 2026</h3>
-                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                        Planned
-                      </Badge>
-                    </div>
-                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Major platform integrations and partnerships</span>
@@ -907,23 +890,6 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Enhanced streaming capabilities and quality improvements</span>
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Q3 2026 */}
-                <div id="q3-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
-                  <div className="flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q3 2026</h3>
-                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                        Planned
-                      </Badge>
-                    </div>
-                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Cross-platform synchronization and unified experience</span>
@@ -932,23 +898,6 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Advanced analytics and user insights platform</span>
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Q4 2026 */}
-                <div id="q4-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
-                  <div className="flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q4 2026</h3>
-                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                        Planned
-                      </Badge>
-                    </div>
-                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Next-generation immersive experiences</span>
