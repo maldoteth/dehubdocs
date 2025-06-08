@@ -569,7 +569,7 @@ const Dapp = () => {
             <div>
               <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Incentive Flywheel</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Watchers earn tiny token rewards for passive viewing (engagement mining).</li>
+                <li>Watchers earn token rewards for passive viewing (engagement mining).</li>
                 <li>Curators earn more if their promoted content performs well.</li>
                 <li>Moderators earn based on accuracy.</li>
                 <li>Governance participants (voters on proposals) get small boosts for activity.</li>
