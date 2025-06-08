@@ -477,9 +477,7 @@ const Dapp = () => {
             Only the core team or top tier badge holders will have the power to instantly remove a video by burning the NFT associated. Subsequently, all the ad revenue generated and any play to earn bounties strapped to the video will be shared with all voting wallets to further deter bad actors and incentivise an engaged community.
           </p>
           
-          <p className="text-sm italic text-royal-blue/60 font-exo">
-            *Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.
-          </p>
+          <p className="italic text-royal-blue/60 font-exo text-base text-sidebar-primary text-left">The Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.</p>
 
           <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg border border-indigo-200 mb-6">
             <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Governance + Moderation System Design</h3>
