@@ -7,6 +7,7 @@ interface SearchItem {
   path: string;
   content: string;
   category: string;
+  anchor?: string; // Add anchor support for sections within pages
 }
 
 interface SearchContextType {
@@ -20,7 +21,7 @@ interface SearchContextType {
 
 const SearchContext = createContext<SearchContextType | undefined>(undefined);
 
-// Real content extracted from actual documentation pages
+// Enhanced search data with new content and anchors
 const searchData: SearchItem[] = [
   {
     title: 'Home',
@@ -35,16 +36,66 @@ const searchData: SearchItem[] = [
     category: 'Main'
   },
   {
+    title: 'Stream - Ecosystem',
+    path: '/docs/dapps',
+    anchor: 'ecosystem',
+    content: 'Stream dapp ecosystem decentralized streaming platform user-centric protocol empower creators viewers censorship resistance content moderation watch-to-earn watch2earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour badge of honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content streaming rewards creator economy viewer rewards tokenomics streaming monetization content discovery social features live chat interactive streaming',
+    category: 'dApps'
+  },
+  {
+    title: 'Stream - Fee Tier System',
+    path: '/docs/dapps',
+    anchor: 'fee-tier-system',
+    content: 'Fee tier system badges ranks levels creator monetization subscription model tiers basic premium VIP exclusive content access benefits perks revenue sharing percentage cuts commission rates creator earnings subscriber benefits exclusive features advanced tools analytics revenue streams monetization tiers subscription levels membership badges status ranks creator rewards viewer benefits',
+    category: 'dApps'
+  },
+  {
+    title: 'Stream - Tokenised Content',
+    path: '/docs/dapps',
+    anchor: 'tokenised-content',
+    content: 'Tokenised content NFT minting blockchain ownership digital assets intellectual property content creators monetization token gated access exclusive content subscription model pay per view PPV content locking unlocking premium content digital rights management creator economy blockchain verified ownership immutable records content authenticity verification',
+    category: 'dApps'
+  },
+  {
+    title: 'Stream - Social Features',
+    path: '/docs/dapps',
+    anchor: 'social-features',
+    content: 'Social features community interaction engagement live chat messaging commenting rating reviews social networking follower following creator fan interaction community building social media integration sharing viral content community driven moderation social reputation badges achievements leaderboards social commerce',
+    category: 'dApps'
+  },
+  {
+    title: 'Stream - Content Discovery',
+    path: '/docs/dapps',
+    anchor: 'content-discovery',
+    content: 'Content discovery algorithm recommendation engine personalized content feeds trending popular viral content categories genres tags search filters content curation discovery mechanisms content suggestion machine learning AI powered recommendations user preferences content matching viewer interests content browsing navigation',
+    category: 'dApps'
+  },
+  {
+    title: 'Stream - Monetization',
+    path: '/docs/dapps',
+    anchor: 'monetization',
+    content: 'Monetization creator economy revenue streams subscription tipping donations pay per view advertising sponsorship brand partnerships affiliate marketing content monetization models recurring revenue passive income creator funds revenue sharing commission rates payout systems financial sustainability creator support economic incentives',
+    category: 'dApps'
+  },
+  {
+    title: 'Stream - Privacy & Security',
+    path: '/docs/dapps',
+    anchor: 'privacy-security',
+    content: 'Privacy security data protection encryption blockchain security decentralized storage IPFS content moderation user safety privacy controls data ownership personal information protection secure transactions wallet security authentication verification account protection cybersecurity measures',
+    category: 'dApps'
+  },
+  {
+    title: 'Stream - Mobile Experience',
+    path: '/docs/dapps',
+    anchor: 'mobile-experience',
+    content: 'Mobile experience mobile app responsive design mobile optimization touch interface gesture controls mobile streaming mobile gaming cross platform compatibility iOS Android mobile wallet integration mobile notifications push notifications offline viewing mobile data optimization mobile user experience',
+    category: 'dApps'
+  },
+  {
     title: 'Contact Us',
     path: '/docs/contact',
     content: 'Contact support help assistance tech@dehub.net marketing@dehub.net hr@dehub.net technical support business inquiries partnerships media press investor relations Telegram portal https://t.me/portal Discord dehub.io/d Turkish community Dehub_Turkish Arabic community Dehub_Arabic holders whales exclusive channels token holders community management customer service business development media inquiries community engagement social media presence communication channels support resources',
     category: 'Main'
-  },
-  {
-    title: 'Stream',
-    path: '/docs/dapps',
-    content: 'Stream dapp decentralized streaming platform user-centric protocol empower creators viewers censorship resistance content moderation watch-to-earn watch2earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour badge of honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content streaming rewards creator economy viewer rewards tokenomics streaming monetization content discovery social features live chat interactive streaming',
-    category: 'dApps'
   },
   {
     title: 'Games',

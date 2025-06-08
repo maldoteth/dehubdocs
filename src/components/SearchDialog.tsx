@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -109,11 +110,26 @@ export const SearchDialog = () => {
     performSearch(searchQuery);
   }, [searchQuery, performSearch]);
 
-  const handleSelect = (path: string) => {
-    console.log(`🚀 SearchDialog: Navigating to ${path}`);
+  const handleSelect = (path: string, anchor?: string) => {
+    console.log(`🚀 SearchDialog: Navigating to ${path}${anchor ? '#' + anchor : ''}`);
     setIsSearchOpen(false);
     setSearchQuery('');
+    
+    // Navigate to the path first
     navigate(path);
+    
+    // If there's an anchor, scroll to it after a brief delay to ensure the page loads
+    if (anchor) {
+      setTimeout(() => {
+        const element = document.getElementById(anchor);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          console.log(`📍 Scrolled to anchor: ${anchor}`);
+        } else {
+          console.warn(`⚠️ Anchor element not found: ${anchor}`);
+        }
+      }, 100);
+    }
   };
 
   console.log(`🎨 SearchDialog render: ${searchResults.length} results available`);
@@ -142,8 +158,8 @@ export const SearchDialog = () => {
               
               return (
                 <CommandItem
-                  key={result.path}
-                  onSelect={() => handleSelect(result.path)}
+                  key={`${result.path}-${result.anchor || 'main'}`}
+                  onSelect={() => handleSelect(result.path, result.anchor)}
                   className="cursor-pointer py-3"
                 >
                   <IconComponent className="mr-3 h-4 w-4 flex-shrink-0 mt-1" />
