@@ -2,9 +2,26 @@ import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity } from 'lucide-react';
+import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent } from 'lucide-react';
 
 const Dapp = () => {
+  const feeReductions = [
+    { badge: "No Badge", threshold: "< 10,000 $DHB", fee: "10.00%", color: "bg-gray-300" },
+    { badge: "Crab Badge", threshold: "10,000+ $DHB", fee: "9.31%", color: "bg-orange-500" },
+    { badge: "Lobster Badge", threshold: "25k+ $DHB", fee: "8.62%", color: "bg-red-500" },
+    { badge: "Piranha Badge", threshold: "50k+ $DHB", fee: "7.93%", color: "bg-purple-500" },
+    { badge: "Tortoise Badge", threshold: "100k+ $DHB", fee: "7.24%", color: "bg-green-600" },
+    { badge: "Cobra Badge", threshold: "250k+ $DHB", fee: "6.55%", color: "bg-gray-800" },
+    { badge: "Octopus Badge", threshold: "500k+ $DHB", fee: "5.86%", color: "bg-blue-600" },
+    { badge: "Crocodile Badge", threshold: "1m+ $DHB", fee: "5.17%", color: "bg-green-800" },
+    { badge: "Dolphin Badge", threshold: "2m+ $DHB", fee: "4.48%", color: "bg-cyan-500" },
+    { badge: "Tiger Shark Badge", threshold: "3m+ $DHB", fee: "3.79%", color: "bg-slate-600" },
+    { badge: "Killer Whale Badge", threshold: "5m+ $DHB", fee: "3.10%", color: "bg-gray-900" },
+    { badge: "Great White Shark Badge", threshold: "10m+ $DHB", fee: "2.41%", color: "bg-blue-800" },
+    { badge: "Blue Whale Badge", threshold: "25m+ $DHB", fee: "1.72%", color: "bg-indigo-700" },
+    { badge: "Megalodon Badge", threshold: "50m+ $DHB", fee: "1.00%", color: "bg-purple-800" }
+  ];
+
   return (
     <div className="space-y-8">
       {/* Header */}
@@ -663,197 +680,105 @@ const Dapp = () => {
           </Card>
         </section>
 
-        {/* New Tokenised Content Section */}
+        {/* New Fee Tier System Section */}
         <section className="mt-12">
           <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
-            <Banknote className="w-8 h-8" />
-            Tokenised Content
+            <Percent className="w-8 h-8" />
+            Fee Tier System
           </h2>
-        
-          <div className="bg-gradient-to-r from-emerald-50 to-green-50 p-6 rounded-lg border border-emerald-200 mb-6">
-            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Revolutionary Content Fractionalisation</h3>
+          
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200 mb-6">
+            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Badge-Based Fee Reduction</h3>
             <p className="text-royal-blue/80 leading-relaxed font-exo">
-              Every upload or livestream on DeHub automatically mints a fractionalised ERC-1155 NFT that shares ad revenue 
-              for life with each fraction holder. This creates an entirely new model where content becomes a perpetual income-generating 
-              asset, allowing creators to monetise immediately while giving fans the opportunity to invest in potential stars.
+              Our revolutionary fee structure rewards $DHB token holders with significantly reduced platform fees. 
+              Starting at a standard 10% fee, each badge tier earned through increased $DHB holdings reduces fees by 0.69%, 
+              ultimately reaching just 1% for Megalodon badge holders - a 90% fee reduction for our most dedicated community members.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
-            <Card className="border-emerald-200 bg-emerald-50">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg text-emerald-800 font-exo flex items-center gap-2">
-                  <Banknote className="w-4 h-4" />
-                  Automatic Minting
-                </CardTitle>
+          <Card className="mb-6">
+            <CardHeader>
+              <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                <Percent className="w-5 h-5" />
+                Platform Fee Structure
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-2">
+                {feeReductions.map((tier, index) => (
+                  <div key={tier.badge} className="flex items-center justify-between p-3 rounded-lg border bg-muted/20">
+                    <div className="flex items-center gap-3">
+                      <div className={`w-4 h-4 rounded-full ${tier.color}`}></div>
+                      <div className="flex flex-col">
+                        <span className="font-medium">{tier.badge}</span>
+                        <span className="text-sm text-muted-foreground">{tier.threshold}</span>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <span className="text-lg font-bold text-royal-blue">{tier.fee}</span>
+                      <span className="text-sm text-muted-foreground ml-1">fee</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card className="border-green-200 bg-green-50">
+              <CardHeader>
+                <CardTitle className="text-green-800 font-exo">Fee Calculation Benefits</CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="text-sm text-emerald-700 space-y-2 font-exo">
-                  <li>• ERC-1155 fractionalised NFTs per upload</li>
-                  <li>• Automatic ad revenue distribution</li>
-                  <li>• Creator-controlled fraction allocation</li>
-                  <li>• Instant monetisation opportunities</li>
-                  <li>• Blockchain-verified ownership</li>
+                <ul className="text-sm text-green-700 space-y-2 font-exo">
+                  <li>• Linear 0.69% reduction per badge tier</li>
+                  <li>• Maximum 90% fee reduction for Megalodons</li>
+                  <li>• Applies to all platform transactions</li>
+                  <li>• Instant activation upon badge qualification</li>
+                  <li>• Encourages long-term $DHB holding</li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card className="border-blue-200 bg-blue-50">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
-                  <TrendingUp className="w-4 h-4" />
-                  Creator Benefits
-                </CardTitle>
+              <CardHeader>
+                <CardTitle className="text-blue-800 font-exo">Affected Transactions</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-blue-700 space-y-2 font-exo">
-                  <li>• Sell fractions for immediate revenue</li>
-                  <li>• Retain ownership of preferred amounts</li>
-                  <li>• No ongoing engagement required</li>
-                  <li>• Lifetime passive income potential</li>
-                  <li>• Fan investment opportunities</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="border-purple-200 bg-purple-50">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
-                  <Infinity className="w-4 h-4" />
-                  Perpetual Value
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="text-sm text-purple-700 space-y-2 font-exo">
-                  <li>• Content earns ad revenue forever</li>
-                  <li>• Censorship-resistant income streams</li>
-                  <li>• Value independent of creator activity</li>
-                  <li>• Secondary market trading</li>
-                  <li>• Eternal asset appreciation potential</li>
+                  <li>• Tipping and donations</li>
+                  <li>• Pay-per-view purchases</li>
+                  <li>• Bounty distributions</li>
+                  <li>• Subscription payments</li>
+                  <li>• Content NFT trading</li>
                 </ul>
               </CardContent>
             </Card>
           </div>
 
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">How Tokenised Content Works</h3>
-          
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
-                    <Settings className="w-5 h-5" />
-                    For Creators
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Instant Monetisation</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Upon uploading content or starting a stream, fractionalised NFTs are automatically minted, allowing immediate sale of fractions for upfront revenue.</p>
-                    </div>
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Flexible Ownership</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Choose how many fractions to sell versus retain, maintaining control over your content's revenue potential while accessing immediate funding.</p>
-                    </div>
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Passive Income</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Earn lifetime ad revenue from retained fractions without requiring ongoing engagement, activity, or content creation.</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
-                    <Users className="w-5 h-5" />
-                    For Investors & Fans
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Investment Opportunity</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Purchase fractions of content from emerging creators, betting on their future success and earning from ad revenue growth.</p>
-                    </div>
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Residual Income</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Each fraction earns censorship-resistant, lifetime income from ad revenue tied to specific content pieces.</p>
-                    </div>
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Tradeable Assets</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Trade content fractions on secondary markets, potentially profiting from viral content or rising creator popularity.</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+          <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg border border-purple-200 mt-6">
+            <h4 className="font-semibold text-royal-blue font-exo mb-3">Example Savings</h4>
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="p-3 bg-white/50 rounded-lg">
+                <h5 className="font-medium text-royal-blue font-exo">$1,000 Transaction</h5>
+                <p className="text-sm text-royal-blue/70 font-exo">Standard: $100 fee</p>
+                <p className="text-sm text-royal-blue/70 font-exo">Megalodon: $10 fee</p>
+                <p className="text-sm font-semibold text-green-700 font-exo">Saves: $90</p>
+              </div>
+              <div className="p-3 bg-white/50 rounded-lg">
+                <h5 className="font-medium text-royal-blue font-exo">$10,000 Transaction</h5>
+                <p className="text-sm text-royal-blue/70 font-exo">Standard: $1,000 fee</p>
+                <p className="text-sm text-royal-blue/70 font-exo">Megalodon: $100 fee</p>
+                <p className="text-sm font-semibold text-green-700 font-exo">Saves: $900</p>
+              </div>
+              <div className="p-3 bg-white/50 rounded-lg">
+                <h5 className="font-medium text-royal-blue font-exo">$100,000 Transaction</h5>
+                <p className="text-sm text-royal-blue/70 font-exo">Standard: $10,000 fee</p>
+                <p className="text-sm text-royal-blue/70 font-exo">Megalodon: $1,000 fee</p>
+                <p className="text-sm font-semibold text-green-700 font-exo">Saves: $9,000</p>
+              </div>
             </div>
           </div>
-
-          <div className="mt-8">
-            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Revolutionary Advantage</h3>
-          
-            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-lg border border-orange-200 mb-6">
-              <h4 className="font-semibold text-royal-blue font-exo mb-3">Unlike Traditional Creator Economy Models</h4>
-              <p className="text-royal-blue/80 leading-relaxed font-exo mb-4">
-                On traditional tokenised content platforms, creator tokens, shares, or keys lose value when creators retire, 
-                become inactive, or stop adding value. This creates unsustainable economics where ongoing creator engagement 
-                is required to maintain token value.
-              </p>
-              <p className="text-royal-blue/80 leading-relaxed font-exo">
-                DeHub's model is fundamentally different: content earns ad revenue for eternity. A viral video from 2024 
-                will continue generating income in 2034, 2044, and beyond. This means content fractions hold theoretical 
-                value indefinitely, creating truly passive, perpetual income streams that exist independently of creator activity.
-              </p>
-            </div>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-red-200 bg-red-50">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-red-800 font-exo">Traditional Model Issues</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="text-sm text-red-700 space-y-1 font-exo">
-                    <li>• Requires constant creator activity</li>
-                    <li>• Value dies with creator engagement</li>
-                    <li>• Unsustainable long-term economics</li>
-                    <li>• Dependent on creator lifecycle</li>
-                    <li>• No residual value after retirement</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="border-green-200 bg-green-50">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-green-800 font-exo">DeHub Model Benefits</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="text-sm text-green-700 space-y-1 font-exo">
-                    <li>• Content generates eternal ad revenue</li>
-                    <li>• Value independent of creator status</li>
-                    <li>• Sustainable perpetual income model</li>
-                    <li>• Fractions retain value indefinitely</li>
-                    <li>• True passive investment opportunity</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          <Card className="mt-6 border-emerald-200 bg-gradient-to-r from-emerald-50 to-green-50">
-            <CardHeader>
-              <CardTitle className="text-royal-blue font-exo">The Future of Content Investment</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-royal-blue/80 leading-relaxed font-exo">
-                DeHub's tokenised content system creates the world's first truly sustainable creator economy where content 
-                becomes a perpetual asset class. Fans can invest in creators they believe in, creators can monetise immediately 
-                without ongoing obligations, and everyone benefits from the eternal nature of digital content consumption. 
-                This represents a fundamental shift from engagement-dependent models to value-creating, permanent digital assets.
-              </p>
-            </CardContent>
-          </Card>
         </section>
       </section>
     </div>
