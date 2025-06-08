@@ -3,6 +3,7 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
+
 const Dapp = () => {
   const feeReductions = [{
     badge: "No Badge",
@@ -128,7 +129,7 @@ const Dapp = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Content uploading page</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Upload</h2>
           
           <div className="my-6">
             <img src="/lovable-uploads/c6d5f1cc-f829-445e-8a5d-c5ea9fa4c720.png" alt="Content uploading interface showing video info form and upload preview" className="w-full rounded-lg border border-slate-200 shadow-sm" />
@@ -150,8 +151,6 @@ const Dapp = () => {
             <li><strong>Earn:</strong> DeHub tokens via tips through supporters and rise up on the leaderboards for larger shares of ad revenue</li>
           </ul>
         </section>
-
-        
 
         <section>
           <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Customise and update your public profile or channel</h2>
