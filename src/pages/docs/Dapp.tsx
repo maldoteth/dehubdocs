@@ -492,7 +492,7 @@ const Dapp = () => {
 
           <div className="space-y-8">
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">1. Token Utility Design</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Token Utility Design</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 By default, our native governance token $DHB enforces the following roles:
               </p>
@@ -509,7 +509,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Flex Your Badge</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Quadratic Voting</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 To reduce whale dominance:
               </p>
@@ -521,7 +521,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">3. Moderation Staking Pools</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Moderation Staking Pools</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Users can stake tokens to become moderators.</li>
                 <li>Each flagged piece of content enters a moderation queue.</li>
@@ -536,7 +536,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">5. Delegated Moderation (for scaling)</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Delegated Moderation (for scaling)</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Users can delegate their votes to trusted curators or moderation pools (think: staking to a validator in PoS).</li>
                 <li>Curators/moderators can be swapped anytime.</li>
@@ -545,7 +545,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">6. Content Tiering via Curation Markets</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Content Tiering via Curation Markets</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Users stake tokens to "curate" or promote content.</li>
                 <li>The market decides what rises (token-weighted attention), not an algorithm.</li>
@@ -554,7 +554,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">7. DAO-Based Appeals</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">DAO-Based Appeals</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Content creators can appeal moderation decisions via DAO proposals.</li>
                 <li>Token holders vote (again with quadratic logic).</li>
@@ -563,7 +563,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">8. Progressive Access Control</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Progressive Access Control</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 Instead of "1 token = 1 power", implement progressive caps:
               </p>
@@ -575,7 +575,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">9. Incentive Flywheel</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Incentive Flywheel</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Watchers earn tiny token rewards for passive viewing (engagement mining).</li>
                 <li>Curators earn more if their promoted content performs well.</li>
