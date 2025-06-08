@@ -1,11 +1,14 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { usePerformance } from '@/hooks/usePerformance';
 
 const DocsHome = () => {
   const { toast } = useToast();
+  
+  // Monitor performance for this page
+  usePerformance();
 
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
