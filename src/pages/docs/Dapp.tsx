@@ -273,7 +273,7 @@ const Dapp = () => {
       <section>
         <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
           <Video className="w-8 h-8" />
-          Livestreaming Platform
+          Live Streaming
         </h2>
         
         <div className="bg-gradient-to-r from-royal-blue/10 to-sky-blue/10 p-6 rounded-lg border border-royal-blue/20 mb-6">
