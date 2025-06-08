@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -665,7 +666,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Released onchain live streams with real-time tip verification</span>
+                        <span>Released onchain live streams with real-time tip animations</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
