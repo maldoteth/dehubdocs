@@ -23,12 +23,12 @@ const Roadmap = () => {
       </div>
 
       <Tabs value={selectedYear} onValueChange={setSelectedYear} className="w-full">
-        <TabsList className="grid w-full grid-cols-4 lg:grid-cols-5">
-          <TabsTrigger value="2021" className="text-sm">2021</TabsTrigger>
-          <TabsTrigger value="2022" className="text-sm">2022</TabsTrigger>
-          <TabsTrigger value="2023" className="text-sm">2023</TabsTrigger>
-          <TabsTrigger value="2024" className="text-sm">2024</TabsTrigger>
-          <TabsTrigger value="2025" className="text-sm">2025</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-5">
+          <TabsTrigger value="2021" className="text-sm">21</TabsTrigger>
+          <TabsTrigger value="2022" className="text-sm">22</TabsTrigger>
+          <TabsTrigger value="2023" className="text-sm">23</TabsTrigger>
+          <TabsTrigger value="2024" className="text-sm">24</TabsTrigger>
+          <TabsTrigger value="2025" className="text-sm">25</TabsTrigger>
         </TabsList>
 
         {/* 2021 - Foundation Year */}
