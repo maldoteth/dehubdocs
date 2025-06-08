@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -22,8 +21,8 @@ const menuItems = [{
     icon: '🖥️',
     hasSubmenu: true,
     submenuItems: [{
-      title: 'Community Hub',
-      path: '/docs/dapps#community-hub'
+      title: 'Ecosystem',
+      path: '/docs/dapps#ecosystem'
     }, {
       title: 'Tokenised Content',
       path: '/docs/dapps#tokenised-content'

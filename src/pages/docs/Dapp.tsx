@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { BadgeFlowchart } from '@/components/BadgeFlowchart';
+import BadgeFlowchart from '@/components/BadgeFlowchart';
 
 const Dapp = () => {
   const feeReductions = [
@@ -31,9 +31,9 @@ const Dapp = () => {
         </p>
       </div>
 
-      {/* Community Hub Section */}
-      <section id="community-hub">
-        <h2 className="text-2xl font-semibold mb-4">Community Hub</h2>
+      {/* Ecosystem Section */}
+      <section id="ecosystem">
+        <h2 className="text-2xl font-semibold mb-4">Ecosystem</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <Card>
             <CardHeader>
