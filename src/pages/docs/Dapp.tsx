@@ -3,7 +3,6 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
-
 const Dapp = () => {
   const feeReductions = [{
     badge: "No Badge",
@@ -493,9 +492,7 @@ const Dapp = () => {
           <div className="space-y-8">
             <div>
               <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Token Utility Design</h4>
-              <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
-                By default, our native governance token $DHB enforces the following roles:
-              </p>
+              <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">By default, our native governance token $DHB enables the following roles:</p>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Moderation staking</li>
                 <li>Voting on content disputes and platform rules</li>
