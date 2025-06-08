@@ -142,7 +142,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Addressed security vulnerabilities from v1</span>
+                        <span>Addressed security vulnerabilities from v1 with full Certik Audit</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
