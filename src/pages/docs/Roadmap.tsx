@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -769,6 +768,10 @@ const Roadmap = () => {
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Custom advertising stack with advanced user targeting based on wallet balance & activity</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>DePIN phase 2</span>
                       </div>
                     </div>
                   </div>
