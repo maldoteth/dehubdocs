@@ -378,11 +378,11 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Successfully listed DHB on Base network with 50% lower transaction costs</div>
+                      <div>• Listed DHB on Eth mainnet</div>
                       <div>• Raised $1,000,000 for adult fork BJ (now fan.site) from tier-1 investors</div>
                       <div>• Implemented Layer 2 scaling solutions reducing user costs by 90%</div>
-                      <div>• Cross-chain bridge processed 100,000+ transactions safely</div>
-                      <div>• Base listing increased daily active users by 200%</div>
+                      
+                      
                       <div>• Established Base ecosystem partnerships with 15+ protocols</div>
                     </div>
                   </div>
