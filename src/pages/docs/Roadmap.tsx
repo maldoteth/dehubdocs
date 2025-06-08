@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -341,9 +340,9 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Voluntary delisting from Gate.io to prioritize decentralization</div>
                       <div>• Commitment to transparency with all DEX policy implementation</div>
-                      <div>• Achieved 100% decentralized trading across 5 major DEXes</div>
+                      <div></div>
                       <div>• Implemented automated liquidity provision strategies</div>
-                      <div>• Community treasury grew to $5M+ through DEX trading fees</div>
+                      
                       <div>• Published full transparency reports showing all protocol metrics</div>
                     </div>
                   </div>
