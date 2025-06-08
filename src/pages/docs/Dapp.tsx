@@ -335,11 +335,11 @@ const Dapp = () => {
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">Users own their social graph via NFTs</td>
                   </tr>
                   <tr className="bg-slate-25">
-                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">OnlyFans</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Subscription-based premium content</td>
-                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Constant new content creation required</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">80% to creator, 20% platform fee</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns all content and subscribers</td>
+                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Zora</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Everything is a token - hyper-speculative social tokens</td>
+                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Constant hype and speculation maintenance</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Token trading, minting fees, speculation</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Token holders speculate on creator success</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Patreon</td>
