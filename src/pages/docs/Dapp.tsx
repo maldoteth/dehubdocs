@@ -3,7 +3,6 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
-
 const Dapp = () => {
   const feeReductions = [{
     badge: "No Badge",
@@ -210,7 +209,7 @@ const Dapp = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Tip Your Favourites</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Token Tipping</h2>
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Our Integrated tipping services across all uploads and live streams only come with a 10% fee, compared to the usual 60% charged by the likes of TikTok and other industry leaders while also having the ability to vote on video cancellations putting the power back into the viewer's hands.
           </p>
@@ -223,7 +222,7 @@ const Dapp = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Mine Through Content Moderation</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Decentralised Moderation Mining</h2>
           <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Decentralised moderation mining and revenue share model</h3>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
@@ -291,22 +290,7 @@ const Dapp = () => {
               </div>
             </div>
 
-            <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">4. Reputation System</h4>
-              <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
-                Moderators and voters build reputation scores tied to:
-              </p>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Historical accuracy of votes</li>
-                <li>Community feedback</li>
-                <li>Participation consistency</li>
-              </ul>
-              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
-                <p className="text-yellow-800 font-medium font-exo">
-                  <strong>Note:</strong> High-reputation users get bonus rewards or multiplied influence — but not in a way that replaces quadratic limits.
-                </p>
-              </div>
-            </div>
+            
 
             <div>
               <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">5. Delegated Moderation (for scaling)</h4>
