@@ -2,12 +2,18 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Bot, MessageSquare, DollarSign, TrendingUp, Globe, Search } from 'lucide-react';
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const AIToolkits = () => {
   return (
     <div className="max-w-4xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">AI Toolkits</h1>
+        <OptimizedImage
+          src="/lovable-uploads/305d0557-94f8-46fe-b44e-b6b3a810d434.png"
+          alt="DeHub AI interface showing tools and chat bot functionality"
+          className="w-full rounded-lg shadow-lg mb-6"
+        />
         <p className="text-lg text-slate-600 leading-relaxed">
           DeHub users will soon have their very own uncensored AI assistant and full toolkit suite directly in-app.
         </p>
