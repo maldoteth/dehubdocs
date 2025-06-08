@@ -755,7 +755,7 @@ const Roadmap = () => {
                       
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Launch Solana, Hyperliquid and Sui integrations for in-app use</span>
+                        <span>Begin Solana, Hyperliquid and Sui integrations for in-app use</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
