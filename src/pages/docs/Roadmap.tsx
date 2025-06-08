@@ -317,7 +317,7 @@ const Roadmap = () => {
                       <div>• Community members successfully launched independent fork with full governance</div>
                       <div>• Facilitated knowledge transfer and technical support to fork team</div>
                       <div>• Demonstrated true decentralization principles in action</div>
-                      <div>• Both platforms achieved 100,000+ combined users</div>
+                      
                       <div>• Established framework for future community-driven forks</div>
                     </div>
                   </div>
