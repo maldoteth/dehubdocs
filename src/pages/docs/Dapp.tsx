@@ -416,6 +416,10 @@ const Dapp = () => {
         <section>
           <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Top Up Tokens In 2 Clicks</h2>
           
+          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
+            We have our own in app currency, similar to Vbucks you get on Fortnite or TikTok coins, ours are called DeHub Tokens or DHB for short. You will see these as gold coins across the app. You need DHB tokens to transact across the app and use the services such as tips, subs & more. Top up in 2 clicks with below.
+          </p>
+          
           <Card>
             <CardHeader>
               <CardTitle className="text-xl text-royal-blue flex items-center gap-2">
