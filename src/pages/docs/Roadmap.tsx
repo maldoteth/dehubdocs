@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
-
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
   const getStatusColor = (status: string) => {
@@ -78,7 +77,7 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Launched v1 token with 1,000,000 initial supply</div>
-                      <div>• Created basic tokenomics model with staking rewards</div>
+                      <div>• Launched v1 token</div>
                       <div>• Established first liquidity pools on Uniswap</div>
                       <div>• Built community of 2,000+ early adopters</div>
                       <div>• Implemented basic governance voting mechanism</div>
@@ -492,7 +491,7 @@ const Roadmap = () => {
                       <div>• Implemented WebRTC infrastructure supporting 250,000+ concurrent viewers</div>
                       <div>• Built custom CDN reducing latency to sub-200ms globally</div>
                       <div>• Achieved 99.99% uptime across all streaming services</div>
-                      <div>• DePIN (Decentralized Physical Infrastructure Network) reveal</div>
+                      <div>• DePIN (Decentralized Physical Infrastructure Network) reveal phase 1</div>
                     </div>
                   </div>
                 </div>
@@ -535,9 +534,8 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Release live stream keys so users can stream on multiple apps simultaneously ✅</div>
                       <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
-                      <div>• Integrate Solana, Hyperliquid and Sui blockchains for enhanced in-app functionality</div>
+                      <div>• Release live stream keys so users can stream on multiple apps simultaneously ✅</div>
                       <div>• DePIN (Decentralized Physical Infrastructure Network) phase 2 release</div>
                       <div>• Deploy comprehensive CRM system for agency management and client tracking</div>
                       <div>• Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as
