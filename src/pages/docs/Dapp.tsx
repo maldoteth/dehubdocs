@@ -151,10 +151,7 @@ const Dapp = () => {
           </ul>
         </section>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">For VOD or Live Streams</h2>
-          <p className="text-royal-blue/80 leading-relaxed font-exo">PPV, Watch2earn or gated toggles function for both standard uploads or live streams. You can also use both live streams or VOD uploads for subscriber only experiences filtered by tiers if you wish. </p>
-        </section>
+        
 
         <section>
           <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Customise and update your public profile or channel</h2>
