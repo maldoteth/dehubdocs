@@ -292,7 +292,9 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       
-                      <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies in a vote based system backed by Sony, Samsung and other industry giants.</div>
+                      <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies 
+                        <span className="block ml-2">in a vote based system backed by Sony, Samsung and other industry giants.</span>
+                      </div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
                       
                       
