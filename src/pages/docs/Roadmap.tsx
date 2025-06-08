@@ -238,7 +238,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• LP issues forced token relaunch due to contract clog</div>
                       <div>• Migrated 25,000+ token holders to new improved contract</div>
-                      <div>• Implemented advanced tokenomics</div>
+                      <div>• Implemented standard ERC20 tokenomics to avoid future issues</div>
                     </div>
                   </div>
                 </div>
