@@ -15,7 +15,7 @@ const menuItems = [{
     path: '/docs/overview',
     icon: '📋'
   }, {
-    title: 'Dapp',
+    title: 'd\'App',
     path: '/docs/dapps',
     icon: '🖥️'
   }, {
