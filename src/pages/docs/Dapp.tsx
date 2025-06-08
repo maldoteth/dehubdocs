@@ -1,4 +1,3 @@
-
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
@@ -474,7 +473,6 @@ const Dapp = () => {
           </CardContent>
         </Card>
 
-        {/* New Subscriptions Section */}
         <section className="mt-12">
           <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
             <Crown className="w-8 h-8" />
@@ -681,7 +679,6 @@ const Dapp = () => {
           </Card>
         </section>
 
-        {/* New Fee Tier System Section */}
         <section className="mt-12">
           <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
             <Percent className="w-8 h-8" />
@@ -742,7 +739,7 @@ const Dapp = () => {
                 <ul className="text-sm text-green-700 space-y-2 font-exo">
                   <li>• Linear 0.69% reduction per badge tier</li>
                   <li>• Maximum 99% fee reduction for Megalodons</li>
-                  <li>• Applies to all platform transactions</li>
+                  <li>• Applies to certain platform services</li>
                   <li>• Instant activation upon badge qualification</li>
                   <li>• Encourages long-term $DHB holding</li>
                 </ul>
@@ -789,7 +786,6 @@ const Dapp = () => {
             </div>
           </div>
 
-          {/* New Disclaimer Section */}
           <div className="bg-amber-50 border-l-4 border-amber-400 p-6 mt-6 rounded-r-lg">
             <h4 className="font-semibold text-amber-800 font-exo mb-3 flex items-center gap-2">
               <Banknote className="w-5 h-5" />
