@@ -10,7 +10,7 @@ const Overview = () => {
   const [showEditControls, setShowEditControls] = useState(false);
   const [editableContent, setEditableContent] = useState({
     title: "DeHub: The Future of Creator Economy",
-    subtitle: "Where creators own their content, earnings, and destiny—no intermediaries, no limits.",
+    subtitle: "Live forever onchain, free from censorship or limitations of legacy media apps.",
     paragraph1: "Imagine a world where creators earn 100% of their revenue, own their audience data, and never fear censorship or demonetization. DeHub makes this reality through our revolutionary gaming and streaming protocol, powered by cutting-edge DePIN infrastructure that's reshaping how content is hosted, transcoded, and delivered globally.",
     paragraph2: "Built by gamers for gamers, we've solved the crypto complexity problem. Our platform delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Just pure creative freedom with blockchain-verified earnings visible on our public leaderboards.",
     paragraph3: "Launch pay-per-view events, create Watch2Earn experiences, or distribute exclusive token-gated content—all without traditional banking or lengthy KYC processes. Your content, your rules, your revenue. Direct creator-to-fan relationships in a censorship-resistant ecosystem where your success is entirely in your hands.",
