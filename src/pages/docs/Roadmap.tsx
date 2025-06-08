@@ -56,7 +56,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Launched first beta app on App Store with 500+ initial testers</div>
+                      <div>• Launched first beta app on App Store with 500+ initial testers and 2,000 DAUs before token release</div>
                       <div>• Assembled core development team</div>
                       <div>• Conducted 50+ user interviews to validate product-market fit</div>
                       <div>• Established basic content moderation framework</div>
