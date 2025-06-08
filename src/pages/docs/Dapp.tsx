@@ -148,7 +148,6 @@ const Dapp = () => {
             <li><strong>PPV events:</strong> charge any token for a pay-per-view or live stream</li>
             <li><strong>NFT collectables:</strong> every post mints an NFT that earns the lifetime royalty attached to the video</li>
             <li><strong>Earn:</strong> DeHub tokens via tips through supporters and rise up on the leaderboards for larger shares of ad revenue</li>
-            <li><strong>Subscribers:</strong> Upload unlockable content for your subs or launch gated group chats</li>
           </ul>
         </section>
 
@@ -265,7 +264,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">2. Quadratic Voting (Anti-Whale Mechanism)</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Flex Your Badge</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 To reduce whale dominance:
               </p>
