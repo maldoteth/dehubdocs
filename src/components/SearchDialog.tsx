@@ -135,7 +135,7 @@ const highlightTextInPage = (searchQuery: string) => {
             const after = text.substring(index + term.length);
             
             const span = document.createElement('span');
-            span.className = 'search-highlight bg-yellow-300 px-1 rounded font-semibold';
+            span.className = 'search-highlight bg-yellow-300 px-1 rounded font-semibold transition-all duration-1000';
             span.textContent = match;
             
             const fragment = document.createDocumentFragment();
@@ -155,7 +155,7 @@ const highlightTextInPage = (searchQuery: string) => {
     }
   }
   
-  // Scroll to the first match
+  // Scroll to the first match and add temporary prominent highlighting
   if (firstMatch) {
     setTimeout(() => {
       firstMatch.scrollIntoView({ 
@@ -164,6 +164,22 @@ const highlightTextInPage = (searchQuery: string) => {
         inline: 'nearest'
       });
       console.log(`🎯 Scrolled to and highlighted search term in page`);
+      
+      // Add prominent temporary highlight
+      firstMatch.classList.add('bg-blue-400', 'shadow-lg', 'scale-110');
+      firstMatch.classList.remove('bg-yellow-300');
+      
+      // Fade back to normal highlighting after 2 seconds
+      setTimeout(() => {
+        firstMatch.classList.remove('bg-blue-400', 'shadow-lg', 'scale-110');
+        firstMatch.classList.add('bg-yellow-300');
+        
+        // Remove highlight completely after another 3 seconds
+        setTimeout(() => {
+          firstMatch.classList.remove('bg-yellow-300');
+          firstMatch.classList.add('bg-transparent');
+        }, 3000);
+      }, 2000);
     }, 200);
   }
 };
