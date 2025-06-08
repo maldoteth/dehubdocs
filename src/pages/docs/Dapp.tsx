@@ -471,6 +471,16 @@ const Dapp = () => {
               </div>
             </CardContent>
           </Card>
+
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-6 mt-6 rounded-r-lg">
+            <h4 className="font-semibold text-amber-800 font-exo mb-3 flex items-center gap-2">
+              <Shield className="w-5 h-5" />
+              Important Notice
+            </h4>
+            <p className="text-amber-800/90 leading-relaxed font-exo">
+              DeHub tokens serve as utility tokens within our ecosystem, similar to in-game currencies, and are not investment vehicles. While our blockchain infrastructure provides unprecedented transparency and verifiable on-chain data for educational purposes, all markets carry inherent risks. You could lose your entire investment due to market volatility, technical issues, security breaches, or unforeseen circumstances. Only participate with funds you can afford to lose completely. DeHub and its affiliates assume no responsibility for any financial losses incurred.
+            </p>
+          </div>
         </section>
 
         <section>
