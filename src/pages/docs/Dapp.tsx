@@ -626,11 +626,7 @@ const Dapp = () => {
           
           <div className="bg-gradient-to-r from-royal-blue/10 to-sky-blue/10 p-6 rounded-lg border border-royal-blue/20 mb-6">
             <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Platform Overview</h3>
-            <p className="text-royal-blue/80 leading-relaxed font-exo">
-              Our livestreaming platform leverages Livepeer for video streaming infrastructure, powered by a NestJS backend and Next.js frontend. 
-              Every livestream is fully integrated into the on-chain ecosystem, offering creators unprecedented control and monetization opportunities 
-              while providing viewers with engaging, token-enabled experiences.
-            </p>
+            <p className="text-royal-blue/80 leading-relaxed font-exo">Our livestreaming platform leverages Livepeer for video streaming infrastructure, powered by a Next.js backend and frontend. Every livestream is permissionless and censorship resistant, offering creators unprecedented control and monetization opportunities while providing viewers with engaging, token-enabled experiences.</p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 mb-8">
