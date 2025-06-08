@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -379,7 +378,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Listed $DHB on Base L2</div>
+                      <div>• Listed DHB on Eth mainnet</div>
                       <div>• Raised $1,000,000 for adult fork BJ (now fan.site) from tier-1 investors</div>
                       <div>• Implemented Layer 2 scaling solutions reducing user costs by 90%</div>
                       
