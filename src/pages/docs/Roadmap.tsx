@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -552,6 +553,7 @@ const Roadmap = () => {
                       <div>• Open source the entire DeHub protocol for community development</div>
                       <div>• Launch comprehensive SDKs enabling third-party developers to build mini apps and games</div>
                       <div>• Establish developer marketplace for community-built applications and integrations</div>
+                      <div>• Multi-posting software so users can post to all major web2+3 socials from one place</div>
                     </div>
                   </div>
                 </div>
@@ -578,3 +580,4 @@ const Roadmap = () => {
 };
 
 export default Roadmap;
+
