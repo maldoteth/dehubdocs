@@ -170,7 +170,6 @@ const Roadmap = () => {
                       <div>• Implemented blockchain-based leaderboards and rewards</div>
                       <div>• Introduced social features allowing friend challenges</div>
                       <div>• Built custom game engine optimized for mobile devices</div>
-                      <div>• Generated $50K+ in monthly gaming revenue</div>
                     </div>
                   </div>
                 </div>
