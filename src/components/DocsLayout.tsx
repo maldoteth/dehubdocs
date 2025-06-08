@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -18,7 +19,33 @@ const menuItems = [{
   }, {
     title: 'Dapp',
     path: '/docs/dapps',
-    icon: '🖥️'
+    icon: '🖥️',
+    hasSubmenu: true,
+    submenuItems: [{
+      title: 'Community Hub',
+      path: '/docs/dapps#community-hub'
+    }, {
+      title: 'Tokenised Content',
+      path: '/docs/dapps#tokenised-content'
+    }, {
+      title: 'Fee Tier System',
+      path: '/docs/dapps#fee-tier-system'
+    }, {
+      title: 'Social Features',
+      path: '/docs/dapps#social-features'
+    }, {
+      title: 'Content Discovery',
+      path: '/docs/dapps#content-discovery'
+    }, {
+      title: 'Monetization',
+      path: '/docs/dapps#monetization'
+    }, {
+      title: 'Privacy & Security',
+      path: '/docs/dapps#privacy-security'
+    }, {
+      title: 'Mobile Experience',
+      path: '/docs/dapps#mobile-experience'
+    }]
   }, {
     title: 'Games',
     path: '/docs/games',
