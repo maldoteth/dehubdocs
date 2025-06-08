@@ -21,7 +21,7 @@ interface SearchContextType {
 
 const SearchContext = createContext<SearchContextType | undefined>(undefined);
 
-// Enhanced search data with new content and anchors
+// Enhanced search data with comprehensive coverage of all docs
 const searchData: SearchItem[] = [
   {
     title: 'Home',
@@ -36,10 +36,17 @@ const searchData: SearchItem[] = [
     category: 'Main'
   },
   {
-    title: 'Stream - Ecosystem',
+    title: 'Stream - Live Streaming',
+    path: '/docs/dapps',
+    anchor: 'live-streaming',
+    content: 'Live Streaming decentralized streaming platform user-centric protocol empower creators viewers censorship resistance content moderation watch-to-earn watch2earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour badge of honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content streaming rewards creator economy viewer rewards tokenomics streaming monetization content discovery social features live chat interactive streaming real-time broadcasting live video streaming',
+    category: 'dApps'
+  },
+  {
+    title: 'Stream - Ecosystem Features',
     path: '/docs/dapps',
     anchor: 'ecosystem',
-    content: 'Stream dapp ecosystem decentralized streaming platform user-centric protocol empower creators viewers censorship resistance content moderation watch-to-earn watch2earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour badge of honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content streaming rewards creator economy viewer rewards tokenomics streaming monetization content discovery social features live chat interactive streaming',
+    content: 'Stream dapp ecosystem features decentralized streaming platform user-centric protocol empower creators viewers censorship resistance content moderation watch-to-earn watch2earn content locking PPV pay-per-view token-gated subscriber data ownership IPFS NFT minting AI content moderation adult content 18+ zone bounty tips leaderboards ad revenue share badge honour badge of honour DHB tokens tipping services decentralised moderation upload video live stream creator profile channel community chat forum categories locked content streaming rewards creator economy viewer rewards',
     category: 'dApps'
   },
   {
@@ -92,6 +99,13 @@ const searchData: SearchItem[] = [
     category: 'dApps'
   },
   {
+    title: 'Stream - Supported Tokens',
+    path: '/docs/dapps',
+    anchor: 'supported-tokens',
+    content: 'Supported tokens DHB DeHub token ETH Ethereum USDC USD Coin USDT Tether stablecoin crypto cryptocurrency digital assets payment methods blockchain native tokens ERC-20 token standards wallet integration payment processing transaction fees gas optimization multi-token support cross-chain compatibility token economics payment gateway cryptocurrency payments',
+    category: 'dApps'
+  },
+  {
     title: 'Contact Us',
     path: '/docs/contact',
     content: 'Contact support help assistance tech@dehub.net marketing@dehub.net hr@dehub.net technical support business inquiries partnerships media press investor relations Telegram portal https://t.me/portal Discord dehub.io/d Turkish community Dehub_Turkish Arabic community Dehub_Arabic holders whales exclusive channels token holders community management customer service business development media inquiries community engagement social media presence communication channels support resources',
@@ -134,6 +148,12 @@ const searchData: SearchItem[] = [
     category: 'Token'
   },
   {
+    title: 'Token Staking',
+    path: '/docs/token/stake',
+    content: 'Token staking stake DHB tokens earn rewards staking rewards yield farming liquidity mining validator nodes network security proof of stake consensus mechanism staking pools delegation rewards staking requirements minimum stake amounts lock-up periods unbonding periods slashing conditions validator selection staking rewards distribution APY annual percentage yield compound interest staking strategies risk management',
+    category: 'Token'
+  },
+  {
     title: 'DePIN',
     path: '/docs/depin',
     content: 'DePIN decentralized physical infrastructure network shared computing power miners data hosting transcoding delivery mobile devices PCs servers contributors revenue pool inflation-free model proof-of-computation verification rewards mining nodes validators infrastructure providers network security scalability bandwidth sharing storage sharing compute sharing GPU mining CPU mining hardware requirements staking amounts 100000 DHB mobile phones 1000000 DHB PCs laptops 10000000 DHB dedicated servers depin-coordinator.dehub.net miner client registration device allocation task assignment reward calculator dynamic scaling',
@@ -168,6 +188,24 @@ const searchData: SearchItem[] = [
     path: '/docs/terms',
     content: 'Terms conditions disclaimers legal privacy policy user agreement service terms liability limitation intellectual property rights data protection GDPR compliance cookie policy age restrictions prohibited activities termination conditions governing law dispute resolution arbitration terms of service privacy notice data processing user rights consent withdrawal cookies tracking analytics third party services legal compliance regulatory requirements jurisdiction applicable law enforcement legal documentation terms of use privacy policy user agreement service agreement legal disclaimers liability limitations intellectual property data protection compliance regulatory compliance',
     category: 'Legal'
+  },
+  {
+    title: 'Terms of Service',
+    path: '/docs/terms-of-service',
+    content: 'Terms of Service user agreement service terms conditions liability limitation intellectual property rights data protection user responsibilities prohibited activities account termination dispute resolution governing law arbitration legal compliance regulatory requirements jurisdiction applicable law enforcement service availability modifications updates user conduct content guidelines community standards violation consequences suspension termination appeal process',
+    category: 'Legal'
+  },
+  {
+    title: 'Privacy Policy',
+    path: '/docs/privacy',
+    content: 'Privacy Policy data protection GDPR compliance personal information collection processing storage sharing cookies tracking analytics third party services user rights consent withdrawal data retention deletion security measures breach notification international transfers privacy controls settings data subject rights access rectification erasure portability objection automated decision making profiling contact information data protection officer',
+    category: 'Legal'
+  },
+  {
+    title: 'Roadmap',
+    path: '/docs/roadmap',
+    content: 'Roadmap development timeline milestones features releases upcoming planned future developments product roadmap strategic goals quarterly objectives annual targets feature releases bug fixes improvements platform enhancements user experience upgrades technology stack updates blockchain integrations new partnerships ecosystem expansion community initiatives governance implementation DePIN network growth scaling solutions performance optimizations',
+    category: 'Main'
   }
 ];
 
