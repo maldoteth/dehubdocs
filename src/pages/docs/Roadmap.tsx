@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -82,7 +81,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q2 2021</h3>
+                      <h3 className="font-semibold text-slate-900">Q1 2021</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -524,7 +523,10 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q1 2024</h3>
+                      <h3 className="font-semibold text-slate-900">•
+Listed DHB on Eth mainnet
+
+                    </h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -532,20 +534,18 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Listed DHB on Eth mainnet</span>
+                        <span>
+                      </span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0"></span>
+                        
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Raised $1,000,000 for adult fork BJ (now fan.site)</span>
+                        
                       </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Implemented Layer 2 scaling solutions reducing user costs by 90%</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Established Base ecosystem partnerships with 15+ protocols</span>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -565,11 +565,12 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Listed SDHB on Base L2</span>
+                        
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Dubai event expanded Middle East presence</span>
+                        <span>
+                      </span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
@@ -577,7 +578,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Established creator partnerships in 15 countries</span>
+                        
                       </div>
                     </div>
                   </div>
@@ -819,57 +820,6 @@ const Roadmap = () => {
                   </div>
                 </div>
 
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        {/* 2026 */}
-        <TabsContent value="2026" className="space-y-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <Calendar className="w-5 h-5" />
-                <span>2026 - Future Vision</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid gap-4">
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-gray-50/50">
-                  <div className="flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-gray-500" />
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-gray-900">2026 and Beyond</h3>
-                      <Badge variant="outline" className="bg-gray-100 text-gray-800 border-gray-200">
-                        Planned
-                      </Badge>
-                    </div>
-                    <div className="text-gray-600 text-sm leading-relaxed space-y-1">
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Leading licensing partners, latest blockbusters and major PPVs</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Commercial integrations with existing streaming and home entertainment brands</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Aggregation of All APIs of current web2+3 Streaming Platforms</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Windows, MAC OS, TV & game console apps</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>V/AR profile hub & consumer data metrics</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </CardContent>
           </Card>
