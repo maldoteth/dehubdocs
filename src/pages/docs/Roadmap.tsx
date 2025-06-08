@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -480,6 +481,7 @@ const Roadmap = () => {
                       <div>• Built custom CDN reducing latency to sub-200ms globally</div>
                       <div>• Achieved 99.99% uptime across all streaming services</div>
                       <div>• DePIN (Decentralized Physical Infrastructure Network) reveal phase 1</div>
+                      <div>• Discontinue Ethereum Mainnet support</div>
                     </div>
                   </div>
                 </div>
