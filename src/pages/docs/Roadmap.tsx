@@ -793,6 +793,10 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
+                        <span>App store re-listings</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
                         <span>Release multi-account access and delegation features for streamlined management</span>
                       </div>
                       <div className="flex">
@@ -814,6 +818,10 @@ const Roadmap = () => {
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Multi-posting software so users can post to all major web2+3 socials from one place</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Last Chad Standing release schedule begins</span>
                       </div>
                     </div>
                   </div>
