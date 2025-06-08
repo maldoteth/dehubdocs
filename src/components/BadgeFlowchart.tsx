@@ -13,7 +13,7 @@ const BadgeFlowchart = () => {
     { threshold: "1m", badge: "Crocodile Badge", color: "bg-green-800", image: "/lovable-uploads/c84eee0a-97c7-4938-9b9c-c991c802593e.png" },
     { threshold: "2m", badge: "Dolphin Badge", color: "bg-cyan-500", image: "/lovable-uploads/4558c158-75d9-40fc-adfa-41125344a48e.png" },
     { threshold: "3m", badge: "Tiger Shark Badge", color: "bg-slate-600", image: "/lovable-uploads/6be493f1-51b4-481b-9ca1-340c030b2ef8.png" },
-    { threshold: "5m", badge: "Killer Whale Badge", color: "bg-gray-900", image: "/lovable-uploads/a73c2ee8-605c-4799-9a0f-7b06e0c4d104.png" },
+    { threshold: "5m", badge: "Killer Whale Badge", color: "bg-gray-900", image: "/lovable-uploads/fcc288eb-67d7-49a0-b561-94bb5d1b8896.png" },
     { threshold: "10m", badge: "Great White Shark Badge", color: "bg-blue-800", image: "/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png" },
     { threshold: "25m", badge: "Blue Whale Badge", color: "bg-indigo-700", image: "/lovable-uploads/7f234add-b739-40e4-b315-e712af2be68d.png" },
     { threshold: "50m", badge: "Megalodon Badge", color: "bg-purple-800", image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png" }
