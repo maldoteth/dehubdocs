@@ -523,7 +523,10 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q1 2024</h3>
+                      <h3 className="font-semibold text-slate-900">•
+Listed DHB on Eth mainnet
+
+                    </h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
