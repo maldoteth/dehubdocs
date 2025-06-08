@@ -402,10 +402,10 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Listed $DHB on Base L2</div>
-                      <div>• Dubai event expanded Middle East presence with 300+ regional users</div>
-                      <div>• Opened TikTok agency in partnership with TikTok reaching 1M+ followers</div>
+                      <div>• Dubai event expanded Middle East presence w</div>
+                      <div>• Opened TikTok agency in partnership with TikTok execs directly</div>
                       <div>• Established creator partnerships in 15 countries</div>
-                      <div>• Generated $500K+ in agency revenue within first quarter</div>
+                      <div></div>
                       
                     </div>
                   </div>
