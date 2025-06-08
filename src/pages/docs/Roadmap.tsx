@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -16,7 +17,7 @@ const Roadmap = () => {
   return <div className="max-w-6xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">DeHub Roadmap</h1>
-        <p className="text-lg text-slate-600 leading-relaxed">From humble beginnings to a complete platform - our journey through the ups </p>
+        <p className="text-lg text-slate-600 leading-relaxed">From humble beginnings to a complete platform - our journey through the ups </p>
       </div>
 
       <Tabs value={selectedYear} onValueChange={setSelectedYear} className="w-full">
@@ -516,6 +517,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div>• App store re-listings</div>
                       <div>• Release live stream keys so users can stream on multiple apps simultaneously</div>
                       <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
                       <div>• DePIN (Decentralized Physical Infrastructure Network) phase 2 release</div>
