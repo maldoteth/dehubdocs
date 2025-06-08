@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -49,7 +50,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">First Beta Launch</h3>
+                      <h3 className="font-semibold text-slate-900">Q1 2021</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -62,7 +63,6 @@ const Roadmap = () => {
                       <div>• Established basic content moderation framework</div>
                       <div>• Implemented core streaming infrastructure on AWS</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q1 2021</div>
                   </div>
                 </div>
 
@@ -73,7 +73,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Token V1 Launch</h3>
+                      <h3 className="font-semibold text-slate-900">Q2 2021</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -86,7 +86,6 @@ const Roadmap = () => {
                       <div>• Implemented basic governance voting mechanism</div>
                       <div>• Faced initial smart contract optimization challenges</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q2 2021</div>
                   </div>
                 </div>
 
@@ -97,7 +96,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">V2 Release & Rebuild</h3>
+                      <h3 className="font-semibold text-slate-900">Q3 2021</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -110,7 +109,6 @@ const Roadmap = () => {
                       <div>• Addressed security vulnerabilities from V1</div>
                       <div>• Expanded team to 15 members across 3 time zones</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q3 2021</div>
                   </div>
                 </div>
 
@@ -121,7 +119,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Gaming & Exchange Listing</h3>
+                      <h3 className="font-semibold text-slate-900">Q4 2021</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -134,7 +132,6 @@ const Roadmap = () => {
                       <div>• Built custom payment processing for game entries</div>
                       <div>• Community grew to 8,000+ active members</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q4 2021</div>
                   </div>
                 </div>
 
@@ -162,7 +159,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Arcade Release</h3>
+                      <h3 className="font-semibold text-slate-900">Q1 2022</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -175,7 +172,6 @@ const Roadmap = () => {
                       <div>• Built custom game engine optimized for mobile devices</div>
                       <div>• Generated $50K+ in monthly gaming revenue</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q1 2022</div>
                   </div>
                 </div>
 
@@ -186,7 +182,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Streaming & NFTs</h3>
+                      <h3 className="font-semibold text-slate-900">Q2 2022</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -199,7 +195,6 @@ const Roadmap = () => {
                       <div>• Implemented advanced video compression reducing bandwidth costs by 60%</div>
                       <div>• Built NFT marketplace with royalty distribution system</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q2 2022</div>
                   </div>
                 </div>
 
@@ -210,7 +205,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Corporate Formation</h3>
+                      <h3 className="font-semibold text-slate-900">Q3 2022</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -223,7 +218,6 @@ const Roadmap = () => {
                       <div>• Created transparent raffle mechanics with on-chain verification</div>
                       <div>• Achieved regulatory compliance in 5 jurisdictions</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q3 2022</div>
                   </div>
                 </div>
 
@@ -234,7 +228,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Token Relaunch</h3>
+                      <h3 className="font-semibold text-slate-900">Q4 2022</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -247,7 +241,6 @@ const Roadmap = () => {
                       <div>• Introduced staking rewards with 12% APY</div>
                       <div>• Community governance voted overwhelmingly in favor (95% approval)</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q4 2022</div>
                   </div>
                 </div>
 
@@ -275,7 +268,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Alpha D'app Launch</h3>
+                      <h3 className="font-semibold text-slate-900">Q1 2023</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -288,7 +281,6 @@ const Roadmap = () => {
                       <div>• Built advanced analytics dashboard for creators</div>
                       <div>• Introduced automated content optimization using AI</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q1 2023</div>
                   </div>
                 </div>
 
@@ -299,7 +291,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Industry Recognition</h3>
+                      <h3 className="font-semibold text-slate-900">Q2 2023</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -312,7 +304,6 @@ const Roadmap = () => {
                       <div>• Established advisory board with former executives from YouTube and Twitch</div>
                       <div>• Patent applications filed for core streaming technology</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q2 2023</div>
                   </div>
                 </div>
 
@@ -323,7 +314,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Partner Airdrop</h3>
+                      <h3 className="font-semibold text-slate-900">Q3 2023</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -336,7 +327,6 @@ const Roadmap = () => {
                       <div>• Both platforms achieved 100,000+ combined users</div>
                       <div>• Established framework for future community-driven forks</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q3 2023</div>
                   </div>
                 </div>
 
@@ -347,7 +337,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">DEX Commitment</h3>
+                      <h3 className="font-semibold text-slate-900">Q4 2023</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -360,7 +350,6 @@ const Roadmap = () => {
                       <div>• Community treasury grew to $5M+ through DEX trading fees</div>
                       <div>• Published full transparency reports showing all protocol metrics</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q4 2023</div>
                   </div>
                 </div>
 
@@ -388,7 +377,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Base Listing & Funding</h3>
+                      <h3 className="font-semibold text-slate-900">Q1 2024</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -401,7 +390,6 @@ const Roadmap = () => {
                       <div>• Base listing increased daily active users by 200%</div>
                       <div>• Established Base ecosystem partnerships with 15+ protocols</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q1 2024</div>
                   </div>
                 </div>
 
@@ -412,7 +400,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Global Events & Agency</h3>
+                      <h3 className="font-semibold text-slate-900">Q2 2024</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -425,7 +413,6 @@ const Roadmap = () => {
                       <div>• Generated $500K+ in agency revenue within first quarter</div>
                       <div>• Built automated creator matching and campaign management system</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q2 2024</div>
                   </div>
                 </div>
 
@@ -436,7 +423,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Major Rebrand</h3>
+                      <h3 className="font-semibold text-slate-900">Q3 2024</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -449,7 +436,6 @@ const Roadmap = () => {
                       <div>• MMA event planning involved 50+ fighters and $1M+ production budget</div>
                       <div>• Rebrand resulted in 40% increase in new user acquisitions</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q3 2024</div>
                   </div>
                 </div>
 
@@ -460,7 +446,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Subscriptions & Agency Growth</h3>
+                      <h3 className="font-semibold text-slate-900">Q4 2024</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -473,7 +459,6 @@ const Roadmap = () => {
                       <div>• Agency generated $2M+ in annual recurring revenue</div>
                       <div>• Subscription platform achieved 25% monthly churn rate (industry-leading)</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q4 2024</div>
                   </div>
                 </div>
 
@@ -501,7 +486,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Onchain Live Streams</h3>
+                      <h3 className="font-semibold text-slate-900">Q1 2025</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -513,7 +498,6 @@ const Roadmap = () => {
                       <div>• Achieved 99.99% uptime across all streaming services</div>
                       <div>• Introduced interactive features like live polls and Q&A</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q1 2025</div>
                   </div>
                 </div>
 
@@ -524,7 +508,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">UGC Ambassador Program</h3>
+                      <h3 className="font-semibold text-slate-900">Q2 2025</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -537,15 +521,8 @@ const Roadmap = () => {
                       <div>• Created creator reward pool distributing $100K+ monthly</div>
                       <div>• Established creator mentorship network spanning 25 countries</div>
                     </div>
-                    <div className="text-xs text-slate-500 font-medium">Q2 2025</div>
                   </div>
                 </div>
-
-                {/* Q3 2025 */}
-                
-
-                {/* Q4 2025 */}
-                
 
               </div>
             </CardContent>
