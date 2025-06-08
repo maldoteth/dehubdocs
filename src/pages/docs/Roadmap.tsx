@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -130,7 +129,6 @@ const Roadmap = () => {
                       <div>• Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP</div>
                       <div>• Discovered listing agent was fraudulent - learned valuable due diligence lessons</div>
                       <div>• Implemented game mechanics with provably fair randomization</div>
-                      <div>• Built custom payment processing for game entries</div>
                       <div>• Community grew to 8,000+ active members</div>
                     </div>
                   </div>
