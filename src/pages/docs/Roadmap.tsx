@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -493,7 +492,7 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Released onchain live streams with real-time tip verification</div>
-                      <div>• Implemented WebRTC infrastructure supporting 10,000+ concurrent viewers</div>
+                      <div>• Implemented WebRTC infrastructure supporting 250,000+ concurrent viewers</div>
                       <div>• Built custom CDN reducing latency to sub-200ms globally</div>
                       <div>• Achieved 99.99% uptime across all streaming services</div>
                       <div>• Introduced interactive features like live polls and Q&A</div>
