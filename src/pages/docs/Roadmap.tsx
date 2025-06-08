@@ -590,7 +590,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Completed major app rebrand with 95% positive user feedback</span>
+                        <span>Completed major app upgrade with 95% positive user feedback</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
