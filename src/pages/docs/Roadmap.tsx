@@ -235,7 +235,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• LP issues forced token relaunch due to contract congestion and gas optimization needs</div>
+                      <div>• LP issues forced token relaunch due to contract congestion</div>
                       <div>• Migrated 12,000+ token holders to new improved contract</div>
                       <div>• Implemented advanced tokenomics with burn mechanisms</div>
                       <div>• Reduced transaction costs by 80% through contract optimization</div>
