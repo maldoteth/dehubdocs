@@ -275,7 +275,7 @@ const Roadmap = () => {
                       <div>• Alpha launch of complete d'app integrating all ecosystem components</div>
                       <div>• Released tokenised uploads with onchain ad revenue sharing (creators earning 90%)</div>
                       <div>• Commenced advanced analytics dashboard for creators</div>
-                      <div>• Commenced automated content optimization using AI</div>
+                      <div>• Recommenced trading of DeHub v2 on Gate.io</div>
                     </div>
                   </div>
                 </div>
