@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -524,7 +525,6 @@ const Roadmap = () => {
                       <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
                       
                       <div>• Launch Solana, Hyperliquid and Sui integrations for in-app use</div>
-                      <div>• Deploy comprehensive CRM system for agency management and client tracking</div>
                       <div>• Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as
                         <span className="block ml-4">financial transactions and guidance</span>
                       </div>
@@ -547,6 +547,7 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Release multi-account access and delegation features for streamlined management</div>
+                      <div>• Deploy comprehensive CRM system for agency management and client tracking</div>
                       <div>• Open source the entire DeHub protocol for community development</div>
                       <div>• Launch comprehensive SDKs enabling third-party developers to build mini apps and games</div>
                       <div>• Establish developer marketplace for community-built applications and integrations</div>
