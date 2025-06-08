@@ -491,7 +491,7 @@ const Roadmap = () => {
                       <div>• Implemented WebRTC infrastructure supporting 250,000+ concurrent viewers</div>
                       <div>• Built custom CDN reducing latency to sub-200ms globally</div>
                       <div>• Achieved 99.99% uptime across all streaming services</div>
-                      <div>• Introduced interactive features like live polls and Q&A</div>
+                      <div>• DePIN (Decentralized Physical Infrastructure Network) reveal</div>
                     </div>
                   </div>
                 </div>
@@ -529,13 +529,13 @@ const Roadmap = () => {
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-slate-900">Q3 2025</h3>
-                      <Badge variant="outline" className="bg-orange-100 text-orange-800 border-orange-200">
-                        Pending
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Release live stream keys so users can stream on multiple apps simultaneously ✅</div>
                       <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
+                      <div>• Release live stream keys so users can stream on multiple apps simultaneously ✅</div>
                       <div>• DePIN (Decentralized Physical Infrastructure Network) phase 2 release</div>
                       <div>• Deploy comprehensive CRM system for agency management and client tracking</div>
                       <div>• Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as
