@@ -3,6 +3,7 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
+
 const Dapp = () => {
   const feeReductions = [{
     badge: "No Badge",
@@ -222,7 +223,7 @@ const Dapp = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Decentralised Moderation Mining</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Mine Through Content Moderation</h2>
           <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Decentralised moderation mining and revenue share model</h3>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
