@@ -1,8 +1,29 @@
 import React from 'react';
-import BadgeFlowchart from '../../components/BadgeFlowchart';
-import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { 
+  Users, 
+  Crown, 
+  Star, 
+  Zap, 
+  Coins, 
+  TrendingUp, 
+  MessageSquare, 
+  Heart, 
+  Share2, 
+  Gift,
+  Brain,
+  Bot,
+  Sparkles,
+  Globe,
+  BarChart3,
+  CreditCard,
+  Target,
+  Languages,
+  Lightbulb,
+  Wand2
+} from 'lucide-react';
+
 const Dapp = () => {
   const feeReductions = [{
     badge: "No Badge",
@@ -89,7 +110,7 @@ const Dapp = () => {
     color: "bg-purple-800",
     image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png"
   }];
-  return <div className="space-y-8">
+  return <div className="max-w-4xl mx-auto space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-royal-blue font-exo">A Complete Ecosystem</h1>
@@ -118,9 +139,9 @@ const Dapp = () => {
             Given that data is the new oil, it may be wise to build your core community base here and utilise your existing social media apps to funnel users in to grow your own valuable database and ensure you remain censorship resistant. No matter what happens, never lose touch with your audience, fans, community or customers.
           </p>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">We earn up to 10% of every bounty, PPV or fee generated in the d'app in any token while users all earn proportionate shares of ad revenue which is funded by the advertisers and sponsors on our website.</p>
+          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">We earn up to 10% of every bounty, PPV or fee generated in the d'app in any token while users all earn proportionate shares of ad revenue which is funded by the advertisers and sponsors on our website.</p>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
+          <p className="text-royal-blue/80 leading-relaxed font-exo">
             Working in cohesion with our gaming and marketplace d'apps and offering a platform to showcase developments and sell our products, the streaming app upgrade is scheduled for launch December 20th 2022 though bear in mind this is a soft date. In the meantime, enjoy some teasers below of the actually built d'app now officially on test net and dive deeper into the mechanics further down.
           </p>
         </section>
@@ -1354,6 +1375,210 @@ const Dapp = () => {
                 Users can send tokens to other users for free across the app and make use of our abstraction tools to do it 
                 with no wallet address or private key management required.
               </p>
+            </div>
+          </section>
+
+          {/* AI Toolkits Section */}
+          <section>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">AI Toolkits</h2>
+            
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/da465e20-b7ec-4c1f-b7b6-8049718e35cf.png" 
+                alt="DeHub AI Interface showing tools and chat bot features"
+                className="w-full rounded-lg border border-slate-200 shadow-sm"
+              />
+            </div>
+
+            <p className="text-lg text-slate-600 mb-8">
+              DeHub users will soon have their very own uncensored AI assistant and full toolkit suite directly in-app.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Brain className="w-5 h-5 text-blue-500" />
+                    <span>Content Creation Assistant</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <p className="text-slate-600">AI-powered tools to help creators produce engaging content:</p>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex items-center space-x-2">
+                      <Lightbulb className="w-4 h-4 text-yellow-500" />
+                      <span>Generate post ideas and content suggestions</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Wand2 className="w-4 h-4 text-purple-500" />
+                      <span>Enhance writing style and grammar</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Sparkles className="w-4 h-4 text-pink-500" />
+                      <span>Create compelling titles and descriptions</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Target className="w-4 h-4 text-green-500" />
+                      <span>Optimize content for maximum engagement</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <Bot className="w-5 h-5 text-green-500" />
+                    <span>Automation Engine</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <p className="text-slate-600">Intelligent automation for seamless platform interaction:</p>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex items-center space-x-2">
+                      <Heart className="w-4 h-4 text-red-500" />
+                      <span>Auto-tip high-quality content based on criteria</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <MessageSquare className="w-4 h-4 text-blue-500" />
+                      <span>Smart commenting and interaction</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Users className="w-4 h-4 text-orange-500" />
+                      <span>Automated creator subscriptions</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Share2 className="w-4 h-4 text-cyan-500" />
+                      <span>Schedule and optimize posting times</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <CreditCard className="w-5 h-5 text-purple-500" />
+                    <span>Finance Management</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <p className="text-slate-600">Comprehensive financial tools for creators and users:</p>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex items-center space-x-2">
+                      <Coins className="w-4 h-4 text-yellow-500" />
+                      <span>Track earnings and spending across the platform</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <TrendingUp className="w-4 h-4 text-green-500" />
+                      <span>Revenue optimization suggestions</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <BarChart3 className="w-4 h-4 text-blue-500" />
+                      <span>Budget management and expense tracking</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Gift className="w-4 h-4 text-pink-500" />
+                      <span>Smart tipping recommendations</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <BarChart3 className="w-5 h-5 text-orange-500" />
+                    <span>Analytics & Insights</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <p className="text-slate-600">Advanced analytics to track and improve performance:</p>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex items-center space-x-2">
+                      <TrendingUp className="w-4 h-4 text-green-500" />
+                      <span>Real-time performance monitoring</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Target className="w-4 h-4 text-red-500" />
+                      <span>Audience behavior analysis</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Star className="w-4 h-4 text-yellow-500" />
+                      <span>Content performance predictions</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <Zap className="w-4 h-4 text-purple-500" />
+                      <span>Trend identification and alerts</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="mb-6">
+              <CardHeader>
+                <CardTitle className="flex items-center space-x-2">
+                  <Globe className="w-5 h-5 text-blue-500" />
+                  <span>Global Reach & Translation</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-4">
+                  Break down language barriers and reach a global audience with our advanced AI translation and localization tools.
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-semibold text-slate-900 mb-2 flex items-center space-x-2">
+                      <Languages className="w-4 h-4 text-green-500" />
+                      <span>Real-time Translation</span>
+                    </h4>
+                    <ul className="space-y-1 text-sm text-slate-600">
+                      <li>• Instant content translation to 100+ languages</li>
+                      <li>• Context-aware cultural adaptations</li>
+                      <li>• Preserve tone and meaning across languages</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-900 mb-2 flex items-center space-x-2">
+                      <Globe className="w-4 h-4 text-blue-500" />
+                      <span>Content Clarification</span>
+                    </h4>
+                    <ul className="space-y-1 text-sm text-slate-600">
+                      <li>• Simplify complex topics for broader audiences</li>
+                      <li>• Cultural sensitivity checking</li>
+                      <li>• Regional compliance and content adaptation</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6 border border-blue-100">
+              <h3 className="text-xl font-semibold text-slate-900 mb-4 flex items-center space-x-2">
+                <Sparkles className="w-5 h-5 text-purple-500" />
+                <span>The Future is Automated</span>
+              </h3>
+              <p className="text-slate-700 mb-4">
+                DeHub's AI toolkit represents the next evolution in content creation and platform interaction. 
+                By combining cutting-edge AI technology with blockchain infrastructure, we're creating an 
+                ecosystem where creators can focus on what they do best while AI handles the optimization, 
+                automation, and growth strategies.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary" className="bg-blue-100 text-blue-800">
+                  Uncensored AI
+                </Badge>
+                <Badge variant="secondary" className="bg-purple-100 text-purple-800">
+                  Full Automation
+                </Badge>
+                <Badge variant="secondary" className="bg-green-100 text-green-800">
+                  Global Reach
+                </Badge>
+                <Badge variant="secondary" className="bg-orange-100 text-orange-800">
+                  Smart Analytics
+                </Badge>
+              </div>
             </div>
           </section>
         </section>
