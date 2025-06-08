@@ -449,7 +449,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Released onchain tradable subscriptions</div>
                       <div>• Agency grew to UK #1 with 1,000 live streamers signed exclusively</div>
-                      <div>• Implemented tiered subscription model with NFT holder benefits</div>
+                      
                       <div>• Built automated revenue distribution system for creators</div>
                       
                       
