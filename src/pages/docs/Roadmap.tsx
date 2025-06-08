@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -719,10 +720,6 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Established creator mentorship network spanning 25 countries</span>
                       </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly in-app and use instantly with free gas</span>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -743,6 +740,10 @@ const Roadmap = () => {
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Release live stream keys so users can stream on multiple apps simultaneously ✅</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly in-app and use instantly with free gas</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
