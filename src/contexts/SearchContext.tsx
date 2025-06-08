@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -206,6 +205,34 @@ const searchData: SearchItem[] = [
     path: '/docs/roadmap',
     content: 'Roadmap development timeline milestones features releases upcoming planned future developments product roadmap strategic goals quarterly objectives annual targets feature releases bug fixes improvements platform enhancements user experience upgrades technology stack updates blockchain integrations new partnerships ecosystem expansion community initiatives governance implementation DePIN network growth scaling solutions performance optimizations',
     category: 'Main'
+  },
+  {
+    title: 'Roadmap Q2 2022 - Stream App Release',
+    path: '/docs/roadmap',
+    anchor: 'q2-2022',
+    content: 'Released stream app supporting 4K content with 99.9% uptime streaming platform live video broadcasting content creators video upload streaming technology infrastructure decentralized streaming',
+    category: 'Roadmap'
+  },
+  {
+    title: 'Roadmap Q1 2025 - Live Streaming Launch',
+    path: '/docs/roadmap',
+    anchor: 'q1-2025',
+    content: 'Released onchain live streams with real-time tip verification WebRTC infrastructure supporting 250000 concurrent viewers custom CDN reducing latency sub-200ms globally 99.99% uptime streaming services live streaming real-time broadcasting interactive streaming',
+    category: 'Roadmap'
+  },
+  {
+    title: 'Roadmap Q3 2025 - Live Stream Keys',
+    path: '/docs/roadmap',
+    anchor: 'q3-2025',
+    content: 'Release live stream keys so users can stream on multiple apps simultaneously multi-platform streaming cross-platform broadcasting stream to multiple platforms live streaming keys streaming software integration',
+    category: 'Roadmap'
+  },
+  {
+    title: 'Roadmap Q3 2025 - Custom Advertising Stack',
+    path: '/docs/roadmap',
+    anchor: 'q3-2025',
+    content: 'Custom advertising stack with advanced user targeting based on wallet balance activity targeted advertising blockchain advertising crypto advertising user targeting wallet-based advertising',
+    category: 'Roadmap'
   }
 ];
 

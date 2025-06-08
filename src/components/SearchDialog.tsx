@@ -102,6 +102,45 @@ const highlightTextInSection = (searchResult: any, searchQuery: string, sectionI
   
   // If we have a specific section ID, scroll to it first
   if (sectionId) {
+    // Handle roadmap sections - switch to the correct tab first
+    if (sectionId.includes('2021') || sectionId.includes('2022') || sectionId.includes('2023') || sectionId.includes('2024') || sectionId.includes('2025')) {
+      const year = sectionId.split('-')[1]; // Extract year from ID like "q1-2025"
+      console.log(`🗓️ Detected roadmap section for year: ${year}`);
+      
+      // Find and click the correct year tab
+      const yearTab = document.querySelector(`[value="${year}"]`);
+      if (yearTab) {
+        console.log(`🔄 Switching to ${year} tab`);
+        (yearTab as HTMLElement).click();
+        
+        // Wait for tab content to render before scrolling
+        setTimeout(() => {
+          const sectionElement = document.getElementById(sectionId);
+          if (sectionElement) {
+            console.log(`📍 Found target section after tab switch: ${sectionId}`);
+            
+            sectionElement.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start',
+              inline: 'nearest'
+            });
+            
+            // Add temporary highlight to the entire section
+            sectionElement.classList.add('bg-blue-100', 'border-l-4', 'border-blue-400', 'pl-4', 'rounded-r');
+            
+            // Remove the section highlight after 3 seconds
+            setTimeout(() => {
+              sectionElement.classList.remove('bg-blue-100', 'border-l-4', 'border-blue-400', 'pl-4', 'rounded-r');
+            }, 3000);
+          } else {
+            console.warn(`⚠️ Section element not found after tab switch: ${sectionId}`);
+          }
+        }, 300);
+        return;
+      }
+    }
+    
+    // For non-roadmap sections, handle normally
     const sectionElement = document.getElementById(sectionId);
     if (sectionElement) {
       console.log(`📍 Found target section: ${sectionId}`);

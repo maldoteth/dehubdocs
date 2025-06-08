@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -49,7 +47,7 @@ const Roadmap = () => {
               <div className="grid gap-4">
                 
                 {/* Q1 2021 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q1-2021" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -70,7 +68,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q2 2021 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q2-2021" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -93,7 +91,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q3 2021 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q3-2021" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -115,7 +113,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q4 2021 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q4-2021" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -154,7 +152,7 @@ const Roadmap = () => {
               <div className="grid gap-4">
                 
                 {/* Q1 2022 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q1-2022" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -176,7 +174,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q2 2022 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q2-2022" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -200,7 +198,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q3 2022 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q3-2022" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -225,7 +223,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q4 2022 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q4-2022" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -262,7 +260,7 @@ const Roadmap = () => {
               <div className="grid gap-4">
                 
                 {/* Q1 2023 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q1-2023" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -283,7 +281,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q2 2023 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q2-2023" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -305,7 +303,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q3 2023 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q3-2023" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -328,7 +326,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q4 2023 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q4-2023" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -366,7 +364,7 @@ const Roadmap = () => {
               <div className="grid gap-4">
                 
                 {/* Q1 2024 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q1-2024" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -387,7 +385,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q2 2024 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q2-2024" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -408,7 +406,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q3 2024 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q3-2024" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -428,7 +426,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q4 2024 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q4-2024" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -465,7 +463,7 @@ const Roadmap = () => {
               <div className="grid gap-4">
                 
                 {/* Q1 2025 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q1-2025" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -488,7 +486,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q2 2025 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
+                <div id="q2-2025" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
@@ -512,7 +510,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q3 2025 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                <div id="q3-2025" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
                   <div className="flex-shrink-0">
                     <Calendar className="w-6 h-6 text-blue-500" />
                   </div>
@@ -538,7 +536,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q4 2025 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                <div id="q4-2025" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
                   <div className="flex-shrink-0">
                     <Calendar className="w-6 h-6 text-blue-500" />
                   </div>
@@ -581,4 +579,3 @@ const Roadmap = () => {
 };
 
 export default Roadmap;
-
