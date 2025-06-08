@@ -1,11 +1,8 @@
-
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
-
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
   const getStatusColor = (status: string) => {
@@ -16,7 +13,6 @@ const Roadmap = () => {
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
-
   return <div className="max-w-6xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">DeHub Roadmap</h1>
@@ -24,13 +20,12 @@ const Roadmap = () => {
       </div>
 
       <Tabs value={selectedYear} onValueChange={setSelectedYear} className="w-full">
-        <TabsList className="grid w-full grid-cols-6">
+        <TabsList className="grid w-full grid-cols-5">
           <TabsTrigger value="2021" className="text-sm">21</TabsTrigger>
           <TabsTrigger value="2022" className="text-sm">22</TabsTrigger>
           <TabsTrigger value="2023" className="text-sm">23</TabsTrigger>
           <TabsTrigger value="2024" className="text-sm">24</TabsTrigger>
           <TabsTrigger value="2025" className="text-sm">25</TabsTrigger>
-          <TabsTrigger value="2026" className="text-sm">26</TabsTrigger>
         </TabsList>
 
         {/* 2021 - Foundation Year */}
@@ -551,16 +546,13 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Raised $1,000,000 for adult fork BJ (now fan.site)</span>
+                        <span>Raised $1,000,000 for adult fork BJ (now fan.site) from tier-1 investors</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Implemented Layer 2 scaling solutions reducing user costs by 90%</span>
+                        
                       </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Established Base ecosystem partnerships with 15+ protocols</span>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -592,7 +584,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Established creator partnerships in 15 countries</span>
+                        
                       </div>
                     </div>
                   </div>
@@ -839,88 +831,6 @@ const Roadmap = () => {
           </Card>
         </TabsContent>
 
-        {/* 2026 - Future Vision */}
-        <TabsContent value="2026" className="space-y-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <Calendar className="w-5 h-5" />
-                <span>2026 - Future Vision</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid gap-4">
-                
-                {/* Q1-4 2026 */}
-                <div id="q1-4-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
-                  <div className="flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q1-4 2026</h3>
-                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                        Planned
-                      </Badge>
-                    </div>
-                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>App store re-listings and DeHub's largest ever marketing campaigns</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Leading licensing partners, latest blockbusters and major PPVs</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Commercial integrations with existing streaming and home entertainment brands</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Aggregation of All APIs of current web2+3 Streaming Platforms</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Windows, MAC OS, TV & game console apps</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>V/AR profile hub & consumer data metrics</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Major platform integrations and partnerships</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Enhanced streaming capabilities and quality improvements</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Cross-platform synchronization and unified experience</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Advanced analytics and user insights platform</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Next-generation immersive experiences</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Complete ecosystem maturation and global expansion</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
       </Tabs>
 
       <Card className="border-blue-200 bg-blue-50">
@@ -936,4 +846,3 @@ const Roadmap = () => {
     </div>;
 };
 export default Roadmap;
-
