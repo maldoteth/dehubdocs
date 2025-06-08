@@ -713,11 +713,11 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Built automated content quality scoring using AI</span>
+                        <span>Released dhbscan.com for users to track activity across all DHB contracts</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Established creator mentorship network spanning 25 countries</span>
+                        <span>Revamped main app feed, revealed audio replies and live talk spaces </span>
                       </div>
                     </div>
                   </div>
