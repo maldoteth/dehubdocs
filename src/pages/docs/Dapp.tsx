@@ -116,6 +116,9 @@ const Dapp = () => {
           
           <div className="my-6">
             <img src="/lovable-uploads/49985a5d-354f-48c8-888c-516c56c41f51.png" alt="Connect a Wallet interface showing various wallet options including MetaMask, WalletConnect, Trust Wallet, Rainbow, Coinbase Wallet, Google, and Twitter" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+            <p className="text-center text-sm text-royal-blue/70 mt-3 italic font-exo">
+              Sign up with socials or email and have a wallet generated for you in a few clicks. No private key management or custody, you are in full control of your assets and we never access your funds.
+            </p>
           </div>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
