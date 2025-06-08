@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -17,42 +16,7 @@ const menuItems = [{
   }, {
     title: 'Dapp',
     path: '/docs/dapps',
-    icon: '🖥️',
-    hasSubmenu: true,
-    submenuItems: [{
-      title: 'Upload',
-      path: '/docs/dapps#upload'
-    }, {
-      title: 'Tokenised Content',
-      path: '/docs/dapps#tokenised-content'
-    }, {
-      title: 'Profile Customization',
-      path: '/docs/dapps#profile-customization'
-    }, {
-      title: 'Explore Page',
-      path: '/docs/dapps#explore-page'
-    }, {
-      title: 'Badge of Honor',
-      path: '/docs/dapps#badge-of-honor'
-    }, {
-      title: 'Tipping Services',
-      path: '/docs/dapps#tipping-services'
-    }, {
-      title: 'Moderation Mining',
-      path: '/docs/dapps#moderation-mining'
-    }, {
-      title: 'Live Streaming',
-      path: '/docs/dapps#live-streaming'
-    }, {
-      title: 'Subscriptions',
-      path: '/docs/dapps#subscriptions'
-    }, {
-      title: 'Messaging',
-      path: '/docs/dapps#messaging'
-    }, {
-      title: 'Fee Tier System',
-      path: '/docs/dapps#fee-tier-system'
-    }]
+    icon: '🖥️'
   }, {
     title: 'Games',
     path: '/docs/games',
