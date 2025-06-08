@@ -506,7 +506,7 @@ const Dapp = () => {
                 To reduce whale dominance:
               </p>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Use quadratic voting for key moderation decisions.</li>
+                <li>We use quadratic voting for key moderation decisions.</li>
                 <li>Example: Voting power = √(tokens staked)</li>
                 <li>So, staking 100 tokens = 10 votes, 10,000 tokens = 100 votes (not 10,000 votes).</li>
               </ul>
