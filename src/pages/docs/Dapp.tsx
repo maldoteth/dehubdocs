@@ -756,7 +756,7 @@ const Dapp = () => {
                   <li>• Pay-per-view purchases</li>
                   <li>• Bounty distributions</li>
                   <li>• Subscription payments</li>
-                  <li>• Content NFT trading</li>
+                  <li>• Tokenised upload trading</li>
                 </ul>
               </CardContent>
             </Card>
