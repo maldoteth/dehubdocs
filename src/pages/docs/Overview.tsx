@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ScrollText, Gamepad2, Users, Shield, Zap, Globe, Edit3, Save, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,7 +8,7 @@ const Overview = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [showEditControls, setShowEditControls] = useState(false);
   const [editableContent, setEditableContent] = useState({
-    title: "DeHub: The Future of Creator Economy",
+    title: "DeHub: The Future Creator Economies",
     subtitle: "Live forever onchain, free from censorship or limitations of legacy media apps.",
     paragraph1: "Imagine a world where creators earn 100% of their revenue, own their audience data, and never fear censorship or demonetization. DeHub makes this reality through our revolutionary gaming and streaming protocol, powered by cutting-edge DePIN infrastructure that's reshaping how content is hosted, transcoded, and delivered globally.",
     paragraph2: "Built by gamers for gamers, we've solved the crypto complexity problem. Our platform delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Just pure creative freedom with blockchain-verified earnings visible on our public leaderboards.",
