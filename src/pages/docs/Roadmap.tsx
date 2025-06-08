@@ -1,9 +1,9 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
+
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
   const getStatusColor = (status: string) => {
@@ -538,14 +538,6 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Raised $1,000,000 for adult fork BJ (now fan.site)</span>
                       </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Implemented Layer 2 scaling solutions reducing user costs by 90%</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Established Base ecosystem partnerships with 15+ protocols</span>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -866,6 +858,26 @@ const Roadmap = () => {
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>V/AR profile hub & consumer data metrics</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Educational AI integrations for personalized learning pathways</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Advanced creator monetization through smart contracts and automated royalty distribution</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Global content marketplace with instant cross-chain settlements</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Integration with IoT devices and smart home systems for seamless content delivery</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Blockchain-based content verification and anti-piracy measures</span>
                       </div>
                     </div>
                   </div>
