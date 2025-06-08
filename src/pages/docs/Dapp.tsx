@@ -210,7 +210,7 @@ const Dapp = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Token Tipping</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Tip Your Favourites</h2>
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Our Integrated tipping services across all uploads and live streams only come with a 10% fee, compared to the usual 60% charged by the likes of TikTok and other industry leaders while also having the ability to vote on video cancellations putting the power back into the viewer's hands.
           </p>
@@ -223,7 +223,7 @@ const Dapp = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Decentralised Moderation Mining</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Mine Through Content Moderation</h2>
           <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Decentralised moderation mining and revenue share model</h3>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
@@ -250,7 +250,7 @@ const Dapp = () => {
             <div>
               <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">1. Token Utility Design</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
-                Create a native governance token with the following roles:
+                By default, our native governance token $DHB enforces the following roles:
               </p>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Moderation staking</li>
