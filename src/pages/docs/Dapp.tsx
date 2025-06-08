@@ -3,7 +3,6 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
-
 const Dapp = () => {
   const feeReductions = [{
     badge: "No Badge",
@@ -200,7 +199,7 @@ const Dapp = () => {
         </div>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Badge of Honour</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Flex Your Badge</h2>
           <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Badge of Honour Model</h3>
           <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
             The more you $DHB tokens you hold, the more rewarding it is, simple as that. This includes but is not limited to the Badge of Honour system that unlocks improved cosmetics on your public profile as well as further enhanced, premium features.
@@ -227,7 +226,15 @@ const Dapp = () => {
           <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Decentralised moderation mining and revenue share model</h3>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
+            Only a few wallets hold over 50m $DHB tokens, of which most are operational wallets, with the remaining being known community members.
+          </p>
+          
+          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Only the core team or top tier badge holders will have the power to instantly remove a video by burning the NFT associated. Subsequently, all the ad revenue generated and any play to earn bounties strapped to the video will be shared with all voting wallets to further deter bad actors and incentivise an engaged community.
+          </p>
+          
+          <p className="text-sm italic text-royal-blue/60 font-exo">
+            *Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.
           </p>
 
           <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg border border-indigo-200 mb-6">
@@ -238,15 +245,11 @@ const Dapp = () => {
             </p>
           </div>
 
-          <p className="text-sm italic text-royal-blue/60 font-exo mb-6">
-            *Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.
-          </p>
-
           <div className="space-y-8">
             <div>
               <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">1. Token Utility Design</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
-                By default, our native governance token $DHB allows the following roles:
+                By default, our native governance token $DHB enforces the following roles:
               </p>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Moderation staking</li>
@@ -261,7 +264,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Fair by design</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Flex Your Badge</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 To reduce whale dominance:
               </p>
