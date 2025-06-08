@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -291,11 +290,8 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      
                       <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies in a vote based system backed by Sony, Samsung and other industry giants.</div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
-                      
-                      
                       <div>• Patent applications commenced for core streaming technology and watch2earn mechanics</div>
                     </div>
                   </div>
@@ -397,7 +393,7 @@ const Roadmap = () => {
                       <h3 className="font-semibold text-slate-900">Q2 2024</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
-                      </Badge>
+                      Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• DeHub London event attracted 500+ attendees including major VCs</div>
