@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -31,6 +30,7 @@ const Roadmap = () => {
           <TabsTrigger value="2023" className="text-sm">2023</TabsTrigger>
           <TabsTrigger value="2024" className="text-sm">2024</TabsTrigger>
           <TabsTrigger value="2025" className="text-sm">2025</TabsTrigger>
+          <TabsTrigger value="2025-q3-4" className="text-sm">Q3-4 2025</TabsTrigger>
         </TabsList>
 
         {/* 2021 - Foundation Year */}
@@ -530,6 +530,65 @@ const Roadmap = () => {
           </Card>
         </TabsContent>
 
+        {/* Q3-4 2025 - Platform Expansion & Developer Ecosystem */}
+        <TabsContent value="2025-q3-4" className="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center space-x-2">
+                <Calendar className="w-5 h-5" />
+                <span>Q3-4 2025 - Platform Expansion & Developer Ecosystem</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-4">
+                
+                {/* Q3 2025 */}
+                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                  <div className="flex-shrink-0">
+                    <Calendar className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-semibold text-slate-900">Q3 2025</h3>
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
+                      </Badge>
+                    </div>
+                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
+                      <div>• App Store re-listing with enhanced features and improved compliance</div>
+                      <div>• Implement DePIN (Decentralized Physical Infrastructure Network) integration</div>
+                      <div>• Deploy comprehensive CRM system for agency management and client tracking</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Q4 2025 */}
+                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                  <div className="flex-shrink-0">
+                    <Calendar className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-semibold text-slate-900">Q4 2025</h3>
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
+                      </Badge>
+                    </div>
+                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div>• Release multi-account access and delegation features for streamlined management</div>
+                      <div>• Open source the entire DeHub protocol for community development</div>
+                      <div>• Launch comprehensive SDKs enabling third-party developers to build mini apps and games</div>
+                      <div>• Establish developer marketplace for community-built applications and integrations</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
       </Tabs>
 
       <Card className="border-blue-200 bg-blue-50">
@@ -545,4 +604,3 @@ const Roadmap = () => {
     </div>;
 };
 export default Roadmap;
-
