@@ -10,9 +10,7 @@ const DePIN = () => {
           DePIN
         </h1>
         
-        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-          A Decentralised Physical Infrastructure Network (DePIN) of Shared Computing Power
-        </p>
+        <p className="text-lg text-slate-600 max-w-2xl mx-auto">A Decentralised Physical Infrastructure Network (DePIN) of Shared Computing Power For True Censorship Resistance</p>
       </div>
 
       {/* Main Content */}
