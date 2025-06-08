@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
-
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
   const getStatusColor = (status: string) => {
@@ -291,12 +290,12 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Won most innovative company award at UK's Corporate Livewire (competing against 900+ companies)</div>
+                      
                       <div>• Secured backing from Sony and Samsung innovation funds ($2M+ combined)</div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
-                      <div>• Spoke at 8 industry conferences reaching 10,000+ professionals</div>
-                      <div>• Established advisory board with former executives from YouTube and Twitch</div>
-                      <div>• Patent applications filed for core streaming technology</div>
+                      <div></div>
+                      <div></div>
+                      <div>• Patent applications commenced for core streaming technology</div>
                     </div>
                   </div>
                 </div>
