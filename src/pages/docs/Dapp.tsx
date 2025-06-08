@@ -153,6 +153,236 @@ const Dapp = () => {
         </section>
 
         <section>
+          <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+            <Layers className="w-8 h-8" />
+            Tokenised Content & Fractionalised Ownership
+          </h2>
+          
+          <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg border border-purple-200 mb-6">
+            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Revolutionary Content Ownership Model</h3>
+            <p className="text-royal-blue/80 leading-relaxed font-exo">
+              DeHub introduces the first-ever fractionalised content ownership system, allowing creators to split ownership of their uploads 
+              into tradeable shares. This revolutionary approach transforms content into liquid assets while maintaining creator control 
+              and enabling community-driven monetization strategies.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
+            <Card className="border-purple-200 bg-purple-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4" />
+                  Fractional Ownership
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-purple-700 space-y-2 font-exo">
+                  <li>• Split content ownership into tradeable shares</li>
+                  <li>• Set custom ownership percentages</li>
+                  <li>• Automatic revenue distribution to shareholders</li>
+                  <li>• Secondary market trading capabilities</li>
+                  <li>• Community-driven content promotion</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                  <Coins className="w-4 h-4" />
+                  Revenue Sharing
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-blue-700 space-y-2 font-exo">
+                  <li>• Proportional earnings based on ownership</li>
+                  <li>• Instant distribution via smart contracts</li>
+                  <li>• Multiple revenue streams included</li>
+                  <li>• Transparent on-chain accounting</li>
+                  <li>• No intermediary fees or delays</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-green-200 bg-green-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
+                  <Network className="w-4 h-4" />
+                  Community Investment
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-green-700 space-y-2 font-exo">
+                  <li>• Fans can invest in creator success</li>
+                  <li>• Aligned incentives for promotion</li>
+                  <li>• Democratic content decision making</li>
+                  <li>• Shared risk and reward model</li>
+                  <li>• Building loyal investor communities</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">How Fractionalised Uploads Work</h3>
+            
+            <div className="grid gap-6 md:grid-cols-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                    <Settings className="w-5 h-5" />
+                    For Creators
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Upload & Fractionalise</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Choose to split your content ownership when uploading. Set the percentage you want to keep and how many shares to make available for purchase.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Pricing Strategy</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Set initial share prices and decide whether to use fixed pricing, bonding curves, or auction mechanisms for maximum value discovery.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Maintain Control</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Retain creative control while benefiting from community investment. Shareholders earn from success but don't control content decisions.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                    <Users className="w-5 h-5" />
+                    For Investors
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Purchase Shares</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Buy fractional ownership in content you believe will perform well. Support creators while potentially earning returns on successful content.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Earn Revenue</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Receive proportional earnings from tips, PPV purchases, ad revenue, and any other monetization streams the content generates.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Trade Positions</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Buy and sell shares on secondary markets, allowing you to take profits early or exit positions if content performance changes.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">SocialFi Platform Comparison</h3>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-slate-300 bg-white rounded-lg">
+                <thead>
+                  <tr className="bg-slate-50">
+                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Platform</th>
+                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Content Model</th>
+                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Ownership</th>
+                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Revenue Sharing</th>
+                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Key Innovation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-slate-300 p-3 font-semibold text-royal-blue font-exo">DeHub</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Fractionalised content ownership with tradeable shares</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Split between creator & community investors</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Automatic proportional distribution to all shareholders</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">First fractionalised content platform</td>
+                  </tr>
+                  <tr className="bg-slate-25">
+                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Friend.tech</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Social keys for access to creator chats</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns content, users own access keys</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator keeps revenue, key holders speculate</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Bonding curve key pricing</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Lens Protocol</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">NFT-based social graph with follows/posts</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Users own their social graph via NFTs</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator retains all content revenue</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Portable social connections</td>
+                  </tr>
+                  <tr className="bg-slate-25">
+                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">OnlyFans</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Subscription-based premium content</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns all content and subscribers</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">80% to creator, 20% platform fee</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Adult content focus, high creator cuts</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Patreon</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Subscription tiers for creator support</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns content, platform controls distribution</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator keeps 90-95%, platform takes 5-10%</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Recurring creator funding model</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <Card className="border-green-200 bg-green-50">
+              <CardHeader>
+                <CardTitle className="text-green-800 font-exo">DeHub Advantages</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-green-700 space-y-2 font-exo">
+                  <li>• <strong>True Content Investment:</strong> Buy shares in actual content, not just access</li>
+                  <li>• <strong>Aligned Incentives:</strong> Shareholders motivated to promote content success</li>
+                  <li>• <strong>Liquid Markets:</strong> Trade content shares anytime on secondary markets</li>
+                  <li>• <strong>Multiple Revenue Streams:</strong> Shares earn from tips, PPV, ads, and more</li>
+                  <li>• <strong>Creator Control:</strong> Maintain creative control while raising community capital</li>
+                  <li>• <strong>Transparent Distribution:</strong> On-chain revenue sharing with no hidden fees</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader>
+                <CardTitle className="text-blue-800 font-exo">Use Cases</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-blue-700 space-y-2 font-exo">
+                  <li>• <strong>Viral Content Betting:</strong> Invest early in content you think will go viral</li>
+                  <li>• <strong>Creator Funding:</strong> Raise capital for expensive productions through pre-sales</li>
+                  <li>• <strong>Fan Investment:</strong> Loyal fans can financially benefit from creator success</li>
+                  <li>• <strong>Content Promotion:</strong> Shareholders naturally become content ambassadors</li>
+                  <li>• <strong>Risk Distribution:</strong> Creators share financial risk with community</li>
+                  <li>• <strong>Portfolio Building:</strong> Build diversified content investment portfolios</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border border-purple-200 mt-8">
+            <h4 className="font-semibold text-royal-blue font-exo mb-3 flex items-center gap-2">
+              <Infinity className="w-5 h-5" />
+              The Future of Content Economics
+            </h4>
+            <p className="text-royal-blue/80 leading-relaxed font-exo">
+              DeHub's fractionalised content model represents the evolution of creator economics from simple patronage to true 
+              investment partnerships. By aligning creator and community incentives through shared ownership, we're creating 
+              the first platform where content success directly benefits everyone involved - not just the platform and creator, 
+              but the entire community that helps make content successful.
+            </p>
+          </div>
+        </section>
+
+        <section>
           <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Customise and update your public profile or channel</h2>
           <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
             Control what users can or can't see while being able to export your followers' data at any time. This gives you full ownership of your channel and allows you to take your business anywhere with you, no matter what happens.
@@ -285,8 +515,6 @@ const Dapp = () => {
                 </p>
               </div>
             </div>
-
-            
 
             <div>
               <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">5. Delegated Moderation (for scaling)</h4>
