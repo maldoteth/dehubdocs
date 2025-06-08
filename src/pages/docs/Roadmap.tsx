@@ -268,11 +268,11 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Alpha launch of complete d'app integrating all ecosystem components</div>
-                      <div>• Released tokenised uploads with onchain ad revenue sharing (creators earning 70%)</div>
                       <div>• Implemented cross-platform synchronization across mobile and web</div>
-                      <div>• Achieved 50,000+ monthly active users across all platforms</div>
-                      <div>• Built advanced analytics dashboard for creators</div>
                       
+                      
+                      <div>• Built advanced analytics dashboard for creators</div>
+                      <div>• Introduced automated content optimization using AI</div>
                     </div>
                   </div>
                 </div>
