@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -862,6 +863,10 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>App store re-listings and DeHub's largest ever marketing campaigns</span>
+                      </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Leading licensing partners, latest blockbusters and major PPVs</span>
