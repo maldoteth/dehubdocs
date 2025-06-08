@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -492,7 +491,7 @@ const Roadmap = () => {
                       <div>• Implemented WebRTC infrastructure supporting 250,000+ concurrent viewers</div>
                       <div>• Built custom CDN reducing latency to sub-200ms globally</div>
                       <div>• Achieved 99.99% uptime across all streaming services</div>
-                      <div>• DePIN (Decentralized Physical Infrastructure Network) reveal</div>
+                      <div>• DePIN (Decentralized Physical Infrastructure Network) reveal</div>
                     </div>
                   </div>
                 </div>
@@ -518,25 +517,25 @@ const Roadmap = () => {
                         • Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly 
                         <span className="block pl-2">in-app and use instantly with free gas</span>
                       </div>
-                      <div>• Released live stream keys so users can stream on multiple apps simultaneously ✅</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Q3 2025 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-orange-50/50">
+                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
                   <div className="flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-orange-500" />
+                    <Calendar className="w-6 h-6 text-blue-500" />
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-slate-900">Q3 2025</h3>
-                      <Badge variant="outline" className="bg-orange-100 text-orange-800 border-orange-200">
-                        Pending
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
+                      <div>• Release live stream keys so users can stream on multiple apps simultaneously ✅</div>
                       <div>• DePIN (Decentralized Physical Infrastructure Network) phase 2 release</div>
                       <div>• Deploy comprehensive CRM system for agency management and client tracking</div>
                       <div>• Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as
