@@ -686,6 +686,10 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Completed messaging system with paid or free DMs and unlockable chat content</span>
                       </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released full trailer for Last Chad Standing, picked up by major MMA promoters</span>
+                      </div>
                     </div>
                   </div>
                 </div>
