@@ -2,7 +2,7 @@ import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
+import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network, ExternalLink, CreditCard } from 'lucide-react';
 const Dapp = () => {
   const feeReductions = [{
     badge: "No Badge",
@@ -406,6 +406,67 @@ const Dapp = () => {
           <div className="my-6">
             <img src="/lovable-uploads/05231fa1-3aa1-4ba6-973c-775c8e39c297.png" alt="User profile interface showing customizable profile settings and follower management" className="w-full rounded-lg border border-slate-200 shadow-sm" />
           </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Direct Token Purchase</h2>
+          
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl text-royal-blue flex items-center gap-2">
+                Direct
+                <CreditCard className="w-5 h-5" />
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-6">
+                <a 
+                  href="https://dehub.io/dpay"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
+                >
+                  <div>
+                    <h4 className="font-semibold text-slate-700 font-exo">dehub.io/dpay</h4>
+                    <p className="text-slate-600 font-exo">Direct purchase with Stripe</p>
+                  </div>
+                  <ExternalLink className="w-5 h-5 text-slate-400" />
+                </a>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Zap className="w-5 h-5 text-green-600" />
+                      <h4 className="font-semibold text-green-800 font-exo">DeHub Token</h4>
+                    </div>
+                    <p className="text-green-700 text-sm font-exo">
+                      Tokens are used for subscribing to creators, tipping streamers or unlocking content. The more you hold, the lower your fees are and the more superpowers you unlock like timeline trend boosts and verification badges.
+                    </p>
+                  </div>
+
+                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <div className="flex items-center gap-2 mb-2">
+                      <CreditCard className="w-5 h-5 text-blue-600" />
+                      <h4 className="font-semibold text-blue-800 font-exo">Instant Payments</h4>
+                    </div>
+                    <p className="text-blue-700 text-sm font-exo">
+                      Using stripe, you can buy tokens instantly and seamlessly into whatever account you're logged into. DeHub makes tokens simple and for all. If you need more support, just pop up in our 24/7 live community chat and ask for admin support.
+                    </p>
+                  </div>
+
+                  <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Shield className="w-5 h-5 text-purple-600" />
+                      <h4 className="font-semibold text-purple-800 font-exo">Secure Gateway</h4>
+                    </div>
+                    <p className="text-purple-700 text-sm font-exo">
+                      All payment details are encrypted and processed securely by Stripe, we can't access or store your sensitive information or card details giving you ultimate peace of mind.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         <section>
