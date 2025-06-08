@@ -227,10 +227,6 @@ const Dapp = () => {
           <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Decentralised moderation mining and revenue share model</h3>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Only a few wallets hold over 50m $DHB tokens, of which most are operational wallets, with the remaining being known community members.
-          </p>
-          
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Only the core team or top tier badge holders will have the power to instantly remove a video by burning the NFT associated. Subsequently, all the ad revenue generated and any play to earn bounties strapped to the video will be shared with all voting wallets to further deter bad actors and incentivise an engaged community.
           </p>
           
