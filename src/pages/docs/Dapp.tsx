@@ -3,7 +3,6 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
-
 const Dapp = () => {
   const feeReductions = [{
     badge: "No Badge",
@@ -363,8 +362,8 @@ const Dapp = () => {
                   <li>• <strong>Set and Forget:</strong> Content earns revenue forever without additional work</li>
                   <li>• <strong>Fan Investment:</strong> Supporters financially benefit from creator success</li>
                   <li>• <strong>Automatic Tokenisation:</strong> Every upload becomes a tradeable asset</li>
-                  <li>• <strong>Censorship Resistance:</strong> Sustained by shared computing power globally</li>
-                  <li>• <strong>Creator Control:</strong> Full control over token distribution strategy</li>
+                  <li>• <strong>Censorship Resistance:</strong> Blockchain-based ownership and revenue</li>
+                  <li>• <strong>Creator Control:</strong> Full control over fraction distribution strategy</li>
                   <li>• <strong>Permissionless:</strong> No platform dependency for earnings</li>
                 </ul>
               </CardContent>
@@ -470,9 +469,7 @@ const Dapp = () => {
           <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Mine Through Content Moderation</h2>
           <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Decentralised moderation mining and revenue share model</h3>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Only a few wallets hold over 50m $DHB tokens, of which most are operational wallets, with the remaining being known community members.
-          </p>
+          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo"></p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Only the core team or top tier badge holders will have the power to instantly remove a video by burning the NFT associated. Subsequently, all the ad revenue generated and any play to earn bounties strapped to the video will be shared with all voting wallets to further deter bad actors and incentivise an engaged community.
@@ -492,7 +489,7 @@ const Dapp = () => {
 
           <div className="space-y-8">
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Token Utility Design</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">1. Token Utility Design</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 By default, our native governance token $DHB enforces the following roles:
               </p>
@@ -509,7 +506,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Quadratic Voting</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Flex Your Badge</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 To reduce whale dominance:
               </p>
@@ -521,7 +518,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Moderation Staking Pools</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">3. Moderation Staking Pools</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Users can stake tokens to become moderators.</li>
                 <li>Each flagged piece of content enters a moderation queue.</li>
@@ -536,7 +533,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Delegated Moderation (for scaling)</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">5. Delegated Moderation (for scaling)</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Users can delegate their votes to trusted curators or moderation pools (think: staking to a validator in PoS).</li>
                 <li>Curators/moderators can be swapped anytime.</li>
@@ -545,7 +542,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Content Tiering via Curation Markets</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">6. Content Tiering via Curation Markets</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Users stake tokens to "curate" or promote content.</li>
                 <li>The market decides what rises (token-weighted attention), not an algorithm.</li>
@@ -554,7 +551,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">DAO-Based Appeals</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">7. DAO-Based Appeals</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Content creators can appeal moderation decisions via DAO proposals.</li>
                 <li>Token holders vote (again with quadratic logic).</li>
@@ -563,7 +560,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Progressive Access Control</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">8. Progressive Access Control</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 Instead of "1 token = 1 power", implement progressive caps:
               </p>
@@ -575,7 +572,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Incentive Flywheel</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">9. Incentive Flywheel</h4>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Watchers earn tiny token rewards for passive viewing (engagement mining).</li>
                 <li>Curators earn more if their promoted content performs well.</li>
