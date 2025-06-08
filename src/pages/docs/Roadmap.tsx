@@ -401,12 +401,12 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• DeHub London event attracted 500+ attendees including major VCs</div>
+                      <div>• Listed $DHB on Base L2</div>
                       <div>• Dubai event expanded Middle East presence with 300+ regional users</div>
                       <div>• Opened TikTok agency in partnership with TikTok reaching 1M+ followers</div>
                       <div>• Established creator partnerships in 15 countries</div>
                       <div>• Generated $500K+ in agency revenue within first quarter</div>
-                      <div>• Built automated creator matching and campaign management system</div>
+                      
                     </div>
                   </div>
                 </div>
