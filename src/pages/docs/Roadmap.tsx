@@ -272,10 +272,7 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Secured SEC registration with the Philippine Government for real estate, construction and brokerage services</span>
                       </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Secured licensing deals with 12 content creators</span>
-                      </div>
+                      
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Implemented advanced video compression reducing bandwidth costs by 60%</span>
