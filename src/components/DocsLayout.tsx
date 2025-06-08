@@ -85,11 +85,6 @@ const menuItems = [{
   title: 'Key Links',
   items: [
     {
-      title: 'Website',
-      path: 'https://dehub.net/',
-      icon: '🌐',
-      external: true
-    }, {
       title: 'App',
       path: 'https://dehub.io',
       icon: '/lovable-uploads/ca557554-cea2-41f1-8139-d456861beacb.png',
