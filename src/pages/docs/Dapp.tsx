@@ -409,7 +409,7 @@ const Dapp = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Direct Token Purchase</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Top Up Tokens In 2 Clicks</h2>
           
           <Card>
             <CardHeader>
@@ -420,12 +420,7 @@ const Dapp = () => {
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
-                <a 
-                  href="https://dehub.io/dpay"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
-                >
+                <a href="https://dehub.io/dpay" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
                   <div>
                     <h4 className="font-semibold text-slate-700 font-exo">dehub.io/dpay</h4>
                     <p className="text-slate-600 font-exo">Direct purchase with Stripe</p>
