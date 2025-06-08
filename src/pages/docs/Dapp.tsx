@@ -164,7 +164,7 @@ const Dapp = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Explore your feed, the leaderboard charts and 24/7 community live chat forum</h2>
+          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Explore The App & Beyond</h2>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Search bars aggregate YouTube and other major streaming app APIs to save you juggling multiple apps, while the explore page also houses our live community chat and dedicated leaderboards for:
