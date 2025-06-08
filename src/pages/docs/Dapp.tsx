@@ -114,11 +114,13 @@ const Dapp = () => {
             Our d'app is unique as it empowers creators by enabling full ownership of subscriber data. You can now take your business anywhere you want and reach your audiences no matter what.
           </p>
           
+          <div className="my-6">
+            <img src="/lovable-uploads/49985a5d-354f-48c8-888c-516c56c41f51.png" alt="Connect a Wallet interface showing various wallet options including MetaMask, WalletConnect, Trust Wallet, Rainbow, Coinbase Wallet, Google, and Twitter" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+          </div>
+          
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Given that data is the new oil, it may be wise to build your core community base here and utilise your existing social media apps to funnel users in to grow your own valuable database and ensure you remain censorship resistant. No matter what happens, never lose touch with your audience, fans, community or customers.
           </p>
-          
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">Sign up today in a few clicks via socials or email and have a wallet auto generated for you. Immerse yourself into the new digital world and given that data is the new oil, it may be wise to build your core community base here and utilise your existing social media apps to funnel users in to grow your own valuable database and ensure you remain censorship resistant. No matter what happens, never lose touch with your audience, fans, community or customers.</p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo"></p>
         </section>
