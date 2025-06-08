@@ -742,7 +742,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly in-app and use instantly with free gas</span>
+                        <span>Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly in-app and use instantly with free gas ✅</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
