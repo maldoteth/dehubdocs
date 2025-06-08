@@ -1,4 +1,3 @@
-
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
@@ -262,7 +261,7 @@ const Dapp = () => {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Flex Your Badge</h4>
+              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Fair by design</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
                 To reduce whale dominance:
               </p>
