@@ -364,7 +364,7 @@ const Dapp = () => {
                   <li>• <strong>Fan Investment:</strong> Supporters financially benefit from creator success</li>
                   <li>• <strong>Automatic Tokenisation:</strong> Every upload becomes a tradeable asset</li>
                   <li>• <strong>Censorship Resistance:</strong> Sustained by shared computing power globally</li>
-                  <li>• <strong>Creator Control:</strong> Full control over fraction distribution strategy</li>
+                  <li>• <strong>Creator Control:</strong> Full control over token distribution strategy</li>
                   <li>• <strong>Permissionless:</strong> No platform dependency for earnings</li>
                 </ul>
               </CardContent>
