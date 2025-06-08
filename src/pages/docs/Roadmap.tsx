@@ -340,7 +340,7 @@ const Roadmap = () => {
                       <div>• Commitment to transparency with all DEX policy implementation</div>
                       <div>• Achieved 100% decentralized trading across 5 major DEXes</div>
                       <div>• Implemented automated liquidity provision strategies</div>
-                      <div>• Community treasury grew to $5M+ through DEX trading fees</div>
+                      
                       
                     </div>
                   </div>
