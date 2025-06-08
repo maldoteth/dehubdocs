@@ -148,6 +148,7 @@ const Dapp = () => {
             <li><strong>PPV events:</strong> charge any token for a pay-per-view or live stream</li>
             <li><strong>NFT collectables:</strong> every post mints an NFT that earns the lifetime royalty attached to the video</li>
             <li><strong>Earn:</strong> DeHub tokens via tips through supporters and rise up on the leaderboards for larger shares of ad revenue</li>
+            <li><strong>Subscribers:</strong> Upload unlockable content for your subs or launch gated group chats</li>
           </ul>
         </section>
 
