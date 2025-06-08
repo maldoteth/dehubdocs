@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
+
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
   const getStatusColor = (status: string) => {
@@ -13,6 +14,7 @@ const Roadmap = () => {
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
+
   return <div className="max-w-6xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">DeHub Roadmap</h1>
@@ -516,7 +518,9 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Release live stream keys so users can stream on multiple apps simultaneously</div>
+                      <div>• Release live stream keys so users can stream on multiple apps simultaneously ✅</div>
+                      <div>• Stream Keys release and integration with OBS, Streamyard, Restream & more allowing multi-stream functionality ✅</div>
+                      <div>• App store re-listings</div>
                       <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
                       
                       <div>• Launch Solana, Hyperliquid and Sui integrations for in-app use</div>
