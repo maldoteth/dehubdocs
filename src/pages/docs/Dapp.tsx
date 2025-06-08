@@ -1,3 +1,4 @@
+
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
@@ -786,6 +787,19 @@ const Dapp = () => {
                 <p className="text-sm font-semibold text-green-700 font-exo">Saves: $9,000</p>
               </div>
             </div>
+          </div>
+
+          {/* New Disclaimer Section */}
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-6 mt-6 rounded-r-lg">
+            <h4 className="font-semibold text-amber-800 font-exo mb-3 flex items-center gap-2">
+              <Banknote className="w-5 h-5" />
+              Important Fee Disclaimer
+            </h4>
+            <p className="text-amber-800/90 leading-relaxed font-exo">
+              Fees only apply to certain services such as tips, subscriptions, pay-per-views, and watch2earn bounties. 
+              Users can send tokens to other users for free across the app and make use of our abstraction tools to do it 
+              with no wallet address or private key management required.
+            </p>
           </div>
         </section>
       </section>
