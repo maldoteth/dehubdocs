@@ -363,7 +363,7 @@ const Dapp = () => {
                   <li>• <strong>Set and Forget:</strong> Content earns revenue forever without additional work</li>
                   <li>• <strong>Fan Investment:</strong> Supporters financially benefit from creator success</li>
                   <li>• <strong>Automatic Tokenisation:</strong> Every upload becomes a tradeable asset</li>
-                  <li>• <strong>Sustained by shared computing power so lives forever powered by the people</strong></li>
+                  <li>• <strong>Censorship Resistance:</strong> Blockchain-based ownership and revenue</li>
                   <li>• <strong>Creator Control:</strong> Full control over fraction distribution strategy</li>
                   <li>• <strong>Permissionless:</strong> No platform dependency for earnings</li>
                 </ul>
