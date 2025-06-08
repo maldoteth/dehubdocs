@@ -1,4 +1,5 @@
 
+
 import React, { useState, useEffect } from 'react';
 import { ScrollText, Gamepad2, Users, Shield, Zap, Globe, Edit3, Save, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -13,7 +14,7 @@ const Overview = () => {
     subtitle: "Live forever onchain, free from censorship or limitations of legacy media apps.",
     paragraph1: "Imagine a world where creators own their audience data, control their content distribution, and never fear censorship or demonetization. DeHub makes this reality through our revolutionary gaming and streaming protocol, powered by cutting-edge DePIN infrastructure that's reshaping how content is hosted, transcoded, and delivered globally.",
     paragraph2: "Built by gamers & streamers, we've solved the crypto complexity problem. Our platform delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Just pure creative freedom with blockchain-verified earnings visible on our public leaderboards.",
-    paragraph3: "Launch pay-per-view events, create Watch2Earn experiences, or distribute exclusive token-gated content—all without traditional banking or lengthy KYC processes. Your content, your rules, your revenue. Direct creator-to-fan relationships in a censorship-resistant ecosystem where your success is entirely in your hands.",
+    paragraph3: "Launch PPV events, monetise with subscriptions or paid messages, create Watch2Earn experiences to grow an audience or reward existing communities, or distribute exclusive token-gated content—all without traditional banking or lengthy KYC processes. Your content, your rules, your revenue. Direct creator-to-fan relationships in a censorship-resistant ecosystem where your success is entirely in your hands.",
     paragraph4: "Join thousands of creators already building the user-owned economy of tomorrow, where value flows directly to those who create it—completely free from corporate gatekeepers and algorithmic manipulation.",
     paragraph5: "Our journey began as Futurov (FTV), where we built a thriving community of streamers and gamers who loved our Web2 app and gave us incredible reviews on Google Play Store. Now we're taking everything they loved and making it unstoppable.",
     paragraph6: "Ready to see how we're revolutionizing digital content? Dive into our technical infrastructure and discover the dApps powering this creator renaissance.",
@@ -219,3 +220,4 @@ const Overview = () => {
 };
 
 export default Overview;
+
