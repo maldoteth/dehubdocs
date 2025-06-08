@@ -47,6 +47,10 @@ const menuItems = [{
     path: '/docs/depin',
     icon: '🔧'
   }, {
+    title: 'AI Toolkits',
+    path: '/docs/ai-toolkits',
+    icon: '🤖'
+  }, {
     title: 'Team',
     path: '/docs/team',
     icon: '👥'

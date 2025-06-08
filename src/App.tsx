@@ -14,6 +14,7 @@ import ComingSoonPage from "./components/ComingSoonPage";
 const DocsHome = lazy(() => import("./pages/docs/DocsHome"));
 const Overview = lazy(() => import("./pages/docs/Overview"));
 const DePIN = lazy(() => import("./pages/docs/DePIN"));
+const AIToolkits = lazy(() => import("./pages/docs/AIToolkits"));
 const QuickStart = lazy(() => import("./pages/docs/QuickStart"));
 const Installation = lazy(() => import("./pages/docs/Installation"));
 const ApiEndpoints = lazy(() => import("./pages/docs/ApiEndpoints"));
@@ -111,6 +112,11 @@ const App = () => (
             <Route path="depin" element={
               <Suspense fallback={<PageLoader />}>
                 <DePIN />
+              </Suspense>
+            } />
+            <Route path="ai-toolkits" element={
+              <Suspense fallback={<PageLoader />}>
+                <AIToolkits />
               </Suspense>
             } />
             <Route path="team" element={
