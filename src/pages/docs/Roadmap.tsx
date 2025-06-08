@@ -447,12 +447,12 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released onchain subscriptions with 5,000+ paying subscribers in first month</div>
+                      <div>• Released onchain tradable subscriptions</div>
                       <div>• Agency grew to UK #1 with 1,000 live streamers signed exclusively</div>
                       <div>• Implemented tiered subscription model with NFT holder benefits</div>
                       <div>• Built automated revenue distribution system for creators</div>
-                      <div>• Agency generated $2M+ in annual recurring revenue</div>
-                      <div>• Subscription platform achieved 25% monthly churn rate (industry-leading)</div>
+                      
+                      
                     </div>
                   </div>
                 </div>
