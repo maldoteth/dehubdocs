@@ -294,7 +294,7 @@ const Roadmap = () => {
                       <div>• Secured backing from Sony and Samsung innovation funds ($2M+ combined)</div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
                       <div></div>
-                      <div>• Patent applications commenced for core streaming & watch2earn technology</div>
+                      
                       <div>• Patent applications commenced for core streaming technology</div>
                     </div>
                   </div>
