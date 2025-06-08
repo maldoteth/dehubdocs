@@ -2,7 +2,7 @@ import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent } from 'lucide-react';
+import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network } from 'lucide-react';
 
 const Dapp = () => {
   const feeReductions = [
@@ -175,6 +175,227 @@ const Dapp = () => {
         </section>
 
         <section>
+          <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+            <Shield className="w-8 h-8" />
+            Decentralized Moderation
+          </h2>
+          
+          <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg border border-indigo-200 mb-6">
+            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Governance + Moderation System Design</h3>
+            <p className="text-royal-blue/80 leading-relaxed font-exo">
+              Our decentralized moderation system combines token-based governance with advanced anti-manipulation mechanisms 
+              to ensure fair, transparent, and community-driven content moderation. This revolutionary approach prevents 
+              centralized censorship while maintaining quality standards through economic incentives.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
+            <Card className="border-purple-200 bg-purple-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                  <Coins className="w-4 h-4" />
+                  Token Utility Design
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-purple-700 space-y-2 font-exo">
+                  <li>• Moderation staking rewards</li>
+                  <li>• Voting on content disputes</li>
+                  <li>• Platform rule governance</li>
+                  <li>• Content curation and promotion</li>
+                  <li>• More tokens = more influence</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                  <Scale className="w-4 h-4" />
+                  Quadratic Voting
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-blue-700 space-y-2 font-exo">
+                  <li>• Anti-whale mechanism</li>
+                  <li>• Voting power = √(tokens staked)</li>
+                  <li>• 100 tokens = 10 votes</li>
+                  <li>• 10,000 tokens = 100 votes</li>
+                  <li>• Prevents unchecked power</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-green-200 bg-green-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
+                  <Users className="w-4 h-4" />
+                  Moderation Staking
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-green-700 space-y-2 font-exo">
+                  <li>• Stake tokens to become moderator</li>
+                  <li>• Vote on flagged content outcomes</li>
+                  <li>• Correct votes earn rewards</li>
+                  <li>• Wrong votes may be slashed</li>
+                  <li>• Skin in the game principle</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Core Components</h3>
+            
+            <div className="grid gap-6 md:grid-cols-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                    <TrendingUp className="w-5 h-5" />
+                    Reputation System
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Historical Accuracy</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Track moderator voting accuracy over time to build trust and credibility within the community.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Community Feedback</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Integrate peer reviews and community sentiment to enhance reputation scoring mechanisms.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Participation Consistency</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Reward consistent engagement and penalize sporadic or malicious participation patterns.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                    <Network className="w-5 h-5" />
+                    Delegated Moderation
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Vote Delegation</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Users can delegate votes to trusted curators or moderation pools, similar to PoS validators.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Flexible Switching</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Curators and moderators can be swapped anytime, allowing dynamic preference adjustments.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Passive Participation</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Enable passive users to participate in governance while rewarding active community members.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Advanced Features</h3>
+            
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <Card className="border-indigo-200 bg-indigo-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-indigo-800 font-exo flex items-center gap-2">
+                    <Layers className="w-4 h-4" />
+                    Content Tiering
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-indigo-700 font-exo">
+                    Curation markets where users stake tokens to promote content. Market decides visibility through token-weighted attention.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-pink-200 bg-pink-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-pink-800 font-exo flex items-center gap-2">
+                    <Vote className="w-4 h-4" />
+                    DAO Appeals
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-pink-700 font-exo">
+                    Content creators can appeal moderation decisions via DAO proposals with quadratic voting to prevent abuse.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-amber-200 bg-amber-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-amber-800 font-exo flex items-center gap-2">
+                    <Settings className="w-4 h-4" />
+                    Progressive Access
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-amber-700 font-exo">
+                    Influence decays beyond certain staking thresholds, encouraging wider token distribution through sigmoid functions.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-teal-200 bg-teal-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-teal-800 font-exo flex items-center gap-2">
+                    <Infinity className="w-4 h-4" />
+                    Incentive Flywheel
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-teal-700 font-exo">
+                    Circular economy rewarding all participation: watching, curating, moderating, and governance voting.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <Card className="mt-6 border-red-200 bg-gradient-to-r from-red-50 to-orange-50">
+            <CardHeader>
+              <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                <AlertTriangle className="w-5 h-5" />
+                Anti-Manipulation Measures
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <h4 className="font-semibold text-royal-blue font-exo mb-2">Security Features</h4>
+                  <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
+                    <li>• Sybil resistance through staking + reputation requirements</li>
+                    <li>• Multi-signature council fallback for emergencies</li>
+                    <li>• Transparent on-chain moderation history</li>
+                    <li>• Progressive influence caps to prevent centralization</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-royal-blue font-exo mb-2">Technical Stack</h4>
+                  <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
+                    <li>• Ethereum Layer 2 (Arbitrum, Optimism)</li>
+                    <li>• IPFS + Filecoin/Arweave for content storage</li>
+                    <li>• Safe + Zodiac modules for DAO framework</li>
+                    <li>• ERC-20 + soulbound reputation tokens</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
           <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">How to Upload</h2>
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Firstly, ensure you have your wallet and profile set up, with enough gas to upload. Although we built in a converter, using universal file types such as MP4 is still advised for optimum experience.
@@ -270,7 +491,7 @@ const Dapp = () => {
         </section>
       </div>
 
-      <section>
+      <section className="mt-12">
         <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
           <Video className="w-8 h-8" />
           Live Streaming
@@ -798,8 +1019,7 @@ const Dapp = () => {
             </p>
           </div>
         </section>
-      </section>
-    </div>
+      </div>
   );
 };
 
