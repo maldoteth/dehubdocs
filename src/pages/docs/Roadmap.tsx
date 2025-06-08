@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -24,13 +23,12 @@ const Roadmap = () => {
       </div>
 
       <Tabs value={selectedYear} onValueChange={setSelectedYear} className="w-full">
-        <TabsList className="grid w-full grid-cols-4 lg:grid-cols-8">
+        <TabsList className="grid w-full grid-cols-4 lg:grid-cols-5">
           <TabsTrigger value="2021" className="text-sm">2021</TabsTrigger>
           <TabsTrigger value="2022" className="text-sm">2022</TabsTrigger>
           <TabsTrigger value="2023" className="text-sm">2023</TabsTrigger>
           <TabsTrigger value="2024" className="text-sm">2024</TabsTrigger>
           <TabsTrigger value="2025" className="text-sm">2025</TabsTrigger>
-          <TabsTrigger value="2025-q3-4" className="text-sm">Q3-4 2025</TabsTrigger>
         </TabsList>
 
         {/* 2021 - Foundation Year */}
@@ -525,23 +523,6 @@ const Roadmap = () => {
                   </div>
                 </div>
 
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        {/* Q3-4 2025 - Platform Expansion & Developer Ecosystem */}
-        <TabsContent value="2025-q3-4" className="space-y-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <Calendar className="w-5 h-5" />
-                <span>Q3-4 2025 - Platform Expansion & Developer Ecosystem</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid gap-4">
-                
                 {/* Q3 2025 */}
                 <div className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
                   <div className="flex-shrink-0">
