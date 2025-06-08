@@ -539,7 +539,7 @@ Listed DHB on Eth mainnet
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Raised $1,000,000 for adult fork BJ (now fan.site)</span>
+                        
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
@@ -565,7 +565,7 @@ Listed DHB on Eth mainnet
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Listed $DHB on Base L2</span>
+                        
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
