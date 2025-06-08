@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -292,9 +291,9 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       
-                      <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies in a vote based system backed by Sony, Samsung and other industry giants</div>
+                      <div>• Secured backing from Sony and Samsung innovation funds ($2M+ combined)</div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
-                      <div></div>
+                      
                       
                       <div>• Patent applications commenced for core streaming technology</div>
                     </div>
