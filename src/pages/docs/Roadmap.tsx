@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
+
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
   const getStatusColor = (status: string) => {
@@ -516,7 +517,6 @@ const Roadmap = () => {
                       <div>• Launched UGC ambassadorship program with 200+ selected creators</div>
                       <div>• Implemented comprehensive creator education curriculum</div>
                       <div>• Built automated content quality scoring using AI</div>
-                      <div>• Ambassadors generated 500,000+ pieces of quality content</div>
                       <div>• Established creator mentorship network spanning 25 countries</div>
                     </div>
                   </div>
