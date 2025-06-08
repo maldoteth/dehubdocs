@@ -43,7 +43,9 @@ import {
   Edit3,
   Megaphone,
   Calendar,
-  Bell
+  Bell,
+  Trophy,
+  Vote
 } from 'lucide-react';
 
 const Dapp = () => {
