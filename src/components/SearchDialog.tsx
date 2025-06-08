@@ -82,8 +82,8 @@ const highlightMatchingTerms = (text: string, query: string) => {
   return highlightedText;
 };
 
-// Helper function to find and highlight text in the page
-const highlightTextInPage = (searchQuery: string) => {
+// Helper function to find and highlight text in a specific section
+const highlightTextInSection = (searchQuery: string, sectionId?: string) => {
   if (!searchQuery.trim()) return;
   
   const queryTerms = searchQuery.toLowerCase().split(' ').filter(term => term.length > 1);
@@ -99,9 +99,19 @@ const highlightTextInPage = (searchQuery: string) => {
     }
   });
   
-  // Find and highlight the first occurrence of any search term
+  // Determine search scope - if we have a section ID, search within that section
+  let searchScope = document.body;
+  if (sectionId) {
+    const sectionElement = document.getElementById(sectionId);
+    if (sectionElement) {
+      searchScope = sectionElement;
+      console.log(`🎯 Limiting search scope to section: ${sectionId}`);
+    }
+  }
+  
+  // Find and highlight the first occurrence of any search term within the scope
   const walker = document.createTreeWalker(
-    document.body,
+    searchScope,
     NodeFilter.SHOW_TEXT,
     {
       acceptNode: (node) => {
@@ -163,7 +173,7 @@ const highlightTextInPage = (searchQuery: string) => {
         block: 'center',
         inline: 'nearest'
       });
-      console.log(`🎯 Scrolled to and highlighted search term in page`);
+      console.log(`🎯 Scrolled to and highlighted search term in ${sectionId ? 'section ' + sectionId : 'page'}`);
       
       // Add prominent temporary highlight
       firstMatch.classList.add('bg-blue-400', 'shadow-lg', 'scale-110');
@@ -221,26 +231,27 @@ export const SearchDialog = () => {
     // Navigate to the path first
     navigate(path);
     
-    // Handle scrolling and highlighting
+    // Handle scrolling and highlighting with proper priority for anchors
     setTimeout(() => {
       if (anchor) {
         const element = document.getElementById(anchor);
         if (element) {
+          // First scroll to the anchor section
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
           console.log(`📍 Scrolled to anchor: ${anchor}`);
           
-          // After scrolling to anchor, highlight the search terms
+          // After scrolling to anchor, highlight search terms ONLY within that section
           setTimeout(() => {
-            highlightTextInPage(currentQuery);
-          }, 300);
+            highlightTextInSection(currentQuery, anchor);
+          }, 500); // Longer delay to ensure scroll is complete
         } else {
           console.warn(`⚠️ Anchor element not found: ${anchor}`);
-          // If anchor not found, just highlight the search terms on the page
-          highlightTextInPage(currentQuery);
+          // If anchor not found, fall back to general page highlighting
+          highlightTextInSection(currentQuery);
         }
       } else {
-        // No anchor, just highlight search terms on the page
-        highlightTextInPage(currentQuery);
+        // No anchor, highlight search terms on the entire page
+        highlightTextInSection(currentQuery);
       }
     }, 100);
   };
