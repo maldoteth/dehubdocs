@@ -403,7 +403,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Listed $DHB on Base L2</div>
                       <div>• Dubai event expanded Middle East presence w</div>
-                      <div>• Opened TikTok agency in partnership with TikTok execs directly</div>
+                      <div>• Co Founders Mike Hales & Indi Cammish open TikTok agency in partnership with TikTok execs directly</div>
                       <div>• Established creator partnerships in 15 countries</div>
                       <div></div>
                       
