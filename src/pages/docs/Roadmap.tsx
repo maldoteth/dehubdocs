@@ -77,8 +77,8 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Launched v1 token with 1,000,000 initial supply</div>
-                      <div>• Launched v1 token</div>
-                      <div>• Established first liquidity pools on Uniswap</div>
+                      <div>• Community governed listing chain, price / market cap.</div>
+                      <div>• Established first liquidity pools on Pancake Swap</div>
                       <div>• Built community of 2,000+ early adopters</div>
                       <div>• Implemented basic governance voting mechanism</div>
                       <div>• Faced initial smart contract optimization challenges</div>
