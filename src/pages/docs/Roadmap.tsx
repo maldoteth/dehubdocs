@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -168,7 +166,7 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Released arcade with 5 initial games including poker and predictions</div>
-                      <div>• Achieved 25,000+ monthly active gamers</div>
+                      <div>• Achieved 5,000+ monthly active gamers</div>
                       <div>• Implemented blockchain-based leaderboards and rewards</div>
                       <div>• Introduced social features allowing friend challenges</div>
                       <div>• Built custom game engine optimized for mobile devices</div>
@@ -544,4 +542,3 @@ const Roadmap = () => {
     </div>;
 };
 export default Roadmap;
-
