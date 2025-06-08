@@ -166,6 +166,10 @@ const DocsLayoutContent = () => {
     setSidebarOpen(false);
   };
 
+  const handleSearchClick = () => {
+    setSearchOpen(true);
+  };
+
   return <div className="min-h-screen bg-gradient-to-br from-sky-blue/10 to-middle-blue/10">
       {/* Header */}
       <header className="bg-plain-white/90 backdrop-blur-sm border-b border-sky-blue/20 sticky top-0 z-40">
@@ -189,7 +193,7 @@ const DocsLayoutContent = () => {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setSearchOpen(true)}
+              onClick={handleSearchClick}
               className="hidden sm:flex items-center space-x-2 text-slate-600 border-slate-300 hover:border-royal-blue hover:text-royal-blue"
             >
               <Search className="w-4 h-4" />
@@ -201,7 +205,7 @@ const DocsLayoutContent = () => {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setSearchOpen(true)}
+              onClick={handleSearchClick}
               className="sm:hidden p-2"
             >
               <Search className="w-4 h-4" />
