@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Button } from '@/components/ui/button';
+import { SearchDialog } from '@/components/SearchDialog';
+import { useSearch } from '@/hooks/useSearch';
 
 const menuItems = [{
   title: 'Main',
@@ -134,6 +137,7 @@ const DocsLayoutContent = () => {
     [key: string]: boolean;
   }>({});
   const location = useLocation();
+  const { setIsOpen: setSearchOpen } = useSearch();
 
   // Prevent body scroll when sidebar is open on mobile
   useEffect(() => {
@@ -179,8 +183,34 @@ const DocsLayoutContent = () => {
           <Link to="/docs" className="lg:hidden flex items-center justify-center absolute left-1/2 transform -translate-x-1/2">
             <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
           </Link>
+
+          {/* Search Button */}
+          <div className="flex items-center">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setSearchOpen(true)}
+              className="hidden sm:flex items-center space-x-2 text-slate-600 border-slate-300 hover:border-royal-blue hover:text-royal-blue"
+            >
+              <Search className="w-4 h-4" />
+              <span>Search docs...</span>
+              <kbd className="hidden lg:inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground">
+                <span className="text-xs">⌘</span>K
+              </kbd>
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setSearchOpen(true)}
+              className="sm:hidden p-2"
+            >
+              <Search className="w-4 h-4" />
+            </Button>
+          </div>
         </div>
       </header>
+
+      <SearchDialog />
 
       <div className="flex">
         {/* Sidebar */}
