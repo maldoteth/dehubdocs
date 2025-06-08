@@ -1,4 +1,3 @@
-
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
@@ -1021,6 +1020,226 @@ const Dapp = () => {
                       <li>• Direct creator interaction</li>
                       <li>• Investment potential through NFT trading</li>
                       <li>• Supporting favorite creators directly</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          <section className="mt-12">
+            <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+              <MessageCircle className="w-8 h-8" />
+              Messages
+            </h2>
+            
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border border-blue-200 mb-6">
+              <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Secure, Private Communication</h3>
+              <p className="text-royal-blue/80 leading-relaxed font-exo">
+                DeHub's messaging system combines traditional social communication with Web3 innovation, offering encrypted messaging, 
+                monetized interactions, and advanced privacy controls. Connect with creators and community members through secure, 
+                decentralized communication that puts you in complete control of your conversations and data.
+              </p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
+              <Card className="border-blue-200 bg-blue-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                    <MessageCircle className="w-4 h-4" />
+                    Direct & Group Messaging
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-sm text-blue-700 space-y-2 font-exo">
+                    <li>• Send direct messages to any platform user</li>
+                    <li>• Create group chats with multiple participants</li>
+                    <li>• Real-time message delivery and notifications</li>
+                    <li>• Rich media support for photos and videos</li>
+                    <li>• Cross-platform accessibility</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border-purple-200 bg-purple-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                    <Shield className="w-4 h-4" />
+                    Privacy Controls
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-sm text-purple-700 space-y-2 font-exo">
+                    <li>• Block unwanted users instantly</li>
+                    <li>• Do Not Disturb modes for focused time</li>
+                    <li>• Custom privacy settings per contact</li>
+                    <li>• Anonymous messaging options</li>
+                    <li>• Granular notification controls</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200 bg-green-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
+                    <Coins className="w-4 h-4" />
+                    Monetized Messaging
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-sm text-green-700 space-y-2 font-exo">
+                    <li>• Paid DMs for priority message delivery</li>
+                    <li>• Premium messages appear at top of inbox</li>
+                    <li>• Custom pricing for exclusive access</li>
+                    <li>• Token-gated conversation starters</li>
+                    <li>• Creator monetization opportunities</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Advanced Features</h3>
+              
+              <div className="grid gap-6 md:grid-cols-2">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                      <Lock className="w-5 h-5" />
+                      Paywall Protected Content
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="p-3 bg-royal-blue/5 rounded-lg">
+                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Media Monetization</h4>
+                        <p className="text-sm text-royal-blue/70 font-exo">Share photos and videos locked behind custom paywalls, allowing recipients to unlock premium content for any supported token.</p>
+                      </div>
+                      <div className="p-3 bg-royal-blue/5 rounded-lg">
+                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Flexible Pricing</h4>
+                        <p className="text-sm text-royal-blue/70 font-exo">Set custom unlock prices in DHB, USDC, ETH, or any supported cryptocurrency for exclusive message content.</p>
+                      </div>
+                      <div className="p-3 bg-royal-blue/5 rounded-lg">
+                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Preview System</h4>
+                        <p className="text-sm text-royal-blue/70 font-exo">Recipients see message previews with clear unlock options, creating anticipation and driving engagement.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                      <Shield className="w-5 h-5" />
+                      End-to-End Encryption
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="p-3 bg-royal-blue/5 rounded-lg">
+                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Military-Grade Security</h4>
+                        <p className="text-sm text-royal-blue/70 font-exo">All messages are encrypted end-to-end, ensuring only you and your intended recipients can read your conversations.</p>
+                      </div>
+                      <div className="p-3 bg-royal-blue/5 rounded-lg">
+                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Private by Design</h4>
+                        <p className="text-sm text-royal-blue/70 font-exo">No third parties, including DeHub, can access your message content. Your privacy is guaranteed by cryptographic protocols.</p>
+                      </div>
+                      <div className="p-3 bg-royal-blue/5 rounded-lg">
+                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Secure Media Sharing</h4>
+                        <p className="text-sm text-royal-blue/70 font-exo">Photos, videos, and files are encrypted before transmission and stored securely on decentralized infrastructure.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Message Types & Features</h3>
+              
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <Card className="border-indigo-200 bg-indigo-50">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-lg text-indigo-800 font-exo">Standard Messages</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="text-sm text-indigo-700 space-y-1 font-exo">
+                      <li>• Free text messaging</li>
+                      <li>• Media attachments</li>
+                      <li>• Emoji reactions</li>
+                      <li>• Message forwarding</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-amber-200 bg-amber-50">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-lg text-amber-800 font-exo">Priority Messages</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="text-sm text-amber-700 space-y-1 font-exo">
+                      <li>• Paid delivery guarantee</li>
+                      <li>• Top-of-inbox placement</li>
+                      <li>• Enhanced notifications</li>
+                      <li>• Creator attention focus</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-rose-200 bg-rose-50">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-lg text-rose-800 font-exo">Premium Content</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="text-sm text-rose-700 space-y-1 font-exo">
+                      <li>• Paywall-protected media</li>
+                      <li>• Exclusive photo/video access</li>
+                      <li>• Custom unlock pricing</li>
+                      <li>• Creator revenue streams</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-emerald-200 bg-emerald-50">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-lg text-emerald-800 font-exo">Group Features</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="text-sm text-emerald-700 space-y-1 font-exo">
+                      <li>• Multi-user conversations</li>
+                      <li>• Admin controls</li>
+                      <li>• Member management</li>
+                      <li>• Shared media galleries</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <Card className="mt-6 border-cyan-200 bg-gradient-to-r from-cyan-50 to-blue-50">
+              <CardHeader>
+                <CardTitle className="text-royal-blue font-exo">Communication Revolution</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div>
+                    <h4 className="font-semibold text-royal-blue font-exo mb-2">For Creators</h4>
+                    <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
+                      <li>• Monetize direct fan interactions</li>
+                      <li>• Control message accessibility and pricing</li>
+                      <li>• Build exclusive communities through group chats</li>
+                      <li>• Share premium content with guaranteed security</li>
+                      <li>• Generate revenue from every interaction</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-royal-blue font-exo mb-2">For Users</h4>
+                    <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
+                      <li>• Secure, private communication guaranteed</li>
+                      <li>• Access exclusive content from favorite creators</li>
+                      <li>• Priority messaging for important conversations</li>
+                      <li>• Complete control over privacy and notifications</li>
+                      <li>• Seamless integration with Web3 features</li>
                     </ul>
                   </div>
                 </div>
