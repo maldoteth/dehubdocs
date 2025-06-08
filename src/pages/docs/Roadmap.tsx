@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -129,7 +126,7 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Released prediction and raffle games with 10,000+ participants</div>
-                      <div>• Listed on gate.io with initial trading volume of $500K</div>
+                      <div>• Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP</div>
                       <div>• Discovered listing agent was fraudulent - learned valuable due diligence lessons</div>
                       <div>• Implemented game mechanics with provably fair randomization</div>
                       <div>• Built custom payment processing for game entries</div>
@@ -343,7 +340,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Voluntary delisting from gate.io to prioritize decentralization</div>
+                      <div>• Voluntary delisting from Gate.io to prioritize decentralization</div>
                       <div>• Commitment to transparency with all DEX policy implementation</div>
                       <div>• Achieved 100% decentralized trading across 5 major DEXes</div>
                       <div>• Implemented automated liquidity provision strategies</div>
@@ -591,5 +588,3 @@ const Roadmap = () => {
     </div>;
 };
 export default Roadmap;
-
-
