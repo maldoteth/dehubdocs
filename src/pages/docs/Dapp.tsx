@@ -1,3 +1,4 @@
+
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
@@ -229,10 +230,6 @@ const Dapp = () => {
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
             Only the core team or top tier badge holders will have the power to instantly remove a video by burning the NFT associated. Subsequently, all the ad revenue generated and any play to earn bounties strapped to the video will be shared with all voting wallets to further deter bad actors and incentivise an engaged community.
           </p>
-          
-          <p className="text-sm italic text-royal-blue/60 font-exo">
-            *Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.
-          </p>
 
           <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg border border-indigo-200 mb-6">
             <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Governance + Moderation System Design</h3>
@@ -242,11 +239,15 @@ const Dapp = () => {
             </p>
           </div>
 
+          <p className="text-sm italic text-royal-blue/60 font-exo mb-6">
+            *Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.
+          </p>
+
           <div className="space-y-8">
             <div>
               <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">1. Token Utility Design</h4>
               <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
-                By default, our native governance token $DHB enforces the following roles:
+                By default, our native governance token $DHB allows the following roles:
               </p>
               <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
                 <li>Moderation staking</li>
