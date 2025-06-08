@@ -65,7 +65,7 @@ function App() {
             <Route path="/docs/terms-of-service" element={<TermsOfService />} />
             <Route path="/docs/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/docs/terms" element={<Terms />} />
-            <Route path="/coming-soon" element={<ComingSoonPage />} />
+            <Route path="/coming-soon" element={<ComingSoonPage title="Coming Soon" />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
