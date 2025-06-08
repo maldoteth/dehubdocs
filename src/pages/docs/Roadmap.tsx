@@ -338,7 +338,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Contract tax triggers malfunctioned, freezing the token and our LP, forced to relaunch V3</span>
+                        <span>Contract tax triggers malfunctioned, freezing the token and our LP, forced to relaunch v2</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
