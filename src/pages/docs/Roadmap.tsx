@@ -531,7 +531,8 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Listed DHB on Eth mainnet</span>
+                        <span>
+                      </span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
@@ -565,7 +566,8 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Dubai event expanded Middle East presence</span>
+                        <span>
+                      </span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
