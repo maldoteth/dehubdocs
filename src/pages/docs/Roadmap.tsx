@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -191,7 +192,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Released stream app supporting 4K content with 99.9% uptime</div>
                       <div>• Produced first tokenised documentary featuring Jorge Masvidal, Brad Pickett & more by Luke Barnatt</div>
-                      <div>• Genesis mint for Chads collection sold out in 24 hours (1,000 NFTs)</div>
+                      <div>• Genesis mint for Chads collection</div>
                       <div>• Secured licensing deals with 12 content creators</div>
                       <div>• Implemented advanced video compression reducing bandwidth costs by 60%</div>
                       <div>• Built NFT marketplace with royalty distribution system</div>
@@ -543,3 +544,4 @@ const Roadmap = () => {
     </div>;
 };
 export default Roadmap;
+
