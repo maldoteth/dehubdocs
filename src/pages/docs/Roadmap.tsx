@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -103,7 +102,7 @@ const Roadmap = () => {
                       <div>• Released v2 with rebrand to DeHub</div>
                       <div>• Started full app rebuild using React Native for better cross-platform support</div>
                       <div>• Airdropped all holders automatically</div>
-                      <div>• Introduced live chat functionality during streams</div>
+                      
                       <div>• Addressed security vulnerabilities from v1</div>
                       <div>• Expanded team to 15 members across 3 time zones</div>
                     </div>
