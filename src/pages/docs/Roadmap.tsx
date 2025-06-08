@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -212,8 +211,8 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Incorporated DeLabs LTD with proper legal structure and compliance</div>
                       <div>• Acquired $1,000,000 home for largest crypto raffle ever (15,000+ participants)</div>
-                      <div>• Secured power of attorney for multiple islands and sea front strip in Palawan worth over $15,000,000 in an 
-                        <span className="block ml-4">attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC</span>
+                      <div>• Secured power of attorney for multiple islands and sea front strip in Palawan worth over $15,000,000 
+                        <span className="block ml-2">in an attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC</span>
                       </div>
                       <div>• Established partnerships with real estate and legal firms</div>
                       <div>• Created transparent raffle mechanics with on-chain verification</div>
