@@ -448,10 +448,7 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Announced partner airdrop for BJ (now fan.site), the adult fork of DeHub</span>
                       </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Community members successfully launched independent fork with full governance</span>
-                      </div>
+                      
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Facilitated knowledge transfer and technical support to fork team</span>
@@ -460,10 +457,7 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Demonstrated true decentralization principles in action</span>
                       </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Both platforms achieved 100,000+ combined users</span>
-                      </div>
+                      
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Established framework for future community-driven forks</span>
