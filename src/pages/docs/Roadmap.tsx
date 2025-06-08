@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -848,19 +849,23 @@ const Roadmap = () => {
                     <div className="text-gray-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Global expansion with localized content and partnerships</span>
+                        <span>Leading licensing partners, latest blockbusters and major PPVs</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Full decentralization of platform governance and operations</span>
+                        <span>Commercial integrations with existing streaming and home entertainment brands</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Integration of emerging blockchain technologies and protocols</span>
+                        <span>Aggregation of All APIs of current web2+3 Streaming Platforms</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Continuous innovation in creator monetization and engagement tools</span>
+                        <span>Windows, MAC OS, TV & game console apps</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>V/AR profile hub & consumer data metrics</span>
                       </div>
                     </div>
                   </div>
