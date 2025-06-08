@@ -3,10 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
-
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
-
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
@@ -15,9 +13,7 @@ const Roadmap = () => {
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
-
-  return (
-    <div className="max-w-6xl mx-auto space-y-8">
+  return <div className="max-w-6xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">DeHub Roadmap</h1>
         <p className="text-lg text-slate-600 leading-relaxed">
@@ -546,54 +542,10 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q3 2025 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
-                  <div className="flex-shrink-0">
-                    <div className="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center">
-                      <Shield className="w-4 h-4" />
-                    </div>
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">AI Content Moderation</h3>
-                      <Badge variant="outline" className="bg-gray-100 text-gray-800 border-gray-200">
-                        Not Completed
-                      </Badge>
-                    </div>
-                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Launch AI-powered content moderation system with 99.5% accuracy</div>
-                      <div>• Implement token-based dispute resolution with community jury system</div>
-                      <div>• Deploy creator AI tools for automatic highlights and content optimization</div>
-                      <div>• Introduce real-time content suggestion engine</div>
-                      <div>• Build multilingual moderation supporting 20+ languages</div>
-                      <div>• Establish appeals process with human oversight for edge cases</div>
-                    </div>
-                    <div className="text-xs text-slate-500 font-medium">Q3 2025</div>
-                  </div>
-                </div>
+                
 
                 {/* Q4 2025 */}
-                <div className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
-                  <div className="flex-shrink-0">
-                    <div className="w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center">
-                      <Coins className="w-4 h-4" />
-                    </div>
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Global Creator Fund</h3>
-                      <Badge variant="outline" className="bg-gray-100 text-gray-800 border-gray-200">
-                        Not Completed
-                      </Badge>
-                    </div>
-                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Launch $5M creator fund with tiered rewards based on engagement metrics</div>
-                      <div>• Implement automated content distribution optimization</div>
-                      <div>• Build creator analytics dashboard with predictive insights</div>
-                      <div>• Establish partnerships with traditional media companies for content crossover</div>
-                    </div>
-                    <div className="text-xs text-slate-500 font-medium">Q4 2025</div>
-                  </div>
-                </div>
+                
 
               </div>
             </CardContent>
@@ -612,8 +564,6 @@ const Roadmap = () => {
           </p>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default Roadmap;
