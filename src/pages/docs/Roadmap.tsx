@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -291,11 +292,11 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       
-                      <div>• Secured backing from Sony and Samsung innovation funds ($2M+ combined)</div>
+                      <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies in a vote based system backed by Sony, Samsung and other industry giants.</div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
                       
                       
-                      <div>• Patent applications commenced for core streaming technology</div>
+                      <div>• Patent applications commenced for core streaming technology and watch2earn mechanics</div>
                     </div>
                   </div>
                 </div>
@@ -317,7 +318,7 @@ const Roadmap = () => {
                       <div>• Community members successfully launched independent fork with full governance</div>
                       <div>• Facilitated knowledge transfer and technical support to fork team</div>
                       <div>• Demonstrated true decentralization principles in action</div>
-                      
+                      <div>• Both platforms achieved 100,000+ combined users</div>
                       <div>• Established framework for future community-driven forks</div>
                     </div>
                   </div>
@@ -340,8 +341,8 @@ const Roadmap = () => {
                       <div>• Commitment to transparency with all DEX policy implementation</div>
                       <div>• Achieved 100% decentralized trading across 5 major DEXes</div>
                       <div>• Implemented automated liquidity provision strategies</div>
-                      
-                      
+                      <div>• Community treasury grew to $5M+ through DEX trading fees</div>
+                      <div>• Published full transparency reports showing all protocol metrics</div>
                     </div>
                   </div>
                 </div>
