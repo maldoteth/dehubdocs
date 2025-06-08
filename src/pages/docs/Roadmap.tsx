@@ -99,9 +99,9 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released V2 with improved user interface and 40% better performance</div>
+                      <div>• Released v2 with rebrand to DeHub</div>
                       <div>• Started full app rebuild using React Native for better cross-platform support</div>
-                      <div>• Migrated 5,000+ users to new architecture</div>
+                      <div>• Airdropped al</div>
                       <div>• Introduced live chat functionality during streams</div>
                       <div>• Addressed security vulnerabilities from V1</div>
                       <div>• Expanded team to 15 members across 3 time zones</div>
