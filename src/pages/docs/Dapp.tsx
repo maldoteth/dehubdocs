@@ -3,8 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Layers, Settings, Shield, Video, Eye, MessageCircle, Percent, Banknote } from "lucide-react";
-import { BadgeFlowchart } from "@/components/BadgeFlowchart";
-import { TippingFlowchart } from "@/components/TippingFlowchart";
+import BadgeFlowchart from "@/components/BadgeFlowchart";
+import TippingFlowchart from "@/components/TippingFlowchart";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
 const Dapp = () => {
