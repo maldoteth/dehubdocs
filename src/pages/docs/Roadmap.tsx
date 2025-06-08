@@ -1,10 +1,13 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
+
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
@@ -13,7 +16,9 @@ const Roadmap = () => {
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
-  return <div className="max-w-6xl mx-auto space-y-8">
+
+  return (
+    <div className="max-w-6xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">DeHub Roadmap</h1>
         <p className="text-lg text-slate-600 leading-relaxed">
@@ -70,7 +75,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q2 2021</h3>
+                      <h3 className="font-semibold text-slate-900">Q1 2021</h3>
                       <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
                         Completed
                       </Badge>
@@ -81,7 +86,7 @@ const Roadmap = () => {
                       <div>• Established first liquidity pools on Pancake Swap</div>
                       <div>• Built community of 2,000+ early adopters</div>
                       <div>• Implemented basic governance voting mechanism</div>
-                      <div>• Smart contract security issue d</div>
+                      <div>• Smart contract security issue discovered</div>
                     </div>
                   </div>
                 </div>
@@ -102,7 +107,6 @@ const Roadmap = () => {
                       <div>• Released v2 with rebrand to DeHub</div>
                       <div>• Started full app rebuild using React Native for better cross-platform support</div>
                       <div>• Airdropped all holders automatically</div>
-                      
                       <div>• Addressed security vulnerabilities from v1</div>
                       <div>• Expanded team to 15 members across 3 time zones</div>
                     </div>
@@ -125,7 +129,7 @@ const Roadmap = () => {
                       <div>• Released prediction and raffle games</div>
                       <div>• Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP</div>
                       <div>• Discovered listing agent was fraudulent, stole our fundraise and dumped our chart instead of 
-                        <span className="block ml-4">airdropping Gate users, Gate investigated and apologised but could </span>
+                        <span className="block ml-4">airdropping Gate users, Gate investigated and apologised but could</span>
                       </div>
                       <div>• Implemented game mechanics with provably fair randomization</div>
                       <div>• Community grew to 8,000+ active members</div>
@@ -212,7 +216,7 @@ const Roadmap = () => {
                       <div>• Incorporated DeLabs LTD with proper legal structure and compliance</div>
                       <div>• Acquired $1,000,000 home for largest crypto raffle ever (15,000+ participants)</div>
                       <div>• Secured power of attorney for multiple islands and sea front strip in Palawan worth over $15,000,000 
-                        <span className="block ml-2">in an attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC</span>
+                        <span className="block ml-4">in an attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC</span>
                       </div>
                       <div>• Established partnerships with real estate and legal firms</div>
                       <div>• Created transparent raffle mechanics with on-chain verification</div>
@@ -273,8 +277,6 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Alpha launch of complete d'app integrating all ecosystem components</div>
                       <div>• Released tokenised uploads with onchain ad revenue sharing (creators earning 90%)</div>
-                      
-                      
                       <div>• Commenced advanced analytics dashboard for creators</div>
                       <div>• Commenced automated content optimization using AI</div>
                     </div>
@@ -294,13 +296,10 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      
                       <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies 
                         <span className="block ml-4">in a vote based system backed by Sony, Samsung and other industry giants.</span>
                       </div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
-                      
-                      
                       <div>• Patent applications commenced for core streaming technology and watch2earn mechanics</div>
                     </div>
                   </div>
@@ -344,9 +343,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Voluntary delisting from Gate.io to prioritize decentralization</div>
                       <div>• Commitment to transparency with all DEX policy implementation</div>
-                      <div></div>
                       <div>• Implemented automated liquidity provision strategies</div>
-                      
                       <div>• Published full transparency reports showing all protocol metrics</div>
                     </div>
                   </div>
@@ -385,8 +382,6 @@ const Roadmap = () => {
                       <div>• Listed DHB on Eth mainnet</div>
                       <div>• Raised $1,000,000 for adult fork BJ (now fan.site) from tier-1 investors</div>
                       <div>• Implemented Layer 2 scaling solutions reducing user costs by 90%</div>
-                      
-                      
                       <div>• Established Base ecosystem partnerships with 15+ protocols</div>
                     </div>
                   </div>
@@ -406,11 +401,9 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Listed $DHB on Base L2</div>
-                      <div>• Dubai event expanded Middle East presence w</div>
+                      <div>• Dubai event expanded Middle East presence</div>
                       <div>• Opened TikTok agency in partnership with TikTok execs directly</div>
                       <div>• Established creator partnerships in 15 countries</div>
-                      <div></div>
-                      
                     </div>
                   </div>
                 </div>
@@ -431,9 +424,6 @@ const Roadmap = () => {
                       <div>• Completed major app rebrand with 95% positive user feedback</div>
                       <div>• Released trailer for Last Chad Standing (first ever MMA battle royale) with 1M+ views</div>
                       <div>• Redesigned user interface & back end speed by 200%</div>
-                      <div></div>
-                      <div></div>
-                      <div></div>
                     </div>
                   </div>
                 </div>
@@ -453,10 +443,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Released onchain tradable subscriptions</div>
                       <div>• Agency grew to UK #1 with 1,000 live streamers signed exclusively</div>
-                      
                       <div>• Built automated revenue distribution system for creators</div>
-                      
-                      
                     </div>
                   </div>
                 </div>
@@ -587,6 +574,8 @@ const Roadmap = () => {
           </p>
         </CardContent>
       </Card>
-    </div>;
+    </div>
+  );
 };
+
 export default Roadmap;
