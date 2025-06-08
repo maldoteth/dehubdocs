@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
-
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
   const getStatusColor = (status: string) => {
@@ -292,13 +291,11 @@ const Roadmap = () => {
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       
-                      <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies 
-                        <span className="block ml-2">in a vote based system backed by Sony, Samsung and other industry giants.</span>
-                      </div>
+                      <div>• Secured backing from Sony and Samsung innovation funds ($2M+ combined)</div>
                       <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
                       
                       
-                      <div>• Patent applications commenced for core streaming technology and watch2earn mechanics</div>
+                      <div>• Patent applications commenced for core streaming technology</div>
                     </div>
                   </div>
                 </div>
@@ -344,7 +341,7 @@ const Roadmap = () => {
                       <div>• Achieved 100% decentralized trading across 5 major DEXes</div>
                       <div>• Implemented automated liquidity provision strategies</div>
                       <div>• Community treasury grew to $5M+ through DEX trading fees</div>
-                      <div>• Published full transparency reports showing all protocol metrics</div>
+                      
                     </div>
                   </div>
                 </div>
