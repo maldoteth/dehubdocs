@@ -159,11 +159,12 @@ const Dapp = () => {
           </h2>
           
           <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg border border-purple-200 mb-6">
-            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Revolutionary Content Ownership Model</h3>
+            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Revolutionary ERC-1155 Content Tokenisation</h3>
             <p className="text-royal-blue/80 leading-relaxed font-exo">
-              DeHub introduces the first-ever fractionalised content ownership system, allowing creators to split ownership of their uploads 
-              into tradeable shares. This revolutionary approach transforms content into liquid assets while maintaining creator control 
-              and enabling community-driven monetization strategies.
+              Every upload and livestream on DeHub automatically mints an ERC-1155 NFT fractionalised into exactly 1,000 pieces. 
+              Creators have complete control over how many fractions to sell or keep, creating a novel monetisation model where 
+              fans can invest in content they believe will succeed - essentially "betting" on the future of potential stars through 
+              a revolutionary form of fan tokens.
             </p>
           </div>
 
@@ -172,16 +173,16 @@ const Dapp = () => {
               <CardHeader className="pb-3">
                 <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
                   <TrendingUp className="w-4 h-4" />
-                  Fractional Ownership
+                  Automatic Fractionalisation
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-purple-700 space-y-2 font-exo">
-                  <li>• Split content ownership into tradeable shares</li>
-                  <li>• Set custom ownership percentages</li>
-                  <li>• Automatic revenue distribution to shareholders</li>
-                  <li>• Secondary market trading capabilities</li>
-                  <li>• Community-driven content promotion</li>
+                  <li>• Every upload/stream mints ERC-1155 NFT</li>
+                  <li>• Automatically split into 1,000 fractions</li>
+                  <li>• Instant tokenisation on content creation</li>
+                  <li>• No additional setup required</li>
+                  <li>• Seamless blockchain integration</li>
                 </ul>
               </CardContent>
             </Card>
@@ -190,16 +191,16 @@ const Dapp = () => {
               <CardHeader className="pb-3">
                 <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
                   <Coins className="w-4 h-4" />
-                  Revenue Sharing
+                  Creator Control
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-blue-700 space-y-2 font-exo">
-                  <li>• Proportional earnings based on ownership</li>
-                  <li>• Instant distribution via smart contracts</li>
-                  <li>• Multiple revenue streams included</li>
-                  <li>• Transparent on-chain accounting</li>
-                  <li>• No intermediary fees or delays</li>
+                  <li>• Choose how many fractions to sell</li>
+                  <li>• Retain control over distribution</li>
+                  <li>• Set custom pricing strategies</li>
+                  <li>• Decide release timing</li>
+                  <li>• Maintain creative ownership</li>
                 </ul>
               </CardContent>
             </Card>
@@ -207,46 +208,55 @@ const Dapp = () => {
             <Card className="border-green-200 bg-green-50">
               <CardHeader className="pb-3">
                 <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
-                  <Network className="w-4 h-4" />
-                  Community Investment
+                  <Infinity className="w-4 h-4" />
+                  Eternal Revenue
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-green-700 space-y-2 font-exo">
-                  <li>• Fans can invest in creator success</li>
-                  <li>• Aligned incentives for promotion</li>
-                  <li>• Democratic content decision making</li>
-                  <li>• Shared risk and reward model</li>
-                  <li>• Building loyal investor communities</li>
+                  <li>• Content earns ad revenue for life</li>
+                  <li>• Permissionless residual income</li>
+                  <li>• Censorship-resistant earnings</li>
+                  <li>• No ongoing value creation required</li>
+                  <li>• Passive income for all eternity</li>
                 </ul>
               </CardContent>
             </Card>
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">How Fractionalised Uploads Work</h3>
+            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Revolutionary Fan Investment Model</h3>
+            
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200 mb-6">
+              <h4 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Betting on Future Stars</h4>
+              <p className="text-royal-blue/80 leading-relaxed font-exo">
+                DeHub creates the first platform where fans can financially invest in creators they believe will become successful. 
+                By purchasing fractions of content NFTs, supporters become stakeholders in a creator's journey, earning returns 
+                when their chosen creators achieve success through ad revenue, tips, and other monetisation streams.
+              </p>
+            </div>
             
             <div className="grid gap-6 md:grid-cols-2">
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
                     <Settings className="w-5 h-5" />
-                    For Creators
+                    How Fractionalisation Works
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Upload & Fractionalise</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Choose to split your content ownership when uploading. Set the percentage you want to keep and how many shares to make available for purchase.</p>
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">1. Automatic Minting</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Every piece of content instantly becomes an ERC-1155 NFT split into exactly 1,000 tradeable fractions.</p>
                     </div>
                     <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Pricing Strategy</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Set initial share prices and decide whether to use fixed pricing, bonding curves, or auction mechanisms for maximum value discovery.</p>
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">2. Creator Decision</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Creators choose how many of their 1,000 fractions to sell, keep, or distribute to their community.</p>
                     </div>
                     <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Maintain Control</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Retain creative control while benefiting from community investment. Shareholders earn from success but don't control content decisions.</p>
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">3. Fan Investment</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Supporters purchase fractions, becoming stakeholders who earn proportional returns from all revenue streams.</p>
                     </div>
                   </div>
                 </CardContent>
@@ -256,22 +266,22 @@ const Dapp = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
                     <Users className="w-5 h-5" />
-                    For Investors
+                    Benefits for All Parties
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Purchase Shares</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Buy fractional ownership in content you believe will perform well. Support creators while potentially earning returns on successful content.</p>
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">For Creators</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Instant monetisation, community funding, aligned incentives, and lifetime passive income from successful content.</p>
                     </div>
                     <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Earn Revenue</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Receive proportional earnings from tips, PPV purchases, ad revenue, and any other monetization streams the content generates.</p>
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">For Fans</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Financial upside from supporting rising stars, tradeable assets, and direct participation in creator success.</p>
                     </div>
                     <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Trade Positions</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Buy and sell shares on secondary markets, allowing you to take profits early or exit positions if content performance changes.</p>
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">For Everyone</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Censorship-resistant, permissionless system that creates value for all participants without platform dependency.</p>
                     </div>
                   </div>
                 </CardContent>
@@ -282,52 +292,61 @@ const Dapp = () => {
           <div className="mt-8">
             <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">SocialFi Platform Comparison</h3>
             
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 p-6 rounded-lg border border-amber-200 mb-6">
+              <h4 className="text-xl font-semibold text-royal-blue mb-3 font-exo">The Key Difference: Residual vs. Active Value Creation</h4>
+              <p className="text-royal-blue/80 leading-relaxed font-exo">
+                Unlike other SocialFi platforms where creators must continuously add value for their tokens, shares, or keys to maintain worth, 
+                DeHub content generates residual income for life. Once created, content earns ad revenue permanently - providing passive, 
+                permissionless, censorship-resistant income for all eternity without requiring ongoing creator effort.
+              </p>
+            </div>
+            
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-slate-300 bg-white rounded-lg">
                 <thead>
                   <tr className="bg-slate-50">
                     <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Platform</th>
                     <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Content Model</th>
-                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Ownership</th>
-                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Revenue Sharing</th>
-                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Key Innovation</th>
+                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Value Creation Requirement</th>
+                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Revenue Model</th>
+                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Ownership Structure</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="border border-slate-300 p-3 font-semibold text-royal-blue font-exo">DeHub</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Fractionalised content ownership with tradeable shares</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Split between creator & community investors</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Automatic proportional distribution to all shareholders</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">First fractionalised content platform</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">ERC-1155 fractionalised into 1,000 pieces per upload</td>
+                    <td className="border border-slate-300 p-3 text-green-700 font-exo font-semibold">NONE - Residual income for life</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Eternal ad revenue + tips + PPV</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator controls fraction distribution</td>
                   </tr>
                   <tr className="bg-slate-25">
                     <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Friend.tech</td>
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">Social keys for access to creator chats</td>
+                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Continuous engagement required</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Key trading fees, creator keeps chat revenue</td>
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns content, users own access keys</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator keeps revenue, key holders speculate</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Bonding curve key pricing</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Lens Protocol</td>
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">NFT-based social graph with follows/posts</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Users own their social graph via NFTs</td>
+                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Active posting and community building</td>
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator retains all content revenue</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Portable social connections</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Users own their social graph via NFTs</td>
                   </tr>
                   <tr className="bg-slate-25">
                     <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">OnlyFans</td>
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">Subscription-based premium content</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns all content and subscribers</td>
+                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Constant new content creation required</td>
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">80% to creator, 20% platform fee</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Adult content focus, high creator cuts</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns all content and subscribers</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Patreon</td>
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">Subscription tiers for creator support</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns content, platform controls distribution</td>
+                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Regular content delivery to maintain subs</td>
                     <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator keeps 90-95%, platform takes 5-10%</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Recurring creator funding model</td>
+                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns content, platform controls distribution</td>
                   </tr>
                 </tbody>
               </table>
@@ -337,32 +356,32 @@ const Dapp = () => {
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <Card className="border-green-200 bg-green-50">
               <CardHeader>
-                <CardTitle className="text-green-800 font-exo">DeHub Advantages</CardTitle>
+                <CardTitle className="text-green-800 font-exo">DeHub Unique Advantages</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-green-700 space-y-2 font-exo">
-                  <li>• <strong>True Content Investment:</strong> Buy shares in actual content, not just access</li>
-                  <li>• <strong>Aligned Incentives:</strong> Shareholders motivated to promote content success</li>
-                  <li>• <strong>Liquid Markets:</strong> Trade content shares anytime on secondary markets</li>
-                  <li>• <strong>Multiple Revenue Streams:</strong> Shares earn from tips, PPV, ads, and more</li>
-                  <li>• <strong>Creator Control:</strong> Maintain creative control while raising community capital</li>
-                  <li>• <strong>Transparent Distribution:</strong> On-chain revenue sharing with no hidden fees</li>
+                  <li>• <strong>Set and Forget:</strong> Content earns revenue forever without additional work</li>
+                  <li>• <strong>Fan Investment:</strong> Supporters financially benefit from creator success</li>
+                  <li>• <strong>Automatic Tokenisation:</strong> Every upload becomes a tradeable asset</li>
+                  <li>• <strong>Censorship Resistance:</strong> Blockchain-based ownership and revenue</li>
+                  <li>• <strong>Creator Control:</strong> Full control over fraction distribution strategy</li>
+                  <li>• <strong>Permissionless:</strong> No platform dependency for earnings</li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card className="border-blue-200 bg-blue-50">
               <CardHeader>
-                <CardTitle className="text-blue-800 font-exo">Use Cases</CardTitle>
+                <CardTitle className="text-blue-800 font-exo">Revolutionary Use Cases</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-blue-700 space-y-2 font-exo">
-                  <li>• <strong>Viral Content Betting:</strong> Invest early in content you think will go viral</li>
-                  <li>• <strong>Creator Funding:</strong> Raise capital for expensive productions through pre-sales</li>
-                  <li>• <strong>Fan Investment:</strong> Loyal fans can financially benefit from creator success</li>
-                  <li>• <strong>Content Promotion:</strong> Shareholders naturally become content ambassadors</li>
-                  <li>• <strong>Risk Distribution:</strong> Creators share financial risk with community</li>
-                  <li>• <strong>Portfolio Building:</strong> Build diversified content investment portfolios</li>
+                  <li>• <strong>Early Talent Investment:</strong> Discover and invest in rising creators</li>
+                  <li>• <strong>Content Portfolio Building:</strong> Diversify across multiple creators</li>
+                  <li>• <strong>Creator Funding:</strong> Raise capital for productions through fraction sales</li>
+                  <li>• <strong>Fan Loyalty Rewards:</strong> Give fractions to top supporters</li>
+                  <li>• <strong>Viral Content Betting:</strong> Speculate on which content will succeed</li>
+                  <li>• <strong>Passive Income Streams:</strong> Earn from successful content forever</li>
                 </ul>
               </CardContent>
             </Card>
@@ -374,10 +393,10 @@ const Dapp = () => {
               The Future of Content Economics
             </h4>
             <p className="text-royal-blue/80 leading-relaxed font-exo">
-              DeHub's fractionalised content model represents the evolution of creator economics from simple patronage to true 
-              investment partnerships. By aligning creator and community incentives through shared ownership, we're creating 
-              the first platform where content success directly benefits everyone involved - not just the platform and creator, 
-              but the entire community that helps make content successful.
+              DeHub's ERC-1155 fractionalised content model represents the evolution from temporary creator-fan relationships to 
+              permanent economic partnerships. By automatically tokenising every upload into 1,000 tradeable fractions, we're creating 
+              the first platform where content success directly and permanently benefits everyone involved - creators, fans, and investors - 
+              for all eternity, without requiring ongoing effort or platform dependency.
             </p>
           </div>
         </section>
