@@ -18,7 +18,7 @@ const Dapp = () => {
     { badge: "Tiger Shark Badge", threshold: "3m+ $DHB", fee: "3.79%", color: "bg-slate-600", image: "/lovable-uploads/6be493f1-51b4-481b-9ca1-340c030b2ef8.png" },
     { badge: "Killer Whale Badge", threshold: "5m+ $DHB", fee: "3.10%", color: "bg-gray-900", image: "/lovable-uploads/fcc288eb-67d7-49a0-b561-94bb5d1b8896.png" },
     { badge: "Great White Shark Badge", threshold: "10m+ $DHB", fee: "2.41%", color: "bg-blue-800", image: "/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png" },
-    { badge: "Blue Whale Badge", threshold: "25m+ $DHB", fee: "1.72%", color: "bg-indigo-700", image: "/lovable-uploads/7f234add-b739-40e4-b315-e712af2be68d.png" },
+    { badge: "Blue Whale Badge", threshold: "25m+ $DHB", fee: "1.72%", color: "bg-indigo-700", image: "/lovable-uploads/bc6b4bb7-aa43-4015-adb0-194568cc0858.png" },
     { badge: "Megalodon Badge", threshold: "50m+ $DHB", fee: "1.00%", color: "bg-purple-800", image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png" }
   ];
 
