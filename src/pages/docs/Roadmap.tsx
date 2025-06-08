@@ -318,10 +318,7 @@ const Roadmap = () => {
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Created transparent raffle mechanics with on-chain verification</span>
                       </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Achieved regulatory compliance in 5 jurisdictions</span>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
