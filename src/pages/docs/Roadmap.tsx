@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -61,7 +60,6 @@ const Roadmap = () => {
                       <div>• Assembled core development team</div>
                       <div>• Conducted 50+ user interviews to validate product-market fit</div>
                       <div>• Established basic content moderation framework</div>
-                      <div>• Implemented core streaming infrastructure on AWS</div>
                     </div>
                   </div>
                 </div>
