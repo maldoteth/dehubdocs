@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -534,6 +535,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div>• Release live stream keys so users can stream on multiple apps simultaneously</div>
                       <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
                       <div>• App Store re-listing with enhanced features and improved compliance</div>
                       <div>• DePIN (Decentralized Physical Infrastructure Network) phase 2 release</div>
