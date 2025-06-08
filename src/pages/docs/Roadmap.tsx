@@ -519,7 +519,10 @@ const Roadmap = () => {
                       <div>• Implemented comprehensive creator education curriculum</div>
                       <div>• Built automated content quality scoring using AI</div>
                       <div>• Established creator mentorship network spanning 25 countries</div>
-                      <div>• Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly in-app and use instantly with free gas</div>
+                      <div className="pl-0">
+                        • Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly 
+                        <span className="block pl-2">in-app and use instantly with free gas</span>
+                      </div>
                     </div>
                   </div>
                 </div>
