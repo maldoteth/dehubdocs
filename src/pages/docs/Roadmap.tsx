@@ -124,7 +124,7 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div>• Released prediction and raffle games</div>
                       <div>• Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP</div>
-                      <div>• Discovered listing agent was fraudulent - learned valuable due diligence lessons</div>
+                      <div>• Discovered listing agent was fraudulent, stole our fundraise and dumped our chart instead of airdropping Gate users, Gate investigated and apologised but could </div>
                       <div>• Implemented game mechanics with provably fair randomization</div>
                       <div>• Community grew to 8,000+ active members</div>
                     </div>
