@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -537,7 +536,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Raised $1,000,000 for adult fork BJ (now fan.site)</span>
+                        <span>Raised $1,000,000 for adult fork BJ (now fan.site) from VCs, Launchpads & Public Sales.</span>
                       </div>
                     </div>
                   </div>
