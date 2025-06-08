@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -722,7 +723,11 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Revamped main app feed, revealed audio replies and live talk spaces </span>
+                        <span>Revamped main app feed, revealed audio replies and live talk spaces </span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Final snapshot for Last Chad Standing game airdrop, for both holders and stakers</span>
                       </div>
                     </div>
                   </div>
