@@ -165,7 +165,7 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released arcade with 5 initial games including poker and predictions</div>
+                      <div>• Released arcade with 5 initial games including Super Robin Hood and Tomb Runner and predictions</div>
                       <div>• Achieved 5,000+ monthly active gamers</div>
                       <div>• Implemented blockchain-based leaderboards and rewards</div>
                       <div>• Introduced social features allowing friend challenges</div>
