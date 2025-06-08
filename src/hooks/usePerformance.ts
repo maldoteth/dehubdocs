@@ -9,10 +9,11 @@ export const usePerformance = () => {
       const observer = new PerformanceObserver((list) => {
         list.getEntries().forEach((entry) => {
           if (entry.entryType === 'navigation') {
+            const navEntry = entry as PerformanceNavigationTiming;
             console.log('Navigation timing:', {
-              domContentLoaded: entry.domContentLoadedEventEnd - entry.domContentLoadedEventStart,
-              loadComplete: entry.loadEventEnd - entry.loadEventStart,
-              totalTime: entry.loadEventEnd - entry.fetchStart,
+              domContentLoaded: navEntry.domContentLoadedEventEnd - navEntry.domContentLoadedEventStart,
+              loadComplete: navEntry.loadEventEnd - navEntry.loadEventStart,
+              totalTime: navEntry.loadEventEnd - navEntry.fetchStart,
             });
           }
         });
