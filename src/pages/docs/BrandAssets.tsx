@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Download, Image, FileText, Package } from 'lucide-react';
+
 const BrandAssets = () => {
   const handleDownload = (imagePath: string, filename: string) => {
     const link = document.createElement('a');
@@ -11,6 +12,7 @@ const BrandAssets = () => {
     link.click();
     document.body.removeChild(link);
   };
+
   const logoAssets = [{
     id: 1,
     name: "DeHub Logo - Full",
@@ -26,7 +28,9 @@ const BrandAssets = () => {
     filename: "dehub-logo-alternative.png",
     type: "PNG"
   }];
-  return <div className="space-y-8">
+
+  return (
+    <div className="space-y-8">
       {/* Header */}
       <div className="space-y-4">
         <h1 className="text-4xl font-bold text-slate-900">Brand Assets</h1>
@@ -109,8 +113,10 @@ const BrandAssets = () => {
                 For SVG, EPS, and other vector formats, or if you need assets not shown here, 
                 please contact our brand team.
               </p>
-              <Button variant="outline">
-                Contact Brand Team
+              <Button variant="outline" asChild>
+                <a href="mailto:marketing@dehub.net">
+                  Contact Brand Team
+                </a>
               </Button>
             </div>
           </div>
@@ -122,6 +128,8 @@ const BrandAssets = () => {
         
         
       </Card>
-    </div>;
+    </div>
+  );
 };
+
 export default BrandAssets;
