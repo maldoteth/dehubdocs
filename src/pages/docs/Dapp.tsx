@@ -2,7 +2,7 @@ import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Video, Coins, Shield, Users, Settings, Eye, Zap } from 'lucide-react';
+import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock } from 'lucide-react';
 const Dapp = () => {
   return <div className="space-y-8">
       {/* Header */}
@@ -453,6 +453,213 @@ const Dapp = () => {
             </div>
           </CardContent>
         </Card>
+
+        {/* New Subscriptions Section */}
+        <section className="mt-12">
+          <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+            <Crown className="w-8 h-8" />
+            Subscriptions
+          </h2>
+          
+          <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border border-purple-200 mb-6">
+            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Revolutionary On-Chain Subscriptions</h3>
+            <p className="text-royal-blue/80 leading-relaxed font-exo">
+              DeHub is the first protocol to release fully on-chain subscriptions, transforming how creators monetize their content 
+              and build communities. Our subscription system combines the benefits of traditional creator subscriptions with the power 
+              of blockchain technology, creating tradeable subscription NFTs and unprecedented creator-subscriber relationships.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
+            <Card className="border-purple-200 bg-purple-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                  <Crown className="w-4 h-4" />
+                  Creator Control
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-purple-700 space-y-2 font-exo">
+                  <li>• Set custom pricing for each tier</li>
+                  <li>• Define unique perks and benefits</li>
+                  <li>• Control subscription availability</li>
+                  <li>• Manage tier-specific content access</li>
+                  <li>• Track subscriber analytics</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-blue-200 bg-blue-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                  <Zap className="w-4 h-4" />
+                  NFT Integration
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-blue-700 space-y-2 font-exo">
+                  <li>• Automatic NFT minting on purchase</li>
+                  <li>• Tradeable subscription assets</li>
+                  <li>• Secondary market liquidity</li>
+                  <li>• Proof of subscription ownership</li>
+                  <li>• Collectible subscription history</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-green-200 bg-green-50">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
+                  <Lock className="w-4 h-4" />
+                  Exclusive Content
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm text-green-700 space-y-2 font-exo">
+                  <li>• Subscriber-only content uploads</li>
+                  <li>• Tier-based access control</li>
+                  <li>• Private group chats</li>
+                  <li>• Early access privileges</li>
+                  <li>• Premium community features</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">How It Works</h3>
+            
+            <div className="grid gap-6 md:grid-cols-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                    <Settings className="w-5 h-5" />
+                    For Creators
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Tier Creation</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Create multiple subscription tiers with custom pricing, limited availability, and unique perks tailored to different audience segments.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Content Management</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Upload subscriber-exclusive content, organize tier-specific materials, and manage access permissions with granular control.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Community Building</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Create dedicated group chats for different subscription tiers, fostering closer relationships with your most loyal supporters.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                    <Users className="w-5 h-5" />
+                    For Subscribers
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">NFT Ownership</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Receive a unique NFT upon subscription purchase that serves as proof of access and can be traded on secondary markets.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Exclusive Access</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Gain access to premium content, private community chats, and special perks based on your subscription tier level.</p>
+                    </div>
+                    <div className="p-3 bg-royal-blue/5 rounded-lg">
+                      <h4 className="font-semibold text-royal-blue font-exo mb-2">Tradeable Assets</h4>
+                      <p className="text-sm text-royal-blue/70 font-exo">Trade your subscription NFTs on secondary markets, potentially profiting from popular creator subscriptions or rare tier access.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Community Features</h3>
+            
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <Card className="border-indigo-200 bg-indigo-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-indigo-800 font-exo flex items-center gap-2">
+                    <MessageCircle className="w-4 h-4" />
+                    Tier-Based Chats
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-indigo-700 font-exo">
+                    Create separate group chats for different subscription tiers, allowing for exclusive discussions and closer community interaction based on support level.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-pink-200 bg-pink-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-pink-800 font-exo flex items-center gap-2">
+                    <Crown className="w-4 h-4" />
+                    Premium Perks
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-pink-700 font-exo">
+                    Offer exclusive perks like early access to content, private livestreams, personalized messages, merchandise discounts, and special recognition.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-amber-200 bg-amber-50">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg text-amber-800 font-exo flex items-center gap-2">
+                    <Eye className="w-4 h-4" />
+                    Subscriber Analytics
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-amber-700 font-exo">
+                    Track subscription metrics, engagement rates, tier performance, and community growth with comprehensive analytics and insights.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <Card className="mt-6 border-purple-200 bg-gradient-to-r from-purple-50 to-indigo-50">
+            <CardHeader>
+              <CardTitle className="text-royal-blue font-exo">Subscription Benefits</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <h4 className="font-semibold text-royal-blue font-exo mb-2">For Creators</h4>
+                  <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
+                    <li>• Predictable recurring revenue stream</li>
+                    <li>• Stronger community engagement</li>
+                    <li>• Premium content monetization</li>
+                    <li>• Direct subscriber relationships</li>
+                    <li>• NFT royalties from secondary sales</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-royal-blue font-exo mb-2">For Subscribers</h4>
+                  <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
+                    <li>• Exclusive content and community access</li>
+                    <li>• Tradeable subscription assets</li>
+                    <li>• Direct creator interaction</li>
+                    <li>• Investment potential through NFT trading</li>
+                    <li>• Supporting favorite creators directly</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
       </section>
     </div>;
 };
