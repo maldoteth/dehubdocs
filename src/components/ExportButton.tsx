@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Download, FileText, File } from 'lucide-react';
@@ -38,7 +37,7 @@ const ExportButton: React.FC<ExportButtonProps> = ({ format, className }) => {
   };
 
   const generateFullDocContent = async () => {
-    return `
+    const content = `
 DEHUB DOCUMENTATION
 ==================
 
@@ -325,9 +324,11 @@ This documentation is for informational purposes only and does not constitute fi
 DeHub is committed to regulatory compliance and works with legal experts to ensure adherence to applicable laws in all operating jurisdictions.
 
 Generated on: ${new Date().toLocaleString()}
-Total Pages: ${Math.ceil(arguments.length / 100) || 'Multiple'}
+Total Pages: ${Math.ceil(content.split('\n').length / 50)}
 Version: 1.0.0
     `.trim();
+    
+    return content;
   };
 
   const downloadTxt = (content: string) => {
