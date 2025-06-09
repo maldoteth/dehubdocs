@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -19,6 +17,9 @@ const DocsHome = () => {
       description: "This feature is currently under development and will be available soon."
     });
   };
+
+  // Last published date - update this when docs are updated
+  const lastPublishedDate = new Date('2024-06-09T14:30:00Z');
 
   const quickLinks = [{
     title: 'Basescan',
@@ -161,11 +162,11 @@ const DocsHome = () => {
       {/* Last Updated */}
       <div className="text-center pt-4 border-t border-sky-blue/20">
         <p className="text-sm text-royal-blue/60 font-exo">
-          Last updated: {new Date().toLocaleDateString('en-US', { 
+          Last updated: {lastPublishedDate.toLocaleDateString('en-US', { 
             year: 'numeric', 
             month: 'long', 
             day: 'numeric' 
-          })} at {new Date().toLocaleTimeString('en-US', { 
+          })} at {lastPublishedDate.toLocaleTimeString('en-US', { 
             hour12: false,
             hour: '2-digit',
             minute: '2-digit'
@@ -177,4 +178,3 @@ const DocsHome = () => {
 };
 
 export default DocsHome;
-
