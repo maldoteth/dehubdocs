@@ -884,10 +884,6 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Global content marketplace with instant cross-chain settlements</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
                         <span>Integration with IoT devices and smart home systems for seamless content delivery</span>
                       </div>
                       <div className="flex">
