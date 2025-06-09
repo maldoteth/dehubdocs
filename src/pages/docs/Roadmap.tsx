@@ -26,7 +26,7 @@ const Roadmap = () => {
           <TabsTrigger value="2023" className="text-sm">23</TabsTrigger>
           <TabsTrigger value="2024" className="text-sm">24</TabsTrigger>
           <TabsTrigger value="2025" className="text-sm">25</TabsTrigger>
-          <TabsTrigger value="2026" className="text-sm">26</TabsTrigger>
+          <TabsTrigger value="2026" className="text-sm">26+</TabsTrigger>
         </TabsList>
 
         {/* 2021 - Foundation Year */}
