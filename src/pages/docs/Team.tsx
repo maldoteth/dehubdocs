@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Users } from 'lucide-react';
+
 const teamMembers = [{
   name: 'Malik Jan',
   role: 'Co-Founder',
@@ -19,7 +20,7 @@ const teamMembers = [{
   photo: '/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png'
 }, {
   name: 'Mike Hales',
-  role: 'Co-founder & CEO',
+  role: 'Co-Founder',
   bio: "Founder and CEO of Rapz, a notable high end MMA fightwear brand backed by top UFC and boxing stars, with exclusive supplier rights to BKFC. Joint-owner of First Class, the UK's largest TikTok partner agency, approaching 1000 streamers signed on and reporting directly for the in-house executive team with offices in the UK and Asia.",
   experience: ["Selected by TikTok executives after 10 months of leading the UK charts with his live streams", "Digital and mixed martial artist behind the Lean Chad Fight Club and Rapz Sport", "Owner of the UK's leading cobra bag provider that recently merged with NGNE"],
   socials: [{
@@ -60,6 +61,7 @@ const teamMembers = [{
   initials: 'BY',
   photo: '/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png'
 }];
+
 export default function Team() {
   return <div className="space-y-12 px-4 py-8">
       {/* Header */}
