@@ -100,16 +100,6 @@ const DocsHome = () => {
             View API Reference
           </button>
         </div>
-
-        {/* Export Section */}
-        <div className="bg-plain-white/50 rounded-lg p-6 border border-sky-blue/20 mt-8">
-          <h3 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Export Documentation</h3>
-          <p className="text-royal-blue/70 mb-4 font-exo">Download the complete documentation for offline reading</p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <ExportButton format="pdf" />
-            <ExportButton format="txt" />
-          </div>
-        </div>
       </div>
 
       {/* Quick Links */}
@@ -169,6 +159,16 @@ const DocsHome = () => {
           Start Building
           <ArrowRight className="w-4 h-4 ml-2" />
         </Link>
+      </div>
+
+      {/* Export Section - Moved to bottom */}
+      <div className="bg-plain-white/50 rounded-lg p-6 border border-sky-blue/20">
+        <h3 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Export Documentation</h3>
+        <p className="text-royal-blue/70 mb-4 font-exo">Download the complete documentation for offline reading</p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <ExportButton format="pdf" />
+          <ExportButton format="txt" />
+        </div>
       </div>
 
       {/* Last Updated */}
