@@ -14,9 +14,7 @@ const Games = () => {
       <div className="space-y-8">
         {/* Introduction */}
         <div className="bg-plain-white/50 rounded-lg p-6 border border-sky-blue/20">
-          <p className="text-royal-blue/90 mb-4">
-            As a team full of gamers & streamers, we found a gap in the market that no one else is penetrating. Currently, billions of gamers world wide who enjoy free casual games have been overlooked by the web3 industry even though regular web2 arcades are turning over millions per month.
-          </p>
+          <p className="text-royal-blue/90 mb-4">As a team full of gamers & streamers, we built and released a number of fun, free arcade games and are working towards our first flagship game, Last Chad Standing, the first ever MMA Battle Royale, with a team heavily involved with UFC, Oktagon and PFL stars, having filmed documentaries with champs like Jorge Masvidal, and trained under Conor Mcgregor's Coac</p>
           <p className="text-royal-blue/90 mb-4">
             So we've built and released a barrier free, play and win to earn arcade full of classics and custom games that will compliment our more immersive gaming experiences years down the line.
           </p>
