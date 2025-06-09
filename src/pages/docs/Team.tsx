@@ -55,7 +55,7 @@ const teamMembers = [{
   name: 'Bailey Young',
   role: 'Co-Founder',
   bio: 'Operational powerhouse and former pro-gamer heavily connected across the gaming, music & entertainment scene.',
-  experience: ["Investments and tokenomics expert who played an instrumental role in the astronomic growth of DeHub in 2021", "Oversaw the Blocjerk fundraise of $1,000,000 in 2023 which gave a peak ROI of 1,000%", "Former professional gamer, ranking globally in the top 3 COD MW2 and top 100 on Warzone under the tag RickyBobby"],
+  experience: ["Investments and tokenomics expert who played an instrumental role in the astronomical growth of DeHub in 2021", "Oversaw the Blocjerk fundraise of $1,000,000 in 2023 which gave a peak ROI of 1,000%", "Former professional gamer, ranking globally in the top 3 COD MW2 and top 100 on Warzone under the tag RickyBobby"],
   socials: [],
   initials: 'BY',
   photo: '/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png'
