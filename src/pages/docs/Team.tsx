@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -8,7 +7,7 @@ const teamMembers = [{
   name: 'Malik Jan',
   role: 'Co-Founder',
   bio: "Founder of U.K registered Web3 developers DeLabs LTD and Co-founder of Puso group, a SEC licensed construction & development company in the Philippines.",
-  experience: ["Guide Dogs: Raised >$1m as fundraising manager with a team of 5-10 across multiple sectors", "Randstad: Senior consultant at $8bn dollar market cap and world's largest agency", "Blue Arrow: Biggest biller & award winning consultant at UK's largest agency with >600 staff & 70 offices nationwide. Producing personal net margins in excess of $10,000 per week & hiring thousands in the process with >100 full or part time staff at any one time", "ITS Construction: Sussex regional manager launching offices at leading UK construction agency with 20 offices nationwide"],
+  experience: ["Guide Dogs: Raised >$1m as fundraising manager with a team of 5-10 across multiple sectors", "Randstad: Senior consultant at $8bn dollar market cap and world's largest agency", "Blue Arrow: Biggest biller & award winning consultant at UK's largest agency with >600 staff & 70 offices nationwide. Producing personal net margins in excess of $10,000 per week & hiring thousands in the process with >100 full or part time staff at any one time", "ITS Construction: Sussex Regional Manager at leading UK construction agency. Built own office from scratch and turned 0 into $5k per week in less than 8 months, signed PSL with UK's most prestigous builder Berkeley Homes, won excslsuive supplier at $100bn Horsham project, Highwood."],
   socials: [{
     platform: 'LinkedIn',
     url: 'https://uk.linkedin.com/in/malik-jan-turkistani-842b4b195'
