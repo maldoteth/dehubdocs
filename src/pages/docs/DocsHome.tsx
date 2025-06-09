@@ -19,7 +19,7 @@ const DocsHome = () => {
   };
 
   // Last published date - update this when docs are updated
-  const lastPublishedDate = new Date('2024-06-09T14:30:00Z');
+  const lastPublishedDate = new Date();
 
   const quickLinks = [{
     title: 'Basescan',
