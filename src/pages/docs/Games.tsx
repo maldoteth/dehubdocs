@@ -14,7 +14,7 @@ const Games = () => {
       <div className="space-y-8">
         {/* Introduction */}
         <div className="bg-plain-white/50 rounded-lg p-6 border border-sky-blue/20">
-          <p className="text-royal-blue/90 mb-4">As a team full of gamers &amp; streamers, we built and released a number of fun, free arcade games and are working towards our first flagship game, Last Chad Standing, the first ever MMA Battle Royale, with a team heavily involved with UFC, Oktagon and PFL stars, having filmed documentaries with champs like Jorge Masvidal, and trained under Conor Mcgregor's Coach Kavannah.</p>
+          <p className="text-royal-blue/90 mb-4">As a team full of gamers &amp; streamers, we built and released a number of fun, free arcade games and are working towards our first flagship game, Last Chad Standing, the first ever MMA Battle Royale, with a team heavily involved with UFC, Oktagon and PFL stars, having filmed documentaries with champs like Jorge Masvidal, and trained under Conor Mcgregor's Coach Kavannah. The documentaries were also filmed by Luke Barnatt, the head of Andrew Tates War room and former UFC slugger, on Behalf of DeHub.</p>
           <p className="text-royal-blue/90 mb-4">
             So we've built and released a barrier free, play and win to earn arcade full of classics and custom games that will compliment our more immersive gaming experiences years down the line.
           </p>
