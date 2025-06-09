@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Download, FileText, File } from 'lucide-react';
@@ -37,7 +38,7 @@ const ExportButton: React.FC<ExportButtonProps> = ({ format, className }) => {
   };
 
   const generateFullDocContent = async () => {
-    const content = `
+    const baseContent = `
 DEHUB DOCUMENTATION
 ==================
 
@@ -323,10 +324,15 @@ This documentation is for informational purposes only and does not constitute fi
 
 DeHub is committed to regulatory compliance and works with legal experts to ensure adherence to applicable laws in all operating jurisdictions.
 
-Generated on: ${new Date().toLocaleString()}
-Total Pages: ${Math.ceil(content.split('\n').length / 50)}
-Version: 1.0.0
-    `.trim();
+Generated on: ${new Date().toLocaleString()}`;
+
+    // Calculate page count after content is created
+    const pageCount = Math.ceil(baseContent.split('\n').length / 50);
+    
+    // Add the page count to the final content
+    const content = baseContent + `
+Total Pages: ${pageCount}
+Version: 1.0.0`.trim();
     
     return content;
   };
