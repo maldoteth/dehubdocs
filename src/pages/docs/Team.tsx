@@ -61,56 +61,58 @@ const teamMembers = [{
   photo: '/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png'
 }];
 export default function Team() {
-  return <div className="space-y-8">
+  return <div className="space-y-12 px-4 py-8">
       {/* Header */}
-      <div className="text-center space-y-4">
+      <div className="text-center space-y-6">
         <div className="flex items-center justify-center space-x-2">
           <Users className="w-8 h-8 text-blue-600" />
           <h1 className="text-4xl font-bold text-slate-800">Team</h1>
         </div>
-        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+        <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
           Meet the innovative minds behind DeHub - a diverse team of entrepreneurs, 
           social media experts, and gaming professionals driving the future of decentralized entertainment.
         </p>
       </div>
 
       {/* Team Grid */}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-        {teamMembers.map((member, index) => <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-            <CardHeader className="text-center space-y-4">
-              <Avatar className="w-20 h-20 mx-auto">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
+        {teamMembers.map((member, index) => <Card key={index} className="hover:shadow-lg transition-shadow duration-300 h-full">
+            <CardHeader className="text-center space-y-6 pb-6">
+              <Avatar className="w-24 h-24 mx-auto">
                 {member.photo ? <AvatarImage src={member.photo} alt={member.name} className="object-cover" /> : null}
                 <AvatarFallback className="text-lg font-semibold bg-gradient-to-br from-blue-500 to-purple-600 text-white">
                   {member.initials}
                 </AvatarFallback>
               </Avatar>
-              <div>
-                <CardTitle className="text-xl">{member.name}</CardTitle>
-                <p className="text-blue-600 font-medium">{member.role}</p>
+              <div className="space-y-2">
+                <CardTitle className="text-2xl font-bold">{member.name}</CardTitle>
+                <p className="text-blue-600 font-semibold text-lg">{member.role}</p>
               </div>
             </CardHeader>
             
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-8 px-6 pb-6">
               {/* Bio */}
-              <p className="text-slate-700 leading-relaxed">{member.bio}</p>
+              <div className="space-y-3">
+                <p className="text-slate-700 leading-relaxed text-base">{member.bio}</p>
+              </div>
               
               {/* Experience */}
-              {member.experience && <div>
-                  <h4 className="font-semibold text-slate-800 mb-2">Experience:</h4>
-                  <ul className="space-y-2">
-                    {member.experience.map((exp, idx) => <li key={idx} className="text-sm text-slate-600 flex">
-                        <span className="text-blue-500 mr-2">•</span>
-                        <span>{exp}</span>
+              {member.experience && <div className="space-y-4">
+                  <h4 className="font-bold text-slate-800 text-lg border-b border-slate-200 pb-2">Experience</h4>
+                  <ul className="space-y-4">
+                    {member.experience.map((exp, idx) => <li key={idx} className="text-sm text-slate-600 flex leading-relaxed">
+                        <span className="text-blue-500 mr-3 mt-1 text-base">•</span>
+                        <span className="flex-1">{exp}</span>
                       </li>)}
                   </ul>
                 </div>}
               
               {/* Social Links */}
-              {member.socials.length > 0 && <div className="flex space-x-2 pt-4 border-t border-slate-200">
-                  {member.socials.map((social, idx) => <Button key={idx} variant="outline" size="sm" asChild>
-                      <a href={social.url} className="flex items-center space-x-1">
-                        <span>{social.platform}</span>
-                        <ExternalLink className="w-3 h-3" />
+              {member.socials.length > 0 && <div className="flex flex-wrap gap-3 pt-6 border-t border-slate-200">
+                  {member.socials.map((social, idx) => <Button key={idx} variant="outline" size="sm" asChild className="flex-1 min-w-0">
+                      <a href={social.url} className="flex items-center justify-center space-x-2">
+                        <span className="truncate">{social.platform}</span>
+                        <ExternalLink className="w-3 h-3 flex-shrink-0" />
                       </a>
                     </Button>)}
                 </div>}
