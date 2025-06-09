@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -154,6 +155,17 @@ const DocsHome = () => {
           Start Building
           <ArrowRight className="w-4 h-4 ml-2" />
         </Link>
+      </div>
+
+      {/* Last Updated */}
+      <div className="text-center pt-4 border-t border-sky-blue/20">
+        <p className="text-sm text-royal-blue/60 font-exo">
+          Last updated: {new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+          })}
+        </p>
       </div>
     </div>
   );
