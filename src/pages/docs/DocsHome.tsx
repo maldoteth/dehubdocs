@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -164,6 +165,10 @@ const DocsHome = () => {
             year: 'numeric', 
             month: 'long', 
             day: 'numeric' 
+          })} at {new Date().toLocaleTimeString('en-US', { 
+            hour12: false,
+            hour: '2-digit',
+            minute: '2-digit'
           })}
         </p>
       </div>
@@ -172,3 +177,4 @@ const DocsHome = () => {
 };
 
 export default DocsHome;
+
