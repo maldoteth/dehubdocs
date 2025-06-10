@@ -3,7 +3,6 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Coins, Lock, TrendingUp, Users, Zap, Shield, ExternalLink } from 'lucide-react';
-
 const TokenStake = () => {
   return <div className="space-y-8">
       <div>
@@ -207,12 +206,12 @@ const TokenStake = () => {
           <ul className="space-y-2 text-royal-blue/80">
             <li>• PPV Uploads</li>
             <li>• Subscription fees</li>
-            <li>• Token & NFT trading fees</li>
+            <li>• Token & NFT trading fees</li>
             <li>• Partner launches and airdrops</li>
-            <li>• Advertising in-app with POVR innovations</li>
+            <li>• IRL & VR Event NFTicket Sales</li>
             <li>• Trading & Technical fees on all DEXs</li>
-            <li>• Promotional partners on gaming and streaming d'apps</li>
-            <li>• Affiliate and referral programmes at High Street Onboarding Stores</li>
+            <li></li>
+            <li></li>
           </ul>
         </CardContent>
       </Card>
