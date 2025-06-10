@@ -205,9 +205,9 @@ const TokenStake = () => {
           <h4 className="font-semibold text-royal-blue mb-3">Fee Sources:</h4>
           <ul className="space-y-2 text-royal-blue/80">
             <li>• Fees from in app services like subscriptions, PPV, Watch2Earn, paid DMs and more.</li>
-            <li>• DeHub premium, ad free usage & access to AI toolkits</li>
+            <li>• DeHub premium: ad free usage & access to AI toolkits via monthly / annual fees.</li>
             <li>• Token & NFT primary sales & secondary trading fees.</li>
-            <li>• Advertising across video, lives & scroll feeds</li>
+            <li>• Advertising across video, lives & scroll feeds.</li>
             <li>• Partner launches and airdrops.</li>
             <li></li>
             <li></li>
