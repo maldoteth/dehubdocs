@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
@@ -44,7 +43,6 @@ const AdvertisingPricing = () => {
                   <TableHead>Holdings Required</TableHead>
                   <TableHead>CPM Rate</TableHead>
                   <TableHead>Multiplier</TableHead>
-                  <TableHead>Audience Type</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -74,15 +72,6 @@ const AdvertisingPricing = () => {
                     </TableCell>
                     <TableCell>
                       <span className="text-sm text-muted-foreground">{tier.multiplier}</span>
-                    </TableCell>
-                    <TableCell>
-                      <span className="text-sm">
-                        {index === 0 ? "General users" :
-                         index < 4 ? "Entry-level investors" :
-                         index < 8 ? "Serious investors" :
-                         index < 11 ? "High-value users" :
-                         "Whale-tier investors"}
-                      </span>
                     </TableCell>
                   </TableRow>
                 ))}
