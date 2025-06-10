@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -9,8 +8,8 @@ import { Calculator, TrendingUp, Users, Eye } from 'lucide-react';
 
 const BudgetCalculator = () => {
   const [budget, setBudget] = useState(1000);
-  const [targetTiers, setTargetTiers] = useState([2, 8]); // Range from tier 2 to 8
-  const [campaignDuration, setCampaignDuration] = useState(7);
+  const [targetTiers, setTargetTiers] = useState([0, 0]); // Changed from [2, 8] to [0, 0]
+  const [campaignDuration, setCampaignDuration] = useState(0); // Changed from 7 to 0
 
   const badgeTiers = [
     { name: 'No Badge', cpm: 2.50, audience: 500000 },
@@ -77,12 +76,12 @@ const BudgetCalculator = () => {
                     value={[campaignDuration]}
                     onValueChange={(value) => setCampaignDuration(value[0])}
                     max={30}
-                    min={1}
+                    min={0}
                     step={1}
                     className="w-full"
                   />
                   <div className="flex justify-between text-sm text-muted-foreground mt-1">
-                    <span>1 day</span>
+                    <span>0 days</span>
                     <span className="font-semibold">{campaignDuration} days</span>
                     <span>30 days</span>
                   </div>
@@ -101,11 +100,11 @@ const BudgetCalculator = () => {
                     className="w-full"
                   />
                   <div className="flex justify-between text-sm text-muted-foreground mt-1">
-                    <span>{badgeTiers[targetTiers[0]]?.name}</span>
+                    <span>{badgeTiers[targetTiers[0]]?.name || 'No Badge'}</span>
                     <span className="font-semibold">
                       {selectedTiers.length} tiers selected
                     </span>
-                    <span>{badgeTiers[targetTiers[1]]?.name}</span>
+                    <span>{badgeTiers[targetTiers[1]]?.name || 'No Badge'}</span>
                   </div>
                 </div>
               </div>
