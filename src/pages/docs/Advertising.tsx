@@ -1,8 +1,12 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Eye, Shield, TrendingUp, Users, Zap, Star, ExternalLink } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Eye, Shield, TrendingUp, Users, Zap, Star, ExternalLink, BarChart3, Target, Calculator } from 'lucide-react';
 import AdvertisingPricing from '@/components/AdvertisingPricing';
+import CampaignCreator from '@/components/advertising/CampaignCreator';
+import CampaignAnalytics from '@/components/advertising/CampaignAnalytics';
+import BudgetCalculator from '@/components/advertising/BudgetCalculator';
 
 const Advertising = () => {
   return (
@@ -89,6 +93,48 @@ const Advertising = () => {
       </Card>
 
       <AdvertisingPricing />
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center space-x-2">
+            <BarChart3 className="w-5 h-5 text-middle-blue" />
+            <span>Advertiser Dashboard Preview</span>
+          </CardTitle>
+          <CardDescription>
+            Experience the POVR advertising platform from an advertiser's perspective. This interactive preview shows the tools and analytics available to companies advertising on DeHub.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Tabs defaultValue="creator" className="w-full">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="creator" className="flex items-center gap-2">
+                <Target className="w-4 h-4" />
+                Campaign Creator
+              </TabsTrigger>
+              <TabsTrigger value="analytics" className="flex items-center gap-2">
+                <BarChart3 className="w-4 h-4" />
+                Analytics
+              </TabsTrigger>
+              <TabsTrigger value="calculator" className="flex items-center gap-2">
+                <Calculator className="w-4 h-4" />
+                Budget Calculator
+              </TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="creator" className="mt-6">
+              <CampaignCreator />
+            </TabsContent>
+            
+            <TabsContent value="analytics" className="mt-6">
+              <CampaignAnalytics />
+            </TabsContent>
+            
+            <TabsContent value="calculator" className="mt-6">
+              <BudgetCalculator />
+            </TabsContent>
+          </Tabs>
+        </CardContent>
+      </Card>
 
       <Card className="bg-gradient-to-br from-middle-blue/10 to-royal-blue/5 border-middle-blue/20">
         <CardContent className="p-8 text-center space-y-6">
