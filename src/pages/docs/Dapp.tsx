@@ -1303,10 +1303,76 @@ const Dapp = () => {
           </section>
 
           <section className="mt-12">
-            <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
-              <Percent className="w-8 h-8" />
-              Fee Tier System
-            </h2>
+            <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo">SuperPowers</h2>
+            
+            <div className="space-y-6">
+              <p className="text-lg text-gray-700 leading-relaxed font-exo">
+                App super powers provide users with hacks to boost engagement or raise awareness. 
+                Think of it like boosted posts on legacy social platforms, however not limited to just companies or products, anyone can get involved.
+              </p>
+              
+              <div className="grid gap-6 md:grid-cols-2">
+                <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
+                  <CardHeader>
+                    <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                      <TrendingUp className="w-5 h-5" />
+                      1) Trend Jacker
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 font-exo">
+                      Have your desired topic appear on the trending list
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
+                  <CardHeader>
+                    <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                      <Zap className="w-5 h-5" />
+                      2) Timeline Bomber
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 font-exo">
+                      Appear on the timeline of all profiles you follow
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
+                  <CardHeader>
+                    <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                      <Eye className="w-5 h-5" />
+                      3) Precision Strike
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 font-exo">
+                      Appear on the timeline of users following accounts you target
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
+                  <CardHeader>
+                    <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                      <Crown className="w-5 h-5" />
+                      4) Harpoon
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 font-exo">
+                      Appear on the timeline of selected badge holders, such as whales, sharks, etc
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+
+          <section className="mt-12">
+            <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo">Fee Tier System</h2>
             
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200 mb-6">
               <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Badge-Based Fee Reduction</h3>
