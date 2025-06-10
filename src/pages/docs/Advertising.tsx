@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Eye, Shield, TrendingUp, Users, Zap, Star, ExternalLink } from 'lucide-react';
+import AdvertisingPricing from '@/components/AdvertisingPricing';
 
 const Advertising = () => {
   return (
@@ -87,6 +87,8 @@ const Advertising = () => {
           </p>
         </CardContent>
       </Card>
+
+      <AdvertisingPricing />
 
       <Card className="bg-gradient-to-br from-middle-blue/10 to-royal-blue/5 border-middle-blue/20">
         <CardContent className="p-8 text-center space-y-6">
