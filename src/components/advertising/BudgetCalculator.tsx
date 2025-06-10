@@ -41,7 +41,16 @@ const BudgetCalculator = () => {
 
   calculations.estimatedImpressions = (calculations.dailyBudget / calculations.avgCpm) * 1000 * campaignDuration;
   calculations.estimatedClicks = calculations.estimatedImpressions * 0.035; // 3.5% CTR
-  calculations.estimatedReach = Math.min(calculations.totalAudience, calculations.estimatedImpressions * 0.8);
+  
+  // Fixed reach calculation: reach grows with campaign duration and is not artificially capped
+  // Base reach is 60% of impressions, but scales better with longer campaigns
+  const baseReachRate = 0.6;
+  const campaignBonus = Math.min(campaignDuration / 30, 1) * 0.2; // Up to 20% bonus for 30-day campaigns
+  const effectiveReachRate = baseReachRate + campaignBonus;
+  
+  // Calculate reach but don't exceed total available audience
+  const calculatedReach = calculations.estimatedImpressions * effectiveReachRate;
+  calculations.estimatedReach = Math.min(calculations.totalAudience, calculatedReach);
 
   return (
     <div className="space-y-6">
