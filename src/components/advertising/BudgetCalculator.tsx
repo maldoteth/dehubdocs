@@ -10,7 +10,7 @@ import BadgeTiersBreakdown from './BadgeTiersBreakdown';
 const BudgetCalculator = () => {
   const [budget, setBudget] = useState(1000);
   const [targetTiers, setTargetTiers] = useState<[number, number]>([0, 0]);
-  const [campaignDuration, setCampaignDuration] = useState(0);
+  const [campaignDuration, setCampaignDuration] = useState(7);
 
   const selectedTiers = badgeTiers.slice(targetTiers[0], targetTiers[1] + 1);
   const calculations = calculateCampaignMetrics(budget, campaignDuration, selectedTiers);
@@ -24,7 +24,7 @@ const BudgetCalculator = () => {
             Campaign Budget Calculator
           </CardTitle>
           <p className="text-sm text-muted-foreground">
-            Plan your POVR advertising campaign with real-time cost estimates
+            Plan your POVR advertising campaign with realistic cost estimates and audience targeting
           </p>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -42,7 +42,14 @@ const BudgetCalculator = () => {
         </CardContent>
       </Card>
 
-      <BadgeTiersBreakdown selectedTiers={selectedTiers} calculations={calculations} />
+      {selectedTiers.length > 0 && calculations.totalAudience > 0 && (
+        <BadgeTiersBreakdown 
+          selectedTiers={selectedTiers} 
+          calculations={calculations}
+          budget={budget}
+          campaignDuration={campaignDuration}
+        />
+      )}
     </div>
   );
 };

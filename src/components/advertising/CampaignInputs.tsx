@@ -3,6 +3,8 @@ import React from 'react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
+import { Alert, AlertDescription } from '@/components/ui/alert';
+import { AlertTriangle } from 'lucide-react';
 import { badgeTiers } from './utils/badgeTiers';
 
 interface CampaignInputsProps {
@@ -23,6 +25,17 @@ const CampaignInputs = ({
   setTargetTiers
 }: CampaignInputsProps) => {
   const selectedTiers = badgeTiers.slice(targetTiers[0], targetTiers[1] + 1);
+  const totalAudience = selectedTiers.reduce((sum, tier) => sum + tier.audience, 0);
+  const dailyBudget = campaignDuration > 0 ? budget / campaignDuration : 0;
+  
+  // Warning conditions
+  const showAudienceWarning = totalAudience < 1000 && budget > 100;
+  const showBudgetWarning = dailyBudget > 1000 && totalAudience < 10000;
+
+  const handleTierRangeChange = (value: number[]) => {
+    const [start, end] = value;
+    setTargetTiers([Math.min(start, end), Math.max(start, end)]);
+  };
 
   return (
     <div className="space-y-6">
@@ -32,9 +45,16 @@ const CampaignInputs = ({
           id="budget"
           type="number"
           value={budget}
-          onChange={(e) => setBudget(Number(e.target.value))}
+          onChange={(e) => setBudget(Math.max(0, Number(e.target.value)))}
           className="mt-1"
+          min="0"
+          step="10"
         />
+        {campaignDuration > 0 && (
+          <p className="text-sm text-muted-foreground mt-1">
+            Daily budget: ${dailyBudget.toFixed(2)}
+          </p>
+        )}
       </div>
 
       <div>
@@ -44,12 +64,12 @@ const CampaignInputs = ({
             value={[campaignDuration]}
             onValueChange={(value) => setCampaignDuration(value[0])}
             max={30}
-            min={0}
+            min={1}
             step={1}
             className="w-full"
           />
           <div className="flex justify-between text-sm text-muted-foreground mt-1">
-            <span>0 days</span>
+            <span>1 day</span>
             <span className="font-semibold">{campaignDuration} days</span>
             <span>30 days</span>
           </div>
@@ -61,7 +81,7 @@ const CampaignInputs = ({
         <div className="mt-2 px-2">
           <Slider
             value={targetTiers}
-            onValueChange={(value) => setTargetTiers([Math.min(value[0], value[1]), Math.max(value[0], value[1])])}
+            onValueChange={handleTierRangeChange}
             max={13}
             min={0}
             step={1}
@@ -70,12 +90,34 @@ const CampaignInputs = ({
           <div className="flex justify-between text-sm text-muted-foreground mt-1">
             <span>{badgeTiers[targetTiers[0]]?.name || 'No Badge'}</span>
             <span className="font-semibold">
-              {selectedTiers.length} tiers selected
+              {selectedTiers.length} tier{selectedTiers.length !== 1 ? 's' : ''} selected
             </span>
             <span>{badgeTiers[targetTiers[1]]?.name || 'No Badge'}</span>
           </div>
+          <p className="text-xs text-muted-foreground mt-1">
+            Total audience: {totalAudience.toLocaleString()}
+          </p>
         </div>
       </div>
+
+      {/* Warnings */}
+      {showAudienceWarning && (
+        <Alert>
+          <AlertTriangle className="h-4 w-4" />
+          <AlertDescription>
+            Small audience ({totalAudience.toLocaleString()}) for this budget. Consider targeting more tiers or reducing budget.
+          </AlertDescription>
+        </Alert>
+      )}
+
+      {showBudgetWarning && (
+        <Alert>
+          <AlertTriangle className="h-4 w-4" />
+          <AlertDescription>
+            High daily budget (${dailyBudget.toFixed(2)}) for this audience size. Results may not be realistic.
+          </AlertDescription>
+        </Alert>
+      )}
     </div>
   );
 };

@@ -31,12 +31,22 @@ export interface CampaignCalculations {
   estimatedReach: number;
 }
 
+export interface TierBreakdown {
+  tier: BadgeTier;
+  budgetAllocated: number;
+  impressions: number;
+  reach: number;
+}
+
 export const calculateCampaignMetrics = (
   budget: number,
   campaignDuration: number,
   selectedTiers: BadgeTier[]
 ): CampaignCalculations => {
-  if (campaignDuration === 0 || selectedTiers.length === 0) {
+  // Minimum campaign duration of 1 day
+  const effectiveDuration = Math.max(campaignDuration, 1);
+  
+  if (budget <= 0 || selectedTiers.length === 0) {
     return {
       totalAudience: 0,
       avgCpm: 0,
@@ -49,36 +59,86 @@ export const calculateCampaignMetrics = (
 
   const totalAudience = selectedTiers.reduce((sum, tier) => sum + tier.audience, 0);
   const avgCpm = selectedTiers.reduce((sum, tier) => sum + tier.cpm, 0) / selectedTiers.length;
-  const dailyBudget = budget / campaignDuration;
+  const dailyBudget = budget / effectiveDuration;
 
-  // Calculate theoretical impressions based on budget
-  const theoreticalImpressions = (dailyBudget / avgCpm) * 1000 * campaignDuration;
-  
-  // Realistic frequency cap: assume max 10 impressions per person per day
-  const maxDailyFrequency = 10;
-  const maxPossibleImpressions = totalAudience * maxDailyFrequency * campaignDuration;
-  
-  // Use the lower of theoretical or maximum possible impressions
-  const estimatedImpressions = Math.min(theoreticalImpressions, maxPossibleImpressions);
-  
-  // Calculate clicks with 3.5% CTR
-  const estimatedClicks = estimatedImpressions * 0.035;
-  
-  // Calculate reach: start with 60% base rate, increase with campaign duration
-  const baseReachRate = 0.6;
-  const campaignBonus = Math.min(campaignDuration / 30, 1) * 0.2; // Up to 20% bonus for 30-day campaigns
-  const effectiveReachRate = baseReachRate + campaignBonus;
-  
-  // Reach cannot exceed total audience and should be realistic
-  const calculatedReach = estimatedImpressions * effectiveReachRate;
-  const estimatedReach = Math.min(totalAudience, calculatedReach);
+  // Realistic frequency caps per day
+  const maxDailyFrequency = 3; // More realistic: 3 impressions per person per day max
+  const maxPossibleImpressions = totalAudience * maxDailyFrequency * effectiveDuration;
+
+  // Distribute budget proportionally across tiers based on audience size
+  const totalWeight = selectedTiers.reduce((sum, tier) => sum + tier.audience, 0);
+  let totalImpressions = 0;
+  let totalReach = 0;
+
+  for (const tier of selectedTiers) {
+    const tierWeight = tier.audience / totalWeight;
+    const tierBudget = budget * tierWeight;
+    
+    // Calculate impressions for this tier
+    const tierTheoreticalImpressions = (tierBudget / tier.cpm) * 1000;
+    const tierMaxImpressions = tier.audience * maxDailyFrequency * effectiveDuration;
+    const tierImpressions = Math.min(tierTheoreticalImpressions, tierMaxImpressions);
+    
+    totalImpressions += tierImpressions;
+    
+    // Calculate reach for this tier (unique people reached)
+    const impressionsPerPerson = tierImpressions / tier.audience;
+    const tierReachRate = Math.min(impressionsPerPerson / maxDailyFrequency, 1);
+    const tierReach = tier.audience * tierReachRate;
+    
+    totalReach += tierReach;
+  }
+
+  // Ensure totals don't exceed realistic limits
+  const finalImpressions = Math.min(totalImpressions, maxPossibleImpressions);
+  const finalReach = Math.min(totalReach, totalAudience);
+
+  // More realistic CTR: 1% instead of 3.5%
+  const estimatedClicks = finalImpressions * 0.01;
 
   return {
     totalAudience,
     avgCpm,
     dailyBudget,
-    estimatedImpressions,
+    estimatedImpressions: finalImpressions,
     estimatedClicks,
-    estimatedReach
+    estimatedReach: finalReach
   };
+};
+
+export const calculateTierBreakdowns = (
+  budget: number,
+  campaignDuration: number,
+  selectedTiers: BadgeTier[]
+): TierBreakdown[] => {
+  const effectiveDuration = Math.max(campaignDuration, 1);
+  const maxDailyFrequency = 3;
+  
+  if (budget <= 0 || selectedTiers.length === 0) {
+    return [];
+  }
+
+  const totalWeight = selectedTiers.reduce((sum, tier) => sum + tier.audience, 0);
+  
+  return selectedTiers.map(tier => {
+    const tierWeight = tier.audience / totalWeight;
+    const tierBudget = budget * tierWeight;
+    
+    // Calculate impressions for this tier
+    const tierTheoreticalImpressions = (tierBudget / tier.cpm) * 1000;
+    const tierMaxImpressions = tier.audience * maxDailyFrequency * effectiveDuration;
+    const tierImpressions = Math.min(tierTheoreticalImpressions, tierMaxImpressions);
+    
+    // Calculate reach for this tier
+    const impressionsPerPerson = tierImpressions / tier.audience;
+    const tierReachRate = Math.min(impressionsPerPerson / maxDailyFrequency, 1);
+    const tierReach = tier.audience * tierReachRate;
+    
+    return {
+      tier,
+      budgetAllocated: tierBudget,
+      impressions: tierImpressions,
+      reach: tierReach
+    };
+  });
 };
