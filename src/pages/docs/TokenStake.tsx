@@ -3,10 +3,8 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Coins, Lock, TrendingUp, Users, Zap, Shield, ExternalLink } from 'lucide-react';
-
 const TokenStake = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       <div>
         <div className="flex items-center space-x-4 mb-4">
           <h1 className="text-4xl font-bold text-royal-blue font-exo">Stake</h1>
@@ -209,9 +207,9 @@ const TokenStake = () => {
             <li>• Fees from in app services like subscriptions, PPV, Watch2Earn, paid DMs and more.</li>
             <li>• DeHub premium, ad free usage & access to AI toolkits</li>
             <li>• Token & NFT primary sales & secondary trading fees.</li>
-            <li>• Advertising in-app with POVR innovations</li>
+            <li>• Advertising across video, lives & scroll feeds</li>
             <li>• Partner launches and airdrops.</li>
-            <li>• Trading & Technical fees on all DEXs</li>
+            <li></li>
             <li></li>
             <li></li>
           </ul>
@@ -231,8 +229,6 @@ const TokenStake = () => {
           </p>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default TokenStake;
