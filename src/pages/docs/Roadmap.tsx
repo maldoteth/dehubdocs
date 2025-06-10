@@ -1,13 +1,10 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
-
 const Roadmap = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
-
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
@@ -16,9 +13,7 @@ const Roadmap = () => {
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
-
-  return (
-    <div className="max-w-6xl mx-auto space-y-8">
+  return <div className="max-w-6xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">DeHub Roadmap</h1>
         <p className="text-lg text-slate-600 leading-relaxed">From humble beginnings to a complete platform - our journey through the ups </p>
@@ -59,10 +54,22 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Assembled core development team</div>
-                      <div>• Launched first beta app on App Store with 500+ initial testers and 2,000 DAUs before token release</div>
-                      <div>• Conducted 50+ user interviews to validate product-market fit</div>
-                      <div>• Established basic content moderation framework</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Assembled core development team</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Launched first beta app on App Store with 500+ initial testers and 2,000 DAUs before token release</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Conducted 50+ user interviews to validate product-market fit</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Established basic content moderation framework</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -80,12 +87,30 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Launched v1 token</div>
-                      <div>• Community governed listing chain, price / market cap.</div>
-                      <div>• Established first liquidity pools on Pancake Swap</div>
-                      <div>• Built community of 2,000+ early adopters</div>
-                      <div>• Implemented basic governance voting mechanism</div>
-                      <div>• Smart contract security issue discovered</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Launched v1 token</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Community governed listing chain, price / market cap.</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Established first liquidity pools on Pancake Swap</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Built community of 2,000+ early adopters</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Implemented basic governance voting mechanism</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Smart contract security issue discovered</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -103,11 +128,26 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Rebranded to DeHub</div>
-                      <div>• Started full app rebuild using React Native for better cross-platform support</div>
-                      <div>• Airdropped all holders automatically</div>
-                      <div>• Addressed security vulnerabilities from v1 with full Certik Audit</div>
-                      <div>• Expanded team to 15 members across 3 time zones</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Rebranded to DeHub</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Started full app rebuild using React Native for better cross-platform support</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Airdropped all holders automatically</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Addressed security vulnerabilities from v1 with full Certik Audit</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Expanded team to 15 members across 3 time zones</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -125,11 +165,26 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released prediction and raffle games</div>
-                      <div>• Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP</div>
-                      <div>• Discovered listing agent was fraudulent, stole our fundraise and dumped our chart instead of airdropping Gate users, Gate investigated and apologised but could not identify the rogue employee as they lost the records, apparently.</div>
-                      <div>• Implemented game mechanics with provably fair randomization</div>
-                      <div>• Community grew to 8,000+ active members</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released prediction and raffle games</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Discovered listing agent was fraudulent, stole our fundraise and dumped our chart instead of airdropping Gate users, Gate investigated and apologised but could not identify the rogue employee as they lost the records, apparently.</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Implemented game mechanics with provably fair randomization</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Community grew to 8,000+ active members</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -164,11 +219,26 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released arcade with 5 initial games including Super Robin Hood and Tomb Runner and predictions</div>
-                      <div>• Achieved 5,000+ monthly active gamers</div>
-                      <div>• Implemented blockchain-based leaderboards and rewards</div>
-                      <div>• Introduced social features allowing friend challenges</div>
-                      <div>• Built custom game engine optimized for mobile devices</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released arcade with 5 initial games including Super Robin Hood and Tomb Runner and predictions</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Achieved 5,000+ monthly active gamers</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Implemented blockchain-based leaderboards and rewards</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Introduced social features allowing friend challenges</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Built custom game engine optimized for mobile devices</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -186,12 +256,31 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released stream app supporting 4K content with 99.9% uptime</div>
-                      <div>• Produced first tokenised documentary featuring Jorge Masvidal, Brad Pickett & more by Luke Barnatt</div>
-                      <div>• Genesis mint for Chads collection</div>
-                      <div>• Secured SEC registration with the Philippine Government for real estate, construction and brokerage services</div>
-                      <div>• Implemented advanced video compression reducing bandwidth costs by 60%</div>
-                      <div>• Built NFT marketplace with royalty distribution system</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released stream app supporting 4K content with 99.9% uptime</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Produced first tokenised documentary featuring Jorge Masvidal, Brad Pickett & more by Luke Barnatt</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Genesis mint for Chads collection</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Secured SEC registration with the Philippine Government for real estate, construction and brokerage services</span>
+                      </div>
+                      
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Implemented advanced video compression reducing bandwidth costs by 60%</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Built NFT marketplace with royalty distribution system</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -209,11 +298,27 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Incorporated DeLabs LTD with proper legal structure and compliance</div>
-                      <div>• Acquired $1,000,000 home for largest crypto raffle ever (15,000+ participants)</div>
-                      <div>• Secured power of attorney for multiple islands and sea front strip in Palawan worth over $15,000,000 in an attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC</div>
-                      <div>• Established partnerships with real estate and legal firms</div>
-                      <div>• Created transparent raffle mechanics with on-chain verification</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Incorporated DeLabs LTD with proper legal structure and compliance</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Acquired $1,000,000 home for largest crypto raffle ever (15,000+ participants)</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Secured power of attorney for multiple islands and sea front strip in Palawan worth over $15,000,000 in an attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Established partnerships with real estate and legal firms</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Created transparent raffle mechanics with on-chain verification</span>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -231,9 +336,18 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Contract tax triggers malfunctioned, freezing the token and our LP, forced to relaunch v2</div>
-                      <div>• Migrated 25,000+ token holders to new improved contract</div>
-                      <div>• Implemented standard ERC20 tokenomics to avoid future issues</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Contract tax triggers malfunctioned, freezing the token and our LP, forced to relaunch v2</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Migrated 25,000+ token holders to new improved contract</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Implemented standard ERC20 tokenomics to avoid future issues</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -268,10 +382,22 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Alpha launch of complete d'app integrating all ecosystem components</div>
-                      <div>• Released tokenised uploads with onchain ad revenue sharing (creators earning 90%)</div>
-                      <div>• Commenced advanced analytics dashboard for creators</div>
-                      <div>• Recommenced trading of DeHub v2 on Gate.io</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Alpha launch of complete d'app integrating all ecosystem components</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released tokenised uploads with onchain ad revenue sharing (creators earning 90%)</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Commenced advanced analytics dashboard for creators</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Recommenced trading of DeHub v2 on Gate.io</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -289,9 +415,18 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies in a vote based system backed by Sony, Samsung and other industry giants.</div>
-                      <div>• Featured in major tech publications including TechCrunch and VentureBeat</div>
-                      <div>• Patent applications commenced for core streaming technology and watch2earn mechanics</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies in a vote based system backed by Sony, Samsung and other industry giants.</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Featured in major tech publications including TechCrunch and VentureBeat</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Patent applications commenced for core streaming technology and watch2earn mechanics</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -309,10 +444,24 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Announced partner airdrop for BJ (now fan.site), the adult fork of DeHub</div>
-                      <div>• Facilitated knowledge transfer and technical support to fork team</div>
-                      <div>• Demonstrated true decentralization principles in action</div>
-                      <div>• Established framework for future community-driven forks</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Announced partner airdrop for BJ (now fan.site), the adult fork of DeHub</span>
+                      </div>
+                      
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Facilitated knowledge transfer and technical support to fork team</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Demonstrated true decentralization principles in action</span>
+                      </div>
+                      
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Established framework for future community-driven forks</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -330,10 +479,22 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Voluntary delisting from Gate.io to prioritize decentralization</div>
-                      <div>• Commitment to transparency with all DEX policy implementation</div>
-                      <div>• Implemented automated liquidity provision strategies</div>
-                      <div>• Published full transparency reports showing all protocol metrics</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Voluntary delisting from Gate.io to prioritize decentralization</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Commitment to transparency with all DEX policy implementation</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Implemented automated liquidity provision strategies</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Published full transparency reports showing all protocol metrics</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -368,8 +529,14 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Listed DHB on Eth mainnet</div>
-                      <div>• Raised $1,000,000 for adult fork BJ (now fan.site) from VCs, Launchpads & Public Sales.</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Listed DHB on Eth mainnet</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Raised $1,000,000 for adult fork BJ (now fan.site) from VCs, Launchpads & Public Sales.</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -387,10 +554,22 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Listed SDHB on Base L2</div>
-                      <div>• Dubai event expanded Middle East presence</div>
-                      <div>• Co-Founders Mike Hales &amp; Indi Cammish Opened TikTok agency in partnership with TikTok execs directly after successful year topping UK stream charts earning 1k a day</div>
-                      <div>• Established creator partnerships in 15 countries</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Listed SDHB on Base L2</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Dubai event expanded Middle East presence</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Co-Founders Mike Hales &amp; Indi Cammish Opened TikTok agency in partnership with TikTok execs directly after successful year topping UK stream charts earning 1k a day</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Established creator partnerships in 15 countries</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -408,8 +587,14 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Completed major app upgrade with 95% positive user feedback</div>
-                      <div>• Overhauled user interface & improved back end speed by 200%</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Completed major app upgrade with 95% positive user feedback</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Overhauled user interface & improved back end speed by 200%</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -427,10 +612,22 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released onchain tradable subscriptions</div>
-                      <div>• Released teaser for Last Chad Standing (first ever MMA battle royale) with 1M+ views</div>
-                      <div>• Agency grew to UK #1 with 1,000 live streamers signed exclusively</div>
-                      <div>• Released DePIN Phase 1</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released onchain tradable subscriptions</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released teaser for Last Chad Standing (first ever MMA battle royale) with 1M+ views</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Agency grew to UK #1 with 1,000 live streamers signed exclusively</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released DePIN Phase 1</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -465,13 +662,34 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Released onchain live streams with real-time tip animations</div>
-                      <div>• Implemented Livepeer infrastructure supporting 50,000+ concurrent viewers with the ability of unlimited (in theory) on higher spend tiers.</div>
-                      <div>• Built custom CDN reducing latency to sub-200ms globally</div>
-                      <div>• Achieved 99.99% uptime across all streaming services</div>
-                      <div>• Discontinue Ethereum Mainnet support</div>
-                      <div>• Completed messaging system with paid or free DMs and unlockable chat content</div>
-                      <div>• Released full trailer for Last Chad Standing, picked up by major MMA promoters</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released onchain live streams with real-time tip animations</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Implemented Livepeer infrastructure supporting 50,000+ concurrent viewers with the ability of unlimited (in theory) on higher spend tiers.</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Built custom CDN reducing latency to sub-200ms globally</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Achieved 99.99% uptime across all streaming services</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Discontinue Ethereum Mainnet support</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Completed messaging system with paid or free DMs and unlockable chat content</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released full trailer for Last Chad Standing, picked up by major MMA promoters</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -489,11 +707,26 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Launched UGC ambassadorship program with 50 vacancies</div>
-                      <div>• Implemented comprehensive creator education curriculum</div>
-                      <div>• Released dhbscan.com for users to track activity across all DHB contracts</div>
-                      <div>• Revamped main app feed, revealed audio replies and live talk spaces </div>
-                      <div>• Final snapshot for Last Chad Standing game airdrop, for both holders and stakers</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Launched UGC ambassadorship program with 50 vacancies</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Implemented comprehensive creator education curriculum</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released dhbscan.com for users to track activity across all DHB contracts</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Revamped main app feed, revealed audio replies and live talk spaces </span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Final snapshot for Last Chad Standing game airdrop, for both holders and stakers</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -511,13 +744,35 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• Release live stream keys so users can stream on multiple apps simultaneously ✅</div>
-                      <div>• Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly in-app and use instantly with free gas ✅</div>
-                      <div>• Launch fiat off-ramp functionality for seamless token-to-cash conversion</div>
-                      <div>• Begin Solana, Hyperliquid and Sui integrations for in-app use</div>
-                      <div>• Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as financial transactions and guidance</div>
-                      <div>• Custom advertising stack with advanced user targeting based on wallet balance & activity</div>
-                      <div>• DePIN phase 2</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Release live stream keys so users can stream on multiple apps simultaneously ✅</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Released fiat onramp with Stripe integration allowing users of 130+ currencies to buy DHB seamlessly in-app and use instantly with free gas ✅</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Launch fiat off-ramp functionality for seamless token-to-cash conversion</span>
+                      </div>
+                      
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Begin Solana, Hyperliquid and Sui integrations for in-app use</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as financial transactions and guidance</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Custom advertising stack with advanced user targeting based on wallet balance & activity</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>DePIN phase 2</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -535,14 +790,38 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
-                      <div>• App store re-listings</div>
-                      <div>• Release multi-account access and delegation features for streamlined management</div>
-                      <div>• Deploy comprehensive CRM system for agency management and client tracking</div>
-                      <div>• Open source the entire DeHub protocol for community development</div>
-                      <div>• Launch comprehensive SDKs enabling third-party developers to build mini apps and games</div>
-                      <div>• Establish developer marketplace for community-built applications and integrations</div>
-                      <div>• Multi-posting software so users can post to all major web2+3 socials from one place</div>
-                      <div>• Last Chad Standing release schedule begins</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>App store re-listings</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Release multi-account access and delegation features for streamlined management</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Deploy comprehensive CRM system for agency management and client tracking</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Open source the entire DeHub protocol for community development</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Launch comprehensive SDKs enabling third-party developers to build mini apps and games</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Establish developer marketplace for community-built applications and integrations</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Multi-posting software so users can post to all major web2+3 socials from one place</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Last Chad Standing release schedule begins</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -575,15 +854,42 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-gray-600 text-sm leading-relaxed space-y-1">
-                      <div>• Leading licensing partners, latest blockbusters and major PPVs</div>
-                      <div>• Commercial integrations with existing streaming and home entertainment brands</div>
-                      <div>• Aggregation of All APIs of current web2+3 Streaming Platforms</div>
-                      <div>• Windows, MAC OS, TV & game console apps</div>
-                      <div>• V/AR profile hub & consumer data metrics</div>
-                      <div>• Educational AI integrations for personalized learning pathways</div>
-                      <div>• Advanced creator monetization through smart contracts and automated royalty distribution</div>
-                      <div>• Integration with IoT devices and smart home systems for seamless content delivery</div>
-                      <div>• Blockchain-based content verification and anti-piracy measures</div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Leading licensing partners, latest blockbusters and major PPVs</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Commercial integrations with existing streaming and home entertainment brands</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Aggregation of All APIs of current web2+3 Streaming Platforms</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Windows, MAC OS, TV & game console apps</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>V/AR profile hub & consumer data metrics</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Educational AI integrations for personalized learning pathways</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Advanced creator monetization through smart contracts and automated royalty distribution</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Integration with IoT devices and smart home systems for seamless content delivery</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Blockchain-based content verification and anti-piracy measures</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -604,8 +910,6 @@ const Roadmap = () => {
           </p>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default Roadmap;
