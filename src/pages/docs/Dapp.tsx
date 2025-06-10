@@ -1,5 +1,5 @@
 import React from "react";
-import { DocsLayout } from "@/layouts/docs";
+import { DocsLayout } from "@/components/DocsLayout";
 
 const Dapp: React.FC = () => {
   return (
