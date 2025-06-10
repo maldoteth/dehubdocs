@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
@@ -31,7 +32,7 @@ const AdvertisingPricing = () => {
             <span>POVR Advertising Pricing System</span>
           </CardTitle>
           <p className="text-royal-blue/80">
-            Our linear tier-based pricing system ensures fair and scalable advertising costs based on audience value.
+            Our linear tier-based pricing system ensures fair and scalable advertising costs based on audience value. The value is priced in USD for ease of management however payments will be prompted in $DHB at the time of execution.
           </p>
         </CardHeader>
         <CardContent>
