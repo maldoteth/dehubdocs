@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Eye, Shield, TrendingUp, Users, Zap, Star, ExternalLink } from 'lucide-react';
 
 const Advertising = () => {
@@ -84,6 +85,38 @@ const Advertising = () => {
           <p className="text-royal-blue/80">
             For more information on our ad revenue sharing, refer to this thread and our whitepaper below. Also, be sure to follow us for all the latest news on app features and updates.
           </p>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-gradient-to-br from-middle-blue/10 to-royal-blue/5 border-middle-blue/20">
+        <CardContent className="p-8 text-center space-y-6">
+          <div className="space-y-2">
+            <h3 className="text-2xl font-bold text-royal-blue font-exo">Ready to Transform Your Advertising?</h3>
+            <p className="text-royal-blue/80 text-lg">
+              Join the future of blockchain-based advertising with POVR technology
+            </p>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              size="lg" 
+              className="bg-middle-blue hover:bg-middle-blue/90 text-white font-semibold px-8 py-3"
+              onClick={() => window.location.href = 'mailto:marketing@dehub.net'}
+            >
+              <Star className="w-5 h-5 mr-2" />
+              Advertise Today
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-middle-blue text-middle-blue hover:bg-middle-blue/10 font-semibold px-8 py-3"
+              onClick={() => window.location.href = '/docs/roadmap'}
+            >
+              Check Roadmap
+              <ExternalLink className="w-5 h-5 ml-2" />
+            </Button>
+          </div>
         </CardContent>
       </Card>
     </div>
