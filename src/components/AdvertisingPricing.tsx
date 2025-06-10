@@ -42,7 +42,6 @@ const AdvertisingPricing = () => {
                   <TableHead>Badge Tier</TableHead>
                   <TableHead>Holdings Required</TableHead>
                   <TableHead>CPM Rate</TableHead>
-                  <TableHead>Multiplier</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -69,9 +68,6 @@ const AdvertisingPricing = () => {
                       <Badge variant="outline" className="font-mono">
                         {tier.cpm}
                       </Badge>
-                    </TableCell>
-                    <TableCell>
-                      <span className="text-sm text-muted-foreground">{tier.multiplier}</span>
                     </TableCell>
                   </TableRow>
                 ))}
