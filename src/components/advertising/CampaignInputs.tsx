@@ -26,11 +26,11 @@ const CampaignInputs = ({
 }: CampaignInputsProps) => {
   const selectedTiers = badgeTiers.slice(targetTiers[0], targetTiers[1] + 1);
   const totalAudience = selectedTiers.reduce((sum, tier) => sum + tier.audience, 0);
-  const dailyBudget = campaignDuration > 0 ? budget / campaignDuration : 0;
+  const totalBudget = budget * campaignDuration;
   
   // Warning conditions
   const showAudienceWarning = totalAudience < 1000 && budget > 100;
-  const showBudgetWarning = dailyBudget > 1000 && totalAudience < 10000;
+  const showBudgetWarning = budget > 1000 && totalAudience < 10000;
 
   const handleTierRangeChange = (value: number[]) => {
     const [start, end] = value;
@@ -40,7 +40,7 @@ const CampaignInputs = ({
   return (
     <div className="space-y-6">
       <div>
-        <Label htmlFor="budget">Total Campaign Budget ($)</Label>
+        <Label htmlFor="budget">Daily Budget ($)</Label>
         <Input
           id="budget"
           type="number"
@@ -52,7 +52,7 @@ const CampaignInputs = ({
         />
         {campaignDuration > 0 && (
           <p className="text-sm text-muted-foreground mt-1">
-            Daily budget: ${dailyBudget.toFixed(2)}
+            Total campaign budget: ${totalBudget.toFixed(2)}
           </p>
         )}
       </div>

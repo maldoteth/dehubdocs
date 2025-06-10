@@ -38,6 +38,12 @@ const CampaignEstimates = ({ calculations }: CampaignEstimatesProps) => {
             </Badge>
           </div>
           <div className="flex justify-between items-center">
+            <span className="text-sm">Total Budget:</span>
+            <Badge variant="outline" className="font-mono">
+              ${calculations.totalBudget.toFixed(2)}
+            </Badge>
+          </div>
+          <div className="flex justify-between items-center">
             <span className="text-sm">Average CPM:</span>
             <Badge variant="outline" className="font-mono">
               ${calculations.avgCpm.toFixed(2)}
