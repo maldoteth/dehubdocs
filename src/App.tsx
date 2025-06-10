@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,6 +14,7 @@ const DocsHome = lazy(() => import("./pages/docs/DocsHome"));
 const Overview = lazy(() => import("./pages/docs/Overview"));
 const DePIN = lazy(() => import("./pages/docs/DePIN"));
 const AIToolkits = lazy(() => import("./pages/docs/AIToolkits"));
+const Advertising = lazy(() => import("./pages/docs/Advertising"));
 const QuickStart = lazy(() => import("./pages/docs/QuickStart"));
 const Installation = lazy(() => import("./pages/docs/Installation"));
 const ApiEndpoints = lazy(() => import("./pages/docs/ApiEndpoints"));
@@ -117,6 +117,11 @@ const App = () => (
             <Route path="ai-toolkits" element={
               <Suspense fallback={<PageLoader />}>
                 <AIToolkits />
+              </Suspense>
+            } />
+            <Route path="advertising" element={
+              <Suspense fallback={<PageLoader />}>
+                <Advertising />
               </Suspense>
             } />
             <Route path="team" element={

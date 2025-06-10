@@ -52,6 +52,10 @@ const menuItems = [{
     path: '/docs/ai-toolkits',
     icon: '🤖'
   }, {
+    title: 'Advertising',
+    path: '/docs/advertising',
+    icon: '📺'
+  }, {
     title: 'Team',
     path: '/docs/team',
     icon: '👥'
