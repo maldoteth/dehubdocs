@@ -204,10 +204,10 @@ const TokenStake = () => {
           
           <h4 className="font-semibold text-royal-blue mb-3">Fee Sources:</h4>
           <ul className="space-y-2 text-royal-blue/80">
-            <li>• PPV & PYPV sales</li>
-            <li>• Streaming subscription fees</li>
-            <li>• NFT Marketplace fees</li>
-            <li>• NFT Launch fees</li>
+            <li>• PPV Uploads</li>
+            <li>• Subscription fees</li>
+            <li>• Token & NFT trading fees</li>
+            <li>• Partner launches and airdrops</li>
             <li>• IRL & VR Event NFTicket Sales</li>
             <li>• Trading & Technical fees on all DEXs</li>
             <li>• Promotional partners on gaming and streaming d'apps</li>
