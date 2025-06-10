@@ -36,27 +36,49 @@ export const calculateCampaignMetrics = (
   campaignDuration: number,
   selectedTiers: BadgeTier[]
 ): CampaignCalculations => {
-  const calculations: CampaignCalculations = {
-    totalAudience: selectedTiers.reduce((sum, tier) => sum + tier.audience, 0),
-    avgCpm: selectedTiers.reduce((sum, tier) => sum + tier.cpm, 0) / selectedTiers.length,
-    dailyBudget: budget / campaignDuration,
-    estimatedImpressions: 0,
-    estimatedClicks: 0,
-    estimatedReach: 0
-  };
+  if (campaignDuration === 0 || selectedTiers.length === 0) {
+    return {
+      totalAudience: 0,
+      avgCpm: 0,
+      dailyBudget: 0,
+      estimatedImpressions: 0,
+      estimatedClicks: 0,
+      estimatedReach: 0
+    };
+  }
 
-  calculations.estimatedImpressions = (calculations.dailyBudget / calculations.avgCpm) * 1000 * campaignDuration;
-  calculations.estimatedClicks = calculations.estimatedImpressions * 0.035; // 3.5% CTR
+  const totalAudience = selectedTiers.reduce((sum, tier) => sum + tier.audience, 0);
+  const avgCpm = selectedTiers.reduce((sum, tier) => sum + tier.cpm, 0) / selectedTiers.length;
+  const dailyBudget = budget / campaignDuration;
+
+  // Calculate theoretical impressions based on budget
+  const theoreticalImpressions = (dailyBudget / avgCpm) * 1000 * campaignDuration;
   
-  // Fixed reach calculation: reach grows with campaign duration and is not artificially capped
-  // Base reach is 60% of impressions, but scales better with longer campaigns
+  // Realistic frequency cap: assume max 10 impressions per person per day
+  const maxDailyFrequency = 10;
+  const maxPossibleImpressions = totalAudience * maxDailyFrequency * campaignDuration;
+  
+  // Use the lower of theoretical or maximum possible impressions
+  const estimatedImpressions = Math.min(theoreticalImpressions, maxPossibleImpressions);
+  
+  // Calculate clicks with 3.5% CTR
+  const estimatedClicks = estimatedImpressions * 0.035;
+  
+  // Calculate reach: start with 60% base rate, increase with campaign duration
   const baseReachRate = 0.6;
   const campaignBonus = Math.min(campaignDuration / 30, 1) * 0.2; // Up to 20% bonus for 30-day campaigns
   const effectiveReachRate = baseReachRate + campaignBonus;
   
-  // Calculate reach but don't exceed total available audience
-  const calculatedReach = calculations.estimatedImpressions * effectiveReachRate;
-  calculations.estimatedReach = Math.min(calculations.totalAudience, calculatedReach);
+  // Reach cannot exceed total audience and should be realistic
+  const calculatedReach = estimatedImpressions * effectiveReachRate;
+  const estimatedReach = Math.min(totalAudience, calculatedReach);
 
-  return calculations;
+  return {
+    totalAudience,
+    avgCpm,
+    dailyBudget,
+    estimatedImpressions,
+    estimatedClicks,
+    estimatedReach
+  };
 };
