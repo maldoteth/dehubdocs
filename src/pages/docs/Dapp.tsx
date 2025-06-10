@@ -1306,10 +1306,7 @@ const Dapp = () => {
             <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo">SuperPowers</h2>
             
             <div className="space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed font-exo">
-                App super powers provide users with hacks to boost engagement or raise awareness. 
-                Think of it like boosted posts on legacy social platforms, however not limited to just companies or products, anyone can get involved.
-              </p>
+              <p className="text-lg text-gray-700 leading-relaxed font-exo">App super powers provide users with hacks to boost engagement or raise awareness. Think of it like boosted posts on legacy social platforms, however not limited to just companies or products, anyone can get involved. Paid in DHB tokens, the price fluctuates due to auction style mechanic. Badge holders also unlock a number of superpowers depending on tier.</p>
               
               <div className="grid gap-6 md:grid-cols-2">
                 <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
