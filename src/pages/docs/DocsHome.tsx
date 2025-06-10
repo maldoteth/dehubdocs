@@ -4,6 +4,9 @@ import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, Che
 import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
 
+// Declare the global build time variable
+declare const __BUILD_TIME__: string;
+
 const DocsHome = () => {
   const { toast } = useToast();
   
@@ -18,8 +21,16 @@ const DocsHome = () => {
     });
   };
 
-  // Last published date - update this when docs are updated
-  const lastPublishedDate = new Date();
+  // Use build time if available, fallback to current date
+  const getBuildTime = () => {
+    try {
+      return typeof __BUILD_TIME__ !== 'undefined' ? new Date(__BUILD_TIME__) : new Date();
+    } catch {
+      return new Date();
+    }
+  };
+
+  const lastPublishedDate = getBuildTime();
 
   const quickLinks = [{
     title: 'Basescan',
