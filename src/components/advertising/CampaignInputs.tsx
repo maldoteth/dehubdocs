@@ -114,7 +114,7 @@ const CampaignInputs = ({
         <Alert>
           <AlertTriangle className="h-4 w-4" />
           <AlertDescription>
-            High daily budget (${dailyBudget.toFixed(2)}) for this audience size. Results may not be realistic.
+            High daily budget (${budget.toFixed(2)}) for this audience size. Results may not be realistic.
           </AlertDescription>
         </Alert>
       )}
