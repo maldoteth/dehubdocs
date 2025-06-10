@@ -72,7 +72,7 @@ const BudgetCalculator = () => {
 
               <div>
                 <Label>Campaign Duration (days)</Label>
-                <div className="mt-2">
+                <div className="mt-2 px-2">
                   <Slider
                     value={[campaignDuration]}
                     onValueChange={(value) => setCampaignDuration(value[0])}
@@ -91,10 +91,10 @@ const BudgetCalculator = () => {
 
               <div>
                 <Label>Target Badge Tiers (Range)</Label>
-                <div className="mt-2">
+                <div className="mt-2 px-2">
                   <Slider
                     value={targetTiers}
-                    onValueChange={setTargetTiers}
+                    onValueChange={(value) => setTargetTiers([Math.min(value[0], value[1]), Math.max(value[0], value[1])])}
                     max={13}
                     min={0}
                     step={1}
