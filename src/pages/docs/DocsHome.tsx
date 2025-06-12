@@ -21,16 +21,8 @@ const DocsHome = () => {
     });
   };
 
-  // Use build time if available, fallback to current date
-  const getBuildTime = () => {
-    try {
-      return typeof __BUILD_TIME__ !== 'undefined' ? new Date(__BUILD_TIME__) : new Date();
-    } catch {
-      return new Date();
-    }
-  };
-
-  const lastPublishedDate = getBuildTime();
+  // Manual last updated date - update this when you publish changes
+  const lastPublishedDate = new Date('2024-12-12'); // Update this date when you publish
 
   const quickLinks = [{
     title: 'Basescan',
