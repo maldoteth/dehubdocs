@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Shield, Users, Zap, Globe } from 'lucide-react';
+import { Shield, Users, Zap, Globe, CreditCard } from 'lucide-react';
 
 const TermsOfService = () => {
   return (
@@ -99,6 +99,68 @@ const TermsOfService = () => {
             <li>All transactions made through your wallet</li>
             <li>Understanding the irreversible nature of blockchain transactions</li>
           </ul>
+        </CardContent>
+      </Card>
+
+      {/* Token Purchases */}
+      <Card className="border-sky-blue/20">
+        <CardHeader>
+          <CardTitle className="text-xl text-royal-blue font-exo flex items-center">
+            <CreditCard className="w-5 h-5 mr-2" />
+            Token Purchases
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
+          <div>
+            <h3 className="font-semibold text-royal-blue mb-2">Token Usage</h3>
+            <p>
+              Tokens are used within our application for various activities including:
+            </p>
+            <ul className="list-disc list-inside space-y-1 ml-4">
+              <li>Tipping content creators or profiles</li>
+              <li>Subscribing to creators</li>
+              <li>Unlocking premium content</li>
+              <li>Accessing super powers like trending boosts</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-royal-blue mb-2">Purchase Limits</h3>
+            <p>
+              The maximum daily purchase limit is $500 USD equivalent. This limit is in place for security and regulatory compliance purposes.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-royal-blue mb-2">No Refunds Policy</h3>
+            <p>
+              Due to the irreversible nature of blockchain transactions, refunds are not applicable in any capacity. All token purchases are final and cannot be reversed, canceled, or refunded.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-royal-blue mb-2">Fees and Gas Costs</h3>
+            <p>
+              Every token purchase includes an additional 1% fee to cover gas costs and service fees. These fees may vary based on network conditions and third-party service providers.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-royal-blue mb-2">Fiat On-Ramp Services</h3>
+            <p>
+              We may provide access to third-party fiat on-ramp services to facilitate token purchases. These services are provided by independent third parties and are subject to their own terms and conditions. We are not responsible for:
+            </p>
+            <ul className="list-disc list-inside space-y-1 ml-4">
+              <li>The availability or reliability of third-party payment processors</li>
+              <li>Payment processing delays or failures</li>
+              <li>Third-party service fees or charges</li>
+              <li>Compliance with local payment regulations in your jurisdiction</li>
+              <li>Customer support for payment-related issues (handled by the payment provider)</li>
+            </ul>
+            <p className="mt-2">
+              You agree to comply with all applicable laws and regulations regarding digital asset purchases in your jurisdiction.
+            </p>
+          </div>
         </CardContent>
       </Card>
 
