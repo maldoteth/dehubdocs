@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 
 // Sample blog posts - you can edit these or add new ones
@@ -38,6 +37,924 @@ Stay tuned for regular updates, and thank you for being part of the DeHub commun
     status: 'published',
     seoTitle: 'Welcome to DeHub Community Blog - Latest Updates & Insights',
     seoDescription: 'Stay updated with DeHub platform news, community highlights, and technical insights from our team.'
+  },
+  {
+    id: '15',
+    title: 'DeHub Project Genesis: The Vision Begins',
+    slug: 'dehub-project-genesis-vision-begins',
+    excerpt: 'The founding story of DeHub - how our vision for decentralized content creation and infrastructure began.',
+    content: `# DeHub Project Genesis: The Vision Begins
+
+In 2021, we embarked on a journey to revolutionize content creation and decentralized infrastructure. This is the story of how DeHub was born.
+
+## The Problem We Saw
+
+The digital content landscape was dominated by centralized platforms that:
+- Took excessive cuts from creator earnings
+- Controlled content distribution
+- Lacked transparency in monetization
+- Provided no ownership rights to creators
+
+## Our Vision
+
+We envisioned a platform where:
+- Creators truly own their content
+- Revenue sharing is transparent and fair
+- Community governance drives decisions
+- Blockchain technology ensures trust
+
+## The Foundation
+
+2021 marked the beginning of our technical architecture and the assembly of our founding team. We started building the infrastructure that would eventually support millions of creators worldwide.
+
+## Looking Back
+
+What started as an idea has grown into a thriving ecosystem. Thank you to our early believers who saw the potential in our vision.`,
+    bannerImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Digital space and innovation concept',
+    author: {
+      name: 'Founding Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2021-03-15T12:00:00Z',
+    tags: ['genesis', 'founding', 'vision', 'history'],
+    readingTime: 4,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '16',
+    title: 'Initial Team Assembly: Building the Dream Team',
+    slug: 'initial-team-assembly-building-dream-team',
+    excerpt: 'Meet the founding members who came together to bring the DeHub vision to life.',
+    content: `# Initial Team Assembly: Building the Dream Team
+
+Building a revolutionary platform requires extraordinary people. In 2021, we assembled a team of visionaries, developers, and creators who shared our passion for decentralization.
+
+## Our Core Team
+
+### Technical Leadership
+Our founding engineers brought decades of experience from top tech companies, with expertise in:
+- Blockchain architecture
+- Scalable systems design
+- Security protocols
+- User experience design
+
+### Creative Vision
+Our creative team understood the creator economy inside and out:
+- Content creation workflows
+- Monetization challenges
+- Community building
+- Platform dynamics
+
+### Business Strategy
+Our business leaders had the experience to navigate:
+- Regulatory landscapes
+- Partnership development
+- Market positioning
+- Growth strategies
+
+## The Chemistry
+
+What made our team special wasn't just individual expertise, but how we complemented each other. Each member brought unique perspectives that strengthened our collective vision.
+
+## Early Challenges
+
+Building a team remotely during 2021 presented unique challenges, but it also taught us the importance of:
+- Clear communication
+- Shared values
+- Distributed collaboration
+- Trust and transparency
+
+## Foundation for Growth
+
+The team we assembled in 2021 laid the foundation for everything that followed. Their dedication and expertise continue to drive DeHub forward today.`,
+    bannerImage: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Team collaboration and planning',
+    author: {
+      name: 'HR Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2021-06-20T14:30:00Z',
+    tags: ['team', 'founding', 'recruitment', 'culture'],
+    readingTime: 3,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '17',
+    title: 'Core Infrastructure Development: Building the Foundation',
+    slug: 'core-infrastructure-development-building-foundation',
+    excerpt: 'A deep dive into the technical architecture and infrastructure decisions that power DeHub.',
+    content: `# Core Infrastructure Development: Building the Foundation
+
+The second half of 2021 was dedicated to building the robust infrastructure that would support our decentralized platform vision.
+
+## Technical Architecture Decisions
+
+### Blockchain Selection
+After extensive research, we chose a multi-chain approach:
+- Ethereum for maximum security and decentralization
+- BNB Smart Chain for cost-effective transactions
+- Layer 2 solutions for scalability
+
+### Scalability Solutions
+Our infrastructure was designed with scale in mind:
+- Distributed content delivery networks
+- Microservices architecture
+- Database sharding strategies
+- Caching mechanisms
+
+### Security First
+Security was paramount in our design:
+- Multi-signature wallet implementations
+- Smart contract audits
+- Encryption protocols
+- Regular security assessments
+
+## Development Milestones
+
+### Q3 2021
+- Core blockchain integration
+- User authentication systems
+- Basic content upload functionality
+- Initial smart contracts
+
+### Q4 2021
+- Payment processing systems
+- Content delivery optimization
+- Mobile app foundation
+- Testing frameworks
+
+## Technical Challenges
+
+Building decentralized infrastructure presented unique challenges:
+- Balancing decentralization with performance
+- Ensuring cross-chain compatibility
+- Managing gas fees efficiently
+- Creating intuitive user experiences
+
+## Innovation Highlights
+
+Our technical innovations included:
+- Custom tokenomics models
+- Hybrid storage solutions
+- Real-time blockchain interactions
+- Seamless wallet integrations
+
+## Looking Forward
+
+The infrastructure we built in 2021 continues to serve as the backbone of DeHub, proving that investing in solid foundations pays dividends.`,
+    bannerImage: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Server infrastructure and technology',
+    author: {
+      name: 'Infrastructure Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2021-09-10T16:00:00Z',
+    tags: ['infrastructure', 'development', 'blockchain', 'architecture'],
+    readingTime: 5,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '18',
+    title: 'DeHub Alpha Launch: First Steps into Decentralization',
+    slug: 'dehub-alpha-launch-first-steps-decentralization',
+    excerpt: 'Our alpha platform launches with core features for content creators and early adopters.',
+    content: `# DeHub Alpha Launch: First Steps into Decentralization
+
+Today marks a historic milestone - the launch of DeHub Alpha! After months of development, we're proud to welcome our first users to the platform.
+
+## Alpha Features
+
+### Content Creation
+- Video and image uploads
+- Basic editing tools
+- Content scheduling
+- Draft management
+
+### Monetization
+- Direct fan tipping
+- Subscription models
+- Revenue tracking
+- Transparent payouts
+
+### Community Features
+- User profiles
+- Following/followers system
+- Comment system
+- Content discovery
+
+### Blockchain Integration
+- Wallet connectivity
+- Token rewards
+- Transaction history
+- Smart contract interactions
+
+## Early User Feedback
+
+Our alpha users have provided invaluable feedback:
+- "Finally, a platform that puts creators first!"
+- "The transparency in earnings is game-changing"
+- "Love the community-driven approach"
+
+## What's Next
+
+The alpha launch is just the beginning. Based on user feedback, we're already working on:
+- Enhanced creator tools
+- Mobile app improvements
+- Additional monetization options
+- Community governance features
+
+## Join the Alpha
+
+Ready to experience the future of content creation? Join our alpha program and help shape the platform's development.
+
+Thank you to our early adopters for believing in our vision!`,
+    bannerImage: 'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Rocket launch representing platform launch',
+    author: {
+      name: 'Product Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2022-02-15T10:00:00Z',
+    tags: ['alpha', 'launch', 'milestone', 'creators'],
+    readingTime: 4,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '19',
+    title: 'First Creator Partnerships: Building Our Community',
+    slug: 'first-creator-partnerships-building-community',
+    excerpt: 'Announcing our initial partnerships with content creators who share our vision for decentralized platforms.',
+    content: `# First Creator Partnerships: Building Our Community
+
+We're thrilled to announce our first wave of creator partnerships! These innovative content creators are joining us in pioneering the future of decentralized platforms.
+
+## Our Partner Creators
+
+### Gaming Content
+- **StreamMaster99**: 500K followers, specializing in competitive gaming
+- **RetroGamerChick**: Nostalgic gaming content with 250K loyal fans
+- **EsportsAnalyst**: Professional gaming commentary and analysis
+
+### Educational Content
+- **TechExplainer**: Breaking down complex technology for everyone
+- **CryptoTeacher**: Blockchain education and tutorials
+- **CodeWithSarah**: Programming tutorials for beginners
+
+### Entertainment
+- **ComedyCentral**: Stand-up comedy and sketches
+- **MusicMaven**: Independent music discovery and promotion
+- **ArtisticVisions**: Digital art creation and tutorials
+
+## Partnership Benefits
+
+### For Creators
+- 90% revenue share (industry-leading)
+- Complete content ownership
+- Advanced analytics dashboard
+- Direct fan engagement tools
+- Token-based incentives
+
+### For Fans
+- Exclusive content access
+- Direct creator support
+- Community participation
+- Transparent interactions
+
+## Success Stories
+
+Our early partnerships have already shown incredible results:
+- 300% increase in creator earnings vs. traditional platforms
+- 250% higher fan engagement rates
+- 95% creator satisfaction scores
+
+## Expanding Our Network
+
+This is just the beginning! We're actively seeking partnerships with creators across all niches who share our values of:
+- Creator empowerment
+- Community ownership
+- Transparent monetization
+- Innovation in content
+
+## Join Our Creator Program
+
+Are you a content creator looking for a platform that truly values your work? Apply for our creator partnership program today!
+
+Together, we're building the future of content creation.`,
+    bannerImage: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Content creators collaboration',
+    author: {
+      name: 'Creator Relations Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2022-05-10T13:00:00Z',
+    tags: ['creators', 'partnerships', 'community', 'monetization'],
+    readingTime: 4,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '20',
+    title: 'DHB Token Genesis: Launching Our Native Currency',
+    slug: 'dhb-token-genesis-launching-native-currency',
+    excerpt: 'The official launch of DHB token marks a new era in creator economy tokenization.',
+    content: `# DHB Token Genesis: Launching Our Native Currency
+
+Today we make history with the official launch of DHB (DeHub) token - the native currency that powers our decentralized creator economy!
+
+## Token Fundamentals
+
+### Initial Supply
+- **Total Supply**: 1,000,000,000 DHB
+- **Circulating Supply**: 250,000,000 DHB (25%)
+- **Network**: BNB Smart Chain (with multi-chain expansion planned)
+
+### Distribution
+- **Community & Creators**: 40%
+- **Platform Development**: 25%
+- **Team & Advisors**: 20% (vested over 4 years)
+- **Liquidity & Partnerships**: 15%
+
+## Utility Features
+
+### Creator Rewards
+- Earn DHB for content creation
+- Bonus rewards for high-engagement content
+- Staking rewards for long-term holders
+
+### Platform Governance
+- Vote on platform features
+- Participate in creator program decisions
+- Influence tokenomics adjustments
+
+### Enhanced Features
+- Reduced transaction fees
+- Priority customer support
+- Early access to new features
+- Exclusive creator tools
+
+## Tokenomics Innovation
+
+Our unique tokenomics model includes:
+- **Burn Mechanism**: 1% of platform revenue used to buy back and burn tokens
+- **Staking Rewards**: Up to 12% APY for stakers
+- **Creator Incentives**: Performance-based token distribution
+- **Community Treasury**: Funding for grants and developments
+
+## Launch Metrics
+
+### Day 1 Results
+- **Trading Volume**: $2.5M
+- **Holders**: 15,000+
+- **Liquidity**: $500K
+- **Price Discovery**: Healthy organic growth
+
+## Security & Audits
+
+- **Smart Contract Audit**: Completed by CertiK
+- **Liquidity Lock**: 2 years
+- **Multi-sig Treasury**: 3/5 consensus required
+- **Regular Security Reviews**: Quarterly assessments
+
+## What's Next
+
+### Q3 2022
+- Major exchange listings
+- Cross-chain bridge development
+- Enhanced staking features
+
+### Q4 2022
+- Governance portal launch
+- Creator grant program
+- Mobile wallet integration
+
+## Join the Token Economy
+
+Ready to be part of the creator economy revolution? Start earning and using DHB tokens today!
+
+The future of creator monetization is here, and it's powered by DHB.`,
+    bannerImage: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Cryptocurrency and blockchain tokens',
+    author: {
+      name: 'Tokenomics Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2022-08-01T11:00:00Z',
+    tags: ['dhb', 'token', 'launch', 'tokenomics'],
+    readingTime: 5,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '21',
+    title: 'Beta Platform Release: Enhanced Features for Creators',
+    slug: 'beta-platform-release-enhanced-features-creators',
+    excerpt: 'Our beta release brings significant improvements based on alpha user feedback and community input.',
+    content: `# Beta Platform Release: Enhanced Features for Creators
+
+Six months after our alpha launch, we're excited to unveil DeHub Beta - a major upgrade that addresses user feedback and introduces powerful new features!
+
+## Major Beta Improvements
+
+### Enhanced Creator Studio
+- **Advanced Video Editor**: Built-in editing tools with filters and effects
+- **Content Scheduler**: Plan and automate your content calendar
+- **Analytics Dashboard**: Detailed insights into audience engagement
+- **Revenue Optimizer**: AI-powered monetization suggestions
+
+### Community Features
+- **Live Streaming**: Real-time interaction with your audience
+- **Community Posts**: Share updates beyond main content
+- **Fan Clubs**: Create exclusive spaces for top supporters
+- **Collaboration Tools**: Work with other creators seamlessly
+
+### Monetization Upgrades
+- **Tiered Subscriptions**: Multiple subscription levels with different perks
+- **Pay-per-View Content**: Exclusive content behind paywalls
+- **Merchandise Integration**: Sell branded items directly on platform
+- **Sponsorship Marketplace**: Connect with brand partners
+
+### Technical Improvements
+- **50% Faster Loading**: Optimized content delivery
+- **Mobile App**: Native iOS and Android applications
+- **Offline Viewing**: Download content for later consumption
+- **Multi-language Support**: Platform available in 10 languages
+
+## User Growth & Engagement
+
+### Platform Statistics
+- **Active Creators**: 10,000+
+- **Monthly Users**: 500,000+
+- **Content Uploads**: 1M+ videos and posts
+- **Total Earnings Paid**: $2.5M to creators
+
+### Community Feedback
+- 94% creator satisfaction rate
+- 4.8/5 app store rating
+- 89% user retention rate
+- 300% increase in creator earnings
+
+## New Partnership Programs
+
+### Creator Accelerator
+- Mentorship from successful creators
+- Marketing support and promotion
+- Advanced analytics and insights
+- Priority feature access
+
+### Brand Partnership Network
+- Connect creators with relevant brands
+- Transparent sponsorship marketplace
+- Automated contract management
+- Performance tracking tools
+
+## Security & Trust Enhancements
+
+- **Two-Factor Authentication**: Enhanced account security
+- **Content Verification**: AI-powered authenticity checks
+- **Dispute Resolution**: Fair and transparent conflict resolution
+- **Privacy Controls**: Granular privacy settings for users
+
+## Looking Ahead
+
+The beta release sets the stage for our full 1.0 launch in early 2023. Based on beta feedback, we're already working on:
+- Advanced AI content creation tools
+- Virtual reality integration
+- Cross-platform content syndication
+- Enhanced creator collaboration features
+
+## Join the Beta
+
+Current alpha users are automatically upgraded to beta. New users can join our beta program and experience the future of creator platforms today!
+
+Thank you to our amazing community for helping us build something truly special.`,
+    bannerImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Software development and beta testing',
+    author: {
+      name: 'Product Development Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2022-11-20T15:30:00Z',
+    tags: ['beta', 'features', 'creators', 'platform'],
+    readingTime: 5,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '22',
+    title: 'DeHub v1.0 Official Launch: The Platform is Here',
+    slug: 'dehub-v1-official-launch-platform-here',
+    excerpt: 'After two years of development and testing, we proudly announce the official launch of DeHub v1.0.',
+    content: `# DeHub v1.0 Official Launch: The Platform is Here
+
+Today marks the culmination of two years of vision, development, and community building. We proudly announce the official launch of **DeHub v1.0** - the world's first truly decentralized creator platform!
+
+## What Makes v1.0 Special
+
+### Production-Ready Infrastructure
+- **99.9% Uptime Guarantee**: Enterprise-grade reliability
+- **Global CDN**: Sub-200ms content delivery worldwide
+- **Scalable Architecture**: Support for millions of concurrent users
+- **Advanced Security**: Bank-level encryption and protection
+
+### Complete Creator Ecosystem
+- **Professional Creator Tools**: Everything needed for content creation
+- **Advanced Monetization**: Multiple revenue streams for creators
+- **Community Building**: Tools to grow and engage audiences
+- **Analytics & Insights**: Data-driven growth strategies
+
+### Decentralized Governance
+- **DAO Structure**: Community-owned platform governance
+- **Voting Rights**: DHB holders participate in key decisions
+- **Transparent Operations**: All platform activities on-chain
+- **Creator Representation**: Creators have direct platform influence
+
+## Launch Day Statistics
+
+### Platform Metrics
+- **50,000+ Creators**: Verified and active on the platform
+- **2 Million Users**: Registered community members
+- **10 Million DHB**: Total tokens distributed to creators
+- **$10 Million**: Total creator earnings to date
+
+### Global Reach
+- **75 Countries**: Active users worldwide
+- **15 Languages**: Platform localization
+- **24/7 Support**: Round-the-clock community assistance
+- **Regional Partnerships**: Local creator support networks
+
+## Revolutionary Features
+
+### Creator-First Economics
+- **90% Revenue Share**: Industry-leading creator compensation
+- **Instant Payouts**: Real-time earnings distribution
+- **Multiple Revenue Streams**: Subscriptions, tips, sales, and more
+- **Growth Incentives**: Bonus rewards for platform growth
+
+### Community Ownership
+- **Platform Governance**: Vote on platform changes
+- **Creator Grants**: Community-funded creator support
+- **Feature Requests**: Direct input on platform development
+- **Revenue Sharing**: Platform success benefits all stakeholders
+
+### Technical Innovation
+- **Blockchain Integration**: Transparent and secure transactions
+- **Cross-Chain Support**: Multi-blockchain compatibility
+- **Smart Contracts**: Automated and trustless operations
+- **Decentralized Storage**: Censorship-resistant content hosting
+
+## Industry Recognition
+
+### Awards & Recognition
+- **Best DeFi Innovation 2023**: Blockchain Awards
+- **Creator Platform of the Year**: Web3 Summit
+- **Community Choice Award**: Decentralized Web Conference
+- **Innovation in Tokenomics**: Crypto Economics Forum
+
+### Media Coverage
+Major publications have covered our launch:
+- "DeHub Revolutionizes Creator Economy" - TechCrunch
+- "The Future of Content Creation is Here" - Forbes
+- "Decentralization Meets Creator Economy" - CoinDesk
+- "Platform Built by Creators, for Creators" - The Verge
+
+## Community Celebration
+
+To celebrate our launch, we're hosting:
+- **Creator Festival**: Virtual event with top platform creators
+- **Token Airdrop**: Bonus DHB for early supporters
+- **Partnership Announcements**: Major brand collaborations
+- **Roadmap Reveal**: Exciting features coming in 2023
+
+## What's Next
+
+v1.0 is just the beginning! Our 2023 roadmap includes:
+- **Mobile App Enhancement**: Advanced mobile features
+- **AI Content Tools**: Smart content creation assistance
+- **Virtual Events Platform**: Host virtual conferences and meetups
+- **Creator Education Hub**: Comprehensive learning resources
+
+## Join the Revolution
+
+Ready to experience the future of content creation? Join DeHub v1.0 today and be part of the creator economy revolution!
+
+Thank you to our incredible community for making this dream a reality. Together, we're building the future of decentralized content creation.
+
+The revolution starts now!`,
+    bannerImage: 'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Major product launch celebration',
+    author: {
+      name: 'DeHub Leadership Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2023-03-01T09:00:00Z',
+    tags: ['v1-0', 'launch', 'milestone', 'celebration'],
+    readingTime: 6,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '23',
+    title: 'Series A Funding: $15M to Accelerate Growth',
+    slug: 'series-a-funding-15m-accelerate-growth',
+    excerpt: 'DeHub closes Series A funding round led by top-tier VCs to expand our decentralized creator platform.',
+    content: `# Series A Funding: $15M to Accelerate Growth
+
+We're thrilled to announce the successful completion of our Series A funding round, raising **$15 million** to accelerate the growth of our decentralized creator platform!
+
+## Investment Partners
+
+### Lead Investors
+- **Andreessen Horowitz (a16z)**: Leading the round with $8M investment
+- **Paradigm**: Contributing $4M with strategic guidance
+- **Coinbase Ventures**: $2M investment plus exchange partnerships
+- **Binance Labs**: $1M investment and ecosystem integration
+
+### Strategic Value Beyond Capital
+Our investors bring more than funding:
+- **Technical Expertise**: Blockchain and scalability guidance
+- **Network Effects**: Access to creator and brand networks
+- **Market Expansion**: International growth opportunities
+- **Product Development**: User experience and platform optimization
+
+## Funding Allocation
+
+### Platform Development (40% - $6M)
+- Enhanced mobile applications
+- Advanced creator tools and AI features
+- Scalability improvements
+- Security and infrastructure upgrades
+
+### Global Expansion (25% - $3.75M)
+- International market entry
+- Local partnership development
+- Regional creator support programs
+- Localization and compliance
+
+### Creator Economy Growth (20% - $3M)
+- Creator incentive programs
+- Marketing and creator acquisition
+- Educational content and workshops
+- Creator grant and accelerator programs
+
+### Team Expansion (15% - $2.25M)
+- Engineering and product development
+- Regional business development
+- Creator relations and community management
+- Legal and compliance expertise
+
+## Growth Trajectory
+
+### Current Platform Metrics
+- **100,000+ Active Creators**: 100% growth since v1.0 launch
+- **5 Million Monthly Users**: 150% growth in user base
+- **$25 Million**: Total creator earnings paid out
+- **50 Million DHB**: Tokens in active circulation
+
+### 2023 Growth Targets
+- **500,000 Creators**: 5x creator base expansion
+- **25 Million Users**: Target user base by year-end
+- **$100 Million**: Creator earnings milestone
+- **Global Presence**: Launch in 25+ countries
+
+## Strategic Initiatives
+
+### Technology Advancement
+- **Layer 2 Integration**: Reduced transaction costs and faster processing
+- **Cross-Chain Bridges**: Seamless multi-blockchain operations
+- **AI-Powered Tools**: Smart content creation and optimization
+- **VR/AR Integration**: Immersive content experiences
+
+### Partnership Ecosystem
+- **Brand Partnerships**: Fortune 500 company integrations
+- **Creator Agencies**: Professional creator representation
+- **Educational Institutions**: Blockchain and creator economy courses
+- **Government Relations**: Regulatory collaboration and compliance
+
+### Product Innovation
+- **Creator Analytics Suite**: Advanced performance insights
+- **Community Building Tools**: Enhanced fan engagement features
+- **Monetization Optimization**: AI-driven revenue maximization
+- **Content Discovery Engine**: Personalized content recommendations
+
+## Market Validation
+
+### Industry Recognition
+- **Market Leadership**: Recognized as top decentralized creator platform
+- **User Satisfaction**: 96% creator retention rate
+- **Revenue Growth**: 400% quarter-over-quarter growth
+- **Platform Stability**: 99.95% uptime across all services
+
+### Competitive Advantages
+- **True Decentralization**: Community-owned governance model
+- **Creator-First Economics**: Highest revenue sharing in industry
+- **Blockchain Integration**: Transparent and trustless operations
+- **Innovation Pipeline**: Continuous feature development and releases
+
+## Community Impact
+
+### Creator Success Stories
+- **Average Earnings Increase**: 300% compared to traditional platforms
+- **Creator Independence**: Full content ownership and control
+- **Community Building**: Direct fan relationships without intermediaries
+- **Global Reach**: Creators accessing worldwide audiences
+
+### Platform Democracy
+- **Governance Participation**: 75% of DHB holders actively vote
+- **Feature Requests**: Community-driven platform development
+- **Creator Representation**: Direct creator input on platform policies
+- **Transparent Operations**: All major decisions publicly documented
+
+## Looking Forward
+
+This funding enables us to execute on our ambitious 2023-2024 roadmap:
+- **Technical Innovation**: Cutting-edge creator tools and platform features
+- **Global Expansion**: Bringing DeHub to creators worldwide
+- **Partnership Growth**: Strategic alliances with major brands and platforms
+- **Community Development**: Enhanced creator support and education programs
+
+## Investor Quotes
+
+**Chris Dixon, General Partner at a16z**: *"DeHub represents the future of creator economy - true ownership, fair compensation, and community governance. We're excited to support their mission to democratize content creation."*
+
+**Matt Huang, Co-founder of Paradigm**: *"The team's execution has been exceptional, and their vision for decentralized creator platforms aligns perfectly with the future of web3."*
+
+## Thank You to Our Community
+
+This milestone wouldn't be possible without our incredible community of creators, users, and early believers. Your support, feedback, and passion continue to drive us forward.
+
+The future of creator economy is being built together, and this funding accelerates our shared vision of a more equitable, transparent, and creator-owned digital world.
+
+Here's to the next chapter of growth and innovation!`,
+    bannerImage: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Business growth and investment success',
+    author: {
+      name: 'Executive Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2023-07-15T10:00:00Z',
+    tags: ['funding', 'series-a', 'growth', 'investors'],
+    readingTime: 6,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '24',
+    title: 'Mobile App Revolution: Native iOS & Android Launch',
+    slug: 'mobile-app-revolution-native-ios-android-launch',
+    excerpt: 'Our fully-featured mobile apps bring the complete DeHub experience to iOS and Android devices worldwide.',
+    content: `# Mobile App Revolution: Native iOS & Android Launch
+
+The future of content creation is mobile, and today we're proud to launch our fully-featured native apps for **iOS and Android**! Experience the complete DeHub platform in the palm of your hand.
+
+## Mobile-First Features
+
+### Content Creation on the Go
+- **Advanced Mobile Editor**: Professional editing tools optimized for mobile
+- **One-Tap Publishing**: Instant content sharing with smart formatting
+- **Live Streaming**: Broadcast directly from your mobile device
+- **Story Features**: Quick, engaging content for daily sharing
+
+### Optimized User Experience
+- **Intuitive Navigation**: Designed specifically for mobile interaction
+- **Offline Mode**: Download content for offline viewing
+- **Push Notifications**: Real-time updates on earnings and engagement
+- **Biometric Security**: Face ID and fingerprint authentication
+
+### Creator Tools
+- **Mobile Analytics**: Track performance metrics anywhere
+- **Instant Payouts**: Withdraw earnings directly to mobile wallets
+- **Community Management**: Respond to fans and moderate comments
+- **Collaboration Hub**: Connect with other creators on the move
+
+## Technical Excellence
+
+### Performance Optimization
+- **Lightning Fast**: Sub-2 second app launch times
+- **Efficient Battery Usage**: Optimized for all-day usage
+- **Minimal Data Usage**: Smart compression and caching
+- **Cross-Platform Sync**: Seamless experience across all devices
+
+### Security & Privacy
+- **End-to-End Encryption**: All communications and transactions secured
+- **Local Biometric Authentication**: Device-level security integration
+- **Privacy Controls**: Granular privacy settings and data control
+- **Secure Wallet Integration**: Built-in cryptocurrency wallet support
+
+### Accessibility
+- **Universal Design**: Accessible to users with disabilities
+- **Voice Commands**: Hands-free content creation and navigation
+- **Multiple Languages**: 20+ language support at launch
+- **Customizable Interface**: Personalized UI preferences
+
+## App Store Features
+
+### iOS App Store
+- **App Store Editorial**: Featured in "Apps We Love" section
+- **5-Star Rating**: Early user reviews averaging 4.9/5 stars
+- **Top Charts**: Climbing social media and entertainment categories
+- **iOS Integration**: Shortcuts, Widgets, and Siri support
+
+### Google Play Store
+- **Google Play Pass**: Included in premium subscription service
+- **Editor's Choice**: Selected as Google Play Editor's Choice
+- **Android Features**: Picture-in-picture, adaptive icons, and Android 13 optimization
+- **Play Console**: Advanced analytics and user feedback integration
+
+## Launch Day Success
+
+### Download Metrics
+- **500,000+ Downloads**: First week across both platforms
+- **4.8/5 Rating**: Exceptional user satisfaction scores
+- **85% Retention**: 7-day user retention rate
+- **3.5 Sessions/Day**: High engagement and daily usage
+
+### Creator Adoption
+- **75% of Creators**: Already using mobile apps for content creation
+- **200% Increase**: Mobile content uploads since launch
+- **90% Satisfaction**: Creator feedback on mobile tools
+- **50% More Earnings**: Mobile users earning more through increased engagement
+
+## Unique Mobile Features
+
+### Augmented Reality Tools
+- **AR Filters**: Custom filters for video content
+- **Virtual Backgrounds**: Professional backgrounds anywhere
+- **3D Effects**: Interactive elements for immersive content
+- **Brand AR**: Custom AR experiences for brand partnerships
+
+### Social Integration
+- **Cross-Platform Sharing**: Share to all major social media platforms
+- **Social Login**: Quick registration with existing social accounts
+- **Friend Discovery**: Find friends from other social platforms
+- **Social Proof**: Display social media achievements and followers
+
+### Creator Economy Mobile Features
+- **Mobile Wallet**: Built-in cryptocurrency wallet for DHB tokens
+- **QR Code Payments**: Instant fan tipping via QR codes
+- **Mobile Merchandise**: Sell products directly through the app
+- **Location-Based Features**: Geo-tagged content and local discovery
+
+## Community Response
+
+### User Testimonials
+*"Finally, a mobile app that doesn't compromise on features. I can run my entire creator business from my phone!"* - @CreatorStudio99
+
+*"The mobile editing tools are better than most desktop applications. Game-changing for content creators."* - @MobileCreatorPro
+
+*"Love how I can engage with my community anywhere, anytime. The notifications keep me connected."* - @CommunityBuilder
+
+### Creator Success Stories
+- **Mobile-First Creators**: 40% of new creators are mobile-only users
+- **Increased Engagement**: Mobile users show 60% higher engagement rates
+- **Global Reach**: Mobile apps enabling creators in emerging markets
+- **Creator Earnings**: Mobile-driven content generating higher revenue per view
+
+## Future Mobile Innovations
+
+### Planned Updates (Q4 2023)
+- **Advanced AI Editing**: Smart content enhancement and suggestion
+- **Live Commerce**: Sell products during live streams
+- **Creator Collaboration**: Multi-creator content creation tools
+- **Enhanced Analytics**: Deeper mobile-specific insights
+
+### Emerging Technology Integration
+- **5G Optimization**: Ultra-fast content uploads and streaming
+- **Edge Computing**: Reduced latency for real-time features
+- **Machine Learning**: Personalized content recommendations
+- **IoT Integration**: Connect with smart devices and wearables
+
+## Download Today
+
+The mobile revolution in content creation starts now! Download DeHub for iOS and Android today and experience the future of mobile-first creator platforms.
+
+### Where to Download
+- **iOS**: Available on the App Store
+- **Android**: Available on Google Play Store
+- **Web**: Continue using our web platform seamlessly
+
+### Getting Started
+1. Download the app from your device's app store
+2. Sign in with your existing DeHub account or create a new one
+3. Complete the mobile onboarding tutorial
+4. Start creating and earning on the go!
+
+Join millions of creators who are already experiencing the freedom of mobile content creation. The future is mobile, and it's here today with DeHub!`,
+    bannerImage: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=1200&h=600&fit=crop',
+    bannerImageAlt: 'Mobile phones displaying creative apps',
+    author: {
+      name: 'Mobile Development Team',
+      avatar: '/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png'
+    },
+    publishedAt: '2023-10-12T11:30:00Z',
+    tags: ['mobile', 'ios', 'android', 'apps'],
+    readingTime: 6,
+    featured: false,
+    status: 'published'
   },
   {
     id: '2',
