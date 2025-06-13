@@ -6,7 +6,7 @@ interface BlogContentProps {
 }
 
 const BlogContent: React.FC<BlogContentProps> = ({ content }) => {
-  // Simple markdown-like rendering
+  // Enhanced markdown-like rendering
   const renderContent = (text: string) => {
     return text
       .split('\n')
@@ -22,31 +22,52 @@ const BlogContent: React.FC<BlogContentProps> = ({ content }) => {
           return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-4 font-exo">{line.slice(4)}</h3>;
         }
         
-        // Lists
-        if (line.startsWith('- ')) {
-          return <li key={index} className="text-royal-blue/80 mb-2 ml-4 font-exo">{line.slice(2)}</li>;
+        // Lists - handle both - and • bullets
+        if (line.startsWith('- ') || line.startsWith('• ')) {
+          const listContent = line.startsWith('- ') ? line.slice(2) : line.slice(2);
+          // Process the list content for bold formatting
+          const processedContent = listContent
+            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>')
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
+          
+          return (
+            <li 
+              key={index} 
+              className="text-royal-blue/80 mb-2 ml-4 font-exo list-disc"
+              dangerouslySetInnerHTML={{ __html: processedContent }}
+            />
+          );
         }
         if (/^\d+\./.test(line)) {
-          return <li key={index} className="text-royal-blue/80 mb-2 ml-4 font-exo">{line.replace(/^\d+\.\s/, '')}</li>;
+          const listContent = line.replace(/^\d+\.\s/, '');
+          const processedContent = listContent
+            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>')
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
+          
+          return (
+            <li 
+              key={index} 
+              className="text-royal-blue/80 mb-2 ml-4 font-exo list-decimal"
+              dangerouslySetInnerHTML={{ __html: processedContent }}
+            />
+          );
         }
-        
-        // Bold text
-        const boldText = line.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>');
-        
-        // Links
-        const linkedText = boldText.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
         
         // Empty lines
         if (line.trim() === '') {
           return <br key={index} />;
         }
         
-        // Regular paragraphs
+        // Regular paragraphs - process for bold and links
+        let processedLine = line
+          .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>')
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
+        
         return (
           <p 
             key={index} 
             className="text-royal-blue/80 mb-4 leading-relaxed font-exo"
-            dangerouslySetInnerHTML={{ __html: linkedText }}
+            dangerouslySetInnerHTML={{ __html: processedLine }}
           />
         );
       });
