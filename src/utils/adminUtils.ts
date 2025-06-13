@@ -4,11 +4,29 @@ const ADMIN_IPS = ['127.0.0.1', 'localhost', '::1']; // Add your actual IP here
 
 export const isAdmin = async (): Promise<boolean> => {
   try {
-    // In production, you'd get the real IP from your server
-    // For now, we'll simulate admin access in development
-    return true; // Set to false to test non-admin access
-  } catch {
-    return false;
+    // Try to get IP from multiple sources for better detection
+    let userIP = '';
+    
+    // Method 1: Try using a public IP service
+    try {
+      const response = await fetch('https://api.ipify.org?format=json');
+      const data = await response.json();
+      userIP = data.ip;
+    } catch {
+      // Method 2: Fallback to local detection (for localhost/development)
+      userIP = 'localhost';
+    }
+    
+    console.log('User IP detected:', userIP);
+    console.log('Admin IPs:', ADMIN_IPS);
+    
+    // Check if user IP matches any admin IP
+    return ADMIN_IPS.includes(userIP) || 
+           ADMIN_IPS.includes('localhost') || 
+           ADMIN_IPS.includes('127.0.0.1');
+  } catch (error) {
+    console.error('Error checking admin status:', error);
+    return false; // Default to false for security
   }
 };
 
