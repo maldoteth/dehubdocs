@@ -9,19 +9,23 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Introducing our new community blog where we\'ll share updates, insights, and stories from the DeHub ecosystem.',
     content: `# Welcome to the DeHub Community Blog
 
-We're excited to launch our new community blog! This is where we'll be sharing:
+We're excited to launch our new community blog! This is where we'll be sharing the latest developments, insights, and stories from the growing DeHub ecosystem.
 
 ## What to Expect
 
-- **Platform Updates**: Stay informed about the latest features and improvements
-- **Community Highlights**: Celebrating our amazing community members
-- **Technical Deep Dives**: Behind-the-scenes looks at our technology
-- **Partnership Announcements**: News about exciting collaborations
-- **Educational Content**: Guides to help you get the most out of DeHub
+Our blog will serve as your primary source for platform updates, keeping you informed about the latest features and improvements we're rolling out. You can expect detailed explanations of new functionality, technical enhancements, and user experience improvements that directly impact how you interact with our platform.
+
+We'll also be celebrating our amazing community members through regular community highlights. These features will showcase the incredible creativity, innovation, and success stories emerging from our platform, giving recognition to the creators and users who make DeHub special.
+
+For those interested in the technical aspects of our platform, we'll provide behind-the-scenes looks at our technology stack. These technical deep dives will explore our architecture decisions, blockchain integrations, and the engineering challenges we solve to deliver a seamless decentralized experience.
+
+Stay informed about our exciting collaborations through partnership announcements. We'll share news about strategic alliances, integrations with other platforms, and collaborative initiatives that expand the DeHub ecosystem and create new opportunities for our community.
+
+Finally, we'll publish comprehensive educational content designed to help you get the most out of DeHub. These guides will cover everything from basic platform navigation to advanced monetization strategies, ensuring every user can maximize their potential on our platform.
 
 ## Join the Conversation
 
-We encourage you to engage with our content by sharing your thoughts and questions. Together, we're building something amazing.
+We encourage you to engage with our content by sharing your thoughts and questions. Together, we're building something amazing, and your feedback and participation are essential to our continued growth and improvement.
 
 Stay tuned for regular updates, and thank you for being part of the DeHub community!`,
     bannerImage: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&h=600&fit=crop',
@@ -45,31 +49,37 @@ Stay tuned for regular updates, and thank you for being part of the DeHub commun
     excerpt: 'The founding story of DeHub - how our vision for decentralized content creation and infrastructure began.',
     content: `# DeHub Project Genesis: The Vision Begins
 
-In 2021, we embarked on a journey to revolutionize content creation and decentralized infrastructure. This is the story of how DeHub was born.
+In 2021, we embarked on a journey to revolutionize content creation and decentralized infrastructure. This is the story of how DeHub was born and the vision that drives us forward.
 
 ## The Problem We Saw
 
-The digital content landscape was dominated by centralized platforms that:
-- Took excessive cuts from creator earnings
-- Controlled content distribution
-- Lacked transparency in monetization
-- Provided no ownership rights to creators
+The digital content landscape was dominated by centralized platforms that created significant barriers for creators. These platforms took excessive cuts from creator earnings, often claiming 30-50% of revenue while providing minimal transparency about how these fees were calculated or justified. The lack of transparency extended beyond monetization, as creators had no insight into how their content was being distributed or promoted.
+
+Content distribution was another major concern, as creators were entirely dependent on platform algorithms that could change without notice. A single algorithm update could devastate a creator's reach and income overnight, with no recourse or explanation. This created an environment of uncertainty where creators couldn't build sustainable businesses.
+
+Perhaps most concerning was the complete lack of ownership rights that creators had over their content. Platforms could terminate accounts, remove content, or change terms of service at will, leaving creators with no protection for the work they had invested years building. This fundamental imbalance of power needed to be addressed.
 
 ## Our Vision
 
-We envisioned a platform where:
-- Creators truly own their content
-- Revenue sharing is transparent and fair
-- Community governance drives decisions
-- Blockchain technology ensures trust
+We envisioned a platform where creators would truly own their content through blockchain-based verification and storage. This ownership would be immutable and transferable, giving creators the security and control they deserved over their intellectual property.
+
+Revenue sharing would be completely transparent and fair, with smart contracts automatically distributing earnings according to predetermined rules. Creators would be able to see exactly how much they earned from each piece of content and understand the revenue-sharing model down to the smallest detail.
+
+Community governance would drive all major platform decisions, ensuring that the people who create value on the platform have a direct say in its future direction. This democratic approach would prevent the kind of arbitrary policy changes that plague traditional platforms.
+
+Blockchain technology would ensure trust and transparency in all platform operations. Every transaction, every policy change, and every major decision would be recorded on-chain, creating an immutable record of platform governance and operations.
 
 ## The Foundation
 
-2021 marked the beginning of our technical architecture and the assembly of our founding team. We started building the infrastructure that would eventually support millions of creators worldwide.
+2021 marked the beginning of our technical architecture development and the careful assembly of our founding team. We started building the infrastructure that would eventually support millions of creators worldwide, focusing on scalability, security, and user experience from day one.
+
+Our early technical decisions focused on creating a robust, decentralized infrastructure that could handle the demands of a global creator platform. We researched various blockchain solutions, evaluated different storage options, and designed systems that would provide traditional platform performance while maintaining decentralized principles.
 
 ## Looking Back
 
-What started as an idea has grown into a thriving ecosystem. Thank you to our early believers who saw the potential in our vision.`,
+What started as an ambitious idea has grown into a thriving ecosystem that serves creators across the globe. We're grateful to our early believers who saw the potential in our vision and supported us through the challenging early days of building something entirely new in the creator economy space.
+
+Thank you to everyone who believed in our vision and helped make DeHub a reality.`,
     bannerImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop',
     bannerImageAlt: 'Digital space and innovation concept',
     author: {
@@ -1389,7 +1399,7 @@ The Base L2 launch is part of our broader multi-chain strategy:
 
 1. **BNB Smart Chain**: Established presence with strong liquidity
 2. **Ethereum Mainnet**: Maximum security and decentralization
-3. **Base L2**: Optimal performance and cost efficiency
+3. **Base L2**: Optimal performance (coming Q2 2024)
 
 ## Migration Benefits
 
