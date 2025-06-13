@@ -1,8 +1,9 @@
 
 import React, { useState, useMemo } from 'react';
-import { Search, Tag, Calendar, TrendingUp } from 'lucide-react';
+import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts, getAllTags, searchPosts } from '@/utils/blogData';
 import BlogCard from '@/components/blog/BlogCard';
+import { Alert, AlertDescription } from '@/components/ui/alert';
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -30,6 +31,14 @@ const Blog = () => {
 
   return (
     <div className="space-y-12">
+      {/* Construction Notice */}
+      <Alert className="bg-amber-50 border-amber-200">
+        <AlertCircle className="h-4 w-4 text-amber-600" />
+        <AlertDescription className="text-amber-800 font-exo">
+          Our new blog is under construction, stay tuned for the official release
+        </AlertDescription>
+      </Alert>
+
       {/* Header */}
       <div className="text-center space-y-6">
         <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
