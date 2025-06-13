@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -157,10 +156,16 @@ const DocsHome = () => {
         <p className="text-sky-blue/90 mb-6 max-w-2xl mx-auto font-exo text-zinc-50">
           Follow our step-by-step guide to integrate our platform in minutes.
         </p>
-        <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
-          Start Building
-          <ArrowRight className="w-4 h-4 ml-2" />
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+            Start Building
+            <ArrowRight className="w-4 h-4 ml-2" />
+          </Link>
+          <Link to="/docs/blog" className="inline-flex items-center px-6 py-3 border border-plain-white text-plain-white font-semibold rounded-lg hover:bg-plain-white/10 transition-all duration-200 font-exo">
+            Read Our Blog
+            <ArrowRight className="w-4 h-4 ml-2" />
+          </Link>
+        </div>
       </div>
 
       {/* Last Updated */}

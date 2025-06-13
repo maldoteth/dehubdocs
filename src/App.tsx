@@ -34,6 +34,8 @@ const Contact = lazy(() => import("./pages/docs/Contact"));
 const PrivacyPolicy = lazy(() => import("./pages/docs/PrivacyPolicy"));
 const TokenStake = lazy(() => import("./pages/docs/TokenStake"));
 const Roadmap = lazy(() => import("./pages/docs/Roadmap"));
+const Blog = lazy(() => import("./pages/docs/Blog"));
+const BlogPost = lazy(() => import("./pages/docs/BlogPost"));
 
 // Loading component for Suspense fallback
 const PageLoader = () => (
@@ -197,6 +199,16 @@ const App = () => (
             <Route path="best-practices" element={<ComingSoonPage title="Best Practices" description="Recommended approaches and coding standards." />} />
             <Route path="troubleshooting" element={<ComingSoonPage title="Troubleshooting" description="Common issues and solutions for developers." />} />
             <Route path="examples" element={<ComingSoonPage title="Examples" description="Code examples and implementation samples." />} />
+            <Route path="blog" element={
+              <Suspense fallback={<PageLoader />}>
+                <Blog />
+              </Suspense>
+            } />
+            <Route path="blog/:slug" element={
+              <Suspense fallback={<PageLoader />}>
+                <BlogPost />
+              </Suspense>
+            } />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
