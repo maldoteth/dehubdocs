@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
+import { getPublishedPosts } from '@/utils/blogData';
 
 // Declare the global build time variable
 declare const __BUILD_TIME__: string;
@@ -13,6 +14,10 @@ const DocsHome = () => {
 
   // Monitor performance for this page
   usePerformance();
+  
+  // Get the latest blog post
+  const latestPost = getPublishedPosts()[0];
+  
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
@@ -139,6 +144,49 @@ const DocsHome = () => {
             </div>)}
         </div>
       </div>
+
+      {/* Latest Blog Post Promotion */}
+      {latestPost && (
+        <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="lg:w-1/3">
+              <img 
+                src={latestPost.bannerImage} 
+                alt={latestPost.bannerImageAlt}
+                className="w-full h-48 object-cover rounded-xl"
+              />
+            </div>
+            <div className="lg:w-2/3 text-center lg:text-left">
+              <div className="mb-4">
+                <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                  Latest from our Blog
+                </span>
+                <h2 className="text-2xl lg:text-3xl font-bold text-royal-blue mb-3 font-exo">
+                  {latestPost.title}
+                </h2>
+                <p className="text-royal-blue/70 mb-6 font-exo">
+                  {latestPost.excerpt}
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link 
+                  to={`/docs/blog/${latestPost.slug}`}
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo"
+                >
+                  Read Article
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+                <Link 
+                  to="/docs/blog"
+                  className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo"
+                >
+                  Visit Our Blog
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Getting Started */}
       <div className="bg-gradient-to-r from-royal-blue to-middle-blue rounded-2xl p-8 text-center">
