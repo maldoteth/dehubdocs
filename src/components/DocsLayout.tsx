@@ -3,7 +3,6 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Button } from '@/components/ui/button';
-import { isAdmin } from '@/utils/adminUtils';
 
 const menuItems = [{
   title: 'Main',
@@ -144,7 +143,6 @@ const DocsLayoutContent = () => {
   const [expandedMenus, setExpandedMenus] = useState<{
     [key: string]: boolean;
   }>({});
-  const [isAdminUser, setIsAdminUser] = useState(false);
   const location = useLocation();
 
   // Prevent body scroll when sidebar is open on mobile
@@ -161,15 +159,6 @@ const DocsLayoutContent = () => {
     };
   }, [sidebarOpen]);
 
-  useEffect(() => {
-    checkAdminAccess();
-  }, []);
-
-  const checkAdminAccess = async () => {
-    const adminStatus = await isAdmin();
-    setIsAdminUser(adminStatus);
-  };
-
   const isActivePath = (path: string) => {
     return location.pathname === path;
   };
@@ -182,18 +171,6 @@ const DocsLayoutContent = () => {
   const closeSidebar = () => {
     setSidebarOpen(false);
   };
-
-  // Add admin menu items if user is admin
-  const adminMenuItems = isAdminUser ? [{
-    title: 'Admin',
-    items: [{
-      title: 'Blog Admin',
-      path: '/docs/blog/admin',
-      icon: '⚙️'
-    }]
-  }] : [];
-
-  const allMenuItems = [...menuItems, ...adminMenuItems];
 
   return <div className="min-h-screen bg-gradient-to-br from-sky-blue/10 to-middle-blue/10">
       {/* Header */}
@@ -212,15 +189,6 @@ const DocsLayoutContent = () => {
           <Link to="/docs" className="lg:hidden flex items-center justify-center absolute left-1/2 transform -translate-x-1/2">
             <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
           </Link>
-
-          {/* Admin indicator */}
-          {isAdminUser && (
-            <div className="hidden lg:block">
-              <span className="text-sm bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-3 py-1 rounded-full">
-                Admin
-              </span>
-            </div>
-          )}
         </div>
       </header>
 
@@ -241,7 +209,7 @@ const DocsLayoutContent = () => {
             <ScrollArea className="flex-1 overscroll-contain">
               <div className="py-6">
                 <nav className="px-4 space-y-6">
-                  {allMenuItems.map(section => <div key={section.title}>
+                  {menuItems.map(section => <div key={section.title}>
                       {section.title !== 'Main' && <h3 className="text-sm font-semibold text-royal-blue/70 uppercase tracking-wider mb-3">
                           {section.title}
                         </h3>}

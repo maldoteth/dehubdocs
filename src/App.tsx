@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -37,9 +36,6 @@ const TokenStake = lazy(() => import("./pages/docs/TokenStake"));
 const Roadmap = lazy(() => import("./pages/docs/Roadmap"));
 const Blog = lazy(() => import("./pages/docs/Blog"));
 const BlogPost = lazy(() => import("./pages/docs/BlogPost"));
-const BlogAdmin = lazy(() => import("./pages/docs/BlogAdmin"));
-const BlogCreatePost = lazy(() => import("./pages/docs/BlogCreatePost"));
-const BlogEditPost = lazy(() => import("./pages/docs/BlogEditPost"));
 
 // Loading component for Suspense fallback
 const PageLoader = () => (
@@ -211,21 +207,6 @@ const App = () => (
             <Route path="blog/:slug" element={
               <Suspense fallback={<PageLoader />}>
                 <BlogPost />
-              </Suspense>
-            } />
-            <Route path="blog/admin" element={
-              <Suspense fallback={<PageLoader />}>
-                <BlogAdmin />
-              </Suspense>
-            } />
-            <Route path="blog/admin/create" element={
-              <Suspense fallback={<PageLoader />}>
-                <BlogCreatePost />
-              </Suspense>
-            } />
-            <Route path="blog/admin/edit/:slug" element={
-              <Suspense fallback={<PageLoader />}>
-                <BlogEditPost />
               </Suspense>
             } />
           </Route>
