@@ -294,8 +294,8 @@ This all fully affirms our decision to delist ourself, go all DEX and stay true 
 While crypto is an unregulated cesspit of scammers, grifters and chancers, the lack of regulation is exactly what makes it so beautiful at the same time. Untamed innovation, true capitalism. For “every action has an equal an opposite reaction” — Newton’s Third Law is one I’ve associated to most through out life and it couldn’t be more true with crypto. It’s also why we’ve never stopped building; for every setback, there is an equal and opposite opportunity.
 
 Thank you for trusting and supporting us through these unprecedented actions, all to ensure the success of DeHub and protection of investors.`,
-    bannerImage: getNextImage(),
-    bannerImageAlt: '1 Year Review; A Quick Look Back',
+    bannerImage: '/lovable-uploads/ffb3a54c-cb66-4856-b9ff-491567ce3324.png',
+    bannerImageAlt: 'A Look Back In Time',
     author: { name: 'DeHub' },
     publishedAt: new Date('2024-11-12').toISOString(),
     tags: ['Gate.io', 'Delisting', 'DEX', 'Transparency', 'Strategy', '2024'],
