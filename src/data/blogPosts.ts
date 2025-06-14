@@ -606,6 +606,8 @@ const transparencyPost = blogPosts.find(p => p.slug === transparencyPostSlug);
 if (transparencyPost) {
   transparencyPost.title = "What’s in store for the end of the year?";
   transparencyPost.excerpt = "A quick overview of exciting updates coming before the end of 2023, including Streaming, Arcade, Shop, and more.";
+  transparencyPost.bannerImage = '/lovable-uploads/131924d4-97f2-468e-9b52-cbf384e718ea.png';
+  transparencyPost.bannerImageAlt = "Bird's Eye Overview";
   transparencyPost.content = `### What’s in store for the end of the year?
 
 2023 has quickly flashed before our eyes, but we still have many exciting updates coming before yearend.
@@ -636,7 +638,7 @@ The highly anticipated partner airdrop reveal is coming on November 21st. If you
 
 The recent events you saw unfold with inter-community rivalries is important and rest assured it is just beginning. We will be going after Rumble, Kick, YouTube, Twitch, and any other competitors the same way they go after each other today. It is the natural order for competing businesses.
 
-Remember “Stream Wars”… controversial, headline grabbing, internet breaking publicity stunts. As we grow, we will leverage these as tools to promote DeHub and get it in front of people’s faces.
+Remember “Stream Wars”… controversial, headline grabbing, internet breaking publicity stunts. As we grow, we will leverage these as tools to promote DeHub and get it in front of people's faces.
 
 We are building the solution many are realizing is necessary. The evidence is visible with the rise of Rumble and the worldwide outcry against censorship, demonetization, and archaic moderation.`;
   transparencyPost.seoTitle = "DeHub: What’s in store for the end of 2023?";
