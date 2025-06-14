@@ -599,3 +599,47 @@ If you want to get involved, follow the steps below.`;
   airdropPost.seoTitle = "DeHub's Partner Airdrop for Fan.site Fork | November Update";
   airdropPost.seoDescription = "All the details on the partner airdrop for Fan.site, the adult fork of DeHub. Learn about the airdrop, strategy, and key updates for DeHub stakers.";
 }
+
+const transparencyPostSlug = 'full-disclosure-dehubs-comprehensive-transparency-reports---a-dehub-milestone-from-q4-2023';
+const transparencyPost = blogPosts.find(p => p.slug === transparencyPostSlug);
+
+if (transparencyPost) {
+  transparencyPost.title = "What’s in store for the end of the year?";
+  transparencyPost.excerpt = "A quick overview of exciting updates coming before the end of 2023, including Streaming, Arcade, Shop, and more.";
+  transparencyPost.content = `### What’s in store for the end of the year?
+
+2023 has quickly flashed before our eyes, but we still have many exciting updates coming before yearend.
+
+Curious? Here is a quick overview:
+
+### Streaming
+All features are scheduled to be complete and launched on stores by yearend.
+
+As you likely know, our team are already successful streamers with over 500,000 followers combined as well as a leading social media agency.
+
+Given our expertise and proven track record off-chain, there is no doubt users and creators are coming, and we continue to ensure the framework is in place to support them.
+
+### Arcade
+The new user interface will be complete along with the addition of at least two more custom mini games for some festive activities.
+
+Our latest release, Street Slayer, will have some overpowered combos nerfed before we live stream competitive tournaments, of which you should expect many! So get slaying.
+
+The trailer for the cinematic release of “Last Chad Standing” is set for December 18th. The world’s first MMA inspired battle royale will be a hyper-realistic, gory, and gritty fighting experience unlike anything seen before.
+
+### Shop
+Landing soon is our fiat on/off ramp to purchase items and bundles. Along with the wallet generation and confirmation automation, buying tokens to store or use on the DeHub app will feel native to any internet user.
+
+A refund is coming for all house raffle purchases, as sales did not hit the required minimum. However, the minted NFT still holds value and will be incorporated into our app. Smaller raffles for toys, memberships or holidays could make for some festive fun as we approach the season of giving.
+
+### General Operations
+The highly anticipated partner airdrop reveal is coming on November 21st. If you staked before a deadline, you must remain staked until you’ve received your allocated airdrop. Anyone who un-stakes before the airdrop is complete, but was staked during the deadline, must also re-stake to qualify. Drops like these cater to club members. Those staking for the entire duration need not do a thing.
+
+The recent events you saw unfold with inter-community rivalries is important and rest assured it is just beginning. We will be going after Rumble, Kick, YouTube, Twitch, and any other competitors the same way they go after each other today. It is the natural order for competing businesses.
+
+Remember “Stream Wars”… controversial, headline grabbing, internet breaking publicity stunts. As we grow, we will leverage these as tools to promote DeHub and get it in front of people’s faces.
+
+We are building the solution many are realizing is necessary. The evidence is visible with the rise of Rumble and the worldwide outcry against censorship, demonetization, and archaic moderation.`;
+  transparencyPost.seoTitle = "DeHub: What’s in store for the end of 2023?";
+  transparencyPost.seoDescription = "A quick overview of exciting updates coming before the end of 2023, including Streaming, Arcade, Shop, and general operations for DeHub.";
+  transparencyPost.readingTime = 3;
+}
