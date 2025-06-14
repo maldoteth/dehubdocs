@@ -25,6 +25,14 @@ const generateSlug = (title: string) => {
   return title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 };
 
+// Helper function to pick a random item from an array
+const pickRandom = (arr: string[]): string => {
+  if (!arr || arr.length === 0) {
+    return ""; // Return an empty string or a default value if the array is empty
+  }
+  return arr[Math.floor(Math.random() * arr.length)];
+};
+
 let postIdCounter = 0;
 const createPost = (
   quarter: string, // e.g., "Q1 2021"
@@ -46,43 +54,64 @@ const createPost = (
 
   // Collections of more descriptive phrases
   const dehubValues = [
-    "our core value of innovation",
-    "our strong commitment to the community",
-    "our unwavering focus on platform security",
-    "our dedication to continuous growth and improvement",
-    "the principle of transparency in our operations"
+    "our core value of relentless innovation",
+    "our strong and unwavering commitment to the community",
+    "our steadfast focus on ensuring robust platform security",
+    "our dedication to fostering continuous growth and tangible improvement",
+    "the guiding principle of complete transparency in all our operations",
+    "the pursuit of excellence in every feature we develop",
+    "a user-centric approach that prioritizes the needs of our audience"
   ];
 
   const broaderGoals = [
-    "our overarching goal of enhancing platform capabilities",
-    "the key objective of expanding user engagement",
-    "the strategic aim of strengthening our ecosystem's foundations",
-    "our mission to deliver unparalleled value to our users",
-    "the drive to pioneer new solutions in the decentralized space"
+    "our overarching goal of significantly enhancing platform capabilities and user experience",
+    "the key objective of strategically expanding user engagement and community interaction",
+    "the strategic aim of strengthening our ecosystem's foundational infrastructure for long-term success",
+    "our core mission to deliver unparalleled value and cutting-edge solutions to our users",
+    "the ambitious drive to pioneer new and innovative solutions within the decentralized technology space",
+    "establishing DeHub as a leader in decentralized applications",
+    "creating a sustainable and thriving digital economy around our platform"
   ];
 
   const generalEfforts = [
-    "the dedicated teamwork of our skilled professionals",
-    "overcoming a series of complex technical challenges",
-    "meticulous strategic planning and agile execution",
-    "a period of intense research and development",
-    "collaborative efforts across multiple departments"
+    "the dedicated and collaborative teamwork of our highly skilled professional team",
+    "successfully overcoming a series of complex and multifaceted technical challenges",
+    "meticulous strategic planning combined with agile and responsive execution methodologies",
+    "a period of intense, focused research and cutting-edge development initiatives",
+    "synergistic collaborative efforts across multiple internal departments and external partners",
+    "rigorous testing and quality assurance processes to ensure stability",
+    "community feedback integration throughout the development lifecycle"
   ];
 
   const impacts = [
-    "significantly strengthened our platform's core foundation",
-    "opened exciting new avenues for user engagement and interaction",
-    "materially bolstered our market position and competitive edge",
-    "provided a robust framework for future developments",
-    "enhanced the overall user experience significantly"
+    "significantly strengthened and future-proofed our platform's core foundational elements",
+    "opened up exciting new avenues and possibilities for user engagement and rich interaction",
+    "materially bolstered our market position and provided a distinct competitive edge",
+    "provided a robust and scalable framework for numerous future developments and innovations",
+    "enhanced the overall user experience, making it more intuitive, engaging, and rewarding",
+    "increased platform adoption and user retention rates",
+    "set a new benchmark for quality and innovation within our sector"
   ];
-
-  const defaultExcerpt = `Delve into DeHub's journey as we explore the ${quarter} achievement: "${bulletPoint}". Discover its impact on our ecosystem and our ongoing mission.`;
+  
+  const defaultExcerpt = `Delve into DeHub's journey as we explore the ${quarter} achievement: "${bulletPoint}". Discover its impact on our ecosystem and our ongoing mission to redefine decentralized experiences.`;
   
   const specificDetailsSection = `
 The work undertaken for "${bulletPoint}" was comprehensive, involving careful consideration of various factors to ensure its success. 
-While the full scope included many intricate steps, the essence of this milestone was to firmly establish this important development within our roadmap. 
-This laid crucial groundwork for subsequent projects and innovations.
+This milestone represented a significant step in our roadmap, focusing on ${pickRandom([
+    "enhancing core functionality", 
+    "improving user experience", 
+    "expanding platform capabilities", 
+    "strengthening security measures",
+    "integrating new technologies"
+  ])}. 
+It involved ${pickRandom([
+    "extensive research and development",
+    "cross-functional team collaboration",
+    "rigorous testing and quality assurance",
+    "community feedback and iteration",
+    "strategic partnerships"
+  ])} to ensure we delivered a robust and impactful solution. 
+This laid crucial groundwork for subsequent projects and innovations, reinforcing our commitment to ${pickRandom(dehubValues)}.
   `;
 
   const defaultContent = `
@@ -94,13 +123,13 @@ In the vibrant period of ${quarter}, DeHub marked a significant step forward: **
 
 The initiative to "${bulletPoint}" was driven by ${pickRandom(dehubValues)}. It represented a crucial phase in ${pickRandom(broaderGoals)}, reflecting our commitment to pushing boundaries and achieving new heights.
 
-${additionalContent || `This achievement involved ${pickRandom(generalEfforts)} and was met with positive reception from our community, validating the direction and effort invested.`}
+${additionalContent || `This achievement involved ${pickRandom(generalEfforts)} and was met with positive reception from our community, validating the direction and effort invested. The team dedicated considerable resources to ensure that "${bulletPoint}" not only met but exceeded expectations, showcasing our capability to deliver on complex projects.`}
 
 ${specificDetailsSection}
 
 ## Impact and Future Outlook
 
-Successfully completing "${bulletPoint}" has ${pickRandom(impacts)}. It paved the way for subsequent innovations and continues to shape DeHub's trajectory towards a more decentralized and user-centric future.
+Successfully completing "${bulletPoint}" has ${pickRandom(impacts)}. It paved the way for subsequent innovations and continues to shape DeHub's trajectory towards a more decentralized and user-centric future. This particular milestone is a testament to our adaptive strategies and our focus on long-term growth.
 
 We remain dedicated to building upon such successes as we forge ahead. Stay tuned for more updates from DeHub as we continue to innovate and grow!
   `;
