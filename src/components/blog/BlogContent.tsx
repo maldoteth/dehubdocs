@@ -1,13 +1,28 @@
 
 import React from 'react';
+import DOMPurify from 'dompurify';
 
 interface BlogContentProps {
   content: string;
 }
 
 const BlogContent: React.FC<BlogContentProps> = ({ content }) => {
+  const createSanitizedHtml = (htmlString: string) => {
+    const sanitized = DOMPurify.sanitize(htmlString, { 
+      USE_PROFILES: { html: true },
+      ADD_ATTR: ['target'], // Allow target attribute for links
+    });
+    return { __html: sanitized };
+  };
+
   // Enhanced markdown-like rendering
   const renderContent = (text: string) => {
+    const processLineForHtml = (lineContent: string) => {
+      return lineContent
+        .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
+    };
+
     return text
       .split('\n')
       .map((line, index) => {
@@ -35,30 +50,23 @@ const BlogContent: React.FC<BlogContentProps> = ({ content }) => {
         // Lists - handle both - and • bullets
         if (line.startsWith('- ') || line.startsWith('• ')) {
           const listContent = line.startsWith('- ') ? line.slice(2) : line.slice(2);
-          // Process the list content for bold formatting
-          const processedContent = listContent
-            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>')
-            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
-          
+          const processedContent = processLineForHtml(listContent);
           return (
             <li 
               key={index} 
               className="text-royal-blue/80 mb-2 ml-4 font-exo list-disc"
-              dangerouslySetInnerHTML={{ __html: processedContent }}
+              dangerouslySetInnerHTML={createSanitizedHtml(processedContent)}
             />
           );
         }
         if (/^\d+\./.test(line)) {
           const listContent = line.replace(/^\d+\.\s/, '');
-          const processedContent = listContent
-            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>')
-            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
-          
+          const processedContent = processLineForHtml(listContent);
           return (
             <li 
               key={index} 
               className="text-royal-blue/80 mb-2 ml-4 font-exo list-decimal"
-              dangerouslySetInnerHTML={{ __html: processedContent }}
+              dangerouslySetInnerHTML={createSanitizedHtml(processedContent)}
             />
           );
         }
@@ -69,15 +77,13 @@ const BlogContent: React.FC<BlogContentProps> = ({ content }) => {
         }
         
         // Regular paragraphs - process for bold and links
-        let processedLine = line
-          .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>')
-          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
+        const processedLine = processLineForHtml(line);
         
         return (
           <p 
             key={index} 
             className="text-royal-blue/80 mb-4 leading-relaxed font-exo"
-            dangerouslySetInnerHTML={{ __html: processedLine }}
+            dangerouslySetInnerHTML={createSanitizedHtml(processedLine)}
           />
         );
       });
