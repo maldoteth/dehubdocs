@@ -93,22 +93,22 @@ Decentralized social media platforms have the potential to revolutionize the way
 
 ## Step 2: Install the DeHub CLI
 
-```bash
+\`\`\`
 npm install -g @dehub/cli
-```
+\`\`\`
 
 ## Step 3: Create a new dApp
 
-```bash
+\`\`\`
 dehub create my-dapp
-```
+\`\`\`
 
 ## Step 4: Deploy your dApp
 
-```bash
+\`\`\`
 cd my-dapp
 dehub deploy
-```
+\`\`\`
 
 ## Conclusion
 
