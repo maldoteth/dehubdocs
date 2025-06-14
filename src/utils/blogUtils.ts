@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -5,35 +6,17 @@ import { blogPosts } from '@/data/blogPosts';
 export const getPublishedPosts = (): BlogPost[] => {
   return blogPosts
     .filter(post => post.status === 'published')
-    .map(post => ({ ...post, slug: post.id.toString() }))
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 };
 
 export const getFeaturedPosts = (): BlogPost[] => {
   return blogPosts
     .filter(post => post.featured && post.status === 'published')
-    .map(post => ({ ...post, slug: post.id.toString() }))
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 };
 
 export const getPostBySlug = (slug: string): BlogPost | undefined => {
-  const postId = parseInt(slug, 10);
-
-  // Only try to find by ID if the slug is a valid number string (e.g. "123", not "123-abc")
-  if (!isNaN(postId) && String(postId) === slug) {
-    const post = blogPosts.find(p => parseInt(p.id, 10) === postId && p.status === 'published');
-    if (post) {
-      return { ...post, slug: post.id };
-    }
-  }
-
-  // If not found by ID, or if slug wasn't a plain number, try finding by text slug as a fallback
-  const postBySlug = blogPosts.find(p => p.slug === slug && p.status === 'published');
-  if (postBySlug) {
-    return { ...postBySlug, slug: postBySlug.id };
-  }
-
-  return undefined;
+  return blogPosts.find(post => post.slug === slug && post.status === 'published');
 };
 
 export const getAllTags = (): BlogTag[] => {
