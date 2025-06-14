@@ -1,4 +1,3 @@
-
 import { BlogPost } from '@/types/blog';
 
 // Placeholder images - using a few from the provided list and cycling through them
@@ -45,24 +44,65 @@ const createPost = (
   const day = itemIndexInQuarter + 1;
   const publishedAt = new Date(year, month - 1, day).toISOString();
 
-  const defaultExcerpt = `Delve into DeHub's journey as we explore the ${quarter} achievement: "${bulletPoint}". Discover its impact on our ecosystem.`;
+  // Collections of more descriptive phrases
+  const dehubValues = [
+    "our core value of innovation",
+    "our strong commitment to the community",
+    "our unwavering focus on platform security",
+    "our dedication to continuous growth and improvement",
+    "the principle of transparency in our operations"
+  ];
+
+  const broaderGoals = [
+    "our overarching goal of enhancing platform capabilities",
+    "the key objective of expanding user engagement",
+    "the strategic aim of strengthening our ecosystem's foundations",
+    "our mission to deliver unparalleled value to our users",
+    "the drive to pioneer new solutions in the decentralized space"
+  ];
+
+  const generalEfforts = [
+    "the dedicated teamwork of our skilled professionals",
+    "overcoming a series of complex technical challenges",
+    "meticulous strategic planning and agile execution",
+    "a period of intense research and development",
+    "collaborative efforts across multiple departments"
+  ];
+
+  const impacts = [
+    "significantly strengthened our platform's core foundation",
+    "opened exciting new avenues for user engagement and interaction",
+    "materially bolstered our market position and competitive edge",
+    "provided a robust framework for future developments",
+    "enhanced the overall user experience significantly"
+  ];
+
+  const defaultExcerpt = `Delve into DeHub's journey as we explore the ${quarter} achievement: "${bulletPoint}". Discover its impact on our ecosystem and our ongoing mission.`;
+  
+  const specificDetailsSection = `
+The work undertaken for "${bulletPoint}" was comprehensive, involving careful consideration of various factors to ensure its success. 
+While the full scope included many intricate steps, the essence of this milestone was to firmly establish this important development within our roadmap. 
+This laid crucial groundwork for subsequent projects and innovations.
+  `;
+
   const defaultContent = `
 # ${title}
 
-In the vibrant period of ${quarter}, DeHub marked a significant step forward: **${bulletPoint}**. This accomplishment was a cornerstone in our ongoing mission to revolutionize decentralized infrastructure.
+In the vibrant period of ${quarter}, DeHub marked a significant step forward: **${bulletPoint}**. This accomplishment was a cornerstone in our ongoing mission to revolutionize decentralized infrastructure and deliver exceptional value to our users.
 
 ## The Story Behind This Milestone
 
-The initiative to "${bulletPoint}" was driven by our commitment to [mention a relevant DeHub value like innovation, community, security, growth, etc.]. It represented a crucial phase in [mention broader goal, e.g., "our platform's development", "expanding our user base", "enhancing security protocols"].
+The initiative to "${bulletPoint}" was driven by ${pickRandom(dehubValues)}. It represented a crucial phase in ${pickRandom(broaderGoals)}, reflecting our commitment to pushing boundaries and achieving new heights.
 
-[Placeholder for specific details - for a real blog, this would be expanded significantly. Current bullet: ${bulletPoint}]
-${additionalContent || `This achievement involved [mention a general effort like 'dedicated teamwork', 'overcoming technical challenges', 'strategic planning'] and was met with positive reception from our community.`}
+${additionalContent || `This achievement involved ${pickRandom(generalEfforts)} and was met with positive reception from our community, validating the direction and effort invested.`}
+
+${specificDetailsSection}
 
 ## Impact and Future Outlook
 
-Successfully completing "${bulletPoint}" has [mention an impact, e.g., "strengthened our platform's foundation", "opened new avenues for user engagement", "bolstered our market position"]. It paved the way for subsequent innovations and continues to shape DeHub's trajectory.
+Successfully completing "${bulletPoint}" has ${pickRandom(impacts)}. It paved the way for subsequent innovations and continues to shape DeHub's trajectory towards a more decentralized and user-centric future.
 
-We remain dedicated to building upon such successes as we forge ahead. Stay tuned for more updates from DeHub!
+We remain dedicated to building upon such successes as we forge ahead. Stay tuned for more updates from DeHub as we continue to innovate and grow!
   `;
 
   return {
@@ -189,4 +229,3 @@ export const blogPosts: BlogPost[] = [
   createPost("Q2 2025", 2025, 2, 3, "Revamped main app feed, revealed audio replies and live talk spaces", "Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces"),
   createPost("Q2 2025", 2025, 2, 4, "Final snapshot for Last Chad Standing game airdrop, for both holders and stakers", "Get Ready Players: Final Snapshot for Last Chad Standing Airdrop"),
 ];
-
