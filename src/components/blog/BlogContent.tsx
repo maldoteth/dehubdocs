@@ -22,6 +22,16 @@ const BlogContent: React.FC<BlogContentProps> = ({ content }) => {
           return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-4 font-exo">{line.slice(4)}</h3>;
         }
         
+        // Image tag
+        if (line.startsWith('![')) {
+          const match = line.match(/!\[(.*?)\]\((.*?)\)/);
+          if (match) {
+            const alt = match[1];
+            const src = match[2];
+            return <img key={index} src={src} alt={alt} className="my-6 rounded-lg shadow-md mx-auto" />;
+          }
+        }
+        
         // Lists - handle both - and • bullets
         if (line.startsWith('- ') || line.startsWith('• ')) {
           const listContent = line.startsWith('- ') ? line.slice(2) : line.slice(2);

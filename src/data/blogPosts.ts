@@ -320,3 +320,45 @@ Thank you for trusting and supporting us through these unprecedented actions, al
   createPost("Q2 2025", 2025, 2, 3, "Revamped main app feed, revealed audio replies and live talk spaces", "Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces"),
   createPost("Q2 2025", 2025, 2, 4, "Final snapshot for Last Chad Standing game airdrop, for both holders and stakers", "Get Ready Players: Final Snapshot for Last Chad Standing Airdrop"),
 ];
+
+const gateDelistingSlug = 'prioritizing-principles-voluntary-delisting-from-gateio-for-decentralization-a-dehub-milestone-from-q4-2023';
+const gateDelistingPost = blogPosts.find(p => p.slug === gateDelistingSlug);
+
+if (gateDelistingPost) {
+  gateDelistingPost.content = `### TLDR
+- $DHB has delisted from Gate.io and all their tokens have been burnt
+- Three-week recovery period for Gate.io token holders
+- Conversion of entire tech stack and new token integration for all apps
+- With all the above, audits and testing we will require time
+- Target date for launch set to January 22nd-29th (Now confirmed at Feb 8th)
+
+### In Detail
+My initial fascination with crypto stemmed from its immutability, transparency, decentralization and permissionlessness.
+
+Immutability means for the first time in history, humans can record data which can never be altered or removed.
+
+Open-source code is the only thing in this world that cannot lie to you. Offering true transparency and arguably the only source of truth we will find in the new digital world.
+
+Permissionless decentralized apps and services are the final cog to automating the world.
+
+All of these factors are eliminated by centralized exchanges (CEX). Anyone who participated in our early town halls will recall my attitude towards all of them apart from Binance. However, that changed over time due to the demands of the community and past marketing team members. Unfortunately, it was a mistake, which we are now correcting.
+
+CEXs are broken, encompassing everything blockchains strive not to be. They go against all core values instilled during the birth of this wonderful industry. These values are the reason I fell in love with this space and dedicated my life to it.
+
+XT still owes us nearly six figures in unpaid tax revenue generated after our listing. We all know what happened on Gate as we approached 1000x ROI with millions in our LP. Thousands of BUSD are stuck on Gate with no retrieval assistance. Two of our founders and one of our admins have been locked out of their accounts for nearly a year. Gate is no longer servicing the UK, our corporate base of operations. Furthermore, all holders from newly restricted areas who do not remove their assets by January 2nd, 2024, automatically lose them! This is absurd! Even a conservative 20% fall off rate would equate to over 100,000,000 $DHB left on Gate.
+
+So, this was never just a migration. We are going to de-list and burn all Gate tokens to protect holders from any malpractice. We did this previously with XT after delisting and only 25% of the user tokens have been claimed.
+
+We will spend three weeks recovering $DHB for all Gate holders. After this time, all claims will be on a vest as we proceed with our DEX launch by January 29th. Additionally, during this period, we are migrating our entire tech stack, finalizing our app with new multichain tokens and testing everything for deployment. This is not a small job.
+
+All Gate holders need to fill out this form for recovery.
+
+Any claims after January 21 will be subject to vests and any unclaimed tokens will be burned after 12 months. Claims after this period can still have tokens re-minted if claims can be validated.
+
+To protect user privacy, we have asked the Gate team to provide us with account user ID’s and balances so we can reimburse holders swiftly. We are THE decentralized entertainment hub. We never needed a centralized exchange, and we never will again. Any exchange that wants to list $DHB may buy tokens off the open market like the rest of us and do with them as they please. Although they need to keep in mind the DAO could vote to burn their tokens if they pose a threat to our ecosystem.
+
+Although a bold and surprising move, true supporters who believe in what we are building, will rejoice with us as they read this development. Anyone displeased may take comfort knowing this was best for the project, and one of my final acts as a solitary decision maker. Governance protocols will deploy soon.
+
+![WHAT IF](/lovable-uploads/d7790305-e44d-4c36-9b9f-0e16fa02c245.png)`;
+  gateDelistingPost.readingTime = 5;
+}
