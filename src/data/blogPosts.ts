@@ -261,6 +261,53 @@ export const blogPosts: BlogPost[] = [
   // Q1 2024
   createPost("Q1 2024", 2024, 1, 0, "Listed DHB on Eth mainnet", "Expanding Reach: DHB Lists on Ethereum Mainnet"),
   createPost("Q1 2024", 2024, 1, 1, "Raised $1,000,000 for adult fork BJ (now fan.site) from VCs, Launchpads & Public Sales.", "Fueling Growth: $1M Raised for Fan.site (BJ Fork)"),
+  {
+    id: 'q1-overview-birds-eye-view',
+    title: "Q1 Overview: A Bird's Eye View",
+    slug: 'q1-overview-a-birds-eye-view',
+    excerpt: 'A bird’s eye view of plans for the rest of this quarter.',
+    content: `Given all that's going on with launches and listings, this Q1 overview is more of a marketing schedule we've put together to keep you all in the loop.
+
+### Calendar
+**February 5th:** Our partner launch, BJ, the adult fork of DeHub, was announced in Ferrum Network's "The Decentralised Incubator" (TDI) as the latest private sale open exclusively to their DAO and promoted across Ferrum ecosystems and KOLs.
+
+**February 6th:** The Snapshot took place and TDI DAO members prepare for private sales to commence.
+
+**February 7th:** All concluding on Ferrum Network exclusive to TDI DAO members, with one week being the usual turnaround time for tiered access, and $200,000 allocated.
+
+*Already commenced in Ferrum DAO's decentralised incubator (TDI)*
+
+**February 7th:** All bundle buyers airdropped prior to listing.
+
+**February 8th — 10pm UTC:** DeHub's Uniswap listing & Layer Zero bridge release. We're putting up ~50k of DHB and 50k of USDT which keeps dilution low while still large enough for sizeable traders. We will also increase the LP from tax revenue in the following weeks, as well revenue generated from all partner launches as we will be buy back due to our tokenomics anyway. A Large network of paid promoters as well as trending services are being prepared with partner reveals and joint spaces continuing regularly.
+
+**February 9th:** Announce second and final private sale for $BJ on DeHub's marketplace, exclusive for $DHB holders and stakers — This will be shared by a high tier KOL networks of over 1m+ followers combined and utilised by our incubators on all the top launches recently — Expected to sell out $100,000 and drive plenty of eyes to our new era on Ethereum. There will be a large promotional push for new holders to hold or stake at-least 300,000 $DHB to access the $BJ sale, with holders of over 1,000,000 receiving guaranteed allocations.
+
+**February 14th:** $BJ private sale commences on DeHub's marketplace, holders must stake or hold 300,000 $DHB until they claim their first drop of $BJ, in order to buy the private sale. $100,000 of $BJ has been allocated exclusively to DeHub holders and stakers.
+
+**February 14–28th:** Remaining Blocjerk IDOs and launchpads will conclude by end of February, expected to generate over $800,000 in total. Launch LP farm for DeHub with taxes generated and buy backs executed.
+
+**Early March:** BJ listing & APK release (no stores as adult apps not permitted) — expected to generate similar figures to the sales and set BJ app to gain major traction.
+
+**Late March:** DeHub App Store listings & APK release target date. Revenue share for stakers from tax revenue commences. Micro and Macro creator onboarding, focus on PPVs & Watch2earn with capital injection for adoption drive.
+
+**Early April:** $BJ Partnership Airdrop after 1 month cliff, for DeHub stakers. Daily linear release for 48 months as per recently finalised tokenomics also found on the whitepaper.
+
+**Late April:** The next DeHub partner launch first reveal, and mega airdrop for those staking DeHub & $BJ, with exclusive first access on our marketplace. This launch has already secured top launchpads and incubators with an even bigger reach than $BJ, as it's not adult themed so easier to promote. ETA for launch of the next partner project will be Q3–4 2024.
+
+### Wrap Up
+After an explosive start to the year, I trust you all share our excitement for how 2024 is shaping up so far as all unfolds. Partner airdrops for club members were always part of our utility and for reasons now becoming more evident. We're building an entire ecosystem here and all launches drive revenue back to DeHub, which has a 100% profit buy back system laid out in the whitepaper. Soon, we envision everyone will have a social token of some kind and we're already building the framework for this in how our uploads work today on dehub.io. Even the way we built the watch2earn / bounty upload system allows users to launch IVOs — initial video offerings. With the PPV feature for pre-sale functions and the bounty feature for the airdrop function. Although $BJ did isolate a sector of our holder base due to the nature of the project, the next one won't.`,
+    bannerImage: '/lovable-uploads/ed0c4e36-5a13-4043-9c5f-725f4985cc91.png',
+    bannerImageAlt: "Q1 Overview: A Bird's Eye View",
+    author: { name: 'DeHub Team' },
+    publishedAt: new Date('2024-02-06').toISOString(),
+    tags: ['Q1 2024', 'Roadmap', 'Update', 'Marketing', 'Ecosystem'],
+    readingTime: 4,
+    featured: true,
+    status: 'published',
+    seoTitle: "DeHub Q1 2024 Overview: A Bird's Eye View",
+    seoDescription: 'A bird’s eye view of plans for the rest of this quarter, including launches, listings, and marketing schedules for DeHub and its partners.'
+  },
   // Q2 2024
   createPost("Q2 2024", 2024, 2, 0, "Listed SDHB on Base L2", "Layer 2 Expansion: SDHB Lists on Base"),
   createPost("Q2 2024", 2024, 2, 1, "Dubai event expanded Middle East presence", "Global Footprint: DeHub Expands Middle East Presence via Dubai Event"),
@@ -604,11 +651,11 @@ const transparencyPostSlug = 'full-disclosure-dehubs-comprehensive-transparency-
 const transparencyPost = blogPosts.find(p => p.slug === transparencyPostSlug);
 
 if (transparencyPost) {
-  transparencyPost.title = "What’s in store for the end of the year?";
+  transparencyPost.title = "What's in store for the end of the year?";
   transparencyPost.excerpt = "A quick overview of exciting updates coming before the end of 2023, including Streaming, Arcade, Shop, and more.";
   transparencyPost.bannerImage = '/lovable-uploads/131924d4-97f2-468e-9b52-cbf384e718ea.png';
   transparencyPost.bannerImageAlt = "Bird's Eye Overview";
-  transparencyPost.content = `### What’s in store for the end of the year?
+  transparencyPost.content = `### What's in store for the end of the year?
 
 2023 has quickly flashed before our eyes, but we still have many exciting updates coming before yearend.
 
@@ -626,7 +673,7 @@ The new user interface will be complete along with the addition of at least two 
 
 Our latest release, Street Slayer, will have some overpowered combos nerfed before we live stream competitive tournaments, of which you should expect many! So get slaying.
 
-The trailer for the cinematic release of “Last Chad Standing” is set for December 18th. The world’s first MMA inspired battle royale will be a hyper-realistic, gory, and gritty fighting experience unlike anything seen before.
+The trailer for the cinematic release of "Last Chad Standing" is set for December 18th. The world's first MMA inspired battle royale will be a hyper-realistic, gory, and gritty fighting experience unlike anything seen before.
 
 ### Shop
 Landing soon is our fiat on/off ramp to purchase items and bundles. Along with the wallet generation and confirmation automation, buying tokens to store or use on the DeHub app will feel native to any internet user.
@@ -634,14 +681,14 @@ Landing soon is our fiat on/off ramp to purchase items and bundles. Along with t
 A refund is coming for all house raffle purchases, as sales did not hit the required minimum. However, the minted NFT still holds value and will be incorporated into our app. Smaller raffles for toys, memberships or holidays could make for some festive fun as we approach the season of giving.
 
 ### General Operations
-The highly anticipated partner airdrop reveal is coming on November 21st. If you staked before a deadline, you must remain staked until you’ve received your allocated airdrop. Anyone who un-stakes before the airdrop is complete, but was staked during the deadline, must also re-stake to qualify. Drops like these cater to club members. Those staking for the entire duration need not do a thing.
+The highly anticipated partner airdrop reveal is coming on November 21st. If you staked before a deadline, you must remain staked until you've received your allocated airdrop. Anyone who un-stakes before the airdrop is complete, but was staked during the deadline, must also re-stake to qualify. Drops like these cater to club members. Those staking for the entire duration need not do a thing.
 
 The recent events you saw unfold with inter-community rivalries is important and rest assured it is just beginning. We will be going after Rumble, Kick, YouTube, Twitch, and any other competitors the same way they go after each other today. It is the natural order for competing businesses.
 
-Remember “Stream Wars”… controversial, headline grabbing, internet breaking publicity stunts. As we grow, we will leverage these as tools to promote DeHub and get it in front of people's faces.
+Remember "Stream Wars"… controversial, headline grabbing, internet breaking publicity stunts. As we grow, we will leverage these as tools to promote DeHub and get it in front of people's faces.
 
 We are building the solution many are realizing is necessary. The evidence is visible with the rise of Rumble and the worldwide outcry against censorship, demonetization, and archaic moderation.`;
-  transparencyPost.seoTitle = "DeHub: What’s in store for the end of 2023?";
+  transparencyPost.seoTitle = "DeHub: What's in store for the end of 2023?";
   transparencyPost.seoDescription = "A quick overview of exciting updates coming before the end of 2023, including Streaming, Arcade, Shop, and general operations for DeHub.";
   transparencyPost.readingTime = 3;
 }
