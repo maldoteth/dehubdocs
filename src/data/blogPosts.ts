@@ -268,6 +268,42 @@ export const blogPosts: BlogPost[] = [
   createPost("Q4 2024", 2024, 4, 2, "Agency grew to UK #1 with 1,000 live streamers signed exclusively", "Leading the Way: DeHub Agency Becomes UK #1 with 1,000 Streamers"),
   createPost("Q4 2024", 2024, 4, 3, "Released DePIN Phase 1", "The Future of Infrastructure: DePIN Phase 1 Goes Live"),
 
+  {
+    id: 'dehub-1-year-review-gate-delist',
+    title: '1 Year Review; A Quick Look Back',
+    slug: '1-year-review-a-quick-look-back',
+    excerpt: 'A year ago, we took a bold step and decided to delist from gate.io. This is a look back at that decision and our commitment to decentralization.',
+    content: `A year ago, we took a bold step and decided to delist ourself from gate.io after they ended UK support. At this stage, our multi-million dollar liquidity pool (LP) was relentlessly drained by arb bots and questionable activity for years, so we had to make decisions to protect our network.
+
+After almost a year of withdrawals, over 120,000,000 still remained on Gate, almost exactly as predicted in [this article last year](https://medium.com/@dehub.bsc/were-turning-back-time-2bfd4723fe86).
+
+As we prepare to redeploy capital back to BNB and to protect our upcoming LP, all tokens left on gate.io have been burned again, barring ~1m for small left over withdrawals.
+
+## Future Withdrawals
+
+If you failed to withdraw in time, have been locked out of your account, or had your account closed, simply DM us, email tech@dehub.net or fill in this form for recovery assistance.
+
+## Why did it take so long to redeploy to BNB?
+
+After we announced our plans, Gate couldn’t provide the wallet address data that would have allowed us to verify holders for airdrops during our migration. They informed us their systems don’t allow this so the only way was to re-mint the tokens and open withdrawals. So until enough withdrawals and time passed, as it has now, deploying back on BNB was just a risk of further LP draining.
+
+## Conclusion
+
+This all fully affirms our decision to delist ourself, go all DEX and stay true to the values that make this industry so great.
+
+While crypto is an unregulated cesspit of scammers, grifters and chancers, the lack of regulation is exactly what makes it so beautiful at the same time. Untamed innovation, true capitalism. For “every action has an equal an opposite reaction” — Newton’s Third Law is one I’ve associated to most through out life and it couldn’t be more true with crypto. It’s also why we’ve never stopped building; for every setback, there is an equal and opposite opportunity.
+
+Thank you for trusting and supporting us through these unprecedented actions, all to ensure the success of DeHub and protection of investors.`,
+    bannerImage: getNextImage(),
+    bannerImageAlt: '1 Year Review; A Quick Look Back',
+    author: { name: 'DeHub' },
+    publishedAt: new Date('2024-11-12').toISOString(),
+    tags: ['Gate.io', 'Delisting', 'DEX', 'Transparency', 'Strategy', '2024'],
+    readingTime: 2,
+    featured: true,
+    status: 'published',
+  },
+
   // 2025
   // Q1 2025
   createPost("Q1 2025", 2025, 1, 0, "Released onchain live streams with real-time tip animations", "Interactive Streaming: On-Chain Live Streams with Animated Tips"),
