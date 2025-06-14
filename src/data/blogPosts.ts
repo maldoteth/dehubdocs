@@ -290,10 +290,10 @@ export const blogPosts: BlogPost[] = [
 
 We are undergoing a complete front-end overhaul, with a modernized, sleek interface. The outdated blue and purple backgrounds will be replaced by a cleaner, minimalist design.
 Users will have the option to switch between Dark Mode and Light Mode, providing a personalized experience with either a predominantly black or white interface.
-Performance improvements across the platform will make everything faster and smoother, and we’ve begun integrating the Graph Protocol to further decentralize our backend operations.
+Performance improvements across the platform will make everything faster and smoother, and we've begun integrating the Graph Protocol to further decentralize our backend operations.
 The debut of our fiat gateway will mark the completion of full user account abstraction. Anyone will be able to create wallets, purchase tokens, utilize them in-app, and cash out — all without the need for manual wallet management or learning new skills.
 We are launching on-chain subscriptions, which will grant access to exclusive creator content, including private group chats. Subscription options include 1, 3, 6-month passes, as well as annual and lifetime plans. Creators will have full control over pricing and availability, while holders will have the option to resell their passes.
-Although we’ve faced challenges with the NFT Username Marketplace, we are close to finalizing the logic and are hopeful it will feature in the upcoming update, however no guarantees here. This is part of our wallet delegation system, allowing agencies and employees such as admins to access CRM tools via delegated wallet control.
+Although we've faced challenges with the NFT Username Marketplace, we are close to finalizing the logic and are hopeful it will feature in the upcoming update, however no guarantees here. This is part of our wallet delegation system, allowing agencies and employees such as admins to access CRM tools via delegated wallet control.
 Direct Messaging (both free and paid) and social feeds for text and photo uploads will be introduced, transforming us into a comprehensive content hub beyond just video.
 Additional features are in the pipeline, which we will address once firm release dates are confirmed.
 
@@ -314,7 +314,7 @@ While we had planned to implement an LP farming solution, we are facing challeng
 ### Engagement & Expansion
 
 We are finalizing the recruitment of 10 full-time staff who will manage 24/7 voice chats, initiate community-driven activities, and provide dedicated support for app users. These staff members will be contracted for a minimum of six months.
-Mike and I will also increase our social media presence significantly, tweeting potentially hundreds of times a day, which will need the community’s full support to amplify our voices.
+Mike and I will also increase our social media presence significantly, tweeting potentially hundreds of times a day, which will need the community's full support to amplify our voices.
 We are confident that, with our combined efforts, DeHub will gain visibility from millions of people on a monthly basis, now supported by our cutting-edge developments.
 
 ## Future Plans and Goals
@@ -324,7 +324,7 @@ We are confident that, with our combined efforts, DeHub will gain visibility fro
 - Implementing AI-driven tools for thumbnail and description generation
 - Integrating AI video generators to allow seamless video uploads
 - Expanding partnerships across the entertainment and hospitality sectors`,
-    bannerImage: getNextImage(),
+    bannerImage: '/lovable-uploads/0932e5d5-086f-4e27-aa97-7f5bdcfd31de.png',
     bannerImageAlt: 'DeHub Developments Overview',
     author: { name: 'DeHub Team' },
     publishedAt: new Date('2024-09-26').toISOString(),
@@ -341,41 +341,41 @@ We are confident that, with our combined efforts, DeHub will gain visibility fro
     title: 'Town Hall & AMA',
     slug: 'town-hall-ama-october-2024',
     excerpt: 'A summary of our recent Town Hall & AMA session, covering roadmap updates, platform enhancements, and answers to your top questions.',
-    content: `We’re right on schedule to meet our target for the major overhaul of both the front and back ends. The front will have a sleeker, more streamlined design, while the back end will be significantly faster. We’re now holding our own against top providers, but there’s still plenty of room to grow as we continue to scale.
+    content: `We're right on schedule to meet our target for the major overhaul of both the front and back ends. The front will have a sleeker, more streamlined design, while the back end will be significantly faster. We're now holding our own against top providers, but there's still plenty of room to grow as we continue to scale.
 
-When the countdown hits zero, you’ll experience a brand-new DeHub. But don’t worry — your content and profile will remain untouched. Along with the launch, many of the new features we’ve talked about will go live, and we’ll also unveil a detailed roadmap with clear target dates for the remaining updates. So, you’re getting two big things at once: a fresh app and a clearer path forward.
+When the countdown hits zero, you'll experience a brand-new DeHub. But don't worry — your content and profile will remain untouched. Along with the launch, many of the new features we've talked about will go live, and we'll also unveil a detailed roadmap with clear target dates for the remaining updates. So, you're getting two big things at once: a fresh app and a clearer path forward.
 
-With just over two weeks left until the major upgrade, we hosted a live Spaces session to answer your most pressing questions. Here’s a summary of what was discussed:
+With just over two weeks left until the major upgrade, we hosted a live Spaces session to answer your most pressing questions. Here's a summary of what was discussed:
 
 ### 1. Can we get a roadmap with exact release dates?
-We regularly provide release dates for imminent updates, such as the countdown on dehub.io now. We’ll provide a more detailed roadmap with specific dates for upcoming features with the release of the next upgrade but the core roadmap stays the same. We’ve kept it phased to allow flexibility since the nature of tech and crypto is always shifting.
+We regularly provide release dates for imminent updates, such as the countdown on dehub.io now. We'll provide a more detailed roadmap with specific dates for upcoming features with the release of the next upgrade but the core roadmap stays the same. We've kept it phased to allow flexibility since the nature of tech and crypto is always shifting.
 
 ### 2. What happened to the gold tick on X (Twitter)?
-We lost the gold tick while switching account tiers on Twitter, which resulted in a double charge. We’re currently awaiting a refund and customer support. Twitter doesn’t allow tier changes without canceling and re-subscribing, which caused the issue. As a UK-registered company that meets all the gold tick criteria, we’re determined to get it back. It’s a small cost — less than £200 a month which we are spending on ads anyway as comes with ad credits too. We’ve also had a rough history with Twitter; our original account was permanently banned because I set the birth date to under 13 (reflecting our launch date: 04/20/2021). While we could make some noise, being suspended again would be a hassle. We’re just happy to be able to promote on a the platform until our own user base is strong enough.
+We lost the gold tick while switching account tiers on Twitter, which resulted in a double charge. We're currently awaiting a refund and customer support. Twitter doesn't allow tier changes without canceling and re-subscribing, which caused the issue. As a UK-registered company that meets all the gold tick criteria, we're determined to get it back. It's a small cost — less than £200 a month which we are spending on ads anyway as comes with ad credits too. We've also had a rough history with Twitter; our original account was permanently banned because I set the birth date to under 13 (reflecting our launch date: 04/20/2021). While we could make some noise, being suspended again would be a hassle. We're just happy to be able to promote on a the platform until our own user base is strong enough.
 
 ### 3. Will DeHub return to the BNB Chain?
-If we redeploy on BNB, it’ll be on opBNB, which is built specifically for scalable apps like ours. Redeployment would require bridging regardless, and opBNB is BNB’s new scaling chain, so it makes no sense to return to the legacy BNB chain. In future updates, we’ll also discontinue in-app support for old BNB to focus on cutting-edge technology. Of course, users are still free to deploy liquidity pools (LP) where they wish.
+If we redeploy on BNB, it'll be on opBNB, which is built specifically for scalable apps like ours. Redeployment would require bridging regardless, and opBNB is BNB's new scaling chain, so it makes no sense to return to the legacy BNB chain. In future updates, we'll also discontinue in-app support for old BNB to focus on cutting-edge technology. Of course, users are still free to deploy liquidity pools (LP) where they wish.
 
-### 4. What’s the latest on LCFC and the gaming arcade?
-While we’ve shifted focus to the streaming app after our last game releases, the arcade is still available. We’re also gearing up for the launch of our 3D hyperrealistic Battle Royale, Last Chad Standing (LCS). This game is a giant leap from the 2D arcade fun we’ve been having. Combined with our team reach across some of the biggest UFC fighters in the world, we’re expecting major adoption of LCS, as a unique game never seen before on or off chain. The only other fighter/weaponless based Battle Royale, (Rumbleverse), discontinued and left a large player base yearning for its return.
+### 4. What's the latest on LCFC and the gaming arcade?
+While we've shifted focus to the streaming app after our last game releases, the arcade is still available. We're also gearing up for the launch of our 3D hyperrealistic Battle Royale, Last Chad Standing (LCS). This game is a giant leap from the 2D arcade fun we've been having. Combined with our team reach across some of the biggest UFC fighters in the world, we're expecting major adoption of LCS, as a unique game never seen before on or off chain. The only other fighter/weaponless based Battle Royale, (Rumbleverse), discontinued and left a large player base yearning for its return.
 
 ### 5. Are Mike and Indi still involved?
-Of course, we launched this together, so Mike and Indi are still very much involved. We’re actually planning a new strategy to boost Twitter engagement. If anyone’s been following either on socials you’ll see regular mentions and insights into DeHub and the future. During the bear market, they built one of the most successful TikTok agencies worldwide and are now managing nearly 1,000 streamers, including big names like Beavo, bringing in tens of millions of views daily at their peak. All this expertise is feeding back into what we’re building at DeHub, just as we’ve always envisioned.
+Of course, we launched this together, so Mike and Indi are still very much involved. We're actually planning a new strategy to boost Twitter engagement. If anyone's been following either on socials you'll see regular mentions and insights into DeHub and the future. During the bear market, they built one of the most successful TikTok agencies worldwide and are now managing nearly 1,000 streamers, including big names like Beavo, bringing in tens of millions of views daily at their peak. All this expertise is feeding back into what we're building at DeHub, just as we've always envisioned.
 
 ### 6. What are the major upcoming releases, and when can we expect them?
-Aside from the imminent major upgrade, we’ve already teased some key features. While we can’t provide exact timelines for everything just yet, there are exciting developments underway. As always, we’ve got some surprises, but timing will depend on our progress. We’re working daily to strengthen the protocol and hit significant milestones.
+Aside from the imminent major upgrade, we've already teased some key features. While we can't provide exact timelines for everything just yet, there are exciting developments underway. As always, we've got some surprises, but timing will depend on our progress. We're working daily to strengthen the protocol and hit significant milestones.
 
-### 7. Can you tell us more about Malik’s business background and the Guide Dogs fundraiser?
-During my time as a fundraising manager at Guide Dogs, one of the world’s largest charities supporting the visually impaired, my team raised over seven figures through events, street canvassing, and ongoing pledges. Before that, I worked in a trainee role while studying Biomedical Science at QA Hospital, with the goal of pursuing medicine, influenced by my family’s background in healthcare. However, I realised it wasn’t for me and eventually transitioned into business. A career highlight for me was becoming the top-billing agent at Blue Arrow, the UK’s largest recruitment agency, outcompeting 70 other offices and 600 staff.
+### 7. Can you tell us more about Malik's business background and the Guide Dogs fundraiser?
+During my time as a fundraising manager at Guide Dogs, one of the world's largest charities supporting the visually impaired, my team raised over seven figures through events, street canvassing, and ongoing pledges. Before that, I worked in a trainee role while studying Biomedical Science at QA Hospital, with the goal of pursuing medicine, influenced by my family's background in healthcare. However, I realised it wasn't for me and eventually transitioned into business. A career highlight for me was becoming the top-billing agent at Blue Arrow, the UK's largest recruitment agency, outcompeting 70 other offices and 600 staff.
 
 ### 8. When is the live streaming feature expected?
-We’re aiming to launch the live streaming feature within this quarter, though it’s a complex build that ties directly into our agency CRM system. We’re replicating TikTok’s tip-based economy model, which is incredibly intricate. We’re hoping to have it ready by Christmas, but we can’t guarantee exact dates just yet.
+We're aiming to launch the live streaming feature within this quarter, though it's a complex build that ties directly into our agency CRM system. We're replicating TikTok's tip-based economy model, which is incredibly intricate. We're hoping to have it ready by Christmas, but we can't guarantee exact dates just yet.
 
 ### 9. Do you care about the token price, or is it all about the tech?
-We absolutely care about the token price, but we have to be cautious about how we discuss it publicly to avoid any legal risks. Protecting the business and the community is our top priority. That said, in crypto, everything inevitably circles back to the chart — whether we like it or not. We’re determined to surpass all past achievements, and we won’t stop until we do.
+We absolutely care about the token price, but we have to be cautious about how we discuss it publicly to avoid any legal risks. Protecting the business and the community is our top priority. That said, in crypto, everything inevitably circles back to the chart — whether we like it or not. We're determined to surpass all past achievements, and we won't stop until we do.
 
 ### 10. Will you list on centralized exchanges (CEXs) again?
-We’re only interested in listing on top-tier CEXs like Binance, Coinbase, and other leading platforms. For now, we’re focused on growing organically through community engagement and on-chain volume. Once our volume and LP grow, the top CEXs will naturally want to list us, and we’ll aim to do it on our terms. We’ve never struggled to hit highs without CEXs, and we’ve actually thrived without them.
+We're only interested in listing on top-tier CEXs like Binance, Coinbase, and other leading platforms. For now, we're focused on growing organically through community engagement and on-chain volume. Once our volume and LP grow, the top CEXs will naturally want to list us, and we'll aim to do it on our terms. We've never struggled to hit highs without CEXs, and we've actually thrived without them.
 
 ### 11. Are there any expected delays after the countdown?
 No delays are expected. The major overhaul is ready and will be rolled out at the end of the countdown. Any features not immediately live at launch will be released according to the updated roadmap, which will be shared alongside the upgrade.`,
@@ -434,7 +434,7 @@ This raise is a victory not just for Fan.site, but for every single member of th
 
 A remarkable **10% of all revenue generated by Fan.site will be used to systematically buy back $DHB on the open market and distribute it directly to all stakers.**
 
-This mechanism creates a powerful, symbiotic, and self-sustaining economic relationship. The success of Fan.site directly translates into a stronger DeHub token through constant buy pressure, increased rewards for our stakers, and greater on-chain liquidity for the entire network. It’s the ultimate testament to our vision of creating an interconnected ecosystem where every component's success contributes to the strength of the whole. Furthermore, my personal share and key interests from this venture will also be directed towards injecting capital back into DeHub and raising awareness for our core network.
+This mechanism creates a powerful, symbiotic, and self-sustaining economic relationship. The success of Fan.site directly translates into a stronger DeHub token through constant buy pressure, increased rewards for our stakers, and greater on-chain liquidity for the entire network. It's the ultimate testament to our vision of creating an interconnected ecosystem where every component's success contributes to the strength of the whole. Furthermore, my personal share and key interests from this venture will also be directed towards injecting capital back into DeHub and raising awareness for our core network.
 
 ## The Market Opportunity and DeHub's Unfair Advantage
 
@@ -478,13 +478,13 @@ If you failed to withdraw in time, have been locked out of your account, or had 
 
 ## Why did it take so long to redeploy to BNB?
 
-After we announced our plans, Gate couldn’t provide the wallet address data that would have allowed us to verify holders for airdrops during our migration. They informed us their systems don’t allow this so the only way was to re-mint the tokens and open withdrawals. So until enough withdrawals and time passed, as it has now, deploying back on BNB was just a risk of further LP draining.
+After we announced our plans, Gate couldn't provide the wallet address data that would have allowed us to verify holders for airdrops during our migration. They informed us their systems don't allow this so the only way was to re-mint the tokens and open withdrawals. So until enough withdrawals and time passed, as it has now, deploying back on BNB was just a risk of further LP draining.
 
 ## Conclusion
 
 This all fully affirms our decision to delist ourself, go all DEX and stay true to the values that make this industry so great.
 
-While crypto is an unregulated cesspit of scammers, grifters and chancers, the lack of regulation is exactly what makes it so beautiful at the same time. Untamed innovation, true capitalism. For “every action has an equal an opposite reaction” — Newton’s Third Law is one I’ve associated to most through out life and it couldn’t be more true with crypto. It’s also why we’ve never stopped building; for every setback, there is an equal and opposite opportunity.
+While crypto is an unregulated cesspit of scammers, grifters and chancers, the lack of regulation is exactly what makes it so beautiful at the same time. Untamed innovation, true capitalism. For "every action has an equal an opposite reaction" — Newton's Third Law is one I've associated to most through out life and it couldn't be more true with crypto. It's also why we've never stopped building; for every setback, there is an equal and opposite opportunity.
 
 Thank you for trusting and supporting us through these unprecedented actions, all to ensure the success of DeHub and protection of investors.`,
     bannerImage: '/lovable-uploads/ffb3a54c-cb66-4856-b9ff-491567ce3324.png',
@@ -550,7 +550,7 @@ All Gate holders need to fill out this form for recovery.
 
 Any claims after January 21 will be subject to vests and any unclaimed tokens will be burned after 12 months. Claims after this period can still have tokens re-minted if claims can be validated.
 
-To protect user privacy, we have asked the Gate team to provide us with account user ID’s and balances so we can reimburse holders swiftly. We are THE decentralized entertainment hub. We never needed a centralized exchange, and we never will again. Any exchange that wants to list $DHB may buy tokens off the open market like the rest of us and do with them as they please. Although they need to keep in mind the DAO could vote to burn their tokens if they pose a threat to our ecosystem.
+To protect user privacy, we have asked the Gate team to provide us with account user ID's and balances so we can reimburse holders swiftly. We are THE decentralized entertainment hub. We never needed a centralized exchange, and we never will again. Any exchange that wants to list $DHB may buy tokens off the open market like the rest of us and do with them as they please. Although they need to keep in mind the DAO could vote to burn their tokens if they pose a threat to our ecosystem.
 
 Although a bold and surprising move, true supporters who believe in what we are building, will rejoice with us as they read this development. Anyone displeased may take comfort knowing this was best for the project, and one of my final acts as a solitary decision maker. Governance protocols will deploy soon.
 
@@ -567,13 +567,13 @@ if (airdropPost) {
   airdropPost.readingTime = 3;
   airdropPost.content = `All the ins and outs for the second airdrop revealed this month!
 
-For those unaware, airdrops have been part of our utility since the first whitepaper in 2021. Expect the pace for new airdrops to accelerate as more brands build on top of the DeHub platform that’s now nearing completion.
+For those unaware, airdrops have been part of our utility since the first whitepaper in 2021. Expect the pace for new airdrops to accelerate as more brands build on top of the DeHub platform that's now nearing completion.
 
 Our third airdrop this quarter will be announced next month so be sure you remain staked!
 
 A collection of large and long term DeHub holders made the decision to fork the DeHub app and target the vast adult market. All interested DeHub stakers can claim a portion of the token supply through the upcoming airdrop.
 
-Rather than having adult content on the DeHub app, it’s far better to separate markets and communities. People of all opinions and faiths will agree this is the best strategy for obvious reasons.
+Rather than having adult content on the DeHub app, it's far better to separate markets and communities. People of all opinions and faiths will agree this is the best strategy for obvious reasons.
 
 As per the whitepaper, adult content presents complex challenges for properly protecting children, the vulnerable and people of all religious faiths. Given the mature nature of the content, we are intentionally minimizing communications between communities and there will be no cross promoting. We also do not want to risk our X account being marked as sensitive.
 
@@ -589,7 +589,7 @@ Naturally, my share and key interests will go towards injecting capital to DeHub
 
 We have secured the marketing team working with $PAAL, a solid advisory board, and incubators connected to all the top exchanges and launchpads. We have also confirmed agreements with some of the biggest KOLs and influencers in the cryptosphere, who will be supporting this launch.
 
-The new token generation event is scheduled to take place before Christmas, as you know we’re finalising the app. Your snapshots are final, so just remain staked or re-stake until your airdrops are complete.
+The new token generation event is scheduled to take place before Christmas, as you know we're finalising the app. Your snapshots are final, so just remain staked or re-stake until your airdrops are complete.
 
 Marketing drives will fully commence next week, with further details on vest, values, and timings being provided prior to launch.
 
