@@ -2,7 +2,7 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
-    id: 1,
+    id: '1',
     slug: 'the-future-of-decentralized-gaming',
     title: 'The Future of Decentralized Gaming',
     excerpt: 'Explore how blockchain technology is revolutionizing the gaming industry, creating new opportunities for players and developers alike.',
@@ -55,7 +55,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'Explore how blockchain technology is revolutionizing the gaming industry.',
   },
   {
-    id: 2,
+    id: '2',
     slug: 'the-rise-of-nfts-in-art',
     title: 'The Rise of NFTs in Art',
     excerpt: 'Discover how non-fungible tokens (NFTs) are transforming the art world, empowering artists and collectors in new ways.',
@@ -119,7 +119,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'Discover how non-fungible tokens (NFTs) are transforming the art world.',
   },
   {
-    id: 3,
+    id: '3',
     slug: 'the-impact-of-ai-on-healthcare',
     title: 'The Impact of AI on Healthcare',
     excerpt: 'Explore how artificial intelligence (AI) is transforming the healthcare industry, improving patient outcomes and reducing costs.',
@@ -172,7 +172,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'Explore how artificial intelligence (AI) is transforming the healthcare industry.',
   },
   {
-    id: 4,
+    id: '4',
     slug: 'the-evolution-of-remote-work',
     title: 'The Evolution of Remote Work',
     excerpt: 'Examine the history and future of remote work, and how it is changing the way we live and work.',
@@ -244,7 +244,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'Examine the history and future of remote work, and how it is changing the way we live and work.',
   },
   {
-    id: 5,
+    id: '5',
     slug: 'understanding-blockchain-technology',
     title: 'Understanding Blockchain Technology',
     excerpt: 'A comprehensive guide to understanding the basics of blockchain technology and its potential applications.',
@@ -307,7 +307,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'A comprehensive guide to understanding the basics of blockchain technology.',
   },
   {
-    id: 6,
+    id: '6',
     slug: 'the-metaverse-and-its-impact-on-society',
     title: 'The Metaverse and Its Impact on Society',
     excerpt: 'Explore the concept of the metaverse and its potential impact on society, culture, and the way we interact with each other.',
@@ -365,7 +365,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'Explore the concept of the metaverse and its potential impact on society.',
   },
   {
-    id: 7,
+    id: '7',
     slug: 'sustainable-living-tips-for-a-greener-future',
     title: 'Sustainable Living: Tips for a Greener Future',
     excerpt: 'Discover practical tips and strategies for adopting a more sustainable lifestyle and reducing your environmental impact.',
@@ -417,7 +417,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'Discover practical tips and strategies for adopting a more sustainable lifestyle.',
   },
   {
-    id: 8,
+    id: '8',
     slug: 'the-importance-of-mental-health-awareness',
     title: 'The Importance of Mental Health Awareness',
     excerpt: 'Understand the significance of mental health awareness and how it impacts individuals, communities, and society as a whole.',
@@ -465,7 +465,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'Understand the significance of mental health awareness and its impact on society.',
   },
   {
-    id: 9,
+    id: '9',
     slug: 'exploring-the-world-of-artificial-intelligence',
     title: 'Exploring the World of Artificial Intelligence',
     excerpt: 'Dive into the fascinating world of artificial intelligence (AI) and discover its applications, challenges, and future possibilities.',
@@ -519,7 +519,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription: 'Dive into the fascinating world of artificial intelligence (AI) and discover its applications.',
   },
   {
-    id: 10,
+    id: '10',
     slug: 'innovation-recognized-dehub-wins-corporate-livewire-award---a-dehub-milestone-from-q2-2023',
     title: 'Innovation Recognized: DeHub Wins Corporate LiveWire Award - A DeHub Milestone from Q2 2023',
     excerpt: 'It brings us great pride to inform you all that DeHub is officially Corporate LiveWire’s 2023 Innovation and Excellence Winner, coming in first place under the “Gaming” category.',
@@ -530,7 +530,7 @@ Corporate LiveWire is one of the more prestigious & rigorously scored awards for
 
 We were nominated by a member of the public and then given first place for our free to play and earn gaming arcade & streaming protocol. The scoring did take into account a number of other key variables however. This included customer service, community/customer feedback & bot followers or engagement on socials and practically all the usual stuff we take pride in.
 
-### More on Corporate Live Wire…
+### More on Corporate LiveWire…
 Having been in the UK business sector for some time, Corporate LiveWire is a well known name with over 70,000 subscribers across physical and digital distribution channels.
 
 ![More on Corporate LiveWire, including the large business orientated, off-chain base for exposure.](/lovable-uploads/79a2a7d5-1659-4d28-a62f-5e8a3994b80d.png)
@@ -557,5 +557,45 @@ The London awards ceremony is on the 27th of August, and we’d like to extend a
     readingTime: 3,
     seoTitle: 'DeHub Wins Corporate LiveWire 2023 Innovation & Excellence Award',
     seoDescription: 'DeHub is proud to be the winner of the Corporate LiveWire 2023 Innovation & Excellence Award. Learn more about this achievement and what it means for our community.',
+  },
+  {
+    id: '11',
+    slug: 'q1-overview-a-birds-eye-view',
+    title: 'Q1 Overview: A Birds-Eye View',
+    excerpt: 'A bird’s eye view of plans for the rest of this quarter.',
+    content: `
+      # Q1 Overview: A Birds-Eye View
+
+      This is a birds-eye view of plans for the rest of this quarter.
+
+      ## Key Highlights
+
+      - **New Features:** We are working on several new features to enhance the user experience.
+      - **Performance Improvements:** We are focusing on improving the performance of our platform.
+      - **Community Engagement:** We are actively engaging with our community to gather feedback and ideas.
+
+      ## Next Steps
+
+      - **Feature Development:** We will be working on developing new features in the coming weeks.
+      - **Performance Optimization:** We will be working on optimizing the performance of our platform in the coming weeks.
+      - **Community Building:** We will be working on building a stronger community in the coming weeks.
+
+      ## Conclusion
+
+      This is a birds-eye view of plans for the rest of this quarter. We are committed to delivering the best possible experience for our users and building a strong community around our platform.
+    `,
+    author: {
+      name: 'DeHub Official',
+      avatar: '/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png'
+    },
+    publishedAt: '2023-05-01T09:00:00.000Z',
+    status: 'published',
+    tags: ['Q1', 'Overview', 'Birds-Eye View'],
+    featured: true,
+    bannerImage: '/lovable-uploads/q1-overview-banner.jpg',
+    bannerImageAlt: 'A birds-eye view of plans for the rest of this quarter',
+    readingTime: 2,
+    seoTitle: 'Q1 Overview: A Birds-Eye View',
+    seoDescription: 'A bird’s eye view of plans for the rest of this quarter.',
   },
 ];
