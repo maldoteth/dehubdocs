@@ -18,22 +18,19 @@ export const getFeaturedPosts = (): BlogPost[] => {
 
 export const getPostBySlug = (slug: string): BlogPost | undefined => {
   const postId = parseInt(slug, 10);
-  let foundPost: BlogPost | undefined;
 
-  // Prioritize finding by numeric ID if the slug is a number
-  if (!isNaN(postId)) {
-    foundPost = blogPosts.find(p => parseInt(p.id, 10) === postId && p.status === 'published');
-  }
-  
-  // If not found by ID (or if slug wasn't a number), try finding by the original text slug as a fallback
-  if (!foundPost) {
-    foundPost = blogPosts.find(p => p.slug === slug && p.status === 'published');
+  // Only try to find by ID if the slug is a valid number string (e.g. "123", not "123-abc")
+  if (!isNaN(postId) && String(postId) === slug) {
+    const post = blogPosts.find(p => parseInt(p.id, 10) === postId && p.status === 'published');
+    if (post) {
+      return { ...post, slug: post.id };
+    }
   }
 
-  // If a post was found by either method, return it with the slug updated to be the ID.
-  // This ensures consistency and that sharing links use the short URL.
-  if (foundPost) {
-    return { ...foundPost, slug: foundPost.id };
+  // If not found by ID, or if slug wasn't a plain number, try finding by text slug as a fallback
+  const postBySlug = blogPosts.find(p => p.slug === slug && p.status === 'published');
+  if (postBySlug) {
+    return { ...postBySlug, slug: postBySlug.id };
   }
 
   return undefined;
