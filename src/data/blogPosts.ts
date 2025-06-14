@@ -331,6 +331,40 @@ No delays are expected. The major overhaul is ready and will be rolled out at th
   },
 
   {
+    id: 'dehub-1m-raise-completed',
+    title: '$1,000,000 raise completed',
+    slug: '1-million-dollar-raise-completed',
+    excerpt: 'DeHub\'s adult fork, Blocjerk (now fan.site) has completed a $1,000,000 raise backed by several notable VCs, influencers, and launchpads.',
+    content: `DeHub's adult fork, Blocjerk (now fan.site) has completed a $1,000,000 raise backed by:
+
+*   Homeless Ventures - Investors working closely with the likes of zkSync, ANKR & other leading projects.
+*   Brian D Evans - Founder of BDE Ventures, Inc. 500 entrepreneur, Forbes 40 under 40.
+*   Jett - President of Hourglass and partner at Apexblock Capital.
+*   The Gem Hunters - Blockchain investment community Lead by Pandah & BiT_SHaMaN.
+*   Shiney D - Investor & content creator.
+*   Dark Gandalf -  Investor & content creator.
+*   Ferrum's TDI - The Decentralised Incubator.
+
+Several launchpads also sold out as well as a public sale for all.
+
+The funds will ensure a multi-year runway and significant chances of global adoption of our tech.
+
+10% of all revenue from fan.site buys back and distributes $DHB to all stakers.
+
+We are together, forever.`,
+    bannerImage: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&fit=crop&w=1200&h=600&q=80',
+    bannerImageAlt: '$1,000,000 raise for fan.site',
+    author: { name: 'DeHub Team' },
+    publishedAt: new Date('2024-03-08').toISOString(),
+    tags: ['Fundraising', 'Fan.site', 'Investment', '2024'],
+    readingTime: 2,
+    featured: true,
+    status: 'published',
+    seoTitle: '$1,000,000 Raise Completed for DeHub\'s Fork, Fan.site',
+    seoDescription: 'DeHub\'s adult fork, Blocjerk (now fan.site) has completed a $1,000,000 raise backed by several notable VCs, influencers, and launchpads, ensuring a multi-year runway.'
+  },
+
+  {
     id: 'dehub-1-year-review-gate-delist',
     title: '1 Year Review; A Quick Look Back',
     slug: '1-year-review-a-quick-look-back',
