@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
-import { getPublishedPosts } from '@/utils/blogData';
+import { getPublishedPosts } from '@/utils/blogUtils';
 
 // Declare the global build time variable
 declare const __BUILD_TIME__: string;
