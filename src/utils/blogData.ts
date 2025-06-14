@@ -153,6 +153,62 @@ We're excited to work with Chainlink to build a more secure, reliable, and trust
     status: 'published'
   },
   {
+    id: '4',
+    title: 'Q3 2024: Security Audits and Cross-Chain Bridge Implementation',
+    slug: 'q3-2024-security-audits-cross-chain-bridge',
+    excerpt: 'Q3 2024 focused on comprehensive security audits by leading firms and the successful implementation of cross-chain bridges connecting major blockchain networks.',
+    content: `# Strengthening Security and Expanding Connectivity
+
+Q3 2024 marked a crucial period in DeHub's development timeline, focusing on comprehensive security enhancements and the successful implementation of cross-chain bridge technology. This quarter demonstrated our unwavering commitment to building the most secure and interoperable decentralized platform in the industry.
+
+## Comprehensive Security Audit Program
+
+The quarter began with the launch of our most extensive security audit program to date. We engaged three leading blockchain security firms to conduct comprehensive reviews of our entire codebase, smart contracts, and network infrastructure. This multi-layered approach ensures that every aspect of the DeHub ecosystem meets the highest security standards.
+
+The audit process covered smart contract vulnerabilities, consensus mechanism security, and potential attack vectors. Each security firm brought unique expertise and methodologies, providing a comprehensive evaluation that identified and addressed potential security concerns before they could impact our users.
+
+Results from the security audits exceeded our expectations, with all firms confirming the robustness of our security architecture. Minor recommendations for improvements were immediately implemented, further strengthening our already solid foundation.
+
+## Cross-Chain Bridge Architecture
+
+The successful implementation of our cross-chain bridge technology represents a major milestone in blockchain interoperability. Our bridges now connect DeHub to Ethereum, Binance Smart Chain, Polygon, and Avalanche, enabling seamless asset transfers across multiple blockchain networks.
+
+The bridge architecture utilizes advanced cryptographic proofs and multi-signature validation to ensure secure cross-chain transactions. Each bridge operation is verified by multiple validators, creating a trustless system that maintains security while enabling unprecedented interoperability.
+
+Smart contract integration allows for automated cross-chain transactions, reducing complexity for users while maintaining the highest security standards. The system supports various token standards and can adapt to new blockchain networks as they emerge.
+
+## Enhanced Developer Tools and Documentation
+
+Q3 2024 also saw significant improvements to our developer experience. We released comprehensive documentation covering all aspects of cross-chain development, including detailed examples and best practices for building interoperable applications.
+
+New developer tools include cross-chain testing environments, bridge monitoring dashboards, and automated deployment scripts that simplify the process of building and deploying cross-chain applications on the DeHub network.
+
+The developer community response has been overwhelmingly positive, with several major projects already beginning integration with our cross-chain infrastructure.
+
+## Network Performance Optimizations
+
+Alongside security improvements, we implemented significant network performance optimizations that reduced transaction costs by 40% while increasing throughput by 60%. These improvements ensure that DeHub remains competitive with other major blockchain networks while maintaining our security advantages.
+
+The optimizations include improved block validation algorithms, enhanced memory management, and streamlined transaction processing that benefits all network participants.
+
+## Looking Forward
+
+The security and interoperability foundations established in Q3 2024 position DeHub for explosive growth in the coming quarters. Our platform now offers the security assurance that institutional users require while providing the interoperability that enables innovative cross-chain applications.
+
+The successful completion of security audits and cross-chain bridge implementation demonstrates our ability to deliver complex technical solutions while maintaining our commitment to security and user experience.`,
+    bannerImage: '/lovable-uploads/49985a5d-354f-48c8-888c-516c56c41f51.png',
+    bannerImageAlt: 'Q3 2024 Security Audits and Cross-Chain Bridge Implementation',
+    publishedAt: '2024-09-15',
+    author: {
+      name: 'Security Team',
+      avatar: '/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png'
+    },
+    tags: ['Security', 'Cross-Chain', 'Audits', 'Infrastructure'],
+    readingTime: 7,
+    featured: false,
+    status: 'published'
+  },
+  {
     id: '5',
     title: 'Q2 2025: Onchain Live Streams and Ambassador Program Launch',
     slug: 'q2-2025-onchain-live-streams-ambassador-program',
@@ -229,16 +285,174 @@ As we move forward, the infrastructure and community relationships established i
     readingTime: 9,
     featured: false,
     status: 'published'
+  },
+  {
+    id: '6',
+    title: 'Q2 2024: Global Expansion and Creator Network Development',
+    slug: 'q2-2024-global-expansion-creator-network',
+    excerpt: 'Q2 2024 marked DeHub international expansion with SDHB Base L2 listing, Dubai operations launch, TikTok agency partnership, and 15-country creator network development.',
+    content: `# International Growth and Strategic Partnerships
+
+Q2 2024 represents a transformative quarter for DeHub as we successfully executed our international expansion strategy while establishing crucial partnerships that position us as a global leader in decentralized content creation. This quarter achievements demonstrate our ability to scale operations across multiple markets while maintaining our commitment to creator empowerment and technological innovation.
+
+## SDHB Base L2 Listing and Technical Expansion
+
+The successful listing of SDHB on Base Layer 2 marks a significant milestone in our multi-chain strategy. This integration provides users with faster transactions and lower fees while maintaining the security and decentralization that define the DeHub ecosystem. The Base L2 implementation supports all core DeHub features including content monetization, governance participation, and creator rewards.
+
+Technical implementation required extensive development work to ensure seamless cross-chain functionality. Our engineering team developed custom bridge protocols that enable instant asset transfers between networks while maintaining security through multi-signature validation and cryptographic proofs.
+
+The Base L2 integration has already shown impressive results, with transaction costs reduced by over 80% compared to mainnet operations. This improvement makes DeHub accessible to creators in emerging markets where transaction fees were previously prohibitive.
+
+## Dubai Operations Center and Middle East Expansion
+
+The establishment of our Dubai operations center represents a strategic commitment to the Middle East and North Africa region. This facility serves as our regional headquarters, providing localized support for creators and businesses across the MENA region while ensuring compliance with regional regulations and cultural considerations.
+
+Our Dubai team focuses on business development, creator onboarding, and partnership development specifically tailored to regional needs. The center has already facilitated partnerships with several major Middle Eastern media companies and has established relationships with government entities interested in blockchain innovation.
+
+The regional expansion includes Arabic language support across our platform, culturally appropriate content moderation policies, and payment integration with regional financial systems. These localization efforts ensure that DeHub can serve the diverse creator community across the Middle East effectively.
+
+## TikTok Agency Partnership and Social Media Integration
+
+The partnership with a leading TikTok agency represents a major step forward in our social media integration strategy. This collaboration enables DeHub creators to seamlessly distribute content across multiple platforms while maintaining ownership and monetization rights through our blockchain infrastructure.
+
+The agency partnership provides DeHub creators with access to professional content creation resources, audience development strategies, and cross-platform promotion opportunities. This support is particularly valuable for emerging creators who need guidance on building sustainable content businesses.
+
+Technical integration includes automated content syndication tools that allow creators to publish simultaneously across DeHub and TikTok while tracking engagement and monetization metrics across both platforms. This unified approach simplifies content management for creators while maximizing their reach and earning potential.
+
+## 15-Country Creator Network Development
+
+Our ambitious creator network expansion program successfully established active creator communities in 15 countries across North America, Europe, Asia, and Latin America. Each regional network includes local community managers, culturally appropriate content guidelines, and region-specific monetization opportunities.
+
+The network development program identified and onboarded over 500 high-quality creators across diverse content categories including entertainment, education, technology, and lifestyle. Each creator receives personalized onboarding support, access to exclusive features, and direct communication channels with our development team.
+
+Regional networks operate semi-autonomously, allowing for cultural adaptation while maintaining consistency with DeHub core values and technical standards. This approach has proven highly effective in building authentic creator communities that reflect local interests and cultural norms.
+
+## Enhanced Platform Features and User Experience
+
+Q2 2024 also brought significant platform improvements based on creator feedback and usage analytics. New features include advanced analytics dashboards that provide creators with detailed insights into audience engagement, revenue optimization tools, and enhanced content discovery algorithms.
+
+The platform mobile experience received a complete overhaul with improved performance, offline functionality, and mobile-specific features that cater to the growing mobile creator community. These improvements resulted in a 40% increase in mobile engagement and significantly improved user retention rates.
+
+Content creation tools were enhanced with new editing capabilities, template systems, and collaboration features that enable creators to produce higher quality content more efficiently. These tools are particularly popular among creators who are transitioning from traditional social media platforms to blockchain-based alternatives.
+
+## Strategic Partnerships and Business Development
+
+The quarter saw the establishment of several strategic partnerships that expand DeHub capabilities and market reach. These include integrations with major content management systems, partnerships with creator economy platforms, and collaborations with educational institutions that are exploring blockchain technology.
+
+Business development efforts focused on establishing DeHub as the preferred platform for brands looking to engage with creator communities through authentic, transparent partnerships. Our blockchain-based verification systems provide brands with unprecedented visibility into campaign performance and audience engagement.
+
+The partnership program includes revenue sharing agreements, co-marketing opportunities, and technical integration support that benefits both DeHub and our partners. This collaborative approach has resulted in rapid ecosystem growth and increased platform utility for all stakeholders.
+
+## Looking Ahead: Global Platform Maturation
+
+Q2 2024 established the international infrastructure and partnership network necessary for DeHub to compete effectively with centralized social media platforms. Our global creator network, technical capabilities, and business relationships position us for continued expansion and innovation.
+
+The quarter success demonstrates that decentralized platforms can achieve global scale while maintaining the transparency, creator ownership, and community governance that distinguish Web3 from traditional social media. As we continue to expand, these foundational achievements will enable even more ambitious initiatives in the coming quarters.`,
+    bannerImage: '/lovable-uploads/4558c158-75d9-40fc-adfa-41125344a48e.png',
+    bannerImageAlt: 'Q2 2024 Global Expansion and Creator Network Development',
+    publishedAt: '2024-06-15',
+    author: {
+      name: 'Global Operations Team',
+      avatar: '/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png'
+    },
+    tags: ['Global Expansion', 'Creator Network', 'Partnership', 'International'],
+    readingTime: 8,
+    featured: false,
+    status: 'published'
+  },
+  {
+    id: '7',
+    title: 'Q1 2024: Foundation Building and Technical Infrastructure',
+    slug: 'q1-2024-foundation-building-technical-infrastructure',
+    excerpt: 'Q1 2024 focused on establishing core technical infrastructure, implementing governance systems, and building the foundational elements for global expansion.',
+    content: `# Building the Foundation for Decentralized Innovation
+
+Q1 2024 marked the beginning of DeHub transformation into a truly global decentralized platform. This foundational quarter focused on establishing robust technical infrastructure, implementing comprehensive governance systems, and creating the architectural framework that would support our ambitious expansion plans throughout 2024 and beyond.
+
+## Core Infrastructure Development
+
+The first quarter of 2024 began with a comprehensive overhaul of our core infrastructure systems. Our engineering team implemented a new distributed architecture that significantly improves scalability, reliability, and performance across all platform features. This infrastructure upgrade was essential preparation for the international expansion that would define the rest of the year.
+
+The new architecture includes redundant systems across multiple geographic regions, ensuring consistent platform performance regardless of user location. Advanced load balancing and caching systems reduce latency and improve user experience, particularly important as we prepare to serve creator communities across diverse global markets.
+
+Database optimization and blockchain integration improvements resulted in 50% faster transaction processing and 30% reduction in storage costs. These efficiency gains are crucial for maintaining competitive transaction fees as platform usage scales globally.
+
+## Governance System Implementation
+
+Q1 2024 saw the launch of our comprehensive decentralized governance system, enabling community members to participate directly in platform development decisions. The governance framework includes proposal submission processes, voting mechanisms, and automated execution systems that ensure community decisions are implemented transparently and efficiently.
+
+The governance token distribution was completed through a fair launch mechanism that prioritized active community members and early supporters. This approach ensures that governance power is distributed among stakeholders who are genuinely invested in platform success rather than concentrated among large token holders.
+
+Initial governance proposals addressed platform feature development, community guidelines, and resource allocation decisions. The community response has been overwhelmingly positive, with high participation rates and thoughtful proposal discussions that demonstrate the maturity of our user base.
+
+## Smart Contract Security and Auditing
+
+Security remained a top priority throughout Q1 2024, with multiple security audits conducted by leading blockchain security firms. Our smart contracts underwent comprehensive testing and formal verification processes that identified and addressed potential vulnerabilities before they could impact users.
+
+The audit process included testing of governance contracts, token economics systems, and creator monetization mechanisms. All identified issues were resolved promptly, and the final audit reports confirmed the security and reliability of our smart contract infrastructure.
+
+Additional security measures implemented during Q1 include multi-signature requirements for critical operations, time-locked upgrades that provide community oversight, and emergency pause mechanisms that can halt operations if security threats are detected.
+
+## Creator Tools and Platform Features
+
+Platform development during Q1 2024 focused on enhancing creator tools and improving user experience based on community feedback. New features include advanced content analytics, audience engagement tools, and monetization options that provide creators with multiple revenue streams.
+
+The content creation interface received significant improvements including better editing tools, template systems, and collaboration features that enable creators to produce higher quality content more efficiently. These tools are designed to be accessible to creators regardless of their technical expertise.
+
+Monetization features expanded to include subscription models, tip systems, and exclusive content options that give creators flexibility in building sustainable businesses on the platform. All monetization systems are built on blockchain technology, ensuring transparent and immediate payments.
+
+## Community Growth and Engagement
+
+Q1 2024 established the community management systems and engagement programs that would support our global expansion efforts. Community moderators were trained and deployed across different time zones to ensure consistent support and engagement regardless of user location.
+
+Educational initiatives launched during Q1 include creator workshops, technical documentation, and best practices guides that help new users understand and utilize platform features effectively. These educational resources are crucial for onboarding creators from traditional social media platforms.
+
+Community events and contests were implemented to encourage engagement and content creation. These initiatives have proven effective in building platform culture and encouraging high-quality content creation across diverse creator communities.
+
+## Partnership Development Framework
+
+The establishment of our partnership development framework during Q1 2024 laid the groundwork for the strategic alliances that would drive growth throughout the year. This framework includes technical integration standards, revenue sharing models, and collaboration guidelines that ensure partnerships benefit all stakeholders.
+
+Initial partnerships focused on technical service providers, content management systems, and creator economy platforms that could enhance platform capabilities. These foundational partnerships provided immediate value while establishing relationship templates for larger strategic alliances.
+
+The partnership program includes comprehensive onboarding processes, technical support systems, and success metrics that ensure partnerships deliver measurable value to the DeHub ecosystem.
+
+## Technical Innovation and Research
+
+Q1 2024 also included significant investment in research and development initiatives that would inform future platform development. Our research team explored emerging technologies including artificial intelligence integration, advanced consensus mechanisms, and novel tokenization models.
+
+Prototype development during Q1 included experimental features that were tested with select community members before broader release. This approach ensures that new features meet user needs and maintain platform stability while enabling rapid innovation.
+
+Research partnerships with academic institutions and technology companies provided access to cutting-edge developments in blockchain technology, ensuring that DeHub remains at the forefront of technological innovation.
+
+## Looking Forward: Foundation for Growth
+
+The infrastructure, governance, and community systems established during Q1 2024 created a solid foundation for the ambitious expansion plans that would define the rest of the year. Every system was designed with scalability and global operation in mind, ensuring that rapid growth would not compromise platform quality or user experience.
+
+The quarter success in building comprehensive foundational systems while maintaining platform stability and community satisfaction demonstrates our team ability to execute complex technical projects while staying focused on user needs and community values.`,
+    bannerImage: '/lovable-uploads/46336bd8-1249-48d9-8adc-c3f95c49d34a.png',
+    bannerImageAlt: 'Q1 2024 Foundation Building and Technical Infrastructure',
+    publishedAt: '2024-03-31',
+    author: {
+      name: 'Infrastructure Team',
+      avatar: '/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png'
+    },
+    tags: ['Infrastructure', 'Governance', 'Foundation', 'Development'],
+    readingTime: 7,
+    featured: false,
+    status: 'published'
   }
 ];
 
 // Utility functions
 export const getPublishedPosts = (): BlogPost[] => {
-  return blogPosts.filter(post => post.status === 'published');
+  return blogPosts.filter(post => post.status === 'published')
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 };
 
 export const getFeaturedPosts = (): BlogPost[] => {
-  return blogPosts.filter(post => post.featured && post.status === 'published');
+  return blogPosts.filter(post => post.featured && post.status === 'published')
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 };
 
 export const getPostBySlug = (slug: string): BlogPost | undefined => {
