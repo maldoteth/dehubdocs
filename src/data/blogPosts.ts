@@ -1,331 +1,192 @@
+
 import { BlogPost } from '@/types/blog';
 
-export const blogPosts: BlogPost[] = [
-  {
-    id: 'dehub-2025-q2-roadmap',
-    title: 'DeHub 2025 Q2 Roadmap: Scaling Our Ecosystem',
-    slug: 'dehub-2025-q2-roadmap',
-    excerpt: 'Discover our ambitious plans for Q2 2025, including advanced AI features, enhanced security protocols, and expanded partnership integrations.',
-    content: `# DeHub 2025 Q2 Roadmap: Scaling Our Ecosystem
-
-As we continue building the future of decentralized infrastructure, Q2 2025 brings exciting developments that will enhance our platform's capabilities and user experience.
-
-## Mobile App Development & Launch
-We're bringing DeHub to your pocket with our comprehensive mobile application. The app will feature full wallet integration, seamless DePIN node management, and real-time analytics - all optimized for mobile users who want to manage their decentralized infrastructure on the go.
-
-## Advanced AI Features & Automation
-Our AI toolkit expansion includes intelligent resource allocation, predictive maintenance for DePIN nodes, and automated optimization algorithms. These features will help users maximize their returns while minimizing manual intervention.
-
-## Enhanced Security Protocols
-Security remains our top priority. This quarter introduces multi-signature wallet support, advanced encryption standards, and comprehensive audit frameworks to ensure your assets and data remain protected.
-
-## Partnership Integrations & Ecosystem Growth
-We're expanding our ecosystem through strategic partnerships with leading blockchain projects, DePIN hardware manufacturers, and enterprise clients. These integrations will create new opportunities for our community and enhance platform utility.
-
-## Community & Governance Enhancements
-Enhanced governance mechanisms will give token holders more control over platform development. We're introducing proposal templates, voting incentives, and community-driven feature prioritization.
-
-Join us as we scale DeHub to new heights in Q2 2025!`,
-    bannerImage: '/lovable-uploads/2ea68214-0253-4b39-83ee-8d3d6823323a.png',
-    bannerImageAlt: 'DeHub 2025 Q2 Roadmap - Scaling Our Ecosystem',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2025-04-01T10:00:00Z',
-    tags: ['Roadmap', 'Mobile', 'AI', 'Security', 'Partnerships'],
-    readingTime: 6,
-    featured: true,
-    status: 'published'
-  },
-  {
-    id: 'dehub-2025-q1-roadmap',
-    title: 'DeHub 2025 Q1 Roadmap: Foundation for Growth',
-    slug: 'dehub-2025-q1-roadmap',
-    excerpt: 'Explore our roadmap for Q1 2025, focusing on platform optimization, user experience improvements, and laying the groundwork for future innovations.',
-    content: `# DeHub 2025 Q1 Roadmap: Foundation for Growth
-
-The first quarter of 2025 marks a pivotal moment for DeHub as we focus on strengthening our foundation and preparing for accelerated growth.
-
-## Platform Optimization & Performance
-We're implementing comprehensive performance improvements across our entire platform. This includes database optimization, faster loading times, and enhanced scalability to support our growing user base.
-
-## User Experience Improvements
-Based on extensive community feedback, we're redesigning key user interfaces to make DeHub more intuitive and accessible. New users will benefit from improved onboarding flows and clearer navigation.
-
-## Documentation & Developer Resources
-Our commitment to developer adoption includes expanded documentation, more code examples, and better API references. We're making it easier than ever for developers to build on DeHub.
-
-## Community Building & Engagement
-Q1 2025 focuses heavily on community growth through educational content, webinars, and direct engagement with our users. We're launching new community programs and incentives.
-
-## Infrastructure Scaling
-As we prepare for increased adoption, we're scaling our infrastructure to handle higher transaction volumes and more concurrent users without compromising performance.
-
-These foundational improvements will enable the ambitious features planned for the rest of 2025!`,
-    bannerImage: '/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png',
-    bannerImageAlt: 'DeHub 2025 Q1 Roadmap - Foundation for Growth',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2025-01-01T10:00:00Z',
-    tags: ['Roadmap', 'Optimization', 'UX', 'Community', 'Infrastructure'],
-    readingTime: 5,
-    featured: true,
-    status: 'published'
-  },
-  {
-    id: 'dehub-2024-q4-roadmap',
-    title: 'DeHub 2024 Q4 Roadmap: Year-End Push',
-    slug: 'dehub-2024-q4-roadmap',
-    excerpt: 'Our final quarter roadmap for 2024 focuses on delivering key features and setting the stage for an exciting 2025.',
-    content: `# DeHub 2024 Q4 Roadmap: Year-End Push
-
-As we approach the end of 2024, our focus shifts to delivering critical features and preparing for an ambitious 2025.
-
-## Advanced Analytics Dashboard
-We're launching comprehensive analytics tools that provide deep insights into DePIN performance, token economics, and network health. Users will have access to real-time metrics and historical data.
-
-## Cross-Chain Compatibility
-Q4 brings expanded blockchain support, enabling seamless interactions across multiple networks. This includes bridge functionality and multi-chain asset management.
-
-## Enhanced Staking Mechanisms
-New staking options with flexible terms and competitive rewards. We're introducing liquid staking and delegation features to maximize user returns.
-
-## Developer API Expansion
-Our developer toolkit grows with new APIs for DePIN integration, advanced querying capabilities, and webhook support for real-time notifications.
-
-## Security Audits & Compliance
-Comprehensive security reviews and compliance frameworks to ensure DeHub meets institutional standards and regulatory requirements.
-
-## Community Governance Launch
-The introduction of decentralized governance mechanisms, allowing token holders to participate in platform decision-making and feature prioritization.
-
-Q4 2024 sets the foundation for everything we have planned for 2025!`,
-    bannerImage: '/lovable-uploads/305d0557-94f8-46fe-b44e-b6b3a810d434.png',
-    bannerImageAlt: 'DeHub 2024 Q4 Roadmap - Year-End Push',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2024-10-01T10:00:00Z',
-    tags: ['Roadmap', 'Analytics', 'Cross-Chain', 'Staking', 'Governance'],
-    readingTime: 6,
-    featured: false,
-    status: 'published'
-  },
-  {
-    id: 'dehub-2024-q3-roadmap',
-    title: 'DeHub 2024 Q3 Roadmap: Scaling Infrastructure',
-    slug: 'dehub-2024-q3-roadmap',
-    excerpt: 'Q3 2024 focuses on infrastructure scaling, performance optimization, and preparing for mainstream adoption.',
-    content: `# DeHub 2024 Q3 Roadmap: Scaling Infrastructure
-
-The third quarter of 2024 is all about scaling our infrastructure to support the next wave of growth and adoption.
-
-## Infrastructure Scaling & Optimization
-Massive infrastructure improvements to handle increased user load, including database optimization, CDN implementation, and server scaling across multiple regions.
-
-## Performance Monitoring & Analytics
-Advanced monitoring systems to track platform performance, identify bottlenecks, and ensure optimal user experience during peak usage periods.
-
-## API Rate Limiting & Optimization
-Implementation of intelligent rate limiting and API optimization to ensure fair resource distribution and prevent abuse while maintaining performance.
-
-## Load Balancing & Redundancy
-Geographic load balancing and redundancy systems to ensure 99.9% uptime and optimal performance regardless of user location.
-
-## Automated Scaling Solutions
-Smart scaling solutions that automatically adjust resources based on demand, ensuring consistent performance during traffic spikes.
-
-## Database Optimization & Caching
-Advanced caching mechanisms and database optimization to reduce query times and improve overall platform responsiveness.
-
-These infrastructure improvements prepare DeHub for the mainstream adoption we expect in 2025.`,
-    bannerImage: '/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png',
-    bannerImageAlt: 'DeHub 2024 Q3 Roadmap - Scaling Infrastructure',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2024-07-01T10:00:00Z',
-    tags: ['Roadmap', 'Infrastructure', 'Scaling', 'Performance', 'Optimization'],
-    readingTime: 5,
-    featured: false,
-    status: 'published'
-  },
-  {
-    id: 'dehub-2024-q2-roadmap',
-    title: 'DeHub 2024 Q2 Roadmap: Feature Expansion',
-    slug: 'dehub-2024-q2-roadmap',
-    excerpt: 'Q2 2024 brings major feature expansions including advanced DePIN tools, enhanced security, and improved user experience.',
-    content: `# DeHub 2024 Q2 Roadmap: Feature Expansion
-
-The second quarter of 2024 focuses on expanding our feature set and enhancing the overall DeHub experience.
-
-## Advanced DePIN Management Tools
-Comprehensive tools for DePIN operators including automated monitoring, performance analytics, and optimization recommendations.
-
-## Enhanced Security Framework
-Multi-layer security improvements including two-factor authentication, hardware wallet support, and advanced encryption protocols.
-
-## Improved User Interface
-Complete UI/UX overhaul based on user feedback, featuring intuitive navigation, responsive design, and accessibility improvements.
-
-## API Documentation & Developer Tools
-Extensive API documentation, SDKs for popular programming languages, and developer sandbox environments for testing.
-
-## Community Features
-Enhanced community features including forums, direct messaging, reputation systems, and collaborative project tools.
-
-## Performance Optimizations
-Significant performance improvements across the platform, reducing load times and improving overall responsiveness.
-
-Q2 2024 marks a major milestone in DeHub's evolution toward becoming the premier DePIN platform.`,
-    bannerImage: '/lovable-uploads/38387f75-fd38-4380-9588-1f19f68d8435.png',
-    bannerImageAlt: 'DeHub 2024 Q2 Roadmap - Feature Expansion',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2024-04-01T10:00:00Z',
-    tags: ['Roadmap', 'DePIN', 'Security', 'UI/UX', 'Community'],
-    readingTime: 5,
-    featured: false,
-    status: 'published'
-  },
-  {
-    id: 'dehub-2024-q1-roadmap',
-    title: 'DeHub 2024 Q1 Roadmap: Platform Maturation',
-    slug: 'dehub-2024-q1-roadmap',
-    excerpt: 'The first quarter of 2024 focuses on platform maturation, stability improvements, and preparing for major feature releases.',
-    content: `# DeHub 2024 Q1 Roadmap: Platform Maturation
-
-As we enter 2024, our focus shifts to platform maturation and preparing for the exciting developments ahead.
-
-## Platform Stability & Bug Fixes
-Comprehensive stability improvements, bug fixes, and performance optimizations based on extensive user feedback and testing.
-
-## Security Audits & Enhancements
-Multiple security audits by leading firms, implementation of audit recommendations, and enhanced security protocols.
-
-## User Experience Research
-In-depth user experience research to guide future development decisions and ensure we're building what our community needs.
-
-## Developer Ecosystem Growth
-Expansion of our developer ecosystem through improved documentation, more examples, and better support channels.
-
-## Community Engagement Programs
-New community programs including bug bounties, feature suggestion rewards, and community moderator programs.
-
-## Infrastructure Monitoring
-Advanced monitoring and alerting systems to ensure platform reliability and quick response to any issues.
-
-Q1 2024 sets the foundation for the major innovations planned throughout the year.`,
-    bannerImage: '/lovable-uploads/3f101ce6-83a6-435b-8a41-58668a7fdb53.png',
-    bannerImageAlt: 'DeHub 2024 Q1 Roadmap - Platform Maturation',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2024-01-01T10:00:00Z',
-    tags: ['Roadmap', 'Stability', 'Security', 'Community', 'Infrastructure'],
-    readingTime: 4,
-    featured: false,
-    status: 'published'
-  },
-  {
-    id: 'dehub-2023-q4-roadmap',
-    title: 'DeHub 2023 Q4 Roadmap: Advanced Features',
-    slug: 'dehub-2023-q4-roadmap',
-    excerpt: 'Q4 2023 introduces advanced features including smart contracts, automated workflows, and enhanced analytics.',
-    content: `# DeHub 2023 Q4 Roadmap: Advanced Features
-
-The final quarter of 2023 brings sophisticated features that will elevate DeHub to the next level.
-
-## Smart Contract Integration
-Native smart contract support enabling automated agreements, conditional payments, and programmable infrastructure management.
-
-## Automated Workflow Engine
-Powerful workflow automation tools allowing users to create complex, multi-step processes with conditional logic and triggers.
-
-## Advanced Analytics & Reporting
-Comprehensive analytics suite with custom dashboards, detailed reporting, and predictive insights for better decision-making.
-
-## Multi-Chain Asset Management
-Support for assets across multiple blockchain networks with unified portfolio management and cross-chain transactions.
-
-## Enterprise API & Integrations
-Enterprise-grade APIs and integrations with popular business tools, enabling seamless adoption by larger organizations.
-
-## Advanced User Permissions
-Granular permission systems for team management, role-based access control, and organizational hierarchy support.
-
-These advanced features position DeHub as the leading platform for sophisticated DePIN operations.`,
-    bannerImage: '/lovable-uploads/3fb7f494-e111-4949-b66d-9269f163c74e.png',
-    bannerImageAlt: 'DeHub 2023 Q4 Roadmap - Advanced Features',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2023-10-01T10:00:00Z',
-    tags: ['Roadmap', 'Smart Contracts', 'Automation', 'Analytics', 'Enterprise'],
-    readingTime: 5,
-    featured: false,
-    status: 'published'
-  },
-  {
-    id: 'dehub-2021-q4-roadmap',
-    title: 'DeHub 2021 Q4 Roadmap: Beta Launch Preparation',
-    slug: 'dehub-2021-q4-roadmap',
-    excerpt: 'Final preparations for our beta launch, including security audits, user testing, and community onboarding.',
-    content: `# DeHub 2021 Q4 Roadmap: Beta Launch Preparation
-
-The final quarter of 2021 marks a crucial milestone as we prepare for our highly anticipated beta launch.
-
-## Comprehensive Security Audits
-Multiple independent security audits to ensure our platform meets the highest security standards before public release.
-
-## Closed Beta Testing Program
-Invitation-only beta testing with selected community members to identify issues and gather feedback before wider release.
-
-## User Interface Finalization
-Final UI/UX improvements based on user testing feedback, ensuring an intuitive and polished user experience.
-
-## Community Onboarding Systems
-Comprehensive onboarding flows, tutorials, and support systems to help new users get started quickly and safely.
-
-## Documentation & Help Resources
-Complete documentation, FAQ sections, and help resources to support users throughout their DeHub journey.
-
-## Launch Infrastructure Preparation
-Final infrastructure preparations to handle the expected influx of users during our beta launch phase.
-
-Q4 2021 represents the culmination of our hard work and the beginning of DeHub's public journey.`,
-    bannerImage: '/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png',
-    bannerImageAlt: 'DeHub 2021 Q4 Roadmap - Beta Launch Preparation',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2021-10-01T10:00:00Z',
-    tags: ['Roadmap', 'Beta Launch', 'Security', 'Testing', 'Community'],
-    readingTime: 4,
-    featured: false,
-    status: 'published'
-  },
-  {
-    id: 'dehub-2021-q1-roadmap',
-    title: 'DeHub 2021 Q1 Roadmap: Foundation & Vision',
-    slug: 'dehub-2021-q1-roadmap',
-    excerpt: 'The beginning of our journey - establishing the foundation and vision for DeHub as the premier DePIN platform.',
-    content: `# DeHub 2021 Q1 Roadmap: Foundation & Vision
-
-Welcome to the beginning of the DeHub journey. In Q1 2021, we're laying the groundwork for what will become the leading DePIN platform.
-
-## Project Inception & Team Assembly
-Formation of our core team with expertise in blockchain technology, decentralized systems, and user experience design.
-
-## Market Research & Analysis
-Comprehensive analysis of the DePIN landscape, identifying opportunities and challenges in the decentralized infrastructure space.
-
-## Technical Architecture Design
-Development of our core technical architecture, focusing on scalability, security, and user-centric design principles.
-
-## Initial Prototype Development
-Creation of our first working prototype to validate core concepts and demonstrate the potential of our platform.
-
-## Community Building Initiation
-Early community building efforts, establishing our presence on social media and engaging with potential users and partners.
-
-## Funding & Partnership Strategy
-Development of our funding strategy and identification of potential strategic partners to support our growth.
-
-This is where it all begins - the foundation for the future of decentralized infrastructure management.`,
-    bannerImage: '/lovable-uploads/4558c158-75d9-40fc-adfa-41125344a8e.png',
-    bannerImageAlt: 'DeHub 2021 Q1 Roadmap - Foundation & Vision',
-    author: { name: 'DeHub Team' },
-    publishedAt: '2021-01-01T10:00:00Z',
-    tags: ['Roadmap', 'Foundation', 'Vision', 'Team', 'Architecture'],
-    readingTime: 4,
-    featured: false,
-    status: 'published'
-  }
+// Placeholder images - using a few from the provided list and cycling through them
+const unsplashBase = "https://images.unsplash.com/";
+const placeholderImages = [
+  "photo-1488590528505-98d2b5aba04b", // laptop
+  "photo-1518770660439-4636190af475", // circuit board
+  "photo-1461749280684-dccba630e2f6", // code on monitor
+  "photo-1581091226825-a6a2a5aee158", // woman with laptop
+  "photo-1526374965328-7f61d4dc18c5", // matrix code
+  "photo-1487058792275-0ad4aaf24ca7", // colorful code
+  "photo-1605810230434-7631ac76ec81", // video screens
+  "photo-1519389950473-47ba0277781c", // people with laptops
+  "photo-1498050108023-c5249f4df085"  // macbook with code
 ];
+let imageIndex = 0;
+
+const getNextImage = () => {
+  const imageName = placeholderImages[imageIndex % placeholderImages.length];
+  imageIndex++;
+  return `${unsplashBase}${imageName}?ixlib=rb-4.0.3&fit=crop&w=1200&h=600&q=80`;
+};
+
+const generateSlug = (title: string) => {
+  return title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+};
+
+let postIdCounter = 0;
+const createPost = (
+  quarter: string, // e.g., "Q1 2021"
+  year: number,
+  quarterNum: number, // 1, 2, 3, 4
+  itemIndexInQuarter: number, // 0-based
+  bulletPoint: string,
+  customTitle?: string,
+  additionalContent?: string,
+  customTags?: string[]
+): BlogPost => {
+  postIdCounter++;
+  const baseTitle = customTitle || bulletPoint;
+  const title = `${baseTitle} - A DeHub Milestone from ${quarter}`;
+  const slug = generateSlug(title);
+  const month = (quarterNum - 1) * 3 + 1; // Q1->Jan, Q2->Apr, etc.
+  const day = itemIndexInQuarter + 1;
+  const publishedAt = new Date(year, month - 1, day).toISOString();
+
+  const defaultExcerpt = `Delve into DeHub's journey as we explore the ${quarter} achievement: "${bulletPoint}". Discover its impact on our ecosystem.`;
+  const defaultContent = `
+# ${title}
+
+In the vibrant period of ${quarter}, DeHub marked a significant step forward: **${bulletPoint}**. This accomplishment was a cornerstone in our ongoing mission to revolutionize decentralized infrastructure.
+
+## The Story Behind This Milestone
+
+The initiative to "${bulletPoint}" was driven by our commitment to [mention a relevant DeHub value like innovation, community, security, growth, etc.]. It represented a crucial phase in [mention broader goal, e.g., "our platform's development", "expanding our user base", "enhancing security protocols"].
+
+[Placeholder for specific details - for a real blog, this would be expanded significantly. Current bullet: ${bulletPoint}]
+${additionalContent || `This achievement involved [mention a general effort like 'dedicated teamwork', 'overcoming technical challenges', 'strategic planning'] and was met with positive reception from our community.`}
+
+## Impact and Future Outlook
+
+Successfully completing "${bulletPoint}" has [mention an impact, e.g., "strengthened our platform's foundation", "opened new avenues for user engagement", "bolstered our market position"]. It paved the way for subsequent innovations and continues to shape DeHub's trajectory.
+
+We remain dedicated to building upon such successes as we forge ahead. Stay tuned for more updates from DeHub!
+  `;
+
+  return {
+    id: `dehub-milestone-${postIdCounter}-${slug.substring(0,20)}`,
+    title,
+    slug,
+    excerpt: defaultExcerpt,
+    content: defaultContent.trim(),
+    bannerImage: getNextImage(),
+    bannerImageAlt: title,
+    author: { name: 'DeHub Team' },
+    publishedAt,
+    tags: customTags || ['DeHub Journey', 'Roadmap', quarter.replace(' ', ''), year.toString(), 'Milestone'],
+    readingTime: 3, // Estimated
+    featured: false,
+    status: 'published',
+  };
+};
+
+export const blogPosts: BlogPost[] = [
+  // 2021
+  // Q1 2021
+  createPost("Q1 2021", 2021, 1, 0, "Assembled core development team", "Building the Dream: DeHub's Core Team Assembled"),
+  createPost("Q1 2021", 2021, 1, 1, "Launched first beta app on App Store with 500+ initial testers and 2,000 DAUs before token release", "Early Traction: DeHub's Beta App Hits 2,000 DAUs"),
+  createPost("Q1 2021", 2021, 1, 2, "Conducted 50+ user interviews to validate product-market fit", "Listening to Our Users: 50+ Interviews Shape DeHub"),
+  createPost("Q1 2021", 2021, 1, 3, "Established basic content moderation framework", "Safe Spaces: DeHub's Initial Content Moderation Framework"),
+  // Q2 2021
+  createPost("Q2 2021", 2021, 2, 0, "Launched v1 token", "The Genesis: DeHub's V1 Token Launch"),
+  createPost("Q2 2021", 2021, 2, 1, "Community governed listing chain, price / market cap.", "Power to the People: Community Governed Listings"),
+  createPost("Q2 2021", 2021, 2, 2, "Established first liquidity pools on Pancake Swap", "Diving In: First DeHub Liquidity Pools on Pancake Swap"),
+  createPost("Q2 2021", 2021, 2, 3, "Built community of 2,000+ early adopters", "Growing Together: DeHub's Early Adopter Community Surpasses 2,000"),
+  createPost("Q2 2021", 2021, 2, 4, "Implemented basic governance voting mechanism", "A Voice for All: DeHub's Basic Governance Voting Arrives"),
+  createPost("Q2 2021", 2021, 2, 5, "Smart contract security issue discovered", "Navigating Challenges: Addressing a V1 Smart Contract Security Issue"),
+  // Q3 2021
+  createPost("Q3 2021", 2021, 3, 0, "Rebranded to DeHub", "A New Era: The Rebranding to DeHub"),
+  createPost("Q3 2021", 2021, 3, 1, "Started full app rebuild using React Native for better cross-platform support", "Building for All: App Rebuild with React Native"),
+  createPost("Q3 2021", 2021, 3, 2, "Airdropped all holders automatically", "Rewarding Loyalty: Automatic Airdrop for All Holders"),
+  createPost("Q3 2021", 2021, 3, 3, "Addressed security vulnerabilities from v1 with full Certik Audit", "Fortifying Our Walls: V1 Security Hardened with Certik Audit"),
+  createPost("Q3 2021", 2021, 3, 4, "Expanded team to 15 members across 3 time zones", "Global Reach: DeHub Team Grows to 15 Strong"),
+  // Q4 2021
+  createPost("Q4 2021", 2021, 4, 0, "Released prediction and raffle games", "Game On: DeHub Launches Prediction and Raffle Games"),
+  createPost("Q4 2021", 2021, 4, 1, "Listed on Gate.io after a near 1000x price surge, with close to $10m in our LP", "To the Moon: Gate.io Listing and $10M LP Milestone"),
+  createPost("Q4 2021", 2021, 4, 2, "Discovered listing agent was fraudulent, stole our fundraise and dumped our chart instead of airdropping Gate users, Gate investigated and apologised but could not identify the rogue employee as they lost the records, apparently.", "Trials and Tribulations: The Gate.io Listing Agent Incident"),
+  createPost("Q4 2021", 2021, 4, 3, "Implemented game mechanics with provably fair randomization", "Fair Play: Provably Fair Randomization in DeHub Games"),
+  createPost("Q4 2021", 2021, 4, 4, "Community grew to 8,000+ active members", "Strength in Numbers: DeHub Community Exceeds 8,000 Active Members"),
+
+  // 2022
+  // Q1 2022
+  createPost("Q1 2022", 2022, 1, 0, "Released arcade with 5 initial games including Super Robin Hood and Tomb Runner and predictions", "Level Up: DeHub Arcade Launches with 5 Games & Predictions"),
+  createPost("Q1 2022", 2022, 1, 1, "Achieved 5,000+ monthly active gamers", "High Score: DeHub Gaming Hits 5,000+ Monthly Active Users"),
+  createPost("Q1 2022", 2022, 1, 2, "Implemented blockchain-based leaderboards and rewards", "On-Chain Glory: Blockchain Leaderboards and Rewards in DeHub Arcade"),
+  createPost("Q1 2022", 2022, 1, 3, "Introduced social features allowing friend challenges", "Challenge Accepted: Social Features and Friend Challenges Arrive"),
+  createPost("Q1 2022", 2022, 1, 4, "Built custom game engine optimized for mobile devices", "Powering Play: DeHub's Custom Mobile Game Engine"),
+  // Q2 2022
+  createPost("Q2 2022", 2022, 2, 0, "Released stream app supporting 4K content with 99.9% uptime", "Crystal Clear: DeHub Stream App with 4K Support & High Uptime"),
+  createPost("Q2 2022", 2022, 2, 1, "Produced first tokenised documentary featuring Jorge Masvidal, Brad Pickett & more by Luke Barnatt", "Lights, Camera, Blockchain: DeHub's First Tokenized Documentary"),
+  createPost("Q2 2022", 2022, 2, 2, "Genesis mint for Chads collection", "The Chads Arrive: Genesis Mint of the Chads NFT Collection"),
+  createPost("Q2 2022", 2022, 2, 3, "Secured SEC registration with the Philippine Government for real estate, construction and brokerage services", "Building Bridges: Philippine SEC Registration Secured"),
+  createPost("Q2 2022", 2022, 2, 4, "Implemented advanced video compression reducing bandwidth costs by 60%", "Efficient Streaming: Advanced Video Compression Reduces Costs"),
+  createPost("Q2 2022", 2022, 2, 5, "Built NFT marketplace with royalty distribution system", "Empowering Creators: DeHub NFT Marketplace with Royalties"),
+  // Q3 2022
+  createPost("Q3 2022", 2022, 3, 0, "Incorporated DeLabs LTD with proper legal structure and compliance", "Official Standing: DeLabs LTD Incorporated"),
+  createPost("Q3 2022", 2022, 3, 1, "Acquired $1,000,000 home for largest crypto raffle ever (15,000+ participants)", "Dream Big: The $1M Home Crypto Raffle by DeHub"),
+  createPost("Q3 2022", 2022, 3, 2, "Secured power of attorney for multiple islands and sea front strip in Palawan worth over $15,000,000 in an attempt to tokenise sales but failed due to regulatory challenges from the Philippine SEC", "Ambitious Ventures: The Palawan Real Estate Tokenization Attempt"),
+  createPost("Q3 2022", 2022, 3, 3, "Established partnerships with real estate and legal firms", "Strategic Alliances: Partnering with Real Estate and Legal Experts"),
+  createPost("Q3 2022", 2022, 3, 4, "Created transparent raffle mechanics with on-chain verification", "Trust and Transparency: On-Chain Verified Raffle Mechanics"),
+  // Q4 2022
+  createPost("Q4 2022", 2022, 4, 0, "Contract tax triggers malfunctioned, freezing the token and our LP, forced to relaunch v2", "The Unforeseen: Navigating a Contract Malfunction and V2 Relaunch"),
+  createPost("Q4 2022", 2022, 4, 1, "Migrated 25,000+ token holders to new improved contract", "Moving Forward: Successful Migration of 25,000+ Holders to V2"),
+  createPost("Q4 2022", 2022, 4, 2, "Implemented standard ERC20 tokenomics to avoid future issues", "Stability First: Adopting Standard ERC20 Tokenomics"),
+
+  // 2023
+  // Q1 2023
+  createPost("Q1 2023", 2023, 1, 0, "Alpha launch of complete d'app integrating all ecosystem components", "The Vision Unfolds: Alpha Launch of DeHub's Integrated D'App"),
+  createPost("Q1 2023", 2023, 1, 1, "Released tokenised uploads with onchain ad revenue sharing (creators earning 90%)", "Creator Economy Reimagined: Tokenized Uploads & 90% Ad Revenue Share"),
+  createPost("Q1 2023", 2023, 1, 2, "Commenced advanced analytics dashboard for creators", "Insights for Creators: Advanced Analytics Dashboard Development Begins"),
+  createPost("Q1 2023", 2023, 1, 3, "Recommenced trading of DeHub v2 on Gate.io", "Back in Action: DeHub V2 Trading Resumes on Gate.io"),
+  // Q2 2023
+  createPost("Q2 2023", 2023, 2, 0, "Won most innovative company award at UK's Corporate Livewire, competing against 900+ companies in a vote based system backed by Sony, Samsung and other industry giants.", "Innovation Recognized: DeHub Wins Corporate Livewire Award"),
+  createPost("Q2 2023", 2023, 2, 1, "Featured in major tech publications including TechCrunch and VentureBeat", "In the Spotlight: DeHub Featured in TechCrunch and VentureBeat"),
+  createPost("Q2 2023", 2023, 2, 2, "Patent applications commenced for core streaming technology and watch2earn mechanics", "Protecting Innovation: Patent Applications for Streaming & Watch2Earn Tech"),
+  // Q3 2023
+  createPost("Q3 2023", 2023, 3, 0, "Announced partner airdrop for BJ (now fan.site), the adult fork of DeHub", "Expanding Horizons: Partner Airdrop for Fan.site (BJ Fork)"),
+  createPost("Q3 2023", 2023, 3, 1, "Facilitated knowledge transfer and technical support to fork team", "Supporting Growth: Knowledge Transfer to Fan.site Team"),
+  createPost("Q3 2023", 2023, 3, 2, "Demonstrated true decentralization principles in action", "Decentralization in Practice: The Fan.site Fork Story"),
+  createPost("Q3 2023", 2023, 3, 3, "Established framework for future community-driven forks", "Paving the Way: Framework for Community-Driven Forks"),
+  // Q4 2023
+  createPost("Q4 2023", 2023, 4, 0, "Voluntary delisting from Gate.io to prioritize decentralization", "Prioritizing Principles: Voluntary Delisting from Gate.io for Decentralization"),
+  createPost("Q4 2023", 2023, 4, 1, "Commitment to transparency with all DEX policy implementation", "Open and Clear: DEX Policy Implementation and Transparency Commitment"),
+  createPost("Q4 2023", 2023, 4, 2, "Implemented automated liquidity provision strategies", "Smarter Liquidity: Automated Liquidity Provision on DEXs"),
+  createPost("Q4 2023", 2023, 4, 3, "Published full transparency reports showing all protocol metrics", "Full Disclosure: DeHub's Comprehensive Transparency Reports"),
+
+  // 2024
+  // Q1 2024
+  createPost("Q1 2024", 2024, 1, 0, "Listed DHB on Eth mainnet", "Expanding Reach: DHB Lists on Ethereum Mainnet"),
+  createPost("Q1 2024", 2024, 1, 1, "Raised $1,000,000 for adult fork BJ (now fan.site) from VCs, Launchpads & Public Sales.", "Fueling Growth: $1M Raised for Fan.site (BJ Fork)"),
+  // Q2 2024
+  createPost("Q2 2024", 2024, 2, 0, "Listed SDHB on Base L2", "Layer 2 Expansion: SDHB Lists on Base"),
+  createPost("Q2 2024", 2024, 2, 1, "Dubai event expanded Middle East presence", "Global Footprint: DeHub Expands Middle East Presence via Dubai Event"),
+  createPost("Q2 2024", 2024, 2, 2, "Co-Founders Mike Hales & Indi Cammish Opened TikTok agency in partnership with TikTok execs directly after successful year topping UK stream charts earning 1k a day", "Entrepreneurial Spirit: Co-Founders Launch TikTok Agency"),
+  createPost("Q2 2024", 2024, 2, 3, "Established creator partnerships in 15 countries", "Worldwide Creators: Partnerships Spanning 15 Countries"),
+  // Q3 2024
+  createPost("Q3 2024", 2024, 3, 0, "Completed major app upgrade with 95% positive user feedback", "Leveling Up: Major App Upgrade Earns 95% Positive Feedback"),
+  createPost("Q3 2024", 2024, 3, 1, "Overhauled user interface & improved back end speed by 200%", "Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost"),
+  // Q4 2024
+  createPost("Q4 2024", 2024, 4, 0, "Released onchain tradable subscriptions", "Revolutionizing Access: On-Chain Tradable Subscriptions Launch"),
+  createPost("Q4 2024", 2024, 4, 1, "Released teaser for Last Chad Standing (first ever MMA battle royale) with 1M+ views", "The Hype is Real: Last Chad Standing Teaser Hits 1M+ Views"),
+  createPost("Q4 2024", 2024, 4, 2, "Agency grew to UK #1 with 1,000 live streamers signed exclusively", "Leading the Way: DeHub Agency Becomes UK #1 with 1,000 Streamers"),
+  createPost("Q4 2024", 2024, 4, 3, "Released DePIN Phase 1", "The Future of Infrastructure: DePIN Phase 1 Goes Live"),
+
+  // 2025
+  // Q1 2025
+  createPost("Q1 2025", 2025, 1, 0, "Released onchain live streams with real-time tip animations", "Interactive Streaming: On-Chain Live Streams with Animated Tips"),
+  createPost("Q1 2025", 2025, 1, 1, "Implemented Livepeer infrastructure supporting 50,000+ concurrent viewers with the ability of unlimited (in theory) on higher spend tiers.", "Scaling New Heights: Livepeer Integration for 50k+ Concurrent Viewers"),
+  createPost("Q1 2025", 2025, 1, 2, "Built custom CDN reducing latency to sub-200ms globally", "Speed of Light: Custom CDN Achieves Sub-200ms Global Latency"),
+  createPost("Q1 2025", 2025, 1, 3, "Achieved 99.99% uptime across all streaming services", "Reliability Perfected: 99.99% Uptime for DeHub Streaming"),
+  createPost("Q1 2025", 2025, 1, 4, "Discontinue Ethereum Mainnet support", "Strategic Shift: Discontinuing Ethereum Mainnet Support for DHB"),
+  createPost("Q1 2025", 2025, 1, 5, "Completed messaging system with paid or free DMs and unlockable chat content", "Connect and Converse: Advanced Messaging System with Paid/Free DMs"),
+  createPost("Q1 2025", 2025, 1, 6, "Released full trailer for Last Chad Standing, picked up by major MMA promoters", "Main Event Ready: Last Chad Standing Full Trailer Gains MMA Promoter Attention"),
+  // Q2 2025
+  createPost("Q2 2025", 2025, 2, 0, "Launched UGC ambassadorship program with 50 vacancies", "Community Champions: UGC Ambassadorship Program Launched"),
+  createPost("Q2 2025", 2025, 2, 1, "Implemented comprehensive creator education curriculum", "Empowering Talent: Comprehensive Creator Education Curriculum Rolls Out"),
+  createPost("Q2 2025", 2025, 2, 2, "Released dhbscan.com for users to track activity across all DHB contracts", "Transparency Hub: dhbscan.com Launches for Contract Activity Tracking"),
+  createPost("Q2 2025", 2025, 2, 3, "Revamped main app feed, revealed audio replies and live talk spaces", "Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces"),
+  createPost("Q2 2025", 2025, 2, 4, "Final snapshot for Last Chad Standing game airdrop, for both holders and stakers", "Get Ready Players: Final Snapshot for Last Chad Standing Airdrop"),
+];
+
