@@ -276,6 +276,67 @@ export const blogPosts: BlogPost[] = [
   createPost("Q4 2024", 2024, 4, 3, "Released DePIN Phase 1", "The Future of Infrastructure: DePIN Phase 1 Goes Live"),
 
   {
+    id: 'developments-overview-sep-2024',
+    title: 'Developments Overview',
+    slug: 'developments-overview',
+    excerpt: 'A summary of major upcoming enhancements, including a platform overhaul, BASE tax removal, new LP initiatives, and a major push in community and marketing efforts.',
+    content: `### TLDR;
+- 30 day countdown appearing on dehub.io imminently
+- Taxes on BASE set to 0 tomorrow at midnight
+- Join volume, LP and community/marketing initiatives
+
+## The Major Upgrade
+### Overview of Upcoming Enhancements
+
+We are undergoing a complete front-end overhaul, with a modernized, sleek interface. The outdated blue and purple backgrounds will be replaced by a cleaner, minimalist design.
+Users will have the option to switch between Dark Mode and Light Mode, providing a personalized experience with either a predominantly black or white interface.
+Performance improvements across the platform will make everything faster and smoother, and we’ve begun integrating the Graph Protocol to further decentralize our backend operations.
+The debut of our fiat gateway will mark the completion of full user account abstraction. Anyone will be able to create wallets, purchase tokens, utilize them in-app, and cash out — all without the need for manual wallet management or learning new skills.
+We are launching on-chain subscriptions, which will grant access to exclusive creator content, including private group chats. Subscription options include 1, 3, 6-month passes, as well as annual and lifetime plans. Creators will have full control over pricing and availability, while holders will have the option to resell their passes.
+Although we’ve faced challenges with the NFT Username Marketplace, we are close to finalizing the logic and are hopeful it will feature in the upcoming update, however no guarantees here. This is part of our wallet delegation system, allowing agencies and employees such as admins to access CRM tools via delegated wallet control.
+Direct Messaging (both free and paid) and social feeds for text and photo uploads will be introduced, transforming us into a comprehensive content hub beyond just video.
+Additional features are in the pipeline, which we will address once firm release dates are confirmed.
+
+## Volume Initiative
+### Base Taxes Removal & Incentives
+
+Effective tomorrow at midnight (00:00 28/09/24), BASE taxes will be set to 0 until further notice, to drive trading volume.
+We are introducing a claim form for traders, offering slippage rebates to those actively contributing to building volume.
+
+## Liquidity Pool (LP) Initiative / Farming
+### Enhancing Liquidity
+
+We will be adding a V3 liquidity pool, funded by taxes accumulated and unsold since launch, to increase liquidity for buyers. All funds generated from this pool will be allocated towards buybacks from the existing V2 pools.
+We invite all holders to also add V3 pools, which allow you to set your prices on-chain, almost like an invisible orderbook that improves our LP on chain and allows lower slippage entry for whales.
+While we had planned to implement an LP farming solution, we are facing challenges due to our extensive development pipeline. A manual LP farm may be introduced as a temporary measure until a more automated solution can be built.
+
+## Community and Marketing Initiative
+### Engagement & Expansion
+
+We are finalizing the recruitment of 10 full-time staff who will manage 24/7 voice chats, initiate community-driven activities, and provide dedicated support for app users. These staff members will be contracted for a minimum of six months.
+Mike and I will also increase our social media presence significantly, tweeting potentially hundreds of times a day, which will need the community’s full support to amplify our voices.
+We are confident that, with our combined efforts, DeHub will gain visibility from millions of people on a monthly basis, now supported by our cutting-edge developments.
+
+## Future Plans and Goals
+### beyond the existing roadmap
+
+- Launching app for TV and consoles
+- Implementing AI-driven tools for thumbnail and description generation
+- Integrating AI video generators to allow seamless video uploads
+- Expanding partnerships across the entertainment and hospitality sectors`,
+    bannerImage: getNextImage(),
+    bannerImageAlt: 'DeHub Developments Overview',
+    author: { name: 'DeHub Team' },
+    publishedAt: new Date('2024-09-26').toISOString(),
+    tags: ['Update', 'Roadmap', 'Development', 'Community', '2024'],
+    readingTime: 3,
+    featured: false,
+    status: 'published',
+    seoTitle: 'DeHub Developments Overview - September 2024',
+    seoDescription: 'Get the latest on DeHub\'s major upcoming upgrades, including a new UI, fiat gateway, on-chain subscriptions, BASE tax removal, and community growth initiatives.'
+  },
+
+  {
     id: 'dehub-town-hall-ama-oct-2024',
     title: 'Town Hall & AMA',
     slug: 'town-hall-ama-october-2024',
