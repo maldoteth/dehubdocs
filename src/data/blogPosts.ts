@@ -1,3 +1,4 @@
+
 import { BlogPost } from '@/types/blog';
 
 // Placeholder images - using a few from the provided list and cycling through them
@@ -44,7 +45,7 @@ const generatePostContent = (category: string, title: string, quarter: string, b
 
     switch (category) {
         case 'team':
-            intro = `Every great journey begins with the right people. In ${quarter}, we laid one of the most crucial cornerstones of DeHub's future: "${bulletPoint}". This wasn't just about hiring talent; it was about uniting a group of passionate innovators with a shared vision for a decentralized world.`;
+            intro = `Every great journey begins with the right people. In ${quarter}, we laid one of the most crucial cornerstones of DeHub's future by bringing together our core team. This wasn't just about hiring talent; it was about uniting a group of passionate innovators with a shared vision for a decentralized world.`;
             body = `## Forging a Vision Together
 The individuals who came together during this formative period brought a diverse range of expertise in blockchain, mobile development, and user experience design. More importantly, they brought a relentless drive to challenge the status quo. The energy was electric, with late-night brainstorming sessions and collaborative coding sprints becoming the norm. This team became the engine that would power DeHub through its initial launches and toughest challenges.
 
@@ -53,7 +54,7 @@ This milestone was more than just a headcount; it was the genesis of DeHub's cul
             break;
 
         case 'finance':
-            intro = `The economic foundation of a decentralized ecosystem is paramount. During ${quarter}, DeHub took a monumental step in this domain with the milestone: "${bulletPoint}". This event was a catalyst, fundamentally shaping our market presence and the value proposition for our community.`;
+            intro = `The economic foundation of a decentralized ecosystem is paramount. During ${quarter}, DeHub took a monumental step in strengthening our financial footing. This event was a catalyst, fundamentally shaping our market presence and the value proposition for our community.`;
             body = `## A New Chapter in Value
 Whether it was launching a new token, securing a major exchange listing, or establishing critical liquidity, this was a moment of truth for DeHub's economic model. It represented months of strategic planning, rigorous security audits, and tireless negotiations to ensure we created a sustainable and fair system for all participants. This wasn't just about numbers on a screen; it was about creating real, tangible utility and empowering our holders.
 
@@ -62,7 +63,7 @@ The successful execution of this financial milestone sent a strong signal to the
             break;
         
         case 'challenge':
-             intro = `The path of innovation is never a straight line. In ${quarter}, we faced a significant challenge head-on: "${bulletPoint}". While difficult, this moment became a defining one for DeHub, testing our resilience and reinforcing our commitment to transparency and security.`;
+             intro = `The path of innovation is never a straight line. In ${quarter}, we faced a significant hurdle head-on. While difficult, this moment became a defining one for DeHub, testing our resilience and reinforcing our commitment to transparency and security.`;
              body = `## Confronting the Issue
 Discovering this issue was a sobering moment for the team. Our immediate priority was to be fully transparent with our community. We communicated openly about the nature of the problem, the potential impact, and the steps we were taking to address it. There was no room for ambiguity. Our team worked around the clock, collaborating with security experts to diagnose the root cause and develop a robust solution.
 
@@ -71,7 +72,7 @@ This experience, though challenging, ultimately made DeHub stronger. It forced u
              break;
 
         case 'community':
-            intro = `DeHub is nothing without its community. In ${quarter}, we celebrated a massive achievement in our growth: "${bulletPoint}". This wasn't just a number; it was a reflection of the vibrant, engaged, and passionate user base that forms the heart of our project.`;
+            intro = `DeHub is nothing without its community. In ${quarter}, we celebrated a massive achievement in our growth, a testament to the vibrant and engaged user base that forms the heart of our project. This milestone wasn't just a number; it was a reflection of the passionate supporters who believe in our vision.`;
             body = `## Building a Movement
 From our earliest days, we knew that building a strong community was just as important as building great technology. This milestone was the result of consistent engagement, transparent communication, and a commitment to listening to our users. Through AMAs, social media discussions, and feedback channels, we fostered a space where everyone felt heard and valued.
 
@@ -80,7 +81,7 @@ Reaching this point demonstrated the powerful network effect of a truly decentra
             break;
 
         case 'recognition':
-            intro = `Hard work and innovation deserve to be recognized. We were incredibly honored in ${quarter} when DeHub achieved a significant external milestone: "${bulletPoint}". This acknowledgment from the wider industry was a proud moment for our entire team and community.`;
+            intro = `Hard work and innovation deserve to be recognized. We were incredibly honored in ${quarter} when DeHub achieved a significant external milestone. This acknowledgment from the wider industry was a proud moment for our entire team and community, validating our efforts and vision.`;
             body = `## A Testament to Our Vision
 Receiving this recognition was validation for the unique path we've chosen. It confirmed that our dedication to pushing the boundaries of decentralized technology was not only being noticed but celebrated. This was an award not just for our team, but for every community member who believed in our vision and supported us along the way.
 
@@ -89,7 +90,7 @@ This achievement provided us with a platform to share the DeHub story with a bro
             break;
             
         case 'strategy':
-            intro = `Building a lasting project requires not just great code, but a clear and principled strategy. In ${quarter}, we made a pivotal strategic decision: "${bulletPoint}". This move was a deliberate choice, reflecting our core values and long-term vision for the DeHub ecosystem.`;
+            intro = `Building a lasting project requires not just great code, but a clear and principled strategy. In ${quarter}, we made a pivotal strategic decision that would shape our path forward. This move was a deliberate choice, reflecting our core values and long-term vision for the DeHub ecosystem.`;
             body = `## The 'Why' Behind the Move
 This decision was not made lightly. It came after extensive internal discussion and analysis of the market landscape. At its core, the choice was driven by our unwavering commitment to principles like decentralization, user ownership, and long-term sustainability. We believed that this path, while perhaps not the easiest, was the right one for the health and integrity of the project.
 
@@ -98,7 +99,7 @@ This strategic shift was a declaration of our independence and our commitment to
             break;
 
         case 'legal':
-            intro = `Navigating the complex regulatory landscape is a critical part of building a sustainable, global platform. In ${quarter}, DeHub achieved a crucial legal and compliance milestone: "${bulletPoint}". This was a significant step in legitimizing our operations and ensuring our long-term viability.`;
+            intro = `Navigating the complex regulatory landscape is a critical part of building a sustainable, global platform. In ${quarter}, DeHub achieved a crucial legal and compliance milestone. This was a significant step in legitimizing our operations and ensuring our long-term viability.`;
             body = `## Building on a Foundation of Trust
 In an industry where trust is paramount, establishing a proper legal framework is non-negotiable. This achievement was the result of months of diligent work with legal experts to ensure our operations were compliant and above board. It provides a layer of security and legitimacy that protects not only the project but also our users and stakeholders.
 
@@ -107,7 +108,7 @@ With this legal milestone secured, DeHub is better positioned for mainstream ado
             break;
 
         case 'tech':
-            intro = `At our core, DeHub is a technology company driven to solve complex problems. During ${quarter}, our engineering team achieved a significant technical breakthrough: "${bulletPoint}". This was a feat of engineering that has fundamentally improved the performance, scalability, and user experience of our platform.`;
+            intro = `At our core, DeHub is a technology company driven to solve complex problems. During ${quarter}, our engineering team achieved a significant technical breakthrough. This was a feat of engineering that has fundamentally improved the performance, scalability, and user experience of our platform.`;
             body = `## Under the Hood
 This project involved a deep dive into our architecture, pushing the limits of our technology stack. Our engineers architected a new system, optimized algorithms, and refactored legacy code to achieve this leap forward. It required creative problem-solving and a relentless focus on efficiency and scalability.
 
@@ -117,7 +118,7 @@ The direct result of this technical achievement is a faster, more reliable, and 
 
         case 'product':
         default:
-             intro = `Innovation is at the heart of DeHub. In ${quarter}, we were thrilled to bring a new experience to our users: "${bulletPoint}". This was the culmination of countless hours of design, development, and community feedback, aimed at pushing the boundaries of what's possible in a decentralized ecosystem.`;
+             intro = `Innovation is at the heart of DeHub. In ${quarter}, we were thrilled to bring a new experience to our users with a major product update. This was the culmination of countless hours of design, development, and community feedback, aimed at pushing the boundaries of what's possible in a decentralized ecosystem.`;
              body = `## From Concept to Reality
 The idea for this feature was born from a simple question: How can we provide more value and utility to our users? The journey from that initial concept to a fully-fledged product was one of intense collaboration. Our product managers, designers, and engineers worked in lockstep, iterating through prototypes and incorporating feedback from our beta testers to ensure the final product was intuitive, powerful, and polished.
 
@@ -154,7 +155,7 @@ const createPost = (
   const day = itemIndexInQuarter + 1;
   const publishedAt = new Date(year, month - 1, day).toISOString();
 
-  const excerpt = `A deep dive into the ${quarter} milestone: "${bulletPoint}". Learn how this key development shaped the DeHub ecosystem and our journey forward.`;
+  const excerpt = `A deep dive into a key ${quarter} milestone for DeHub. Learn how this development shaped our ecosystem and our journey forward.`;
   
   const category = getCategory(bulletPoint);
   const content = generatePostContent(category, title, quarter, bulletPoint);
