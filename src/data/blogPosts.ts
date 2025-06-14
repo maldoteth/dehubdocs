@@ -426,3 +426,45 @@ Although a bold and surprising move, true supporters who believe in what we are 
 ![WHAT IF](/lovable-uploads/d7790305-e44d-4c36-9b9f-0e16fa02c245.png)`;
   gateDelistingPost.readingTime = 5;
 }
+
+const airdropPostTitle = `Expanding Horizons: Partner Airdrop for Fan.site (BJ Fork) - A DeHub Milestone from Q3 2023`;
+const airdropPostSlug = generateSlug(airdropPostTitle);
+const airdropPost = blogPosts.find(p => p.slug === airdropPostSlug);
+
+if (airdropPost) {
+  airdropPost.publishedAt = new Date('2023-11-21').toISOString();
+  airdropPost.readingTime = 3;
+  airdropPost.content = `All the ins and outs for the second airdrop revealed this month!
+
+For those unaware, airdrops have been part of our utility since the first whitepaper in 2021. Expect the pace for new airdrops to accelerate as more brands build on top of the DeHub platform that’s now nearing completion.
+
+Our third airdrop this quarter will be announced next month so be sure you remain staked!
+
+A collection of large and long term DeHub holders made the decision to fork the DeHub app and target the vast adult market. All interested DeHub stakers can claim a portion of the token supply through the upcoming airdrop.
+
+Rather than having adult content on the DeHub app, it’s far better to separate markets and communities. People of all opinions and faiths will agree this is the best strategy for obvious reasons.
+
+As per the whitepaper, adult content presents complex challenges for properly protecting children, the vulnerable and people of all religious faiths. Given the mature nature of the content, we are intentionally minimizing communications between communities and there will be no cross promoting. We also do not want to risk our X account being marked as sensitive.
+
+With open-source technology and blockchain industry culture, permissionless innovation is paramount to the advancement of humanity. As individuals, we may not always agree with every industry, but we cannot stop someone from forking our app and airdropping our holders.
+
+If you are under 18 or uncomfortable with the adult market for any reason, just close this page and wait for the next airdrop. We are confident it will be something you love.
+
+## Key Points / Changes
+
+Original plans were a straight to listing model. However, several factors, including the markets, presented a new opportunity. Recently we secured the team behind a number of instant sell outs and they are confident we can raise $600,000, providing an exceptional launch budget. This ensures the world will know about us.
+
+Naturally, my share and key interests will go towards injecting capital to DeHub and raising awareness for our network.
+
+We have secured the marketing team working with $PAAL, a solid advisory board, and incubators connected to all the top exchanges and launchpads. We have also confirmed agreements with some of the biggest KOLs and influencers in the cryptosphere, who will be supporting this launch.
+
+The new token generation event is scheduled to take place before Christmas, as you know we’re finalising the app. Your snapshots are final, so just remain staked or re-stake until your airdrops are complete.
+
+Marketing drives will fully commence next week, with further details on vest, values, and timings being provided prior to launch.
+
+The adult market comes with lower customer acquisition cost, lower brand royalties, and higher return on investment. This should efficiently drive increased capital to the network.
+
+If you want to get involved, follow the steps below.`;
+  airdropPost.seoTitle = "DeHub's Partner Airdrop for Fan.site Fork | November Update";
+  airdropPost.seoDescription = "All the details on the partner airdrop for Fan.site, the adult fork of DeHub. Learn about the airdrop, strategy, and key updates for DeHub stakers.";
+}
