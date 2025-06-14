@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -20,7 +19,7 @@ export const getFeaturedPosts = (): BlogPost[] => {
 export const getPostBySlug = (slug: string): BlogPost | undefined => {
   const postId = parseInt(slug, 10);
   if (!isNaN(postId)) {
-    return blogPosts.find(post => post.id === postId && post.status === 'published');
+    return blogPosts.find(post => post.id === slug && post.status === 'published');
   }
   // Fallback for old, non-numeric slugs to ensure bookmarked links still work.
   return blogPosts.find(post => post.slug === slug && post.status === 'published');
