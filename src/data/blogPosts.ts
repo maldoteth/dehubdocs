@@ -441,53 +441,67 @@ The quarter success in building comprehensive foundational systems while maintai
     readingTime: 7,
     featured: false,
     status: 'published'
+  },
+  {
+    id: '8',
+    title: 'DeHub Community Update: Governance Proposals and Network Upgrades',
+    slug: 'dehub-community-update-governance-proposals',
+    excerpt: 'Stay up-to-date with the latest developments in the DeHub ecosystem, including new governance proposals and upcoming network upgrades.',
+    content: `# Shaping the Future Together
+
+The DeHub community is the driving force behind our network's evolution. We believe in the power of decentralized governance, and we're committed to providing our community members with the tools and information they need to shape the future of DeHub. This update covers the latest developments in our governance system and upcoming technical improvements that will enhance the entire ecosystem.
+
+## Active Governance Proposals
+
+Several important governance proposals are currently under consideration by the DeHub DAO. These proposals cover a range of topics that will significantly impact the future direction of our network. Protocol upgrade proposals include improvements to our consensus mechanism that will increase transaction throughput and reduce energy consumption. These technical enhancements represent months of research and development by our core team and community contributors.
+
+Network fee adjustment proposals aim to optimize the economic incentives within our ecosystem. The current proposals suggest reducing base transaction fees to encourage more frequent use while implementing a dynamic fee structure that scales with network demand. This approach ensures that the network remains accessible during normal operation while maintaining security during high-traffic periods.
+
+Community resource allocation proposals focus on funding development initiatives, marketing efforts, and ecosystem growth programs. The community has shown strong support for proposals that prioritize long-term sustainability over short-term gains, demonstrating the maturity and forward-thinking approach of our governance participants.
+
+## Network Upgrade Timeline
+
+The next major network upgrade is scheduled for implementation following the successful completion of the current governance voting period. This upgrade includes several technical improvements that will enhance both user experience and developer capabilities on the DeHub platform.
+
+Smart contract optimization improvements will reduce gas costs for common operations while maintaining the same level of security and functionality. These optimizations are particularly beneficial for frequent users and applications that require multiple contract interactions.
+
+Enhanced cross-chain compatibility features will expand the range of supported blockchain networks and improve the efficiency of cross-chain asset transfers. This expansion supports our goal of creating a truly interoperable ecosystem that serves users regardless of their preferred blockchain platform.
+
+## Community Growth Metrics
+
+Recent community growth metrics demonstrate the increasing adoption and engagement within the DeHub ecosystem. Active user counts have grown consistently over the past quarter, with particularly strong growth in creator signups and content publication rates.
+
+Developer activity on the platform has also increased significantly, with new applications and integrations being launched regularly. The developer community has been particularly active in contributing to governance discussions and proposing technical improvements that benefit the entire ecosystem.
+
+Community governance participation rates continue to exceed industry averages, with over 60% of eligible token holders participating in recent votes. This high level of engagement ensures that governance decisions truly represent the will of the community.
+
+## Upcoming Events and Initiatives
+
+Several community events and initiatives are planned for the coming months. Virtual town halls will provide opportunities for community members to directly engage with the development team and discuss upcoming features and improvements.
+
+Educational workshops focused on governance participation and technical literacy will help new community members understand how to effectively contribute to platform development. These workshops are designed to be accessible to users with varying levels of technical expertise.
+
+Community hackathons and development contests will encourage innovation and provide opportunities for developers to showcase their skills while contributing to the ecosystem. Prize pools for these events are funded through community treasury allocations approved through the governance process.
+
+## How to Get Involved
+
+Community members interested in participating in governance can access voting interfaces through the main DeHub application. Detailed information about active proposals, voting deadlines, and technical specifications is available in the governance section.
+
+For developers interested in contributing to platform development, comprehensive documentation and development resources are available through our developer portal. Regular office hours and support channels provide opportunities to get help and collaborate with other developers.
+
+Community moderators and ambassadors play crucial roles in supporting ecosystem growth and maintaining platform quality. Applications for these positions are reviewed regularly, with selection based on community contribution history and demonstrated commitment to platform values.
+
+The strength of the DeHub ecosystem lies in the active participation of our community members. Whether through governance participation, content creation, or technical contribution, every community member has the opportunity to shape the future of decentralized social media and creator economics.`,
+    bannerImage: '/lovable-uploads/8ed30975-6d35-4b0a-8bf6-c9e1e1c357a9.png',
+    bannerImageAlt: 'DeHub Community Update: Governance Proposals and Network Upgrades',
+    publishedAt: '2024-10-01',
+    author: {
+      name: 'Community Team',
+      avatar: '/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png'
+    },
+    tags: ['Community', 'Governance', 'Updates', 'Network'],
+    readingTime: 6,
+    featured: false,
+    status: 'published'
   }
 ];
-
-// Utility functions
-export const getPublishedPosts = (): BlogPost[] => {
-  return blogPosts.filter(post => post.status === 'published')
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
-};
-
-export const getFeaturedPosts = (): BlogPost[] => {
-  return blogPosts.filter(post => post.featured && post.status === 'published')
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
-};
-
-export const getPostBySlug = (slug: string): BlogPost | undefined => {
-  return blogPosts.find(post => post.slug === slug && post.status === 'published');
-};
-
-export const getAllTags = (): { name: string; count: number }[] => {
-  const tagCounts: { [key: string]: number } = {};
-  
-  getPublishedPosts().forEach(post => {
-    post.tags.forEach(tag => {
-      tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-    });
-  });
-  
-  return Object.entries(tagCounts)
-    .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => b.count - a.count);
-};
-
-export const searchPosts = (query: string): BlogPost[] => {
-  const lowercaseQuery = query.toLowerCase();
-  return getPublishedPosts().filter(post => 
-    post.title.toLowerCase().includes(lowercaseQuery) ||
-    post.excerpt.toLowerCase().includes(lowercaseQuery) ||
-    post.content.toLowerCase().includes(lowercaseQuery) ||
-    post.tags.some(tag => tag.toLowerCase().includes(lowercaseQuery))
-  );
-};
-
-export const formatDate = (dateString: string): string => {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-};

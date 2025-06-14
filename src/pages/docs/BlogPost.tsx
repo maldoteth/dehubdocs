@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, User, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
-import { getPostBySlug, formatDate } from '@/utils/blogData';
+import { getPostBySlug, formatDate } from '@/utils/blogUtils';
 import BlogContent from '@/components/blog/BlogContent';
 import { useToast } from '@/hooks/use-toast';
 

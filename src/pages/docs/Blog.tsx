@@ -1,7 +1,6 @@
-
 import React, { useState, useMemo } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
-import { getPublishedPosts, getFeaturedPosts, getAllTags, searchPosts } from '@/utils/blogData';
+import { getPublishedPosts, getFeaturedPosts, getAllTags, searchPosts } from '@/utils/blogUtils';
 import BlogCard from '@/components/blog/BlogCard';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 
