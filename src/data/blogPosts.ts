@@ -160,6 +160,12 @@ const createPost = (
   const category = getCategory(bulletPoint);
   const content = generatePostContent(category, title, quarter, bulletPoint);
 
+  // SEO Optimizations
+  const seoTitle = `${baseTitle} | DeHub ${year} Roadmap`;
+  const shortBullet = bulletPoint.length > 80 ? bulletPoint.substring(0, 77) + '...' : bulletPoint;
+  const seoDescription = `Official update on DeHub's ${quarter} progress: ${shortBullet}. Discover the impact of this ${category} milestone on our journey.`;
+  const bannerImageAlt = `DeHub ${quarter} update: ${baseTitle}`;
+
   return {
     id: `dehub-milestone-${postIdCounter}-${slug.substring(0,20)}`,
     title,
@@ -167,13 +173,15 @@ const createPost = (
     excerpt: excerpt,
     content: content,
     bannerImage: getNextImage(),
-    bannerImageAlt: title,
+    bannerImageAlt: bannerImageAlt,
     author: { name: 'DeHub Team' },
     publishedAt,
     tags: customTags || ['DeHub Journey', 'Roadmap', quarter.replace(' ', ''), year.toString(), 'Milestone'],
     readingTime: 4, // Estimated, increased for more content
     featured: false,
     status: 'published',
+    seoTitle,
+    seoDescription,
   };
 };
 
@@ -302,6 +310,8 @@ Thank you for trusting and supporting us through these unprecedented actions, al
     readingTime: 2,
     featured: true,
     status: 'published',
+    seoTitle: 'DeHub\'s Gate.io Delisting: A 1-Year Review',
+    seoDescription: 'One year after delisting from Gate.io, DeHub reviews the decision and reaffirms its commitment to decentralization. Learn more about our journey.',
   },
 
   // 2025
