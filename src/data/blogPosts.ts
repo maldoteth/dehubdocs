@@ -318,8 +318,8 @@ We’re only interested in listing on top-tier CEXs like Binance, Coinbase, and 
 
 ### 11. Are there any expected delays after the countdown?
 No delays are expected. The major overhaul is ready and will be rolled out at the end of the countdown. Any features not immediately live at launch will be released according to the updated roadmap, which will be shared alongside the upgrade.`,
-    bannerImage: getNextImage(),
-    bannerImageAlt: 'DeHub Town Hall & AMA Summary October 2024',
+    bannerImage: '/lovable-uploads/ea33e3a2-72d6-4be8-8648-07293e8b806f.png',
+    bannerImageAlt: 'DeHub Town Hall & AMA banner',
     author: { name: 'DeHub Team' },
     publishedAt: new Date('2024-10-11').toISOString(),
     tags: ['Town Hall', 'AMA', 'Community', 'Update', 'Roadmap', '2024'],
