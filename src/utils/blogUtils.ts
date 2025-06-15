@@ -430,7 +430,7 @@ This AMA covered a lot of ground, and we’re excited for what’s to come. Stay
   } else if (post.title.startsWith("The Future of Infrastructure: DePIN Phase 1 Goes Live")) {
     newPost.publishedAt = '2024-12-13T10:00:00.000Z';
   } else if (post.title.startsWith("Interactive Streaming: On-Chain Live Streams with Animated Tips")) {
-    newPost.publishedAt = '2025-03-30T10:00:00.000Z';
+    newPost.publishedAt = '2025-03-10T10:00:00.000Z';
     newPost.bannerImage = '/lovable-uploads/a6275c3d-1dab-43a4-9362-93dd9d96f41c.png';
     newPost.bannerImageAlt = 'DeHub Live Streaming logo';
   }
