@@ -290,7 +290,7 @@ We’ve been building and now we enter 2023 prepared to scale. We’ve laid the 
 
 Bring on 2023.`;
   } else if (post.slug === 'early-traction-dehubs-beta-app-hits-2000-daus---a-dehub-milestone-from-q1-2021') {
-    newPost.publishedAt = '2021-03-28T10:00:00.000Z';
+    newPost.publishedAt = '2021-05-30T10:00:00.000Z';
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
