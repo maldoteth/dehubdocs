@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -72,6 +73,51 @@ const BrandAssets = () => {
         </CardContent>
       </Card>
 
+      {/* Typography Section */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <FileText className="w-5 h-5" />
+            Typography
+          </CardTitle>
+          <CardDescription>
+            Our official brand font is Exo. Please use it consistently across all materials.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="font-exo grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
+            <div className="border rounded-lg p-4 flex flex-col justify-center items-center">
+              <p className="text-5xl font-black">Aa</p>
+              <p className="mt-2 text-lg font-semibold">Exo Black</p>
+              <p className="text-sm text-slate-500">900</p>
+            </div>
+            <div className="border rounded-lg p-4 flex flex-col justify-center items-center">
+              <p className="text-5xl font-semibold">Aa</p>
+              <p className="mt-2 text-lg font-semibold">Exo Semi-bold</p>
+              <p className="text-sm text-slate-500">600</p>
+            </div>
+            <div className="border rounded-lg p-4 flex flex-col justify-center items-center">
+              <p className="text-5xl font-medium">Aa</p>
+              <p className="mt-2 text-lg font-semibold">Exo Medium</p>
+              <p className="text-sm text-slate-500">500</p>
+            </div>
+            <div className="border rounded-lg p-4 flex flex-col justify-center items-center">
+              <p className="text-5xl font-light">Aa</p>
+              <p className="mt-2 text-lg font-semibold">Exo Light</p>
+              <p className="text-sm text-slate-500">300</p>
+            </div>
+          </div>
+           <div className="mt-6 text-center">
+            <Button variant="outline" asChild>
+              <a href="https://fonts.google.com/specimen/Exo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Download className="w-4 h-4" />
+                Download Exo Font
+              </a>
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
       {/* Brand Guidelines Presentation */}
       <Card>
         <CardHeader>
@@ -133,3 +179,4 @@ const BrandAssets = () => {
 };
 
 export default BrandAssets;
+
