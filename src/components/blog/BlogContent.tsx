@@ -80,10 +80,24 @@ const renderRegularContent = (text: string) => {
       return null;
     }
     if (firstLine.startsWith('#### ')) {
-      return <h4 key={index} className="text-lg font-bold text-royal-blue mb-2 mt-6 font-exo">{firstLine.slice(5)}</h4>;
+      const heading = <h4 key={`${index}-h`} className="text-lg font-bold text-royal-blue mb-2 mt-6 font-exo">{firstLine.slice(5)}</h4>;
+      const remainingLines = lines.slice(1).join('\n').trim();
+      if (remainingLines) {
+        const processedContent = processLineForHtml(remainingLines.replace(/\n/g, ' '));
+        const paragraph = <p key={`${index}-p`} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
+        return [heading, paragraph];
+      }
+      return heading;
     }
     if (firstLine.startsWith('### ')) {
-      return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">{firstLine.slice(4)}</h3>;
+      const heading = <h3 key={`${index}-h`} className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">{firstLine.slice(4)}</h3>;
+      const remainingLines = lines.slice(1).join('\n').trim();
+      if (remainingLines) {
+        const processedContent = processLineForHtml(remainingLines.replace(/\n/g, ' '));
+        const paragraph = <p key={`${index}-p`} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
+        return [heading, paragraph];
+      }
+      return heading;
     }
 
     // Image tag
