@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -73,7 +74,7 @@ Stay tuned, and get ready to play. The arena awaits.`;
     newPost.bannerImage = '/lovable-uploads/63bd95be-1087-4e64-91b7-1bcb2c6668d0.png';
     newPost.bannerImageAlt = 'DHBScan.com banner';
   } else if (post.slug === 'community-champions-ugc-ambassadorship-program-launched---a-dehub-milestone-from-q2-2025') {
-    newPost.bannerImage = '/lovable-uploads/db82dcee-502d-4f76-af47-66bdf217574d.png';
+    newPost.bannerImage = '/lovable-uploads/443805df-744b-4ab4-80a7-ae59cafe8baa.png';
     newPost.bannerImageAlt = 'DeHub UGC Programme banner';
     newPost.publishedAt = '2025-05-10T10:00:00.000Z';
     newPost.content = `## Become a DeHub Ambassador: Announcing Our UGC Programme
