@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -121,6 +120,47 @@ This is more than just a content creation gig. It's a partnership. As a DeHub Am
 Ready to join the ranks of our Community Champions? The application process is simple. We'll be sharing a link to the application form soon across our official channels.
 
 Spaces are limited to 50 ambassadors for this first wave, so get ready to showcase your creativity. We can't wait to see what you'll create!`;
+  } else if (post.slug === 'building-the-dream-dehubs-core-team-assembled---a-dehub-milestone-from-q1-2021') {
+    newPost.content = `DeHub's core team is officially assembled, bringing together a powerhouse of expertise from the worlds of tech, gaming, and social media. This marks a pivotal moment in our journey, laying the foundation for the innovation to come. With a shared vision and diverse skill sets, we are poised to revolutionize the digital landscape. The dream is now in the hands of a team built to make it a reality.
+
+## Meet the Team
+
+### Malik Jan - Co-Founder
+![Malik Jan](/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png)
+Founder of U.K registered Web3 developers DeLabs LTD and Co-founder of Puso group, a SEC licensed construction & development company in the Philippines.
+
+**Key Experience:**
+- Guide Dogs: Raised >$1m as fundraising manager with a team of 5-10 across multiple sectors
+- Randstad: Senior consultant at $8bn dollar market cap and world's largest agency
+- Blue Arrow: Biggest biller & award winning consultant at UK's largest agency with >600 staff & 70 offices nationwide. Producing personal net margins in excess of $10,000 per week & hiring thousands in the process with >100 full or part time staff at any one time
+- ITS Construction: Sussex Regional Manager at leading UK construction agency. Built own office from scratch and turned 0 into $5k per week in less than 8 months, signed PSL with UK's most prestigious builder Berkeley Homes, won exclusive supplier at $100bn Horsham project, Highwood.
+
+### Mike Hales - Co-Founder
+![Mike Hales](/lovable-uploads/4cc7ad51-0d4d-49fd-9307-b932b6dc7246.png)
+Founder and CEO of Rapz, a notable high end MMA fightwear brand backed by top UFC and boxing stars, with exclusive supplier rights to BKFC. Joint-owner of First Class, the UK's largest TikTok partner agency, approaching 1000 streamers signed on and reporting directly for the in-house executive team with offices in the UK and Asia.
+
+**Key Experience:**
+- Selected by TikTok executives after 10 months of leading the UK charts with his live streams
+- Digital and mixed martial artist behind the Lean Chad Fight Club and Rapz Sport
+- Owner of the UK's leading cobra bag provider that recently merged with NGNE
+
+### Indi Jay Cammish - Co-Founder
+![Indi Jay Cammish](/lovable-uploads/e06bb6aa-5093-4691-98a1-7bf09b02a71d.png)
+Social media, content & dance expert overseeing communications & corporate relations.
+
+**Key Experience:**
+- Highly experienced working directly alongside global stars such as Mabel on long term world tours
+- Performed at the Platinum Party at The Palace event for her majesty, the Queen of England in the summer of 2022
+- Co-founder of First Class, the UK's leading TikTok partner agency
+
+### Bailey Young - Co-Founder
+![Bailey Young](/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png)
+Operational powerhouse and former pro-gamer heavily connected across the gaming, music & entertainment scene.
+
+**Key Experience:**
+- Investments and tokenomics expert who played an instrumental role in the astronomical growth of DeHub in 2021
+- Oversaw the Blocjerk fundraise of $1,000,000 in 2023 which gave a peak ROI of 1,000%
+- Former professional gamer, ranking globally in the top 3 COD MW2 and top 100 on Warzone under the tag RickyBobby`;
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"

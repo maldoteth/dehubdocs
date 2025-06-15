@@ -1,3 +1,4 @@
+
 import React from 'react';
 import DOMPurify from 'dompurify';
 interface BlogContentProps {
@@ -41,7 +42,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
         if (match) {
           const alt = match[1];
           const src = match[2];
-          return;
+          return <img key={index} src={src} alt={alt} className="my-6 rounded-lg shadow-md" />;
         }
       }
 
