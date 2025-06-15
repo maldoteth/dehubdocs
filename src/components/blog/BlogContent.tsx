@@ -71,7 +71,7 @@ const renderRegularContent = (text: string) => {
       return <h1 key={index} className="text-3xl font-bold text-royal-blue mb-6 mt-8 font-exo">{line.slice(2)}</h1>;
     }
     if (line.startsWith('## ')) {
-      return <h2 key={index} className="text-2xl font-bold text-royal-blue mb-4 mt-6 font-exo">{line.slice(3)}</h2>;
+      return;
     }
     if (line.startsWith('### ')) {
       return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-4 font-exo">{line.slice(4)}</h3>;
