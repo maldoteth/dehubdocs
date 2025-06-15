@@ -108,8 +108,6 @@ Gambling Awareness Helpline
       ? 'July 11, 2022'
       : post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost'
       ? 'July 23, 2024'
-      : post.title === '$500 competition'
-      ? 'May 11, 2024'
       : formatDate(post.publishedAt);
 
   return (

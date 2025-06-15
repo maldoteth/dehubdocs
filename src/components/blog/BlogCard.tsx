@@ -53,8 +53,6 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
       ? 'July 11, 2022'
       : post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost'
       ? 'July 23, 2024'
-      : post.title === '$500 competition'
-      ? 'May 11, 2024'
       : formatDate(post.publishedAt);
 
   const isRafflePost = post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022';
