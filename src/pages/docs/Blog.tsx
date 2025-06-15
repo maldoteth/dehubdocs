@@ -1,7 +1,6 @@
-
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
-import { getPublishedPosts } from '@/utils/blogUtils';
+import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
 import BlogCard from '@/components/blog/BlogCard';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import SEO from '@/components/SEO';
@@ -36,21 +35,10 @@ const Blog = () => {
     const combinedPosts = [...originalPosts, ...newPosts];
     const uniquePosts = Array.from(new Map(combinedPosts.map(post => [post.id, post])).values());
     
-    const updatedPosts = uniquePosts.map(p => {
-      const post = { ...p };
-
+    const updatedPosts = uniquePosts.map(post => {
       if (post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
-        post.publishedAt = '2024-01-09T12:00:00.000Z';
+        return { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
       }
-      if (post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
-        post.publishedAt = '2025-04-20T12:00:00.000Z';
-      }
-
-      // Manually set featured status for specific posts.
-      post.featured = 
-        post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022' ||
-        post.title === "A Look Back: DeHub's First Year in Review";
-        
       return post;
     });
 
@@ -58,8 +46,12 @@ const Blog = () => {
   }, [originalPosts]);
 
   const featuredPosts = useMemo(() => {
-    return allPosts.filter(p => p.featured);
-  }, [allPosts]);
+    const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries');
+    const newFeatured = newPosts.filter(p => p.featured);
+    const combined = [...newFeatured, ...oldFeatured];
+    const uniquePosts = Array.from(new Map(combined.map(post => [post.id, post])).values());
+    return uniquePosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  }, []);
 
   const allTags = useMemo((): BlogTag[] => {
     const tagCounts: { [key: string]: number } = {};

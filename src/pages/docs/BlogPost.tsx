@@ -10,32 +10,16 @@ import { BlogPostFooter } from '@/components/blog/BlogPostFooter';
 import { raffleContent } from '@/data/raffleContent';
 import { getNewPostBySlug } from '@/data/newPosts';
 import { BlogBreadcrumb } from '@/components/blog/BlogBreadcrumb';
-import { BlogPost as BlogPostType } from '@/types/blog';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   
   let post = slug ? getNewPostBySlug(slug) || getPostBySlug(slug) : null;
 
-  if (post) {
-    if (post.title === 'Worldwide Creators: Partnerships Spanning 15 Countries') {
-      post = null;
-    } else {
-      let updatedData: Partial<BlogPostType> = {};
-      if (post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
-        updatedData.publishedAt = '2024-01-09T12:00:00.000Z';
-      } else if (post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
-        updatedData.publishedAt = '2025-04-20T12:00:00.000Z';
-      }
-
-      const isFeatured =
-        post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022' ||
-        post.title === "A Look Back: DeHub's First Year in Review";
-      
-      updatedData.featured = isFeatured;
-
-      post = { ...post, ...updatedData };
-    }
+  if (post && post.title === 'Worldwide Creators: Partnerships Spanning 15 Countries') {
+    post = null;
+  } else if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
+    post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
   }
 
   useEffect(() => {
