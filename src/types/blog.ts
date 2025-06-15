@@ -1,4 +1,3 @@
-
 export interface BlogPost {
   id: string;
   title: string;
@@ -19,8 +18,6 @@ export interface BlogPost {
   status?: 'draft' | 'published';
   seoTitle?: string;
   seoDescription?: string;
-  views?: number;
-  likes?: number;
 }
 
 export interface BlogTag {

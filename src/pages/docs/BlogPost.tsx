@@ -8,7 +8,6 @@ import { BlogPostBody } from '@/components/blog/BlogPostBody';
 import { BlogPostFooter } from '@/components/blog/BlogPostFooter';
 import { raffleContent } from '@/data/raffleContent';
 import { getNewPostBySlug, excludedTitles } from '@/data/newPosts';
-import { usePostStats } from '@/hooks/usePostStats';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -56,17 +55,9 @@ const BlogPost = () => {
     post = { ...post, publishedAt: '2024-10-30T12:00:00.000Z' };
   }
 
-  const { views, likes, isLiked, incrementViews, toggleLike } = usePostStats(post?.slug, post?.views, post?.likes);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [slug]);
-
-  useEffect(() => {
-    if (post) {
-      incrementViews();
-    }
-  }, [post, incrementViews]);
 
   if (!post) {
     return (
@@ -117,10 +108,6 @@ const BlogPost = () => {
             post={post} 
             displayDate={displayDate} 
             shareUrl={shareUrl}
-            views={views}
-            likes={likes}
-            isLiked={isLiked}
-            onLike={toggleLike}
           />
           <BlogPostBody bannerImage={bannerImage} bannerImageAlt={post.bannerImageAlt} content={content} />
           <BlogPostFooter shareUrl={shareUrl} postTitle={post.title} />

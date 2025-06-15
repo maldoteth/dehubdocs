@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Clock, ArrowRight, Eye, Heart } from 'lucide-react';
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { BlogPost } from '@/types/blog';
 import { formatDate } from '@/utils/blogUtils';
-import { usePostStats } from '@/hooks/usePostStats';
 
 interface BlogCardProps {
   post: BlogPost;
@@ -55,7 +54,6 @@ const generateExcerpt = (content: string, fallback: string) => {
 
 const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const excerpt = generateExcerpt(post.content, post.excerpt);
-  const { views, likes } = usePostStats(post.slug, post.views, post.likes);
 
   const displayDate =
     post.title === 'Dream Big: The $1M Home Crypto Raffle by DeHub'
@@ -90,14 +88,6 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
             <div className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
               <span>{post.readingTime} min read</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Eye className="w-4 h-4" />
-              <span>{views.toLocaleString()}</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Heart className="w-4 h-4" />
-              <span>{likes.toLocaleString()}</span>
             </div>
           </div>
 
