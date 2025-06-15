@@ -343,6 +343,54 @@ We've been building and now we enter 2023 prepared to scale. We've laid the foun
 **December 27:** We closed the year with key updates on our latest test d'app, new token listing and marketing partner update where you will see me and the team regularly on Crypto Jamie's channel, currently ranked number 3 on Binance Live.
 
 Bring on 2023.`;
+  } else if (post.slug === 'dehub-development-update-dapp-milestone-and-more') {
+    newPost.title = 'DeHub Development Update & D\'App';
+    newPost.slug = 'dehub-development-update-dapp-milestone-and-more';
+    newPost.excerpt = 'Streaming d\'app upgrade scheduled for private beta this Friday the 16th, further major developments pipelined for imminent release, and $DHB token listing date proposed for early January.';
+    newPost.content = `### TLDR;
+1. Streaming d'app upgrade scheduled for private beta this Friday the 16th
+2. Further major developments pipelined for imminent release
+3. $DHB token listing date proposed for early January
+
+### Token Listing
+
+A new year feels like a perfect time for us to start the next chapter in our story, and we are considering setting a date very early next month for the official listing. We are ready to go, nothing is stopping us now but security and safety measures. We feel much of the uncertainty regarding the recent revelations on key CEXs, lenders & stable-coin issuers may clear soon or at least provide concluding factors.
+
+If not, we do have an alternative plan for the token we can execute and are also searching for a DEX with an order book system, not an automated market maker (AMM) given previously discussed risks. Currently, we've only found one on Cosmos and there doesn't seem to be anyone building it on BNB. If there was, we'd list immediately. We will also be converting our pool on Gate to USD instead of USDT, as it's backed by BUSD and USDC which are both issued by highly regulated and on-shore entities.
+
+Remember, we need the token to be trading and in users hands for our d'apps to have any real utility. This is more evident with every milestone development, so trust that we want this to commence as soon as logically possible. Therefore, we invite debates and ask everyone to share their opinion in the community regardless, prior to another poll going out before the winter break.
+
+![A graphic for the update](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80)
+
+*A graphic we made up before listing was delayed we've been dying to use*
+
+### Stream
+
+This major milestone upgrade is scheduled for private beta testing this Friday, the 16th. If anyone is free this weekend and ready to test, create and feedback to the team, email tech@dehub.net for an access code upon launch. This is our most exciting development so far and brings to fruition years of hard work, dedication and technical innovations while taking us back to where it all started, only far better in every measurable aspect. For more, refer to the dedicated section of the whitepaper.
+
+### Game
+
+We can see hundreds of you are enjoying the new release, Gas Guzzler, with clicks on our arcade growing steadily every week now since launch, currently averaging 10,000 per month. The game release will be announced officially once our new token is out and trading as it comes with full play and win to earn.
+
+We also highly anticipating the launch of Street Slayer, our biggest game yet that was built on-and-off for over a year now. It is currently scheduled for a mid-January launch and featuring officially licensed leading MMA fighters.
+
+This is still very early days for the arcade, and we do have individual apps for each game launching for all devices, along with an improved interface for gamers linking directly to our streaming app.
+
+### Shop
+
+The secondary sales marketplace is also set to launch imminently, likely after Christmas now as we have a few developments reaching another milestone currently ready to roll out. Our marketplace is expecting further partners and product releases, while we've also commenced working on a Shopify and WooCommerce plug in.
+
+### Earn
+
+Staking is set to commence after token distribution and listing. We will maintain the 10% for the first year as previously highlighted, after which rewards will depend entirely on protocol revenue.
+
+With our streaming d'app release, we do have a number of new ways users can earn, and we will be utilising our newly developed bounty / watch to earn systems to grow users. Expect large creators to come in.
+
+### Other Keynotes
+
+During our sale, new community growth tool release and documentary trailer, we came under a strong bot attack on all channels, so take no notice of fluctuating social numbers. It's clear what we're building is designed to be used by the millions and is scalable endlessly, with everything custom-made from the ground up.
+
+As we rapidly enter the middle age of our development stages, we will no longer be able to say we are a new project in our first years. We're growing, maturing and building years of bonds above all else. Now we are at the end of this incredibly enlightening year and celebrations edge closer, it's a notorious time of year for extreme contrasts of happiness and sadness, relative to one's situation. Now more than ever some may need a community, support or just someone to talk to. We invite you all to reach out to someone you haven't heard from for a while and know that our DMs are open to anyone needing any of the above.`;
   } else if (post.slug === 'the-vision-unfolds-alpha-launch-of-dehubs-integrated-dapp---a-dehub-milestone-from-q1-2023') {
     newPost.title = "The Vision Unfolds: Test Beta Launch of the DeHub d'App";
     newPost.publishedAt = '2023-01-16T10:00:00.000Z';
@@ -358,78 +406,103 @@ Bring on 2023.`;
 - Profile customisation and social linking (badge system & bounty earnings disabled)
 - Deposits and withdrawals from the d'apps smart contract
 
-Enjoy you awesome bunch of "test bunny cyborg soldiers".
-
-![Dalle 2 generated image with brand colors|default](https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80)
-*Generated on Dalle 2 using our brand colour palette and quote above*
+Enjoy you awesome bunch of "test bunny cyborg soldiers"
 
 ### Access BNB Test net
 
-1. Open custom network tab on your wallet.
-2. Input RPC as \`https://data-seed-prebsc-1-s2.binance.org:8545\`
-3. Input Chain ID as \`97\`
-4. Input symbol is \`TBNB\`
-5. Input block explorer url is \`https://testnet.bscscan.com\`
-6. Claim test BNB from [the faucet](https://testnet.bnbchain.org/faucet-smart).
-7. Claim test DHB by emailing tech@dehub.net with the subject "TDT request" and your wallet address in the body (e.g., "0x123420.....69x").
-8. Add custom token address to view your test DHB tokens: \`0x06EdA7889330031a8417f46e4C771C628c0b6418\` once your request is complete.
+1. Open custom network tab on your wallet
+2. Input RPC as https://data-seed-prebsc-1-s2.binance.org:8545
+3. Input Chain ID as 97
+4. Input symbol is TBNB
+5. Input block explorer url is https://testnet.bscscan.com
+6. Claim test BNB [https://testnet.bnbchain.org/faucet-smart](https://testnet.bnbchain.org/faucet-smart)
+7. Claim test DHB by emailing tech@dehub.net
+    - Subject: TDT request
+    - Body: "0x123420.....69x" (just your wallet address)
+    - Add custom token address to view your test DHB tokens \`0x06EdA7889330031a8417f46e4C771C628c0b6418\` once your request is complete.
 
 #### Metamask screenshots
-*Image for Network selection screen to be added*
+Here are some screenshots to guide you through adding the BSC Testnet to Metamask.
 
-*Image for Add manual / custom tab to be added*
+![Network selection screen in Metamask](/lovable-uploads/497b20de-3089-4bcb-88bd-25977bb1df91.png)
 
-*Image for Where to input data to be added*
+![Add a network manually in Metamask](/lovable-uploads/31964a4b-c6ab-4fd9-8f3b-2bdd248ae0e8.png)
+
+![Where to input data for a new network in Metamask](/lovable-uploads/0c109c6c-884b-4714-b370-014a04e98a3b.png)
 
 ### Test D'app Functions
 
 #### Upload page
-- Link: http://146.190.110.37:3000/video_upload
-- Uploading video (MP4 only) and thumbnail (PNG or JPEG).
-- 50 MB max size for now, increasing on public launch.
-- An NFT is minted simultaneously with every video upload.
-- Options for token gate is now live for DHB — soon to be any token.
-- Options for Pay-Per-View is now live for DHB — soon to be any token.
-- Bounty option available to test although not fully coded yet.
+[http://146.190.110.37:3000/video_upload](http://146.190.110.37:3000/video_upload)
+- Uploading video (MP4 only) and thumbnail (PNG or JPEG)
+- 50 MB max size for now, increasing on public launch
+- An NFT is minted simultaneously with every video upload
+- Options for token gate is now live for DHB — soon to be any token
+- Options for Pay-Per-View is now live for DHB — soon to be any token
+- Bounty option available to test although not fully coded yet
+
+![Upload page screenshot](/lovable-uploads/07501ace-5c3e-45af-a6aa-d5aa644e62f3.png)
 
 #### Explore page
-- Link: http://146.190.110.37:3000/explore
-- View the recent uploads and trending videos (most views every 24 hours).
-- Community live disabled.
-- Leaderboards disabled.
+[http://146.190.110.37:3000/explore](http://146.190.110.37:3000/explore)
+- View the recent uploads and trending videos (most views every 24 hours)
+- Community live disabled
+- Leaderboards disabled
+
+![Explore page screenshot](/lovable-uploads/7d385a29-3f3d-47b8-a32c-286cf1e0811c.png)
 
 #### Content viewing page
-- Link: http://146.190.110.37:3000/stream_detail
-- Signing with wallet to approve balances and spend to deposit onto d'app.
-- Signatures expire every 2 hours — times subject to change.
-- Recommended tab disabled.
-- Public profile and comments disabled.
+[http://146.190.110.37:3000/stream_detail](http://146.190.110.37:3000/stream_detail)
+- Signing with wallet to approve balances and spend to deposit onto d'app
+- Signatures expire every 2 hours — times subject to change
+- Recommended tab disabled
+- Public profile and comments disabled
 
 #### User profile page
-- Link: http://146.190.110.37:3000/profile
-- Customise banner and profile picture with GIFs, PNG, JPG.
-- Deposit & claim DHB to and from the permissionless smart contract.
-- View all your uploads & landing video.
-- Link all your socials and get ready for public launch.
+[http://146.190.110.37:3000/profile](http://146.190.110.37:3000/profile)
+- Customise banner and profile picture with GIFs, PNG, JPG
+- Deposit & claim DHB to and from the permissionless smart contract
+- View all your uploads & landing video
+- Link all your socials and get ready for public launch
+
+![User profile page screenshot](/lovable-uploads/4946bd10-f86b-4826-ba9d-ff15cd6fa480.png)
 
 ### How to token gate content
-1. On video upload screen, find the highlighted tab above and enter the test contract address for DHB \`0x06EdA7889330031a8417f46e4C771C628c0b6418\` in the input box labelled "contract address" (a search option will be available on launch).
-2. On the box labelled "Amount" enter the required amount of tokens this viewing requires.
-3. Press upload / Mint NFT and wait for the transaction to pop up in your wallet.
-4. Approve, then wait a moment for the video to upload and NFT to mint. As soon as the transaction confirms on chain, your video will be uploaded.
-5. Find your upload in your profile or on the recent uploads section on the explore page!
+On video upload screen, find the highlighted tab above and enter the test contract address for DHB \`0x06EdA7889330031a8417f46e4C771C628c0b6418\` in the input box labelled "contract address" (a search option will be available on launch).
 
+![How to token gate content](/lovable-uploads/c4ff57d8-062e-4d49-ad75-a6672d6be271.png)
+
+On the box labelled "Amount" enter the required amount of tokens this viewing requires.
+Press upload / Mint NFT and wait for the transaction to pop up in your wallet.
+Approve, then wait a moment for the video to upload and NFT to mint. As soon as the transaction confirms on chain, your video will be uploaded.
+Find your upload in your profile or on the recent uploads section on the explore page!
 Locked content will soon be opened up to any token across any EVM compatible chain as it doesn't require on chain conformations and only explorer information. Initially, only DHB and partner tokens are available as we perfect the logic & UIX for this feature prior to full public launch.
 
 ### How to create a PPV
-1. Find the highlighted tab on the video upload page.
-2. Enter the contract address \`0x06EdA7889330031a8417f46e4C771C628c0b6418\` in the input box labelled "contract address" (a search option will be available on launch).
-3. On the input box labelled amount, enter the fee you wish to charge for each time a viewer unlocks the content.
-4. Press upload / Mint NFT and wait for the transaction to pop up in your wallet.
-5. Approve, then wait a moment for the video to upload and NFT to mint. As soon as the transaction confirms on chain, your video will be uploaded.
-6. Find your upload in your profile or on the recent uploads section on the explore page!
+Find the highlighted tab on the video upload page.
+Enter the contract address \`0x06EdA7889330031a8417f46e4C771C628c0b6418\` in the input box labelled "contract address" (a search option will be available on launch).
 
+![How to create a PPV](/lovable-uploads/c57e3c3d-15f6-4c57-b2ab-3a41a17badad.png)
+
+On the input box labelled amount, enter the fee you wish to charge for each time a viewer unlocks the content.
+Press upload / Mint NFT and wait for the transaction to pop up in your wallet.
+Approve, then wait a moment for the video to upload and NFT to mint. As soon as the transaction confirms on chain, your video will be uploaded.
+Find your upload in your profile or on the recent uploads section on the explore page!
 Pay per view currencies will be limited to BUSD and DHB initially and opened up to any token in phase 3 giving every single EVM compatible token PPV utility. The full capacity of this feature does require multi-chain interoperability and is in further development however can be opened up to any BNB token right away. Initially it will only be DHB and partner tokens as we perfect the logic and UIX of this feature prior to full public launch.
+
+### How to strap a bounty to your videos (unavailable on current test)
+Find the highlighted tab on the video upload page.
+Enter the contract address \`0x06EdA7889330031a8417f46e4C771C628c0b6418\` in the input box labelled "contract address" (a search option will be available on launch).
+
+![How to add a bounty](/lovable-uploads/73f87ac0-85d4-4bbe-849e-b73db8839967.png)
+
+In the input box labelled "First X Viewers", X represents the number of viewers you wish to reward. With X being 100, your first 100 viewers will be rewarded your subsequently chosen amount of tokens in the last input box in this tab.
+In the input box labelled "First X comments" X represents the number of commenters you wish to reward. If X was 100, your first 100 commenters will be rewarded your subsequently chosen amount of tokens in the last input box in this tab. Only those who watch at least 50% of the video will be able to comment. This fits with our ethos of commenting on subjects you know little to nothing about.
+In the input box labelled amount, enter the total amount of DHB tokens you wish to evenly split between the total number of viewers and commenters you inputted prior. This is automatically calculated and instantly added to user balances, yet they can only claim rewards every 7 days, allowing for other security measures highlighted in the whitepaper such as decentralised content moderation mining.
+Press upload / Mint NFT and wait for the transaction to pop up in your wallet.
+Approve, then wait a moment for the video to upload and NFT to mint. As soon as the transaction confirms on chain, your video will be uploaded.
+Find your upload in your profile or on the recent uploads section on the explore page!
+Bounty currencies will be limited to DHB initially and opened up to any tokens in phase 3 giving every token watch to earn utility. The full capacity of this feature does require multi-chain interoperability and is in further development however can be opened up to any BNB token right away. Initially it will only be DHB and partner tokens as we perfect the logic prior to full public launch.
 
 ### Overview
 Please note that although the general appearance of the app is finalised, we are beautifying the nooks and crannies prior to public launch so take no notice of the odd eye sore. Any functions you notice not working will be in the coming days to weeks prior to public launch and as you can already see this is not your usual streaming app. We have a plethora of smart contracts and automation already built, with so much more brewing. I imagine we should be ready for public launch in mid January and aim to start adding partner tokens daily to raise awareness prior to opening it up to every token in early Q2. Our IOS and Android apps will also launch imminently after the public beta as we've built every step to function for our mobile APKs ready for all of the app stores out there.`;
