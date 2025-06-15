@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 const dubaiEventPost: BlogPostType = {
@@ -32,7 +33,7 @@ const dubaiEventPost: BlogPostType = {
   publishedAt: '2024-04-10T12:00:00.000Z',
   tags: ['DeHub Journey', 'Roadmap', 'Q22024', 'Events', 'Dubai'],
   readingTime: 4,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'DeHub Expands to Middle East with Dubai Event Presence',
   seoDescription: 'DeHub marks a major Q2 2024 milestone by expanding its presence in the Middle East, participating in major blockchain events across Dubai.',
@@ -145,7 +146,7 @@ const crusadersSponsorshipPost: BlogPostType = {
   publishedAt: '2024-06-30T12:00:00.000Z',
   tags: ['Sponsorship', 'Rugby', 'Community', 'Wales'],
   readingTime: 3,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'DeHub Announces Multi-Year Sponsorship with North Wales Crusaders',
   seoDescription: "DeHub is thrilled to announce a new multi-year sponsorship deal with The North Wales Crusaders, the only professional rugby league club in Wales.",
