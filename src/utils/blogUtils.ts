@@ -289,6 +289,8 @@ We’ve been building and now we enter 2023 prepared to scale. We’ve laid the 
 **December 27:** We closed the year with key updates on our latest test d’app, new token listing and marketing partner update where you will see me and the team regularly on Crypto Jamie’s channel, currently ranked number 3 on Binance Live.
 
 Bring on 2023.`;
+  } else if (post.slug === 'early-traction-dehubs-beta-app-hits-2000-daus---a-dehub-milestone-from-q1-2021') {
+    newPost.publishedAt = '2021-03-28T10:00:00.000Z';
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
