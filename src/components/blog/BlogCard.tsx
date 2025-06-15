@@ -48,14 +48,17 @@ const generateExcerpt = (content: string, fallback: string) => {
 const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const excerpt = generateExcerpt(post.content, post.excerpt);
 
-  const bannerImage = post.slug === '1-million-dollar-raise-completed'
-    ? '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png'
-    : post.bannerImage;
-  
-  const bannerImageAlt = post.slug === '1-million-dollar-raise-completed'
-    ? '$1,000,000 Fundraise'
-    : post.bannerImageAlt;
+  let bannerImage = post.bannerImage;
+  let bannerImageAlt = post.bannerImageAlt;
 
+  if (post.slug === '1-million-dollar-raise-completed') {
+    bannerImage = '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png';
+    bannerImageAlt = '$1,000,000 Fundraise';
+  } else if (post.slug === 'get-ready-players-final-snapshot-for-last-chad-standing-airdrop---a-dehub-milestone-from-q2-2025') {
+    bannerImage = '/lovable-uploads/d94d32d5-a54c-472f-9340-82a63b73fa3c.png';
+    bannerImageAlt = 'Last Chad Standing helicopter';
+  }
+  
   return (
     <article className={`group bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg overflow-hidden ${featured ? 'lg:col-span-2' : ''}`}>
       <Link to={`/docs/blog/${post.slug}`} className="block">
