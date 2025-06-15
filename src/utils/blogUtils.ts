@@ -344,9 +344,10 @@ We've been building and now we enter 2023 prepared to scale. We've laid the foun
 
 Bring on 2023.`;
   } else if (post.slug === 'the-vision-unfolds-alpha-launch-of-dehubs-integrated-dapp---a-dehub-milestone-from-q1-2023') {
+    newPost.title = "The Vision Unfolds: Test Beta Launch of the DeHub d'App";
     newPost.publishedAt = '2023-01-16T10:00:00.000Z';
-    newPost.bannerImage = 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80';
-    newPost.bannerImageAlt = 'DeHub Integrated Dapp Alpha Launch';
+    newPost.bannerImage = '/lovable-uploads/c1cb14e2-cd34-452e-99c2-ad402724885e.png';
+    newPost.bannerImageAlt = 'DeHub D\'App Test Beta Launch';
     newPost.content = `To start, we've listed all the functions available to test in this stage of the private beta. The rest will be available in the coming days to weeks prior to public launch but as you can see, we're through the bulk of the developments and all but complete! Thank you for taking the time to test the d'app and we look forward to receiving all feedback publicly and privately to tech@dehub.net.
 
 - Standard Uploads (live stream disabled)
