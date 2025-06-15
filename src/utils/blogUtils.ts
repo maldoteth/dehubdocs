@@ -528,7 +528,7 @@ For more information on our ad revenue sharing, refer to this thread and our whi
     },
     publishedAt: '2023-09-30T10:00:00.000Z',
     tags: ['Ad Tech', 'POVR', 'Advertising', 'Feature Spotlight'],
-    readingTime: 2,
+    readingTime: 3,
     featured: true,
     status: 'published',
   };
