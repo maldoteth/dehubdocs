@@ -294,6 +294,8 @@ Bring on 2023.`;
     newPost.publishedAt = '2021-03-30T10:00:00.000Z';
   } else if (post.title === "Power to the People: Community Governed Listings - A DeHub Milestone from Q2 2021") {
     newPost.publishedAt = '2021-05-15T10:00:00.000Z';
+  } else if (post.title === "Navigating Challenges: Addressing a V1 Smart Contract Security Issue - A DeHub Milestone from Q2 2021") {
+    newPost.publishedAt = '2021-06-19T10:00:00.000Z';
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
