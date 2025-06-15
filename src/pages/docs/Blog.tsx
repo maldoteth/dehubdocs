@@ -40,6 +40,9 @@ const Blog = () => {
       if (post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
         return { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
       }
+      if (post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
+        return { ...post, publishedAt: '2025-04-20T12:00:00.000Z' };
+      }
       return post;
     });
 

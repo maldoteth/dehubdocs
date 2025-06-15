@@ -20,6 +20,8 @@ const BlogPost = () => {
     post = null;
   } else if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
     post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
+  } else if (post && post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
+    post = { ...post, publishedAt: '2025-04-20T12:00:00.000Z' };
   }
 
   useEffect(() => {
