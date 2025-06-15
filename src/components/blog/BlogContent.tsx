@@ -65,21 +65,30 @@ const renderRegularContent = (text: string) => {
   const processLineForHtml = (lineContent: string) => {
     return lineContent.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
   };
-  return text.split('\n').map((line, index) => {
+
+  const blocks = text.split('\n\n');
+
+  return blocks.map((block, index) => {
+    block = block.trim();
+    if (!block) return null;
+
+    const lines = block.split('\n');
+    const firstLine = lines[0].trim();
+
     // Headers
-    if (line.startsWith('# ')) {
-      return <h1 key={index} className="text-3xl font-bold text-royal-blue mb-6 mt-8 font-exo">{line.slice(2)}</h1>;
+    if (firstLine.startsWith('# ')) {
+      return <h1 key={index} className="text-3xl font-bold text-royal-blue mb-6 mt-8 font-exo">{firstLine.slice(2)}</h1>;
     }
-    if (line.startsWith('## ')) {
-      return;
+    if (firstLine.startsWith('## ')) {
+      return null;
     }
-    if (line.startsWith('### ')) {
-      return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-4 font-exo">{line.slice(4)}</h3>;
+    if (firstLine.startsWith('### ')) {
+      return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-4 font-exo">{firstLine.slice(4)}</h3>;
     }
 
     // Image tag
-    if (line.startsWith('![')) {
-      const match = line.match(/!\[(.*?)\]\((.*?)\)/);
+    if (firstLine.startsWith('![')) {
+      const match = firstLine.match(/!\[(.*?)\]\((.*?)\)/);
       if (match) {
         const altAndStyle = match[1];
         const src = match[2];
@@ -89,26 +98,39 @@ const renderRegularContent = (text: string) => {
         if (style === 'avatar') {
           return <img key={index} src={src} alt={alt} className="w-24 h-24 rounded-full object-cover my-6 mx-auto block shadow-md" />;
         }
-        return;
+        return null;
       }
     }
+    
+    // Unordered List
+    if (lines.every(line => line.trim().startsWith('- ') || line.trim().startsWith('• '))) {
+      return (
+        <ul key={index} className="list-disc list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+          {lines.map((item, i) => {
+            const content = item.trim().slice(2);
+            const processedContent = processLineForHtml(content);
+            return <li key={i} dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
+          })}
+        </ul>
+      );
+    }
+    
+    // Ordered List
+    if (lines.every(line => /^\d+\./.test(line.trim()))) {
+       return (
+        <ol key={index} className="list-decimal list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+          {lines.map((item, i) => {
+            const content = item.trim().replace(/^\d+\.\s/, '');
+            const processedContent = processLineForHtml(content);
+            return <li key={i} dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
+          })}
+        </ol>
+      );
+    }
 
-    // Lists
-    if (line.startsWith('- ') || line.startsWith('• ')) {
-      const listContent = line.slice(2);
-      const processedContent = processLineForHtml(listContent);
-      return <li key={index} className="text-royal-blue/80 mb-2 ml-4 font-exo list-disc" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
-    }
-    if (/^\d+\./.test(line)) {
-      const listContent = line.replace(/^\d+\.\s/, '');
-      const processedContent = processLineForHtml(listContent);
-      return <li key={index} className="text-royal-blue/80 mb-2 ml-4 font-exo list-decimal" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
-    }
-    if (line.trim() === '') {
-      return <br key={index} />;
-    }
-    const processedLine = processLineForHtml(line);
-    return <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedLine)} />;
+    // Default to paragraph
+    const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
+    return <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
   });
 };
 const BlogContent: React.FC<BlogContentProps> = ({
