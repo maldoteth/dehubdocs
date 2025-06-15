@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -378,12 +377,45 @@ This AMA covered a lot of ground, and we’re excited for what’s to come. Stay
 const getAllPostsWithOverrides = (): BlogPost[] => {
   const allPosts = [...blogPosts];
 
+  const coinbasePost: BlogPost = {
+    id: 'dhb-tradable-on-coinbase-soon',
+    title: 'Confirmed! $DHB Will Be Tradable on Coinbase Soon',
+    slug: 'dhb-tradable-on-coinbase-soon',
+    excerpt: 'In a landmark move for accessibility, $DHB, along with other Base tokens, will soon be tradable directly on Coinbase, bridging the gap between DEX and CEX liquidity.',
+    content: `## A Monumental Leap for Accessibility
+
+In a momentous move by the Coinbase team, you will soon be able to say "buy $DHB on Coinbase." This development addresses a major pain point in accessibility for what has traditionally been an all-DEX token.
+
+We're getting the best of both worlds: our token will be directly available on one of the biggest centralized exchanges in the world, used by over 200 million people, while remaining entirely on-chain. It almost feels like destiny is at play.
+
+![Coinbase and Base Integration](/lovable-uploads/435d9da9-f69a-405a-92e1-73c030728cd5.png)
+
+## The Future of On-Chain Trading on Coinbase
+
+Coinbase is opening its doors to countless Base tokens with integrated DEX trading. Soon, you’ll be able to trade tokens on Base straight from the Coinbase app, often on the very day they’re created.
+
+A new chapter in on-chain access is coming, and DeHub is proud to be at the forefront of this evolution. This integration will significantly lower the barrier to entry for new users and provide our existing community with unprecedented liquidity and ease of use.
+
+Stay tuned for more updates as we approach this exciting milestone!`,
+    bannerImage: '/lovable-uploads/435d9da9-f69a-405a-92e1-73c030728cd5.png',
+    bannerImageAlt: 'Base logo on a blue background, representing the Coinbase integration',
+    author: {
+      name: 'DeHub Team',
+    },
+    publishedAt: '2025-06-15T10:00:00.000Z',
+    tags: ['Coinbase', 'Exchange', 'Listing', 'Base', 'Accessibility'],
+    readingTime: 2,
+    featured: true,
+    status: 'published',
+  };
+  allPosts.unshift(coinbasePost);
+
   const adTechPost: BlogPost = {
-      id: 'feature-spotlight-ad-tech',
-      title: 'Feature Spotlight: Ad Tech',
-      slug: 'feature-spotlight-ad-tech',
-      excerpt: 'Taking digital advertising to new horizons.',
-      content: `### POVR: Proof of View & Rank
+    id: 'feature-spotlight-ad-tech',
+    title: 'Feature Spotlight: Ad Tech',
+    slug: 'feature-spotlight-ad-tech',
+    excerpt: 'Taking digital advertising to new horizons.',
+    content: `### POVR: Proof of View & Rank
 Our ad-tech solution is unlike anything else seen across legacy or blockchain markets, and serves a unique purpose within our own app.
 
 “Proof of View” is one dimensional and beyond identification, adds little benefit for users or holders.
@@ -409,16 +441,16 @@ Being able to target whales and big spenders while also tailoring special deals 
 Botting becomes less profitable while activity is trackable on-chain, easily connecting bad actors & eventually curating the entire user base. Advertisers target higher ranks, leaving minimal extractable value at the bottom layer, where any remaining fraud remains. On top of that, our decentralised moderation allows more efficient illicit activity detection and prevention.
 
 For more information on our ad revenue sharing, refer to this thread and our whitepaper below. Also, be sure to follow us for all the latest news on app features and updates.`,
-      bannerImage: '/lovable-uploads/a6f93bd4-c3f4-4d91-abd9-ebdd88e3b884.png',
-      bannerImageAlt: 'An abstract image representing advertising technology',
-      author: {
-        name: 'DeHub Team',
-      },
-      publishedAt: '2023-09-30T10:00:00.000Z',
-      tags: ['Ad Tech', 'POVR', 'Advertising', 'Feature Spotlight'],
-      readingTime: 2,
-      featured: true,
-      status: 'published',
+    bannerImage: '/lovable-uploads/a6f93bd4-c3f4-4d91-abd9-ebdd88e3b884.png',
+    bannerImageAlt: 'An abstract image representing advertising technology',
+    author: {
+      name: 'DeHub Team',
+    },
+    publishedAt: '2023-09-30T10:00:00.000Z',
+    tags: ['Ad Tech', 'POVR', 'Advertising', 'Feature Spotlight'],
+    readingTime: 2,
+    featured: true,
+    status: 'published',
   };
   allPosts.unshift(adTechPost);
 
