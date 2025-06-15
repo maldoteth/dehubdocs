@@ -33,7 +33,7 @@ const basePoolPost: BlogPostType = {
   author: {
     name: 'DeHub Team',
   },
-  publishedAt: '2024-05-09T12:00:00.000Z',
+  publishedAt: '2024-05-14T12:00:00.000Z',
   tags: ['Announcement', 'Base', 'DeFi', 'Uniswap'],
   readingTime: 2,
   featured: false,
