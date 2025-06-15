@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -49,8 +48,6 @@ const tokenisedUploadsPost: BlogPostType = {
   status: 'published',
   seoTitle: 'Tokenised Uploads Are Here! | DeHub Feature Update',
   seoDescription: 'Learn about DeHub\'s new Tokenised Uploads feature. Every upload is a fractionalised NFT that shares ad revenue, creating a new economy for creators and fans.',
-  views: 1543,
-  likes: 87,
 };
 
 const awardWinningInnovationPost: BlogPostType = {
@@ -83,8 +80,6 @@ const awardWinningInnovationPost: BlogPostType = {
   status: 'published',
   seoTitle: 'DeHub Wins Corporate LiveWire 2023 Innovation & Excellence Award',
   seoDescription: 'DeHub is recognised as the 2023 winner for Innovation and Excellence in the Gaming category by Corporate LiveWire. Find out more about this prestigious award.',
-  views: 2345,
-  likes: 156,
 };
 
 const dubaiEventPost: BlogPostType = {
@@ -123,8 +118,6 @@ const dubaiEventPost: BlogPostType = {
   status: 'published',
   seoTitle: 'DeHub Expands to Middle East with Dubai Event Presence',
   seoDescription: 'DeHub marks a major Q2 2024 milestone by expanding its presence in the Middle East, participating in major blockchain events across Dubai.',
-  views: 987,
-  likes: 65,
 };
 
 const basePoolPost: BlogPostType = {
@@ -166,8 +159,6 @@ const basePoolPost: BlogPostType = {
   status: 'published',
   seoTitle: 'DeHub is Launching on Base! Uniswap Pool Going Live Soon',
   seoDescription: 'DeHub is expanding to the Base network! Get ready for our Uniswap pool launch. Learn about the new contract and how to bridge your tokens for free.',
-  views: 3123,
-  likes: 211,
 };
 
 const dehubTakeoverPost: BlogPostType = {
@@ -206,8 +197,6 @@ const dehubTakeoverPost: BlogPostType = {
   status: 'published',
   seoTitle: 'DeHub Takeover: A New Era for Community Growth',
   seoDescription: 'We are turbocharging the DeHub Army with a series of community-focused initiatives. Read about our plans for token-gated chats, daily town halls, and more.',
-  views: 1890,
-  likes: 123,
 };
 
 const crusadersSponsorshipPost: BlogPostType = {
@@ -242,8 +231,6 @@ const crusadersSponsorshipPost: BlogPostType = {
   status: 'published',
   seoTitle: 'DeHub Announces Multi-Year Sponsorship with North Wales Crusaders',
   seoDescription: "DeHub is thrilled to announce a new multi-year sponsorship deal with The North Wales Crusaders, the only professional rugby league club in Wales.",
-  views: 754,
-  likes: 44,
 };
 
 const publicBetaDappReportPost: BlogPostType = {
@@ -319,8 +306,6 @@ const publicBetaDappReportPost: BlogPostType = {
   status: 'published',
   seoTitle: 'Public Beta D’app Report | DeHub Update',
   seoDescription: 'An overview of the beta launch for our main d’app. Our biggest and final core d’app launch now sets us up to focus on scaling users and growth.',
-  views: 4021,
-  likes: 350,
 };
 
 export const newPosts: BlogPostType[] = [

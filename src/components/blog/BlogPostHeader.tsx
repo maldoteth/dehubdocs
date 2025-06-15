@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Calendar, Clock } from 'lucide-react';
 import { BlogPost } from '@/types/blog';
@@ -22,7 +23,7 @@ export const BlogPostHeader: React.FC<BlogPostHeaderProps> = ({ post, displayDat
         {post.title}
       </h1>
       
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-royal-blue/70 mb-6">
+      <div className="flex flex-wrap items-center gap-6 text-royal-blue/70 mb-6">
         <div className="flex items-center gap-1">
           <Calendar className="w-4 h-4" />
           <span className="font-exo">{displayDate}</span>

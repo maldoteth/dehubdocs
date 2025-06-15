@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -104,11 +105,7 @@ const BlogPost = () => {
       <div className="max-w-4xl mx-auto">
 
         <article>
-          <BlogPostHeader 
-            post={post} 
-            displayDate={displayDate} 
-            shareUrl={shareUrl}
-          />
+          <BlogPostHeader post={post} displayDate={displayDate} shareUrl={shareUrl} />
           <BlogPostBody bannerImage={bannerImage} bannerImageAlt={post.bannerImageAlt} content={content} />
           <BlogPostFooter shareUrl={shareUrl} postTitle={post.title} />
         </article>

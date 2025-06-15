@@ -80,7 +80,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
         </div>
         
         <div className={`p-6 ${featured ? 'lg:p-8' : ''}`}>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-royal-blue/70 mb-3">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-royal-blue/70 mb-3">
             <div className="flex items-center gap-1">
               <Calendar className="w-4 h-4" />
               <span>{displayDate}</span>
