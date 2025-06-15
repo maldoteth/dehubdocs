@@ -18,6 +18,7 @@ const generateExcerpt = (content: string, fallback: string) => {
         if (
             trimmedLine === '' ||
             trimmedLine.startsWith('#') ||
+            trimmedLine.toLowerCase().startsWith('<h') || // Skip HTML headings
             trimmedLine.startsWith('- ') ||
             trimmedLine.startsWith('• ') ||
             /^\d+\./.test(trimmedLine) ||
@@ -26,9 +27,16 @@ const generateExcerpt = (content: string, fallback: string) => {
             continue;
         }
         
+        // Strip HTML tags and markdown
         const plainText = trimmedLine
+            .replace(/<[^>]+>/g, '') 
             .replace(/\*\*(.*?)\*\*/g, '$1')
-            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1');
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
+            .trim();
+
+        if (plainText === '') {
+            continue; // Skip if line becomes empty after stripping tags
+        }
             
         const maxLength = 150;
         if (plainText.length > maxLength) {
