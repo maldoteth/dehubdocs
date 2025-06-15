@@ -74,7 +74,7 @@ const dehubTakeoverPost: BlogPostType = {
   publishedAt: '2024-08-22T12:00:00.000Z',
   tags: ['Community', 'Marketing', 'Takeover', 'Update'],
   readingTime: 5,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'DeHub Takeover: A New Era for Community Growth',
   seoDescription: 'We are turbocharging the DeHub Army with a series of community-focused initiatives. Read about our plans for token-gated chats, daily town halls, and more.',
@@ -88,3 +88,4 @@ export const newPosts: BlogPostType[] = [
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
     return newPosts.find(p => p.slug === slug);
 }
+
