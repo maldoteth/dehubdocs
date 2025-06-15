@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, User, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
 import { getPostBySlug, formatDate } from '@/utils/blogUtils';
 import BlogContent from '@/components/blog/BlogContent';
 import { useToast } from '@/hooks/use-toast';
@@ -138,7 +138,6 @@ Stay tuned, and get ready to play. The arena awaits.`;
         url={`/docs/blog/${post.slug}`}
         type="article"
         publishedTime={publishedAt}
-        authorName={post.author.name}
       />
       <div className="max-w-4xl mx-auto">
         {/* Back Navigation */}
@@ -164,19 +163,6 @@ Stay tuned, and get ready to play. The arena awaits.`;
             </h1>
             
             <div className="flex flex-wrap items-center gap-6 text-royal-blue/70 mb-6">
-              <div className="flex items-center gap-2">
-                {post.author.avatar && (
-                  <img 
-                    src={post.author.avatar} 
-                    alt={post.author.name}
-                    className="w-8 h-8 rounded-full"
-                  />
-                )}
-                <div className="flex items-center gap-1">
-                  <User className="w-4 h-4" />
-                  <span className="font-exo">{post.author.name}</span>
-                </div>
-              </div>
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
                 <span className="font-exo">{formatDate(publishedAt)}</span>

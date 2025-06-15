@@ -7,10 +7,6 @@ export interface BlogPost {
   content: string;
   bannerImage: string;
   bannerImageAlt: string;
-  author: {
-    name: string;
-    avatar?: string;
-  };
   publishedAt: string; // ISO date string for manual control
   updatedAt?: string;
   tags: string[];
