@@ -49,7 +49,7 @@ const Blog = () => {
       // Manually set featured status for specific posts.
       post.featured = 
         post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022' ||
-        post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost';
+        post.title === "A Look Back: DeHub's First Year in Review";
         
       return post;
     });
