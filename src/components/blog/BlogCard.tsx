@@ -119,8 +119,8 @@ Stay tuned, and get ready to play. The arena awaits.`;
     bannerImage = '/lovable-uploads/63bd95be-1087-4e64-91b7-1bcb2c6668d0.png';
     bannerImageAlt = 'DHBScan.com banner';
   } else if (post.slug === 'community-champions-ugc-ambassadorship-program-launched---a-dehub-milestone-from-q2-2025') {
-    bannerImage = '/lovable-uploads/59b8a8cb-c9c7-412e-b51e-8f68b47d73a0.png';
-    bannerImageAlt = 'DeHub UGC Programme';
+    bannerImage = '/lovable-uploads/db82dcee-502d-4f76-af47-66bdf217574d.png';
+    bannerImageAlt = 'DeHub UGC Programme banner';
     publishedAt = '2025-05-10T10:00:00.000Z';
     content = `## Become a DeHub Ambassador: Announcing Our UGC Programme
 
