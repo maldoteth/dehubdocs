@@ -80,7 +80,7 @@ const renderRegularContent = (text: string) => {
       return null;
     }
     if (firstLine.startsWith('### ')) {
-      return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-4 font-exo">{firstLine.slice(4)}</h3>;
+      return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">{firstLine.slice(4)}</h3>;
     }
 
     // Image tag

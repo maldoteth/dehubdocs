@@ -318,6 +318,43 @@ The issue was identified through our continuous internal audits. We paused all i
 To ensure a seamless transition for our community, we took a snapshot of all holder balances prior to deploying the new contract. **Every single holder was then automatically airdropped their tokens on a 1:1 basis. Nobody was left behind.**
 
 This incident, while challenging, has made our platform stronger and our commitment to security even more resolute. We are grateful for our community's patience and support during this process.`;
+  } else if (post.slug === 'town-hall-ama-october-2024') {
+    newPost.content = `Our recent Town Hall AMA was a great success, and we want to thank our incredible community for their insightful questions. We've compiled the key questions and answers below to keep everyone in the loop.
+
+### 1. Can we get a roadmap with exact release dates?
+We regularly provide release dates for imminent updates, such as the countdown on dehub.io now. We’ll provide a more detailed roadmap with specific dates for upcoming features with the release of the next upgrade but the core roadmap stays the same. We’ve kept it phased to allow flexibility since the nature of tech and crypto is always shifting.
+
+### 2. What happened to the gold tick on X (Twitter)?
+We lost the gold tick while switching account tiers on Twitter, which resulted in a double charge. We’re currently awaiting a refund and customer support. Twitter doesn’t allow tier changes without canceling and re-subscribing, which caused the issue. As a UK-registered company that meets all the gold tick criteria, we’re determined to get it back. It’s a small cost — less than £200 a month which we are spending on ads anyway as comes with ad credits too. We’ve also had a rough history with Twitter; our original account was permanently banned because I set the birth date to under 13 (reflecting our launch date: 04/20/2021). While we could make some noise, being suspended again would be a hassle. We’re just happy to be able to promote on the platform until our own user base is strong enough.
+
+### 3. Will DeHub return to the BNB Chain?
+If we redeploy on BNB, it’ll be on opBNB, which is built specifically for scalable apps like ours. Redeployment would require bridging regardless, and opBNB is BNB’s new scaling chain, so it makes no sense to return to the legacy BNB chain. In future updates, we’ll also discontinue in-app support for old BNB to focus on cutting-edge technology. Of course, users are still free to deploy liquidity pools (LP) where they wish.
+
+### 4. What’s the latest on LCFC and the gaming arcade?
+While we’ve shifted focus to the streaming app after our last game releases, the arcade is still available. We’re also gearing up for the launch of our 3D hyperrealistic Battle Royale, Last Chad Standing (LCS). This game is a giant leap from the 2D arcade fun we’ve been having. Combined with our team reach across some of the biggest UFC fighters in the world, we’re expecting major adoption of LCS, as a unique game never seen before on or off chain. The only other fighter/weaponless based Battle Royale, (Rumbleverse), discontinued and left a large player base yearning for its return.
+
+### 5. Are Mike and Indi still involved?
+Of course, we launched this together, so Mike and Indi are still very much involved. We’re actually planning a new strategy to boost Twitter engagement. If anyone’s been following either on socials you’ll see regular mentions and insights into DeHub and the future. During the bear market, they built one of the most successful TikTok agencies worldwide and are now managing nearly 1,000 streamers, including big names like Beavo, bringing in tens of millions of views daily at their peak. All this expertise is feeding back into what we’re building at DeHub, just as we’ve always envisioned.
+
+### 6. What are the major upcoming releases, and when can we expect them?
+Aside from the imminent major upgrade, we’ve already teased some key features. While we can’t provide exact timelines for everything just yet, there are exciting developments underway. As always, we’ve got some surprises, but timing will depend on our progress. We’re working daily to strengthen the protocol and hit significant milestones.
+
+### 7. Can you tell us more about Malik’s business background and the Guide Dogs fundraiser?
+During my time as a fundraising manager at Guide Dogs, one of the world’s largest charities supporting the visually impaired, my team raised over seven figures through events, street canvassing, and ongoing pledges. Before that, I worked in a trainee role while studying Biomedical Science at QA Hospital, with the goal of pursuing medicine, influenced by my family’s background in healthcare. However, I realised it wasn’t for me and eventually transitioned into business. A career highlight for me was becoming the top-billing agent at Blue Arrow, the UK’s largest recruitment agency, outcompeting 70 other offices and 600 staff.
+
+### 8. When is the live streaming feature expected?
+We’re aiming to launch the live streaming feature within this quarter, though it’s a complex build that ties directly into our agency CRM system. We’re replicating TikTok’s tip-based economy model, which is incredibly intricate. We’re hoping to have it ready by Christmas, but we can’t guarantee exact dates just yet.
+
+### 9. Do you care about the token price, or is it all about the tech?
+We absolutely care about the token price, but we have to be cautious about how we discuss it publicly to avoid any legal risks. Protecting the business and the community is our top priority. That said, in crypto, everything inevitably circles back to the chart — whether we like it or not. We’re determined to surpass all past achievements, and we won’t stop until we do.
+
+### 10. Will you list on centralized exchanges (CEXs) again?
+We’re only interested in listing on top-tier CEXs like Binance, Coinbase, and other leading platforms. For now, we’re focused on growing organically through community engagement and on-chain volume. Once our volume and LP grow, the top CEXs will naturally want to list us, and we’ll aim to do it on our terms. We’ve never struggled to hit highs without CEXs, and we’ve actually thrived without them.
+
+### 11. Will there be any expected delays after the countdown?
+No delays are expected. The major overhaul is ready and will be rolled out at the end of the countdown. Any features not immediately live at launch will be released according to the updated roadmap, which will be shared alongside the upgrade.
+
+This AMA covered a lot of ground, and we’re excited for what’s to come. Stay tuned for more updates, and thanks to everyone who tuned in!`;
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
