@@ -103,9 +103,12 @@ Gambling Awareness Helpline
     }
   };
 
-  const displayDate = post.title === "Dream Big: The $1M Home Crypto Raffle by DeHub"
-    ? "July 11, 2022"
-    : formatDate(post.publishedAt);
+  const displayDate =
+    post.title === 'Dream Big: The $1M Home Crypto Raffle by DeHub'
+      ? 'July 11, 2022'
+      : post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost'
+      ? 'July 23, 2024'
+      : formatDate(post.publishedAt);
 
   return (
     <>
