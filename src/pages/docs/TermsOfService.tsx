@@ -1,10 +1,8 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Users, Zap, Globe, CreditCard } from 'lucide-react';
-
 const TermsOfService = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       {/* Header */}
       <div className="space-y-4">
         <h1 className="text-4xl font-bold text-royal-blue font-exo">
@@ -132,7 +130,7 @@ const TermsOfService = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold text-royal-blue mb-2">No Refunds Policy</h3>
+            <h3 className="font-semibold text-royal-blue mb-2">Refunds Policy</h3>
             <p>
               Due to the irreversible nature of blockchain transactions, refunds are not applicable in any capacity. All token purchases are final and cannot be reversed, canceled, or refunded.
             </p>
@@ -338,8 +336,6 @@ const TermsOfService = () => {
           </p>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default TermsOfService;
