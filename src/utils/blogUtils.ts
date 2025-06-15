@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -330,13 +331,57 @@ With these foundational decisions made by the community, our path forward was cl
 };
 
 const getAllPostsWithOverrides = (): BlogPost[] => {
+  const allPosts = [...blogPosts];
+
+  const newPost: BlogPost = {
+    id: 'mvp-app-released-q1-2021',
+    title: 'MVP App Released & Listed on Google Play Store',
+    slug: 'mvp-app-released-listed-on-google-play-store',
+    excerpt: 'The DeHub MVP app is now live on the Google Play Store, featuring OTT streaming, protocol-uploaded content, and a YouTube aggregator. Discover what\'s next on our roadmap.',
+    content: `We are thrilled to announce a monumental step in DeHub's journey: the official release of our MVP application, now available for download on the Google Play Store! This is more than just an app launch; it is the culmination of months of hard work, community feedback, and a relentless drive to build the future of decentralized content.
+
+### What's Inside the MVP?
+
+Our initial release is focused on delivering a core viewing experience that showcases the power and potential of the DeHub ecosystem. Here is what you can explore right now:
+
+- **OTT Streaming:** Experience smooth, high-quality over-the-top streaming directly within the app. We are laying the groundwork for a robust, decentralized video delivery network.
+- **Protocol-Uploaded Content:** Dive into our first wave of original and curated content, uploaded directly to the DeHub protocol. This is just the beginning of our content library.
+- **YouTube Aggregator:** Seamlessly discover and watch your favorite YouTube content without leaving the app. We are bringing the best of Web2 and Web3 together in one place.
+
+This MVP is the foundation upon which we will build a media empire. It is our stake in the ground, demonstrating our commitment to delivering a world-class product.
+
+### The Road Ahead: What's Next for the DeHub App?
+
+The journey is just beginning. Our MVP is a launchpad for a host of revolutionary features that will redefine content creation, consumption, and monetization. Here is a glimpse of what our ambitious roadmap holds:
+
+- **User-Generated Content (UGC):** We will empower creators by enabling them to upload their own content, build their audience, and earn directly from their work.
+- **Licensed Content & Exclusive PPVs:** Get ready for premium movies, series, and exclusive Pay-Per-View events, including live sports and concerts.
+- **Watch-to-Earn Mechanics:** We are developing innovative models that reward you, the viewer, for your engagement and participation in the ecosystem.
+- **DePIN Integration:** At our core, we are building a Decentralized Physical Infrastructure Network (DePIN) to power the future of media, ensuring a censorship-resistant and community-owned platform.
+
+We invite you to download the app, explore the features, and share your feedback. You are the pioneers of this new era, and your insights are crucial as we continue to build and innovate.
+
+Thank you for being part of our community. The future is bright, and it is being built on DeHub.`,
+    bannerImage: '/lovable-uploads/eeb2e5c9-2347-4865-876e-31f38fe4412a.png',
+    bannerImageAlt: 'DeHub App MVP on Google Play Store',
+    author: {
+      name: 'DeHub Team',
+    },
+    publishedAt: '2021-03-20T10:00:00.000Z',
+    tags: ['Launch', 'MVP', 'Android', 'Q1 2021'],
+    readingTime: 3,
+    featured: true,
+    status: 'published',
+  };
+  allPosts.unshift(newPost);
+
   const postsToExcludeByTitle = [
     "Safe Spaces: DeHub's Initial Content Moderation Framework - A DeHub Milestone from Q1 2021",
     "The Genesis: DeHub's V1 Token Launch - A DeHub Milestone from Q2 2021",
     "A Voice for All: DeHub's Basic Governance Voting Arrives - A DeHub Milestone from Q2 2021",
     "Growing Together: DeHub's Early Adopter Community Surpasses 2,000 - A DeHub Milestone from Q2 2021"
   ];
-  return blogPosts
+  return allPosts
     .filter(post => !postsToExcludeByTitle.includes(post.title))
     .map(applyPostOverrides);
 };
