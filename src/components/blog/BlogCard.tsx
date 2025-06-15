@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Clock, User, ArrowRight } from 'lucide-react';
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { BlogPost } from '@/types/blog';
 import { formatDate } from '@/utils/blogUtils';
 
@@ -143,10 +143,6 @@ Stay tuned, and get ready to play. The arena awaits.`;
             <div className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
               <span>{post.readingTime} min read</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <User className="w-4 h-4" />
-              <span>{post.author.name}</span>
             </div>
           </div>
 
