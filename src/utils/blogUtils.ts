@@ -441,8 +441,8 @@ Being able to target whales and big spenders while also tailoring special deals 
 Botting becomes less profitable while activity is trackable on-chain, easily connecting bad actors & eventually curating the entire user base. Advertisers target higher ranks, leaving minimal extractable value at the bottom layer, where any remaining fraud remains. On top of that, our decentralised moderation allows more efficient illicit activity detection and prevention.
 
 For more information on our ad revenue sharing, refer to this thread and our whitepaper below. Also, be sure to follow us for all the latest news on app features and updates.`,
-    bannerImage: '/lovable-uploads/a6f93bd4-c3f4-4d91-abd9-ebdd88e3b884.png',
-    bannerImageAlt: 'An abstract image representing advertising technology',
+    bannerImage: '/lovable-uploads/79e6faf5-f135-410b-babd-d2d8611e2d5c.png',
+    bannerImageAlt: 'DeHub ad tech ecosystem stakeholders',
     author: {
       name: 'DeHub Team',
     },
