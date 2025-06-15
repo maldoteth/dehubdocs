@@ -108,6 +108,9 @@ The last snapshot for the @LCS_game airdrops will be taken in **under a week!**
 To ensure you qualify, hold or stake your assets before the deadline and until your airdrop is complete. This is a critical milestone, and further details regarding the game launch, first-round raises, and the game token are releasing imminently.
 
 Stay tuned, and get ready to play. The arena awaits.`;
+  } else if (post.slug === 'main-event-ready-last-chad-standing-full-trailer-gains-mma-promoter-attention---a-dehub-milestone-from-q1-2025') {
+    bannerImage = '/lovable-uploads/b632bee7-0228-48be-b4ac-7ac0ab5e9994.png';
+    bannerImageAlt = 'Last Chad Standing character helmet';
   } else if (post.slug === 'fresh-experience-revamped-app-feed-with-audio-replies--live-talk-spaces---a-dehub-milestone-from-q2-2025') {
     bannerImage = '/lovable-uploads/eeb2e5c9-2347-4865-876e-31f38fe4412a.png';
     bannerImageAlt = 'DeHub Revamped App Feed';

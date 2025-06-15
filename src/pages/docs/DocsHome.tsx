@@ -28,6 +28,9 @@ const DocsHome = () => {
     } else if (latestPost.slug === 'get-ready-players-final-snapshot-for-last-chad-standing-airdrop---a-dehub-milestone-from-q2-2025') {
       bannerImage = '/lovable-uploads/6d868478-769e-4981-b285-4ca5fa215dc5.png';
       bannerImageAlt = 'Last Chad Standing helicopter';
+    } else if (latestPost.slug === 'main-event-ready-last-chad-standing-full-trailer-gains-mma-promoter-attention---a-dehub-milestone-from-q1-2025') {
+      bannerImage = '/lovable-uploads/b632bee7-0228-48be-b4ac-7ac0ab5e9994.png';
+      bannerImageAlt = 'Last Chad Standing character helmet';
     } else if (latestPost.slug === 'fresh-experience-revamped-app-feed-with-audio-replies--live-talk-spaces---a-dehub-milestone-from-q2-2025') {
       bannerImage = '/lovable-uploads/eeb2e5c9-2347-4865-876e-31f38fe4412a.png';
       bannerImageAlt = 'DeHub Revamped App Feed';
