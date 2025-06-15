@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -173,29 +174,29 @@ const DocsHome = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="lg:w-1/3">
               <img 
-                src="/lovable-uploads/a083bba0-a7c6-4c03-9a01-2402717f9f20.png" 
-                alt="DHB token on Coinbase announcement"
+                src={bannerImage} 
+                alt={bannerImageAlt}
                 className="w-full h-48 object-cover rounded-xl"
               />
             </div>
             <div className="lg:w-2/3 text-center lg:text-left">
               <div className="mb-4">
                 <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
-                  Exciting News!
+                  Latest from our Blog
                 </span>
                 <h2 className="text-2xl lg:text-3xl font-bold text-royal-blue mb-3 font-exo">
-                  Confirmed! $DHB Will Be Tradable on Coinbase CEX Soon
+                  {latestPost.title}
                 </h2>
                 <p className="text-royal-blue/70 mb-6 font-exo">
-                  We are thrilled to announce that $DHB will soon be available for trading on the Coinbase CEX. This is a major milestone for our project. Stay tuned for the official listing date and more details!
+                  {latestPost.excerpt}
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link 
-                  to={`/docs/blog`}
+                  to={`/docs/blog/${latestPost.slug}`}
                   className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo"
                 >
-                  Learn More
+                  Read Article
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
                 <Link 
