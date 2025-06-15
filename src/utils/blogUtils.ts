@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -330,6 +329,53 @@ This incident, while challenging, has made our platform stronger and our commitm
     newPost.publishedAt = '2024-11-22T10:00:00.000Z';
   } else if (post.title.startsWith("Scaling New Heights: Livepeer Integration for 50k+ Concurrent Viewers")) {
     newPost.publishedAt = '2025-03-14T10:00:00.000Z';
+  } else if (post.title.startsWith("Revolutionizing Access: On-Chain Tradable Subscriptions Launch")) {
+    newPost.publishedAt = '2024-10-23T10:00:00.000Z';
+    newPost.readingTime = 6;
+    newPost.content = `## The Subscription Model, Reimagined
+
+On-chain tradable subscriptions are the future, and the future is here! We're delighted to announce the mainnet deployment of our tokenised subscriptions smart contracts, marking a paradigm shift in how digital access and ownership are perceived.
+
+For too long, the subscription economy has been a one-way street. Users pay for access, but the value is locked within a platform's walled garden. If you no longer need a subscription, that money is gone. If a creator's content becomes wildly popular, early supporters don't share in that success. We're here to change that.
+
+By representing subscriptions as tokens on the blockchain, we unlock a world of possibilities. Your subscription is no longer just a recurring payment; it's a digital asset that you truly own.
+
+### Why Tradable Subscriptions Are a Game-Changer
+
+This isn't just an incremental improvement; it's a fundamental rewiring of the creator-supporter relationship.
+
+**For Users: True Digital Ownership**
+- **Liquidity & Resale:** Don't need your subscription anymore? Sell it on an open marketplace. If the creator's popularity has grown, your early-supporter subscription might even be worth more than you paid for it.
+- **Flexibility:** Treat your subscription like any other digital asset. In the future, you could even use it as collateral or bundle it with other assets.
+- **Portability:** Your ownership is recorded on a public blockchain, independent of any single platform.
+
+**For Creators: New Economic Frontiers**
+- **Secondary Market Royalties:** Creators can earn a royalty fee every time a subscription token is resold, creating a continuous revenue stream that grows with their community.
+- **Reduced Platform Risk:** By building on decentralized rails, creators are less dependent on traditional platforms and their often-unfavorable fee structures and policy changes.
+- **Deepened Community Engagement:** Early supporters become true stakeholders. Their success is aligned with the creator's success, fostering a more loyal and engaged community.
+
+### Deployed & Ready on Your Favorite Chains
+
+To ensure maximum accessibility and low transaction fees for our community, we have deployed our tokenised subscription contracts across three leading blockchain networks. You can now peruse the code and start building with us on the platform of your choice:
+
+➡️ **Base:** [View on Basescan](https://basescan.org/address/0xa87b75CaAAE3518C2A66033877636d2AE140D93D)
+
+➡️ **BNB Chain:** [View on BscScan](https://bscscan.com/address/0xD032c1c0045f104575F0F03213103aca56b445a2)
+
+➡️ **Polygon:** [View on Polygonscan](https://polygonscan.com/address/0xA13622C24a5De42D110DE88bed1F875a5D9b0Fa0)
+
+### How It Works: A Simple Primer
+
+1.  **Minting:** When a user subscribes to a creator, a unique subscription token (NFT) is minted to their wallet.
+2.  **Access:** The user's wallet, holding the token, now serves as their key to unlock exclusive content, features, or community access.
+3.  **Trading:** The user can list their subscription token on any compatible NFT marketplace.
+4.  **Royalties:** When a sale occurs, the smart contract automatically enforces the creator's predefined royalty fee, sending a percentage of the sale price back to them.
+
+### Building a Better Tomorrow, Together
+
+This is more than just a new feature; it's an open invitation to developers, creators, and visionaries. These smart contracts are a foundational layer for a new, more equitable digital economy. We envision a future where artists can fund their next album through tradable fan club memberships, where journalists can offer lifetime access passes that appreciate in value, and where communities can build self-sustaining ecosystems around shared interests.
+
+The contracts are live. The canvas is blank. We invite you to peruse the code, build on top of our infrastructure, and help us create a better tomorrow. The revolution will be tokenized.`;
   } else if (post.title.startsWith("Town Hall AMA October 2024")) {
     newPost.content = `Our recent Town Hall AMA was a great success, and we want to thank our incredible community for their insightful questions. We've compiled the key questions and answers below to keep everyone in the loop.
 
