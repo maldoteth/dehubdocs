@@ -64,6 +64,12 @@ const Blog = () => {
       if (post.title === 'MVP App Released & Listed on Google Play Store') {
         return { ...post, featured: false };
       }
+      if (post.slug === 'scaling-new-heights-livepeer-integration-for-50k-concurrent-viewers---a-dehub-milestone-from-q1-2025') {
+        return {
+          ...post,
+          title: 'Scaling New Heights: Livepeer Integration for initially 50k+ Concurrent Viewers With Unlimited Viewer abilities as we scale up.',
+        };
+      }
       return post;
     });
 
@@ -89,6 +95,12 @@ const Blog = () => {
       }
       if (post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
         return { ...post, publishedAt: '2024-10-30T12:00:00.000Z' };
+      }
+      if (post.slug === 'scaling-new-heights-livepeer-integration-for-50k-concurrent-viewers---a-dehub-milestone-from-q1-2025') {
+        return {
+          ...post,
+          title: 'Scaling New Heights: Livepeer Integration for initially 50k+ Concurrent Viewers With Unlimited Viewer abilities as we scale up.',
+        };
       }
       return post;
     });
