@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
@@ -6,63 +7,11 @@ import BlogContent from '@/components/blog/BlogContent';
 import { useToast } from '@/hooks/use-toast';
 import SEO from '@/components/SEO';
 import { OptimizedImage } from '@/components/OptimizedImage';
-import { BlogPost as BlogPostType } from '@/types/blog';
-
-const newPostData: BlogPostType = {
-  id: 'temp-base-pool-post',
-  slug: 'base-pool-going-live-soon',
-  title: 'Base pool going live soon!',
-  excerpt: 'Get ready, DeHubbers. We\'ll be deploying on Uniswap imminently to bring DeHub to the Base network!',
-  content: `### The Next Chapter for DeHub: We're Coming to Base!
-
-Get ready, DeHubbers! The moment many of you have been waiting for is almost here. We are thrilled to announce that we'll be deploying the DeHub token on the Base network via Uniswap imminently. This marks a significant milestone in our journey, expanding the DeHub ecosystem and providing our community with faster, cheaper transactions.
-
-### Why Base?
-
-Base, an Ethereum Layer 2 incubated by Coinbase, offers the security and scalability we need to grow. By launching on Base, we're tapping into a vibrant and rapidly expanding ecosystem, opening up new avenues for liquidity, partnerships, and dApp integrations.
-
-### Your Guide to Getting Started on Base
-
-We want to make this transition as smooth as possible for everyone. Here’s everything you need to know.
-
-#### Official Base Contract Address
-
-**This is the only official contract address for the DeHub token on Base.** Please save it and always verify before interacting with it to protect yourself from scams.
-
-- **Base Contract:** [\`0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c\`](https://basescan.org/token/0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c)
-
-#### Bridge to Base for Free!
-
-For our existing token holders, we've set up a seamless and **free** one-way bridge to move your tokens to Base.
-
-1.  **Simply send your tokens** to the official burn address:
-    \`0x11D79aE9a0F8a8f9Fcf5BE71e403ed203EC2394d\`
-
-2.  **What happens next?** Your tokens sent to this address will be automatically burned on their original chain and re-minted 1:1 for you on the Base network. Your new tokens will appear in the same wallet address on Base.
-
-### What's Next?
-
-The Uniswap liquidity pool will go live shortly after we finalize the deployment. We'll announce the exact time across all our social media channels, so make sure you're following us!
-
-This is a huge step for DeHub, and we couldn't have done it without your incredible support.
-
-Let's build the future, on Base.
-
-The DeHub Team`,
-  publishedAt: '2024-05-09T12:00:00.000Z',
-  readingTime: 2,
-  tags: ['Base', 'DeFi', 'Uniswap', 'Bridge'],
-  featured: false,
-  bannerImage: '/lovable-uploads/eeb2e5c9-2347-4865-876e-31f38fe4412a.png',
-  bannerImageAlt: 'DeHub token on Base network announcement',
-  seoTitle: 'DeHub is Coming to Base Network via Uniswap!',
-  seoDescription: 'Big news! DeHub is deploying on Base network soon. Find out about the new contract address and how to bridge your tokens for free.'
-};
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const { toast } = useToast();
-  const post = slug === newPostData.slug ? newPostData : (slug ? getPostBySlug(slug) : null);
+  const post = slug ? getPostBySlug(slug) : null;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -159,8 +108,6 @@ Gambling Awareness Helpline
       ? 'July 11, 2022'
       : post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost'
       ? 'July 23, 2024'
-      : post.title === 'Base pool going live soon!'
-      ? 'May 9, 2024'
       : formatDate(post.publishedAt);
 
   return (
