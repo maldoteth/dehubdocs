@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
@@ -59,8 +58,6 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const displayDate =
     post.title === 'Dream Big: The $1M Home Crypto Raffle by DeHub'
       ? 'July 11, 2022'
-      : post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost'
-      ? 'July 23, 2024'
       : formatDate(post.publishedAt);
 
   const isRafflePost = post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022';

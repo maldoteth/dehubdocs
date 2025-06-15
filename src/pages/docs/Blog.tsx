@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
@@ -34,7 +33,8 @@ const Blog = () => {
   
   const allPosts = useMemo(() => {
     const combinedPosts = [...originalPosts, ...newPosts];
-    const uniquePosts = Array.from(new Map(combinedPosts.map(post => [post.id, post])).values());
+    // Deduplicate by title to remove the duplicate post
+    const uniquePosts = Array.from(new Map(combinedPosts.map(post => [post.title, post])).values());
     
     const updatedPosts = uniquePosts.map(post => {
       if (post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
@@ -53,7 +53,8 @@ const Blog = () => {
     const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && p.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback');
     const newFeatured = newPosts.filter(p => p.featured);
     const combined = [...newFeatured, ...oldFeatured];
-    const uniquePosts = Array.from(new Map(combined.map(post => [post.id, post])).values());
+    // Deduplicate by title to remove the duplicate post
+    const uniquePosts = Array.from(new Map(combined.map(post => [post.title, post])).values());
     
     const updatedPosts = uniquePosts.map(post => {
       if (post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost') {

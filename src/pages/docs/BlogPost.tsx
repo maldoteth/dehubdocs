@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -79,8 +78,6 @@ const BlogPost = () => {
   const displayDate =
     post.title === 'Dream Big: The $1M Home Crypto Raffle by DeHub'
       ? 'July 11, 2022'
-      : post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost'
-      ? 'October 28, 2024'
       : formatDate(post.publishedAt);
   
   const bannerImage = isRafflePost ? raffleBanner : post.bannerImage;
