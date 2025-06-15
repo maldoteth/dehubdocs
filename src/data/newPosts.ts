@@ -1,6 +1,7 @@
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
+  'Fueling Growth: $1M Raised for Fan.site (BJ Fork)',
   'Worldwide Creators: Partnerships Spanning 15 Countries',
   'Leveling Up: Major App Upgrade Earns 95% Positive Feedback',
   'Smarter Liquidity: Automated Liquidity Provision on DEXs',
@@ -286,13 +287,13 @@ const publicBetaDappReportPost: BlogPostType = {
     </ul>
 
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">User Acquisition &amp; Growth</h3>
-    <p class="mb-4 text-royal-blue/80">We appreciate seeing the market suddenly bounce while we’re finalising our build prior to our upcoming marketing campaigns may have been frustrating for some, and we emphasise with everyone’s economic timescales.</p>
-    <p class="mb-4 text-royal-blue/80">We work to our own timelines and stick to our plan regardless of market conditions. Up or down. That being said, this d’app is nearly ready to aggressively promote and our marketing strategy will be like nothing you’ve witnessed before…</p>
-    <p class="mb-4 text-royal-blue/80">Our main d’app utility is everyone else’s marketing strategy. Let that sink in for a while and ponder on the potential with us.</p>
-    <p class="mb-4 text-royal-blue/80">We’re one of the very few streaming apps in the entire space, with a now fully functioning and feature packed product that quite frankly puts industry leaders to shame, let alone web 3 competitors.</p>
-    <p class="mb-4 text-royal-blue/80">How many of you would buy a token or use an app because some shill on the internet told you it was the next best thing? Not many, these days.</p>
-    <p class="mb-4 text-royal-blue/80">Now, how many of you would buy a token or use an app because your favourite influencer was now making content on that platform? Drastically more.</p>
-    <p class="mb-4 text-royal-blue/80">Once this flywheel spins, it won’t stop, and we’re more confident than ever now we’ve seen our final core d’app working fully out in the wild.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We appreciate seeing the market suddenly bounce while we’re finalising our build prior to our upcoming marketing campaigns may have been frustrating for some, and we emphasise with everyone’s economic timescales.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We work to our own timelines and stick to our plan regardless of market conditions. Up or down. That being said, this d’app is nearly ready to aggressively promote and our marketing strategy will be like nothing you’ve witnessed before…</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Our main d’app utility is everyone else’s marketing strategy. Let that sink in for a while and ponder on the potential with us.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We’re one of the very few streaming apps in the entire space, with a now fully functioning and feature packed product that quite frankly puts industry leaders to shame, let alone web 3 competitors.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">How many of you would buy a token or use an app because some shill on the internet told you it was the next best thing? Not many, these days.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Now, how many of you would buy a token or use an app because your favourite influencer was now making content on that platform? Drastically more.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Once this flywheel spins, it won’t stop, and we’re more confident than ever now we’ve seen our final core d’app working fully out in the wild.</p>
   `,
   bannerImage: '/lovable-uploads/c799219d-e9da-43e4-938f-54cfbc3a242f.png',
   bannerImageAlt: 'DeHub Beta Overview banner',
