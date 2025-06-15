@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -376,6 +377,50 @@ This AMA covered a lot of ground, and we’re excited for what’s to come. Stay
 
 const getAllPostsWithOverrides = (): BlogPost[] => {
   const allPosts = [...blogPosts];
+
+  const adTechPost: BlogPost = {
+      id: 'feature-spotlight-ad-tech',
+      title: 'Feature Spotlight: Ad Tech',
+      slug: 'feature-spotlight-ad-tech',
+      excerpt: 'Taking digital advertising to new horizons.',
+      content: `### POVR: Proof of View & Rank
+Our ad-tech solution is unlike anything else seen across legacy or blockchain markets, and serves a unique purpose within our own app.
+
+“Proof of View” is one dimensional and beyond identification, adds little benefit for users or holders.
+
+What if you could prove viewers were real without wasting block space or gas? What if you could leverage each wallet’s financial data, not just for saving costs, but also to maximise ROI for your campaigns? Don’t just save more money, make more too!
+
+Our software, with patents pending, does this via an unprecedented 13-tier ranking system combined with our verification badges, which were highlighted in this previous feature spotlight.
+
+We are calling it “proof-of-view-and-rank” or “POVR”.
+
+
+### How it works
+The higher your total holdings, the higher-ranking badge you unlock, the more you earn from ads, the more companies pay to advertise to you.
+
+This way benefits the whole ecosystem and not just a single party. Content creators, consumers, holders & companies advertising on the platform all reap more rewards.
+
+Financial data is the most lucrative, and ours is uniquely combined into one system advertisers can use to target audiences. This isn’t even something you can do off-chain, as bank statements are private whereas the blockchain is public.
+
+Being able to target whales and big spenders while also tailoring special deals or discounts for smaller fish in the sea will re-shape how advertising works across the globe. Why wouldn’t anyone want this?
+
+
+### How does this prevent fraud?
+Botting becomes less profitable while activity is trackable on-chain, easily connecting bad actors & eventually curating the entire user base. Advertisers target higher ranks, leaving minimal extractable value at the bottom layer, where any remaining fraud remains. On top of that, our decentralised moderation allows more efficient illicit activity detection and prevention.
+
+For more information on our ad revenue sharing, refer to this thread and our whitepaper below. Also, be sure to follow us for all the latest news on app features and updates.`,
+      bannerImage: '/lovable-uploads/a6f93bd4-c3f4-4d91-abd9-ebdd88e3b884.png',
+      bannerImageAlt: 'An abstract image representing advertising technology',
+      author: {
+        name: 'DeHub Team',
+      },
+      publishedAt: '2023-09-30T10:00:00.000Z',
+      tags: ['Ad Tech', 'POVR', 'Advertising', 'Feature Spotlight'],
+      readingTime: 2,
+      featured: true,
+      status: 'published',
+  };
+  allPosts.unshift(adTechPost);
 
   const newPost: BlogPost = {
     id: 'mvp-app-released-q1-2021',
