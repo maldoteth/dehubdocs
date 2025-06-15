@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
 import { getPostBySlug, formatDate } from '@/utils/blogUtils';
@@ -11,6 +11,10 @@ const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const { toast } = useToast();
   const post = slug ? getPostBySlug(slug) : null;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   if (!post) {
     return (
