@@ -61,6 +61,9 @@ const Blog = () => {
       if (post.title.includes('Q1') && post.title.includes('Overview')) {
         return { ...post, featured: false };
       }
+      if (post.title === 'MVP App Released & Listed on Google Play Store') {
+        return { ...post, featured: false };
+      }
       return post;
     });
 
@@ -93,7 +96,8 @@ const Blog = () => {
     return updatedPosts
       .filter(post => 
         post.title !== 'Feature Spotlight: Ad Tech' && 
-        !(post.title.includes('Q1') && post.title.includes('Overview'))
+        !(post.title.includes('Q1') && post.title.includes('Overview')) &&
+        post.title !== 'MVP App Released & Listed on Google Play Store'
       )
       .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, []);
