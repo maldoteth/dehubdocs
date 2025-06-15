@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
@@ -47,6 +48,10 @@ const generateExcerpt = (content: string, fallback: string) => {
 const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const excerpt = generateExcerpt(post.content, post.excerpt);
 
+  const displayDate = post.title === "Dream Big: The $1M Home Crypto Raffle by DeHub"
+    ? "July 11, 2022"
+    : formatDate(post.publishedAt);
+
   return (
     <article className={`group bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg overflow-hidden ${featured ? 'lg:col-span-2' : ''}`}>
       <Link to={`/docs/blog/${post.slug}`} className="block">
@@ -67,7 +72,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
           <div className="flex flex-wrap items-center gap-4 text-sm text-royal-blue/70 mb-3">
             <div className="flex items-center gap-1">
               <Calendar className="w-4 h-4" />
-              <span>{formatDate(post.publishedAt)}</span>
+              <span>{displayDate}</span>
             </div>
             <div className="flex items-center gap-1">
               <Clock className="w-4 h-4" />

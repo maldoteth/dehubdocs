@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
@@ -64,6 +63,10 @@ const BlogPost = () => {
     }
   };
 
+  const displayDate = post.title === "Dream Big: The $1M Home Crypto Raffle by DeHub"
+    ? "July 11, 2022"
+    : formatDate(post.publishedAt);
+
   return (
     <>
       <SEO
@@ -100,7 +103,7 @@ const BlogPost = () => {
             <div className="flex flex-wrap items-center gap-6 text-royal-blue/70 mb-6">
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                <span className="font-exo">{formatDate(post.publishedAt)}</span>
+                <span className="font-exo">{displayDate}</span>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
