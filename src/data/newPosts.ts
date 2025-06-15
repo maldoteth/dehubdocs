@@ -28,7 +28,7 @@ const basePoolPost: BlogPostType = {
 
     <p class="mt-8 font-semibold text-royal-blue">This is just the beginning. Stay tuned for the official announcement when the Uniswap pool goes live. We're incredibly excited for this next chapter and couldn't have done it without our amazing community!</p>
   `,
-  bannerImage: '/lovable-uploads/2ad39b99-84df-44cf-9521-ddac621b4874.png',
+  bannerImage: '/lovable-uploads/068250b6-b4b6-42fc-8633-f686a94990c7.png',
   bannerImageAlt: 'DeHub launching on Base network announcement banner',
   author: {
     name: 'DeHub Team',
