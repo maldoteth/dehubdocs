@@ -315,7 +315,8 @@ const getAllPostsWithOverrides = (): BlogPost[] => {
   const postsToExcludeByTitle = [
     "Safe Spaces: DeHub's Initial Content Moderation Framework - A DeHub Milestone from Q1 2021",
     "The Genesis: DeHub's V1 Token Launch - A DeHub Milestone from Q2 2021",
-    "A Voice for All: DeHub's Basic Governance Voting Arrives - A DeHub Milestone from Q2 2021"
+    "A Voice for All: DeHub's Basic Governance Voting Arrives - A DeHub Milestone from Q2 2021",
+    "Growing Together: DeHub's Early Adopter Community Surpasses 2,000 - A DeHub Milestone from Q2 2021"
   ];
   return blogPosts
     .filter(post => !postsToExcludeByTitle.includes(post.title))
