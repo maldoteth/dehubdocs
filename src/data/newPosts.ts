@@ -36,7 +36,7 @@ const basePoolPost: BlogPostType = {
   publishedAt: '2024-05-09T12:00:00.000Z',
   tags: ['Announcement', 'Base', 'DeFi', 'Uniswap'],
   readingTime: 2,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'DeHub is Launching on Base! Uniswap Pool Going Live Soon',
   seoDescription: 'DeHub is expanding to the Base network! Get ready for our Uniswap pool launch. Learn about the new contract and how to bridge your tokens for free.',
