@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -291,6 +290,7 @@ We’ve been building and now we enter 2023 prepared to scale. We’ve laid the 
 
 Bring on 2023.`;
   } else if (post.slug === 'early-traction-dehubs-beta-app-hits-2000-daus---a-dehub-milestone-from-q1-2021') {
+    newPost.title = post.title.replace('Beta App', 'Alpha App');
     newPost.publishedAt = '2021-04-20T10:00:00.000Z';
   } else if (post.title === "Diving In: First DeHub Liquidity Pools on Pancake Swap - A DeHub Milestone from Q2 2021") {
     newPost.publishedAt = '2021-05-30T10:00:00.000Z';
