@@ -52,12 +52,15 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
     ? "July 11, 2022"
     : formatDate(post.publishedAt);
 
+  const isRafflePost = post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022';
+  const raffleBanner = '/lovable-uploads/729af303-1246-44ed-a598-005275581b6c.png';
+
   return (
     <article className={`group bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg overflow-hidden ${featured ? 'lg:col-span-2' : ''}`}>
       <Link to={`/docs/blog/${post.slug}`} className="block">
         <div className="relative">
           <img 
-            src={post.bannerImage} 
+            src={isRafflePost ? raffleBanner : post.bannerImage} 
             alt={post.bannerImageAlt}
             className={`w-full object-cover transition-transform duration-200 group-hover:scale-105 ${featured ? 'h-48' : 'h-40'}`}
           />

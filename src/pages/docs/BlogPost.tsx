@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
@@ -31,6 +32,45 @@ const BlogPost = () => {
       </div>
     );
   }
+
+  const isRafflePost = post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022';
+
+  const raffleBanner = '/lovable-uploads/729af303-1246-44ed-a598-005275581b6c.png';
+  const raffleContent = `6 Bed 3 Bath Home, Waterlooville.
+A rare opportunity to own the only 6-bedroom home currently for sale in an affluent and highly sought after South Hampshire village. Enjoy easy access to the A3, local amenities and a superb school catchment area. The ground floor offers a cloakroom, WC, kitchen/breakfast room, dining room, conservatory & large garden with fruit-bearing grape vines and an external bedroom. It further benefits from 5 bedrooms, an en-suite & family bathroom to the 1st floor. There is a double driveway & private access to large public fields. There is nothing close to it on the market for miles, so do not miss out on your chance to own it for just $11.
+
+### Specifications
+
+- Lounge 20' 1" x 12' 6" ( 6.12m x 3.81m )
+- Dining Room 32' 1" x 16' 20" ( 8.58m x 5.28m )
+- Kitchen / Breakfast Room 17' 9" x 8' 10" ( 5.41m x 2.69m )
+- Water Closet / WC 5' x 3.5' ( 1.52m x 1.06m )
+- Bedroom 1 14' 5" x 12' 6" ( 4.39m x 3.81m )
+- En-Suite Bathroom 10' x 7' ( 3.05m x 2.13m )
+- Bedroom 2 13' 1" x 12' 6" ( 3.99m x 3.81m )
+- Bedroom 3 15' 1" x 10' 2" ( 4.60m x 3.10m )
+- Bedroom 4 13' x 9' 9" ( 3.80m x 3.10m )
+- Bedroom 5+6 13' 1" x 9' 5" ( 3.99m x 2.87m )
+- Family Bathroom 10' x 5' 9" ( 3.05m x 1.76m )
+
+### Terms
+
+Raffles conducted on public blockchains are verifiably random. Winners can receive the prize or a cash equivalent paid out in cryptocurrency stablecoins. Raffles are conducted in compliance with regulations and best practices set out by the [UK gambling commission](https://www.gamblingcommission.gov.uk/). Blockchain raffles are the future of high value prize draws due to their property of guaranteed immutability.
+
+**Raffle Draw Date & Time:** Live stream draw on selling out.
+
+**Price Per Raffle Ticket:** $11.00 USDT
+
+**Number of tickets:** 100,000. All tickets are priced equally. No discounts for buying bundles of tickets.
+
+**Registered Raffle Promoters:** DeLabs LTD, Office 4, 219 Kensington High Street, Kensington, London, W8 6BD
+
+**Property Owners:** DeLabs LTD
+
+### Technical Support
+
+Gambling Awareness Helpline
+`;
 
   const shareUrl = `${window.location.origin}/docs/blog/${post.slug}`;
   
@@ -72,7 +112,7 @@ const BlogPost = () => {
       <SEO
         title={post.seoTitle || post.title}
         description={post.seoDescription || post.excerpt}
-        image={post.bannerImage}
+        image={isRafflePost ? raffleBanner : post.bannerImage}
         url={`/docs/blog/${post.slug}`}
         type="article"
         publishedTime={post.publishedAt}
@@ -159,7 +199,7 @@ const BlogPost = () => {
           {/* Banner Image */}
           <div className="mb-8 rounded-xl overflow-hidden">
             <OptimizedImage 
-              src={post.bannerImage} 
+              src={isRafflePost ? raffleBanner : post.bannerImage} 
               alt={post.bannerImageAlt}
               className="w-full h-64 lg:h-96 object-cover"
               loading="eager"
@@ -168,7 +208,7 @@ const BlogPost = () => {
 
           {/* Article Content */}
           <div className="mb-12">
-            <BlogContent content={post.content} />
+            <BlogContent content={isRafflePost ? raffleContent : post.content} />
           </div>
 
           {/* Article Footer */}
