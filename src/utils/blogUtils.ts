@@ -362,8 +362,8 @@ The journey is just beginning. Our MVP is a launchpad for a host of revolutionar
 We invite you to download the app, explore the features, and share your feedback. You are the pioneers of this new era, and your insights are crucial as we continue to build and innovate.
 
 Thank you for being part of our community. The future is bright, and it is being built on DeHub.`,
-    bannerImage: '/lovable-uploads/eeb2e5c9-2347-4865-876e-31f38fe4412a.png',
-    bannerImageAlt: 'DeHub App MVP on Google Play Store',
+    bannerImage: '/lovable-uploads/39a662e9-b4da-459c-a041-b30cc05c007c.png',
+    bannerImageAlt: 'FTV - Futurov app on Google Play Store',
     author: {
       name: 'DeHub Team',
     },

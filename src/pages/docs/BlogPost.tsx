@@ -6,6 +6,7 @@ import { getPostBySlug, formatDate } from '@/utils/blogUtils';
 import BlogContent from '@/components/blog/BlogContent';
 import { useToast } from '@/hooks/use-toast';
 import SEO from '@/components/SEO';
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -154,10 +155,11 @@ const BlogPost = () => {
 
           {/* Banner Image */}
           <div className="mb-8 rounded-xl overflow-hidden">
-            <img 
+            <OptimizedImage 
               src={post.bannerImage} 
               alt={post.bannerImageAlt}
               className="w-full h-64 lg:h-96 object-cover"
+              loading="eager"
             />
           </div>
 
