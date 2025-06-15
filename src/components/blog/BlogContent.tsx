@@ -65,19 +65,16 @@ const renderRegularContent = (text: string) => {
   const processLineForHtml = (lineContent: string) => {
     return lineContent.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
   };
-
   const blocks = text.split('\n\n');
-
   return blocks.map((block, index) => {
     block = block.trim();
     if (!block) return null;
-
     const lines = block.split('\n');
     const firstLine = lines[0].trim();
 
     // Headers
     if (firstLine.startsWith('# ')) {
-      return <h1 key={index} className="text-3xl font-bold text-royal-blue mb-6 mt-8 font-exo">{firstLine.slice(2)}</h1>;
+      return;
     }
     if (firstLine.startsWith('## ')) {
       return null;
@@ -101,31 +98,27 @@ const renderRegularContent = (text: string) => {
         return null;
       }
     }
-    
+
     // Unordered List
     if (lines.every(line => line.trim().startsWith('- ') || line.trim().startsWith('• '))) {
-      return (
-        <ul key={index} className="list-disc list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+      return <ul key={index} className="list-disc list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
           {lines.map((item, i) => {
-            const content = item.trim().slice(2);
-            const processedContent = processLineForHtml(content);
-            return <li key={i} dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
-          })}
-        </ul>
-      );
+          const content = item.trim().slice(2);
+          const processedContent = processLineForHtml(content);
+          return <li key={i} dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
+        })}
+        </ul>;
     }
-    
+
     // Ordered List
     if (lines.every(line => /^\d+\./.test(line.trim()))) {
-       return (
-        <ol key={index} className="list-decimal list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+      return <ol key={index} className="list-decimal list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
           {lines.map((item, i) => {
-            const content = item.trim().replace(/^\d+\.\s/, '');
-            const processedContent = processLineForHtml(content);
-            return <li key={i} dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
-          })}
-        </ol>
-      );
+          const content = item.trim().replace(/^\d+\.\s/, '');
+          const processedContent = processLineForHtml(content);
+          return <li key={i} dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
+        })}
+        </ol>;
     }
 
     // Default to paragraph
