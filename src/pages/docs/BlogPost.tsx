@@ -9,7 +9,6 @@ import { BlogPostBody } from '@/components/blog/BlogPostBody';
 import { BlogPostFooter } from '@/components/blog/BlogPostFooter';
 import { raffleContent } from '@/data/raffleContent';
 import { getNewPostBySlug } from '@/data/newPosts';
-import { BlogBreadcrumb } from '@/components/blog/BlogBreadcrumb';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -20,7 +19,7 @@ const BlogPost = () => {
     post = null;
   } else if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
     post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
-  } else if (post && post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost') {
+  } else if (post && post.title === 'Faster and Sleeker: major app upgrade reveals UI Overhaul and 200% Backend Speed Boost') {
     post = {
       ...post,
       title: 'Faster and Sleeker: major app upgrade reveals UI Overhaul and 200% Backend Speed Boost',
@@ -102,7 +101,6 @@ const BlogPost = () => {
         tags={post.tags}
       />
       <div className="max-w-4xl mx-auto">
-        <BlogBreadcrumb postTitle={post.title} />
 
         <article>
           <BlogPostHeader post={post} displayDate={displayDate} shareUrl={shareUrl} />
