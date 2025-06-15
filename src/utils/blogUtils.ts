@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -509,6 +510,68 @@ This AMA covered a lot of ground, and we’re excited for what’s to come. Stay
 
 const getAllPostsWithOverrides = (): BlogPost[] => {
   const allPosts = [...blogPosts].filter(p => p.slug !== 'feature-spotlight-ad-tech');
+
+  const devUpdatePost: BlogPost = {
+    id: 'dehub-development-update-dapp-dec-2022',
+    title: 'DeHub Development Update & D’App',
+    slug: 'dehub-development-update-dapp-dec-2022',
+    excerpt: 'Streaming d’app upgrade scheduled for private beta this Friday the 16th, further major developments pipelined for imminent release, and $DHB token listing date proposed for early January.',
+    content: `### TLDR;
+1. Streaming d’app upgrade scheduled for private beta this Friday the 16th
+2. Further major developments pipelined for imminent release
+3. $DHB token listing date proposed for early January
+
+### Token Listing
+
+A new year feels like a perfect time for us to start the next chapter in our story, and we are considering setting a date very early next month for the official listing. We are ready to go, nothing is stopping us now but security and safety measures. We feel much of the uncertainty regarding the recent revelations on key CEXs, lenders & stable-coin issuers may clear soon or at least provide concluding factors.
+
+If not, we do have an alternative plan for the token we can execute and are also searching for a DEX with an order book system, not an automated market maker (AMM) given previously discussed risks. Currently, we’ve only found one on Cosmos and there doesn’t seem to be anyone building it on BNB. If there was, we’d list immediately. We will also be converting our pool on Gate to USD instead of USDT, as it’s backed by BUSD and USDC which are both issued by highly regulated and on-shore entities.
+
+Remember, we need the token to be trading and in users hands for our d’apps to have any real utility. This is more evident with every milestone development, so trust that we want this to commence as soon as logically possible. Therefore, we invite debates and ask everyone to share their opinion in the community regardless, prior to another poll going out before the winter break.
+
+![A graphic for the update](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80)
+
+*A graphic we made up before listing was delayed we’ve been dying to use*
+
+### Stream
+
+This major milestone upgrade is scheduled for private beta testing this Friday, the 16th. If anyone is free this weekend and ready to test, create and feedback to the team, email tech@dehub.net for an access code upon launch. This is our most exciting development so far and brings to fruition years of hard work, dedication and technical innovations while taking us back to where it all started, only far better in every measurable aspect. For more, refer to the dedicated section of the whitepaper.
+
+### Game
+
+We can see hundreds of you are enjoying the new release, Gas Guzzler, with clicks on our arcade growing steadily every week now since launch, currently averaging 10,000 per month. The game release will be announced officially once our new token is out and trading as it comes with full play and win to earn.
+
+We also highly anticipating the launch of Street Slayer, our biggest game yet that was built on-and-off for over a year now. It is currently scheduled for a mid-January launch and featuring officially licensed leading MMA fighters.
+
+This is still very early days for the arcade, and we do have individual apps for each game launching for all devices, along with an improved interface for gamers linking directly to our streaming app.
+
+### Shop
+
+The secondary sales marketplace is also set to launch imminently, likely after Christmas now as we have a few developments reaching another milestone currently ready to roll out. Our marketplace is expecting further partners and product releases, while we’ve also commenced working on a Shopify and WooCommerce plug in.
+
+### Earn
+
+Staking is set to commence after token distribution and listing. We will maintain the 10% for the first year as previously highlighted, after which rewards will depend entirely on protocol revenue.
+
+With our streaming d’app release, we do have a number of new ways users can earn, and we will be utilising our newly developed bounty / watch to earn systems to grow users. Expect large creators to come in.
+
+### Other Keynotes
+
+During our sale, new community growth tool release and documentary trailer, we came under a strong bot attack on all channels, so take no notice of fluctuating social numbers. It’s clear what we’re building is designed to be used by the millions and is scalable endlessly, with everything custom-made from the ground up.
+
+As we rapidly enter the middle age of our development stages, we will no longer be able to say we are a new project in our first years. We’re growing, maturing and building years of bonds above all else. Now we are at the end of this incredibly enlightening year and celebrations edge closer, it’s a notorious time of year for extreme contrasts of happiness and sadness, relative to one’s situation. Now more than ever some may need a community, support or just someone to talk to. We invite you all to reach out to someone you haven’t heard from for a while and know that our DMs are open to anyone needing any of the above.`,
+    bannerImage: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80',
+    bannerImageAlt: 'DeHub Development Update Graphic',
+    author: {
+      name: 'DeHub Team',
+    },
+    publishedAt: '2022-12-12T10:00:00.000Z',
+    tags: ['Development', 'Update', '2022', 'Roadmap'],
+    readingTime: 6,
+    featured: false,
+    status: 'published',
+  };
+  allPosts.unshift(devUpdatePost);
 
   const coinbasePost: BlogPost = {
     id: 'dhb-tradable-on-coinbase-soon',

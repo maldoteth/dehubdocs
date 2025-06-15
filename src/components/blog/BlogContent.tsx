@@ -1,4 +1,3 @@
-
 import React from 'react';
 import DOMPurify from 'dompurify';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -99,7 +98,7 @@ const renderRegularContent = (text: string) => {
         if (style === 'avatar') {
           return <img key={index} src={src} alt={alt} className="w-24 h-24 rounded-full object-cover my-6 mx-auto block shadow-md" />;
         }
-        return null;
+        return <img key={index} src={src} alt={alt} className="w-full rounded-lg object-cover my-6 shadow-md" />;
       }
     }
 
