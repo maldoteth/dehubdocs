@@ -310,7 +310,12 @@ Bring on 2023.`;
 };
 
 const getAllPostsWithOverrides = (): BlogPost[] => {
-  return blogPosts.map(applyPostOverrides);
+  const postsToExcludeByTitle = [
+    "Safe Spaces: DeHub's Initial Content Moderation Framework - A DeHub Milestone from Q1 2021"
+  ];
+  return blogPosts
+    .filter(post => !postsToExcludeByTitle.includes(post.title))
+    .map(applyPostOverrides);
 };
 
 // Utility functions for blog operations
