@@ -113,11 +113,11 @@ This is more than just a content creation gig. It's a partnership. As a DeHub Am
 - **Official Recognition:** Be featured as an official ambassador, boosting your own profile in the Web3 space.
 - **Shape the Future:** Your feedback and content will directly contribute to the growth and direction of DeHub.
 
-### How to Apply
+### Applications Closed
 
-Ready to join the ranks of our Community Champions? The application process is simple. We'll be sharing a link to the application form soon across our official channels.
+Applications for our first cohort of ambassadors are now closed. Thank you to everyone who applied! We were overwhelmed by the quality and passion of the applications.
 
-Spaces are limited to 50 ambassadors for this first wave, so get ready to showcase your creativity. We can't wait to see what you'll create!`;
+Stay tuned for announcements about our selected ambassadors and future opportunities to get involved.`;
   } else if (post.slug === 'building-the-dream-dehubs-core-team-assembled---a-dehub-milestone-from-q1-2021') {
     newPost.content = `DeHub's core team is officially assembled, bringing together a powerhouse of expertise from the worlds of tech, gaming, and social media. This marks a pivotal moment in our journey, laying the foundation for the innovation to come. With a shared vision and diverse skill sets, we are poised to revolutionize the digital landscape. The dream is now in the hands of a team built to make it a reality.
 
