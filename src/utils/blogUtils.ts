@@ -320,7 +320,7 @@ To ensure a seamless transition for our community, we took a snapshot of all hol
 
 This incident, while challenging, has made our platform stronger and our commitment to security even more resolute. We are grateful for our community's patience and support during this process.`;
   } else if (post.title.startsWith("Reliability Perfected: 99.99% Uptime for DeHub Streaming")) {
-    newPost.publishedAt = '2025-03-10T10:00:00.000Z';
+    newPost.publishedAt = '2025-03-30T10:00:00.000Z';
   } else if (post.title.startsWith("Strategic Shift: Discontinuing Ethereum Mainnet Support for DHB")) {
     newPost.publishedAt = '2025-02-01T10:00:00.000Z';
   } else if (post.title.startsWith("Connect and Converse: Advanced Messaging System with Paid/Free DMs")) {
