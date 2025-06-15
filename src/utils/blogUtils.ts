@@ -560,8 +560,8 @@ With our streaming d’app release, we do have a number of new ways users can ea
 During our sale, new community growth tool release and documentary trailer, we came under a strong bot attack on all channels, so take no notice of fluctuating social numbers. It’s clear what we’re building is designed to be used by the millions and is scalable endlessly, with everything custom-made from the ground up.
 
 As we rapidly enter the middle age of our development stages, we will no longer be able to say we are a new project in our first years. We’re growing, maturing and building years of bonds above all else. Now we are at the end of this incredibly enlightening year and celebrations edge closer, it’s a notorious time of year for extreme contrasts of happiness and sadness, relative to one’s situation. Now more than ever some may need a community, support or just someone to talk to. We invite you all to reach out to someone you haven’t heard from for a while and know that our DMs are open to anyone needing any of the above.`,
-    bannerImage: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80',
-    bannerImageAlt: 'DeHub Development Update Graphic',
+    bannerImage: '/lovable-uploads/09d36738-4fac-4bec-93ca-12b75da186ae.png',
+    bannerImageAlt: 'DeHub and Binance logos with lightning',
     author: {
       name: 'DeHub Team',
     },
