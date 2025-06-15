@@ -319,6 +319,8 @@ The issue was identified through our continuous internal audits. We paused all i
 To ensure a seamless transition for our community, we took a snapshot of all holder balances prior to deploying the new contract. **Every single holder was then automatically airdropped their tokens on a 1:1 basis. Nobody was left behind.**
 
 This incident, while challenging, has made our platform stronger and our commitment to security even more resolute. We are grateful for our community's patience and support during this process.`;
+  } else if (post.title === "The Hype is Real: Last Chad Standing Teaser Hits 1M+ Views - A DeHub Milestone from Q4 2024") {
+    newPost.publishedAt = '2024-11-05T10:00:00.000Z';
   } else if (post.title.startsWith("Reliability Perfected: 99.99% Uptime for DeHub Streaming")) {
     newPost.publishedAt = '2025-03-30T10:00:00.000Z';
   } else if (post.title.startsWith("Strategic Shift: Discontinuing Ethereum Mainnet Support for DHB")) {
