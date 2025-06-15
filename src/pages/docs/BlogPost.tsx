@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -24,6 +25,8 @@ const BlogPost = () => {
       ...post,
       title: 'Faster and Sleeker: major app upgrade reveals UI Overhaul and 200% Backend Speed Boost',
       publishedAt: '2024-10-28T12:00:00.000Z',
+      bannerImage: '/lovable-uploads/e9632af0-07c2-4ca8-9b82-fc255191358b.png',
+      bannerImageAlt: 'Screenshot of the new DeHub application UI',
       content: `### Introducing the new DeHub App:
 
 #### ✅ New Features Shipped
