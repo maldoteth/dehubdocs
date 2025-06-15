@@ -233,13 +233,89 @@ const crusadersSponsorshipPost: BlogPostType = {
   seoDescription: "DeHub is thrilled to announce a new multi-year sponsorship deal with The North Wales Crusaders, the only professional rugby league club in Wales.",
 };
 
+const publicBetaDappReportPost: BlogPostType = {
+  id: 'public-beta-dapp-report',
+  slug: 'public-beta-dapp-report',
+  title: 'Public Beta D’app Report',
+  excerpt: 'An overview of the beta launch for our main d’app. Our biggest and final core d’app launch now sets us up to focus on scaling users and growth.',
+  content: `
+    <h2 class="text-2xl font-bold mb-4 font-exo">Our Vision for the DeHub D’app</h2>
+    <p class="mb-4 text-lg text-royal-blue/80">DeHub at the core is, and always was, a streaming app with our own marketplace and games complimenting the main hub. When going on dehub.net in future, you will be met with the streaming app.</p>
+    <p class="mb-4 text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation’s ideals.</p>
+    <p class="mb-4 text-royal-blue/80">We’ve updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
+    <p class="mb-4 text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
+
+    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Public Testing Review</h3>
+    <p class="mb-4 text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
+    <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
+      <li><strong>PPV:</strong> create your own PPV in DHB, USDC or USDT (soon to be every token).</li>
+      <li><strong>W2E / Bounty post:</strong> Create your own watch-to-earn in DHB, USDC or USDT (soon to be every token) and reward your existing community or build a new one with a turbo-boost.</li>
+      <li><strong>Gated/Locked Content:</strong> Upload a post locked behind DHB, USDC or USDT (soon to be any token) holdings, so only holders of a certain token can access and engage or chat on the post.</li>
+    </ul>
+
+    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Upcoming Features</h3>
+    <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
+      <li><strong>Community live chat:</strong> you can all test it out now with limited functionality on the explore feed. Full functionality expected this week.</li>
+      <li><strong>Leaderboards:</strong> currently live reading holdings &amp; staked. Will also have a leaderboard for tips given, tips received, likes, followers and views for alpha.</li>
+      <li><strong>Explore feed:</strong> Featured posts, ad space and endless scrolling features and short-style scrolling will be live on alpha. Users will have the option to select video length to scroll and not be limited to 7 seconds.</li>
+      <li><strong>Profile:</strong> Ability to follow each other, set to go live this week. You will be able to subscribe for a monthly fee or DM each other in alpha too.</li>
+      <li><strong>Minting:</strong> Option to mint on Polygon and Ethereum set to go live this week and the recommended option will be Polygon for the lowest fees. We aim to integrate all EVM compatible chains and beyond soon too.</li>
+      <li><strong>Editing:</strong> Option to remove videos and burn NFT including metadata set to go live this week. As NFTs are minted on chain, you can’t edit videos after, however we added a warning on upload for those unaware.</li>
+      <li><strong>Data + Analytics:</strong> Video analytics going live on alpha, so you can extract all your users’ data, track your viewer demographic and stats.</li>
+      <li><strong>Monetisation:</strong> Every NFT you have minted so far, or will mint in future, is what accrues the ad revenue for each upload. Monetisation is set to go live on Alpha.</li>
+      <li><strong>Live Streaming:</strong> Our live stream function is set to go live on Alpha, which includes interactive tip animations and text-to-voice generation, as highlighted in our whitepaper.</li>
+      <li><strong>Buy and sell direct:</strong> Our fiat gateway will be live on Alpha, allowing non crypto natives to buy and use tokens without any wallet knowledge. Bundle packages can also be reversed to spend DHB.</li>
+    </ul>
+
+    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Upcoming Enhancements</h3>
+    <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
+      <li>Mobile web UIX enhancements in line with upcoming IOS and Android APP. Currently advised to use Desktop for full experience, although mobile web fully functional too.</li>
+      <li>Magic wallet integration for non crypto natives, allowing web2 access and automated wallet integration.</li>
+      <li>Labels for custom uploads are being minimised removing the bulk of text on thumbnails and providing further clarity for users.</li>
+      <li>Stake-holdings being added to holding requirement to view uploads, this was a logic error.</li>
+      <li>Profile names will be dehub.net/USERNAME and not stream.dehub.net/WALLETADDRESS on alpha.</li>
+      <li>Option to switch chains and access profile when clicking the wallet or chain logo in the top right of the screen.</li>
+      <li>Notification centre for tips, likes and uploads from pages you are following with notification settings on.</li>
+      <li>Percentage rating on videos, so users can track moderation mining thresholds and generally gauge quality of video.</li>
+      <li>Option to change vote once (like or dislike button).</li>
+      <li>Option to mint multiple NFTs per video, offering another innovative form of fan tokens.</li>
+      <li>Option to set time limits on bounty videos to create urgency.</li>
+      <li>Tippers on videos are highlighted on each post with their comments boosted to the top.</li>
+      <li>Further utility for higher badge holders including trending and featured sections providing more exposure.</li>
+      <li>Referral system for new users. Earn 0.1–2% of all tips from referred users depending on badge.</li>
+    </ul>
+
+    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">User Acquisition &amp; Growth</h3>
+    <p class="mb-4 text-royal-blue/80">We appreciate seeing the market suddenly bounce while we’re finalising our build prior to our upcoming marketing campaigns may have been frustrating for some, and we emphasise with everyone’s economic timescales.</p>
+    <p class="mb-4 text-royal-blue/80">We work to our own timelines and stick to our plan regardless of market conditions. Up or down. That being said, this d’app is nearly ready to aggressively promote and our marketing strategy will be like nothing you’ve witnessed before…</p>
+    <p class="mb-4 text-royal-blue/80">Our main d’app utility is everyone else’s marketing strategy. Let that sink in for a while and ponder on the potential with us.</p>
+    <p class="mb-4 text-royal-blue/80">We’re one of the very few streaming apps in the entire space, with a now fully functioning and feature packed product that quite frankly puts industry leaders to shame, let alone web 3 competitors.</p>
+    <p class="mb-4 text-royal-blue/80">How many of you would buy a token or use an app because some shill on the internet told you it was the next best thing? Not many, these days.</p>
+    <p class="mb-4 text-royal-blue/80">Now, how many of you would buy a token or use an app because your favourite influencer was now making content on that platform? Drastically more.</p>
+    <p class="mb-4 text-royal-blue/80">Once this flywheel spins, it won’t stop, and we’re more confident than ever now we’ve seen our final core d’app working fully out in the wild.</p>
+  `,
+  bannerImage: '/lovable-uploads/e9632af0-07c2-4ca8-9b82-fc255191358b.png',
+  bannerImageAlt: 'DeHub d’app interface',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2023-03-25T12:00:00.000Z',
+  tags: ['DApp', 'Beta', 'Update', 'Roadmap', 'Community'],
+  readingTime: 5,
+  featured: false,
+  status: 'published',
+  seoTitle: 'Public Beta D’app Report | DeHub Update',
+  seoDescription: 'An overview of the beta launch for our main d’app. Our biggest and final core d’app launch now sets us up to focus on scaling users and growth.',
+};
+
 export const newPosts: BlogPostType[] = [
     tokenisedUploadsPost,
     awardWinningInnovationPost,
     dubaiEventPost,
     crusadersSponsorshipPost,
     dehubTakeoverPost,
-    basePoolPost
+    basePoolPost,
+    publicBetaDappReportPost
 ];
 
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
