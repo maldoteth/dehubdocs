@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
@@ -56,6 +55,9 @@ const Blog = () => {
       if (post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
         return { ...post, publishedAt: '2024-10-30T12:00:00.000Z' };
       }
+      if (post.title === 'Feature Spotlight: Ad Tech') {
+        return { ...post, featured: false };
+      }
       return post;
     });
 
@@ -85,7 +87,9 @@ const Blog = () => {
       return post;
     });
 
-    return updatedPosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    return updatedPosts
+      .filter(post => post.title !== 'Feature Spotlight: Ad Tech')
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, []);
 
   const allTags = useMemo((): BlogTag[] => {
