@@ -77,6 +77,7 @@ Stay tuned, and get ready to play. The arena awaits.`;
     newPost.bannerImage = '/lovable-uploads/443805df-744b-4ab4-80a7-ae59cafe8baa.png';
     newPost.bannerImageAlt = 'DeHub UGC Programme banner';
     newPost.publishedAt = '2025-05-10T10:00:00.000Z';
+    newPost.readingTime = 5;
     newPost.content = `## Become a DeHub Ambassador: Announcing Our UGC Programme
 
 ![DeHub UGC Programme Banner](/lovable-uploads/59b8a8cb-c9c7-412e-b51e-8f68b47d73a0.png)
