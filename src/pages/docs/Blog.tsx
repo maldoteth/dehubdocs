@@ -32,7 +32,15 @@ const Blog = () => {
   const allPosts = useMemo(() => {
     const combinedPosts = [...newPosts, ...originalPosts];
     const uniquePosts = Array.from(new Map(combinedPosts.map(post => [post.id, post])).values());
-    return uniquePosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    
+    const updatedPosts = uniquePosts.map(post => {
+      if (post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
+        return { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
+      }
+      return post;
+    });
+
+    return updatedPosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, [originalPosts]);
 
   const featuredPosts = useMemo(() => {

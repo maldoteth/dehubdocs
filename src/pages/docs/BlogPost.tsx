@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -13,7 +14,11 @@ import { BlogBreadcrumb } from '@/components/blog/BlogBreadcrumb';
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   
-  const post = slug ? getNewPostBySlug(slug) || getPostBySlug(slug) : null;
+  let post = slug ? getNewPostBySlug(slug) || getPostBySlug(slug) : null;
+
+  if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
+    post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0);
