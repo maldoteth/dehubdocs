@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
@@ -32,6 +31,9 @@ const DocsHome = () => {
     } else if (latestPost.slug === 'fresh-experience-revamped-app-feed-with-audio-replies--live-talk-spaces---a-dehub-milestone-from-q2-2025') {
       bannerImage = '/lovable-uploads/eeb2e5c9-2347-4865-876e-31f38fe4412a.png';
       bannerImageAlt = 'DeHub Revamped App Feed';
+    } else if (latestPost.slug === 'transparency-hub-dhbscancom-launches-for-contract-activity-tracking---a-dehub-milestone-from-q2-2025') {
+      bannerImage = '/lovable-uploads/3b0272d6-6cae-4b9a-a303-5fdf970d17e7.png';
+      bannerImageAlt = 'DHBScan Metrics';
     }
   }
 
@@ -237,4 +239,3 @@ const DocsHome = () => {
     </div>;
 };
 export default DocsHome;
-
