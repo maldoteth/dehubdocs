@@ -183,10 +183,10 @@ Spaces are limited to 50 ambassadors for this first wave, so get ready to showca
       <SEO
         title={post.seoTitle || post.title}
         description={post.seoDescription || post.excerpt}
-        image={bannerImage}
+        image={post.bannerImage}
         url={`/docs/blog/${post.slug}`}
         type="article"
-        publishedTime={publishedAt}
+        publishedTime={post.publishedAt}
       />
       <div className="max-w-4xl mx-auto">
         {/* Back Navigation */}
@@ -214,7 +214,7 @@ Spaces are limited to 50 ambassadors for this first wave, so get ready to showca
             <div className="flex flex-wrap items-center gap-6 text-royal-blue/70 mb-6">
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                <span className="font-exo">{formatDate(publishedAt)}</span>
+                <span className="font-exo">{formatDate(post.publishedAt)}</span>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
@@ -270,15 +270,15 @@ Spaces are limited to 50 ambassadors for this first wave, so get ready to showca
           {/* Banner Image */}
           <div className="mb-8 rounded-xl overflow-hidden">
             <img 
-              src={bannerImage} 
-              alt={bannerImageAlt}
+              src={post.bannerImage} 
+              alt={post.bannerImageAlt}
               className="w-full h-64 lg:h-96 object-cover"
             />
           </div>
 
           {/* Article Content */}
           <div className="mb-12">
-            <BlogContent content={content} />
+            <BlogContent content={post.content} />
           </div>
 
           {/* Article Footer */}
