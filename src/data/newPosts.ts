@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -294,8 +295,8 @@ const publicBetaDappReportPost: BlogPostType = {
     <p class="mb-4 text-royal-blue/80">Now, how many of you would buy a token or use an app because your favourite influencer was now making content on that platform? Drastically more.</p>
     <p class="mb-4 text-royal-blue/80">Once this flywheel spins, it won’t stop, and we’re more confident than ever now we’ve seen our final core d’app working fully out in the wild.</p>
   `,
-  bannerImage: '/lovable-uploads/e9632af0-07c2-4ca8-9b82-fc255191358b.png',
-  bannerImageAlt: 'DeHub d’app interface',
+  bannerImage: '/lovable-uploads/c799219d-e9da-43e4-938f-54cfbc3a242f.png',
+  bannerImageAlt: 'DeHub Beta Overview banner',
   author: {
     name: 'DeHub Team',
   },
