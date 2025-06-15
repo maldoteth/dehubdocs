@@ -10,29 +10,6 @@ interface BlogCardProps {
   featured?: boolean;
 }
 
-const placeholderImages = [
-    'photo-1488590528505-98d2b5aba04b', 'photo-1518770660439-4636190af475',
-    'photo-1461749280684-dccba630e2f6', 'photo-1486312338219-ce68d2c6f44d',
-    'photo-1485827404703-89b55fcc595e', 'photo-1526374965328-7f61d4dc18c5',
-    'photo-1531297484001-80022131f5a1', 'photo-1487058792275-0ad4aaf24ca7',
-    'photo-1519389950473-47ba0277781c', 'photo-1460925895917-afdab827c52f',
-    'photo-1498050108023-c5249f4df085', 'photo-1483058712412-4245e9b90334',
-];
-
-const getUnsplashImageUrl = (photoId: string) => `https://images.unsplash.com/${photoId}?w=800&h=400&fit=crop&q=80`;
-
-const getUniqueImageByPostId = (postId: string) => {
-    let hash = 0;
-    if (postId.length === 0) return getUnsplashImageUrl(placeholderImages[0]);
-    for (let i = 0; i < postId.length; i++) {
-        const char = postId.charCodeAt(i);
-        hash = ((hash << 5) - hash) + char;
-        hash |= 0; // Convert to 32bit integer
-    }
-    const index = Math.abs(hash) % placeholderImages.length;
-    return getUnsplashImageUrl(placeholderImages[index]);
-};
-
 const generateExcerpt = (content: string, fallback: string) => {
     if (!content) return fallback;
     const lines = content.split('\n');
@@ -69,7 +46,6 @@ const generateExcerpt = (content: string, fallback: string) => {
 
 
 const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
-  const imageUrl = getUniqueImageByPostId(post.id);
   const excerpt = generateExcerpt(post.content, post.excerpt);
 
   return (
@@ -77,8 +53,8 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
       <Link to={`/docs/blog/${post.slug}`} className="block">
         <div className="relative">
           <img 
-            src={imageUrl} 
-            alt={post.title}
+            src={post.bannerImage} 
+            alt={post.bannerImageAlt}
             className={`w-full object-cover transition-transform duration-200 group-hover:scale-105 ${featured ? 'h-48' : 'h-40'}`}
           />
           {post.featured && (
