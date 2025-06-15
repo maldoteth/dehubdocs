@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -47,6 +48,8 @@ const BlogPost = () => {
 - Live Streaming - February
 - Tokenised usernames - March`,
     };
+  } else if (post && post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
+    post = { ...post, publishedAt: '2024-10-30T12:00:00.000Z' };
   }
 
   useEffect(() => {

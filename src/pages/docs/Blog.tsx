@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
@@ -43,6 +44,9 @@ const Blog = () => {
       if (post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost') {
         return { ...post, publishedAt: '2024-10-28T12:00:00.000Z' };
       }
+      if (post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
+        return { ...post, publishedAt: '2024-10-30T12:00:00.000Z' };
+      }
       return post;
     });
 
@@ -59,6 +63,9 @@ const Blog = () => {
     const updatedPosts = uniquePosts.map(post => {
       if (post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost') {
         return { ...post, publishedAt: '2024-10-28T12:00:00.000Z' };
+      }
+      if (post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
+        return { ...post, publishedAt: '2024-10-30T12:00:00.000Z' };
       }
       return post;
     });
