@@ -305,7 +305,9 @@ We took to our Telegram group to vote on the most fundamental aspects of our tok
 - The Market Cap: Our starting valuation.
 - The Supply: The total token supply.
 
-Every step of the way was a collective decision. This approach ensures that DeHub is not just a platform, but a true community-governed ecosystem where every member has a voice and a stake in our shared future.`;
+Every step of the way was a collective decision. This approach ensures that DeHub is not just a platform, but a true community-governed ecosystem where every member has a voice and a stake in our shared future.
+
+With these foundational decisions made by the community, our path forward was clear. First, we would list on PancakeSwap. Next, we would launch marketing campaigns with top KOLs and celebrities. From there, we would build out our ambitious roadmap, developing on top of our existing alpha application.`;
   } else if (post.title === "Navigating Challenges: Addressing a V1 Smart Contract Security Issue - A DeHub Milestone from Q2 2021") {
     newPost.publishedAt = '2021-06-19T10:00:00.000Z';
   }
