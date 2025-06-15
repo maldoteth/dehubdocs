@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 const basePoolPost: BlogPostType = {
@@ -105,7 +104,7 @@ const crusadersSponsorshipPost: BlogPostType = {
   author: {
     name: 'DeHub Team',
   },
-  publishedAt: '2024-01-18T12:00:00.000Z',
+  publishedAt: '2024-06-30T12:00:00.000Z',
   tags: ['Sponsorship', 'Rugby', 'Community', 'Wales'],
   readingTime: 3,
   featured: true,
