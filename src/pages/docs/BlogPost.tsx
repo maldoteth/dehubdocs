@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -9,6 +8,7 @@ import { BlogPostBody } from '@/components/blog/BlogPostBody';
 import { BlogPostFooter } from '@/components/blog/BlogPostFooter';
 import { raffleContent } from '@/data/raffleContent';
 import { getNewPostBySlug } from '@/data/newPosts';
+import { BlogBreadcrumb } from '@/components/blog/BlogBreadcrumb';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -60,15 +60,11 @@ const BlogPost = () => {
         url={`/docs/blog/${post.slug}`}
         type="article"
         publishedTime={post.publishedAt}
+        authorName={post.author.name}
+        tags={post.tags}
       />
       <div className="max-w-4xl mx-auto">
-        <Link 
-          to="/docs/blog" 
-          className="inline-flex items-center text-middle-blue hover:text-royal-blue transition-colors duration-200 mb-8 font-exo"
-        >
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Blog
-        </Link>
+        <BlogBreadcrumb postTitle={post.title} />
 
         <article>
           <BlogPostHeader post={post} displayDate={displayDate} shareUrl={shareUrl} />

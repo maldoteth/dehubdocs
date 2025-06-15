@@ -10,6 +10,7 @@ interface SEOProps {
   type?: 'website' | 'article';
   publishedTime?: string;
   authorName?: string;
+  tags?: string[];
 }
 
 const SEO: React.FC<SEOProps> = ({
@@ -20,6 +21,7 @@ const SEO: React.FC<SEOProps> = ({
   type = 'website',
   publishedTime,
   authorName,
+  tags,
 }) => {
   const siteName = 'DeHub Docs';
   const fullTitle = `${title} | ${siteName}`;
@@ -66,6 +68,9 @@ const SEO: React.FC<SEOProps> = ({
       {type === 'article' && authorName && (
         <meta property="article:author" content={authorName} />
       )}
+      {type === 'article' && tags && tags.map(tag => (
+        <meta property="article:tag" content={tag} key={tag} />
+      ))}
 
       {/* Twitter Card metadata tags */}
       <meta name="twitter:card" content="summary_large_image" />
