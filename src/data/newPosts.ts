@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -37,8 +36,8 @@ const tokenisedUploadsPost: BlogPostType = {
     
     <p class="mt-8 font-semibold text-royal-blue">We believe Tokenised Uploads are the future of the creator economy. It's a system built on transparency, ownership, and shared success. Start exploring this new feature today and be a part of the revolution!</p>
   `,
-  bannerImage: '/lovable-uploads/d06e2852-219e-4946-960f-0830ebb81716.png',
-  bannerImageAlt: 'A smartphone showcasing the DeHub app interface for tokenized uploads.',
+  bannerImage: '/lovable-uploads/b515dd9f-ca7e-4264-a177-0ead5c2d55c6.png',
+  bannerImageAlt: 'A glowing DeHub token representing tokenized uploads.',
   author: {
     name: 'DeHub Team',
   },
