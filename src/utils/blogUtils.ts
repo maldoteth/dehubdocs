@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -76,10 +75,8 @@ Stay tuned, and get ready to play. The arena awaits.`;
   } else if (post.slug === 'community-champions-ugc-ambassadorship-program-launched---a-dehub-milestone-from-q2-2025') {
     newPost.bannerImage = '/lovable-uploads/443805df-744b-4ab4-80a7-ae59cafe8baa.png';
     newPost.bannerImageAlt = 'DeHub UGC Programme banner';
-    newPost.publishedAt = '2025-05-10T10:00:00.000Z';
+    newPost.publishedAt = '2025-06-01T10:00:00.000Z';
     newPost.content = `## Become a DeHub Ambassador: Announcing Our UGC Programme
-
-The strength of DeHub has always been its community. Today, we're excited to take that to the next level by officially launching the DeHub User-Generated Content (UGC) and Ambassadorship Programme! This is your chance to become an official voice for DeHub, create content you're passionate about, and get rewarded for your creativity and influence.
 
 ![DeHub UGC Programme Banner](/lovable-uploads/59b8a8cb-c9c7-412e-b51e-8f68b47d73a0.png)
 
