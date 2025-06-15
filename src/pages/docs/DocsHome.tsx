@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
-import { getPublishedPosts } from '@/utils/blogUtils';
+import { getPublishedPosts, getPostDetailsWithOverrides } from '@/utils/blogUtils';
 
 // Declare the global build time variable
 declare const __BUILD_TIME__: string;
@@ -16,8 +16,9 @@ const DocsHome = () => {
   usePerformance();
   
   // Get the latest blog post
-  const latestPost = getPublishedPosts()[0];
-  
+  const latestRawPost = getPublishedPosts()[0];
+  const latestPost = latestRawPost ? getPostDetailsWithOverrides(latestRawPost) : null;
+
   let bannerImage = latestPost?.bannerImage;
   let bannerImageAlt = latestPost?.bannerImageAlt;
   
@@ -173,8 +174,8 @@ const DocsHome = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="lg:w-1/3">
               <img 
-                src={bannerImage} 
-                alt={bannerImageAlt}
+                src={latestPost.bannerImage} 
+                alt={latestPost.bannerImageAlt}
                 className="w-full h-48 object-cover rounded-xl"
               />
             </div>
