@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
@@ -39,6 +40,9 @@ const Blog = () => {
       if (post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
         return { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
       }
+      if (post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost') {
+        return { ...post, publishedAt: '2024-10-28T12:00:00.000Z' };
+      }
       return post;
     });
 
@@ -50,7 +54,15 @@ const Blog = () => {
     const newFeatured = newPosts.filter(p => p.featured);
     const combined = [...newFeatured, ...oldFeatured];
     const uniquePosts = Array.from(new Map(combined.map(post => [post.id, post])).values());
-    return uniquePosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    
+    const updatedPosts = uniquePosts.map(post => {
+      if (post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost') {
+        return { ...post, publishedAt: '2024-10-28T12:00:00.000Z' };
+      }
+      return post;
+    });
+
+    return updatedPosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, []);
 
   const allTags = useMemo((): BlogTag[] => {

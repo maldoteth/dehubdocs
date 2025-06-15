@@ -20,6 +20,34 @@ const BlogPost = () => {
     post = null;
   } else if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
     post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
+  } else if (post && post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost') {
+    post = {
+      ...post,
+      publishedAt: '2024-10-28T12:00:00.000Z',
+      content: `### Introducing the new DeHub App:
+
+#### ✅ New Features Shipped
+
+- Full re-write of back and front end
+- New upload process / progress bar
+- Feed for photos and text posts
+- Tokenised subscriptions
+- Creator gated group chats
+- Paid and free DMs
+- Own custom CDN
+- SEO share links
+- Endless scroll
+
+#### 🗓 Upcoming (estimates)
+
+- Full Base integration - November
+- DePIN - December/Q1
+- Fiat Gateway - December/Q1
+- Analytics - January/Q1
+- CRM - January/Q1
+- Live Streaming - February
+- Tokenised usernames - March`,
+    };
   }
 
   useEffect(() => {
@@ -52,7 +80,7 @@ const BlogPost = () => {
     post.title === 'Dream Big: The $1M Home Crypto Raffle by DeHub'
       ? 'July 11, 2022'
       : post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost'
-      ? 'July 23, 2024'
+      ? 'October 28, 2024'
       : formatDate(post.publishedAt);
   
   const bannerImage = isRafflePost ? raffleBanner : post.bannerImage;
