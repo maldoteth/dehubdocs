@@ -7,7 +7,6 @@ const applyPostOverrides = (post: BlogPost): BlogPost => {
   if (post.slug === '1-million-dollar-raise-completed') {
     newPost.bannerImage = '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png';
     newPost.bannerImageAlt = '$1,000,000 Fundraise';
-    newPost.featured = true;
   } else if (post.slug === 'get-ready-players-final-snapshot-for-last-chad-standing-airdrop---a-dehub-milestone-from-q2-2025') {
     newPost.bannerImage = '/lovable-uploads/6d868478-769e-4981-b285-4ca5fa215dc5.png';
     newPost.bannerImageAlt = 'Last Chad Standing helicopter';
@@ -378,25 +377,6 @@ This AMA covered a lot of ground, and we’re excited for what’s to come. Stay
 const getAllPostsWithOverrides = (): BlogPost[] => {
   const allPosts = [...blogPosts];
 
-  const messagingPost: BlogPost = {
-    id: 'connect-and-converse-messaging-system',
-    title: 'Connect and Converse: Advanced Messaging System with Paid/Free DMs',
-    slug: 'connect-and-converse-advanced-messaging-system-with-paid-free-dms',
-    excerpt: 'Innovation is at the heart of DeHub. In Q1 2025, we were thrilled to bring a new experience to our users with a major product update. This was the...',
-    content: `Innovation is at the heart of DeHub. In Q1 2025, we were thrilled to bring a new experience to our users with a major product update. This was the launch of our advanced messaging system, featuring both paid and free Direct Messages (DMs). This feature empowers creators to monetize their interactions while allowing all users to connect seamlessly. The system is designed to be intuitive, secure, and integrated directly into the DeHub experience, marking another step forward in our mission to build a comprehensive, user-centric platform.`,
-    bannerImage: '/lovable-uploads/031390e6-1139-42a7-9814-337144b81a3e.png',
-    bannerImageAlt: 'Laptop showing code on a desk, representing development of DeHub messaging system',
-    author: {
-      name: 'DeHub Team',
-    },
-    publishedAt: '2025-02-25T10:00:00.000Z',
-    tags: ['DeHub Journey', 'Roadmap', 'Q1 2025', 'Messaging'],
-    readingTime: 4,
-    featured: false,
-    status: 'published',
-  };
-  allPosts.unshift(messagingPost);
-
   const coinbasePost: BlogPost = {
     id: 'dhb-tradable-on-coinbase-soon',
     title: 'Confirmed! $DHB Will Be Tradable on Coinbase Soon',
@@ -425,7 +405,7 @@ Stay tuned for more updates as we approach this exciting milestone!`,
     publishedAt: '2025-06-15T10:00:00.000Z',
     tags: ['Coinbase', 'Exchange', 'Listing', 'Base', 'Accessibility'],
     readingTime: 2,
-    featured: false,
+    featured: true,
     status: 'published',
   };
   allPosts.unshift(coinbasePost);
