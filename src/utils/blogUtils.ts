@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -318,6 +319,8 @@ The issue was identified through our continuous internal audits. We paused all i
 To ensure a seamless transition for our community, we took a snapshot of all holder balances prior to deploying the new contract. **Every single holder was then automatically airdropped their tokens on a 1:1 basis. Nobody was left behind.**
 
 This incident, while challenging, has made our platform stronger and our commitment to security even more resolute. We are grateful for our community's patience and support during this process.`;
+  } else if (post.title.startsWith("Strategic Shift: Discontinuing Ethereum Mainnet Support for DHB")) {
+    newPost.publishedAt = '2025-02-01T10:00:00.000Z';
   } else if (post.slug === 'town-hall-ama-october-2024') {
     newPost.content = `Our recent Town Hall AMA was a great success, and we want to thank our incredible community for their insightful questions. We've compiled the key questions and answers below to keep everyone in the loop.
 
