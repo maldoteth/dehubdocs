@@ -19,6 +19,22 @@ const DocsHome = () => {
   // Get the latest blog post
   const latestPost = getPublishedPosts()[0];
   
+  let bannerImage = latestPost?.bannerImage;
+  let bannerImageAlt = latestPost?.bannerImageAlt;
+  
+  if (latestPost) {
+    if (latestPost.slug === '1-million-dollar-raise-completed') {
+      bannerImage = '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png';
+      bannerImageAlt = '$1,000,000 Fundraise';
+    } else if (latestPost.slug === 'get-ready-players-final-snapshot-for-last-chad-standing-airdrop---a-dehub-milestone-from-q2-2025') {
+      bannerImage = '/lovable-uploads/6d868478-769e-4981-b285-4ca5fa215dc5.png';
+      bannerImageAlt = 'Last Chad Standing helicopter';
+    } else if (latestPost.slug === 'fresh-experience-revamped-app-feed-with-audio-replies--live-talk-spaces---a-dehub-milestone-from-q2-2025') {
+      bannerImage = '/lovable-uploads/eeb2e5c9-2347-4865-876e-31f38fe4412a.png';
+      bannerImageAlt = 'DeHub Revamped App Feed';
+    }
+  }
+
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
@@ -152,8 +168,8 @@ const DocsHome = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="lg:w-1/3">
               <img 
-                src={latestPost.bannerImage} 
-                alt={latestPost.bannerImageAlt}
+                src={bannerImage} 
+                alt={bannerImageAlt}
                 className="w-full h-48 object-cover rounded-xl"
               />
             </div>
@@ -221,3 +237,4 @@ const DocsHome = () => {
     </div>;
 };
 export default DocsHome;
+
