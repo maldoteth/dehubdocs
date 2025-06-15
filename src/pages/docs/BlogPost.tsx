@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -54,6 +53,11 @@ const BlogPost = () => {
     };
   } else if (post && post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
     post = { ...post, publishedAt: '2024-10-30T12:00:00.000Z' };
+  } else if (post && post.slug === 'scaling-new-heights-livepeer-integration-for-50k-concurrent-viewers---a-dehub-milestone-from-q1-2025') {
+    post = {
+      ...post,
+      title: 'Scaling New Heights: Livepeer Integration for initially 50k+ Concurrent Viewers With Unlimited Viewer abilities as we scale up.',
+    };
   }
 
   useEffect(() => {
