@@ -311,6 +311,13 @@ Every step of the way was a collective decision. This approach ensures that DeHu
 With these foundational decisions made by the community, our path forward was clear. First, we would list on PancakeSwap. Next, we would launch marketing campaigns with top KOLs and celebrities. From there, we would build out our ambitious roadmap, developing on top of our existing alpha application.`;
   } else if (post.title === "Navigating Challenges: Addressing a V1 Smart Contract Security Issue - A DeHub Milestone from Q2 2021") {
     newPost.publishedAt = '2021-06-19T10:00:00.000Z';
+    newPost.content = `Security is paramount in the Web3 space. When a vulnerability was discovered in our V1 smart contract, our team acted immediately to address it. We believe in transparency and taking swift, decisive action to protect our community and their assets.
+
+The issue was identified through our continuous internal audits. We paused all interactions with the contract, and our developers worked around the clock to patch the vulnerability and deploy a new, more secure contract.
+
+To ensure a seamless transition for our community, we took a snapshot of all holder balances prior to deploying the new contract. **Every single holder was then automatically airdropped their tokens on a 1:1 basis. Nobody was left behind.**
+
+This incident, while challenging, has made our platform stronger and our commitment to security even more resolute. We are grateful for our community's patience and support during this process.`;
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
