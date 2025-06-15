@@ -29,7 +29,7 @@ const Blog = () => {
 
   const originalPosts = useMemo(() => {
     const publishedPosts = getPublishedPosts();
-    return publishedPosts.filter(post => post.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries');
+    return publishedPosts.filter(post => post.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && post.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback');
   }, []);
   
   const allPosts = useMemo(() => {
@@ -50,7 +50,7 @@ const Blog = () => {
   }, [originalPosts]);
 
   const featuredPosts = useMemo(() => {
-    const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries');
+    const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && p.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback');
     const newFeatured = newPosts.filter(p => p.featured);
     const combined = [...newFeatured, ...oldFeatured];
     const uniquePosts = Array.from(new Map(combined.map(post => [post.id, post])).values());
