@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 const basePoolPost: BlogPostType = {
@@ -80,7 +79,42 @@ const dehubTakeoverPost: BlogPostType = {
   seoDescription: 'We are turbocharging the DeHub Army with a series of community-focused initiatives. Read about our plans for token-gated chats, daily town halls, and more.',
 };
 
+const crusadersSponsorshipPost: BlogPostType = {
+  id: 'new-multi-year-sponsorship-crusaders',
+  title: 'New Multi-Year Sponsorship',
+  slug: 'new-multi-year-sponsorship-crusaders',
+  excerpt: "We're delighted to reveal a multi-year sponsorship agreement with the only Rugby League club in Wales, The North Wales Crusaders.",
+  content: `
+    <h2 class="text-2xl font-bold mb-4 font-exo">DeHub Announces Multi-Year Sponsorship with North Wales Crusaders</h2>
+    <p class="mb-4 text-lg text-royal-blue/80">We're delighted to reveal a multi-year sponsorship agreement with the only Rugby League club in Wales, The North Wales Crusaders.</p>
+    <p class="mb-4 text-royal-blue/80">Rugby is the most participated sport in the country, with the Encyclopedia of Wales stating that the sport is "seen by many as a symbol of Welsh identity and an expression of national consciousness" 😲.</p>
+    
+    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What this partnership means</h3>
+    <p class="mb-4 text-royal-blue/80">As part of our commitment, DeHub has secured the following for every home game across the next two seasons:</p>
+    <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
+      <li>The official match ball sponsorship.</li>
+      <li>An advertising board in the stadium.</li>
+      <li>The "Man of the Match" award will be presented as the "DeHub Man of the Match".</li>
+    </ul>
+
+    <p class="mt-8 font-semibold text-royal-blue">Stay tuned for more details on how we're reaching their 15,000 capacity stadium full of fans on a weekly basis!</p>
+  `,
+  bannerImage: '/lovable-uploads/c9da2b1e-9e88-4ac5-a1ae-589e990027ea.png',
+  bannerImageAlt: 'DeHub announces new multi-year sponsorship with North Wales Crusaders rugby team',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2024-06-30T12:00:00.000Z',
+  tags: ['Sponsorship', 'Rugby', 'Community', 'Wales'],
+  readingTime: 3,
+  featured: true,
+  status: 'published',
+  seoTitle: 'DeHub Announces Multi-Year Sponsorship with North Wales Crusaders',
+  seoDescription: "DeHub is thrilled to announce a new multi-year sponsorship deal with The North Wales Crusaders, the only professional rugby league club in Wales.",
+};
+
 export const newPosts: BlogPostType[] = [
+    crusadersSponsorshipPost,
     dehubTakeoverPost,
     basePoolPost
 ];
@@ -88,4 +122,3 @@ export const newPosts: BlogPostType[] = [
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
     return newPosts.find(p => p.slug === slug);
 }
-
