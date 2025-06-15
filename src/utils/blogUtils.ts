@@ -12,6 +12,7 @@ const applyPostOverrides = (post: BlogPost): BlogPost => {
     newPost.bannerImage = '/lovable-uploads/6d868478-769e-4981-b285-4ca5fa215dc5.png';
     newPost.bannerImageAlt = 'Last Chad Standing helicopter';
     newPost.publishedAt = '2025-04-01T10:00:00.000Z';
+    newPost.readingTime = 5;
     newPost.content = `## A New Era of Gaming: Why Last Chad Standing is a Game-Changer
 
 The gaming landscape is on the brink of a revolution, and Last Chad Standing (LCS) is poised to lead the charge. This isn't just another game; it's a paradigm shift, blending high-stakes competitive play with true digital ownership. But to understand where we're going, we first need to look at why the time for a project like this is now.
