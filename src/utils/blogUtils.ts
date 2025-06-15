@@ -431,8 +431,8 @@ This AMA covered a lot of ground, and we’re excited for what’s to come. Stay
     newPost.publishedAt = '2024-12-13T10:00:00.000Z';
   } else if (post.title.startsWith("Interactive Streaming: On-Chain Live Streams with Animated Tips")) {
     newPost.publishedAt = '2025-03-10T10:00:00.000Z';
-    newPost.bannerImage = '/lovable-uploads/f1e941d5-c69c-44ea-9693-c3719774ef2f.png';
-    newPost.bannerImageAlt = 'A person at a workstation with complex wiring, focused on a laptop.';
+    newPost.bannerImage = '/lovable-uploads/a6275c3d-1dab-43a4-9362-93dd9d96f41c.png';
+    newPost.bannerImageAlt = 'DeHub Live Streaming logo';
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
