@@ -361,6 +361,8 @@ We’re only interested in listing on top-tier CEXs like Binance, Coinbase, and 
 No delays are expected. The major overhaul is ready and will be rolled out at the end of the countdown. Any features not immediately live at launch will be released according to the updated roadmap, which will be shared alongside the upgrade.
 
 This AMA covered a lot of ground, and we’re excited for what’s to come. Stay tuned for more updates, and thanks to everyone who tuned in!`;
+  } else if (post.title.startsWith("The Future of Infrastructure: DEPIN Phase 1 Goes Live - A DeHub Milestone from Q4 2024")) {
+    newPost.publishedAt = '2024-12-13T10:00:00.000Z';
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
