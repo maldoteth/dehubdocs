@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -121,6 +122,57 @@ This is more than just a content creation gig. It's a partnership. As a DeHub Am
 Applications for our first cohort of ambassadors are now closed. Thank you to everyone who applied! We were overwhelmed by the quality and passion of the applications.
 
 Stay tuned for announcements about our selected ambassadors and future opportunities to get involved.`;
+  } else if (post.slug === 'official-standing-delabs-ltd-incorporated---a-dehub-milestone-from-q3-2022') {
+    newPost.publishedAt = '2022-06-29T10:00:00.000Z';
+    newPost.readingTime = 4;
+    newPost.bannerImage = '/lovable-uploads/8c74c2f1-8b5a-4a46-be89-004d8ff41ed5.png';
+    newPost.bannerImageAlt = 'DeLabs LTD Grand Opening';
+    newPost.excerpt = 'In response to recent changes in the regulatory stance of the UK government, DeHub has established DeLabs LTD and a UK Headquarters to leverage the country\'s favourable NFT stance.';
+    newPost.content = `In response to recent changes in the regulatory stance of the UK government heralding the jurisdiction as an upcoming NFT hub for businesses, we’ve taken steps to register a new company here under the name of DeLabs LTD. This entity will oversee all NFT operations from the UK and adds to our Philippine SEC-registered HQ with more global offices pipelined as we expand.
+
+Our new UK Hub is located at: **10F Dragoon House, Hussar Court, West Side View, Waterlooville, Hampshire, PO77SF**.
+
+![DeLabs LTD UK Office](/lovable-uploads/f535580c-180f-4be2-8c54-46bacdea0b04.png)
+
+### Supporting Announcement
+
+The Marketplace beta is done and ready to launch on July 7th. Why not June? Although we are ready to go, CTO Alex is due to attend a wedding overseas and wants to ensure he is here in case of any issues arising around the launch. Given that we’re launching in a retail environment where customer service is paramount this decision makes a world of sense. Something we can improve on is communicating delays more effectively but as always discussed please keep up to date on our Dynamic Litepaper.
+
+### Teaser for Next Announcement
+
+We’ve just partnered with a promising metaverse project who want our streaming, gaming & shopping d’apps in their (already built) virtual world. The main focus here will be on our licensed content and PPV events as well as the NFTs on our marketplace. You will be able to roam the metaverse as your chads or even drive around in your Lamborghini. We’re working closely together on the LCFC game and we’re already starting to integrate our builds into their virtual world. They also expressed interest in backing their metaverse with an island and there are multiple other avenues for collaboration and plenty of synergy off the bat. Watch this space.
+
+### General Overview of Core Sectors
+
+#### Streaming
+
+- Fresh content and a streaming UIX upgrade are dropping imminently. These will be timed to coincide with the marketplace launch and followed up with the campaign for our new documentary featuring Jorge Masvidal.
+- New production opportunities are set to launch on the marketplace in due course. These will allow you to vote on, fund, and ultimately earn from the next range of DeHub Originals, as per the white paper plans.
+- We’re working on developing further partnerships to secure blockbusters and latest releases, yet this will require additional time and funding.
+
+#### Gaming
+
+- The arcade airdrop is going out tomorrow. Thank you for your patience and sorry for the delay, we were all hands on deck fixing issues around the marketplace this week.
+- At least two new games will be dropping to the arcade next month. We are in the process of further automating the arcade airdrops for players yet due to our novel tax economy being the core funding mechanism for rewards, this is proving a more complex challenge than anticipated. We have the brainpower to tackle this, but we are prioritising the marketplace and streaming updates at the moment. For now, we’re still perfecting the leaderboard scoring system as we continue to build despite market conditions.
+
+#### Marketplace/NFTs
+
+- As discussed above, the marketplace is launching officially on the 7th July and we have a few surprises in-store.
+- LCFC is set for re-launch and an announcement will be made imminently (Crossmint issues highlighted below). See more on our [Telegram](https://t.me/DeHubofficial/457822).
+
+### Operations
+
+The new office is already in our possession. Indeed, the teaser photo I posted to the Telegram group yesterday was taken inside. We are fully set up with enough computers and desks to accommodate a small army. Once we cover the location in DeHub branding we will share some pictures and invite the public in for training and community building days. Waterlooville is the town we all grew up in and it made a lot more sense than somewhere new like Manchester. We’re also friendly and known to local councils already and given the nature of our business, this is certainly an advantage. Anyone experienced in and seeking roles across B2B, B2C, telesales, and door-to-door sales should reach out immediately. Anyone else who wants to establish a real hub in their region can request funding and submit a plan for growth to hr@dehub.net.
+
+### Requirements
+
+- Large stakeholder or an active long-standing member of DeHub.
+- Clear crypto regulation or announcements from local governments indicating a positive future for crypto / NFTs.
+- Ability to register a company and acquire licenses and office space as needed to operate in your region.
+- Experience in management and working with members of the public and a clean track record across all employment history.
+- Clear plan of execution with location and costs calculated.
+
+Get in touch at hr@dehub.net now or drop in to meet the team on July 29th 2022 from 08:15–16:20. The earlier you arrive, the more chance there will still be some food.`;
   } else if (post.slug === 'building-the-dream-dehubs-core-team-assembled---a-dehub-milestone-from-q1-2021') {
     newPost.content = `DeHub's core team is officially assembled, bringing together a powerhouse of expertise from the worlds of tech, gaming, and social media. This marks a pivotal moment in our journey, laying the foundation for the innovation to come. With a shared vision and diverse skill sets, we are poised to revolutionize the digital landscape. The dream is now in the hands of a team built to make it a reality.
 
