@@ -1,5 +1,5 @@
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
 import BlogCard from '@/components/blog/BlogCard';
@@ -11,6 +11,21 @@ import { newPosts } from '@/data/newPosts';
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
+
+  useEffect(() => {
+    const scrollPosition = sessionStorage.getItem('blogScrollPosition');
+    if (scrollPosition) {
+      // A small delay ensures the content is rendered before we scroll.
+      setTimeout(() => {
+        window.scrollTo(0, parseInt(scrollPosition, 10));
+        sessionStorage.removeItem('blogScrollPosition');
+      }, 100);
+    }
+
+    return () => {
+      sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
+    };
+  }, []);
 
   const originalPosts = useMemo(() => getPublishedPosts(), []);
   
