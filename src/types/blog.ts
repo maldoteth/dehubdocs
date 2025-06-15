@@ -16,7 +16,7 @@ export interface BlogPost {
   tags: string[];
   readingTime: number; // in minutes
   featured: boolean;
-  status: 'draft' | 'published';
+  status?: 'draft' | 'published';
   seoTitle?: string;
   seoDescription?: string;
 }
