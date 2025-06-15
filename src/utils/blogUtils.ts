@@ -288,8 +288,7 @@ We’ve been building and now we enter 2023 prepared to scale. We’ve laid the 
 
 **December 27:** We closed the year with key updates on our latest test d’app, new token listing and marketing partner update where you will see me and the team regularly on Crypto Jamie’s channel, currently ranked number 3 on Binance Live.
 
-Bring on 2023.
-`;
+Bring on 2023.`;
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
@@ -337,42 +336,45 @@ export const getAllTags = (): BlogTag[] => {
     });
   });
   
-  return Object.entries(tagCounts)
-    .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => {
-      // Primary sort: by count, descending.
-      if (a.count !== b.count) {
-        return b.count - a.count;
-      }
+  const allTags = Object.entries(tagCounts).map(([name, count]) => ({ name, count }));
 
-      // Secondary sort for tags with same count
-      const qTagRegex = /^Q(\d)(20\d{2})$/;
-      const aMatch = a.name.match(qTagRegex);
-      const bMatch = b.name.match(qTagRegex);
+  const qTagRegex = /^Q(\d)\s(20\d{2})$/;
+  const qTags: BlogTag[] = [];
+  const otherTags: BlogTag[] = [];
 
-      if (aMatch && bMatch) {
-        const aYear = parseInt(aMatch[2], 10);
-        const aQuarter = parseInt(aMatch[1], 10);
-        const bYear = parseInt(bMatch[2], 10);
-        const bQuarter = parseInt(bMatch[1], 10);
+  allTags.forEach(tag => {
+    if (qTagRegex.test(tag.name)) {
+      qTags.push(tag);
+    } else {
+      otherTags.push(tag);
+    }
+  });
 
-        if (aYear !== bYear) {
-          return aYear - bYear; // Sort by year ascending
-        }
-        return aQuarter - bQuarter; // Then by quarter ascending
-      }
+  // Sort other tags: by count descending, then alphabetically ascending
+  otherTags.sort((a, b) => {
+    if (a.count !== b.count) {
+      return b.count - a.count;
+    }
+    return a.name.localeCompare(b.name);
+  });
 
-      // Group Q-tags after non-Q tags
-      if (aMatch && !bMatch) {
-        return 1; // a (Q tag) comes after b (non-Q tag)
-      }
-      if (!aMatch && bMatch) {
-        return -1; // a (non-Q tag) comes before b (Q tag)
-      }
+  // Sort Q-tags: by year ascending, then by quarter ascending
+  qTags.sort((a, b) => {
+    const aMatch = a.name.match(qTagRegex)!;
+    const bMatch = b.name.match(qTagRegex)!;
 
-      // If neither are Q tags, sort alphabetically
-      return a.name.localeCompare(b.name);
-    });
+    const aYear = parseInt(aMatch[2], 10);
+    const aQuarter = parseInt(aMatch[1], 10);
+    const bYear = parseInt(bMatch[2], 10);
+    const bQuarter = parseInt(bMatch[1], 10);
+
+    if (aYear !== bYear) {
+      return aYear - bYear;
+    }
+    return aQuarter - bQuarter;
+  });
+
+  return [...otherTags, ...qTags];
 };
 
 export const searchPosts = (query: string): BlogPost[] => {
