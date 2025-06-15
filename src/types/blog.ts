@@ -22,6 +22,6 @@ export interface BlogPost {
 }
 
 export interface BlogTag {
-  name:string;
+  name: string;
   count: number;
 }
