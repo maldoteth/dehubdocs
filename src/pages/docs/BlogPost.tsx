@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, User, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
@@ -30,6 +31,7 @@ const BlogPost = () => {
   let bannerImage = post.bannerImage;
   let bannerImageAlt = post.bannerImageAlt;
   let content = post.content;
+  let publishedAt = post.publishedAt;
 
   if (post.slug === '1-million-dollar-raise-completed') {
     bannerImage = '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png';
@@ -37,6 +39,7 @@ const BlogPost = () => {
   } else if (post.slug === 'get-ready-players-final-snapshot-for-last-chad-standing-airdrop---a-dehub-milestone-from-q2-2025') {
     bannerImage = '/lovable-uploads/6d868478-769e-4981-b285-4ca5fa215dc5.png';
     bannerImageAlt = 'Last Chad Standing helicopter';
+    publishedAt = '2025-04-01T10:00:00.000Z';
     content = `## A New Era of Gaming: Why Last Chad Standing is a Game-Changer
 
 The gaming landscape is on the brink of a revolution, and Last Chad Standing (LCS) is poised to lead the charge. This isn't just another game; it's a paradigm shift, blending high-stakes competitive play with true digital ownership. But to understand where we're going, we first need to look at why the time for a project like this is now.
@@ -129,7 +132,7 @@ Stay tuned, and get ready to play. The arena awaits.`;
         image={bannerImage}
         url={`/docs/blog/${post.slug}`}
         type="article"
-        publishedTime={post.publishedAt}
+        publishedTime={publishedAt}
         authorName={post.author.name}
       />
       <div className="max-w-4xl mx-auto">
@@ -171,7 +174,7 @@ Stay tuned, and get ready to play. The arena awaits.`;
               </div>
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                <span className="font-exo">{formatDate(post.publishedAt)}</span>
+                <span className="font-exo">{formatDate(publishedAt)}</span>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
