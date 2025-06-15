@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
@@ -27,7 +26,10 @@ const Blog = () => {
     };
   }, []);
 
-  const originalPosts = useMemo(() => getPublishedPosts(), []);
+  const originalPosts = useMemo(() => {
+    const publishedPosts = getPublishedPosts();
+    return publishedPosts.filter(post => post.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries');
+  }, []);
   
   const allPosts = useMemo(() => {
     const combinedPosts = [...originalPosts, ...newPosts];
@@ -44,7 +46,7 @@ const Blog = () => {
   }, [originalPosts]);
 
   const featuredPosts = useMemo(() => {
-    const oldFeatured = getFeaturedPosts();
+    const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries');
     const newFeatured = newPosts.filter(p => p.featured);
     const combined = [...newFeatured, ...oldFeatured];
     const uniquePosts = Array.from(new Map(combined.map(post => [post.id, post])).values());

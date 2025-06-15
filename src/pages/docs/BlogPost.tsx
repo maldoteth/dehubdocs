@@ -16,7 +16,9 @@ const BlogPost = () => {
   
   let post = slug ? getNewPostBySlug(slug) || getPostBySlug(slug) : null;
 
-  if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
+  if (post && post.title === 'Worldwide Creators: Partnerships Spanning 15 Countries') {
+    post = null;
+  } else if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
     post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
   }
 
