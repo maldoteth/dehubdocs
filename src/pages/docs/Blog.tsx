@@ -58,6 +58,9 @@ const Blog = () => {
       if (post.title === 'Feature Spotlight: Ad Tech') {
         return { ...post, featured: false };
       }
+      if (post.title.includes('Q1') && post.title.includes('Overview')) {
+        return { ...post, featured: false };
+      }
       return post;
     });
 
@@ -88,7 +91,10 @@ const Blog = () => {
     });
 
     return updatedPosts
-      .filter(post => post.title !== 'Feature Spotlight: Ad Tech')
+      .filter(post => 
+        post.title !== 'Feature Spotlight: Ad Tech' && 
+        !(post.title.includes('Q1') && post.title.includes('Overview'))
+      )
       .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, []);
 
