@@ -371,6 +371,19 @@ To ensure maximum accessibility and low transaction fees for our community, we h
 3.  **Trading:** The user can list their subscription token on any compatible NFT marketplace.
 4.  **Royalties:** When a sale occurs, the smart contract automatically enforces the creator's predefined royalty fee, sending a percentage of the sale price back to them.
 
+### Flexible & Creator-Controlled
+
+Subscribers unlock access to each creator's group chat by purchasing passes directly in-app or via secondary markets. This model provides unprecedented flexibility for both creators and their communities.
+
+Creators have full control over their monetization strategy, with options for various subscription durations:
+- **1 Month**
+- **3 Months**
+- **6 Months**
+- **Annual**
+- **Lifetime**
+
+Prices for these passes are set initially by the creator. However, in a truly open market, the value can evolve. Existing pass holders can list their subscriptions on secondary markets, setting their own prices based on demand. This dynamic creates a living economy around a creator's content, where early supporters can be rewarded as the creator's popularity grows.
+
 ### Building a Better Tomorrow, Together
 
 This is more than just a new feature; it's an open invitation to developers, creators, and visionaries. These smart contracts are a foundational layer for a new, more equitable digital economy. We envision a future where artists can fund their next album through tradable fan club memberships, where journalists can offer lifetime access passes that appreciate in value, and where communities can build self-sustaining ecosystems around shared interests.
