@@ -309,6 +309,8 @@ Bring on 2023.`;
     }
   });
   newPost.tags = Array.from(cleanedTags);
+
+  newPost.title = newPost.title.replace(/\s-\sA\sDeHub\sMilestone\sfrom\sQ\d\s\d{4}$/, '');
   
   return newPost;
 };
