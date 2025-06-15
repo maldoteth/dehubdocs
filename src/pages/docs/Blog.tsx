@@ -1,6 +1,7 @@
+
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
-import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
+import { getPublishedPosts } from '@/utils/blogUtils';
 import BlogCard from '@/components/blog/BlogCard';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import SEO from '@/components/SEO';
@@ -35,23 +36,25 @@ const Blog = () => {
     const combinedPosts = [...originalPosts, ...newPosts];
     const uniquePosts = Array.from(new Map(combinedPosts.map(post => [post.id, post])).values());
     
-    const updatedPosts = uniquePosts.map(post => {
+    let updatedPosts = uniquePosts.map(post => {
       if (post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
         return { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
       }
       return post;
     });
 
+    // Manually set featured status to ensure only the correct post is featured.
+    updatedPosts = updatedPosts.map(post => ({
+      ...post,
+      featured: post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022'
+    }));
+
     return updatedPosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, [originalPosts]);
 
   const featuredPosts = useMemo(() => {
-    const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries');
-    const newFeatured = newPosts.filter(p => p.featured);
-    const combined = [...newFeatured, ...oldFeatured];
-    const uniquePosts = Array.from(new Map(combined.map(post => [post.id, post])).values());
-    return uniquePosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
-  }, []);
+    return allPosts.filter(p => p.featured);
+  }, [allPosts]);
 
   const allTags = useMemo((): BlogTag[] => {
     const tagCounts: { [key: string]: number } = {};
