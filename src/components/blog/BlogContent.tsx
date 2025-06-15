@@ -1,3 +1,4 @@
+
 import React from 'react';
 import DOMPurify from 'dompurify';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -78,6 +79,9 @@ const renderRegularContent = (text: string) => {
     }
     if (firstLine.startsWith('## ')) {
       return null;
+    }
+    if (firstLine.startsWith('#### ')) {
+      return <h4 key={index} className="text-lg font-bold text-royal-blue mb-2 mt-6 font-exo">{firstLine.slice(5)}</h4>;
     }
     if (firstLine.startsWith('### ')) {
       return <h3 key={index} className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">{firstLine.slice(4)}</h3>;
