@@ -30,7 +30,7 @@ const Blog = () => {
   const originalPosts = useMemo(() => getPublishedPosts(), []);
   
   const allPosts = useMemo(() => {
-    const combinedPosts = [...newPosts, ...originalPosts];
+    const combinedPosts = [...originalPosts, ...newPosts];
     const uniquePosts = Array.from(new Map(combinedPosts.map(post => [post.id, post])).values());
     
     const updatedPosts = uniquePosts.map(post => {
