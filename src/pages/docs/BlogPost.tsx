@@ -15,7 +15,7 @@ const BlogPost = () => {
   
   let post = slug ? getNewPostBySlug(slug) || getPostBySlug(slug) : null;
 
-  if (post && (post.title === 'Worldwide Creators: Partnerships Spanning 15 Countries' || post.title === 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback')) {
+  if (post && (post.title === 'Worldwide Creators: Partnerships Spanning 15 Countries' || post.title === 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback' || post.title === 'Smarter Liquidity: Automated Liquidity Provision on DEXs' || post.title === 'Open and Clear: DEX Policy Implementation and Transparency Commitment')) {
     post = null;
   } else if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
     post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };

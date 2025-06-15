@@ -28,7 +28,7 @@ const Blog = () => {
 
   const originalPosts = useMemo(() => {
     const publishedPosts = getPublishedPosts();
-    return publishedPosts.filter(post => post.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && post.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback');
+    return publishedPosts.filter(post => post.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && post.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback' && post.title !== 'Smarter Liquidity: Automated Liquidity Provision on DEXs' && post.title !== 'Open and Clear: DEX Policy Implementation and Transparency Commitment');
   }, []);
   
   const allPosts = useMemo(() => {
@@ -59,7 +59,7 @@ const Blog = () => {
   }, [originalPosts]);
 
   const featuredPosts = useMemo(() => {
-    const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && p.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback');
+    const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && p.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback' && p.title !== 'Smarter Liquidity: Automated Liquidity Provision on DEXs' && p.title !== 'Open and Clear: DEX Policy Implementation and Transparency Commitment');
     const newFeatured = newPosts.filter(p => p.featured);
     const combined = [...newFeatured, ...oldFeatured];
     // Deduplicate by title to remove the duplicate post
