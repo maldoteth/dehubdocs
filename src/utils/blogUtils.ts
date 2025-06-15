@@ -71,7 +71,7 @@ Stay tuned, and get ready to play. The arena awaits.`;
     newPost.bannerImageAlt = 'DeHub Revamped App Feed';
     newPost.publishedAt = '2025-05-03T10:00:00.000Z';
   } else if (post.slug === 'transparency-hub-dhbscancom-launches-for-contract-activity-tracking---a-dehub-milestone-from-q2-2025') {
-    newPost.bannerImage = '/lovable-uploads/63bd95be-1087-4e64-91b7-1bcb2c6668d0.png';
+    newPost.bannerImage = '/lovable-uploads/a6f93bd4-c3f4-4d91-abd9-ebdd88e3b884.png';
     newPost.bannerImageAlt = 'DHBScan.com banner';
   } else if (post.slug === 'community-champions-ugc-ambassadorship-program-launched---a-dehub-milestone-from-q2-2025') {
     newPost.bannerImage = '/lovable-uploads/443805df-744b-4ab4-80a7-ae59cafe8baa.png';
