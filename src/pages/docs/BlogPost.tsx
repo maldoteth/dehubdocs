@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, User, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
@@ -91,6 +90,9 @@ The last snapshot for the @LCS_game airdrops will be taken in **under a week!**
 To ensure you qualify, hold or stake your assets before the deadline and until your airdrop is complete. This is a critical milestone, and further details regarding the game launch, first-round raises, and the game token are releasing imminently.
 
 Stay tuned, and get ready to play. The arena awaits.`;
+  } else if (post.slug === 'fresh-experience-revamped-app-feed-with-audio-replies--live-talk-spaces---a-dehub-milestone-from-q2-2025') {
+    bannerImage = '/lovable-uploads/eeb2e5c9-2347-4865-876e-31f38fe4412a.png';
+    bannerImageAlt = 'DeHub Revamped App Feed';
   }
 
   const shareUrl = `${window.location.origin}/docs/blog/${post.slug}`;
