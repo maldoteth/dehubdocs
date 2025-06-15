@@ -297,6 +297,15 @@ Bring on 2023.`;
     newPost.publishedAt = '2021-03-30T10:00:00.000Z';
   } else if (post.title === "Power to the People: Community Governed Listings - A DeHub Milestone from Q2 2021") {
     newPost.publishedAt = '2021-05-15T10:00:00.000Z';
+    newPost.content = `From the very beginning, DeHub has been a project for the people, by the people. This isn't just a slogan; it's our foundational principle. Every critical decision on our path has been made transparently and democratically with our community.
+
+We took to our Telegram group to vote on the most fundamental aspects of our token. The community decided:
+- The Chain: Which blockchain we would build upon.
+- The Price: The initial listing price.
+- The Market Cap: Our starting valuation.
+- The Supply: The total token supply.
+
+Every step of the way was a collective decision. This approach ensures that DeHub is not just a platform, but a true community-governed ecosystem where every member has a voice and a stake in our shared future.`;
   } else if (post.title === "Navigating Challenges: Addressing a V1 Smart Contract Security Issue - A DeHub Milestone from Q2 2021") {
     newPost.publishedAt = '2021-06-19T10:00:00.000Z';
   }
