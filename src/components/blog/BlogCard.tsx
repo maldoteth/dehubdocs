@@ -48,13 +48,21 @@ const generateExcerpt = (content: string, fallback: string) => {
 const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const excerpt = generateExcerpt(post.content, post.excerpt);
 
+  const bannerImage = post.slug === '1-million-dollar-raise-completed'
+    ? '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png'
+    : post.bannerImage;
+  
+  const bannerImageAlt = post.slug === '1-million-dollar-raise-completed'
+    ? '$1,000,000 Fundraise'
+    : post.bannerImageAlt;
+
   return (
     <article className={`group bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg overflow-hidden ${featured ? 'lg:col-span-2' : ''}`}>
       <Link to={`/docs/blog/${post.slug}`} className="block">
         <div className="relative">
           <img 
-            src={post.bannerImage} 
-            alt={post.bannerImageAlt}
+            src={bannerImage} 
+            alt={bannerImageAlt}
             className={`w-full object-cover transition-transform duration-200 group-hover:scale-105 ${featured ? 'h-48' : 'h-40'}`}
           />
           {post.featured && (

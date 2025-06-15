@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, User, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
@@ -26,6 +27,14 @@ const BlogPost = () => {
       </div>
     );
   }
+
+  const bannerImage = post.slug === '1-million-dollar-raise-completed'
+    ? '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png'
+    : post.bannerImage;
+
+  const bannerImageAlt = post.slug === '1-million-dollar-raise-completed'
+    ? '$1,000,000 Fundraise'
+    : post.bannerImageAlt;
 
   const shareUrl = `${window.location.origin}/docs/blog/${post.slug}`;
   
@@ -63,7 +72,7 @@ const BlogPost = () => {
       <SEO
         title={post.seoTitle || post.title}
         description={post.seoDescription || post.excerpt}
-        image={post.bannerImage}
+        image={bannerImage}
         url={`/docs/blog/${post.slug}`}
         type="article"
         publishedTime={post.publishedAt}
@@ -164,8 +173,8 @@ const BlogPost = () => {
           {/* Banner Image */}
           <div className="mb-8 rounded-xl overflow-hidden">
             <img 
-              src={post.bannerImage} 
-              alt={post.bannerImageAlt}
+              src={bannerImage} 
+              alt={bannerImageAlt}
               className="w-full h-64 lg:h-96 object-cover"
             />
           </div>
