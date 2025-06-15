@@ -126,7 +126,7 @@ Spaces are limited to 50 ambassadors for this first wave, so get ready to showca
 ## Meet the Team
 
 ### Malik Jan - Co-Founder
-![Malik Jan](/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png)
+![Malik Jan|avatar](/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png)
 Founder of U.K registered Web3 developers DeLabs LTD and Co-founder of Puso group, a SEC licensed construction & development company in the Philippines.
 
 **Key Experience:**
@@ -136,7 +136,7 @@ Founder of U.K registered Web3 developers DeLabs LTD and Co-founder of Puso grou
 - ITS Construction: Sussex Regional Manager at leading UK construction agency. Built own office from scratch and turned 0 into $5k per week in less than 8 months, signed PSL with UK's most prestigious builder Berkeley Homes, won exclusive supplier at $100bn Horsham project, Highwood.
 
 ### Mike Hales - Co-Founder
-![Mike Hales](/lovable-uploads/4cc7ad51-0d4d-49fd-9307-b932b6dc7246.png)
+![Mike Hales|avatar](/lovable-uploads/4cc7ad51-0d4d-49fd-9307-b932b6dc7246.png)
 Founder and CEO of Rapz, a notable high end MMA fightwear brand backed by top UFC and boxing stars, with exclusive supplier rights to BKFC. Joint-owner of First Class, the UK's largest TikTok partner agency, approaching 1000 streamers signed on and reporting directly for the in-house executive team with offices in the UK and Asia.
 
 **Key Experience:**
@@ -145,7 +145,7 @@ Founder and CEO of Rapz, a notable high end MMA fightwear brand backed by top UF
 - Owner of the UK's leading cobra bag provider that recently merged with NGNE
 
 ### Indi Jay Cammish - Co-Founder
-![Indi Jay Cammish](/lovable-uploads/e06bb6aa-5093-4691-98a1-7bf09b02a71d.png)
+![Indi Jay Cammish|avatar](/lovable-uploads/e06bb6aa-5093-4691-98a1-7bf09b02a71d.png)
 Social media, content & dance expert overseeing communications & corporate relations.
 
 **Key Experience:**
@@ -154,7 +154,7 @@ Social media, content & dance expert overseeing communications & corporate relat
 - Co-founder of First Class, the UK's leading TikTok partner agency
 
 ### Bailey Young - Co-Founder
-![Bailey Young](/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png)
+![Bailey Young|avatar](/lovable-uploads/980e65e0-cae8-4ed4-86da-c11e3d42fa69.png)
 Operational powerhouse and former pro-gamer heavily connected across the gaming, music & entertainment scene.
 
 **Key Experience:**

@@ -40,8 +40,24 @@ const BlogContent: React.FC<BlogContentProps> = ({
       if (line.startsWith('![')) {
         const match = line.match(/!\[(.*?)\]\((.*?)\)/);
         if (match) {
-          const alt = match[1];
+          const altAndStyle = match[1];
           const src = match[2];
+
+          const parts = altAndStyle.split('|');
+          const alt = parts[0].trim();
+          const style = parts.length > 1 ? parts[1].trim() : 'default';
+
+          if (style === 'avatar') {
+            return (
+              <img
+                key={index}
+                src={src}
+                alt={alt}
+                className="w-24 h-24 rounded-full object-cover my-6 mx-auto block shadow-md"
+              />
+            );
+          }
+
           return <img key={index} src={src} alt={alt} className="my-6 rounded-lg shadow-md" />;
         }
       }
