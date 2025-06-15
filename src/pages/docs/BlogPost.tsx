@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Share2, Twitter, Facebook, Linkedin } from 'lucide-react';
@@ -93,6 +94,54 @@ Stay tuned, and get ready to play. The arena awaits.`;
   } else if (post.slug === 'transparency-hub-dhbscancom-launches-for-contract-activity-tracking---a-dehub-milestone-from-q2-2025') {
     bannerImage = '/lovable-uploads/3b0272d6-6cae-4b9a-a303-5fdf970d17e7.png';
     bannerImageAlt = 'DHBScan Metrics';
+  } else if (post.slug === 'community-champions-ugc-ambassadorship-program-launched---a-dehub-milestone-from-q2-2025') {
+    bannerImage = '/lovable-uploads/59b8a8cb-c9c7-412e-b51e-8f68b47d73a0.png';
+    bannerImageAlt = 'DeHub UGC Programme';
+    publishedAt = '2025-05-10T10:00:00.000Z';
+    content = `## Become a DeHub Ambassador: Announcing Our UGC Programme
+
+The strength of DeHub has always been its community. Today, we're excited to take that to the next level by officially launching the DeHub User-Generated Content (UGC) and Ambassadorship Programme! This is your chance to become an official voice for DeHub, create content you're passionate about, and get rewarded for your creativity and influence.
+
+![DeHub UGC Programme Banner](/lovable-uploads/59b8a8cb-c9c7-412e-b51e-8f68b47d73a0.png)
+
+### What is the UGC Programme?
+
+We're looking for passionate creators, storytellers, and influencers to help us spread the word about DeHub. Whether you have a massive following or a small, engaged audience, we believe everyone has a unique voice. We are opening up **50 spots** for creators to join our inaugural cohort of ambassadors.
+
+This programme is designed for creators of all sizes. We have opportunities for both small and large accounts, with compensation structured to reflect your reach and impact.
+
+### What's Involved?
+
+As a DeHub Ambassador, you'll create content across various platforms to showcase what makes our ecosystem special. Your mission, should you choose to accept it, is to produce engaging content for:
+
+- **X (formerly Twitter):** Share updates, create threads, and engage with the wider crypto community.
+- **YouTube:** Produce video reviews, tutorials, or deep dives into DeHub's features.
+- **Instagram:** Create visually appealing posts, Reels, and Stories.
+- **DeHub App:** Be an active, leading voice within our own platform, sharing insights and fostering discussion.
+
+### Who Are We Looking For?
+
+We're seeking creative, authentic, and knowledgeable individuals who are genuinely excited about the future of decentralized platforms. You could be a:
+
+- Crypto enthusiast with a knack for breaking down complex topics.
+- Talented video creator or graphic designer.
+- Social media guru with an engaged following.
+- Passionate DeHub user who wants to share their experience.
+
+### Why Join?
+
+This is more than just a content creation gig. It's a partnership. As a DeHub Ambassador, you will receive:
+
+- **Ranging Compensation:** We offer competitive rewards tailored to your content and audience size.
+- **Exclusive Access:** Get sneak peeks at upcoming features and a direct line of communication with the DeHub team.
+- **Official Recognition:** Be featured as an official ambassador, boosting your own profile in the Web3 space.
+- **Shape the Future:** Your feedback and content will directly contribute to the growth and direction of DeHub.
+
+### How to Apply
+
+Ready to join the ranks of our Community Champions? The application process is simple. We'll be sharing a link to the application form soon across our official channels.
+
+Spaces are limited to 50 ambassadors for this first wave, so get ready to showcase your creativity. We can't wait to see what you'll create!`;
   }
 
   const shareUrl = `${window.location.origin}/docs/blog/${post.slug}`;
