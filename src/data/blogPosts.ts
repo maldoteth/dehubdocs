@@ -1,4 +1,3 @@
-
 import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
@@ -52,6 +51,7 @@ Don't miss out on this incredible opportunity to win while being part of our gro
     readingTime: 3,
     tags: ['Competition', 'Community', 'Rewards', 'Engagement'],
     featured: true,
+    status: 'published',
     seoTitle: '$500 Competition - Win Amazing Prizes | DeHub',
     seoDescription: 'Join our exciting $500 competition with amazing cash prizes. Easy participation, great rewards for our community members.'
   },
@@ -152,6 +152,7 @@ Stay tuned for more updates and get ready to experience the future of decentrali
     readingTime: 2,
     tags: ['Base', 'Layer 2', 'DeFi', 'Integration', 'Blockchain'],
     featured: false,
+    status: 'published',
     seoTitle: 'Base Pool Going Live Soon - Enhanced DeFi on Layer 2 | DeHub',
     seoDescription: 'Our Base blockchain integration launches soon with lower fees, faster speeds, and enhanced DeFi opportunities. Get ready for the future!'
   },
@@ -208,6 +209,7 @@ This represents the future of high-value prize draws, combining cutting-edge tec
     readingTime: 5,
     tags: ['Raffle', 'Blockchain', 'Real Estate', 'Cryptocurrency'],
     featured: true,
+    status: 'published',
     seoTitle: 'Win $1M Home - Blockchain Crypto Raffle by DeHub',
     seoDescription: 'Enter our revolutionary blockchain raffle to win a stunning $1M home. Transparent, fair, and powered by cryptocurrency technology.'
   },
@@ -303,6 +305,7 @@ Thank you for your patience during the transition and for being part of our jour
     readingTime: 4,
     tags: ['Updates', 'Performance', 'UI/UX', 'Technology'],
     featured: false,
+    status: 'published',
     seoTitle: 'Major UI Overhaul & 200% Speed Boost - DeHub Platform Update',
     seoDescription: 'Experience our completely redesigned interface with 200% faster performance. New UI, enhanced mobile experience, and lightning-fast loading times.'
   },
@@ -435,6 +438,7 @@ Welcome to the future. Welcome to DeHub.
     readingTime: 8,
     tags: ['DeHub', 'Decentralization', 'Community', 'Blockchain', 'Web3'],
     featured: true,
+    status: 'published',
     seoTitle: 'Welcome to DeHub - The Future of Decentralized Communities',
     seoDescription: 'Discover DeHub, the revolutionary platform for decentralized communities. User-owned, blockchain-powered, and community-governed digital spaces.'
   },
@@ -630,6 +634,7 @@ The future of work, governance, and collective action is being written in code, 
     readingTime: 12,
     tags: ['DAO', 'Governance', 'Decentralization', 'Blockchain', 'Organizations'],
     featured: false,
+    status: 'published',
     seoTitle: 'Complete Guide to DAOs - Decentralized Autonomous Organizations',
     seoDescription: 'Comprehensive guide to understanding DAOs, their benefits, challenges, and future potential in blockchain governance and decentralized organizations.'
   },
@@ -874,6 +879,7 @@ Web3 isn't just about new technology—it's about creating a more equitable, use
     readingTime: 15,
     tags: ['Web3', 'Blockchain', 'Decentralization', 'Internet', 'Future Technology'],
     featured: false,
+    status: 'published',
     seoTitle: 'The Rise of Web3 - Complete Guide to Decentralized Internet',
     seoDescription: 'Comprehensive guide to Web3 transformation, exploring decentralized internet technologies, benefits, challenges, and the future of user-owned digital experiences.'
   }
