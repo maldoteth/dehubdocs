@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -291,6 +292,8 @@ Bring on 2023.`;
     newPost.publishedAt = '2021-04-20T10:00:00.000Z';
   } else if (post.title === "Listening to Our Users: 50+ Interviews Shape DeHub - A DeHub Milestone from Q1 2021") {
     newPost.publishedAt = '2021-03-30T10:00:00.000Z';
+  } else if (post.title === "Power to the People: Community Governed Listings - A DeHub Milestone from Q2 2021") {
+    newPost.publishedAt = '2021-05-15T10:00:00.000Z';
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
