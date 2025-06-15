@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ExternalLink, Zap, Shield, CreditCard } from 'lucide-react';
+import { ExternalLink, Zap, Shield, CreditCard, Clock } from 'lucide-react';
 
 const TokenWhereToBuy = () => {
   const exchanges = [
@@ -42,6 +42,24 @@ const TokenWhereToBuy = () => {
             <p className="text-blue-800 leading-relaxed">
               $DHB will only ever be officially tradable on decentralised exchanges (DEXs) that enforce our tokenomics and ensure every single transactions is on-chain, as it should be.
             </p>
+          </div>
+        </CardContent>
+      </Card>
+      
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-xl text-slate-800 flex items-center gap-2">
+            Coming Soon
+            <Clock className="w-5 h-5" />
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors">
+            <div>
+              <h4 className="font-semibold text-slate-700">Coinbase</h4>
+              <p className="text-slate-600">Centralized Exchange (CEX)</p>
+            </div>
+            <span className="text-sm font-medium text-slate-500">Listing soon!</span>
           </div>
         </CardContent>
       </Card>
