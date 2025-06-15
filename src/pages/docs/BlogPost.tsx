@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -23,6 +22,7 @@ const BlogPost = () => {
   } else if (post && post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost') {
     post = {
       ...post,
+      title: 'Faster and Sleeker: major app upgrade reveals UI Overhaul and 200% Backend Speed Boost',
       publishedAt: '2024-10-28T12:00:00.000Z',
       content: `### Introducing the new DeHub App:
 
