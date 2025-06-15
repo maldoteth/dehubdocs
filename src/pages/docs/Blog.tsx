@@ -36,21 +36,23 @@ const Blog = () => {
     const combinedPosts = [...originalPosts, ...newPosts];
     const uniquePosts = Array.from(new Map(combinedPosts.map(post => [post.id, post])).values());
     
-    let updatedPosts = uniquePosts.map(post => {
+    const updatedPosts = uniquePosts.map(p => {
+      const post = { ...p };
+
       if (post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
-        return { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
+        post.publishedAt = '2024-01-09T12:00:00.000Z';
       }
       if (post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
-        return { ...post, publishedAt: '2025-04-20T12:00:00.000Z' };
+        post.publishedAt = '2025-04-20T12:00:00.000Z';
       }
+
+      // Manually set featured status for specific posts.
+      post.featured = 
+        post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022' ||
+        post.title === 'Faster and Sleeker: UI Overhaul and 200% Backend Speed Boost';
+        
       return post;
     });
-
-    // Manually set featured status to ensure only the correct post is featured.
-    updatedPosts = updatedPosts.map(post => ({
-      ...post,
-      featured: post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022'
-    }));
 
     return updatedPosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, [originalPosts]);
