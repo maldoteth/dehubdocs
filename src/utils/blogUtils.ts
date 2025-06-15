@@ -125,8 +125,8 @@ Stay tuned for announcements about our selected ambassadors and future opportuni
   } else if (post.slug === 'official-standing-delabs-ltd-incorporated---a-dehub-milestone-from-q3-2022') {
     newPost.publishedAt = '2022-06-29T10:00:00.000Z';
     newPost.readingTime = 4;
-    newPost.bannerImage = '/lovable-uploads/8c74c2f1-8b5a-4a46-be89-004d8ff41ed5.png';
-    newPost.bannerImageAlt = 'DeLabs LTD Grand Opening';
+    newPost.bannerImage = '/lovable-uploads/8944c861-58be-420e-80c8-c0ce78c5d22d.png';
+    newPost.bannerImageAlt = 'DeLabs LTD UK office building';
     newPost.excerpt = 'In response to recent changes in the regulatory stance of the UK government, DeHub has established DeLabs LTD and a UK Headquarters to leverage the country\'s favourable NFT stance.';
     newPost.content = `In response to recent changes in the regulatory stance of the UK government heralding the jurisdiction as an upcoming NFT hub for businesses, we’ve taken steps to register a new company here under the name of DeLabs LTD. This entity will oversee all NFT operations from the UK and adds to our Philippine SEC-registered HQ with more global offices pipelined as we expand.
 
