@@ -123,6 +123,18 @@ Ready to join the ranks of our Community Champions? The application process is s
 Spaces are limited to 50 ambassadors for this first wave, so get ready to showcase your creativity. We can't wait to see what you'll create!`;
   }
   
+  // Clean up tags by replacing "Qx YYYY" with just "YYYY"
+  const cleanedTags = new Set<string>();
+  newPost.tags.forEach(tag => {
+    const yearMatch = tag.match(/\b(202\d)\b/); // Matches years from 2020-2029
+    if (tag.toUpperCase().startsWith('Q') && yearMatch) {
+      cleanedTags.add(yearMatch[1]);
+    } else {
+      cleanedTags.add(tag);
+    }
+  });
+  newPost.tags = Array.from(cleanedTags);
+  
   return newPost;
 };
 
