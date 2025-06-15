@@ -131,9 +131,7 @@ const TermsOfService = () => {
 
           <div>
             <h3 className="font-semibold text-royal-blue mb-2">Refunds Policy</h3>
-            <p>
-              Due to the irreversible nature of blockchain transactions, refunds are not applicable in any capacity. All token purchases are final and cannot be reversed, canceled, or refunded.
-            </p>
+            <p>Due to the irreversible nature of blockchain transactions, refunds are only applicable if sale is not as described or does not do what it's supposed to applicable in any capacity. All token purchases are final and cannot be reversed, canceled, or refunded unless the above conditions are broken.</p>
           </div>
 
           <div>
