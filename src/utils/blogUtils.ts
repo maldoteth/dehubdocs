@@ -580,7 +580,8 @@ Thank you for being part of our community. The future is bright, and it is being
     "Safe Spaces: DeHub's Initial Content Moderation Framework - A DeHub Milestone from Q1 2021",
     "The Genesis: DeHub's V1 Token Launch - A DeHub Milestone from Q2 2021",
     "A Voice for All: DeHub's Basic Governance Voting Arrives - A DeHub Milestone from Q2 2021",
-    "Growing Together: DeHub's Early Adopter Community Surpasses 2,000 - A DeHub Milestone from Q2 2021"
+    "Growing Together: DeHub's Early Adopter Community Surpasses 2,000 - A DeHub Milestone from Q2 2021",
+    "Empowering Talent: Comprehensive Creator Education Curriculum Rolls Out - A DeHub Milestone from Q2 2025"
   ];
   return allPosts
     .filter(post => !postsToExcludeByTitle.includes(post.title))
