@@ -19,6 +19,8 @@ const BlogPost = () => {
     post = null;
   } else if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
     post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
+  } else if (post && post.title === 'Back in Action: DeHub V2 Trading Resumes on Gate.io') {
+    post = { ...post, publishedAt: '2023-02-16T12:00:00.000Z' };
   } else if (post && post.title === 'Faster and Sleeker: major app upgrade reveals UI Overhaul and 200% Backend Speed Boost') {
     post = {
       ...post,
