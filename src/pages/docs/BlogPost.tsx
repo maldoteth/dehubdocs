@@ -30,13 +30,23 @@ const BlogPost = () => {
 
   let bannerImage = post.bannerImage;
   let bannerImageAlt = post.bannerImageAlt;
+  let content = post.content;
 
   if (post.slug === '1-million-dollar-raise-completed') {
     bannerImage = '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png';
     bannerImageAlt = '$1,000,000 Fundraise';
   } else if (post.slug === 'get-ready-players-final-snapshot-for-last-chad-standing-airdrop---a-dehub-milestone-from-q2-2025') {
-    bannerImage = '/lovable-uploads/d94d32d5-a54c-472f-9340-82a63b73fa3c.png';
+    bannerImage = '/lovable-uploads/6d868478-769e-4981-b285-4ca5fa215dc5.png';
     bannerImageAlt = 'Last Chad Standing helicopter';
+    content = `🚨 The Final Call 🚨
+
+The last snapshot for the @LCS_game airdrops will be taken in under a week!
+
+Deadline: 04/01/25 at 00:00 UTC
+
+To ensure you qualify, hold or stake before the deadline and until your airdrop is complete.
+
+Further details regarding the game launch, first-round raises and game token are releasing imminently.`;
   }
 
   const shareUrl = `${window.location.origin}/docs/blog/${post.slug}`;
@@ -184,7 +194,7 @@ const BlogPost = () => {
 
           {/* Article Content */}
           <div className="mb-12">
-            <BlogContent content={post.content} />
+            <BlogContent content={content} />
           </div>
 
           {/* Article Footer */}
