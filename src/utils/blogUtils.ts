@@ -7,6 +7,7 @@ const applyPostOverrides = (post: BlogPost): BlogPost => {
   if (post.slug === '1-million-dollar-raise-completed') {
     newPost.bannerImage = '/lovable-uploads/bdd1dd4c-eb62-44e7-a205-fced995bdf9f.png';
     newPost.bannerImageAlt = '$1,000,000 Fundraise';
+    newPost.featured = true;
   } else if (post.slug === 'get-ready-players-final-snapshot-for-last-chad-standing-airdrop---a-dehub-milestone-from-q2-2025') {
     newPost.bannerImage = '/lovable-uploads/6d868478-769e-4981-b285-4ca5fa215dc5.png';
     newPost.bannerImageAlt = 'Last Chad Standing helicopter';
@@ -478,7 +479,7 @@ Stay tuned for more updates as we approach this exciting milestone!`,
     publishedAt: '2025-06-15T10:00:00.000Z',
     tags: ['Coinbase', 'Exchange', 'Listing', 'Base', 'Accessibility'],
     readingTime: 2,
-    featured: true,
+    featured: false,
     status: 'published',
   };
   allPosts.unshift(coinbasePost);
