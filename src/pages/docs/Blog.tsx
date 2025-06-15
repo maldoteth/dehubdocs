@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
@@ -5,7 +6,7 @@ import BlogCard from '@/components/blog/BlogCard';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import SEO from '@/components/SEO';
 import { BlogPost as BlogPostType, BlogTag } from '@/types/blog';
-import { newPosts } from '@/data/newPosts';
+import { newPosts, excludedTitles } from '@/data/newPosts';
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -28,7 +29,7 @@ const Blog = () => {
 
   const originalPosts = useMemo(() => {
     const publishedPosts = getPublishedPosts();
-    return publishedPosts.filter(post => post.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && post.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback' && post.title !== 'Smarter Liquidity: Automated Liquidity Provision on DEXs' && post.title !== 'Open and Clear: DEX Policy Implementation and Transparency Commitment');
+    return publishedPosts.filter(post => !excludedTitles.includes(post.title));
   }, []);
   
   const allPosts = useMemo(() => {
@@ -59,7 +60,7 @@ const Blog = () => {
   }, [originalPosts]);
 
   const featuredPosts = useMemo(() => {
-    const oldFeatured = getFeaturedPosts().filter(p => p.title !== 'Worldwide Creators: Partnerships Spanning 15 Countries' && p.title !== 'Leveling Up: Major App Upgrade Earns 95% Positive Feedback' && p.title !== 'Smarter Liquidity: Automated Liquidity Provision on DEXs' && p.title !== 'Open and Clear: DEX Policy Implementation and Transparency Commitment');
+    const oldFeatured = getFeaturedPosts().filter(p => !excludedTitles.includes(p.title));
     const newFeatured = newPosts.filter(p => p.featured);
     const combined = [...newFeatured, ...oldFeatured];
     // Deduplicate by title to remove the duplicate post
