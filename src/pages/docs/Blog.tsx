@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts, getAllTags, searchPosts } from '@/utils/blogUtils';
@@ -13,21 +14,25 @@ const Blog = () => {
   const featuredPosts = getFeaturedPosts();
   const allTags = getAllTags();
 
-  const filteredPosts = useMemo(() => {
+  const filteredPostsBySearch = useMemo(() => {
     let posts = allPosts;
-
     if (searchQuery) {
       posts = searchPosts(searchQuery);
     }
-
     if (selectedTag) {
       posts = posts.filter(post => 
         post.tags.some(tag => tag.toLowerCase() === selectedTag.toLowerCase())
       );
     }
-
     return posts;
   }, [searchQuery, selectedTag, allPosts]);
+
+  const nonFeaturedPosts = useMemo(() => {
+    const featuredSlugs = new Set(featuredPosts.map(p => p.slug));
+    return allPosts.filter(p => !featuredSlugs.has(p.slug));
+  }, [allPosts, featuredPosts]);
+
+  const postsToDisplay = searchQuery || selectedTag ? filteredPostsBySearch : nonFeaturedPosts;
 
   return (
     <>
@@ -113,8 +118,11 @@ const Blog = () => {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {featuredPosts.slice(0, 2).map(post => (
-                <BlogCard key={post.id} post={post} />
+              {featuredPosts.slice(0, 1).map(post => (
+                <BlogCard key={post.slug} post={post} featured={true} />
+              ))}
+              {featuredPosts.slice(1, 2).map(post => (
+                <BlogCard key={post.slug} post={post} />
               ))}
             </div>
           </section>
@@ -129,15 +137,15 @@ const Blog = () => {
             </h2>
             {(searchQuery || selectedTag) && (
               <span className="text-royal-blue/60 font-exo">
-                ({filteredPosts.length} post{filteredPosts.length !== 1 ? 's' : ''})
+                ({postsToDisplay.length} post{postsToDisplay.length !== 1 ? 's' : ''})
               </span>
             )}
           </div>
 
-          {filteredPosts.length > 0 ? (
+          {postsToDisplay.length > 0 ? (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {filteredPosts.map(post => (
-                <BlogCard key={post.id} post={post} />
+              {postsToDisplay.map(post => (
+                <BlogCard key={post.slug} post={post} />
               ))}
             </div>
           ) : (
