@@ -455,7 +455,7 @@ This AMA covered a lot of ground, and we’re excited for what’s to come. Stay
 };
 
 const getAllPostsWithOverrides = (): BlogPost[] => {
-  const allPosts = [...blogPosts];
+  const allPosts = [...blogPosts].filter(p => p.slug !== 'feature-spotlight-ad-tech');
 
   const coinbasePost: BlogPost = {
     id: 'dhb-tradable-on-coinbase-soon',
@@ -581,7 +581,8 @@ Thank you for being part of our community. The future is bright, and it is being
     "The Genesis: DeHub's V1 Token Launch - A DeHub Milestone from Q2 2021",
     "A Voice for All: DeHub's Basic Governance Voting Arrives - A DeHub Milestone from Q2 2021",
     "Growing Together: DeHub's Early Adopter Community Surpasses 2,000 - A DeHub Milestone from Q2 2021",
-    "Empowering Talent: Comprehensive Creator Education Curriculum Rolls Out - A DeHub Milestone from Q2 2025"
+    "Empowering Talent: Comprehensive Creator Education Curriculum Rolls Out - A DeHub Milestone from Q2 2025",
+    "Feature Spotlight: Verification & Decentralised Moderation - A DeHub Milestone from Q3 2023"
   ];
   return allPosts
     .filter(post => !postsToExcludeByTitle.includes(post.title))
