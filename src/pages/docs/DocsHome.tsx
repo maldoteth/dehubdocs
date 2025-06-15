@@ -150,24 +150,6 @@ const DocsHome = () => {
         </div>
       </div>
 
-      {/* Features */}
-      <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-royal-blue mb-4 font-exo">Why Build On DeHub?</h2>
-          <p className="text-royal-blue/70 max-w-2xl mx-auto font-exo">For true censorship resistance, decentralisation and permissionlessness that's guaranteed for the rest of time, choose DeHub.</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map(feature => <div key={feature.title} className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-sky-blue/20 to-middle-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <feature.icon className="w-8 h-8 text-royal-blue" />
-              </div>
-              <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{feature.title}</h3>
-              <p className="text-royal-blue/70 text-sm font-exo">{feature.description}</p>
-            </div>)}
-        </div>
-      </div>
-
       {/* Latest Blog Post Promotion */}
       {latestPost && (
         <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
@@ -210,6 +192,24 @@ const DocsHome = () => {
           </div>
         </div>
       )}
+
+      {/* Features */}
+      <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-royal-blue mb-4 font-exo">Why Build On DeHub?</h2>
+          <p className="text-royal-blue/70 max-w-2xl mx-auto font-exo">For true censorship resistance, decentralisation and permissionlessness that's guaranteed for the rest of time, choose DeHub.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map(feature => <div key={feature.title} className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-sky-blue/20 to-middle-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <feature.icon className="w-8 h-8 text-royal-blue" />
+              </div>
+              <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{feature.title}</h3>
+              <p className="text-royal-blue/70 text-sm font-exo">{feature.description}</p>
+            </div>)}
+        </div>
+      </div>
 
       {/* Getting Started */}
       <div className="bg-gradient-to-r from-royal-blue to-middle-blue rounded-2xl p-8 text-center">
