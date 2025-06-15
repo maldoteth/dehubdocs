@@ -161,6 +161,135 @@ Operational powerhouse and former pro-gamer heavily connected across the gaming,
 - Investments and tokenomics expert who played an instrumental role in the astronomical growth of DeHub in 2021
 - Oversaw the Blocjerk fundraise of $1,000,000 in 2023 which gave a peak ROI of 1,000%
 - Former professional gamer, ranking globally in the top 3 COD MW2 and top 100 on Warzone under the tag RickyBobby`;
+  } else if (post.slug === '2022-wrap-up-and-2023-lookahead') {
+    newPost.title = '2022 Wrap Up';
+    newPost.status = 'published';
+    newPost.bannerImage = '/lovable-uploads/54bc3062-44f0-456b-8183-c916d4cef34e.png';
+    newPost.bannerImageAlt = 'DeHub 2022 Wrap-Up with fireworks';
+    newPost.publishedAt = '2023-01-04T10:00:00.000Z';
+    newPost.tags = ['2022', '2023', 'Recap'];
+    newPost.content = `Thanks to each and every one of the team, community and contributors we have been ploughing through our roadmap and setting ourself up for the biggest year yet.
+
+### We started 2022 with…
+
+- No games or arcade d’app
+- No streaming d’app or documentaries
+- No marketplace d’app or NFTs minted
+- No staking d’app.
+
+We’ve sustained plenty of hopes, dreams and bear market battle wounds yet through thick and thin we’ve prevailed. We had a plan and like-minded individuals who were all aligned to the same goal.
+
+### We now end 2022 with…
+
+- Streaming d’app for stakers with 2 original productions released, including the exclusive feature from Jorge Masvidal and more pipelined for 2023
+- Gaming arcade with 3 custom play and win to earn games, including Whack a Schiff and Gas Guzzler which is set for app & play store debut imminently
+- Our own marketplace with epic partners and products including Raceline in Bristol amongst more to be announced in 2023
+- Staking d’app with 100m+ tokens in rewards successfully claimed by holders
+- The free mint for LCFC picking up steam with the game set for imminent release with officially licensed fighters.
+- Our new company registered in the UK with the BDM team set up, targeting businesses and consumers.
+
+### We enter 2023 with…
+
+Our streaming and marketplace d’app upgrades set for imminent release and currently being tested by users. This includes a permission-less deposit and spend contract that allows for instant fiat onboarding, with 0 wallet knowledge and email/password access. Transactions occur instantly and direct on d’app with 0 gas fees. This allows us to scale to millions of users without having to worry about BNB, Matic or Ethereum TPS. The 3 chains we will be minting the new DHB token on and the first 3 chains that will be integrated onto the d’app, also set for release on IOS and Android.
+
+### It’s clear to see…
+
+We’ve been building and now we enter 2023 prepared to scale. We’ve laid the foundations and all of our core d’apps are coming to fruition, entering their later development phases. Development wise we’re in our strongest position so far, with enough ammo and a continuous stream of reinforcements to get us through any bear market as we’ve proved over the last year. DeHub is not just surviving, but thriving and putting out game-changing tech through the chaos and commotion of a turbulent year. Although it’s been a success development wise, there is a leaderboard out there for d’app users we aren’t close to topping. That must change now.
+
+**2023 must be better, 2023 must be bigger, 2023 must be $DHB.**
+
+### Chronological condensed highlights…
+
+**January 4:** LCFC started revealing art and onboarding notable club members including Lerone Murphy, Kane Mousah, Kelvin Gastelum, Mark Diakese, Brad Pickett and many more.
+
+**January 12:** DeHub community successfully raised over $2,000 to assist long term and value adding community member Skeksis who had just been beaten up and robbed.
+
+**January 20:** Partnered with and integrated fiat on-ramp for users to buy DeHub tokens direct on our d’app via credit or debit cards.
+
+**January 24:** Released staking whitepaper and technical specification as well as a hackathon bounty which was never cracked.
+
+**January 27:** Staking d’app launched on our own custom built contract for our previous tokenomics including reflections and rewards.
+
+**February 22:** Scheduled launch of our stake-to-access streaming d’app including licensed films, tv shows and documentaries as well as our own productions. This was delayed due to Allrites technical delivery and our CTO Aleksandr had to go onto their own tech stack and finish the build they couldn’t.
+
+**February 25:** Malik, Mike and Indi interview and review by Entrepreneur.com released in this article
+
+**February 27:** DeHub production & Vida Entertainment team flew out to Prague to film our genesis original production, following the emotional Oktagon return of war veteran Jay Cuciniello.
+
+**March 1:** Official release of first original production trailer for Way of The Warrior series and featured in BigFish Boxing.
+
+**March 14:** Way of the Warrior pilot released onto our own custom streaming d’app for stakers.
+
+**March 22:** Genesis mints for LCFC commenced with floor price currently 0.3E on a free collection.
+
+**March 26:** Puso Group, the company part owned by Malik and overseeing initial development of the d’app officially receives SEC licenses & registration in the Philippines.
+
+**April 1:** Genesis rewards unlocked from V1 staking with over 50,000,000 in DeHub tokens distributed to all stakers.
+
+**April 7:** Completed OTC deal with North Equities for $100,000 marketing campaign involving a number of KOLs and publications of which we recieved 50%. The tokens were locked into a contract and then never claimed and upon our contract upgrade are considered burned as they can now never be claimed. North Equities were understanding given the market and poor performance and we essentially came away with 3 months of marketing for free, albeit not the best.
+
+**April 19:** Play and win to earn arcade made its debut with classic arcade games available and users airdropped 10,000 tokens for participating.
+
+**May 6:** Released first custom game, Super Robin Hood, onto our arcade. A fun, simple and engaging platform game aimed at growing users and driving ad revenue to the protocol, which is shared with holders.
+
+**May 9:** DeHub production team linked up with Jorge Masvidal to film content and a trailer for episode 2 of our original series, Way of the Warrior featuring a deep dive into the groundgreaking career of UFC legend Brad Pickett.
+
+**May 27:** Partnership secured with Raceline bringing Lamborghinis and a host of other super cars onto our marketplace while offering their customers a chance to claim a free dehub.net minted NFT with every purchase.
+
+**June 6:** Marketplace goes live on mainnet, and with it DeHub officially becomes the world’s first dedicated phygital NFT marketplace with a transaction on chain. Our marketplace is custom built to host our own product lines but also opening up to public use in later stages.
+
+**June 15:** Released “Whack A Schiff” onto our arcade, a play and win to earn game where users fight for high scores for whacking the mole version of Peter Schiff on the head while avoiding the bombs!
+
+**June 29:** DeLabs LTD is registered in the UK and given registration 14204474. Office opened up in Waterlooville with a BDM team focussed on B2B and B2C.
+
+**July 14:** Way of the Warrior Episode 2 featuring Jorge Masvidal and Brad Pickett released to rave reviews and expecting retweets from the legend Gamebred himself prior to facing technical difficulties with our stake to access d’app. This also played a role in DeHub’s transformation to a free public streaming app where anyone can view content. We are working closely with all past partners to bring this to life.
+
+**July 8:** The team attend Binance’s 5th birthday celebrations in Paris and connect with key members of the Binance ecosystem.
+
+**July 25:** DeLabs LTD acquired $1,000,000 UK home and put it up for raffle on DeHub’s provably fair and random NFT raffle protocol. This was covered by a number of KOLs and publishers including bitcoin.com across multiple platforms and sales started well yet ROI became unsustainable and the home is currently renting privately and is likely to be sold on the market followed by refunds to ticket holders. The NFT will still possess utility nonetheless and revenue raised from the property will be reinvested back into the protocol.
+
+**August 10:** First tax halving commenced and reducing the protocol’s transaction tax from 12% to 6% much to the approval of the community.
+
+**August 12:** DeHub officially partners with Travladd, bringing the growing influencer on board our marketing advisory team. Trav was one of the first to cover our project when we launched and will be with us for many years ahead.
+
+**August 15:** Partnered with Lawrence Choto, TikTok star with over 1m followers focussed on positivity and random acts of kindness. We are working on a long term documentary with Lawrence as well as a number of promotional campaigns.
+
+**August 17:** New play and win to earn model released with hackathon which was cracked and users rewarded. A combination of screen recording and security measures will be implemented as it is clear that even the biggest games in the world can’t stop cheaters.
+
+**August 31:** LCFC full art reveal and token-gated Discord groups go live. Along with the first LCFC game being teased in the following months, there is also a full website re-build set for launch on January 11th 2023.
+
+**September 3:** The tax halving caused trigger calibration issues with the contract. Previously, all we had to do was manually pull the triggers to unblock the contract, but after the tax halving this wasn’t possible and the order of triggers also recalibrated meaning we could not resolve the issue immediately.
+
+**September 7:** Contract upgrade announced and notice given to traders on gate.io prior to the halting of transactions.
+
+**September 24:** Private LGE (liquidity generation event) for existing holders commences.
+
+**September 25:** Private sale is sold out and over subscribed by 50% which was used to then fill the public allocation.
+
+**October 10:** New whitepaper released including key updates on tokenomics and technical changes.
+
+**October 25:** On-chain referral and rewards system went live along with upgrade to our marketplace smart contract.
+
+**October 31:** Public LGE goes live for 11 days after integration of our new referral system along with a new bot we built to track and reward engaged users in our community. This is currently being mastered and set for updates prior to the new token launch.
+
+**November 11:** Official release of Gas Guzzler, a play and win to earn game where users collect DeHub coins while avoiding other moonboys around a track in their Lambos making sure to keep the Ethereum Gas topped up and hitting the NOS for a boost!
+
+**Nov 18:** Banking on Zero (BOZ) trailer goes live and promises to be the most uncensored deep dive into the FTX saga and all of the victims that fell along with it.
+
+**November 23:** Malik’s younger brother and team member in our gaming division secures dream job at Binance working as an investment advisor for institutional clients.
+
+**November 25:** Released first gameplay teasers for LCFC’s genesis 2D game “Street Slayer” including officially licensed UFC stars and more set for launch on IOS and Android stores as well as DeHub’s arcade.
+
+**December 2:** Streaming d’app upgrade whitepaper release and technical reveal.
+
+**December 12:** Sheriff finally secures 1 token from Malik on his Birthday.
+
+**December 16:** Private beta goes live on testnet to outstanding reviews and feedback all contributing to further development prior to public launch.
+
+**December 27:** We closed the year with key updates on our latest test d’app, new token listing and marketing partner update where you will see me and the team regularly on Crypto Jamie’s channel, currently ranked number 3 on Binance Live.
+
+Bring on 2023.
+`;
   }
   
   // Clean up tags by replacing "Qx YYYY" with just "YYYY"
