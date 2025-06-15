@@ -327,7 +327,9 @@ This incident, while challenging, has made our platform stronger and our commitm
   } else if (post.title.startsWith("Leading the Way: DeHub Agency Becomes UK #1")) {
     newPost.title = "Leading the Way: DeHub founder's agency Becomes UK #1 with 1,000 Streamers";
     newPost.publishedAt = '2024-11-22T10:00:00.000Z';
-  } else if (post.slug === 'town-hall-ama-october-2024') {
+  } else if (post.title.startsWith("Scaling New Heights: Livepeer Integration for 50k+ Concurrent Viewers")) {
+    newPost.publishedAt = '2025-03-14T10:00:00.000Z';
+  } else if (post.title.startsWith("Town Hall AMA October 2024")) {
     newPost.content = `Our recent Town Hall AMA was a great success, and we want to thank our incredible community for their insightful questions. We've compiled the key questions and answers below to keep everyone in the loop.
 
 ### 1. Can we get a roadmap with exact release dates?
