@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -355,7 +354,7 @@ export const getAllTags = (): BlogTag[] => {
   
   const allTags = Object.entries(tagCounts).map(([name, count]) => ({ name, count }));
 
-  const qTagRegex = /^Q(\d)\s(20\d{2})$/;
+  const qTagRegex = /^Q(\d)\s?(20\d{2})$/;
   const qTags: BlogTag[] = [];
   const otherTags: BlogTag[] = [];
 
