@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -123,6 +124,7 @@ Spaces are limited to 50 ambassadors for this first wave, so get ready to showca
 
 ## Meet the Team
 
+[TEAM_SECTION_START]
 ### Malik Jan - Co-Founder
 ![Malik Jan|avatar](/lovable-uploads/361bb373-38ee-4888-a4b1-ab8239941261.png)
 Founder of U.K registered Web3 developers DeLabs LTD and Co-founder of Puso group, a SEC licensed construction & development company in the Philippines.
@@ -158,7 +160,8 @@ Operational powerhouse and former pro-gamer heavily connected across the gaming,
 **Key Experience:**
 - Investments and tokenomics expert who played an instrumental role in the astronomical growth of DeHub in 2021
 - Oversaw the Blocjerk fundraise of $1,000,000 in 2023 which gave a peak ROI of 1,000%
-- Former professional gamer, ranking globally in the top 3 COD MW2 and top 100 on Warzone under the tag RickyBobby`;
+- Former professional gamer, ranking globally in the top 3 COD MW2 and top 100 on Warzone under the tag RickyBobby
+[TEAM_SECTION_END]`;
   } else if (post.slug === '2022-wrap-up-and-2023-lookahead') {
     newPost.title = '2022 Wrap Up';
     newPost.status = 'published';
