@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -115,7 +116,7 @@ const liveStreamingPost: BlogPostType = {
     
     <p class="mt-8 font-semibold text-royal-blue text-lg">The future of live streaming is decentralized, interactive, and built on principles of fairness and transparency. Join us as we reshape the digital content landscape, one stream at a time.</p>
   `,
-  bannerImage: '/lovable-uploads/photo-1605810230434-7631ac76ec81',
+  bannerImage: '/lovable-uploads/c57e3c3d-15f6-4c57-b2ab-3a41a17badad.png',
   bannerImageAlt: 'Interactive live streaming setup with multiple screens showing real-time audience engagement and blockchain integration',
   author: {
     name: 'DeHub Team',
@@ -123,7 +124,7 @@ const liveStreamingPost: BlogPostType = {
   publishedAt: '2025-01-15T12:00:00.000Z',
   tags: ['Live Streaming', 'Blockchain', 'Interactive Features', 'Q1 2025', 'Innovation'],
   readingTime: 8,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'Interactive On-Chain Live Streaming with Animated Tips | DeHub Q1 2025 Milestone',
   seoDescription: 'Discover DeHub\'s revolutionary live streaming platform featuring real-time animated tips, text-to-voice generation, and full blockchain integration for transparent creator monetization.',
