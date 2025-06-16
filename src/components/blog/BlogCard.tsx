@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
@@ -51,7 +52,6 @@ const generateExcerpt = (content: string, fallback: string) => {
     return fallback;
 };
 
-
 const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const excerpt = generateExcerpt(post.content, post.excerpt);
 
@@ -63,9 +63,14 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const isRafflePost = post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022';
   const raffleBanner = '/lovable-uploads/729af303-1246-44ed-a598-005275581b6c.png';
 
+  const handleLinkClick = () => {
+    // Save current scroll position before navigating
+    sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
+  };
+
   return (
     <article className={`group bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg overflow-hidden ${featured ? 'lg:col-span-2' : ''}`}>
-      <Link to={`/docs/blog/${post.slug}`} className="block">
+      <Link to={`/docs/blog/${post.slug}`} className="block" onClick={handleLinkClick}>
         <div className="relative">
           <img 
             src={isRafflePost ? raffleBanner : post.bannerImage} 

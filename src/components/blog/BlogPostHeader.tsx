@@ -3,6 +3,7 @@ import React from 'react';
 import { Calendar, Clock } from 'lucide-react';
 import { BlogPost } from '@/types/blog';
 import { ShareButtons } from './ShareButtons';
+import BackButton from './BackButton';
 
 interface BlogPostHeaderProps {
   post: BlogPost;
@@ -13,6 +14,8 @@ interface BlogPostHeaderProps {
 export const BlogPostHeader: React.FC<BlogPostHeaderProps> = ({ post, displayDate, shareUrl }) => {
   return (
     <header className="mb-8">
+      <BackButton />
+      
       {post.featured && (
         <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
           Featured Post
