@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -617,17 +618,17 @@ const publicBetaDappReportPost: BlogPostType = {
 };
 
 export const newPosts: BlogPostType[] = [
-  liveStreamingPost,
-  wrapUp2022Post,
-  tokenisedUploadsPost,
-  awardWinningInnovationPost,
-  dubaiEventPost,
-  crusadersSponsorshipPost,
-  dehubTakeoverPost,
-  basePoolPost,
-  publicBetaDappReportPost
+    liveStreamingPost,
+    wrapUp2022Post,
+    tokenisedUploadsPost,
+    awardWinningInnovationPost,
+    dubaiEventPost,
+    crusadersSponsorshipPost,
+    dehubTakeoverPost,
+    basePoolPost,
+    publicBetaDappReportPost
 ];
 
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
-  return newPosts.find(post => post.slug === slug);
-};
+    return newPosts.find(p => p.slug === slug);
+}
