@@ -8,6 +8,7 @@ const BackButton: React.FC = () => {
   const navigate = useNavigate();
 
   const handleBack = () => {
+    // Navigate back to blog - scroll position will be restored by Blog component
     navigate('/docs/blog');
   };
 

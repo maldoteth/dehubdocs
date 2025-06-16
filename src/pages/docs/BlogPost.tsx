@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+
+import React, { useLayoutEffect } from 'react';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { getPostBySlug, formatDate } from '@/utils/blogUtils';
 import SEO from '@/components/SEO';
@@ -11,6 +12,7 @@ import { getNewPostBySlug, excludedTitles } from '@/data/newPosts';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
   
   let post = slug ? getNewPostBySlug(slug) || getPostBySlug(slug) : null;
 
@@ -60,8 +62,12 @@ const BlogPost = () => {
     };
   }
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
+  useLayoutEffect(() => {
+    // Only scroll to top if we're not coming from the blog page with a saved scroll position
+    const hasScrollPosition = sessionStorage.getItem('blogScrollPosition');
+    if (!hasScrollPosition) {
+      window.scrollTo(0, 0);
+    }
   }, [slug]);
 
   if (!post) {
