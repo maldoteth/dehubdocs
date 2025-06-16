@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -143,8 +144,8 @@ const wrapUp2022Post: BlogPostType = {
     
     <p class="mt-8 font-bold text-royal-blue text-xl">Bring on 2023.</p>
   `,
-  bannerImage: '/lovable-uploads/8944c861-58be-420e-80c8-c0ce78c5d22d.png',
-  bannerImageAlt: '2022 Wrap Up - DeHub year in review',
+  bannerImage: '/lovable-uploads/4476fbc3-58ec-467b-8c1b-30570349940c.png',
+  bannerImageAlt: '2022 Wrap Up - DeHub year in review with fireworks celebration',
   author: {
     name: 'DeHub Team',
   },
