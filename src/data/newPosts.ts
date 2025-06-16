@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -116,8 +115,8 @@ const liveStreamingPost: BlogPostType = {
     
     <p class="mt-8 font-semibold text-royal-blue text-lg">The future of live streaming is decentralized, interactive, and built on principles of fairness and transparency. Join us as we reshape the digital content landscape, one stream at a time.</p>
   `,
-  bannerImage: '/lovable-uploads/c57e3c3d-15f6-4c57-b2ab-3a41a17badad.png',
-  bannerImageAlt: 'Interactive live streaming setup with multiple screens showing real-time audience engagement and blockchain integration',
+  bannerImage: '/lovable-uploads/582038bf-f54f-485f-a1d8-929f97cb9b98.png',
+  bannerImageAlt: 'LIVE streaming banner with 3D text on cloudy sky background',
   author: {
     name: 'DeHub Team',
   },
@@ -358,19 +357,19 @@ const awardWinningInnovationPost: BlogPostType = {
   id: 'award-winning-innovation-dehub-recognised',
   slug: 'award-winning-innovation-dehub-recognised',
   title: 'Award Winning Innovation! DeHub recognised for pioneering efforts',
-  excerpt: 'After 27k votes over the last 12 months, DeHub is officially Corporate LiveWire’s 2023 Innovation and Excellence Winner in the “Gaming” category.',
+  excerpt: 'After 27k votes over the last 12 months, DeHub is officially Corporate LiveWire’s 2023 Innovation and Excellence Winner in the "Gaming" category.',
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">DeHub Wins Corporate LiveWire's 2023 Innovation & Excellence Award</h2>
-    <p class="mb-4 text-lg text-royal-blue/80">It brings us great pride to inform you all that after 27,000 votes over the last 12 months of nominations and judge scoring, DeHub is officially Corporate LiveWire’s 2023 Innovation and Excellence Winner, coming in first place under the “Gaming” category.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">It brings us great pride to inform you all that after 27,000 votes over the last 12 months of nominations and judge scoring, DeHub is officially Corporate LiveWire's 2023 Innovation and Excellence Winner, coming in first place under the "Gaming" category.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">A Prestigious, Merit-Based Award</h3>
     <p class="mb-4 text-royal-blue/80">Corporate LiveWire is one of the more prestigious and rigorously scored awards for the UK business and finance sectors, noted by some of the largest companies in the world. We were nominated by a member of the public and then given first place for our free-to-play-and-earn gaming arcade and streaming protocol.</p>
-    <p class="mb-4 text-royal-blue/80">The scoring took into account a number of key variables, including customer service, community feedback, and social engagement—all the things we take pride in. This is a stringent, merit-based system, not one you can “pay to play.” The Innovation and Excellence award is for startups and businesses pioneering new technology. Their other categories, as you can see on their website, are being won by some of the biggest companies in the world.</p>
+    <p class="mb-4 text-royal-blue/80">The scoring took into account a number of key variables, including customer service, community feedback, and social engagement—all the things we take pride in. This is a stringent, merit-based system, not one you can "pay to play." The Innovation and Excellence award is for startups and businesses pioneering new technology. Their other categories, as you can see on their website, are being won by some of the biggest companies in the world.</p>
 
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Spreading the Word</h3>
     <p class="mb-4 text-royal-blue/80">With over 70,000 subscribers across physical and digital channels, this award gives DeHub incredible exposure to a business-oriented, off-chain audience. We will be attending Corporate LiveWire events in Dubai, Central London, and South East UK. Once all winners have been announced on their website, we will commence press releases to make sure the world knows that our little crypto project is winning reputable awards and rubbing shoulders with some of the biggest names in the UK business and finance sector.</p>
     
-    <p class="mt-8 font-semibold text-royal-blue">The London awards ceremony is on the 27th of August, and we’d like to extend an invitation to whoever nominated us for this amazing prize. Please reach out to us via any social media, community group, or by direct email to <a href="mailto:marketing@dehub.net" class="text-middle-blue hover:underline">marketing@dehub.net</a>. A special thanks to you for making this journey more fruitful every day.</p>
+    <p class="mt-8 font-semibold text-royal-blue">The London awards ceremony is on the 27th of August, and we'd like to extend an invitation to whoever nominated us for this amazing prize. Please reach out to us via any social media, community group, or by direct email to <a href="mailto:marketing@dehub.net" class="text-middle-blue hover:underline">marketing@dehub.net</a>. A special thanks to you for making this journey more fruitful every day.</p>
   `,
   bannerImage: '/lovable-uploads/b4d253e4-ae5a-4160-96bd-7c691a56e2f9.png',
   bannerImageAlt: 'Corporate LiveWire Innovation & Excellence Awards 2023 Winner badge.',
@@ -545,8 +544,8 @@ const publicBetaDappReportPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">Our Vision for the DeHub D’app</h2>
     <p class="mb-4 text-lg text-royal-blue/80">DeHub at the core is, and always was, a streaming app with our own marketplace and games complimenting the main hub. When going on dehub.net in future, you will be met with the streaming app.</p>
-    <p class="mb-4 text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation’s ideals.</p>
-    <p class="mb-4 text-royal-blue/80">We’ve updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
+    <p class="mb-4 text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
+    <p class="mb-4 text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
     <p class="mb-4 text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
 
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Public Testing Review</h3>
@@ -564,8 +563,8 @@ const publicBetaDappReportPost: BlogPostType = {
       <li><strong>Explore feed:</strong> Featured posts, ad space and endless scrolling features and short-style scrolling will be live on alpha. Users will have the option to select video length to scroll and not be limited to 7 seconds.</li>
       <li><strong>Profile:</strong> Ability to follow each other, set to go live this week. You will be able to subscribe for a monthly fee or DM each other in alpha too.</li>
       <li><strong>Minting:</strong> Option to mint on Polygon and Ethereum set to go live this week and the recommended option will be Polygon for the lowest fees. We aim to integrate all EVM compatible chains and beyond soon too.</li>
-      <li><strong>Editing:</strong> Option to remove videos and burn NFT including metadata set to go live this week. As NFTs are minted on chain, you can’t edit videos after, however we added a warning on upload for those unaware.</li>
-      <li><strong>Data + Analytics:</strong> Video analytics going live on alpha, so you can extract all your users’ data, track your viewer demographic and stats.</li>
+      <li><strong>Editing:</strong> Option to remove videos and burn NFT including metadata set to go live this week. As NFTs are minted on chain, you can't edit videos after, however we added a warning on upload for those unaware.</li>
+      <li><strong>Data + Analytics:</strong> Video analytics going live on alpha, so you can extract all your users' data, track your viewer demographic and stats.</li>
       <li><strong>Monetisation:</strong> Every NFT you have minted so far, or will mint in future, is what accrues the ad revenue for each upload. Monetisation is set to go live on Alpha.</li>
       <li><strong>Live Streaming:</strong> Our live stream function is set to go live on Alpha, which includes interactive tip animations and text-to-voice generation, as highlighted in our whitepaper.</li>
       <li><strong>Buy and sell direct:</strong> Our fiat gateway will be live on Alpha, allowing non crypto natives to buy and use tokens without any wallet knowledge. Bundle packages can also be reversed to spend DHB.</li>
@@ -590,13 +589,13 @@ const publicBetaDappReportPost: BlogPostType = {
     </ul>
 
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">User Acquisition &amp; Growth</h3>
-    <p class="mb-4 text-lg text-royal-blue/80">We appreciate seeing the market suddenly bounce while we’re finalising our build prior to our upcoming marketing campaigns may have been frustrating for some, and we emphasise with everyone’s economic timescales.</p>
-    <p class="mb-4 text-lg text-royal-blue/80">We work to our own timelines and stick to our plan regardless of market conditions. Up or down. That being said, this d’app is nearly ready to aggressively promote and our marketing strategy will be like nothing you’ve witnessed before…</p>
-    <p class="mb-4 text-lg text-royal-blue/80">Our main d’app utility is everyone else’s marketing strategy. Let that sink in for a while and ponder on the potential with us.</p>
-    <p class="mb-4 text-lg text-royal-blue/80">We’re one of the very few streaming apps in the entire space, with a now fully functioning and feature packed product that quite frankly puts industry leaders to shame, let alone web 3 competitors.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We appreciate seeing the market suddenly bounce while we're finalising our build prior to our upcoming marketing campaigns may have been frustrating for some, and we emphasise with everyone's economic timescales.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We work to our own timelines and stick to our plan regardless of market conditions. Up or down. That being said, this d'app is nearly ready to aggressively promote and our marketing strategy will be like nothing you've witnessed before…</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Our main d'app utility is everyone else's marketing strategy. Let that sink in for a while and ponder on the potential with us.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We're one of the very few streaming apps in the entire space, with a now fully functioning and feature packed product that quite frankly puts industry leaders to shame, let alone web 3 competitors.</p>
     <p class="mb-4 text-lg text-royal-blue/80">How many of you would buy a token or use an app because some shill on the internet told you it was the next best thing? Not many, these days.</p>
     <p class="mb-4 text-lg text-royal-blue/80">Now, how many of you would buy a token or use an app because your favourite influencer was now making content on that platform? Drastically more.</p>
-    <p class="mb-4 text-lg text-royal-blue/80">Once this flywheel spins, it won’t stop, and we’re more confident than ever now we’ve seen our final core d’app working fully out in the wild.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Once this flywheel spins, it won't stop, and we're more confident than ever now we've seen our final core d'app working fully out in the wild.</p>
   `,
   bannerImage: '/lovable-uploads/c799219d-e9da-43e4-938f-54cfbc3a242f.png',
   bannerImageAlt: 'DeHub Beta Overview banner',
@@ -609,7 +608,7 @@ const publicBetaDappReportPost: BlogPostType = {
   featured: false,
   status: 'published',
   seoTitle: 'Public Beta D’app Report | DeHub Update',
-  seoDescription: 'An overview of the beta launch for our main d’app. Our biggest and final core d’app launch now sets us up to focus on scaling users and growth.',
+  seoDescription: 'An overview of the beta launch for our main d'app. Our biggest and final core d'app launch now sets us up to focus on scaling users and growth.',
 };
 
 export const newPosts: BlogPostType[] = [
