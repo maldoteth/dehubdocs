@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -539,10 +540,10 @@ const crusadersSponsorshipPost: BlogPostType = {
 const publicBetaDappReportPost: BlogPostType = {
   id: 'public-beta-dapp-report',
   slug: 'public-beta-dapp-report',
-  title: 'Public Beta D’app Report',
-  excerpt: 'An overview of the beta launch for our main d’app. Our biggest and final core d’app launch now sets us up to focus on scaling users and growth.',
+  title: 'Public Beta D\'app Report',
+  excerpt: 'An overview of the beta launch for our main d\'app. Our biggest and final core d\'app launch now sets us up to focus on scaling users and growth.',
   content: `
-    <h2 class="text-2xl font-bold mb-4 font-exo">Our Vision for the DeHub D’app</h2>
+    <h2 class="text-2xl font-bold mb-4 font-exo">Our Vision for the DeHub D'app</h2>
     <p class="mb-4 text-lg text-royal-blue/80">DeHub at the core is, and always was, a streaming app with our own marketplace and games complimenting the main hub. When going on dehub.net in future, you will be met with the streaming app.</p>
     <p class="mb-4 text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
     <p class="mb-4 text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
@@ -607,8 +608,8 @@ const publicBetaDappReportPost: BlogPostType = {
   readingTime: 5,
   featured: false,
   status: 'published',
-  seoTitle: 'Public Beta D’app Report | DeHub Update',
-  seoDescription: 'An overview of the beta launch for our main d'app. Our biggest and final core d'app launch now sets us up to focus on scaling users and growth.',
+  seoTitle: "Public Beta D'app Report | DeHub Update",
+  seoDescription: "An overview of the beta launch for our main d'app. Our biggest and final core d'app launch now sets us up to focus on scaling users and growth.",
 };
 
 export const newPosts: BlogPostType[] = [
