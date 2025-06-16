@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -38,6 +37,11 @@ const liveStreamingPost: BlogPostType = {
       <li><strong>Gamification Elements:</strong> Different tip amounts can trigger different animation styles, encouraging larger contributions and adding a gamified element to the streaming experience.</li>
       <li><strong>Community Building:</strong> Animated tips create shared moments of excitement that bring the community together around the creator's content.</li>
     </ul>
+
+    <div class="my-8">
+      <img src="/lovable-uploads/9ed8acb0-971f-4550-b5f6-c94270d5ab79.png" alt="DeHub tipping interface showing various tip amounts and animations" class="w-full rounded-lg shadow-lg" />
+      <p class="text-center text-sm text-royal-blue/60 mt-2 italic">The DeHub tipping interface showcases different tip amounts and their corresponding animated effects</p>
+    </div>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Text-to-Voice Generation: Accessibility Meets Innovation</h3>
     <p class="mb-4 text-royal-blue/80">Accessibility is at the heart of DeHub's design philosophy. Our live streaming platform includes advanced <strong>Text-to-Voice Generation</strong> technology that automatically converts chat messages and comments into spoken audio during live streams.</p>
