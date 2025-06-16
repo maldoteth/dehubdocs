@@ -63,9 +63,11 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const isRafflePost = post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022';
   const raffleBanner = '/lovable-uploads/729af303-1246-44ed-a598-005275581b6c.png';
 
-  const handleLinkClick = () => {
-    // Save current scroll position before navigating
-    sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
+  const handleLinkClick = (e: React.MouseEvent) => {
+    // Save current scroll position immediately before navigation
+    const currentScrollY = window.scrollY;
+    sessionStorage.setItem('blogScrollPosition', currentScrollY.toString());
+    console.log('Saving scroll position:', currentScrollY);
   };
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Search, Tag, Calendar, TrendingUp, AlertCircle } from 'lucide-react';
 import { getPublishedPosts, getFeaturedPosts } from '@/utils/blogUtils';
 import BlogCard from '@/components/blog/BlogCard';
@@ -10,32 +10,54 @@ import { newPosts, excludedTitles } from '@/data/newPosts';
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
+  const scrollRestoredRef = useRef(false);
 
   useEffect(() => {
-    const scrollPosition = sessionStorage.getItem('blogScrollPosition');
-    if (scrollPosition) {
-      // Multiple attempts to ensure scroll restoration works
-      const scrollValue = parseInt(scrollPosition, 10);
-      
-      // Immediate scroll
-      window.scrollTo(0, scrollValue);
-      
-      // Delayed scroll to ensure content is rendered
-      setTimeout(() => {
-        window.scrollTo(0, scrollValue);
-      }, 100);
-      
-      // Additional delay for slower devices
-      setTimeout(() => {
-        window.scrollTo(0, scrollValue);
-      }, 300);
-      
-      // Clean up the stored position
-      sessionStorage.removeItem('blogScrollPosition');
+    // Only restore scroll once when component mounts
+    if (!scrollRestoredRef.current) {
+      const scrollPosition = sessionStorage.getItem('blogScrollPosition');
+      if (scrollPosition) {
+        const scrollValue = parseInt(scrollPosition, 10);
+        
+        // Use requestAnimationFrame for better timing
+        const restoreScroll = () => {
+          window.scrollTo(0, scrollValue);
+          scrollRestoredRef.current = true;
+        };
+        
+        // Multiple attempts with requestAnimationFrame
+        requestAnimationFrame(() => {
+          restoreScroll();
+          requestAnimationFrame(() => {
+            restoreScroll();
+            setTimeout(() => restoreScroll(), 100);
+            setTimeout(() => restoreScroll(), 300);
+          });
+        });
+        
+        // Clean up the stored position
+        sessionStorage.removeItem('blogScrollPosition');
+      }
     }
     
-    // Save scroll position when component unmounts
+    // Save scroll position before component unmounts or when navigating away
+    const handleBeforeUnload = () => {
+      sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
+    };
+
+    const handleScroll = () => {
+      // Continuously update scroll position while scrolling
+      sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
+    };
+
+    // Add scroll listener to continuously save position
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    
     return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+      // Save final scroll position when component unmounts
       sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
     };
   }, []);
