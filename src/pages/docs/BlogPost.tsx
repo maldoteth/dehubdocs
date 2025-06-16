@@ -1,4 +1,3 @@
-
 import React, { useLayoutEffect } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -63,11 +62,8 @@ const BlogPost = () => {
   }
 
   useLayoutEffect(() => {
-    // Only scroll to top if we're not coming from the blog page with a saved scroll position
-    const hasScrollPosition = sessionStorage.getItem('blogScrollPosition');
-    if (!hasScrollPosition) {
-      window.scrollTo(0, 0);
-    }
+    // Always scroll to top when loading a blog post directly
+    window.scrollTo(0, 0);
   }, [slug]);
 
   if (!post) {
