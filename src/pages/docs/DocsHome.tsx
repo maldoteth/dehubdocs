@@ -1,21 +1,23 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
-import { getLatestPost } from '@/utils/blogUtils';
+import { getPublishedPosts } from '@/utils/blogUtils';
 
 // Declare the global build time variable
 declare const __BUILD_TIME__: string;
-
 const DocsHome = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
 
   // Monitor performance for this page
   usePerformance();
   
   // Get the latest blog post
-  const latestPost = getLatestPost();
+  const latestPost = getPublishedPosts()[0];
   
   let bannerImage = latestPost?.bannerImage;
   let bannerImageAlt = latestPost?.bannerImageAlt;
@@ -96,10 +98,11 @@ const DocsHome = () => {
     title: 'Community',
     description: 'An established and supportive community here since 2021'
   }];
-  return (
-    <div className="space-y-12">
+  return <div className="space-y-12">
       {/* Hero Section */}
       <div className="text-center space-y-6">
+        
+        
         <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
           Welcome to
           <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">Our Docs</span>
@@ -237,8 +240,6 @@ const DocsHome = () => {
         })}
         </p>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default DocsHome;
