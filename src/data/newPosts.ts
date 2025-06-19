@@ -9,7 +9,9 @@ export const excludedTitles = [
   'Supporting Growth: Knowledge Transfer to Fan.site Team',
   'Protecting Innovation: Patent Applications for Streaming & Watch2Earn Tech',
   'In the Spotlight: DeHub Featured in TechCrunch and VentureBeat',
-  'Innovation Recognized: DeHub Wins Corporate Livewire Award'
+  'Innovation Recognized: DeHub Wins Corporate Livewire Award',
+  'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency',
+  'Back in Action: DeHub V2 Trading Resumes on Gate.io',
 ];
 
 const liveStreamingPost: BlogPostType = {
@@ -19,17 +21,17 @@ const liveStreamingPost: BlogPostType = {
   excerpt: 'Discover how DeHub is revolutionizing live streaming with blockchain integration, real-time animated tips, and decentralized monetization that puts creators first.',
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">The Future of Live Streaming is Here</h2>
-    <p class="mb-4 text-lg text-royal-blue/80">The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're taking this revolution one step further by introducing <strong>Interactive On-Chain Live Streaming</strong> – a groundbreaking feature that combines the immediacy of live content with the transparency and ownership benefits of blockchain technology.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're taking this revolution one step further by introducing <strong>Interactive On-Chain Live Streaming</strong> - a groundbreaking feature that combines the immediacy of live content with the transparency and ownership benefits of blockchain technology.</p>
     
     <p class="mb-4 text-royal-blue/80">Our Q1 2025 milestone represents more than just a technical achievement; it's a paradigm shift that empowers creators with unprecedented control over their content monetization while providing viewers with an immersive, interactive experience unlike anything available on traditional platforms.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What Makes DeHub Live Streaming Revolutionary?</h3>
     <p class="mb-4 text-royal-blue/80">Traditional live streaming platforms operate on centralized models where creators are subject to arbitrary policy changes, revenue sharing modifications, and platform dependency. DeHub's approach fundamentally changes this dynamic by leveraging blockchain technology to create a decentralized streaming ecosystem.</p>
     
-    <p class="mb-4 text-royal-blue/80">Our live streaming feature isn't just about broadcasting video content – it's about creating an interactive economy where every engagement, tip, and interaction is recorded on-chain, ensuring transparency, ownership, and fair compensation for creators.</p>
+    <p class="mb-4 text-royal-blue/80">Our live streaming feature isn't just about broadcasting video content - it's about creating an interactive economy where every engagement, tip, and interaction is recorded on-chain, ensuring transparency, ownership, and fair compensation for creators.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Real-Time Animated Tips: Bringing Engagement to Life</h3>
-    <p class="mb-4 text-royal-blue/80">One of the most exciting innovations in our live streaming platform is the <strong>Real-Time Animated Tips</strong> system. When viewers send tips to their favorite creators, these contributions don't just appear as static notifications – they come alive with dynamic animations that enhance the viewing experience for everyone.</p>
+    <p class="mb-4 text-royal-blue/80">One of the most exciting innovations in our live streaming platform is the <strong>Real-Time Animated Tips</strong> system. When viewers send tips to their favorite creators, these contributions don't just appear as static notifications - they come alive with dynamic animations that enhance the viewing experience for everyone.</p>
     
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li><strong>Visual Impact:</strong> Tips trigger customizable animations that appear on the live stream, creating visual excitement and encouraging more participation from viewers.</li>
@@ -114,7 +116,7 @@ const liveStreamingPost: BlogPostType = {
     </ul>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Join the Streaming Revolution</h3>
-    <p class="mb-4 text-royal-blue/80">DeHub's interactive live streaming feature with animated tips and text-to-voice generation represents more than just a technological advancement – it's a fundamental reimagining of what live streaming can be. By combining the engagement of traditional platforms with the ownership and transparency of blockchain technology, we're creating an ecosystem where creators and viewers both benefit.</p>
+    <p class="mb-4 text-royal-blue/80">DeHub's interactive live streaming feature with animated tips and text-to-voice generation represents more than just a technological advancement - it's a fundamental reimagining of what live streaming can be. By combining the engagement of traditional platforms with the ownership and transparency of blockchain technology, we're creating an ecosystem where creators and viewers both benefit.</p>
     
     <p class="mb-4 text-royal-blue/80">Whether you're a content creator looking for new ways to monetize your work, or a viewer wanting to support your favorite creators more directly, DeHub's live streaming platform offers unprecedented opportunities for engagement, creativity, and financial empowerment.</p>
     
@@ -549,12 +551,12 @@ const publicBetaDappReportPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">Our Vision for the DeHub D'app</h2>
     <p class="mb-4 text-lg text-royal-blue/80">DeHub at the core is, and always was, a streaming app with our own marketplace and games complimenting the main hub. When going on dehub.net in future, you will be met with the streaming app.</p>
-    <p class="mb-4 text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
-    <p class="mb-4 text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
-    <p class="mb-4 text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
 
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Public Testing Review</h3>
-    <p class="mb-4 text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li><strong>PPV:</strong> create your own PPV in DHB, USDC or USDT (soon to be every token).</li>
       <li><strong>W2E / Bounty post:</strong> Create your own watch-to-earn in DHB, USDC or USDT (soon to be every token) and reward your existing community or build a new one with a turbo-boost.</li>
@@ -625,19 +627,19 @@ const dehubCardPost: BlogPostType = {
     <h2 class="text-2xl font-bold mb-4 font-exo">The Future of Crypto Spending is Here</h2>
     <p class="mb-4 text-lg text-royal-blue/80">With our on-ramp service now live and thoroughly tested on mainnet, users have been asking the obvious next question: when is off-ramp coming?</p>
     
-    <p class="mb-4 text-royal-blue/80">We're excited to announce that we've found what we believe is the best solution for our users - and it's not what you might expect.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We're excited to announce that we've found what we believe is the best solution for our users - and it's not what you might expect.</p>
     
-    <p class="mb-4 text-royal-blue/80">Rather than following the traditional route of bank transfers or centralized exchange withdrawals, we're introducing something revolutionary: <strong>the DeHub Card</strong>.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Rather than following the traditional route of bank transfers or centralized exchange withdrawals, we're introducing something revolutionary: <strong>the DeHub Card</strong>.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Why We're Avoiding Traditional Off-Ramps</h3>
-    <p class="mb-4 text-royal-blue/80">I've personally experienced the frustration that comes with traditional banking when dealing with crypto transactions. Over the years, I've had numerous bank accounts frozen or shut down - sometimes over just a few thousand dollars, often with no clear explanation or recourse.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">I've personally experienced the frustration that comes with traditional banking when dealing with crypto transactions. Over the years, I've had numerous bank accounts frozen or shut down - sometimes over just a few thousand dollars, often with no clear explanation or recourse.</p>
     
-    <p class="mb-4 text-royal-blue/80">This kind of experience creates unnecessary stress and can lock users out of their own funds for weeks or even months. It's not an experience I'd want a single DeHub user to ever go through.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">This kind of experience creates unnecessary stress and can lock users out of their own funds for weeks or even months. It's not an experience I'd want a single DeHub user to ever go through.</p>
     
-    <p class="mb-4 text-royal-blue/80">Instead of forcing our users through the traditional banking gauntlet, we're launching the DeHub Card - a direct spending solution that bypasses banks and centralized exchanges entirely.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Instead of forcing our users through the traditional banking gauntlet, we're launching the DeHub Card - a direct spending solution that bypasses banks and centralized exchanges entirely.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Card Variants</h3>
-    <p class="mb-4 text-royal-blue/80">The DeHub Card will be available in three premium finishes:</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The DeHub Card will be available in three premium finishes:</p>
     <ul class="list-disc list-inside space-y-2 my-4 text-royal-blue/80 pl-4">
       <li><strong>Black</strong> - Sleek and professional</li>
       <li><strong>Silver</strong> - Classic and versatile</li>
@@ -649,7 +651,7 @@ const dehubCardPost: BlogPostType = {
       <p class="text-center text-sm text-royal-blue/60 mt-2 italic">💳 Each card is designed with crypto users in mind, featuring modern aesthetics and robust security features.</p>
     </div>
     
-    <p class="mb-4 text-royal-blue/80">The DeHub Card connects directly to your DeHub wallet, allowing you to:</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The DeHub Card connects directly to your DeHub wallet, allowing you to:</p>
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li>Spend crypto anywhere that accepts card payments</li>
       <li>Avoid bank complications and account freezes</li>
@@ -659,7 +661,7 @@ const dehubCardPost: BlogPostType = {
     </ul>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Advanced Technology Features</h3>
-    <p class="mb-4 text-royal-blue/80">Our card solution leverages cutting-edge fintech infrastructure to provide:</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Our card solution leverages cutting-edge fintech infrastructure to provide:</p>
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li>Real-time conversion from crypto to fiat at the point of sale</li>
       <li>Multi-currency support for various cryptocurrencies</li>
@@ -671,21 +673,21 @@ const dehubCardPost: BlogPostType = {
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Key Benefits</h3>
     
     <h4 class="text-lg font-bold mt-6 mb-3 font-exo">No More Frozen Accounts</h4>
-    <p class="mb-4 text-royal-blue/80">Traditional banks often flag crypto-related transactions as suspicious, leading to frozen accounts and lengthy investigations. The DeHub Card eliminates this risk entirely.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Traditional banks often flag crypto-related transactions as suspicious, leading to frozen accounts and lengthy investigations. The DeHub Card eliminates this risk entirely.</p>
     
     <h4 class="text-lg font-bold mt-6 mb-3 font-exo">Instant Access</h4>
-    <p class="mb-4 text-royal-blue/80">No more waiting 3-5 business days for bank transfers. Your crypto is spendable immediately through the card.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">No more waiting 3-5 business days for bank transfers. Your crypto is spendable immediately through the card.</p>
     
     <h4 class="text-lg font-bold mt-6 mb-3 font-exo">Global Reach</h4>
-    <p class="mb-4 text-royal-blue/80">Use your DeHub Card anywhere in the world where cards are accepted - no need to worry about international banking restrictions.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Use your DeHub Card anywhere in the world where cards are accepted - no need to worry about international banking restrictions.</p>
     
     <h4 class="text-lg font-bold mt-6 mb-3 font-exo">Privacy Protection</h4>
-    <p class="mb-4 text-royal-blue/80">Keep your crypto activities private without the need to justify transactions to traditional financial institutions.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Keep your crypto activities private without the need to justify transactions to traditional financial institutions.</p>
     
-    <p class="mb-4 text-royal-blue/80">We're currently finalizing partnerships and regulatory compliance across multiple jurisdictions to ensure global availability.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We're currently finalizing partnerships and regulatory compliance across multiple jurisdictions to ensure global availability.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Coming Soon</h3>
-    <p class="mb-4 text-royal-blue/80">More comprehensive details about the DeHub Card service will be revealed soon, including:</p>
+    <p class="mb-4 text-lg text-royal-blue/80">More comprehensive details about the DeHub Card service will be revealed soon, including:</p>
     <ul class="list-disc list-inside space-y-2 my-4 text-royal-blue/80 pl-4">
       <li>Launch dates for different regions</li>
       <li>Detailed terms and conditions</li>
@@ -696,12 +698,12 @@ const dehubCardPost: BlogPostType = {
       <li>Rewards program details</li>
     </ul>
     
-    <p class="mb-4 text-royal-blue/80">We're planning an exclusive early access program for our most active community members. Keep an eye on our official channels for announcements about how to secure your spot in the beta program.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We're planning an exclusive early access program for our most active community members. Keep an eye on our official channels for announcements about how to secure your spot in the beta program.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">The Future of Financial Independence</h3>
-    <p class="mb-4 text-royal-blue/80">The DeHub Card represents more than just a payment method - it's a bridge between the decentralized crypto economy and everyday commerce. By eliminating the friction of traditional off-ramps, we're making crypto truly usable for daily transactions.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The DeHub Card represents more than just a payment method - it's a bridge between the decentralized crypto economy and everyday commerce. By eliminating the friction of traditional off-ramps, we're making crypto truly usable for daily transactions.</p>
     
-    <p class="mb-4 text-royal-blue/80">This is just the beginning of our comprehensive financial services ecosystem. The card is the first step toward complete financial independence from traditional banking systems.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">This is just the beginning of our comprehensive financial services ecosystem. The card is the first step toward complete financial independence from traditional banking systems.</p>
     
     <div class="mt-8 p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-lg border border-sky-blue/20">
       <p class="text-royal-blue font-semibold text-lg italic">Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon. Stay tuned for more details and be among the first to experience the future of crypto spending.</p>
@@ -721,19 +723,496 @@ const dehubCardPost: BlogPostType = {
   seoDescription: 'Skip the banks and spend crypto directly with the DeHub Card. Our revolutionary off-ramp solution eliminates traditional banking complications and frozen accounts.',
 };
 
-export const newPosts: BlogPostType[] = [
-    dehubCardPost,
-    liveStreamingPost,
-    wrapUp2022Post,
-    tokenisedUploadsPost,
-    awardWinningInnovationPost,
-    dubaiEventPost,
-    crusadersSponsorshipPost,
-    dehubTakeoverPost,
-    basePoolPost,
-    publicBetaDappReportPost
+const newPosts: BlogPostType[] = [
+  {
+    id: 'dehub-card-off-ramp-announcement',
+    slug: 'off-ramp-service-revealed-dehub-card-coming-soon',
+    title: 'Off-Ramp Service Revealed: DeHub Card Coming Soon!',
+    excerpt: "With our on-ramp service now live, we're introducing something revolutionary: the DeHub Card - a direct spending solution that bypasses banks and centralized exchanges entirely.",
+    content: `The Future of Crypto Spending is Here
+
+With our on-ramp service now live and thoroughly tested on mainnet, users have been asking the obvious next question: when is off-ramp coming?
+
+We're excited to announce that we've found what we believe is the best solution for our users - and it's not what you might expect.
+
+Rather than following the traditional route of bank transfers or centralized exchange withdrawals, we're introducing something revolutionary: the DeHub Card.
+
+### Why We're Avoiding Traditional Off-Ramps
+
+I've personally experienced the frustration that comes with traditional banking when dealing with crypto transactions. Over the years, I've had numerous bank accounts frozen or shut down - sometimes over just a few thousand dollars, often with no clear explanation or recourse.
+
+This kind of experience creates unnecessary stress and can lock users out of their own funds for weeks or even months. It's not an experience I'd want a single DeHub user to ever go through.
+
+Instead of forcing our users through the traditional banking gauntlet, we're launching the DeHub Card - a direct spending solution that bypasses banks and centralized exchanges entirely.
+
+### Card Variants
+
+The DeHub Card will be available in three premium finishes:
+
+- **Black** - Sleek and professional
+- **Silver** - Classic and versatile  
+- **Gold** - Premium and distinctive
+
+![DeHub Cards in gold finish showing premium design](/lovable-uploads/7c21ac59-3cf6-4d75-a458-3105d05c6ca9.png)
+
+💳 Each card is designed with crypto users in mind, featuring modern aesthetics and robust security features.
+
+The DeHub Card connects directly to your DeHub wallet, allowing you to:
+
+- Spend crypto anywhere that accepts card payments
+- Avoid bank complications and account freezes
+- Maintain privacy without traditional banking scrutiny
+- Access funds instantly without waiting for bank transfers
+- Enjoy global acceptance at millions of merchants worldwide
+
+### Advanced Technology Features
+
+Our card solution leverages cutting-edge fintech infrastructure to provide:
+
+- Real-time conversion from crypto to fiat at the point of sale
+- Multi-currency support for various cryptocurrencies
+- Advanced security with chip and PIN technology
+- Mobile app integration for instant transaction notifications
+- Spending controls to help manage your crypto expenses
+
+![DeHub Cards in silver finish showing classic design](/lovable-uploads/b1f91f93-bc38-4276-abea-e591591fe07d.png)
+
+### Key Benefits
+
+#### No More Frozen Accounts
+Traditional banks often flag crypto-related transactions as suspicious, leading to frozen accounts and lengthy investigations. The DeHub Card eliminates this risk entirely.
+
+#### Instant Access
+No more waiting 3-5 business days for bank transfers. Your crypto is spendable immediately through the card.
+
+#### Global Reach
+Use your DeHub Card anywhere in the world where cards are accepted - no need to worry about international banking restrictions.
+
+#### Privacy Protection
+Keep your crypto activities private without the need to justify transactions to traditional financial institutions.
+
+We're currently finalizing partnerships and regulatory compliance across multiple jurisdictions to ensure global availability.
+
+### Coming Soon
+
+More comprehensive details about the DeHub Card service will be revealed soon, including:
+
+- Launch dates for different regions
+- Detailed terms and conditions
+- Fee structure and pricing
+- Supported cryptocurrencies
+- Application process and requirements
+- Daily and monthly spending limits
+- Rewards program details
+
+We're planning an exclusive early access program for our most active community members. Keep an eye on our official channels for announcements about how to secure your spot in the beta program.
+
+### The Future of Financial Independence
+
+The DeHub Card represents more than just a payment method - it's a bridge between the decentralized crypto economy and everyday commerce. By eliminating the friction of traditional off-ramps, we're making crypto truly usable for daily transactions.
+
+This is just the beginning of our comprehensive financial services ecosystem. The card is the first step toward complete financial independence from traditional banking systems.
+
+Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon. Stay tuned for more details and be among the first to experience the future of crypto spending.`,
+    publishedAt: '2025-06-18T12:00:00.000Z',
+    readingTime: 5,
+    author: {
+      name: 'DeHub Team',
+      avatar: '/lovable-uploads/b8f9c8a0-4e2b-4d5c-9a1f-3e7d6c8b9a0e.png'
+    },
+    tags: ['Product', 'Cards', 'Payments', 'Crypto'],
+    bannerImage: '/lovable-uploads/7c21ac59-3cf6-4d75-a458-3105d05c6ca9.png',
+    bannerImageAlt: 'DeHub Cards in premium gold finish showcasing modern crypto payment solution',
+    featured: true,
+    seoTitle: 'DeHub Card: Revolutionary Crypto Off-Ramp Solution Coming Soon',
+    seoDescription: 'Skip traditional banks with the DeHub Card - a direct crypto spending solution available in premium gold, silver, and black finishes. Coming soon with global acceptance.'
+  },
+  {
+    id: 'dehub-card-launch',
+    slug: 'introducing-the-dehub-card-your-gateway-to-seamless-crypto-spending',
+    title: 'Introducing the DeHub Card: Your Gateway to Seamless Crypto Spending',
+    excerpt: 'The future of crypto payments is here. Spend your digital assets anywhere with the sleek, secure DeHub Card - no banks, no hassles, just pure convenience.',
+    content: `### The Revolution in Crypto Spending Has Arrived
+
+Gone are the days of complicated crypto-to-fiat conversions and lengthy bank transfers. The DeHub Card transforms your digital wallet into real-world spending power, instantly and securely.
+
+![DeHub Card showcasing premium design and modern aesthetics](/lovable-uploads/2a51a0e9-9d42-41b0-9c61-b6353883b734.png)
+
+### Why the DeHub Card Changes Everything
+
+Traditional crypto spending methods are broken. Between exchange fees, bank delays, and account restrictions, users lose both time and money with every transaction. The DeHub Card eliminates these friction points entirely.
+
+**Key Advantages:**
+- **Instant Spending**: Convert crypto to fiat at the point of sale
+- **Global Acceptance**: Use anywhere Mastercard is accepted
+- **Bank-Free**: No traditional banking relationships required
+- **Low Fees**: Transparent, competitive pricing structure
+- **Privacy First**: Keep your financial activities private
+
+### Advanced Security Features
+
+Your financial security is our top priority. The DeHub Card incorporates multiple layers of protection:
+
+- **Chip & PIN Technology**: Industry-standard payment security
+- **Real-time Notifications**: Instant alerts for all transactions
+- **Spending Controls**: Set daily, weekly, and monthly limits
+- **Card Freezing**: Instantly disable your card through the app
+- **Fraud Protection**: Advanced monitoring and instant alerts
+
+### Seamless Integration
+
+The DeHub Card works perfectly with your existing DeHub ecosystem:
+
+1. **Wallet Connection**: Direct integration with your DeHub wallet
+2. **Multi-Currency Support**: Spend Bitcoin, Ethereum, and other major cryptocurrencies
+3. **Automatic Conversion**: Smart routing finds the best exchange rates
+4. **Transaction History**: Complete spending records in your DeHub app
+5. **Balance Management**: Real-time updates of your crypto balances
+
+### Perfect for Every Lifestyle
+
+Whether you're a crypto enthusiast, digital nomad, or business professional, the DeHub Card adapts to your needs:
+
+**For Individuals:**
+- Daily purchases and bill payments
+- Online shopping and subscriptions
+- Travel expenses and international spending
+- Emergency access to crypto funds
+
+**For Businesses:**
+- Employee expense cards
+- Vendor payments and operational costs
+- International business transactions
+- Cryptocurrency treasury management
+
+### Global Reach, Local Experience
+
+The DeHub Card works seamlessly across borders:
+
+- **200+ Countries**: Accepted at millions of merchants worldwide
+- **Multi-Currency**: Automatic conversion to local currency
+- **No Foreign Transaction Fees**: Spend internationally without extra costs
+- **ATM Access**: Cash withdrawals at participating ATMs globally
+
+### Coming Soon: Premium Features
+
+We're continuously expanding the DeHub Card's capabilities:
+
+- **Cashback Rewards**: Earn crypto rewards on every purchase
+- **Premium Tiers**: Enhanced limits and exclusive benefits
+- **Virtual Cards**: Instant virtual cards for online purchases
+- **Subscription Management**: Easy recurring payment handling
+- **Investment Integration**: Automatically invest spare change in crypto
+
+### The Future of Finance is Here
+
+The DeHub Card isn't just a payment method—it's your gateway to true financial freedom. By bridging the gap between digital assets and everyday commerce, we're making crypto practical for everyone.
+
+Join thousands of users who have already made the switch to hassle-free crypto spending. The DeHub Card: where your digital wealth meets the real world.
+
+*Ready to revolutionize your spending? Get your DeHub Card today and experience the future of payments.*`,
+    publishedAt: '2024-09-15T12:00:00.000Z',
+    readingTime: 4,
+    author: {
+      name: 'DeHub Team',
+      avatar: '/lovable-uploads/b8f9c8a0-4e2b-4d5c-9a1f-3e7d6c8b9a0e.png'
+    },
+    tags: ['Product', 'Cards', 'Payments'],
+    bannerImage: '/lovable-uploads/987ef6e4-6733-46c6-ba90-554c2daf60db.png',
+    bannerImageAlt: 'Premium DeHub Card with sleek silver design',
+    featured: false,
+    seoTitle: 'DeHub Card - Seamless Crypto Spending Solution',
+    seoDescription: 'Transform your crypto into real-world spending power with the DeHub Card. Instant conversions, global acceptance, and bank-free convenience.'
+  },
+  {
+    id: 'coinbase-dex-integration',
+    slug: 'dhb-tradable-on-coinbase-soon',
+    title: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX',
+    excerpt: 'Major milestone achieved as $DHB secures listing on Coinbase centralized exchange, providing users with direct access to trade our native token.',
+    content: `### Historic Milestone for DeHub Community
+
+We're thrilled to announce that $DHB has been confirmed for listing on Coinbase's centralized exchange (CEX), marking a significant milestone in our journey toward mainstream adoption.
+
+This listing represents more than just another trading venue—it's validation of DeHub's technology, community, and vision for the future of decentralized social platforms.
+
+### What This Means for $DHB Holders
+
+**Enhanced Liquidity**: Coinbase's massive user base will bring unprecedented liquidity to $DHB trading pairs.
+
+**Mainstream Accessibility**: New users can now easily buy $DHB alongside major cryptocurrencies like Bitcoin and Ethereum.
+
+**Institutional Interest**: Coinbase's institutional services open doors to larger investment opportunities.
+
+**Price Discovery**: Increased trading volume typically leads to better price discovery and reduced volatility.
+
+### Trading Pairs and Features
+
+The Coinbase listing will include:
+
+- **$DHB/USD** - Direct fiat trading pair
+- **$DHB/BTC** - Bitcoin trading pair  
+- **$DHB/ETH** - Ethereum trading pair
+- **Advanced Trading** - Access to Coinbase Pro features
+- **Custody Services** - Secure institutional-grade storage
+
+### Integration Timeline
+
+**Phase 1** - Initial listing announcement (Complete)
+**Phase 2** - Trading begins for existing Coinbase users
+**Phase 3** - Full retail availability
+**Phase 4** - Advanced trading features activation
+
+We expect full integration to be completed within the coming weeks, with trading beginning shortly after final regulatory approvals.
+
+### Base DEX Success Drives CEX Adoption
+
+Our successful Base DEX integration earlier this year demonstrated $DHB's technical reliability and community engagement. The strong trading volumes and user adoption on Base caught Coinbase's attention, leading to this CEX listing opportunity.
+
+**Key Metrics That Impressed Coinbase:**
+- Consistent daily trading volume exceeding $2M
+- Growing community of 50,000+ active holders
+- Zero critical technical issues since Base launch
+- Strong social media engagement and developer activity
+
+### DeHub Ecosystem Growth
+
+This Coinbase listing accelerates our broader ecosystem development:
+
+**Creator Economy**: More accessible $DHB means more creators can participate in our tokenized content platform.
+
+**DeFi Integration**: Enhanced liquidity enables new yield farming and staking opportunities.
+
+**Partnership Opportunities**: Major exchange listings often lead to additional partnership discussions.
+
+**Technology Development**: Increased token utility drives continued platform innovation.
+
+### Community Benefits
+
+Our community has been the driving force behind this achievement:
+
+- **Early Supporters** who believed in our vision from day one
+- **Content Creators** who built amazing experiences on our platform
+- **Developers** who contributed to our open-source ecosystem
+- **Traders** who provided essential liquidity during our growth phase
+
+### Looking Forward
+
+The Coinbase listing is just the beginning. We're actively pursuing additional tier-1 exchange listings while continuing to develop groundbreaking features for the DeHub platform.
+
+**Upcoming Catalysts:**
+- Mobile app launch with enhanced trading features
+- NFT marketplace integration
+- Cross-chain bridge implementations
+- Institutional staking programs
+
+### How to Prepare
+
+Current $DHB holders should:
+
+1. **Verify Coinbase Account** - Ensure your account is fully verified
+2. **Monitor Announcements** - Follow official channels for trading start date
+3. **Review Trading Fees** - Familiarize yourself with Coinbase's fee structure
+4. **Set Price Alerts** - Use Coinbase's tools to track $DHB price movements
+
+### Join the Celebration
+
+This milestone belongs to our entire community. Share your excitement using #DHBOnCoinbase and help spread the word about this historic achievement.
+
+The future of decentralized social platforms is brighter than ever, and $DHB is leading the charge into mainstream adoption.
+
+*Ready to buy $DHB on Coinbase? Stay tuned for the official trading launch announcement.*`,
+    publishedAt: '2024-12-09T15:30:00.000Z',
+    readingTime: 4,
+    author: {
+      name: 'DeHub Team',
+      avatar: '/lovable-uploads/b8f9c8a0-4e2b-4d5c-9a1f-3e7d6c8b9a0e.png'
+    },
+    tags: ['Announcement', 'Exchange', 'DHB', 'Coinbase'],
+    bannerImage: '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png',
+    bannerImageAlt: 'Coinbase logo on mobile device with trading charts in background',
+    featured: true,
+    seoTitle: '$DHB Coinbase Listing - Trade DeHub Token on Major Exchange',
+    seoDescription: '$DHB confirmed for Coinbase CEX listing. Enhanced liquidity, mainstream accessibility, and institutional interest for DeHub token holders.'
+  },
+  {
+    id: 'seamless-crypto-fiat',
+    slug: 'seamless-crypto-to-fiat-the-dehub-off-ramp-solution',
+    title: 'Seamless Crypto-to-Fiat: The DeHub Off-Ramp Solution',
+    excerpt: 'Discover how DeHub is revolutionizing crypto off-ramps with instant, secure, and cost-effective solutions that eliminate traditional banking friction.',
+    content: `### The Off-Ramp Revolution Begins
+
+Converting cryptocurrency back to traditional fiat currency has long been one of the most frustrating aspects of the crypto experience. Long wait times, high fees, frozen accounts, and complex procedures have made off-ramping a nightmare for users worldwide.
+
+DeHub is changing that narrative with our revolutionary off-ramp solution that prioritizes speed, security, and user experience above all else.
+
+### The Problem with Traditional Off-Ramps
+
+Current crypto off-ramp solutions suffer from several critical issues:
+
+**Banking Restrictions**: Traditional banks often freeze accounts or block transactions related to cryptocurrency, leaving users stranded without access to their funds.
+
+**Excessive Wait Times**: Standard bank transfers can take 3-7 business days, making it impossible to access funds when you need them most.
+
+**Hidden Fees**: Multiple intermediaries mean multiple fees - exchange fees, withdrawal fees, wire transfer fees, and currency conversion fees that eat into your profits.
+
+**Privacy Concerns**: Extensive KYC requirements and transaction monitoring compromise user privacy and financial autonomy.
+
+**Geographic Limitations**: Many services are restricted to specific countries, leaving users in certain regions without viable off-ramp options.
+
+### DeHub's Revolutionary Approach
+
+Our off-ramp solution addresses each of these pain points with innovative technology and strategic partnerships:
+
+#### Instant Settlement Technology
+- **Real-time Processing**: Funds available within minutes, not days
+- **24/7 Operations**: No banking hours restrictions - trade and withdraw anytime
+- **Smart Routing**: Automated selection of fastest settlement paths
+
+#### Banking Partnership Network
+- **Crypto-Friendly Banks**: Exclusive partnerships with institutions that welcome crypto users
+- **Multiple Jurisdictions**: Coverage across 50+ countries with localized banking support
+- **Account Protection**: Dedicated relationship management to prevent account freezes
+
+#### Transparent Fee Structure
+- **No Hidden Costs**: All fees clearly displayed before transaction confirmation
+- **Competitive Rates**: Up to 80% lower fees compared to traditional exchanges
+- **Volume Discounts**: Reduced fees for high-volume users and premium members
+
+### Advanced Security Measures
+
+Security is paramount in our off-ramp design:
+
+**Multi-Signature Wallets**: Funds secured with industry-leading multi-sig technology
+
+**Cold Storage**: 95% of user funds stored offline in secure cold storage facilities
+
+**Insurance Coverage**: Comprehensive insurance protection for user deposits
+
+**Regulatory Compliance**: Full compliance with financial regulations in all operating jurisdictions
+
+**Real-time Monitoring**: AI-powered fraud detection and prevention systems
+
+### Supported Fiat Currencies
+
+Our global approach means support for major currencies worldwide:
+
+- **USD** - United States Dollar
+- **EUR** - Euro
+- **GBP** - British Pound
+- **JPY** - Japanese Yen
+- **CAD** - Canadian Dollar
+- **AUD** - Australian Dollar
+- **CHF** - Swiss Franc
+- **SGD** - Singapore Dollar
+- **HKD** - Hong Kong Dollar
+- **Plus 25+ additional currencies**
+
+![Premium payment cards showcasing modern fintech design](/lovable-uploads/987ef6e4-6733-46c6-ba90-554c2daf60db.png)
+
+### Integration with DeHub Ecosystem
+
+The off-ramp service seamlessly integrates with all DeHub platform features:
+
+**Wallet Integration**: Direct connection to your DeHub wallet for instant access to all supported cryptocurrencies
+
+**DeFi Yields**: Automatically convert DeFi rewards and staking yields to fiat without manual intervention
+
+**Creator Payments**: Content creators can instantly convert platform earnings to their local currency
+
+**Business Solutions**: Merchant services for businesses wanting to accept crypto but receive fiat settlement
+
+### User Experience Excellence
+
+We've designed every aspect of the off-ramp experience with users in mind:
+
+#### Simple Interface
+- **One-Click Conversion**: Convert crypto to fiat with a single button press
+- **Rate Calculator**: Real-time exchange rates with fee transparency
+- **Transaction History**: Complete records of all off-ramp transactions
+
+#### Mobile-First Design
+- **Native Mobile App**: Full off-ramp functionality available on iOS and Android
+- **Push Notifications**: Instant alerts for transaction status updates
+- **Biometric Security**: Fingerprint and Face ID authentication options
+
+#### Customer Support
+- **24/7 Live Chat**: Human support available around the clock
+- **Video Tutorials**: Comprehensive guides for all platform features
+- **Community Forums**: Peer-to-peer support and discussion
+
+### Institutional Solutions
+
+Our off-ramp service isn't just for individual users:
+
+**Corporate Accounts**: Dedicated solutions for businesses and institutions
+
+**API Integration**: Developer-friendly APIs for custom integration
+
+**Bulk Processing**: Handle large volume transactions with enterprise-grade infrastructure
+
+**Compliance Reporting**: Automated reporting for regulatory and tax requirements
+
+### Environmental Responsibility
+
+DeHub is committed to sustainable cryptocurrency practices:
+
+- **Carbon Neutral Operations**: All off-ramp processing powered by renewable energy
+- **Efficient Routing**: Optimized transaction paths reduce overall network congestion
+- **Green Partner Network**: Priority partnerships with environmentally conscious financial institutions
+
+### The Future of Crypto Off-Ramps
+
+Our off-ramp solution represents just the beginning of DeHub's comprehensive financial services ecosystem. Coming soon:
+
+**Debit Card Integration**: Spend crypto directly with instant fiat conversion at point of sale
+
+**Investment Bridge**: Automatically invest fiat proceeds into traditional assets
+
+**Tax Optimization**: Smart conversion timing to minimize tax implications
+
+**Cross-Border Remittances**: Leverage crypto for international money transfers
+
+### Getting Started
+
+Ready to experience hassle-free crypto off-ramping? Here's how to begin:
+
+1. **Create Account**: Sign up for your DeHub account in under 2 minutes
+2. **Complete Verification**: Streamlined KYC process with instant approval
+3. **Connect Wallet**: Link your existing crypto wallets or use our built-in solution
+4. **Start Converting**: Convert crypto to fiat with just a few clicks
+
+### Join the Off-Ramp Revolution
+
+Traditional crypto off-ramps are broken, but DeHub's solution proves there's a better way. With instant settlements, transparent fees, and rock-solid security, we're making crypto-to-fiat conversion as simple as it should be.
+
+*Ready to convert your crypto without the hassle? Try DeHub's off-ramp solution today and experience the difference.*`,
+    publishedAt: '2024-11-22T14:15:00.000Z',
+    readingTime: 6,
+    author: {
+      name: 'DeHub Team',
+      avatar: '/lovable-uploads/b8f9c8a0-4e2b-4d5c-9a1f-3e7d6c8b9a0e.png'
+    },
+    tags: ['Off-ramp', 'Fiat', 'Payments', 'Banking'],
+    bannerImage: '/lovable-uploads/14a7b3f5-2111-470b-ac22-b91917866569.png',
+    bannerImageAlt: 'Modern payment cards showcasing sleek design for crypto off-ramp solution',
+    featured: false,
+    seoTitle: 'DeHub Crypto Off-Ramp - Instant & Secure Crypto-to-Fiat Conversion',
+    seoDescription: 'Revolutionary crypto off-ramp solution with instant settlements, transparent fees, and banking partnerships. Convert crypto to fiat without traditional banking friction.'
+  },
+  dehubCardPost,
+  liveStreamingPost,
+  wrapUp2022Post,
+  tokenisedUploadsPost,
+  awardWinningInnovationPost,
+  dubaiEventPost,
+  crusadersSponsorshipPost,
+  dehubTakeoverPost,
+  basePoolPost,
+  publicBetaDappReportPost
 ];
 
-export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
-    return newPosts.find(p => p.slug === slug);
-}
+export const getNewPostBySlug = (slug: string): BlogPostType | null => {
+  return newPosts.find(post => post.slug === slug) || null;
+};
+
+export { newPosts };
