@@ -38,6 +38,9 @@ const DocsHome = () => {
     } else if (latestPost.slug === 'transparency-hub-dhbscancom-launches-for-contract-activity-tracking---a-dehub-milestone-from-q2-2025') {
       bannerImage = '/lovable-uploads/3b0272d6-6cae-4b9a-a303-5fdf970d17e7.png';
       bannerImageAlt = 'DHBScan Metrics';
+    } else if (latestPost.slug === 'dhb-tradable-on-coinbase-soon') {
+      bannerImage = '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png';
+      bannerImageAlt = 'Coinbase logo on mobile device with trading charts in background';
     }
   }
 
