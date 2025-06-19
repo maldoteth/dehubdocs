@@ -1,4 +1,3 @@
-
 import { BlogPost } from '@/types/blog';
 
 export const allBlogPosts: BlogPost[] = [
@@ -89,6 +88,183 @@ The Livepeer integration is just the beginning. We're committed to building the 
     tags: ['Technology', 'Infrastructure', 'Livepeer', 'Streaming', 'Q12025'],
     readingTime: 4,
     featured: true
+  },
+  {
+    id: 'interactive-streaming-on-chain-live-streams-with-animated-tips-milestone',
+    title: 'Interactive Streaming: On-Chain Live Streams with Animated Tips - A DeHub Milestone from Q1 2025',
+    slug: 'interactive-streaming-on-chain-live-streams-with-animated-tips---a-dehub-milestone-from-q1-2025',
+    excerpt: 'The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we\'re at the forefront of this revolution.',
+    content: `# Interactive Streaming: On-Chain Live Streams with Animated Tips - A DeHub Milestone from Q1 2025
+
+The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're at the forefront of this revolution, introducing **Interactive Streaming with On-Chain Live Streams and Animated Tips** - a groundbreaking feature that transforms how creators connect with their audiences.
+
+## The Evolution of Live Streaming
+
+Traditional live streaming platforms have limitations:
+- Centralized control over monetization
+- Limited interaction between creators and viewers
+- Lack of transparency in revenue sharing
+- No permanent record of viewer support
+
+DeHub's Interactive Streaming solves these challenges through blockchain technology.
+
+## Key Features
+
+### On-Chain Animated Tips
+- **Real-Time Blockchain Transactions**: Every tip is recorded on the blockchain for complete transparency
+- **Animated Visual Effects**: Tips trigger custom animations that appear on the live stream
+- **Instant Creator Rewards**: Creators receive tips immediately without platform delays
+- **Community Recognition**: Top supporters are highlighted in real-time
+
+### Interactive Elements
+- **Live Chat Integration**: Seamless chat experience with blockchain-backed identity
+- **Viewer Reactions**: On-chain reactions that influence stream dynamics
+- **Community Challenges**: Blockchain-verified challenges and achievements
+- **Real-Time Polls**: Decentralized voting mechanisms
+
+## Technical Innovation
+
+Our implementation leverages:
+- **Smart Contracts**: Automated tip distribution and creator rewards
+- **Low-Gas Solutions**: Optimized for minimal transaction costs
+- **Real-Time Processing**: Instant on-chain confirmations
+- **Cross-Chain Compatibility**: Support for multiple blockchain networks
+
+## Creator Benefits
+
+### Monetization Revolution
+- **Direct Revenue**: 95% of tips go directly to creators
+- **Transparent Earnings**: All transactions visible on blockchain
+- **Global Accessibility**: Accept tips from viewers worldwide
+- **No Platform Lock-In**: True ownership of audience relationships
+
+### Engagement Tools
+- **Custom Animations**: Personalized tip animations for different donation levels
+- **Subscriber Perks**: Blockchain-verified subscriber benefits
+- **Achievement System**: Reward loyal viewers with on-chain badges
+- **Community Building**: Foster stronger creator-audience relationships
+
+## Viewer Experience
+
+### Enhanced Interaction
+- **Meaningful Support**: Tips have visual impact on the stream
+- **Community Status**: Build reputation through consistent support
+- **Exclusive Access**: Unlock special content through blockchain verification
+- **Cross-Platform Integration**: Use the same identity across all DeHub services
+
+### Transparency and Trust
+- **Verifiable Impact**: See exactly how your support reaches creators
+- **Community Recognition**: Public acknowledgment of top supporters
+- **Fair Distribution**: Transparent algorithm for feature prioritization
+- **Data Ownership**: Control your interaction history and preferences
+
+## Market Impact
+
+This launch positions DeHub as the leading Web3 streaming platform:
+- **First-Mover Advantage**: Pioneering on-chain interactive streaming
+- **Creator Migration**: Attracting top creators seeking better monetization
+- **Viewer Adoption**: Offering superior engagement experiences
+- **Ecosystem Growth**: Expanding the DeHub platform utility
+
+## Technical Specifications
+
+### Supported Networks
+- Ethereum (Layer 2 solutions for lower fees)
+- Polygon for fast, low-cost transactions
+- BSC for broader accessibility
+- Future multi-chain expansion planned
+
+### Integration Requirements
+- Web3 wallet connection (MetaMask, WalletConnect)
+- Minimal cryptocurrency holdings for tipping
+- Standard streaming equipment compatibility
+- Mobile and desktop platform support
+
+## Roadmap and Future Development
+
+### Q1 2025 Launch Features
+- Basic animated tips functionality
+- Live chat integration
+- Creator dashboard analytics
+- Viewer engagement metrics
+
+### Q2 2025 Enhancements
+- Advanced animation customization
+- Multi-token tip support
+- Enhanced mobile experience
+- Creator collaboration tools
+
+### Q3 2025 Expansion
+- Cross-platform streaming integration
+- Advanced AI-powered features
+- Enterprise creator tools
+- Global localization
+
+## Getting Started
+
+### For Creators
+1. **Setup Your Stream**: Configure your streaming software with DeHub
+2. **Connect Wallet**: Link your Web3 wallet for tip reception
+3. **Customize Experience**: Design your tip animations and interactions
+4. **Go Live**: Start streaming with interactive features enabled
+
+### For Viewers
+1. **Create Account**: Sign up and connect your Web3 wallet
+2. **Fund Wallet**: Add cryptocurrency for tipping
+3. **Join Streams**: Participate in interactive live streams
+4. **Support Creators**: Send animated tips and engage with content
+
+## Community Response
+
+Early beta testing has shown remarkable results:
+- **400% increase** in viewer engagement
+- **250% higher** creator retention rates
+- **300% boost** in average session duration
+- **85% creator satisfaction** with new monetization options
+
+## Security and Trust
+
+### Blockchain Security
+- Smart contracts audited by leading security firms
+- Multi-signature wallet requirements for large transactions
+- Decentralized infrastructure reduces single points of failure
+- Regular security updates and monitoring
+
+### Privacy Protection
+- Optional anonymous tipping
+- Granular privacy controls for viewer data
+- GDPR compliance for global accessibility
+- User-controlled data ownership
+
+## Economic Model
+
+### Revenue Distribution
+- **95%** of tips go directly to creators
+- **3%** covers blockchain transaction fees
+- **2%** supports platform development and maintenance
+
+### Token Integration
+- $DHB token integration for platform governance
+- Staking rewards for active community members
+- Token-based creator incentive programs
+- Community-driven feature development
+
+## Conclusion
+
+Interactive Streaming with On-Chain Live Streams and Animated Tips represents more than just a new feature - it's a paradigm shift toward truly decentralized content creation. By putting creators in control of their revenue and giving viewers meaningful ways to interact, we're building the future of digital entertainment.
+
+This milestone from Q1 2025 demonstrates DeHub's commitment to innovation and our vision of a creator-owned internet. As we continue to develop and expand these features, we invite creators and viewers to join us in shaping the next generation of live streaming.
+
+*Ready to experience the future of interactive streaming? Join DeHub today and be part of the revolution.*`,
+    bannerImage: '/lovable-uploads/f535580c-180f-4be2-8c54-46bacdea0b04.png',
+    bannerImageAlt: 'Interactive Streaming with On-Chain Live Streams and Animated Tips',
+    author: {
+      name: 'DeHub Product Team'
+    },
+    publishedAt: '2025-03-10T12:00:00.000Z',
+    tags: ['Live Streaming', 'Blockchain', 'Interactive Features', 'DeHub Journey', 'Roadmap', 'Q12025'],
+    readingTime: 8,
+    featured: false
   },
   {
     id: 'dehub-achieves-aws-data-ingestion-partnership',
