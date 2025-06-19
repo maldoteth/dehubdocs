@@ -1,3 +1,4 @@
+
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 
@@ -46,11 +47,15 @@ export const getFeaturedPosts = (): BlogPost[] => {
     },
     {
       id: 'feature-spotlight-ad-tech',
-      featured: false  // Changed from true to false
+      featured: false
     },
     {
       id: 'mvp-app-released-listed-on-google-play-store',
-      featured: false  // Changed from true to false
+      featured: false
+    },
+    {
+      id: '1-year-review-a-quick-look-back',
+      featured: false
     }
   ];
 
