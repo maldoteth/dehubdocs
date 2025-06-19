@@ -1,4 +1,3 @@
-
 import React from 'react';
 import DOMPurify from 'dompurify';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -104,7 +103,7 @@ const renderRegularContent = (text: string) => {
       return heading;
     }
 
-    // Image tag - replace duplicate gold card images with silver card
+    // Image tag - skip duplicate gold card images
     if (firstLine.startsWith('![')) {
       const match = firstLine.match(/!\[(.*?)\]\((.*?)\)/);
       if (match) {
@@ -114,9 +113,9 @@ const renderRegularContent = (text: string) => {
         const alt = parts[0].trim();
         const style = parts.length > 1 ? parts[1].trim() : 'default';
         
-        // Replace duplicate gold card images with the new silver card image
+        // Skip duplicate gold card images completely
         if (src.includes('photo-1487252665478-49b61b47f302') || alt.toLowerCase().includes('gold card')) {
-          src = '/lovable-uploads/987ef6e4-6733-46c6-ba90-554c2daf60db.png';
+          return null;
         }
         
         if (style === 'avatar') {
