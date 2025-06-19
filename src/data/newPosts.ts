@@ -1,4 +1,3 @@
-
 import { BlogPost } from '@/types/blog';
 
 export const newPosts: BlogPost[] = [
@@ -103,6 +102,82 @@ The mainstream exposure will bring new perspectives, use cases, and innovations 
     featured: true,
     seoTitle: '$DHB Token Coming to Coinbase - Major Exchange Listing Confirmed',
     seoDescription: 'DeHub token $DHB will soon be tradable on Coinbase, bringing mainstream accessibility and institutional trust to the DeHub ecosystem.'
+  },
+  {
+    id: '1m-raise-completed',
+    title: '$1,000,000 raise completed',
+    slug: '1m-raise-completed',
+    excerpt: 'We are thrilled to announce a monumental milestone in the DeHub journey: our strategic ecosystem fork, Fan.site (formerly Blocjerk), has successfully...',
+    content: `# $1,000,000 raise completed
+
+We are thrilled to announce a monumental milestone in the DeHub journey: our strategic ecosystem fork, Fan.site (formerly Blocjerk), has successfully completed a $1,000,000 fundraise. 
+
+This achievement represents more than just capital - it's validation of our vision for decentralized content creation and the growing confidence in our ecosystem's potential.
+
+## What This Means for DeHub
+
+The successful raise for Fan.site directly benefits the entire DeHub ecosystem:
+
+### Shared Technology Stack
+Fan.site builds upon DeHub's core infrastructure, meaning improvements and innovations developed for Fan.site flow back to benefit all DeHub users.
+
+### Market Validation
+This fundraise validates the market demand for decentralized content platforms, strengthening DeHub's position in the space.
+
+### Ecosystem Growth
+Success breeds success. Fan.site's milestone attracts more developers, creators, and investors to the broader DeHub ecosystem.
+
+## About Fan.site
+
+Fan.site (formerly known as Blocjerk) represents a specialized implementation of DeHub's technology, focusing on creator monetization and fan engagement. The platform leverages our proven infrastructure while adding unique features tailored to specific creator needs.
+
+### Key Features
+- Advanced creator monetization tools
+- Enhanced fan interaction systems
+- Seamless crypto payment integration
+- Community building features
+
+## Investment Details
+
+The $1M raise was led by strategic investors who understand the potential of decentralized content platforms. This funding will accelerate development and user acquisition across both Fan.site and the broader DeHub ecosystem.
+
+### Use of Funds
+- Platform development and feature enhancement
+- User acquisition and marketing
+- Team expansion
+- Infrastructure scaling
+
+## Looking Forward
+
+This fundraise milestone is just the beginning. We're seeing increased interest from additional investors and partners who want to be part of the decentralized content revolution.
+
+### What's Next
+- Continued platform development
+- Strategic partnerships
+- Community growth initiatives
+- Additional fundraising rounds
+
+## Community Impact
+
+Our community has been instrumental in reaching this milestone. The success of Fan.site reflects the strength and potential of the DeHub ecosystem as a whole.
+
+Thank you to everyone who has supported us on this journey. This is just the beginning of what we can achieve together.
+
+---
+
+*The $1M raise for Fan.site marks a significant milestone in our journey toward mainstream adoption of decentralized content platforms.*`,
+    author: {
+      name: 'DeHub Team',
+      avatar: '/placeholder.svg'
+    },
+    publishedAt: '2024-03-08T12:00:00.000Z',
+    readingTime: 6,
+    tags: ['Fundraising', 'Fan.site', 'Investment'],
+    bannerImage: '/lovable-uploads/e9632af0-07c2-4ca8-9b82-fc255191358b.png',
+    bannerImageAlt: '$1,000,000 Fundraise completed announcement',
+    featured: true,
+    seoTitle: 'Fan.site Completes $1M Fundraise - DeHub Ecosystem Milestone',
+    seoDescription: 'Fan.site, powered by DeHub technology, successfully raises $1,000,000 in strategic funding, validating the decentralized content creation market.'
   },
   {
     id: 'off-ramp-service-revealed-dehub-card-coming-soon',
