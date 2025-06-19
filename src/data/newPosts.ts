@@ -97,8 +97,8 @@ The mainstream exposure will bring new perspectives, use cases, and innovations 
     publishedAt: '2025-06-15T12:00:00.000Z',
     readingTime: 2,
     tags: ['Coinbase', 'Exchange', 'Listing', '$DHB Token', 'Trading', 'Accessibility'],
-    bannerImage: '/lovable-uploads/ad12a724-7166-4580-81b8-202cfde0d15a.png',
-    bannerImageAlt: 'Coinbase logo with $DHB trading announcement',
+    bannerImage: '/lovable-uploads/a7a21f97-1b88-4847-89ed-dba366169499.png',
+    bannerImageAlt: 'Coinbase logo displayed on mobile device with blue background',
     featured: true,
     seoTitle: '$DHB Token Coming to Coinbase - Major Exchange Listing Confirmed',
     seoDescription: 'DeHub token $DHB will soon be tradable on Coinbase, bringing mainstream accessibility and institutional trust to the DeHub ecosystem.'
