@@ -2,6 +2,9 @@ import React from 'react';
 import DOMPurify from 'dompurify';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
+import { ExternalLink } from 'lucide-react';
+
 interface BlogContentProps {
   content: string;
 }
@@ -186,8 +189,41 @@ const BlogContent: React.FC<BlogContentProps> = ({
     }
     return renderRegularContent(content);
   };
+  
+  // Check if this is the Coinbase blog post
+  const isCoinbasePost = content.includes('buy $DHB on Coinbase') || content.includes('Coinbase team');
+  
   return <div className="prose prose-lg max-w-none">
     {renderContent()}
+    {isCoinbasePost && (
+      <div className="mt-8 pt-4 border-t border-sky-blue/20">
+        <HoverCard>
+          <HoverCardTrigger asChild>
+            <button className="inline-flex items-center gap-2 text-middle-blue hover:text-royal-blue transition-colors duration-200 underline">
+              Reference Link
+              <ExternalLink className="w-4 h-4" />
+            </button>
+          </HoverCardTrigger>
+          <HoverCardContent className="w-80">
+            <div className="space-y-2">
+              <h4 className="text-sm font-semibold">Coinbase Official Announcement</h4>
+              <p className="text-sm text-muted-foreground">
+                Official tweet from Coinbase about Base DEX integration
+              </p>
+              <a 
+                href="https://x.com/coinbase/status/1933274988041080859" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-blue-500 hover:underline"
+              >
+                View on X (Twitter) →
+              </a>
+            </div>
+          </HoverCardContent>
+        </HoverCard>
+      </div>
+    )}
   </div>;
 };
+
 export default BlogContent;
