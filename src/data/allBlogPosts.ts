@@ -1,3 +1,4 @@
+
 import { BlogPost } from '@/types/blog';
 
 export const allBlogPosts: BlogPost[] = [
@@ -532,61 +533,6 @@ This venture showcases the co-founders' commitment to the creator economy beyond
     },
     publishedAt: '2024-01-09T12:00:00.000Z',
     tags: ['Entrepreneurship', 'TikTok', 'Marketing', 'Agency', 'Co-Founders'],
-    readingTime: 4,
-    featured: false
-  },
-  {
-    id: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
-    title: 'Interactive Streaming: On-Chain Live Streams with Animated Tips',
-    slug: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
-    excerpt: 'DeHub introduces interactive live streaming with on-chain animated tips, enabling real-time engagement and monetization for creators.',
-    content: `# Interactive Streaming: On-Chain Live Streams with Animated Tips
-
-DeHub is excited to announce the launch of **interactive live streaming with on-chain animated tips**, enabling real-time engagement and monetization for creators.
-
-## What is Interactive Streaming?
-
-Interactive streaming takes live broadcasts to the next level by allowing viewers to directly interact with the stream in real-time. Our new features include:
-
-- **Animated Tips**: Send animated tips to creators during live streams
-- **On-Chain Transactions**: All tips are processed on the blockchain for transparency
-- **Real-Time Engagement**: Creators can respond to tips and interact with viewers
-- **Monetization**: Creators can earn revenue directly from their audience
-
-## Key Features
-
-### For Viewers
-- **Support Creators**: Show your appreciation for creators with animated tips
-- **Real-Time Interaction**: Engage with creators and other viewers in real-time
-- **Transparency**: All tips are processed on the blockchain for transparency
-- **Fun and Engaging**: Animated tips add a fun and engaging element to live streams
-
-### For Creators
-- **Monetization**: Earn revenue directly from your audience
-- **Engagement**: Interact with viewers in real-time
-- **Community Building**: Build a stronger community with interactive features
-- **Transparency**: All tips are processed on the blockchain for transparency
-
-## How It Works
-
-1.  A creator starts a live stream on DeHub
-2.  Viewers can send animated tips to the creator
-3.  The tips are processed on the blockchain
-4.  The creator receives the tips in real-time
-5.  The creator can respond to the tips and interact with viewers
-
-## Looking Forward
-
-We're committed to building the most interactive and engaging live streaming platform in the industry. Stay tuned for more exciting developments as we continue to expand our live streaming features.
-
-*Ready to experience the future of live streaming? Join us on DeHub today.*`,
-    bannerImage: '/lovable-uploads/f6a9a3a7-ca69-481c-82a4-6a9951e7c1a4.png',
-    bannerImageAlt: 'Interactive Streaming announcement',
-    author: {
-      name: 'DeHub Team'
-    },
-    publishedAt: '2023-09-01T12:00:00.000Z',
-    tags: ['Streaming', 'Live', 'Interactive', 'Tips', 'Monetization'],
     readingTime: 4,
     featured: false
   }
