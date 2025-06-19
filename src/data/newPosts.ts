@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -741,47 +740,49 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
 };
 
 const transparencyHubPost: BlogPostType = {
-  id: 'transparency-hub-dhbscancom',
-  slug: 'transparency-hub-dhbscancom',
+  id: 'transparency-hub-dhbscan',
+  slug: 'transparency-hub-dhbscan',
   title: 'Transparency Hub: dhbscan.com',
-  excerpt: 'Track $DHB across multiple chains with our comprehensive blockchain analytics platform.',
+  excerpt: 'Comprehensive analytics platform providing real-time insights into DHB token metrics across multiple blockchain networks.',
   content: `# Transparency Hub: dhbscan.com
 
-Our new transparency hub **dhbscan.com** provides comprehensive analytics for the $DHB token across multiple blockchain networks.
-
-## Multi-Chain Analytics
-
-The platform offers real-time tracking of $DHB token metrics across both Ethereum and Base networks, providing users with a complete overview of token distribution and activity.
+We're excited to announce the launch of **dhbscan.com**, our comprehensive transparency hub that provides real-time insights into DHB token metrics across multiple blockchain networks.
 
 ## Key Features
 
-- **Cross-chain supply tracking** - Monitor total supply figures across all supported networks
-- **Historical data visualization** - Interactive charts showing price movements, trading volume, and key milestones
-- **Transaction monitoring** - Real-time feed of the latest transfers and token movements
-- **Holder analysis** - Comprehensive breakdown of top token holders and distribution patterns
+1) **Shows supply figures across both chains** - Get accurate, real-time data on DHB token supply distribution across different blockchain networks
 
-## Advanced Analytics Coming Soon
+2) **Shows chart, price history & milestones** - Track DHB's performance over time with detailed charts and important milestone markers. Soon to show full chart across FTV & DHB to paint the full story
 
-We're continuously enhancing the platform with new features including:
-- Unified charting across FTV and DHB tokens to show the complete ecosystem story
-- Enhanced historical data spanning multiple years
-- Advanced filtering and search capabilities
-- API access for developers and researchers
+3) **Shows latest transfers & top holders** - Monitor the most recent token movements and identify the largest DHB holders in the ecosystem
 
-Visit [dhbscan.com](https://dhbscan.com) to explore the full transparency hub and track $DHB token metrics in real-time.`,
-  bannerImage: '/lovable-uploads/68257c55-c4a8-4aef-9df6-e6cb7c25b28e.png',
-  bannerImageAlt: 'dhbscan.com transparency hub interface showing blockchain analytics',
+## Why Transparency Matters
+
+In the rapidly evolving world of decentralized finance, transparency isn't just a buzzword—it's a fundamental requirement for building trust and fostering community growth. dhbscan.com represents our commitment to providing the DeHub community with complete visibility into token economics and network activity.
+
+## What You Can Expect
+
+- **Real-time Data**: Live updates on token metrics and network activity
+- **Multi-chain Support**: Comprehensive coverage across all supported blockchain networks  
+- **User-friendly Interface**: Clean, intuitive design that makes complex data accessible
+- **Mobile Responsive**: Full functionality across all devices
+
+Visit [dhbscan.com](https://dhbscan.com) today to explore the transparency hub and gain deeper insights into the DHB ecosystem.
+
+*This transparency initiative is part of our ongoing commitment to building trust and providing value to the DeHub community.*`,
+  bannerImage: '/lovable-uploads/c6d5f1cc-f829-445e-8a5d-c5ea9fa4c720.png',
+  bannerImageAlt: 'dhbscan.com transparency hub dashboard showing DHB token analytics',
   author: {
     name: 'DeHub Team',
     avatar: '/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png'
   },
   publishedAt: '2024-12-15T12:00:00.000Z',
   tags: ['Analytics', 'Transparency', 'Multi-Chain', 'Blockchain', 'DHB'],
-  readingTime: 2,
+  readingTime: 1,
   featured: false,
   status: 'published',
-  seoTitle: 'dhbscan.com - Multi-Chain DHB Token Analytics Hub',
-  seoDescription: 'Track $DHB token across multiple blockchains with comprehensive analytics, real-time data, and transparency tools at dhbscan.com'
+  seoTitle: 'DHB Transparency Hub - dhbscan.com Analytics Platform',
+  seoDescription: 'Explore dhbscan.com, the comprehensive transparency hub for DHB token analytics, supply tracking, and blockchain insights across multiple networks.'
 };
 
 export const newPosts: BlogPostType[] = [
