@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -468,10 +467,10 @@ const dehubTakeoverPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">Time for a Takeover</h2>
     <p class="mb-4 text-lg text-royal-blue/80">In today's attention economy, it comes as no surprise that memes have captured so much of the market's attention and liquidity so far this cycle, with communities further establishing themselves as the driving force and catalysts behind much of the success witnessed so far across this sector.</p>
-    <p class="mb-4 text-royal-blue/80">Some could argue, fairly, that we've been too focussed on building and innovating, while not meeting some expectations when it comes to the community growth aspects. Well this is about to change, and timed nicely with the release of the dehub.io app upgrade.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Some could argue, fairly, that we've been too focussed on building and innovating, while not meeting some expectations when it comes to the community growth aspects. Well this is about to change, and timed nicely with the release of the dehub.io app upgrade.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Turbocharging The DeHub Army</h3>
-    <p class="mb-4 text-royal-blue/80">We're about to turbocharge The DeHub Army with:</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We're about to turbocharge The DeHub Army with:</p>
     <ul class="list-disc list-inside space-y-3 mb-4 text-royal-blue/80 pl-4">
       <li>Token gated group chats for all holders, and those with over 10,000,000 $DHB (Great White Shark badge holders in-app). This will be a place where more detailed plans can be discussed in private/unofficial settings, while larger investors can strategise further synergetic opportunities.</li>
       <li>Daily Town Halls with 24/7 voice chat and raiding across all socials by community members and paid shills.</li>
@@ -479,8 +478,8 @@ const dehubTakeoverPost: BlogPostType = {
       <li>Volume driving initiatives for trending with new 0% tax on Base.</li>
       <li>Large promoter network and increased targeted ads on X, Instagram, Google and YouTube.</li>
     </ul>
-    <p class="mb-4 text-royal-blue/80">This is all being prepared to kick-start as soon as our next app upgrade is released, to align with our other campaigns for creators joining the app. As more eyes lay upon DeHub, we need there to be a more vibrant community, growing volume and engagement which all this should achieve, so that we all reap the full rewards and marketing ROI (return on investment).</p>
-    <p class="mb-4 text-royal-blue/80">Along with the founders at Town Hall daily, a team is being prepared to manage the voice chat, conduct raids across socials as well as regular posts on the official X account 24/7, however for this to really work it will require more support. We need community leaders and members to step up and take on roles after we lay the new system foundations so we're keen to hear from any mods, voice chat operators, shills, raiders or any technical hands already in the community, as you know the project best and can articulate the message.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">This is all being prepared to kick-start as soon as our next app upgrade is released, to align with our other campaigns for creators joining the app. As more eyes lay upon DeHub, we need there to be a more vibrant community, growing volume and engagement which all this should achieve, so that we all reap the full rewards and marketing ROI (return on investment).</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Along with the founders at Town Hall daily, a team is being prepared to manage the voice chat, conduct raids across socials as well as regular posts on the official X account 24/7, however for this to really work it will require more support. We need community leaders and members to step up and take on roles after we lay the new system foundations so we're keen to hear from any mods, voice chat operators, shills, raiders or any technical hands already in the community, as you know the project best and can articulate the message.</p>
     
     <p class="mt-8 font-semibold text-royal-blue">Furthermore, we will be kick-starting these campaigns with the private token gated groups launching this weekend, in preparation for the app upgrade. So stay tuned for more information and reach out to any of the team or hr@dehub.net for hiring opportunities as it's all kicking off soon here.</p>
   `,
@@ -506,10 +505,10 @@ const crusadersSponsorshipPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">DeHub Announces Multi-Year Sponsorship with North Wales Crusaders</h2>
     <p class="mb-4 text-lg text-royal-blue/80">We're delighted to reveal a multi-year sponsorship agreement with the only Rugby League club in Wales, The North Wales Crusaders.</p>
-    <p class="mb-4 text-royal-blue/80">Rugby is the most participated sport in the country, with the Encyclopedia of Wales stating that the sport is "seen by many as a symbol of Welsh identity and an expression of national consciousness" 😲.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Rugby is the most participated sport in the country, with the Encyclopedia of Wales stating that the sport is "seen by many as a symbol of Welsh identity and an expression of national consciousness" 😲.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What this partnership means</h3>
-    <p class="mb-4 text-royal-blue/80">As part of our commitment, DeHub has secured the following for every home game across the next two seasons:</p>
+    <p class="mb-4 text-lg text-royal-blue/80">As part of our commitment, DeHub has secured the following for every home game across the next two seasons:</p>
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li>The official match ball sponsorship.</li>
       <li>An advertising board in the stadium.</li>
@@ -540,12 +539,12 @@ const publicBetaDappReportPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">Our Vision for the DeHub D'app</h2>
     <p class="mb-4 text-lg text-royal-blue/80">DeHub at the core is, and always was, a streaming app with our own marketplace and games complimenting the main hub. When going on dehub.net in future, you will be met with the streaming app.</p>
-    <p class="mb-4 text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
-    <p class="mb-4 text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
-    <p class="mb-4 text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
 
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Public Testing Review</h3>
-    <p class="mb-4 text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li><strong>PPV:</strong> create your own PPV in DHB, USDC or USDT (soon to be every token).</li>
       <li><strong>W2E / Bounty post:</strong> Create your own watch-to-earn in DHB, USDC or USDT (soon to be every token) and reward your existing community or build a new one with a turbo-boost.</li>
