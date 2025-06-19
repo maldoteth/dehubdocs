@@ -173,7 +173,7 @@ Thank you to everyone who has supported us on this journey. This is just the beg
     publishedAt: '2024-03-08T12:00:00.000Z',
     readingTime: 6,
     tags: ['Fundraising', 'Fan.site', 'Investment'],
-    bannerImage: '/lovable-uploads/e9632af0-07c2-4ca8-9b82-fc255191358b.png',
+    bannerImage: '/lovable-uploads/f7acf86f-c49d-4ac3-ab63-9448e45d25e6.png',
     bannerImageAlt: '$1,000,000 Fundraise completed announcement',
     featured: true,
     seoTitle: 'Fan.site Completes $1M Fundraise - DeHub Ecosystem Milestone',
