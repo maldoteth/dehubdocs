@@ -90,93 +90,52 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
     if (block.trim() === '' || block.trim().length < 50) {
       return (
         <div key={index} className="space-y-6">
-          <div className="p-6 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-sky-blue/20">
-            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Revolutionary Live Streaming Experience</h3>
-            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-              DeHub's live streaming platform transforms traditional broadcasting into an <strong>interactive, monetized experience</strong> where creators and audiences engage through real-time tipping, animated reactions, and blockchain-powered rewards. Our streaming infrastructure supports unlimited concurrent viewers while maintaining the personal connection that makes live content special.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 bg-gradient-to-r from-green-50 to-cyan-50 rounded-lg border border-sky-blue/20">
-              <h4 className="text-lg font-bold text-royal-blue mb-3 font-exo">🎬 Professional Streaming Tools</h4>
-              <ul className="text-royal-blue/80 text-sm font-exo space-y-2">
-                <li>• 4K streaming support with adaptive bitrate</li>
-                <li>• Multi-camera angle switching</li>
-                <li>• Screen sharing and presentation mode</li>
-                <li>• Real-time chat moderation tools</li>
-                <li>• Stream recording and highlights</li>
-              </ul>
-            </div>
-
-            <div className="p-6 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg border border-sky-blue/20">
-              <h4 className="text-lg font-bold text-royal-blue mb-3 font-exo">💰 Monetization Features</h4>
-              <ul className="text-royal-blue/80 text-sm font-exo space-y-2">
-                <li>• Real-time DHB token tipping</li>
-                <li>• Animated tip notifications</li>
-                <li>• Subscriber-only streams</li>
-                <li>• Pay-per-view premium content</li>
-                <li>• Revenue sharing with moderators</li>
-              </ul>
-            </div>
-          </div>
-
           <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-sky-blue/20">
-            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Interactive Engagement System</h3>
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Live Streaming on DeHub</h3>
             <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-              Our streaming platform features <strong>animated tip reactions</strong> that appear in real-time during broadcasts. When viewers send DHB tips, custom animations overlay the stream, creating visual excitement and encouraging further engagement. Tip amounts trigger different animation styles - from subtle sparkles for small tips to dramatic fireworks for large donations.
+              DeHub's live streaming feature allows you to broadcast in real-time to your followers and the wider community. Whether you're sharing gaming sessions, tutorials, or casual conversations, our streaming platform provides all the tools you need for professional-quality broadcasts.
             </p>
             
-            <div className="space-y-3">
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Smart Tip Animations</h5>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Dynamic visual effects scale with tip amounts: 1-10 DHB triggers particle effects, 11-50 DHB creates screen-wide animations, 50+ DHB launches spectacular celebrations that dominate the stream.
-                </p>
-              </div>
-              
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Custom Emote Integration</h5>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Creators can upload custom emotes and animations that activate with specific tip amounts, creating personalized experiences that strengthen community bonds and brand identity.
-                </p>
-              </div>
-            </div>
+            <h4 className="text-lg font-semibold text-royal-blue mb-3 font-exo">Key Features:</h4>
+            <ul className="text-royal-blue/80 mb-4 font-exo space-y-2">
+              <li>• <strong>High-Quality Video:</strong> Stream in up to 1080p resolution with adaptive bitrate</li>
+              <li>• <strong>Real-Time Chat:</strong> Interactive chat with moderation tools</li>
+              <li>• <strong>Screen Sharing:</strong> Share your screen for presentations or tutorials</li>
+              <li>• <strong>Multi-Platform:</strong> Stream simultaneously to multiple platforms</li>
+              <li>• <strong>Recording:</strong> Automatically save your streams for later viewing</li>
+            </ul>
+
+            <h4 className="text-lg font-semibold text-royal-blue mb-3 font-exo">Getting Started:</h4>
+            <ol className="text-royal-blue/80 mb-4 font-exo space-y-2">
+              <li>1. Navigate to the streaming section in your DeHub dashboard</li>
+              <li>2. Configure your camera and microphone settings</li>
+              <li>3. Set your stream title and description</li>
+              <li>4. Choose your streaming quality and privacy settings</li>
+              <li>5. Click "Go Live" to start broadcasting</li>
+            </ol>
           </div>
 
-          <div className="p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border border-sky-blue/20">
-            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Decentralized Infrastructure Benefits</h3>
+          <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-sky-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Tip Your Favorites</h3>
             <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-              Built on decentralized video infrastructure, our streaming platform offers <strong>unprecedented reliability and cost efficiency</strong>. Unlike centralized platforms that can experience downtime or impose arbitrary restrictions, DeHub's distributed network ensures your stream stays live and your content remains accessible globally.
+              Support your favorite streamers and content creators with DHB tips! Tipping is a direct way to show appreciation and help creators monetize their content on the DeHub platform.
             </p>
-            
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Global CDN Distribution</h5>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Streams automatically route through the nearest decentralized nodes, ensuring minimal latency and maximum quality for viewers worldwide.
-                </p>
-              </div>
-              
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Censorship Resistance</h5>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Decentralized infrastructure means no single authority can shut down your stream, protecting creator freedom and audience access.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div className="p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-lg border border-royal-blue/20">
-            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Advanced Analytics & Community Building</h3>
-            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-              Every stream generates detailed analytics about viewer engagement, tip patterns, peak viewing times, and audience demographics. This data helps creators optimize their content strategy while our community tools facilitate deeper connections between streamers and their most dedicated supporters.
-            </p>
-            
-            <div className="pt-4 border-t border-royal-blue/30">
-              <p className="text-royal-blue/80 font-exo text-sm italic">
-                Experience the future of live streaming where every moment is interactive, every tip is celebrated, and every creator has the tools to build a thriving community around their passion.
-              </p>
+            <h4 className="text-lg font-semibold text-royal-blue mb-3 font-exo">How Tipping Works:</h4>
+            <ul className="text-royal-blue/80 mb-4 font-exo space-y-2">
+              <li>• <strong>Easy DHB Tips:</strong> Send tips using your DHB token balance</li>
+              <li>• <strong>Real-Time Notifications:</strong> Streamers receive instant notifications of tips</li>
+              <li>• <strong>Custom Messages:</strong> Include personal messages with your tips</li>
+              <li>• <strong>Animated Effects:</strong> Tips trigger visual animations during live streams</li>
+              <li>• <strong>Creator Revenue:</strong> 95% of tips go directly to the creator</li>
+            </ul>
+
+            <h4 className="text-lg font-semibold text-royal-blue mb-3 font-exo">Tip Amounts & Effects:</h4>
+            <div className="space-y-2 text-royal-blue/80 font-exo">
+              <p>• <strong>1-10 DHB:</strong> Sparkle effects and subtle animations</p>
+              <p>• <strong>11-50 DHB:</strong> Colorful particle effects and sound alerts</p>
+              <p>• <strong>51-100 DHB:</strong> Screen-wide celebrations with custom emotes</p>
+              <p>• <strong>100+ DHB:</strong> Spectacular fireworks and premium animations</p>
             </div>
           </div>
         </div>
