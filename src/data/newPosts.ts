@@ -624,8 +624,248 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
   seoDescription: 'Skip the banks and spend crypto directly with the DeHub Card. Our revolutionary off-ramp solution eliminates traditional banking complications and frozen accounts.',
 };
 
+const livepeerPost: BlogPostType = {
+  id: 'scaling-new-heights-livepeer-integration-for-50k-concurrent-viewers---a-dehub-milestone-from-q1-2025',
+  slug: 'scaling-new-heights-livepeer-integration-for-50k-concurrent-viewers---a-dehub-milestone-from-q1-2025',
+  title: 'Scaling New Heights: Livepeer Integration for initially 50k+ Concurrent Viewers With Unlimited Viewer abilities as we scale up.',
+  excerpt: 'DeHub partners with Livepeer to revolutionize decentralized streaming infrastructure, supporting massive concurrent viewership with cost-effective, censorship-resistant technology.',
+  content: `
+### Revolutionizing Live Streaming Infrastructure
+
+DeHub is excited to announce our strategic partnership with Livepeer, the world's leading decentralized video infrastructure network. This integration marks a pivotal moment in our mission to democratize content creation and streaming.
+
+### Why Livepeer?
+
+Livepeer represents the future of video streaming infrastructure:
+
+- **Decentralized Architecture**: No single point of failure
+- **Cost Efficiency**: Up to 50x cheaper than traditional CDNs
+- **Global Scale**: Distributed network of video miners worldwide
+- **Censorship Resistant**: Truly unstoppable streaming
+- **Developer Friendly**: Easy integration with robust APIs
+
+### Technical Integration
+
+Our Livepeer integration enables:
+
+- **Massive Concurrent Viewership**: Initially supporting 50k+ concurrent viewers with unlimited scaling potential
+- **Adaptive Bitrate Streaming**: Automatic quality adjustment based on viewer bandwidth
+- **Global Content Delivery**: Sub-second latency worldwide through Livepeer's distributed network
+- **Multi-Format Support**: Live streaming, VOD, and interactive content
+- **Real-time Analytics**: Comprehensive streaming metrics and viewer insights
+
+### The Economic Advantage
+
+Traditional streaming infrastructure is prohibitively expensive for most creators. Livepeer's decentralized model dramatically reduces costs while improving quality and reliability.
+
+**Cost Comparison:**
+- Traditional CDN: $0.10-0.15 per GB
+- Livepeer Network: $0.005-0.01 per GB
+- **90%+ cost reduction** for high-volume streaming
+
+### Empowering Creators
+
+This partnership directly benefits DeHub creators through:
+
+- **Lower Barriers to Entry**: Affordable high-quality streaming for all creators
+- **Revenue Optimization**: More earnings retained due to lower infrastructure costs
+- **Global Reach**: Access to worldwide audiences without geographic restrictions
+- **Professional Quality**: Enterprise-grade streaming technology accessible to everyone
+
+### Decentralized Future
+
+The Livepeer integration aligns perfectly with DeHub's vision of a decentralized creator economy. By leveraging blockchain technology and decentralized infrastructure, we're building a platform that:
+
+- Cannot be censored or shut down
+- Operates independently of traditional gatekeepers
+- Scales globally without centralized bottlenecks
+- Provides transparent, fair monetization
+
+### Looking Ahead
+
+This is just the beginning. As we scale our Livepeer integration, creators can expect:
+
+- Enhanced interactive features
+- Improved monetization tools
+- Advanced analytics and insights
+- Seamless multi-platform distribution
+- Integration with DeHub's tokenized economy
+
+The future of streaming is decentralized, and with Livepeer, DeHub is leading the way.
+  `,
+  bannerImage: '/lovable-uploads/6ad34788-b3fe-4094-bf1b-e930af8eaf62.png',
+  bannerImageAlt: 'Livepeer decentralized video infrastructure logo',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2025-01-15T12:00:00.000Z',
+  tags: ['Livepeer', 'Decentralized', 'Streaming', 'Infrastructure', 'Q1 2025'],
+  readingTime: 4,
+  featured: false,
+  status: 'published',
+  seoTitle: 'DeHub x Livepeer: Scaling Decentralized Streaming Infrastructure',
+  seoDescription: 'DeHub partners with Livepeer to support 50k+ concurrent viewers with unlimited scaling potential through decentralized video infrastructure.',
+};
+
+const interactiveStreamingPost: BlogPostType = {
+  id: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
+  slug: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
+  title: 'Interactive Streaming: On-Chain Live Streams with Animated Tips - A DeHub Milestone from Q1 2025',
+  excerpt: 'Experience the future of live streaming with DeHub\'s revolutionary interactive platform featuring real-time animated tips, on-chain rewards, and decentralized infrastructure.',
+  content: `
+### The Next Evolution of Live Streaming
+
+DeHub is revolutionizing the live streaming experience by combining blockchain technology with interactive entertainment. Our platform transforms traditional broadcasting into an engaging, monetized experience where every moment becomes an opportunity for creator-audience connection.
+
+### Revolutionary Features
+
+**Real-Time Animated Tips**
+When viewers send DHB tokens as tips, spectacular animations overlay the stream in real-time. Different tip amounts trigger unique visual effects:
+- 1-10 DHB: Subtle particle effects and sparkles
+- 11-50 DHB: Screen-wide animations and fireworks
+- 50+ DHB: Spectacular celebrations that dominate the stream
+
+**On-Chain Transparency**
+Every tip, subscription, and interaction is recorded on the blockchain, ensuring complete transparency and immutable proof of creator earnings.
+
+**Interactive Engagement Tools**
+- Custom emote reactions that activate with specific tip amounts
+- Real-time chat with blockchain-verified identities
+- Subscriber-only content and exclusive streams
+- Tokenized fan clubs and communities
+
+### Technical Innovation
+
+Our streaming infrastructure leverages cutting-edge technology:
+- Decentralized video delivery through Livepeer integration
+- Smart contracts for automatic revenue distribution
+- Real-time animation rendering system
+- Cross-chain compatibility for multiple cryptocurrencies
+
+### Creator Economy Revolution
+
+DeHub's interactive streaming platform addresses key problems in the current creator economy:
+
+**Instant Monetization**: No waiting periods or minimum thresholds
+**Global Accessibility**: No banking restrictions or geographic limitations  
+**Transparent Earnings**: All transactions visible on blockchain
+**Community Building**: Direct token-based fan engagement
+**Censorship Resistance**: Decentralized infrastructure prevents deplatforming
+
+### The Future is Interactive
+
+This milestone represents more than just a feature launch - it's the foundation of a new entertainment paradigm where creators and audiences share in the success of great content through blockchain-powered interactions.
+
+Join us in shaping the future of interactive streaming, where every tip tells a story and every stream builds a community.
+  `,
+  bannerImage: '/lovable-uploads/3bcff64c-e7d5-4d7f-8f45-21f68713a585.png',
+  bannerImageAlt: 'Interactive streaming platform with live animated tips and blockchain integration',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2025-02-01T12:00:00.000Z',
+  tags: ['Interactive Streaming', 'Animated Tips', 'Blockchain', 'Live Streaming', 'Q1 2025'],
+  readingTime: 5,
+  featured: false,
+  status: 'published',
+  seoTitle: 'Interactive Streaming with Animated Tips | DeHub Q1 2025 Milestone',
+  seoDescription: 'Experience revolutionary interactive streaming with real-time animated tips, on-chain rewards, and decentralized infrastructure on DeHub\'s platform.',
+};
+
+const agencyPost: BlogPostType = {
+  id: 'leading-the-way-dehub-founders-agency-becomes-uk-1-with-1000-streamers',
+  slug: 'leading-the-way-dehub-founders-agency-becomes-uk-1-with-1000-streamers',
+  title: 'Leading the Way: DeHub founder\'s agency Becomes UK #1 with 1,000 Streamers',
+  excerpt: 'DeHub founder\'s talent agency achieves unprecedented success, becoming the UK\'s #1 streaming agency with over 1,000 creators and multi-million pound revenue.',
+  content: `
+### A Milestone Achievement in Creator Economy
+
+We're thrilled to share an incredible milestone that demonstrates the real-world impact of DeHub's vision and leadership in the creator economy. Our founder's talent agency has officially become the UK's #1 streaming agency, representing over 1,000 content creators and generating multi-million pound annual revenue.
+
+### The Numbers That Matter
+
+**Scale Achievement:**
+- 1,000+ active streamers under management
+- #1 position in UK streaming agency rankings
+- Multi-million pound annual revenue
+- Partnerships with major platforms including TikTok, Twitch, and YouTube
+- International expansion across Europe and North America
+
+### Strategic Vision Realized
+
+This success validates DeHub's core thesis about the creator economy's explosive growth and the need for innovative infrastructure to support it. Our founder's agency has become a proving ground for the strategies and technologies that power DeHub's platform.
+
+### Cross-Platform Excellence
+
+The agency's success spans multiple platforms:
+
+**TikTok Dominance**: Leading UK agency for TikTok Live creators
+**Twitch Partnership**: Premier Twitch partner agency status
+**YouTube Growth**: Rapid expansion in YouTube creator management
+**Multi-Platform Strategy**: Helping creators diversify across platforms
+
+### Technology Integration
+
+The agency leverages cutting-edge technology for creator success:
+- Advanced analytics and performance tracking
+- Automated content optimization tools
+- Revenue diversification strategies
+- Brand partnership facilitation platforms
+
+### DeHub Synergy
+
+This real-world success directly benefits the DeHub ecosystem:
+
+**Proven Leadership**: Demonstrates our team's deep understanding of creator needs
+**Market Validation**: Confirms demand for innovative creator economy solutions
+**Strategic Partnerships**: Established relationships with major platforms and brands
+**Technology Testing**: Real-world proving ground for DeHub features
+
+### Creator Success Stories
+
+Our agency has transformed careers across the UK streaming landscape:
+- Creators scaling from hundreds to millions of followers
+- Revenue growth from hobby income to six-figure earnings
+- Brand partnerships with major global companies
+- International expansion opportunities
+
+### The Path Forward
+
+This achievement strengthens DeHub's position as a leader in creator economy innovation. The insights, relationships, and proven strategies from managing 1,000+ creators directly inform our platform development.
+
+**What This Means for DeHub:**
+- Enhanced creator onboarding and support systems
+- Proven monetization strategies built into the platform
+- Established relationships with major content platforms
+- Real-world validation of our creator economy thesis
+
+### Building the Future
+
+As we celebrate this milestone, we're more committed than ever to building DeHub as the ultimate creator economy platform. The success of our founder's agency provides the foundation for DeHub's continued innovation and growth.
+
+The creator economy is evolving rapidly, and with proven leadership, innovative technology, and a clear vision for the future, DeHub is positioned to lead this transformation.
+
+*Congratulations to our founder and the entire agency team for this incredible achievement. Here's to empowering the next 1,000 creators and beyond.*
+  `,
+  bannerImage: '/lovable-uploads/1bc1868a-1bb4-451c-97ba-9607c0126e24.png',
+  bannerImageAlt: 'DeHub founder at TikTok Live Fest representing UK\'s #1 streaming agency',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2024-11-15T12:00:00.000Z',
+  tags: ['Agency Success', 'Creator Economy', 'UK Leadership', 'Streaming', 'Milestone'],
+  readingTime: 6,
+  featured: false,
+  status: 'published',
+  seoTitle: 'DeHub Founder\'s Agency Becomes UK #1 with 1,000 Streamers',
+  seoDescription: 'DeHub founder\'s talent agency achieves unprecedented success, becoming the UK\'s #1 streaming agency with over 1,000 creators and multi-million pound revenue.',
+};
+
 export const newPosts: BlogPostType[] = [
     dehubCardPost,
+    agencyPost,
+    interactiveStreamingPost,
+    livepeerPost,
     wrapUp2022Post,
     tokenisedUploadsPost,
     awardWinningInnovationPost,
