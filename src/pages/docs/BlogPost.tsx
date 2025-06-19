@@ -105,6 +105,7 @@ const BlogPost = () => {
   const raffleBanner = '/lovable-uploads/729af303-1246-44ed-a598-005275581b6c.png';
 
   const shareUrl = `${window.location.origin}/docs/blog/${post.slug}`;
+  const fullImageUrl = bannerImage ? (bannerImage.startsWith('http') ? bannerImage : `${window.location.origin}${bannerImage}`) : null;
 
   const displayDate =
     post.title === 'Dream Big: The $1M Home Crypto Raffle by DeHub'
@@ -129,9 +130,18 @@ const BlogPost = () => {
       <div className="max-w-4xl mx-auto">
 
         <article>
-          <BlogPostHeader post={post} displayDate={displayDate} shareUrl={shareUrl} />
+          <BlogPostHeader 
+            post={post} 
+            displayDate={displayDate} 
+            shareUrl={shareUrl} 
+            imageUrl={fullImageUrl || undefined}
+          />
           <BlogPostBody bannerImage={bannerImage} bannerImageAlt={post.bannerImageAlt} content={content} />
-          <BlogPostFooter shareUrl={shareUrl} postTitle={post.title} />
+          <BlogPostFooter 
+            shareUrl={shareUrl} 
+            postTitle={post.title} 
+            imageUrl={fullImageUrl || undefined}
+          />
         </article>
       </div>
     </>

@@ -113,6 +113,9 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={fullImage} />
+      <meta name="twitter:image:alt" content={`${title} - DeHub Blog`} />
+      <meta name="twitter:site" content="@DeHubOfficial" />
+      <meta name="twitter:creator" content="@DeHubOfficial" />
 
       {/* Structured Data */}
       <script type="application/ld+json">

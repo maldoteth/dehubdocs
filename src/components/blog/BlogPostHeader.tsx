@@ -9,9 +9,10 @@ interface BlogPostHeaderProps {
   post: BlogPost;
   displayDate: string;
   shareUrl: string;
+  imageUrl?: string;
 }
 
-export const BlogPostHeader: React.FC<BlogPostHeaderProps> = ({ post, displayDate, shareUrl }) => {
+export const BlogPostHeader: React.FC<BlogPostHeaderProps> = ({ post, displayDate, shareUrl, imageUrl }) => {
   return (
     <header className="mb-8">
       <BackButton />
@@ -49,7 +50,7 @@ export const BlogPostHeader: React.FC<BlogPostHeaderProps> = ({ post, displayDat
       </div>
 
       <div className="mb-8">
-        <ShareButtons shareUrl={shareUrl} postTitle={post.title} />
+        <ShareButtons shareUrl={shareUrl} postTitle={post.title} imageUrl={imageUrl} />
       </div>
     </header>
   );

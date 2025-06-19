@@ -6,10 +6,11 @@ import { useToast } from '@/hooks/use-toast';
 interface ShareButtonsProps {
   shareUrl: string;
   postTitle: string;
+  imageUrl?: string;
   variant?: 'icons' | 'text';
 }
 
-export const ShareButtons: React.FC<ShareButtonsProps> = ({ shareUrl, postTitle, variant = 'icons' }) => {
+export const ShareButtons: React.FC<ShareButtonsProps> = ({ shareUrl, postTitle, imageUrl, variant = 'icons' }) => {
   const { toast } = useToast();
 
   const handleShare = (platform: string) => {
@@ -19,6 +20,7 @@ export const ShareButtons: React.FC<ShareButtonsProps> = ({ shareUrl, postTitle,
     
     switch (platform) {
       case 'twitter':
+        // Twitter relies on Open Graph tags, but we can include the image URL as a fallback
         url = `https://twitter.com/intent/tweet?text=${title}&url=${shareUrlEncoded}`;
         break;
       case 'facebook':
