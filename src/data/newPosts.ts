@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -11,51 +12,6 @@ export const excludedTitles = [
   'In the Spotlight: DeHub Featured in TechCrunch and VentureBeat',
   'Innovation Recognized: DeHub Wins Corporate Livewire Award'
 ];
-
-const dhbscanPost: BlogPostType = {
-  id: 'transparency-hub-dhbscancom-launches-for-contract-activity-tracking',
-  slug: 'transparency-hub-dhbscancom-launches-for-contract-activity-tracking---a-dehub-milestone-from-q2-2025',
-  title: 'Transparency Hub: dhbscan.com Launches for Contract Activity Tracking - A DeHub Milestone from Q2 2025',
-  excerpt: 'We\'re excited to announce the launch of dhbscan.com, our comprehensive transparency hub that provides real-time insights into DHB token metrics across multiple blockchain networks.',
-  content: `
-    <h2 class="text-2xl font-bold mb-4 font-exo">Introducing dhbscan.com - Your Gateway to DHB Transparency</h2>
-    <p class="mb-4 text-lg text-royal-blue/80">We're excited to announce the launch of dhbscan.com, our comprehensive transparency hub that provides real-time insights into DHB token metrics across multiple blockchain networks.</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Core Features</h3>
-    <p class="mb-4 text-royal-blue/80"><strong>1) Shows supply figures across both chains</strong> - Get accurate, real-time data on DHB token supply distribution across different blockchain networks</p>
-    
-    <p class="mb-4 text-royal-blue/80"><strong>2) Shows chart, price history & milestones</strong> - Track DHB's performance over time with detailed charts and important milestone markers. Soon to show full chart across FTV & DHB to paint the full story</p>
-    
-    <p class="mb-6 text-royal-blue/80"><strong>3) Shows latest transfers & top holders</strong> - Monitor the most recent token movements and identify the largest DHB holders in the ecosystem</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Why Transparency Matters</h3>
-    <p class="mb-4 text-royal-blue/80">In the rapidly evolving world of decentralized finance, transparency isn't just a buzzword—it's a fundamental requirement for building trust and fostering community growth. dhbscan.com represents our commitment to providing the DeHub community with complete visibility into token economics and network activity.</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Platform Highlights</h3>
-    <ul class="list-disc list-inside space-y-2 mb-6 text-royal-blue/80 pl-4">
-      <li><strong>Real-time Data:</strong> Live updates on token metrics and network activity</li>
-      <li><strong>Multi-chain Support:</strong> Comprehensive coverage across all supported blockchain networks</li>
-      <li><strong>User-friendly Interface:</strong> Clean, intuitive design that makes complex data accessible</li>
-      <li><strong>Mobile Responsive:</strong> Full functionality across all devices</li>
-    </ul>
-    
-    <p class="mb-4 text-royal-blue/80">Visit <a href="https://dhbscan.com" target="_blank" rel="noopener noreferrer" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">dhbscan.com</a> today to explore the transparency hub and gain deeper insights into the DHB ecosystem.</p>
-    
-    <p class="mt-6 text-royal-blue/70 italic">*This transparency initiative is part of our ongoing commitment to building trust and providing value to the DeHub community.*</p>
-  `,
-  bannerImage: '/lovable-uploads/e9632af0-07c2-4ca8-9b82-fc255191358b.png',
-  bannerImageAlt: 'dhbscan.com transparency hub interface showing DHB token metrics and blockchain data',
-  author: {
-    name: 'DeHub Team',
-  },
-  publishedAt: '2025-04-15T12:00:00.000Z',
-  tags: ['Transparency', 'dhbscan', 'Q2 2025', 'Blockchain Analytics'],
-  readingTime: 1,
-  featured: false,
-  status: 'published',
-  seoTitle: 'dhbscan.com Launches | DHB Transparency Hub for Real-Time Token Metrics',
-  seoDescription: 'Discover dhbscan.com, our new transparency hub providing real-time DHB token metrics, supply data, price history, and holder analytics across multiple blockchain networks.',
-};
 
 const liveStreamingPost: BlogPostType = {
   id: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
@@ -794,7 +750,6 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
 export const newPosts: BlogPostType[] = [
     dehubCardPost,
     liveStreamingPost,
-    dhbscanPost,
     wrapUp2022Post,
     tokenisedUploadsPost,
     awardWinningInnovationPost,
