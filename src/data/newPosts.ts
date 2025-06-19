@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -110,7 +111,7 @@ const interactiveStreamingPost: BlogPostType = {
       </div>
     </div>
   `,
-  bannerImage: '/lovable-uploads/50a3e12d-7e1b-43c8-8481-2ccf0334beee.png',
+  bannerImage: '/lovable-uploads/3bcff64c-e7d5-4d7f-8f45-21f68713a585.png',
   bannerImageAlt: 'DeHub Live Streaming with animated tips and interactive features',
   author: {
     name: 'DeHub Team',
