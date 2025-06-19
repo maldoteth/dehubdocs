@@ -67,12 +67,6 @@ const BlogPost = () => {
       bannerImage: '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png',
       bannerImageAlt: 'Coinbase logo on mobile device with trading charts in background',
     };
-  } else if (post && post.slug === 'seamless-crypto-to-fiat-the-dehub-off-ramp-solution') {
-    post = {
-      ...post,
-      bannerImage: '/lovable-uploads/14a7b3f5-2111-470b-ac22-b91917866569.png',
-      bannerImageAlt: 'Modern payment cards showcasing sleek design for crypto off-ramp solution',
-    };
   }
 
   useLayoutEffect(() => {
