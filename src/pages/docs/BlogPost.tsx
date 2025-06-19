@@ -1,4 +1,3 @@
-
 import React, { useLayoutEffect } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -68,6 +67,9 @@ const BlogPost = () => {
       title: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX',
       bannerImage: '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png',
       bannerImageAlt: 'Coinbase logo on mobile device with trading charts in background',
+      seoTitle: 'DHB Token Listed on Coinbase - DeHub Cryptocurrency Exchange Trading',
+      seoDescription: 'Major announcement: DHB token is now confirmed to be available directly on Coinbase CEX. Learn about DeHub\'s cryptocurrency listing on one of the world\'s largest crypto exchanges and what this means for DHB holders and traders.',
+      publishedAt: '2024-12-15T12:00:00.000Z'
     };
   } else if (post && post.title === 'Leading the Way: DeHub founder\'s agency Becomes UK #1 with 1,000 Streamers') {
     post = {
