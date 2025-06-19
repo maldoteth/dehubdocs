@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
@@ -62,10 +63,19 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
 
   const isRafflePost = post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022';
   const raffleBanner = '/lovable-uploads/729af303-1246-44ed-a598-005275581b6c.png';
+  
+  const isCoinbasePost = post.slug === 'dhb-tradable-on-coinbase-soon';
+  const coinbaseBanner = '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png';
 
   const handleLinkClick = () => {
     // Save current scroll position when clicking on a blog card
     sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
+  };
+
+  const getBannerImage = () => {
+    if (isRafflePost) return raffleBanner;
+    if (isCoinbasePost) return coinbaseBanner;
+    return post.bannerImage;
   };
 
   return (
@@ -73,7 +83,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
       <Link to={`/docs/blog/${post.slug}`} className="block" onClick={handleLinkClick}>
         <div className="relative">
           <img 
-            src={isRafflePost ? raffleBanner : post.bannerImage} 
+            src={getBannerImage()} 
             alt={post.bannerImageAlt}
             className={`w-full object-cover transition-transform duration-200 group-hover:scale-105 ${featured ? 'h-48' : 'h-40'}`}
           />
@@ -131,3 +141,4 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
 };
 
 export default BlogCard;
+
