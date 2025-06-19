@@ -206,9 +206,9 @@ const BlogContent: React.FC<BlogContentProps> = ({
       <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-sky-blue/20">
         <h4 className="text-lg font-bold text-royal-blue mb-3 font-exo">Key Features:</h4>
         <ol className="list-decimal list-inside space-y-2 text-royal-blue/80 font-exo">
-          <li>Shows supply figures across both chains</li>
-          <li>Shows chart, price history & milestones - soon to show full chart across FTV & DHB to paint the full story</li>
-          <li>Shows latest transfers & top holders</li>
+          <li>Shows supply figures across both chains - Get accurate, real-time data on DHB token supply distribution</li>
+          <li>Shows chart, price history & milestones - Track DHB's performance over time with detailed charts. Soon to show full chart across FTV & DHB to paint the full story</li>
+          <li>Shows latest transfers & top holders - Monitor the most recent token movements and identify the largest DHB holders</li>
         </ol>
       </div>
     )}
