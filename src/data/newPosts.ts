@@ -12,118 +12,6 @@ export const excludedTitles = [
   'Innovation Recognized: DeHub Wins Corporate Livewire Award'
 ];
 
-const interactiveStreamingPost: BlogPostType = {
-  id: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
-  slug: 'interactive-streaming-on-chain-live-streams-with-animated-tips---a-dehub-milestone-from-q1-2025',
-  title: 'Interactive Streaming: On-Chain Live Streams with Animated Tips - A DeHub Milestone from Q1 2025',
-  excerpt: 'DeHub\'s revolutionary live streaming platform transforms traditional broadcasting into an interactive, monetized experience where creators and audiences engage through real-time tipping, animated reactions, and blockchain-powered rewards.',
-  content: `
-    <div class="space-y-6">
-      <div class="p-6 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-sky-blue/20">
-        <h3 class="text-xl font-bold text-royal-blue mb-4 font-exo">Revolutionary Live Streaming Experience</h3>
-        <p class="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          DeHub's live streaming platform transforms traditional broadcasting into an <strong>interactive, monetized experience</strong> where creators and audiences engage through real-time tipping, animated reactions, and blockchain-powered rewards. Our streaming infrastructure supports unlimited concurrent viewers while maintaining the personal connection that makes live content special.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 bg-gradient-to-r from-green-50 to-cyan-50 rounded-lg border border-sky-blue/20">
-          <h4 class="text-lg font-bold text-royal-blue mb-3 font-exo">🎬 Professional Streaming Tools</h4>
-          <ul class="text-royal-blue/80 text-sm font-exo space-y-2">
-            <li>• 4K streaming support with adaptive bitrate</li>
-            <li>• Multi-camera angle switching</li>
-            <li>• Screen sharing and presentation mode</li>
-            <li>• Real-time chat moderation tools</li>
-            <li>• Stream recording and highlights</li>
-          </ul>
-        </div>
-
-        <div class="p-6 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg border border-sky-blue/20">
-          <h4 class="text-lg font-bold text-royal-blue mb-3 font-exo">💰 Monetization Features</h4>
-          <ul class="text-royal-blue/80 text-sm font-exo space-y-2">
-            <li>• Real-time DHB token tipping</li>
-            <li>• Animated tip notifications</li>
-            <li>• Subscriber-only streams</li>
-            <li>• Pay-per-view premium content</li>
-            <li>• Revenue sharing with moderators</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-sky-blue/20">
-        <h3 class="text-xl font-bold text-royal-blue mb-4 font-exo">Interactive Engagement System</h3>
-        <p class="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Our streaming platform features <strong>animated tip reactions</strong> that appear in real-time during broadcasts. When viewers send DHB tips, custom animations overlay the stream, creating visual excitement and encouraging further engagement. Tip amounts trigger different animation styles - from subtle sparkles for small tips to dramatic fireworks for large donations.
-        </p>
-        
-        <div class="space-y-3">
-          <div class="bg-white/50 p-4 rounded-lg">
-            <h5 class="font-semibold text-royal-blue mb-2 font-exo">Smart Tip Animations</h5>
-            <p class="text-royal-blue/70 text-sm font-exo">
-              Dynamic visual effects scale with tip amounts: 1-10 DHB triggers particle effects, 11-50 DHB creates screen-wide animations, 50+ DHB launches spectacular celebrations that dominate the stream.
-            </p>
-          </div>
-          
-          <div class="bg-white/50 p-4 rounded-lg">
-            <h5 class="font-semibold text-royal-blue mb-2 font-exo">Custom Emote Integration</h5>
-            <p class="text-royal-blue/70 text-sm font-exo">
-              Creators can upload custom emotes and animations that activate with specific tip amounts, creating personalized experiences that strengthen community bonds and brand identity.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border border-sky-blue/20">
-        <h3 class="text-xl font-bold text-royal-blue mb-4 font-exo">Decentralized Infrastructure Benefits</h3>
-        <p class="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Built on decentralized video infrastructure, our streaming platform offers <strong>unprecedented reliability and cost efficiency</strong>. Unlike centralized platforms that can experience downtime or impose arbitrary restrictions, DeHub's distributed network ensures your stream stays live and your content remains accessible globally.
-        </p>
-        
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-white/50 p-4 rounded-lg">
-            <h5 class="font-semibold text-royal-blue mb-2 font-exo">Global CDN Distribution</h5>
-            <p class="text-royal-blue/70 text-sm font-exo">
-              Streams automatically route through the nearest decentralized nodes, ensuring minimal latency and maximum quality for viewers worldwide.
-            </p>
-          </div>
-          
-          <div class="bg-white/50 p-4 rounded-lg">
-            <h5 class="font-semibold text-royal-blue mb-2 font-exo">Censorship Resistance</h5>
-            <p class="text-royal-blue/70 text-sm font-exo">
-              Decentralized infrastructure means no single authority can shut down your stream, protecting creator freedom and audience access.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-lg border border-royal-blue/20">
-        <h3 class="text-xl font-bold text-royal-blue mb-4 font-exo">Advanced Analytics & Community Building</h3>
-        <p class="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Every stream generates detailed analytics about viewer engagement, tip patterns, peak viewing times, and audience demographics. This data helps creators optimize their content strategy while our community tools facilitate deeper connections between streamers and their most dedicated supporters.
-        </p>
-        
-        <div class="pt-4 border-t border-royal-blue/30">
-          <p class="text-royal-blue/80 font-exo text-sm italic">
-            Experience the future of live streaming where every moment is interactive, every tip is celebrated, and every creator has the tools to build a thriving community around their passion.
-          </p>
-        </div>
-      </div>
-    </div>
-  `,
-  bannerImage: '/lovable-uploads/3bcff64c-e7d5-4d7f-8f45-21f68713a585.png',
-  bannerImageAlt: 'DeHub Live Streaming with animated tips and interactive features',
-  author: {
-    name: 'DeHub Team',
-  },
-  publishedAt: '2025-01-15T12:00:00.000Z',
-  tags: ['Live Streaming', 'Interactive Features', 'Blockchain', 'Q1 2025', 'Animated Tips'],
-  readingTime: 8,
-  featured: true,
-  status: 'published',
-  seoTitle: 'Interactive Live Streaming with Animated Tips | DeHub Q1 2025',
-  seoDescription: 'DeHub revolutionizes live streaming with interactive, on-chain features including animated tip reactions, real-time engagement, and decentralized infrastructure.',
-};
-
 const wrapUp2022Post: BlogPostType = {
   id: '2022-wrap-up',
   slug: '2022-wrap-up',
@@ -467,10 +355,10 @@ const dehubTakeoverPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">Time for a Takeover</h2>
     <p class="mb-4 text-lg text-royal-blue/80">In today's attention economy, it comes as no surprise that memes have captured so much of the market's attention and liquidity so far this cycle, with communities further establishing themselves as the driving force and catalysts behind much of the success witnessed so far across this sector.</p>
-    <p class="mb-4 text-lg text-royal-blue/80">Some could argue, fairly, that we've been too focussed on building and innovating, while not meeting some expectations when it comes to the community growth aspects. Well this is about to change, and timed nicely with the release of the dehub.io app upgrade.</p>
+    <p class="mb-4 text-royal-blue/80">Some could argue, fairly, that we've been too focussed on building and innovating, while not meeting some expectations when it comes to the community growth aspects. Well this is about to change, and timed nicely with the release of the dehub.io app upgrade.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Turbocharging The DeHub Army</h3>
-    <p class="mb-4 text-lg text-royal-blue/80">We're about to turbocharge The DeHub Army with:</p>
+    <p class="mb-4 text-royal-blue/80">We're about to turbocharge The DeHub Army with:</p>
     <ul class="list-disc list-inside space-y-3 mb-4 text-royal-blue/80 pl-4">
       <li>Token gated group chats for all holders, and those with over 10,000,000 $DHB (Great White Shark badge holders in-app). This will be a place where more detailed plans can be discussed in private/unofficial settings, while larger investors can strategise further synergetic opportunities.</li>
       <li>Daily Town Halls with 24/7 voice chat and raiding across all socials by community members and paid shills.</li>
@@ -478,8 +366,8 @@ const dehubTakeoverPost: BlogPostType = {
       <li>Volume driving initiatives for trending with new 0% tax on Base.</li>
       <li>Large promoter network and increased targeted ads on X, Instagram, Google and YouTube.</li>
     </ul>
-    <p class="mb-4 text-lg text-royal-blue/80">This is all being prepared to kick-start as soon as our next app upgrade is released, to align with our other campaigns for creators joining the app. As more eyes lay upon DeHub, we need there to be a more vibrant community, growing volume and engagement which all this should achieve, so that we all reap the full rewards and marketing ROI (return on investment).</p>
-    <p class="mb-4 text-lg text-royal-blue/80">Along with the founders at Town Hall daily, a team is being prepared to manage the voice chat, conduct raids across socials as well as regular posts on the official X account 24/7, however for this to really work it will require more support. We need community leaders and members to step up and take on roles after we lay the new system foundations so we're keen to hear from any mods, voice chat operators, shills, raiders or any technical hands already in the community, as you know the project best and can articulate the message.</p>
+    <p class="mb-4 text-royal-blue/80">This is all being prepared to kick-start as soon as our next app upgrade is released, to align with our other campaigns for creators joining the app. As more eyes lay upon DeHub, we need there to be a more vibrant community, growing volume and engagement which all this should achieve, so that we all reap the full rewards and marketing ROI (return on investment).</p>
+    <p class="mb-4 text-royal-blue/80">Along with the founders at Town Hall daily, a team is being prepared to manage the voice chat, conduct raids across socials as well as regular posts on the official X account 24/7, however for this to really work it will require more support. We need community leaders and members to step up and take on roles after we lay the new system foundations so we're keen to hear from any mods, voice chat operators, shills, raiders or any technical hands already in the community, as you know the project best and can articulate the message.</p>
     
     <p class="mt-8 font-semibold text-royal-blue">Furthermore, we will be kick-starting these campaigns with the private token gated groups launching this weekend, in preparation for the app upgrade. So stay tuned for more information and reach out to any of the team or hr@dehub.net for hiring opportunities as it's all kicking off soon here.</p>
   `,
@@ -505,10 +393,10 @@ const crusadersSponsorshipPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">DeHub Announces Multi-Year Sponsorship with North Wales Crusaders</h2>
     <p class="mb-4 text-lg text-royal-blue/80">We're delighted to reveal a multi-year sponsorship agreement with the only Rugby League club in Wales, The North Wales Crusaders.</p>
-    <p class="mb-4 text-lg text-royal-blue/80">Rugby is the most participated sport in the country, with the Encyclopedia of Wales stating that the sport is "seen by many as a symbol of Welsh identity and an expression of national consciousness" 😲.</p>
+    <p class="mb-4 text-royal-blue/80">Rugby is the most participated sport in the country, with the Encyclopedia of Wales stating that the sport is "seen by many as a symbol of Welsh identity and an expression of national consciousness" 😲.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What this partnership means</h3>
-    <p class="mb-4 text-lg text-royal-blue/80">As part of our commitment, DeHub has secured the following for every home game across the next two seasons:</p>
+    <p class="mb-4 text-royal-blue/80">As part of our commitment, DeHub has secured the following for every home game across the next two seasons:</p>
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li>The official match ball sponsorship.</li>
       <li>An advertising board in the stadium.</li>
@@ -539,12 +427,12 @@ const publicBetaDappReportPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">Our Vision for the DeHub D'app</h2>
     <p class="mb-4 text-lg text-royal-blue/80">DeHub at the core is, and always was, a streaming app with our own marketplace and games complimenting the main hub. When going on dehub.net in future, you will be met with the streaming app.</p>
-    <p class="mb-4 text-lg text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
-    <p class="mb-4 text-lg text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
-    <p class="mb-4 text-lg text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
+    <p class="mb-4 text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
+    <p class="mb-4 text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
+    <p class="mb-4 text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
 
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Public Testing Review</h3>
-    <p class="mb-4 text-lg text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
+    <p class="mb-4 text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li><strong>PPV:</strong> create your own PPV in DHB, USDC or USDT (soon to be every token).</li>
       <li><strong>W2E / Bounty post:</strong> Create your own watch-to-earn in DHB, USDC or USDT (soon to be every token) and reward your existing community or build a new one with a turbo-boost.</li>
@@ -737,7 +625,6 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
 };
 
 export const newPosts: BlogPostType[] = [
-    interactiveStreamingPost,
     dehubCardPost,
     wrapUp2022Post,
     tokenisedUploadsPost,
