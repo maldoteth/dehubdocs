@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -739,7 +740,7 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
   },
   publishedAt: '2025-06-18T12:00:00.000Z',
   tags: ['DeHub Card', 'Off-ramp', 'Fintech', 'Crypto Payments', 'Financial Services'],
-  readingTime: 5,
+  readingTime: 7,
   featured: false,
   status: 'published',
   seoTitle: 'DeHub Card Coming Soon | Revolutionary Crypto Off-Ramp Solution',
