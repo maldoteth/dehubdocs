@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -645,7 +646,7 @@ The DeHub Card will be available in three premium finishes:
 - **Silver** - Classic and versatile  
 - **Gold** - Premium and distinctive
 
-![DeHub Card in premium gold finish|default](/lovable-uploads/b1f93f93-bc38-4276-abea-e591591fe07d.png)
+![DeHub Card in premium gold finish|default](/lovable-uploads/b1f91f93-bc38-4276-abea-e591591fe07d.png)
 
 ![DeHub Card in classic silver finish|default](/lovable-uploads/0f8d2c6e-ea7e-4ea5-8b99-30d23e928a1d.png)
 
@@ -739,7 +740,7 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
   },
   publishedAt: '2025-06-18T12:00:00.000Z',
   tags: ['DeHub Card', 'Off-ramp', 'Fintech', 'Crypto Payments', 'Financial Services'],
-  readingTime: 2,
+  readingTime: 7,
   featured: false,
   status: 'published',
   seoTitle: 'DeHub Card Coming Soon | Revolutionary Crypto Off-Ramp Solution',
