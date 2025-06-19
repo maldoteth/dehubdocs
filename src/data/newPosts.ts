@@ -1,3 +1,4 @@
+
 import { BlogPost } from '@/types/blog';
 
 export const excludedTitles = [
@@ -46,6 +47,7 @@ Thank you for being a part of the DeHub journey!
 [Coinbase Official Announcement](https://x.com/coinbase/status/1933274988041080859)
 `,
     featured: true,
+    readingTime: 3,
     seoTitle: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX',
     seoDescription: 'DeHub is excited to announce that $DHB will soon be available directly on Coinbase CEX. This listing marks a significant milestone for DeHub, increasing accessibility and liquidity for our community.'
   },
@@ -84,6 +86,7 @@ Stay tuned for more updates and announcements as we continue to scale and optimi
 Thank you for being a part of the DeHub journey!
 `,
     featured: true,
+    readingTime: 4,
     seoTitle: 'Scaling New Heights: Livepeer Integration for initially 50k+ Concurrent Viewers With Unlimited Viewer abilities as we scale up.',
     seoDescription: 'DeHub has successfully integrated Livepeer, enabling support for initially 50k+ concurrent viewers with unlimited viewer abilities as we scale up. This milestone enhances our platform\'s streaming capabilities and user experience.'
   },
@@ -119,8 +122,9 @@ We are excited about the possibilities this new feature unlocks and look forward
 
 Stay tuned for more updates and announcements as we continue to roll out on-chain tradable subscriptions.
 
-Thank you for being a part of the DeHub journey!',
+Thank you for being a part of the DeHub journey!`,
     featured: true,
+    readingTime: 3,
     seoTitle: 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch',
     seoDescription: 'DeHub is proud to announce the launch of on-chain tradable subscriptions, revolutionizing how creators monetize their content and how users access exclusive content and communities.'
   },
@@ -162,6 +166,7 @@ Thank you for being a part of the DeHub journey!',
 - Live Streaming - February
 - Tokenised usernames - March`,
     featured: true,
+    readingTime: 2,
     seoTitle: 'Faster and Sleeker: major app upgrade reveals UI Overhaul and 200% Backend Speed Boost',
     seoDescription: 'DeHub is excited to announce a major upgrade to our application, featuring a complete UI overhaul and a 200% backend speed boost. Experience a faster, more intuitive, and more engaging platform.'
   },
@@ -201,6 +206,7 @@ Stay tuned for more updates and announcements as we continue to expand our servi
 Thank you for being a part of the DeHub journey!
 `,
     featured: false,
+    readingTime: 3,
     seoTitle: 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency',
     seoDescription: 'DeHub co-founders have launched a TikTok agency, leveraging their expertise in social media and content creation to help businesses and individuals succeed on the platform.'
   },
@@ -236,6 +242,7 @@ Stay tuned for more updates and announcements as we continue to expand our partn
 
 Thank you for being a part of the DeHub journey!`,
     featured: false,
+    readingTime: 2,
     seoTitle: 'Back in Action: DeHub V2 Trading Resumes on Gate.io',
     seoDescription: 'DeHub is pleased to announce that trading of DeHub V2 (DHB) has resumed on Gate.io, providing our community with a secure and reliable platform to trade our token.'
   }
