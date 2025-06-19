@@ -5,7 +5,7 @@ export const awardWinningInnovationPost: BlogPostType = {
   id: 'award-winning-innovation-dehub-recognised',
   slug: 'award-winning-innovation-dehub-recognised',
   title: 'Award Winning Innovation! DeHub recognised for pioneering efforts',
-  excerpt: 'After 27k votes over the last 12 months, DeHub is officially Corporate LiveWire's 2023 Innovation and Excellence Winner in the "Gaming" category.',
+  excerpt: 'After 27k votes over the last 12 months, DeHub is officially Corporate LiveWire\'s 2023 Innovation and Excellence Winner in the "Gaming" category.',
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">DeHub Wins Corporate LiveWire's 2023 Innovation & Excellence Award</h2>
     <p class="mb-4 text-lg text-royal-blue/80">It brings us great pride to inform you all that after 27,000 votes over the last 12 months of nominations and judge scoring, DeHub is officially Corporate LiveWire's 2023 Innovation and Excellence Winner, coming in first place under the "Gaming" category.</p>
