@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -668,15 +669,14 @@ This is just the beginning. We're planning updates to include:
 Your feedback drives this platform — so let us know what you love (or want improved) and help us shape the next generation of decentralized content discovery.`,
   author: {
     name: 'DeHub Team',
-    avatar: '/lovable-uploads/6ad34788-b3fe-4094-bf1b-e930af8eaf62.png',
-    bio: 'Building the future of decentralized content creation and community engagement.'
+    avatar: '/lovable-uploads/6ad34788-b3fe-4094-bf1b-e930af8eaf62.png'
   },
   publishedAt: '2025-05-03T00:00:00Z',
   readingTime: 6,
   tags: ['UI/UX', 'Product Update', 'Features', 'Interface', 'User Experience'],
   bannerImage: '/lovable-uploads/09f2fe60-c820-4be4-b638-67f3c04a9fd4.png',
   bannerImageAlt: 'DeHub\'s new revamped app interface showing dark theme, navigation sidebar, content feed, and trending sections',
-  featured: true,
+  featured: false,
   seoTitle: 'Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces - DeHub',
   seoDescription: 'Discover DeHub\'s brand new user interface with centralized search, AI-powered content feeds, real-time trends, and enhanced creator tools for better content discovery.'
 };
