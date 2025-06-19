@@ -81,6 +81,12 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
     return post.bannerImage;
   };
 
+  // Override reading time for Livepeer post
+  const getReadingTime = () => {
+    if (isLivepeerPost) return 6;
+    return post.readingTime;
+  };
+
   return (
     <article className={`group bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg overflow-hidden ${featured ? 'lg:col-span-2' : ''}`}>
       <Link to={`/docs/blog/${post.slug}`} className="block" onClick={handleLinkClick}>
@@ -105,7 +111,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
             </div>
             <div className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
-              <span>{post.readingTime} min read</span>
+              <span>{getReadingTime()} min read</span>
             </div>
           </div>
 
