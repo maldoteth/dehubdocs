@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -681,7 +680,126 @@ Your feedback drives this platform — so let us know what you love (or want imp
   seoDescription: 'Discover DeHub\'s brand new user interface with centralized search, AI-powered content feeds, real-time trends, and enhanced creator tools for better content discovery.'
 };
 
+const offRampServicePost: BlogPostType = {
+  id: 'off-ramp-service-revealed-dehub-card-coming-soon',
+  slug: 'off-ramp-service-revealed-dehub-card-coming-soon',
+  title: 'Off-Ramp Service Revealed: DeHub Card Coming Soon!',
+  excerpt: 'With our on-ramp service now live, we\'re introducing something revolutionary: the DeHub Card. Rather than traditional bank transfers, spend crypto directly anywhere cards are accepted.',
+  content: `
+    ## The Future of Crypto Spending is Here
+
+    With our on-ramp service now live and thoroughly tested on mainnet, users have been asking the obvious next question: when is off-ramp coming?
+
+    We're excited to announce that we've found what we believe is the best solution for our users - and it's not what you might expect.
+
+    Rather than following the traditional route of bank transfers or centralized exchange withdrawals, we're introducing something revolutionary: **the DeHub Card**.
+
+    ### Why We're Avoiding Traditional Off-Ramps
+
+    I've personally experienced the frustration that comes with traditional banking when dealing with crypto transactions. Over the years, I've had numerous bank accounts frozen or shut down - sometimes over just a few thousand dollars, often with no clear explanation or recourse.
+
+    This kind of experience creates unnecessary stress and can lock users out of their own funds for weeks or even months. It's not an experience I'd want a single DeHub user to ever go through.
+
+    Instead of forcing our users through the traditional banking gauntlet, we're launching the DeHub Card - a direct spending solution that bypasses banks and centralized exchanges entirely.
+
+    ### Card Variants
+
+    The DeHub Card will be available in three premium finishes:
+
+    - **Black** - Sleek and professional
+    - **Silver** - Classic and versatile  
+    - **Gold** - Premium and distinctive
+
+    💳 Each card is designed with crypto users in mind, featuring modern aesthetics and robust security features.
+
+    The DeHub Card connects directly to your DeHub wallet, allowing you to:
+
+    - Spend crypto anywhere that accepts card payments
+    - Avoid bank complications and account freezes
+    - Maintain privacy without traditional banking scrutiny
+    - Access funds instantly without waiting for bank transfers
+    - Enjoy global acceptance at millions of merchants worldwide
+
+    ### Revolutionary Solution for Content Creators
+
+    The DeHub Card represents a game-changing advancement for content creators compared to traditional platforms like YouTube, Twitch, and Rumble.
+
+    **Instant Access to Earnings** While creators on YouTube must wait 30+ days for ad revenue payments, and Twitch requires a $100 minimum before payout, DeHub creators can spend their earnings immediately. No waiting periods, no minimum thresholds - earn today, spend today.
+
+    **No Payment Processing Delays** Traditional platforms process payments through complex banking systems with multiple intermediaries. YouTube's AdSense payments can take 21 days to process, while Twitch payments often face delays during weekends and holidays. DeHub Card eliminates these delays entirely - your crypto earnings are instantly spendable.
+
+    **Global Accessibility Without Banking Requirements** Many creators worldwide are excluded from monetization on traditional platforms due to banking restrictions or unsupported countries. The DeHub Card works globally without requiring traditional banking relationships, opening up opportunities for creators in underbanked regions.
+
+    **Transparent Revenue Streams** Unlike platforms where algorithm changes can drastically impact earnings overnight, DeHub's tokenized economy provides transparent, predictable revenue through:
+    - Direct fan subscriptions in crypto
+    - Tokenized tips and donations
+    - NFT sales and exclusive content
+    - Creator token appreciation
+
+    **Higher Revenue Retention** Traditional platforms take significant cuts - YouTube takes 45% of ad revenue, Twitch takes 50% of subscription fees. DeHub's decentralized model allows creators to keep more of their earnings while providing multiple monetization streams.
+
+    **Financial Independence** The combination of earning on DeHub and spending with the DeHub Card creates complete financial independence from traditional banking systems. Creators can build sustainable businesses without worrying about account freezes, payment processor restrictions, or platform policy changes affecting their income.
+
+    ### Advanced Technology Features
+
+    Our card solution leverages cutting-edge fintech infrastructure to provide:
+
+    - Real-time conversion from crypto to fiat at the point of sale
+    - Multi-currency support for various cryptocurrencies
+    - Advanced security with chip and PIN technology
+    - Mobile app integration for instant transaction notifications
+    - Spending controls to help manage your crypto expenses
+
+    ### Key Benefits
+
+    **No More Frozen Accounts** Traditional banks often flag crypto-related transactions as suspicious, leading to frozen accounts and lengthy investigations. The DeHub Card eliminates this risk entirely.
+
+    **Instant Access** No more waiting 3-5 business days for bank transfers. Your crypto is spendable immediately through the card.
+
+    **Global Reach** Use your DeHub Card anywhere in the world where cards are accepted - no need to worry about international banking restrictions.
+
+    **Privacy Protection** Keep your crypto activities private without the need to justify transactions to traditional financial institutions.
+
+    We're currently finalizing partnerships and regulatory compliance across multiple jurisdictions to ensure global availability.
+
+    ### Coming Soon
+
+    More comprehensive details about the DeHub Card service will be revealed soon, including:
+
+    - Launch dates for different regions
+    - Detailed terms and conditions
+    - Fee structure and pricing
+    - Supported cryptocurrencies
+    - Application process and requirements
+    - Daily and monthly spending limits
+    - Rewards program details
+
+    We're planning an exclusive early access program for our most active community members. Keep an eye on our official channels for announcements about how to secure your spot in the beta program.
+
+    ### The Future of Financial Independence
+
+    The DeHub Card represents more than just a payment method - it's a bridge between the decentralized crypto economy and everyday commerce. By eliminating the friction of traditional off-ramps, we're making crypto truly usable for daily transactions.
+
+    This is just the beginning of our comprehensive financial services ecosystem. The card is the first step toward complete financial independence from traditional banking systems.
+
+    **Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon. Stay tuned for more details and be among the first to experience the future of crypto spending.**
+  `,
+  bannerImage: '/lovable-uploads/bde80bf2-8f1d-4c14-9938-1a3080777203.png',
+  bannerImageAlt: 'DeHub Cards in premium gold finish showcasing modern crypto payment solution',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2025-06-18T12:00:00.000Z',
+  tags: ['DeHub Card', 'Off-ramp', 'Fintech', 'Crypto Payments', 'Financial Services'],
+  readingTime: 7,
+  featured: false,
+  status: 'published',
+  seoTitle: 'Off-Ramp Service Revealed: DeHub Card Coming Soon! | DeHub',
+  seoDescription: 'DeHub introduces the revolutionary DeHub Card - spend crypto directly without traditional banking. No frozen accounts, instant access, global reach.',
+};
+
 export const newPosts: BlogPostType[] = [
+  offRampServicePost,
   freshExperiencePost,
   interactiveStreamingPost,
   wrapUp2022Post,
