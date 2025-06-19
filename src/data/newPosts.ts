@@ -607,89 +607,93 @@ const publicBetaDappReportPost: BlogPostType = {
 };
 
 const freshExperiencePost: BlogPostType = {
-  id: 'fresh-experience-revamped-app-feed-with-audio-replies-live-talk-spaces',
-  slug: 'fresh-experience-revamped-app-feed-with-audio-replies-live-talk-spaces',
+  id: 'fresh-experience-revamped-app-feed',
   title: 'Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces',
+  slug: 'fresh-experience-revamped-app-feed-with-audio-replies-live-talk-spaces',
   excerpt: 'We\'re thrilled to unveil a brand new user interface that brings clarity, performance, and creativity to the forefront of your DeHub experience.',
-  content: `
-    <h2 class="text-2xl font-bold mb-4 font-exo">A New Era of User Experience</h2>
-    <p class="mb-4 text-lg text-royal-blue/80">We're thrilled to unveil a brand new user interface that brings clarity, performance, and creativity to the forefront of your DeHub experience. Whether you're discovering content, connecting with creators, or keeping tabs on the latest trends in crypto and digital art — our redesigned dashboard makes it all seamless.</p>
-    
-    <p class="mb-4 text-royal-blue/80">Here's a breakdown of what's new:</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">🔍 A Smarter, Centralized Search & Discovery Hub</h3>
-    <p class="mb-4 text-royal-blue/80">At the top of the interface, our new global search bar ensures you can find what you love, faster. Filter by "For you", "Subscribed", "Followed", "Liked", or "Saved" content tabs — with an easy toggle for "Most Viewed" and "Explore / Recommended / Leaderboard" to surface high-quality content effortlessly.</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">🏠 Navigation, Reimagined</h3>
-    <p class="mb-4 text-royal-blue/80">On the left-hand side, our revamped vertical navigation menu keeps everything within easy reach. From your dashboard and wallet to collaborative features and live streams, we've grouped key sections with clean, modern icons — helping you move quickly and intuitively through the platform.</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">🧠 AI-Powered Content Feeds</h3>
-    <p class="mb-4 text-royal-blue/80">Right in the main panel, discover tailor-made content feeds optimized for engagement. Each post now displays:</p>
-    <ul class="list-disc list-inside space-y-2 my-4 text-royal-blue/80 pl-4">
-      <li>Author verification badges</li>
-      <li>Real-time like and comment counts</li>
-      <li>One-click share, save, and react buttons</li>
-      <li>Elegant placeholders for scalable text</li>
-    </ul>
-    <p class="mb-4 text-royal-blue/80">The UI is clean, dark-themed, and perfect for creators who want their content to shine.</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">🎯 Contextual Ads that Work for You</h3>
-    <p class="mb-4 text-royal-blue/80">We know creators care about tools that help them grow. That's why the side promotions are now smarter:</p>
-    <ul class="list-disc list-inside space-y-2 my-4 text-royal-blue/80 pl-4">
-      <li><strong>Boost Your Creativity:</strong> Try StudioPro's all-in-one editor.</li>
-      <li><strong>Earn More:</strong> Monetize your content via Monetix.</li>
-      <li><strong>Collaborate Easily:</strong> Use CollabConnect to find top-tier partners.</li>
-    </ul>
-    <p class="mb-4 text-royal-blue/80">These aren't just ads — they're creator-forward utilities.</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">📈 Real-Time Trends & Creator Spotlights</h3>
-    <p class="mb-4 text-royal-blue/80">Stay ahead of the curve with our updated right sidebar:</p>
-    <ul class="list-disc list-inside space-y-2 my-4 text-royal-blue/80 pl-4">
-      <li><strong>Trending Topics</strong> (e.g., "Crypto Crash", "#Support_artists", "#GTA_VI")</li>
-      <li><strong>Treading Creators</strong> (yes, "treading", not trending – it's a vibe 😉): Featuring top voices across marketing, self-care, and content creation.</li>
-    </ul>
-    <p class="mb-4 text-royal-blue/80">Each spotlight includes a quick "Follow" button for instant connection.</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">🔗 Connect Seamlessly</h3>
-    <p class="mb-4 text-royal-blue/80">Finally, at the top-right of the dashboard, you'll find the new "Connect" button — making it easier than ever to link wallets, verify accounts, or integrate third-party platforms.</p>
-    
-    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">🧪 What's Next?</h3>
-    <p class="mb-4 text-royal-blue/80">This is just the beginning. We're planning updates to include:</p>
-    <ul class="list-disc list-inside space-y-2 my-4 text-royal-blue/80 pl-4">
-      <li>Live creator collabs</li>
-      <li>Reward integrations</li>
-      <li>Decentralized content moderation tools</li>
-    </ul>
-    
-    <p class="mt-8 font-semibold text-royal-blue">Your feedback drives this platform — so let us know what you love (or want improved) and help us shape the next generation of decentralized content discovery.</p>
-  `,
-  bannerImage: '/lovable-uploads/ffb3a54c-cb66-4856-b9ff-491567ce3324.png',
-  bannerImageAlt: 'DeHub\'s revamped app interface with new feed design and navigation',
+  content: `We're thrilled to unveil a brand new user interface that brings clarity, performance, and creativity to the forefront of your DeHub experience. Whether you're discovering content, connecting with creators, or keeping tabs on the latest trends in crypto and digital art — our redesigned dashboard makes it all seamless.
+
+Here's a breakdown of what's new:
+
+### 🔍 A Smarter, Centralized Search & Discovery Hub
+
+At the top of the interface, our new global search bar ensures you can find what you love, faster. Filter by "For you", "Subscribed", "Followed", "Liked", or "Saved" content tabs — with an easy toggle for "Most Viewed" and "Explore / Recommended / Leaderboard" to surface high-quality content effortlessly.
+
+### 🏠 Navigation, Reimagined
+
+On the left-hand side, our revamped vertical navigation menu keeps everything within easy reach. From your dashboard and wallet to collaborative features and live streams, we've grouped key sections with clean, modern icons — helping you move quickly and intuitively through the platform.
+
+### 🧠 AI-Powered Content Feeds
+
+Right in the main panel, discover tailor-made content feeds optimized for engagement. Each post now displays:
+
+- Author verification badges
+- Real-time like and comment counts
+- One-click share, save, and react buttons
+- Elegant placeholders for scalable text
+
+The UI is clean, dark-themed, and perfect for creators who want their content to shine.
+
+### 🎯 Contextual Ads that Work for You
+
+We know creators care about tools that help them grow. That's why the side promotions are now smarter:
+
+- **Boost Your Creativity**: Try StudioPro's all-in-one editor.
+- **Earn More**: Monetize your content via Monetix.
+- **Collaborate Easily**: Use CollabConnect to find top-tier partners.
+
+These aren't just ads — they're creator-forward utilities.
+
+### 📈 Real-Time Trends & Creator Spotlights
+
+Stay ahead of the curve with our updated right sidebar:
+
+- **Trending Topics** (e.g., "Crypto Crash", "#Support_artists", "#GTA_VI")
+- **Treading Creators** (yes, "treading", not trending – it's a vibe 😉): Featuring top voices across marketing, self-care, and content creation.
+
+Each spotlight includes a quick "Follow" button for instant connection.
+
+### 🔗 Connect Seamlessly
+
+Finally, at the top-right of the dashboard, you'll find the new "Connect" button — making it easier than ever to link wallets, verify accounts, or integrate third-party platforms.
+
+### 🧪 What's Next?
+
+This is just the beginning. We're planning updates to include:
+
+- Live creator collabs
+- Reward integrations
+- Decentralized content moderation tools
+
+Your feedback drives this platform — so let us know what you love (or want improved) and help us shape the next generation of decentralized content discovery.`,
   author: {
     name: 'DeHub Team',
+    avatar: '/lovable-uploads/6ad34788-b3fe-4094-bf1b-e930af8eaf62.png',
+    bio: 'Building the future of decentralized content creation and community engagement.'
   },
-  publishedAt: '2025-05-03T12:00:00.000Z',
-  tags: ['UI/UX', 'App Update', 'Features', 'User Experience', 'Feed'],
+  publishedAt: '2025-05-03T00:00:00Z',
   readingTime: 6,
+  tags: ['UI/UX', 'Product Update', 'Features', 'Interface', 'User Experience'],
+  bannerImage: '/lovable-uploads/09f2fe60-c820-4be4-b638-67f3c04a9fd4.png',
+  bannerImageAlt: 'DeHub\'s new revamped app interface showing dark theme, navigation sidebar, content feed, and trending sections',
   featured: true,
-  status: 'published',
-  seoTitle: 'Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces | DeHub',
-  seoDescription: 'Discover DeHub\'s brand new user interface with improved search, AI-powered content feeds, and enhanced creator tools for the ultimate decentralized experience.',
+  seoTitle: 'Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces - DeHub',
+  seoDescription: 'Discover DeHub\'s brand new user interface with centralized search, AI-powered content feeds, real-time trends, and enhanced creator tools for better content discovery.'
 };
 
 export const newPosts: BlogPostType[] = [
-    freshExperiencePost,
-    interactiveStreamingPost,
-    wrapUp2022Post,
-    tokenisedUploadsPost,
-    awardWinningInnovationPost,
-    dubaiEventPost,
-    basePoolPost,
-    dehubTakeoverPost,
-    crusadersSponsorshipPost,
-    publicBetaDappReportPost
+  freshExperiencePost,
+  interactiveStreamingPost,
+  wrapUp2022Post,
+  tokenisedUploadsPost,
+  awardWinningInnovationPost,
+  dubaiEventPost,
+  basePoolPost,
+  dehubTakeoverPost,
+  crusadersSponsorshipPost,
+  publicBetaDappReportPost
 ];
 
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
-    return newPosts.find(p => p.slug === slug);
+  return newPosts.find(p => p.slug === slug);
 }
