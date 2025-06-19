@@ -12,118 +12,6 @@ export const excludedTitles = [
   'Innovation Recognized: DeHub Wins Corporate Livewire Award'
 ];
 
-const interactiveStreamingPost: BlogPostType = {
-  id: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
-  slug: 'interactive-streaming-on-chain-live-streams-with-animated-tips---a-dehub-milestone-from-q1-2025',
-  title: 'Interactive Streaming: On-Chain Live Streams with Animated Tips - A DeHub Milestone from Q1 2025',
-  excerpt: 'DeHub\'s revolutionary live streaming platform transforms traditional broadcasting into an interactive, monetized experience where creators and audiences engage through real-time tipping, animated reactions, and blockchain-powered rewards.',
-  content: `
-    <div class="space-y-6">
-      <div class="p-6 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-sky-blue/20">
-        <h3 class="text-xl font-bold text-royal-blue mb-4 font-exo">Revolutionary Live Streaming Experience</h3>
-        <p class="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          DeHub's live streaming platform transforms traditional broadcasting into an <strong>interactive, monetized experience</strong> where creators and audiences engage through real-time tipping, animated reactions, and blockchain-powered rewards. Our streaming infrastructure supports unlimited concurrent viewers while maintaining the personal connection that makes live content special.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 bg-gradient-to-r from-green-50 to-cyan-50 rounded-lg border border-sky-blue/20">
-          <h4 class="text-lg font-bold text-royal-blue mb-3 font-exo">🎬 Professional Streaming Tools</h4>
-          <ul class="text-royal-blue/80 text-sm font-exo space-y-2">
-            <li>• 4K streaming support with adaptive bitrate</li>
-            <li>• Multi-camera angle switching</li>
-            <li>• Screen sharing and presentation mode</li>
-            <li>• Real-time chat moderation tools</li>
-            <li>• Stream recording and highlights</li>
-          </ul>
-        </div>
-
-        <div class="p-6 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg border border-sky-blue/20">
-          <h4 class="text-lg font-bold text-royal-blue mb-3 font-exo">💰 Monetization Features</h4>
-          <ul class="text-royal-blue/80 text-sm font-exo space-y-2">
-            <li>• Real-time DHB token tipping</li>
-            <li>• Animated tip notifications</li>
-            <li>• Subscriber-only streams</li>
-            <li>• Pay-per-view premium content</li>
-            <li>• Revenue sharing with moderators</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-sky-blue/20">
-        <h3 class="text-xl font-bold text-royal-blue mb-4 font-exo">Interactive Engagement System</h3>
-        <p class="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Our streaming platform features <strong>animated tip reactions</strong> that appear in real-time during broadcasts. When viewers send DHB tips, custom animations overlay the stream, creating visual excitement and encouraging further engagement. Tip amounts trigger different animation styles - from subtle sparkles for small tips to dramatic fireworks for large donations.
-        </p>
-        
-        <div class="space-y-3">
-          <div class="bg-white/50 p-4 rounded-lg">
-            <h5 class="font-semibold text-royal-blue mb-2 font-exo">Smart Tip Animations</h5>
-            <p class="text-royal-blue/70 text-sm font-exo">
-              Dynamic visual effects scale with tip amounts: 1-10 DHB triggers particle effects, 11-50 DHB creates screen-wide animations, 50+ DHB launches spectacular celebrations that dominate the stream.
-            </p>
-          </div>
-          
-          <div class="bg-white/50 p-4 rounded-lg">
-            <h5 class="font-semibold text-royal-blue mb-2 font-exo">Custom Emote Integration</h5>
-            <p class="text-royal-blue/70 text-sm font-exo">
-              Creators can upload custom emotes and animations that activate with specific tip amounts, creating personalized experiences that strengthen community bonds and brand identity.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border border-sky-blue/20">
-        <h3 class="text-xl font-bold text-royal-blue mb-4 font-exo">Decentralized Infrastructure Benefits</h3>
-        <p class="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Built on decentralized video infrastructure, our streaming platform offers <strong>unprecedented reliability and cost efficiency</strong>. Unlike centralized platforms that can experience downtime or impose arbitrary restrictions, DeHub's distributed network ensures your stream stays live and your content remains accessible globally.
-        </p>
-        
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-white/50 p-4 rounded-lg">
-            <h5 class="font-semibold text-royal-blue mb-2 font-exo">Global CDN Distribution</h5>
-            <p class="text-royal-blue/70 text-sm font-exo">
-              Streams automatically route through the nearest decentralized nodes, ensuring minimal latency and maximum quality for viewers worldwide.
-            </p>
-          </div>
-          
-          <div class="bg-white/50 p-4 rounded-lg">
-            <h5 class="font-semibold text-royal-blue mb-2 font-exo">Censorship Resistance</h5>
-            <p class="text-royal-blue/70 text-sm font-exo">
-              Decentralized infrastructure means no single authority can shut down your stream, protecting creator freedom and audience access.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-lg border border-royal-blue/20">
-        <h3 class="text-xl font-bold text-royal-blue mb-4 font-exo">Advanced Analytics & Community Building</h3>
-        <p class="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Every stream generates detailed analytics about viewer engagement, tip patterns, peak viewing times, and audience demographics. This data helps creators optimize their content strategy while our community tools facilitate deeper connections between streamers and their most dedicated supporters.
-        </p>
-        
-        <div class="pt-4 border-t border-royal-blue/30">
-          <p class="text-royal-blue/80 font-exo text-sm italic">
-            Experience the future of live streaming where every moment is interactive, every tip is celebrated, and every creator has the tools to build a thriving community around their passion.
-          </p>
-        </div>
-      </div>
-    </div>
-  `,
-  bannerImage: '/lovable-uploads/50a3e12d-7e1b-43c8-8481-2ccf0334beee.png',
-  bannerImageAlt: 'DeHub Live Streaming with animated tips and interactive features',
-  author: {
-    name: 'DeHub Team',
-  },
-  publishedAt: '2025-01-15T12:00:00.000Z',
-  tags: ['Live Streaming', 'Interactive Features', 'Blockchain', 'Q1 2025', 'Animated Tips'],
-  readingTime: 8,
-  featured: true,
-  status: 'published',
-  seoTitle: 'Interactive Live Streaming with Animated Tips | DeHub Q1 2025',
-  seoDescription: 'DeHub revolutionizes live streaming with interactive, on-chain features including animated tip reactions, real-time engagement, and decentralized infrastructure.',
-};
-
 const wrapUp2022Post: BlogPostType = {
   id: '2022-wrap-up',
   slug: '2022-wrap-up',
@@ -737,7 +625,6 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
 };
 
 export const newPosts: BlogPostType[] = [
-    interactiveStreamingPost,
     dehubCardPost,
     wrapUp2022Post,
     tokenisedUploadsPost,
