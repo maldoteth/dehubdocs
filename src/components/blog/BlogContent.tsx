@@ -1,3 +1,4 @@
+
 import React from 'react';
 import DOMPurify from 'dompurify';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -103,19 +104,25 @@ const renderRegularContent = (text: string) => {
       return heading;
     }
 
-    // Image tag
+    // Image tag - replace duplicate gold card images with silver card
     if (firstLine.startsWith('![')) {
       const match = firstLine.match(/!\[(.*?)\]\((.*?)\)/);
       if (match) {
         const altAndStyle = match[1];
-        const src = match[2];
+        let src = match[2];
         const parts = altAndStyle.split('|');
         const alt = parts[0].trim();
         const style = parts.length > 1 ? parts[1].trim() : 'default';
+        
+        // Replace duplicate gold card images with the new silver card image
+        if (src.includes('photo-1487252665478-49b61b47f302') || alt.toLowerCase().includes('gold card')) {
+          src = '/lovable-uploads/987ef6e4-6733-46c6-ba90-554c2daf60db.png';
+        }
+        
         if (style === 'avatar') {
           return <img key={index} src={src} alt={alt} className="w-24 h-24 rounded-full object-cover my-6 mx-auto block shadow-md" />;
         }
-        return;
+        return <img key={index} src={src} alt={alt} className="w-full max-w-2xl mx-auto my-6 rounded-lg shadow-md object-cover" />;
       }
     }
 
