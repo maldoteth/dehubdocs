@@ -24,12 +24,11 @@ const Blog = () => {
 
   const originalPosts = useMemo(() => {
     const publishedPosts = getPublishedPosts();
-    return publishedPosts.filter(post => !excludedTitles.includes(post.title) && post.visible !== false);
+    return publishedPosts.filter(post => !excludedTitles.includes(post.title));
   }, []);
 
   const allPosts = useMemo(() => {
-    const visibleNewPosts = newPosts.filter(post => post.visible !== false);
-    const combinedPosts = [...originalPosts, ...visibleNewPosts];
+    const combinedPosts = [...originalPosts, ...newPosts];
     // Deduplicate by title to remove the duplicate post
     const uniquePosts = Array.from(new Map(combinedPosts.map(post => [post.title, post])).values());
     
@@ -98,8 +97,8 @@ const Blog = () => {
   }, [originalPosts]);
 
   const featuredPosts = useMemo(() => {
-    const oldFeatured = getFeaturedPosts().filter(p => !excludedTitles.includes(p.title) && p.visible !== false);
-    const newFeatured = newPosts.filter(p => p.featured && p.visible !== false);
+    const oldFeatured = getFeaturedPosts().filter(p => !excludedTitles.includes(p.title));
+    const newFeatured = newPosts.filter(p => p.featured);
     const combined = [...newFeatured, ...oldFeatured];
     // Deduplicate by title to remove the duplicate post
     const uniquePosts = Array.from(new Map(combined.map(post => [post.title, post])).values());
