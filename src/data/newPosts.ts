@@ -119,8 +119,7 @@ We are excited about the possibilities this new feature unlocks and look forward
 
 Stay tuned for more updates and announcements as we continue to roll out on-chain tradable subscriptions.
 
-Thank you for being a part of the DeHub journey!
-`,
+Thank you for being a part of the DeHub journey!',
     featured: true,
     seoTitle: 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch',
     seoDescription: 'DeHub is proud to announce the launch of on-chain tradable subscriptions, revolutionizing how creators monetize their content and how users access exclusive content and communities.'
@@ -235,7 +234,10 @@ The resumption of trading on Gate.io underscores our commitment to providing our
 
 Stay tuned for more updates and announcements as we continue to expand our partnerships and offerings.
 
-Thank you for being a part of the DeHub journey!'
+Thank you for being a part of the DeHub journey!`,
+    featured: false,
+    seoTitle: 'Back in Action: DeHub V2 Trading Resumes on Gate.io',
+    seoDescription: 'DeHub is pleased to announce that trading of DeHub V2 (DHB) has resumed on Gate.io, providing our community with a secure and reliable platform to trade our token.'
   }
 ];
 
