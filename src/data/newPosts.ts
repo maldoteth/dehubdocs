@@ -1,16 +1,8 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
-  'Fueling Growth: $1M Raised for Fan.site (BJ Fork)',
-  'Worldwide Creators: Partnerships Spanning 15 Countries',
-  'Leveling Up: Major App Upgrade Earns 95% Positive Feedback',
-  'Smarter Liquidity: Automated Liquidity Provision on DEXs',
-  'Open and Clear: DEX Policy Implementation and Transparency Commitment',
-  'Supporting Growth: Knowledge Transfer to Fan.site Team',
-  'Protecting Innovation: Patent Applications for Streaming & Watch2Earn Tech',
-  'In the Spotlight: DeHub Featured in TechCrunch and VentureBeat',
-  'Innovation Recognized: DeHub Wins Corporate Livewire Award'
+  'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency',
+  'Back in Action: DeHub V2 Trading Resumes on Gate.io'
 ];
 
 const liveStreamingPost: BlogPostType = {
@@ -747,19 +739,63 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
   seoDescription: 'Skip the banks and spend crypto directly with the DeHub Card. Our revolutionary off-ramp solution eliminates traditional banking complications and frozen accounts.',
 };
 
+const transparencyHubPost: BlogPostType = {
+  id: 'transparency-hub-dhbscancom',
+  slug: 'transparency-hub-dhbscancom',
+  title: 'Transparency Hub: dhbscan.com',
+  excerpt: 'Track $DHB across multiple chains with our comprehensive blockchain analytics platform.',
+  content: `# Transparency Hub: dhbscan.com
+
+Our new transparency hub **dhbscan.com** provides comprehensive analytics for the $DHB token across multiple blockchain networks.
+
+## Multi-Chain Analytics
+
+The platform offers real-time tracking of $DHB token metrics across both Ethereum and Base networks, providing users with a complete overview of token distribution and activity.
+
+## Key Features
+
+- **Cross-chain supply tracking** - Monitor total supply figures across all supported networks
+- **Historical data visualization** - Interactive charts showing price movements, trading volume, and key milestones
+- **Transaction monitoring** - Real-time feed of the latest transfers and token movements
+- **Holder analysis** - Comprehensive breakdown of top token holders and distribution patterns
+
+## Advanced Analytics Coming Soon
+
+We're continuously enhancing the platform with new features including:
+- Unified charting across FTV and DHB tokens to show the complete ecosystem story
+- Enhanced historical data spanning multiple years
+- Advanced filtering and search capabilities
+- API access for developers and researchers
+
+Visit [dhbscan.com](https://dhbscan.com) to explore the full transparency hub and track $DHB token metrics in real-time.`,
+  bannerImage: '/lovable-uploads/68257c55-c4a8-4aef-9df6-e6cb7c25b28e.png',
+  bannerImageAlt: 'dhbscan.com transparency hub interface showing blockchain analytics',
+  author: {
+    name: 'DeHub Team',
+    avatar: '/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png'
+  },
+  publishedAt: '2024-12-15T12:00:00.000Z',
+  readingTime: 2,
+  featured: false,
+  status: 'published',
+  seoTitle: 'dhbscan.com - Multi-Chain DHB Token Analytics Hub',
+  seoDescription: 'Track $DHB token across multiple blockchains with comprehensive analytics, real-time data, and transparency tools at dhbscan.com'
+};
+
 export const newPosts: BlogPostType[] = [
-    dehubCardPost,
-    liveStreamingPost,
-    wrapUp2022Post,
-    tokenisedUploadsPost,
-    awardWinningInnovationPost,
-    dubaiEventPost,
-    crusadersSponsorshipPost,
-    dehubTakeoverPost,
-    basePoolPost,
-    publicBetaDappReportPost
+  transparencyHubPost,
+  dehubCardPost,
+  liveStreamingPost,
+  wrapUp2022Post,
+  tokenisedUploadsPost,
+  awardWinningInnovationPost,
+  dubaiEventPost,
+  crusadersSponsorshipPost,
+  dehubTakeoverPost,
+  basePoolPost,
+  publicBetaDappReportPost
 ];
 
-export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
-    return newPosts.find(p => p.slug === slug);
-}
+export const getNewPostBySlug = (slug: string): BlogPostType | null => {
+  return newPosts.find(post => post.slug === slug) || null;
+};
