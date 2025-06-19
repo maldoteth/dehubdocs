@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -775,6 +776,7 @@ Visit [dhbscan.com](https://dhbscan.com) to explore the full transparency hub an
     avatar: '/lovable-uploads/40022385-7894-4cb4-a6f9-403a0d9e4e5e.png'
   },
   publishedAt: '2024-12-15T12:00:00.000Z',
+  tags: ['Analytics', 'Transparency', 'Multi-Chain', 'Blockchain', 'DHB'],
   readingTime: 2,
   featured: false,
   status: 'published',
