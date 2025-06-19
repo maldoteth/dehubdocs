@@ -87,7 +87,7 @@ const Blog = () => {
       if (post.slug === 'dhb-tradable-on-coinbase-soon') {
         return {
           ...post,
-          title: 'Confirmed! $DHB to be available directly on coinbase CEX'
+          title: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX'
         };
       }
       return post;
@@ -128,7 +128,7 @@ const Blog = () => {
       if (post.slug === 'dhb-tradable-on-coinbase-soon') {
         return {
           ...post,
-          title: 'Confirmed! $DHB to be available directly on coinbase CEX'
+          title: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX'
         };
       }
       return post;
