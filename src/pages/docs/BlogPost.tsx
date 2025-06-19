@@ -1,4 +1,3 @@
-
 import React, { useLayoutEffect } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -59,6 +58,8 @@ const BlogPost = () => {
     post = {
       ...post,
       title: 'Scaling New Heights: Livepeer Integration for initially 50k+ Concurrent Viewers With Unlimited Viewer abilities as we scale up.',
+      bannerImage: '/lovable-uploads/6ad34788-b3fe-4094-bf1b-e930af8eaf62.png',
+      bannerImageAlt: 'Livepeer decentralized video infrastructure logo',
     };
   } else if (post && post.slug === 'dhb-tradable-on-coinbase-soon') {
     post = {
