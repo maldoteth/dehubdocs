@@ -1,7 +1,6 @@
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
-  'Fueling Growth: $1M Raised for Fan.site (BJ Fork)',
   'Worldwide Creators: Partnerships Spanning 15 Countries',
   'Leveling Up: Major App Upgrade Earns 95% Positive Feedback',
   'Smarter Liquidity: Automated Liquidity Provision on DEXs',
@@ -12,6 +11,64 @@ export const excludedTitles = [
   'Innovation Recognized: DeHub Wins Corporate Livewire Award',
   'Interactive Streaming: On-Chain Live Streams with Animated Tips'
 ];
+
+const fanSiteFundingPost: BlogPostType = {
+  id: 'fueling-growth-1m-raised-for-fan-site-bj-fork',
+  slug: 'fueling-growth-1m-raised-for-fan-site-bj-fork',
+  title: 'Fueling Growth: $1M Raised for Fan.site (BJ Fork)',
+  excerpt: 'We\'re excited to announce that we\'ve successfully raised $1M in funding for Fan.site, our innovative BJ Fork project that\'s revolutionizing creator monetization.',
+  content: `
+    ## A Major Milestone for Fan.site
+
+    We're thrilled to announce that Fan.site, our groundbreaking BJ Fork project, has successfully raised $1M in funding. This significant investment marks a pivotal moment in our journey to revolutionize how creators monetize their content and engage with their communities.
+
+    ### What is Fan.site?
+
+    Fan.site represents the next evolution in creator economy platforms, built on the foundation of our BJ Fork technology. This innovative platform combines the best aspects of content creation, community building, and blockchain-powered monetization to create an unprecedented experience for both creators and their audiences.
+
+    ### The Impact of This Funding
+
+    This $1M investment will accelerate our development timeline and enable us to:
+
+    - **Scale Infrastructure**: Enhance our platform's capacity to support millions of users simultaneously
+    - **Advanced Features**: Implement cutting-edge features including AI-powered content recommendations and enhanced creator tools
+    - **Global Expansion**: Extend our reach to creators worldwide with localized support and payment options
+    - **Security Enhancements**: Invest in top-tier security measures to protect creator earnings and user data
+
+    ### Revolutionary Creator Monetization
+
+    Fan.site introduces novel monetization mechanisms that go beyond traditional subscription models:
+
+    - **Dynamic Pricing**: AI-driven pricing optimization based on engagement and demand
+    - **Micro-Transactions**: Seamless small payments for premium content access
+    - **Community Rewards**: Token-based rewards for active community participation
+    - **Creator Collaboration Tools**: Revenue sharing for collaborative content
+
+    ### Building the Future
+
+    This funding round validates our vision of a decentralized creator economy where artists, influencers, and content creators have full control over their monetization strategies. We're not just building a platform; we're creating an ecosystem that empowers creators to build sustainable businesses around their passions.
+
+    The funds will also support our commitment to transparency and community governance, ensuring that Fan.site evolves according to the needs and desires of its users rather than corporate interests.
+
+    ### What's Next?
+
+    With this capital injection, we're accelerating toward our public beta launch, planned for Q2 2025. Early access will be available to our existing DeHub community members, followed by a gradual rollout to creators across various niches.
+
+    **Thank you to our investors, community members, and everyone who has supported this journey. The future of creator monetization starts here.**
+  `,
+  bannerImage: '/lovable-uploads/b632bee7-0228-48be-b4ac-7ac0ab5e9994.png',
+  bannerImageAlt: '$1M funding announcement for Fan.site featuring growth charts and celebration graphics',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2025-01-15T12:00:00.000Z',
+  tags: ['Funding', 'Fan.site', 'BJ Fork', 'Creator Economy', 'Investment'],
+  readingTime: 5,
+  featured: true,
+  status: 'published',
+  seoTitle: 'Fueling Growth: $1M Raised for Fan.site (BJ Fork) | DeHub',
+  seoDescription: 'Fan.site successfully raises $1M in funding to revolutionize creator monetization through our innovative BJ Fork technology and blockchain-powered platform.',
+};
 
 const interactiveStreamingPost: BlogPostType = {
   id: 'interactive-streaming-on-chain-live-streams-with-animated-tip',
@@ -608,8 +665,8 @@ const publicBetaDappReportPost: BlogPostType = {
 
 const freshExperiencePost: BlogPostType = {
   id: 'fresh-experience-revamped-app-feed',
-  title: 'Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces',
   slug: 'fresh-experience-revamped-app-feed-with-audio-replies-live-talk-spaces',
+  title: 'Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces',
   excerpt: 'We\'re thrilled to unveil a brand new user interface that brings clarity, performance, and creativity to the forefront of your DeHub experience.',
   content: `We're thrilled to unveil a brand new user interface that brings clarity, performance, and creativity to the forefront of your DeHub experience. Whether you're discovering content, connecting with creators, or keeping tabs on the latest trends in crypto and digital art — our redesigned dashboard makes it all seamless.
 
@@ -668,20 +725,20 @@ This is just the beginning. We're planning updates to include:
 Your feedback drives this platform — so let us know what you love (or want improved) and help us shape the next generation of decentralized content discovery.`,
   author: {
     name: 'DeHub Team',
-    avatar: '/lovable-uploads/6ad34788-b3fe-4094-bf1b-e930af8eaf62.png',
-    bio: 'Building the future of decentralized content creation and community engagement.'
   },
   publishedAt: '2025-05-03T00:00:00Z',
   readingTime: 6,
   tags: ['UI/UX', 'Product Update', 'Features', 'Interface', 'User Experience'],
-  bannerImage: '/lovable-uploads/09f2fe60-c820-4be4-b638-67f3c04a9fd4.png',
+  bannerImage: '/lovable-uploads/20da82bb-b461-453b-8286-ba505ab9367b.png',
   bannerImageAlt: 'DeHub\'s new revamped app interface showing dark theme, navigation sidebar, content feed, and trending sections',
-  featured: true,
+  featured: false,
+  status: 'published',
   seoTitle: 'Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces - DeHub',
   seoDescription: 'Discover DeHub\'s brand new user interface with centralized search, AI-powered content feeds, real-time trends, and enhanced creator tools for better content discovery.'
 };
 
 export const newPosts: BlogPostType[] = [
+  fanSiteFundingPost,
   freshExperiencePost,
   interactiveStreamingPost,
   wrapUp2022Post,
