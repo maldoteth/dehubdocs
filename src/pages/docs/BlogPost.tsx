@@ -1,3 +1,4 @@
+
 import React, { useLayoutEffect } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -67,6 +68,12 @@ const BlogPost = () => {
       title: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX',
       bannerImage: '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png',
       bannerImageAlt: 'Coinbase logo on mobile device with trading charts in background',
+    };
+  } else if (post && post.title === 'Leading the Way: DeHub founder\'s agency Becomes UK #1 with 1,000 Streamers') {
+    post = {
+      ...post,
+      bannerImage: '/lovable-uploads/dca94998-40bc-49d9-bfea-370c55c587fd.png',
+      bannerImageAlt: 'DeHub founder at TikTok Live Fest event representing the agency\'s success with 1,000 streamers',
     };
   }
 
