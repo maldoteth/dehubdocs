@@ -96,6 +96,17 @@ export const ContentRenderer: React.FC<ContentRendererProps> = ({ text }) => {
       {/* Add messaging system specific content */}
       {window.location.pathname.includes('connect-and-converse-advanced-messaging-system') && (
         <>
+          <div className="mt-8 mb-8">
+            <img 
+              src="/lovable-uploads/0b942277-3ce4-450a-95cc-116ccdb1aa7b.png" 
+              alt="DeHub advanced messaging interface showing user conversations and paid content sharing" 
+              className="w-full rounded-lg shadow-lg border border-sky-blue/20"
+            />
+            <p className="text-center text-sm text-royal-blue/60 mt-2 font-exo italic">
+              DeHub's advanced messaging interface demonstrating seamless integration of free and paid messaging features
+            </p>
+          </div>
+
           <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-sky-blue/20">
             <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Revolutionary Messaging Architecture</h3>
             
