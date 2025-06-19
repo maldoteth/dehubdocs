@@ -1,3 +1,4 @@
+
 import React from 'react';
 import DOMPurify from 'dompurify';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -210,6 +211,17 @@ const BlogContent: React.FC<BlogContentProps> = ({
           <li>Shows chart, price history & milestones - soon to show full chart across FTV & DHB to paint the full story</li>
           <li>Shows latest transfers & top holders</li>
         </ol>
+        <div className="mt-4 pt-3 border-t border-sky-blue/30">
+          <a 
+            href="https://dhbscan.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-middle-blue hover:text-royal-blue transition-colors duration-200 underline font-semibold"
+          >
+            Visit dhbscan.com
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
       </div>
     )}
     {isCoinbasePost && (
