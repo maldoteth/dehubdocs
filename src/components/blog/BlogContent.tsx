@@ -16,6 +16,7 @@ interface TeamMember {
   experience: string[];
   initials: string;
 }
+
 const createSanitizedHtml = (htmlString: string) => {
   const sanitized = DOMPurify.sanitize(htmlString, {
     USE_PROFILES: {
@@ -27,6 +28,7 @@ const createSanitizedHtml = (htmlString: string) => {
     __html: sanitized
   };
 };
+
 const parseTeamMembers = (content: string): TeamMember[] => {
   const members: TeamMember[] = [];
   const memberBlocks = content.trim().split('### ').filter(b => b.trim() !== '');
@@ -64,6 +66,7 @@ const parseTeamMembers = (content: string): TeamMember[] => {
   }
   return members;
 };
+
 const renderRegularContent = (text: string) => {
   const processLineForHtml = (lineContent: string) => {
     return lineContent.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-royal-blue">$1</strong>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-middle-blue hover:text-royal-blue underline transition-colors duration-200">$1</a>');
@@ -146,6 +149,7 @@ const renderRegularContent = (text: string) => {
     return <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
   });
 };
+
 const BlogContent: React.FC<BlogContentProps> = ({
   content
 }) => {
@@ -193,8 +197,21 @@ const BlogContent: React.FC<BlogContentProps> = ({
   // Check if this is the Coinbase blog post
   const isCoinbasePost = content.includes('buy $DHB on Coinbase') || content.includes('Coinbase team');
   
+  // Check if this is the dhbscan blog post
+  const isDhbscanPost = content.includes('dhbscan.com') || window.location.pathname.includes('transparency-hub-dhbscancom');
+  
   return <div className="prose prose-lg max-w-none">
     {renderContent()}
+    {isDhbscanPost && (
+      <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-sky-blue/20">
+        <h4 className="text-lg font-bold text-royal-blue mb-3 font-exo">Key Features:</h4>
+        <ol className="list-decimal list-inside space-y-2 text-royal-blue/80 font-exo">
+          <li>Shows supply figures across both chains</li>
+          <li>Shows chart, price history & milestones - soon to show full chart across FTV & DHB to paint the full story</li>
+          <li>Shows latest transfers & top holders</li>
+        </ol>
+      </div>
+    )}
     {isCoinbasePost && (
       <div className="mt-8 pt-4 border-t border-sky-blue/20">
         <HoverCard>
