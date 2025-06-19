@@ -337,7 +337,7 @@ The future of decentralized streaming is here, and it's powered by the DeHub-Liv
     tags: ['DeHub Journey', 'Roadmap', 'Q12025', 'Livepeer', 'Streaming'],
     bannerImage: '/lovable-uploads/e9632af0-07c2-4ca8-9b82-fc255191358b.png',
     bannerImageAlt: 'DeHub Livepeer integration announcement',
-    featured: true,
+    featured: false,
     seoTitle: 'DeHub Partners with Livepeer for Massive Scale Streaming',
     seoDescription: 'DeHub integrates with Livepeer to support 50k+ concurrent viewers with unlimited scaling potential for decentralized live streaming.'
   },
