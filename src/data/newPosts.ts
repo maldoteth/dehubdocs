@@ -891,7 +891,7 @@ The launch of dhbscan.com reinforces DeHub's position as a leader in transparent
     avatar: '/lovable-uploads/68257c55-c4a8-4aef-9df6-e6cb7c25b28e.png'
   },
   publishedAt: '2025-02-15T10:00:00.000Z',
-  readTime: '7 min read',
+  readingTime: 7,
   tags: ['Transparency', 'Blockchain', 'Analytics', 'DHB', 'DeFi'],
   featured: true,
   status: 'published',
