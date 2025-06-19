@@ -2,6 +2,108 @@ import { BlogPost } from '@/types/blog';
 
 export const newPosts: BlogPost[] = [
   {
+    id: 'confirmed-dhb-will-be-tradable-on-coinbase-soon',
+    title: 'Confirmed! $DHB Will Be Tradable on Coinbase Soon',
+    slug: 'confirmed-dhb-will-be-tradable-on-coinbase-soon',
+    excerpt: 'In a momentous move by the Coinbase team, you will soon be able to say "buy $DHB on Coinbase." This development addresses a major pain point in accessibility.',
+    content: `# Confirmed! $DHB Will Be Tradable on Coinbase Soon
+
+In a momentous move by the Coinbase team, you will soon be able to say "buy $DHB on Coinbase." This development addresses a major pain point in the DeHub ecosystem - accessibility for mainstream users.
+
+## A Game-Changing Development
+
+The Coinbase listing represents more than just another exchange listing. It's a bridge between traditional finance and the innovative DeHub ecosystem, making our token accessible to millions of users worldwide.
+
+### Why This Matters
+
+- **Mainstream Accessibility**: Coinbase's user-friendly interface removes barriers for newcomers
+- **Institutional Trust**: Coinbase's reputation brings credibility to the $DHB token
+- **Global Reach**: Access to international markets and diverse user base
+- **Simplified On-Ramp**: Direct fiat-to-$DHB purchases without complex procedures
+
+## What to Expect
+
+The listing will include:
+
+- **Spot Trading**: Buy and sell $DHB with major trading pairs
+- **Mobile Access**: Trade $DHB through Coinbase's mobile app
+- **Custody Services**: Professional-grade security for institutional investors
+- **Educational Resources**: Coinbase's learning platform will feature DeHub content
+
+## Impact on the DeHub Ecosystem
+
+This listing will significantly impact our platform:
+
+### Increased Liquidity
+More trading venues mean better price discovery and reduced slippage for all $DHB transactions.
+
+### User Growth
+Coinbase's 100+ million users will have direct access to participate in the DeHub economy.
+
+### Developer Adoption
+Easier token access encourages more developers to build on our platform.
+
+### Creator Benefits
+Content creators will see increased tipping and subscription activity as barriers to entry are lowered.
+
+## Technical Integration
+
+The listing includes full integration with Coinbase's infrastructure:
+
+- **API Access**: Developers can integrate Coinbase $DHB trading into their applications
+- **Wallet Support**: Seamless transfers between Coinbase and DeHub wallets
+- **Price Feeds**: Real-time $DHB pricing across all Coinbase products
+
+## Timeline and Next Steps
+
+While we can't share exact dates due to Coinbase's listing procedures, the integration is progressing rapidly. Key milestones include:
+
+1. **Final Technical Review**: Security audits and integration testing
+2. **Regulatory Compliance**: Meeting all jurisdictional requirements
+3. **Launch Preparation**: Marketing and educational content creation
+4. **Go-Live**: Official $DHB trading begins
+
+## Preparing for Launch
+
+Current $DHB holders should:
+
+- **Secure Your Holdings**: Ensure your tokens are in secure wallets
+- **Stay Informed**: Follow official channels for launch announcements
+- **Plan Your Strategy**: Consider how increased liquidity might affect your holdings
+- **Spread the Word**: Help grow the community before the mainstream influx
+
+## Beyond the Listing
+
+The Coinbase listing is just the beginning. We're working on additional integrations that will make $DHB even more accessible:
+
+- **DeFi Protocols**: Integration with major decentralized finance platforms
+- **Payment Processors**: Direct $DHB spending at online merchants  
+- **Mobile Wallets**: Native support in popular crypto wallets
+- **Institutional Products**: Professional trading and custody solutions
+
+## Community Impact
+
+This development validates the DeHub community's belief in our vision. It's a testament to the hard work of our developers, the creativity of our content creators, and the loyalty of our token holders.
+
+The mainstream exposure will bring new perspectives, use cases, and innovations to our platform. We're excited to welcome new community members and see how they contribute to the DeHub ecosystem.
+
+---
+
+*The Coinbase listing represents a major milestone in DeHub's journey toward mainstream adoption. Stay tuned for official announcements and prepare for the next chapter of decentralized content creation.*`,
+    author: {
+      name: 'DeHub Team',
+      avatar: '/placeholder.svg'
+    },
+    publishedAt: '2025-06-15T12:00:00.000Z',
+    readingTime: 2,
+    tags: ['Coinbase', 'Exchange', 'Listing', '$DHB Token', 'Trading', 'Accessibility'],
+    bannerImage: '/lovable-uploads/ad12a724-7166-4580-81b8-202cfde0d15a.png',
+    bannerImageAlt: 'Coinbase logo with $DHB trading announcement',
+    featured: true,
+    seoTitle: '$DHB Token Coming to Coinbase - Major Exchange Listing Confirmed',
+    seoDescription: 'DeHub token $DHB will soon be tradable on Coinbase, bringing mainstream accessibility and institutional trust to the DeHub ecosystem.'
+  },
+  {
     id: 'off-ramp-service-revealed-dehub-card-coming-soon',
     title: 'Off-Ramp Service Revealed: DeHub Card Coming Soon!',
     slug: 'off-ramp-service-revealed-dehub-card-coming-soon',
