@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -11,7 +10,8 @@ export const excludedTitles = [
   'Protecting Innovation: Patent Applications for Streaming & Watch2Earn Tech',
   'In the Spotlight: DeHub Featured in TechCrunch and VentureBeat',
   'Innovation Recognized: DeHub Wins Corporate Livewire Award',
-  'Interactive Streaming: On-Chain Live Streams with Animated Tips'
+  'Interactive Streaming: On-Chain Live Streams with Animated Tips',
+  'Fresh Experience: Revamped App Feed with Audio Replies & Live Talk Spaces'
 ];
 
 const interactiveStreamingPost: BlogPostType = {
