@@ -59,6 +59,11 @@ const BlogPost = () => {
       ...post,
       title: 'Scaling New Heights: Livepeer Integration for initially 50k+ Concurrent Viewers With Unlimited Viewer abilities as we scale up.',
     };
+  } else if (post && post.slug === 'dhb-tradable-on-coinbase-soon') {
+    post = {
+      ...post,
+      title: 'Confirmed! $DHB to be available directly on coinbase CEX',
+    };
   }
 
   useLayoutEffect(() => {
