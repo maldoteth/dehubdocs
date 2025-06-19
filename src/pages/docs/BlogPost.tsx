@@ -1,3 +1,4 @@
+
 import React, { useLayoutEffect } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -63,6 +64,8 @@ const BlogPost = () => {
     post = {
       ...post,
       title: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX',
+      bannerImage: '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png',
+      bannerImageAlt: 'Coinbase logo on mobile device with trading charts in background',
     };
   }
 
