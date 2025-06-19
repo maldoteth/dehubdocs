@@ -107,7 +107,7 @@ This is just the beginning of our comprehensive financial services ecosystem. Th
     tags: ['DeHub Card', 'Off-Ramp', 'Crypto Payments', 'Financial Services', 'Product Launch'],
     bannerImage: '/lovable-uploads/abffe3f5-6a89-4044-9a54-21c4ef2d3461.png',
     bannerImageAlt: 'DeHub card variants in black, silver and gold arranged on dark background',
-    featured: true,
+    featured: false,
     seoTitle: 'DeHub Card Coming Soon - Skip Banks with Direct Crypto Spending',
     seoDescription: 'Introducing the DeHub Card - spend your crypto directly without bank hassles. Available in black, silver, and gold. Revolutionary off-ramp solution coming soon.'
   },
