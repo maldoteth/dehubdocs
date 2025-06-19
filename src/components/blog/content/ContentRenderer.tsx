@@ -93,6 +93,215 @@ export const ContentRenderer: React.FC<ContentRendererProps> = ({ text }) => {
         return <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
       })}
       
+      {/* Add messaging system specific content */}
+      {window.location.pathname.includes('connect-and-converse-advanced-messaging-system') && (
+        <>
+          <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-sky-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Revolutionary Messaging Architecture</h3>
+            
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              DeHub's advanced messaging system represents a paradigm shift in social media communication, introducing <strong>tokenized interactions</strong> that create real economic value for content creators while maintaining the seamless user experience that modern platforms demand. Our three-tier messaging architecture—free DMs, paid DMs, and premium group chats—transforms every conversation into a potential revenue stream.
+            </p>
+
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              Unlike traditional social platforms where messaging is purely transactional, DeHub's system recognizes that a creator's time and attention have inherent value. By implementing smart pricing mechanisms and blockchain-powered microtransactions, we've created the first messaging system where quality conversations are financially rewarded, spam is economically disincentivized, and creators maintain complete control over their accessibility.
+            </p>
+          </div>
+
+          <div className="mt-6 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-sky-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Free Direct Messages: Building Community Foundations</h3>
+            
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              Our free DM system serves as the entry point for community building, allowing creators to maintain open communication channels with their audience while preserving the option to monetize premium interactions. Free messages enable:</p>
+
+            <div className="space-y-3 mb-6">
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Community Engagement</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Creators can engage with their broader community without barriers, fostering relationships that may evolve into premium interactions or long-term support.
+                </p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Discoverability & Growth</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  New followers can introduce themselves and establish connections, creating pathways for audience growth and community expansion.
+                </p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Creator Accessibility</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Maintains the approachable nature of social media while providing creators with tools to upgrade interactions when appropriate.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              The free messaging tier includes robust spam protection, message filtering options, and the ability for creators to seamlessly transition conversations to paid tiers when deeper engagement is requested. This creates a natural funnel from casual interaction to monetized communication.
+            </p>
+          </div>
+
+          <div className="mt-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border border-sky-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Paid Direct Messages: Monetizing Attention</h3>
+            
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              The paid DM system revolutionizes creator-fan interactions by introducing <strong>economic incentives</strong> that benefit both parties. Creators set their own message pricing, typically ranging from $1-50 per message, creating a sustainable revenue stream while ensuring that only serious, valuable conversations reach their attention.
+            </p>
+
+            <h4 className="text-lg font-bold text-royal-blue mb-3 mt-6 font-exo">Dynamic Pricing & Creator Control</h4>
+            
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Flexible Pricing Models</h5>
+                <ul className="text-royal-blue/70 text-sm font-exo space-y-1">
+                  <li>• Fixed per-message rates</li>
+                  <li>• Time-based pricing (peak hours premium)</li>
+                  <li>• Relationship-based discounts</li>
+                  <li>• Bulk message packages</li>
+                </ul>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Advanced Controls</h5>
+                <ul className="text-royal-blue/70 text-sm font-exo space-y-1">
+                  <li>• Whitelist/blacklist management</li>
+                  <li>• Auto-responses for common queries</li>
+                  <li>• Message queue prioritization</li>
+                  <li>• Response time guarantees</li>
+                </ul>
+              </div>
+            </div>
+
+            <h4 className="text-lg font-bold text-royal-blue mb-3 mt-6 font-exo">Revenue Optimization Features</h4>
+            
+            <div className="space-y-3 mb-6">
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Smart Analytics Dashboard</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Real-time insights into message volume, revenue per conversation, peak engagement times, and subscriber conversion rates enable data-driven pricing optimization.
+                </p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Automated Revenue Streams</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Integration with subscription models allows paid DM access as a premium tier benefit, creating recurring revenue alongside per-message payments.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              The system includes built-in escrow functionality, ensuring secure transactions, automatic creator payouts, and comprehensive financial reporting for tax purposes. Creators retain 85% of paid message revenue, with 10% supporting platform development and 5% distributed to DHB token holders as network rewards.
+            </p>
+          </div>
+
+          <div className="mt-6 p-6 bg-gradient-to-r from-indigo-50 to-cyan-50 rounded-lg border border-sky-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Premium Group Chats: Exclusive Community Building</h3>
+            
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              DeHub's tokenized group chat system creates <strong>exclusive communities</strong> where access is gated by DHB token holdings, subscription status, or direct payment. This creates high-value environments where creators can build intimate relationships with their most dedicated supporters while generating significant recurring revenue.
+            </p>
+
+            <h4 className="text-lg font-bold text-royal-blue mb-3 mt-6 font-exo">Multi-Tier Access Control</h4>
+            
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Token-Gated Access</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Require minimum DHB holdings (e.g., 1,000 DHB) for entry, creating natural scarcity and token utility while rewarding long-term supporters.
+                </p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Subscription Tiers</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Monthly recurring payments ($10-200) provide predictable revenue while offering different levels of creator access and exclusive content.
+                </p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Pay-Per-Access</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  One-time payments for special events, workshops, or limited-time group discussions create high-value, exclusive experiences.
+                </p>
+              </div>
+            </div>
+
+            <h4 className="text-lg font-bold text-royal-blue mb-3 mt-6 font-exo">Advanced Group Features</h4>
+            
+            <div className="space-y-3 mb-6">
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Creator Moderation Tools</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Advanced admin controls including message approval queues, automated moderation, member role management, and detailed engagement analytics.
+                </p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Exclusive Content Integration</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Seamless sharing of premium photos, videos, documents, and live streams directly within group chats, creating comprehensive premium experiences.
+                </p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Member Recognition Systems</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Special badges, member hierarchies, and recognition features that reward active participation and create social incentives for continued engagement.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              Group chats support up to 500 members per room with real-time messaging, file sharing, voice notes, and integrated tipping functionality. Creators can run multiple concurrent groups at different price points, creating a diverse revenue portfolio that adapts to their audience's varying engagement levels and financial capabilities.
+            </p>
+          </div>
+
+          <div className="mt-6 p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-lg border border-royal-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Technical Excellence & User Experience</h3>
+            
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              Behind DeHub's messaging system lies cutting-edge technology that ensures <strong>real-time performance</strong>, end-to-end encryption, and seamless blockchain integration. Our infrastructure handles millions of messages daily while maintaining the responsiveness users expect from modern messaging platforms.
+            </p>
+
+            <h4 className="text-lg font-bold text-royal-blue mb-3 mt-6 font-exo">Performance & Security</h4>
+            
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Real-Time Infrastructure</h5>
+                <ul className="text-royal-blue/70 text-sm font-exo space-y-1">
+                  <li>• Sub-100ms message delivery</li>
+                  <li>• WebSocket-based real-time updates</li>
+                  <li>• Offline message synchronization</li>
+                  <li>• Multi-device message syncing</li>
+                </ul>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Security & Privacy</h5>
+                <ul className="text-royal-blue/70 text-sm font-exo space-y-1">
+                  <li>• End-to-end encryption for all messages</li>
+                  <li>• Zero-knowledge payment processing</li>
+                  <li>• GDPR-compliant data handling</li>
+                  <li>• Blockchain-verified transactions</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              The system includes sophisticated anti-spam measures, automated content moderation, and AI-powered conversation insights that help creators optimize their messaging strategies without compromising user privacy or security.
+            </p>
+
+            <div className="pt-4 border-t border-royal-blue/30">
+              <p className="text-royal-blue/80 font-exo text-sm italic">
+                DeHub's messaging system isn't just communication—it's the foundation of a new creator economy where every interaction has the potential to generate value, build community, and strengthen the bonds between creators and their most dedicated supporters.
+              </p>
+            </div>
+          </div>
+        </>
+      )}
+
       {/* Add Livepeer-specific content */}
       {window.location.pathname.includes('livepeer') && (
         <>
