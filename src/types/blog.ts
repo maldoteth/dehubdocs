@@ -17,6 +17,7 @@ export interface BlogPost {
   readingTime: number; // in minutes
   featured: boolean;
   status?: 'draft' | 'published';
+  draft?: boolean; // Add the missing draft property
   seoTitle?: string;
   seoDescription?: string;
 }
