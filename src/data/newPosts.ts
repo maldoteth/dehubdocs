@@ -549,12 +549,12 @@ const publicBetaDappReportPost: BlogPostType = {
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">Our Vision for the DeHub D'app</h2>
     <p class="mb-4 text-lg text-royal-blue/80">DeHub at the core is, and always was, a streaming app with our own marketplace and games complimenting the main hub. When going on dehub.net in future, you will be met with the streaming app.</p>
-    <p class="mb-4 text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
-    <p class="mb-4 text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
-    <p class="mb-4 text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">Products &amp; games can now be streamed and traded directly on one platform. Our blockchain integrations offer pioneering solutions to problems caused by the incumbent and ageing social media platforms of today, built for the next generation's ideals.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We've updated all the contracts after the expected bugs and exploits were resolved. You will notice changes to both the front end and back end already, with plenty more to come over this next week.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">We are going to start onboarding our first creators from April and hope to have many celebrating our official 2nd Birthday this April 20th. The same day back in 2021 that we launched the original streaming app and socials.</p>
 
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Public Testing Review</h3>
-    <p class="mb-4 text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The core functions worked near enough perfectly, with minor bugs and logic issues resolved already.</p>
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li><strong>PPV:</strong> create your own PPV in DHB, USDC or USDT (soon to be every token).</li>
       <li><strong>W2E / Bounty post:</strong> Create your own watch-to-earn in DHB, USDC or USDT (soon to be every token) and reward your existing community or build a new one with a turbo-boost.</li>
