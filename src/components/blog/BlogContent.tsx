@@ -114,7 +114,9 @@ const renderRegularContent = (text: string) => {
         const style = parts.length > 1 ? parts[1].trim() : 'default';
         
         // Skip duplicate gold card images completely
-        if (src.includes('photo-1487252665478-49b61b47f302') || alt.toLowerCase().includes('gold card')) {
+        if (src.includes('photo-1487252665478-49b61b47f302') || 
+            src.includes('3498608d-9433-4bfd-9cde-0d26a3b69094') ||
+            alt.toLowerCase().includes('gold card')) {
           return null;
         }
         
