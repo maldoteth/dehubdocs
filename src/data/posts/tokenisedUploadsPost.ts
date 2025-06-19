@@ -36,6 +36,6 @@ export const tokenisedUploadsPost: BlogPostType = {
   readingTime: 3,
   featured: false,
   status: 'published',
-  seoTitle: 'Tokenised Uploads Are Here! | DeHub Feature Update',
-  seoDescription: 'Learn about DeHub\'s new Tokenised Uploads feature. Every upload is a fractionalised NFT that shares ad revenue, creating a new economy for creators and fans.',
+  seoTitle: 'Tokenised Uploads: Revolutionary NFT Revenue Sharing on DeHub',
+  seoDescription: 'Learn about DeHub\'s new Tokenised Uploads feature. Every upload becomes a fractionalised ERC-1155 NFT that shares ad revenue with holders, creating a new creator economy.',
 };

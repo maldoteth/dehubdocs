@@ -35,6 +35,6 @@ export const dubaiEventPost: BlogPostType = {
   readingTime: 4,
   featured: false,
   status: 'published',
-  seoTitle: 'DeHub Expands to Middle East with Dubai Event Presence',
-  seoDescription: 'DeHub marks a major Q2 2024 milestone by expanding its presence in the Middle East, participating in major blockchain events across Dubai.',
+  seoTitle: 'DeHub Expands to Middle East - Dubai Blockchain Events Q2 2024',
+  seoDescription: 'DeHub marks a major Q2 2024 milestone by expanding its presence in the Middle East, participating in 7 major blockchain events across Dubai including Token2049, ETH Dubai, and World Blockchain Summit.',
 };

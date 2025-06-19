@@ -1,3 +1,4 @@
+
 import React, { useLayoutEffect } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
@@ -17,66 +18,6 @@ const BlogPost = () => {
 
   if (post && excludedTitles.includes(post.title)) {
     post = null;
-  } else if (post && post.title === 'Entrepreneurial Spirit: Co-Founders Launch TikTok Agency') {
-    post = { ...post, publishedAt: '2024-01-09T12:00:00.000Z' };
-  } else if (post && post.title === 'Back in Action: DeHub V2 Trading Resumes on Gate.io') {
-    post = { ...post, publishedAt: '2023-02-16T12:00:00.000Z' };
-  } else if (post && post.title === 'Faster and Sleeker: major app upgrade reveals UI Overhaul and 200% Backend Speed Boost') {
-    post = {
-      ...post,
-      title: 'Faster and Sleeker: major app upgrade reveals UI Overhaul and 200% Backend Speed Boost',
-      publishedAt: '2024-10-28T12:00:00.000Z',
-      bannerImage: '/lovable-uploads/e9632af0-07c2-4ca8-9b82-fc255191358b.png',
-      bannerImageAlt: 'Screenshot of the new DeHub application UI',
-      content: `### Introducing the new DeHub App:
-
-#### ✅ New Features Shipped
-
-- Full re-write of back and front end
-- New upload process / progress bar
-- Feed for photos and text posts
-- Tokenised subscriptions
-- Creator gated group chats
-- Paid and free DMs
-- Own custom CDN
-- SEO share links
-- Endless scroll
-
-#### 🗓 Upcoming (estimates)
-
-- Full Base integration - November
-- DePIN - December/Q1
-- Fiat Gateway - December/Q1
-- Analytics - January/Q1
-- CRM - January/Q1
-- Live Streaming - February
-- Tokenised usernames - March`,
-    };
-  } else if (post && post.title === 'Revolutionizing Access: On-Chain Tradable Subscriptions Launch') {
-    post = { ...post, publishedAt: '2024-10-30T12:00:00.000Z' };
-  } else if (post && post.slug === 'scaling-new-heights-livepeer-integration-for-50k-concurrent-viewers---a-dehub-milestone-from-q1-2025') {
-    post = {
-      ...post,
-      title: 'Scaling New Heights: Livepeer Integration for initially 50k+ Concurrent Viewers With Unlimited Viewer abilities as we scale up.',
-      bannerImage: '/lovable-uploads/6ad34788-b3fe-4094-bf1b-e930af8eaf62.png',
-      bannerImageAlt: 'Livepeer decentralized video infrastructure logo',
-    };
-  } else if (post && post.slug === 'dhb-tradable-on-coinbase-soon') {
-    post = {
-      ...post,
-      title: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX',
-      bannerImage: '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png',
-      bannerImageAlt: 'Coinbase logo on mobile device with trading charts in background',
-      seoTitle: 'DHB Token Listed on Coinbase - DeHub Cryptocurrency Exchange Trading',
-      seoDescription: 'Major announcement: DHB token is now confirmed to be available directly on Coinbase CEX. Learn about DeHub\'s cryptocurrency listing on one of the world\'s largest crypto exchanges and what this means for DHB holders and traders.',
-      publishedAt: '2024-12-15T12:00:00.000Z'
-    };
-  } else if (post && post.title === 'Leading the Way: DeHub founder\'s agency Becomes UK #1 with 1,000 Streamers') {
-    post = {
-      ...post,
-      bannerImage: '/lovable-uploads/dca94998-40bc-49d9-bfea-370c55c587fd.png',
-      bannerImageAlt: 'DeHub founder at TikTok Live Fest event representing the agency\'s success with 1,000 streamers',
-    };
   }
 
   useLayoutEffect(() => {
@@ -103,6 +44,8 @@ const BlogPost = () => {
   const isRafflePost = post.slug === 'dream-big-the-1m-home-crypto-raffle-by-dehub---a-dehub-milestone-from-q3-2022';
   
   const raffleBanner = '/lovable-uploads/729af303-1246-44ed-a598-005275581b6c.png';
+  const bannerImage = isRafflePost ? raffleBanner : post.bannerImage;
+  const content = isRafflePost ? raffleContent : post.content;
 
   const shareUrl = `${window.location.origin}/docs/blog/${post.slug}`;
   const fullImageUrl = bannerImage ? (bannerImage.startsWith('http') ? bannerImage : `${window.location.origin}${bannerImage}`) : null;
@@ -111,9 +54,6 @@ const BlogPost = () => {
     post.title === 'Dream Big: The $1M Home Crypto Raffle by DeHub'
       ? 'July 11, 2022'
       : formatDate(post.publishedAt);
-  
-  const bannerImage = isRafflePost ? raffleBanner : post.bannerImage;
-  const content = isRafflePost ? raffleContent : post.content;
 
   return (
     <>

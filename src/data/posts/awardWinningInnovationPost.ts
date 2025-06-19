@@ -29,6 +29,6 @@ export const awardWinningInnovationPost: BlogPostType = {
   readingTime: 7,
   featured: false,
   status: 'published',
-  seoTitle: 'DeHub Wins Corporate LiveWire 2023 Innovation & Excellence Award',
-  seoDescription: 'DeHub is recognised as the 2023 winner for Innovation and Excellence in the Gaming category by Corporate LiveWire. Find out more about this prestigious award.',
+  seoTitle: 'DeHub Wins Corporate LiveWire 2023 Innovation Award - Gaming Category',
+  seoDescription: 'DeHub wins Corporate LiveWire\'s prestigious 2023 Innovation & Excellence Award in Gaming after 27,000 votes. Recognition for pioneering free-to-play-and-earn gaming arcade and streaming protocol.',
 };
