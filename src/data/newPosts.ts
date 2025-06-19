@@ -235,10 +235,10 @@ The resumption of trading on Gate.io underscores our commitment to providing our
 
 Stay tuned for more updates and announcements as we continue to expand our partnerships and offerings.
 
-Thank you for being a part of the DeHub journey!
-`,
-    featured: false,
-    seoTitle: 'Back in Action: DeHub V2 Trading Resumes on Gate.io',
-    seoDescription: 'DeHub is pleased to announce that trading of DeHub V2 (DHB) has resumed on Gate.io, providing our community with a secure and reliable platform to trade our token.'
+Thank you for being a part of the DeHub journey!'
   }
 ];
+
+export const getNewPostBySlug = (slug: string): BlogPost | null => {
+  return newPosts.find(post => post.slug === slug) || null;
+};
