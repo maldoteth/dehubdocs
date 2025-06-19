@@ -9,7 +9,8 @@ export const excludedTitles = [
   'Supporting Growth: Knowledge Transfer to Fan.site Team',
   'Protecting Innovation: Patent Applications for Streaming & Watch2Earn Tech',
   'In the Spotlight: DeHub Featured in TechCrunch and VentureBeat',
-  'Innovation Recognized: DeHub Wins Corporate Livewire Award'
+  'Innovation Recognized: DeHub Wins Corporate Livewire Award',
+  'Interactive Streaming: On-Chain Live Streams with Animated Tips'
 ];
 
 const wrapUp2022Post: BlogPostType = {
