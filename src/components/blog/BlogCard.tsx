@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
@@ -67,7 +65,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const isCoinbasePost = post.slug === 'dhb-tradable-on-coinbase-soon';
   const coinbaseBanner = '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png';
 
-  const isLivepeerPost = post.slug === 'livepeer-integration-revolutionizing-dehub-with-decentralized-video-streaming';
+  const isLivepeerPost = post.slug === 'scaling-new-heights-livepeer-integration-for-50k-concurrent-viewers---a-dehub-milestone-from-q1-2025';
   const livepeerBanner = '/lovable-uploads/6ad34788-b3fe-4094-bf1b-e930af8eaf62.png';
 
   const isAgencyPost = post.title === 'Leading the Way: DeHub founder\'s agency Becomes UK #1 with 1,000 Streamers';
@@ -149,4 +147,3 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
 };
 
 export default BlogCard;
-
