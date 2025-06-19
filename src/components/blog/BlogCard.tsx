@@ -65,6 +65,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const isCoinbasePost = post.slug === 'dhb-tradable-on-coinbase-soon';
   const coinbaseBanner = '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png';
 
+  const isLivepeerPost = post.slug === 'livepeer-integration-revolutionizing-dehub-with-decentralized-video-streaming';
+  const livepeerBanner = '/lovable-uploads/50a3e12d-7e1b-43c8-8481-2ccf0334beee.png';
+
   const handleLinkClick = () => {
     // Save current scroll position when clicking on a blog card
     sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
@@ -73,6 +76,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const getBannerImage = () => {
     if (isRafflePost) return raffleBanner;
     if (isCoinbasePost) return coinbaseBanner;
+    if (isLivepeerPost) return livepeerBanner;
     return post.bannerImage;
   };
 
