@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -746,49 +747,6 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
   seoDescription: 'Skip the banks and spend crypto directly with the DeHub Card. Our revolutionary off-ramp solution eliminates traditional banking complications and frozen accounts.',
 };
 
-const transparencyHubPost: BlogPostType = {
-  id: 'transparency-hub-dhbscancom',
-  slug: 'transparency-hub-dhbscancom-launches-for-contract-activity-tracking---a-dehub-milestone-from-q2-2025',
-  title: 'Transparency Hub: dhbscan.com Launches for Contract Activity Tracking',
-  excerpt: 'Introducing dhbscan.com - our comprehensive transparency hub providing real-time insights into DHB token metrics across multiple blockchain networks.',
-  content: `We're excited to announce the launch of dhbscan.com, our comprehensive transparency hub that provides real-time insights into DHB token metrics across multiple blockchain networks.
-
-**1) Shows supply figures across both chains** - Get accurate, real-time data on DHB token supply distribution across different blockchain networks
-
-**2) Shows chart, price history & milestones** - Track DHB's performance over time with detailed charts and important milestone markers. Soon to show full chart across FTV & DHB to paint the full story
-
-**3) Shows latest transfers & top holders** - Monitor the most recent token movements and identify the largest DHB holders in the ecosystem
-
-In the rapidly evolving world of decentralized finance, transparency isn't just a buzzword—it's a fundamental requirement for building trust and fostering community growth. dhbscan.com represents our commitment to providing the DeHub community with complete visibility into token economics and network activity.
-
-#### Platform Highlights
-
-**Real-time Data:** Live updates on token metrics and network activity
-
-**Multi-chain Support:** Comprehensive coverage across all supported blockchain networks
-
-**User-friendly Interface:** Clean, intuitive design that makes complex data accessible
-
-**Mobile Responsive:** Full functionality across all devices
-
-Visit [dhbscan.com](https://dhbscan.com) today to explore the transparency hub and gain deeper insights into the DHB ecosystem.
-
-*This transparency initiative is part of our ongoing commitment to building trust and providing value to the DeHub community.*`,
-  bannerImage: '/lovable-uploads/443805df-744b-4ab4-80a7-ae59cafe8baa.png',
-  bannerImageAlt: 'dhbscan.com transparency hub interface showing token metrics',
-  author: {
-    name: 'DeHub Team',
-    avatar: '/lovable-uploads/38387f75-fd38-4380-9588-1f19f68d8435.png'
-  },
-  publishedAt: '2025-06-02T10:00:00.000Z',
-  readingTime: 2,
-  tags: ['Transparency', 'Blockchain', 'Analytics'],
-  featured: false,
-  status: 'published',
-  seoTitle: 'Transparency Hub: dhbscan.com Launches for Contract Activity Tracking',
-  seoDescription: 'Introducing dhbscan.com - our comprehensive transparency hub providing real-time insights into DHB token metrics across multiple blockchain networks.',
-};
-
 export const newPosts: BlogPostType[] = [
     dehubCardPost,
     liveStreamingPost,
@@ -799,8 +757,7 @@ export const newPosts: BlogPostType[] = [
     crusadersSponsorshipPost,
     dehubTakeoverPost,
     basePoolPost,
-    publicBetaDappReportPost,
-    transparencyHubPost
+    publicBetaDappReportPost
 ];
 
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
