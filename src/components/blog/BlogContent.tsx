@@ -141,46 +141,11 @@ const renderRegularContent = (text: string) => {
         </ol>;
     }
 
-    // Check if this is the transparency hub post and handle the empty paragraph
-    if (block === '' && text.includes('dhbscan.com')) {
-      return <div key={index} className="space-y-6 mb-8">
-        <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          The <strong className="font-semibold text-royal-blue">Transparency Hub</strong> at dhbscan.com represents a major milestone in blockchain transparency and community trust. This comprehensive platform provides real-time insights into the DeHub ecosystem across multiple blockchain networks, offering unprecedented visibility into token dynamics and network activity.
-        </p>
-        
-        <h3 className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">Multi-Chain Supply Analytics</h3>
-        <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          The platform displays comprehensive supply figures across both Ethereum and Base chains, providing a complete picture of $DHB token distribution. Users can track circulating supply, total supply, and burned tokens in real-time, ensuring complete transparency in tokenomics. The multi-chain view helps investors and community members understand the token's presence across different blockchain ecosystems.
-        </p>
-
-        <h3 className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">Advanced Chart Analytics & Price History</h3>
-        <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Interactive charts showcase detailed price history and key project milestones, allowing users to correlate market movements with development achievements. The platform features comprehensive historical data visualization, helping stakeholders make informed decisions based on past performance and milestone achievements. Soon, the platform will expand to show full comparative charts across both FTV (previous token) and DHB, painting the complete evolution story of the DeHub ecosystem.
-        </p>
-
-        <h3 className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">Real-Time Transfer Monitoring</h3>
-        <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          The transparency hub provides live tracking of the latest token transfers, offering real-time visibility into network activity. Users can monitor transaction flows, identify patterns, and stay updated on significant token movements as they happen. This feature enhances trust by providing complete transparency into token circulation and network usage.
-        </p>
-
-        <h3 className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">Top Holders Analysis</h3>
-        <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Detailed holder analytics reveal the distribution of tokens among top addresses, providing insights into token concentration and community participation. The platform displays comprehensive holder statistics, helping users understand the decentralization level and community distribution of $DHB tokens. This transparency builds trust by showing exactly how tokens are distributed across the ecosystem.
-        </p>
-
-        <h3 className="text-xl font-bold text-royal-blue mb-3 mt-8 font-exo">Building Trust Through Transparency</h3>
-        <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          By providing these comprehensive analytics and real-time data, dhbscan.com establishes a new standard for transparency in the DeFi space. The platform empowers community members with the information they need to make informed decisions and builds long-term trust through complete openness about project metrics and token dynamics.
-        </p>
-      </div>;
-    }
-
     // Default to paragraph
     const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
     return <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
   });
 };
-
 const BlogContent: React.FC<BlogContentProps> = ({
   content
 }) => {
