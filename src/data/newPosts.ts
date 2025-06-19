@@ -1,4 +1,5 @@
 
+
 import { BlogPost } from '@/types/blog';
 
 export const excludedTitles = [
@@ -7,6 +8,7 @@ export const excludedTitles = [
 
 export const newPosts: BlogPost[] = [
   {
+    id: 'dhb-coinbase-cex-listing',
     slug: 'confirmed-dhb-to-be-available-directly-on-coinbase-cex',
     title: 'Confirmed! $DHB To Be Available Directly On Coinbase CEX',
     excerpt: 'DeHub is excited to announce that $DHB will soon be available directly on Coinbase CEX, marking a significant milestone for the DeHub community.',
@@ -58,10 +60,12 @@ We invite you to join the DeHub community and be a part of our journey to revolu
     },
     tags: ['$DHB', 'Coinbase', 'CEX', 'Listing'],
     readingTime: 4,
+    featured: false,
     seoTitle: '$DHB To Be Available Directly On Coinbase CEX',
     seoDescription: 'DeHub is excited to announce that $DHB will soon be available directly on Coinbase CEX, marking a significant milestone for the DeHub community.'
   },
   {
+    id: 'dehub-card-off-ramp-service',
     slug: 'off-ramp-service-revealed-dehub-card-coming-soon',
     title: 'Off-ramp Service Revealed: DeHub Card Coming Soon',
     excerpt: 'DeHub announces its upcoming off-ramping service with physical debit cards, enabling seamless crypto-to-fiat transactions worldwide.',
@@ -81,6 +85,8 @@ Our upcoming DeHub Card will offer:
 - **Low Fees**: Competitive conversion rates and minimal transaction fees
 - **Mobile Integration**: Seamless integration with the DeHub mobile app
 - **Security First**: Advanced security features and fraud protection
+
+![DeHub Cards showing premium design|default](/lovable-uploads/2a51a0e9-9d42-41b0-9c61-b6353883b734.png)
 
 ## Why This Matters
 
@@ -138,10 +144,12 @@ Stay tuned for more updates as we continue development. This is just the beginni
     },
     tags: ['DeHub Card', 'Off-ramping', 'Crypto Payments', 'Product Launch'],
     readingTime: 4,
+    featured: false,
     seoTitle: 'DeHub Card: Revolutionary Crypto Off-ramping Service Coming Soon',
     seoDescription: 'DeHub announces physical debit cards for seamless crypto-to-fiat conversion. Join the waitlist for early access to spend your crypto anywhere.'
   },
   {
+    id: 'dehub-v2-gate-io-trading',
     slug: 'dehub-v2-trading-resumes-on-gate-io',
     title: 'Back in Action: DeHub V2 Trading Resumes on Gate.io',
     excerpt: 'DeHub is excited to announce the resumption of DeHub V2 ($DHB) trading on Gate.io, offering users enhanced trading opportunities.',
@@ -190,6 +198,7 @@ We invite you to join the DeHub community and be a part of our journey to revolu
     },
     tags: ['$DHB', 'Gate.io', 'Trading', 'Listing'],
     readingTime: 4,
+    featured: false,
     seoTitle: 'DeHub V2 Trading Resumes on Gate.io',
     seoDescription: 'DeHub is excited to announce the resumption of DeHub V2 ($DHB) trading on Gate.io, offering users enhanced trading opportunities.'
   },
