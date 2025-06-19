@@ -19,6 +19,7 @@ export interface BlogPost {
   status?: 'draft' | 'published';
   seoTitle?: string;
   seoDescription?: string;
+  visible?: boolean; // Controls frontend visibility
 }
 
 export interface BlogTag {

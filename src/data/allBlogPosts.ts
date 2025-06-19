@@ -264,7 +264,8 @@ This milestone from Q1 2025 demonstrates DeHub's commitment to innovation and ou
     publishedAt: '2025-03-10T12:00:00.000Z',
     tags: ['Live Streaming', 'Blockchain', 'Interactive Features', 'DeHub Journey', 'Roadmap', 'Q12025'],
     readingTime: 8,
-    featured: false
+    featured: false,
+    visible: false
   },
   {
     id: 'dehub-achieves-aws-data-ingestion-partnership',
