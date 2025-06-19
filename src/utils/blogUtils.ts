@@ -1,4 +1,3 @@
-
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
 import { newPosts, excludedTitles } from '@/data/newPosts';
@@ -89,7 +88,7 @@ export const getFeaturedPosts = (): BlogPost[] => {
     },
     {
       id: 'revolutionizing-access-subscriptions-2024',
-      featured: true
+      featured: false
     },
     {
       id: 'ui-overhaul-backend-boost-2024',
