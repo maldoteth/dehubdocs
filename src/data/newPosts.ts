@@ -19,17 +19,17 @@ const liveStreamingPost: BlogPostType = {
   excerpt: 'Discover how DeHub is revolutionizing live streaming with blockchain integration, real-time animated tips, and decentralized monetization that puts creators first.',
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">The Future of Live Streaming is Here</h2>
-    <p class="mb-4 text-lg text-royal-blue/80">The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're taking this revolution one step further by introducing <strong>Interactive On-Chain Live Streaming</strong> – a groundbreaking feature that combines the immediacy of live content with the transparency and ownership benefits of blockchain technology.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're taking this revolution one step further by introducing <strong>Interactive On-Chain Live Streaming</strong> - a groundbreaking feature that combines the immediacy of live content with the transparency and ownership benefits of blockchain technology.</p>
     
     <p class="mb-4 text-royal-blue/80">Our Q1 2025 milestone represents more than just a technical achievement; it's a paradigm shift that empowers creators with unprecedented control over their content monetization while providing viewers with an immersive, interactive experience unlike anything available on traditional platforms.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What Makes DeHub Live Streaming Revolutionary?</h3>
     <p class="mb-4 text-royal-blue/80">Traditional live streaming platforms operate on centralized models where creators are subject to arbitrary policy changes, revenue sharing modifications, and platform dependency. DeHub's approach fundamentally changes this dynamic by leveraging blockchain technology to create a decentralized streaming ecosystem.</p>
     
-    <p class="mb-4 text-royal-blue/80">Our live streaming feature isn't just about broadcasting video content – it's about creating an interactive economy where every engagement, tip, and interaction is recorded on-chain, ensuring transparency, ownership, and fair compensation for creators.</p>
+    <p class="mb-4 text-royal-blue/80">Our live streaming feature isn't just about broadcasting video content - it's about creating an interactive economy where every engagement, tip, and interaction is recorded on-chain, ensuring transparency, ownership, and fair compensation for creators.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Real-Time Animated Tips: Bringing Engagement to Life</h3>
-    <p class="mb-4 text-royal-blue/80">One of the most exciting innovations in our live streaming platform is the <strong>Real-Time Animated Tips</strong> system. When viewers send tips to their favorite creators, these contributions don't just appear as static notifications – they come alive with dynamic animations that enhance the viewing experience for everyone.</p>
+    <p class="mb-4 text-royal-blue/80">One of the most exciting innovations in our live streaming platform is the <strong>Real-Time Animated Tips</strong> system. When viewers send tips to their favorite creators, these contributions don't just appear as static notifications - they come alive with dynamic animations that enhance the viewing experience for everyone.</p>
     
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li><strong>Visual Impact:</strong> Tips trigger customizable animations that appear on the live stream, creating visual excitement and encouraging more participation from viewers.</li>
@@ -114,7 +114,7 @@ const liveStreamingPost: BlogPostType = {
     </ul>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Join the Streaming Revolution</h3>
-    <p class="mb-4 text-royal-blue/80">DeHub's interactive live streaming feature with animated tips and text-to-voice generation represents more than just a technological advancement – it's a fundamental reimagining of what live streaming can be. By combining the engagement of traditional platforms with the ownership and transparency of blockchain technology, we're creating an ecosystem where creators and viewers both benefit.</p>
+    <p class="mb-4 text-royal-blue/80">DeHub's interactive live streaming feature with animated tips and text-to-voice generation represents more than just a technological advancement - it's a fundamental reimagining of what live streaming can be. By combining the engagement of traditional platforms with the ownership and transparency of blockchain technology, we're creating an ecosystem where creators and viewers both benefit.</p>
     
     <p class="mb-4 text-royal-blue/80">Whether you're a content creator looking for new ways to monetize your work, or a viewer wanting to support your favorite creators more directly, DeHub's live streaming platform offers unprecedented opportunities for engagement, creativity, and financial empowerment.</p>
     
@@ -616,6 +616,60 @@ const publicBetaDappReportPost: BlogPostType = {
   seoDescription: "An overview of the beta launch for our main d'app. Our biggest and final core d'app launch now sets us up to focus on scaling users and growth.",
 };
 
+const coinbasePost: BlogPostType = {
+  id: 'dhb-tradable-on-coinbase-soon',
+  slug: 'dhb-tradable-on-coinbase-soon',
+  title: 'Confirmed! $DHB will be tradable directly in Coinbase, with seamless access for hundreds of millions of investors.',
+  excerpt: 'Major milestone achieved: DeHub token ($DHB) confirmed for direct trading on Coinbase, opening access to hundreds of millions of potential investors worldwide.',
+  content: `
+    <h2 class="text-2xl font-bold mb-4 font-exo">A Historic Milestone for DeHub</h2>
+    <p class="mb-4 text-lg text-royal-blue/80">We're thrilled to officially confirm that $DHB will be tradable directly on Coinbase, one of the world's largest and most trusted cryptocurrency exchanges. This represents a monumental step forward for the DeHub ecosystem and our entire community.</p>
+    
+    <p class="mb-4 text-royal-blue/80">This listing will provide seamless access to hundreds of millions of investors worldwide, dramatically expanding the reach and accessibility of the DeHub token. Coinbase's rigorous listing standards and regulatory compliance make this achievement particularly significant for our project's credibility and long-term growth.</p>
+    
+    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What This Means for DeHub</h3>
+    <p class="mb-4 text-royal-blue/80">Being listed on Coinbase is more than just increased accessibility - it's validation of DeHub's technology, vision, and potential. Coinbase's strict due diligence process means they only list projects that meet their high standards for security, compliance, and long-term viability.</p>
+    
+    <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
+      <li><strong>Massive Reach:</strong> Access to Coinbase's 100+ million verified users worldwide</li>
+      <li><strong>Institutional Interest:</strong> Coinbase's institutional platform opens doors to large-scale investment</li>
+      <li><strong>Enhanced Liquidity:</strong> Significantly improved trading volume and market depth</li>
+      <li><strong>Regulatory Clarity:</strong> Coinbase's compliance framework provides additional legitimacy</li>
+      <li><strong>Global Accessibility:</strong> Available in 100+ countries through Coinbase's platform</li>
+    </ul>
+    
+    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">The Road to This Achievement</h3>
+    <p class="mb-4 text-royal-blue/80">This listing didn't happen overnight. It's the result of years of dedicated development, community building, and regulatory compliance. Our team has worked tirelessly to meet Coinbase's stringent requirements, including:</p>
+    
+    <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
+      <li>Comprehensive security audits of our smart contracts</li>
+      <li>Detailed documentation of our technology and roadmap</li>
+      <li>Demonstration of real utility and user adoption</li>
+      <li>Compliance with applicable regulatory frameworks</li>
+      <li>Evidence of sustainable tokenomics and project governance</li>
+    </ul>
+    
+    <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What to Expect</h3>
+    <p class="mb-4 text-royal-blue/80">The Coinbase listing will roll out in phases, starting with availability on Coinbase Pro for advanced traders, followed by integration into the main Coinbase platform for retail users. We'll provide regular updates on the timeline and any requirements for the listing process.</p>
+    
+    <p class="mb-4 text-royal-blue/80">This is just the beginning. The Coinbase listing sets the stage for even greater achievements as we continue to build and expand the DeHub ecosystem. We're grateful for our community's continued support and excited for what lies ahead.</p>
+    
+    <p class="mt-8 font-semibold text-royal-blue text-lg">The future is bright for DeHub, and it starts with making $DHB accessible to everyone, everywhere.</p>
+  `,
+  bannerImage: '/lovable-uploads/20b01f8c-c36b-41e9-a516-fde7ddfcaff3.png',
+  bannerImageAlt: 'Coinbase listing announcement for DHB token',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2025-06-19T12:00:00.000Z',
+  tags: ['Coinbase', 'Listing', 'Exchange', 'Milestone', 'Trading'],
+  readingTime: 4,
+  featured: true,
+  status: 'published',
+  seoTitle: 'DHB Token Listed on Coinbase | Major Milestone for DeHub',
+  seoDescription: 'Major milestone: DeHub token ($DHB) confirmed for direct trading on Coinbase, providing seamless access to hundreds of millions of investors worldwide.',
+};
+
 const dehubCardPost: BlogPostType = {
   id: 'off-ramp-service-revealed-dehub-card-coming-soon',
   slug: 'off-ramp-service-revealed-dehub-card-coming-soon',
@@ -731,7 +785,8 @@ export const newPosts: BlogPostType[] = [
     crusadersSponsorshipPost,
     dehubTakeoverPost,
     basePoolPost,
-    publicBetaDappReportPost
+    publicBetaDappReportPost,
+    coinbasePost
 ];
 
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
