@@ -1,4 +1,5 @@
-import { BlogPost } from '@/utils/blogUtils';
+
+import { BlogPost } from '@/types/blog';
 
 export const excludedTitles = [
   'DeHub and Base: A New Era of Decentralized Social Media',
