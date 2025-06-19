@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const PostSpecificContent: React.FC = () => {
@@ -7,17 +6,6 @@ export const PostSpecificContent: React.FC = () => {
       {/* Add messaging system specific content */}
       {window.location.pathname.includes('connect-and-converse-advanced-messaging-system') && (
         <>
-          <div className="mt-8 mb-8">
-            <img 
-              src="/lovable-uploads/0b942277-3ce4-450a-95cc-116ccdb1aa7b.png" 
-              alt="DeHub advanced messaging interface showing user conversations and paid content sharing" 
-              className="w-full rounded-lg shadow-lg border border-sky-blue/20"
-            />
-            <p className="text-center text-sm text-royal-blue/60 mt-2 font-exo italic">
-              DeHub's advanced messaging interface demonstrating seamless integration of free and paid messaging features
-            </p>
-          </div>
-
           <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-sky-blue/20">
             <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Revolutionary Messaging Architecture</h3>
             
@@ -28,9 +16,20 @@ export const PostSpecificContent: React.FC = () => {
             <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
               Unlike traditional social platforms where messaging is purely transactional, DeHub's system recognizes that a creator's time and attention have inherent value. By implementing smart pricing mechanisms and blockchain-powered microtransactions, we've created the first messaging system where quality conversations are financially rewarded, spam is economically disincentivized, and creators maintain complete control over their accessibility.
             </p>
+
+            <div className="mt-8 mb-8">
+              <img 
+                src="/lovable-uploads/0b942277-3ce4-450a-95cc-116ccdb1aa7b.png" 
+                alt="DeHub advanced messaging interface showing user conversations and paid content sharing" 
+                className="w-full rounded-lg shadow-lg border border-sky-blue/20"
+              />
+              <p className="text-center text-sm text-royal-blue/60 mt-2 font-exo italic">
+                DeHub's advanced messaging interface demonstrating seamless integration of free and paid messaging features
+              </p>
+            </div>
           </div>
 
-          <div className="mt-6 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-sky-blue/20">
+          <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-sky-blue/20">
             <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Free Direct Messages: Building Community Foundations</h3>
             
             <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
