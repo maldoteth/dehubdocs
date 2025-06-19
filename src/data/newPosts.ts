@@ -1,3 +1,4 @@
+
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -9,13 +10,14 @@ export const excludedTitles = [
   'Supporting Growth: Knowledge Transfer to Fan.site Team',
   'Protecting Innovation: Patent Applications for Streaming & Watch2Earn Tech',
   'In the Spotlight: DeHub Featured in TechCrunch and VentureBeat',
-  'Innovation Recognized: DeHub Wins Corporate Livewire Award'
+  'Innovation Recognized: DeHub Wins Corporate Livewire Award',
+  'Interactive Streaming: On-Chain Live Streams with Animated Tips'
 ];
 
 const interactiveStreamingPost: BlogPostType = {
-  id: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
-  slug: 'interactive-streaming-on-chain-live-streams-with-animated-tips',
-  title: 'Interactive Streaming: On-Chain Live Streams with Animated Tips',
+  id: 'interactive-streaming-on-chain-live-streams-with-animated-tip',
+  slug: 'interactive-streaming-on-chain-live-streams-with-animated-tip',
+  title: 'Interactive Streaming: On-Chain Live Streams with Animated Tip',
   excerpt: 'The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we\'re introducing Interactive On-Chain Live Streaming - a groundbreaking feature that combines the immediacy of live content with blockchain technology.',
   content: `
     ## The Future of Live Streaming is Here
@@ -117,7 +119,7 @@ const interactiveStreamingPost: BlogPostType = {
   publishedAt: '2025-03-10T12:00:00.000Z',
   tags: ['Live Streaming', 'Blockchain', 'Interactive', 'Tips', 'Q1 2025'],
   readingTime: 8,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'Interactive Streaming: On-Chain Live Streams with Animated Tips | DeHub',
   seoDescription: 'Discover DeHub\'s revolutionary interactive live streaming platform featuring on-chain transactions, animated tips, and text-to-voice generation for the ultimate creator experience.',
