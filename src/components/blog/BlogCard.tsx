@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
@@ -67,6 +66,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const isCoinbasePost = post.slug === 'dhb-tradable-on-coinbase-soon';
   const coinbaseBanner = '/lovable-uploads/c238e114-80c3-42ac-9e7a-d4617111466c.png';
 
+  const isLivepeerPost = post.slug === 'scaling-new-heights-livepeer-integration-for-50k-concurrent-viewers---a-dehub-milestone-from-q1-2025';
+  const livepeerBanner = '/lovable-uploads/27f35ad7-f229-495b-baf1-478d75e25c62.png';
+
   const handleLinkClick = () => {
     // Save current scroll position when clicking on a blog card
     sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
@@ -75,6 +77,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const getBannerImage = () => {
     if (isRafflePost) return raffleBanner;
     if (isCoinbasePost) return coinbaseBanner;
+    if (isLivepeerPost) return livepeerBanner;
     return post.bannerImage;
   };
 
@@ -141,4 +144,3 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
 };
 
 export default BlogCard;
-
