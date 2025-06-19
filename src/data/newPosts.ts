@@ -19,17 +19,17 @@ const liveStreamingPost: BlogPostType = {
   excerpt: 'Discover how DeHub is revolutionizing live streaming with blockchain integration, real-time animated tips, and decentralized monetization that puts creators first.',
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">The Future of Live Streaming is Here</h2>
-    <p class="mb-4 text-lg text-royal-blue/80">The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're taking this revolution one step further by introducing <strong>Interactive On-Chain Live Streaming</strong> – a groundbreaking feature that combines the immediacy of live content with the transparency and ownership benefits of blockchain technology.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're taking this revolution one step further by introducing <strong>Interactive On-Chain Live Streaming</strong> - a groundbreaking feature that combines the immediacy of live content with the transparency and ownership benefits of blockchain technology.</p>
     
     <p class="mb-4 text-royal-blue/80">Our Q1 2025 milestone represents more than just a technical achievement; it's a paradigm shift that empowers creators with unprecedented control over their content monetization while providing viewers with an immersive, interactive experience unlike anything available on traditional platforms.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What Makes DeHub Live Streaming Revolutionary?</h3>
     <p class="mb-4 text-royal-blue/80">Traditional live streaming platforms operate on centralized models where creators are subject to arbitrary policy changes, revenue sharing modifications, and platform dependency. DeHub's approach fundamentally changes this dynamic by leveraging blockchain technology to create a decentralized streaming ecosystem.</p>
     
-    <p class="mb-4 text-royal-blue/80">Our live streaming feature isn't just about broadcasting video content – it's about creating an interactive economy where every engagement, tip, and interaction is recorded on-chain, ensuring transparency, ownership, and fair compensation for creators.</p>
+    <p class="mb-4 text-royal-blue/80">Our live streaming feature isn't just about broadcasting video content - it's about creating an interactive economy where every engagement, tip, and interaction is recorded on-chain, ensuring transparency, ownership, and fair compensation for creators.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Real-Time Animated Tips: Bringing Engagement to Life</h3>
-    <p class="mb-4 text-royal-blue/80">One of the most exciting innovations in our live streaming platform is the <strong>Real-Time Animated Tips</strong> system. When viewers send tips to their favorite creators, these contributions don't just appear as static notifications – they come alive with dynamic animations that enhance the viewing experience for everyone.</p>
+    <p class="mb-4 text-royal-blue/80">One of the most exciting innovations in our live streaming platform is the <strong>Real-Time Animated Tips</strong> system. When viewers send tips to their favorite creators, these contributions don't just appear as static notifications - they come alive with dynamic animations that enhance the viewing experience for everyone.</p>
     
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li><strong>Visual Impact:</strong> Tips trigger customizable animations that appear on the live stream, creating visual excitement and encouraging more participation from viewers.</li>
@@ -114,7 +114,7 @@ const liveStreamingPost: BlogPostType = {
     </ul>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Join the Streaming Revolution</h3>
-    <p class="mb-4 text-royal-blue/80">DeHub's interactive live streaming feature with animated tips and text-to-voice generation represents more than just a technological advancement – it's a fundamental reimagining of what live streaming can be. By combining the engagement of traditional platforms with the ownership and transparency of blockchain technology, we're creating an ecosystem where creators and viewers both benefit.</p>
+    <p class="mb-4 text-royal-blue/80">DeHub's interactive live streaming feature with animated tips and text-to-voice generation represents more than just a technological advancement - it's a fundamental reimagining of what live streaming can be. By combining the engagement of traditional platforms with the ownership and transparency of blockchain technology, we're creating an ecosystem where creators and viewers both benefit.</p>
     
     <p class="mb-4 text-royal-blue/80">Whether you're a content creator looking for new ways to monetize your work, or a viewer wanting to support your favorite creators more directly, DeHub's live streaming platform offers unprecedented opportunities for engagement, creativity, and financial empowerment.</p>
     
@@ -721,7 +721,48 @@ const dehubCardPost: BlogPostType = {
   seoDescription: 'Skip the banks and spend crypto directly with the DeHub Card. Our revolutionary off-ramp solution eliminates traditional banking complications and frozen accounts.',
 };
 
+const coinbasePost: BlogPostType = {
+  id: 'dhb-tradable-on-coinbase-soon',
+  slug: 'dhb-tradable-on-coinbase-soon',
+  title: 'Confirmed! $DHB Will Be available directly on Coinbase Soon, accessible to hundreds of millions of traders & investors',
+  excerpt: 'In a momentous move by the Coinbase team, you will soon be able to say "buy $DHB on Coinbase." This development addresses a major pain point in accessibility for what has traditionally been an all-DEX token.',
+  content: `
+    <h2 class="text-2xl font-bold mb-4 font-exo">A Game-Changing Development for DeHub</h2>
+    <p class="mb-4 text-lg text-royal-blue/80">In a momentous move by the Coinbase team, you will soon be able to say "buy $DHB on Coinbase." This development addresses a major pain point in accessibility for what has traditionally been an all-DEX token.</p>
+    
+    <p class="mb-4 text-royal-blue/80">We're getting the best of both worlds: our token will be directly available on one of the biggest centralized exchanges in the world, used by over 200 million people, while remaining entirely on-chain. It almost feels like destiny is at play.</p>
+    
+    <p class="mb-4 text-royal-blue/80">Coinbase is opening its doors to countless Base tokens with integrated DEX trading. Soon, you'll be able to trade tokens on Base straight from the Coinbase app, often on the very day they're created.</p>
+    
+    <p class="mb-4 text-royal-blue/80">A new chapter in on-chain access is coming, and DeHub is proud to be at the forefront of this evolution. This integration will significantly lower the barrier to entry for new users and provide our existing community with unprecedented liquidity and ease of use.</p>
+    
+    <p class="mb-4 text-royal-blue/80">Stay tuned for more updates as we approach this exciting milestone!</p>
+    
+    <div class="mt-8 p-4 bg-sky-blue/10 rounded-lg border border-sky-blue/20">
+      <p class="text-royal-blue/80">
+        <strong>Reference:</strong> 
+        <a href="https://x.com/coinbase/status/1933274988041080859" target="_blank" rel="noopener noreferrer" class="text-middle-blue hover:underline ml-2">
+          Coinbase Official Announcement on X
+        </a>
+      </p>
+    </div>
+  `,
+  bannerImage: '/lovable-uploads/ea33e3a2-72d6-4be8-8648-07293e8b806f.png',
+  bannerImageAlt: 'Coinbase announcement about Base network integration and DEX trading capabilities',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2024-12-09T12:00:00.000Z',
+  tags: ['Coinbase', 'Base', 'DEX Trading', 'Accessibility', 'Milestone'],
+  readingTime: 2,
+  featured: true,
+  status: 'published',
+  seoTitle: '$DHB Available on Coinbase Soon | DeHub Major Milestone',
+  seoDescription: 'DeHub token ($DHB) will soon be tradable directly on Coinbase, providing access to over 200 million users through integrated Base DEX trading.',
+};
+
 export const newPosts: BlogPostType[] = [
+    coinbasePost,
     dehubCardPost,
     liveStreamingPost,
     wrapUp2022Post,
