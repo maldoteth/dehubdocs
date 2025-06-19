@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
@@ -68,6 +69,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   const isLivepeerPost = post.slug === 'livepeer-integration-revolutionizing-dehub-with-decentralized-video-streaming';
   const livepeerBanner = '/lovable-uploads/50a3e12d-7e1b-43c8-8481-2ccf0334beee.png';
 
+  const isAgencyPost = post.title === 'Leading the Way: DeHub founder\'s agency Becomes UK #1 with 1,000 Streamers';
+  const agencyBanner = '/lovable-uploads/dca94998-40bc-49d9-bfea-370c55c587fd.png';
+
   const handleLinkClick = () => {
     // Save current scroll position when clicking on a blog card
     sessionStorage.setItem('blogScrollPosition', window.scrollY.toString());
@@ -77,6 +81,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
     if (isRafflePost) return raffleBanner;
     if (isCoinbasePost) return coinbaseBanner;
     if (isLivepeerPost) return livepeerBanner;
+    if (isAgencyPost) return agencyBanner;
     return post.bannerImage;
   };
 
