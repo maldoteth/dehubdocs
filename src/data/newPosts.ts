@@ -1,4 +1,3 @@
-
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
@@ -747,6 +746,159 @@ Ready to skip the banks and spend crypto directly? The DeHub Card is coming soon
   seoDescription: 'Skip the banks and spend crypto directly with the DeHub Card. Our revolutionary off-ramp solution eliminates traditional banking complications and frozen accounts.',
 };
 
+const transparencyHubPost: BlogPostType = {
+  id: 'transparency-hub-dhbscan',
+  title: 'Transparency Hub: dhbscan.com Launches for Contract Activity Tracking',
+  slug: 'transparency-hub-dhbscancom-launches-for-contract-activity-tracking---a-dehub-milestone-from-q2-2025',
+  excerpt: 'DeHub launches dhbscan.com, a comprehensive blockchain explorer providing real-time transparency into DHB token activity across multiple chains.',
+  content: `### Introducing dhbscan.com: Your Gateway to Complete Token Transparency
+
+In our commitment to maintaining the highest standards of transparency and accountability, DeHub is proud to announce the launch of **dhbscan.com** - a comprehensive blockchain explorer designed specifically for tracking DHB token activity across all supported networks.
+
+This powerful transparency hub represents a significant milestone in our journey toward complete decentralization and community trust. With dhbscan.com, every transaction, every holder, and every movement of DHB tokens is now visible and verifiable by anyone, anywhere, at any time.
+
+### Comprehensive Supply Tracking Across Multiple Chains
+
+One of the most critical features of dhbscan.com is its ability to display **real-time supply figures across both Ethereum and Base chains**. This cross-chain visibility ensures that our community has complete insight into:
+
+- **Total circulating supply** on each network
+- **Burned tokens** and deflationary mechanics
+- **Locked tokens** in various protocols and partnerships
+- **Cross-chain bridge activity** and token movements
+
+This level of transparency eliminates any confusion about token distribution and provides investors with the confidence they need to make informed decisions. Unlike many projects that keep their tokenomics opaque, DeHub believes in complete openness.
+
+### Advanced Analytics and Historical Data
+
+The platform features **comprehensive charts and price history tracking** that paint the complete picture of DHB's journey. Users can access:
+
+#### Price Performance Metrics
+- Historical price data with customizable timeframes
+- Volume analysis across different exchanges
+- Market cap progression and milestones
+- Volatility indicators and trend analysis
+
+#### Milestone Tracking
+Our milestone system automatically highlights significant events in DHB's history, including:
+- Major partnership announcements
+- Product launches and updates
+- Exchange listings
+- Community achievements
+- Technical upgrades and hard forks
+
+#### Future Integration: The Complete FTV & DHB Story
+**Coming soon**, dhbscan.com will expand to show the full relationship between FTV (our utility token) and DHB, providing a comprehensive view of our entire ecosystem. This integration will include:
+
+- **Cross-token analytics** showing how FTV and DHB interact within our ecosystem
+- **Utility metrics** demonstrating real-world usage of both tokens
+- **Ecosystem health indicators** that combine data from both tokens
+- **Predictive analytics** based on historical correlation patterns
+
+### Real-Time Transaction Monitoring
+
+The **latest transfers section** provides real-time visibility into DHB movements across the network. This feature includes:
+
+#### Live Transaction Feed
+- **Instant updates** of all DHB transfers as they happen
+- **Transaction details** including sender, receiver, and amount
+- **Gas fees** and transaction costs for transparency
+- **Smart contract interactions** and their purposes
+- **Cross-chain bridge activities** with clear labeling
+
+#### Advanced Filtering Options
+Users can filter transactions by:
+- Transaction size (whale movements vs. retail activity)
+- Time periods (last hour, day, week, month)
+- Address types (exchanges, contracts, individuals)
+- Transaction types (transfers, swaps, staking, etc.)
+
+### Top Holders Dashboard: Understanding Token Distribution
+
+The **top holders section** provides crucial insights into DHB's distribution patterns, promoting transparency about token concentration:
+
+#### Holder Analytics
+- **Top 100 holders** with their percentage of total supply
+- **Address categorization** (exchanges, foundations, individuals)
+- **Holder growth trends** over time
+- **Distribution health metrics** showing decentralization progress
+
+#### Whale Movement Alerts
+- **Large transaction notifications** when significant movements occur
+- **Holder ranking changes** and their implications
+- **New whale emergence** tracking
+- **Distribution pattern analysis** for investment insights
+
+### Why Transparency Matters in DeFi
+
+In an ecosystem where trust is paramount, dhbscan.com represents our commitment to **radical transparency**. Here's why this matters:
+
+#### Building Community Trust
+- **Verifiable data** eliminates speculation and FUD
+- **Open-source approach** allows community verification
+- **Real-time updates** prevent information asymmetry
+- **Historical accuracy** builds long-term credibility
+
+#### Competitive Advantage
+Unlike many projects that operate in opacity, DeHub's transparency approach:
+- **Attracts serious investors** who value accountability
+- **Reduces regulatory risks** through proactive disclosure
+- **Builds stronger community** through shared information
+- **Creates sustainable growth** based on trust rather than speculation
+
+### Technical Excellence Behind the Platform
+
+dhbscan.com is built on robust infrastructure designed for:
+
+#### Performance and Reliability
+- **99.9% uptime** guarantee with redundant systems
+- **Sub-second data updates** for real-time accuracy
+- **Scalable architecture** ready for ecosystem growth
+- **Mobile-optimized interface** for on-the-go access
+
+#### Security and Data Integrity
+- **Multiple data sources** for cross-verification
+- **Blockchain-verified information** ensuring accuracy
+- **Secure API endpoints** for developer integration
+- **Regular security audits** maintaining platform integrity
+
+### Looking Ahead: Future Enhancements
+
+The launch of dhbscan.com is just the beginning. Our roadmap includes:
+
+#### Q3 2025 Planned Features
+- **Advanced portfolio tracking** for individual holders
+- **DeFi protocol integration** showing DHB usage across platforms
+- **Governance analytics** tracking proposal participation
+- **Mobile application** for iOS and Android
+
+#### Long-term Vision
+- **AI-powered insights** providing predictive analytics
+- **Cross-ecosystem comparisons** with other tokens
+- **Developer tools** and API expansions
+- **Community contribution features** allowing user-generated insights
+
+### Experience Complete Transparency Today
+
+Visit **dhbscan.com** today and experience the future of blockchain transparency. Whether you're a long-term holder, a new investor, or simply curious about DHB's ecosystem, our platform provides the tools and insights you need.
+
+The launch of dhbscan.com reinforces DeHub's position as a leader in transparent, community-driven development. By providing unprecedented access to token data and analytics, we're not just building a product - we're building trust, accountability, and a stronger foundation for decentralized finance.
+
+*Join thousands of users already exploring dhbscan.com and discover why transparency is the foundation of sustainable DeFi growth.*`,
+  bannerImage: '/lovable-uploads/photo-1461749280684-dccba630e2f6',
+  bannerImageAlt: 'Monitor displaying blockchain analytics and code representing dhbscan.com transparency platform',
+  author: {
+    name: 'DeHub Team',
+    avatar: '/lovable-uploads/68257c55-c4a8-4aef-9df6-e6cb7c25b28e.png'
+  },
+  publishedAt: '2025-02-15T10:00:00.000Z',
+  readTime: '7 min read',
+  tags: ['Transparency', 'Blockchain', 'Analytics', 'DHB', 'DeFi'],
+  featured: true,
+  status: 'published',
+  seoTitle: 'dhbscan.com Launches: Complete DHB Token Transparency Hub',
+  seoDescription: 'Explore dhbscan.com, the new transparency hub for DHB token tracking with real-time analytics, supply data, holder information, and cross-chain visibility.'
+};
+
 export const newPosts: BlogPostType[] = [
     dehubCardPost,
     liveStreamingPost,
@@ -757,7 +909,8 @@ export const newPosts: BlogPostType[] = [
     crusadersSponsorshipPost,
     dehubTakeoverPost,
     basePoolPost,
-    publicBetaDappReportPost
+    publicBetaDappReportPost,
+    transparencyHubPost
 ];
 
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
