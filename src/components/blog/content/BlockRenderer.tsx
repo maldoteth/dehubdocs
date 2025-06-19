@@ -184,6 +184,24 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
     }
   }
 
+  // Check if this is the DeHub Card blog post and add silver card image after Card Variants
+  if (window.location.pathname.includes('off-ramp-service-revealed-dehub-card-coming-soon')) {
+    // Add silver card image after "💳 Each card is designed with crypto users in mind" paragraph
+    if (block.includes('💳 Each card is designed with crypto users in mind')) {
+      const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
+      return [
+        <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />,
+        <div key={`${index}-card-image`} className="my-8 rounded-xl overflow-hidden">
+          <img 
+            src="/lovable-uploads/82928389-9659-4117-8bbe-351a68241694.png" 
+            alt="DeHub Card in premium silver finish showcasing modern crypto payment solution" 
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      ];
+    }
+  }
+
   // Default to paragraph
   const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
   return <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
