@@ -19,17 +19,17 @@ const liveStreamingPost: BlogPostType = {
   excerpt: 'Discover how DeHub is revolutionizing live streaming with blockchain integration, real-time animated tips, and decentralized monetization that puts creators first.',
   content: `
     <h2 class="text-2xl font-bold mb-4 font-exo">The Future of Live Streaming is Here</h2>
-    <p class="mb-4 text-lg text-royal-blue/80">The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're taking this revolution one step further by introducing <strong>Interactive On-Chain Live Streaming</strong> – a groundbreaking feature that combines the immediacy of live content with the transparency and ownership benefits of blockchain technology.</p>
+    <p class="mb-4 text-lg text-royal-blue/80">The digital content landscape is evolving rapidly, and live streaming has become the cornerstone of real-time audience engagement. At DeHub, we're taking this revolution one step further by introducing <strong>Interactive On-Chain Live Streaming</strong> - a groundbreaking feature that combines the immediacy of live content with the transparency and ownership benefits of blockchain technology.</p>
     
     <p class="mb-4 text-royal-blue/80">Our Q1 2025 milestone represents more than just a technical achievement; it's a paradigm shift that empowers creators with unprecedented control over their content monetization while providing viewers with an immersive, interactive experience unlike anything available on traditional platforms.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">What Makes DeHub Live Streaming Revolutionary?</h3>
     <p class="mb-4 text-royal-blue/80">Traditional live streaming platforms operate on centralized models where creators are subject to arbitrary policy changes, revenue sharing modifications, and platform dependency. DeHub's approach fundamentally changes this dynamic by leveraging blockchain technology to create a decentralized streaming ecosystem.</p>
     
-    <p class="mb-4 text-royal-blue/80">Our live streaming feature isn't just about broadcasting video content – it's about creating an interactive economy where every engagement, tip, and interaction is recorded on-chain, ensuring transparency, ownership, and fair compensation for creators.</p>
+    <p class="mb-4 text-royal-blue/80">Our live streaming feature isn't just about broadcasting video content - it's about creating an interactive economy where every engagement, tip, and interaction is recorded on-chain, ensuring transparency, ownership, and fair compensation for creators.</p>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Real-Time Animated Tips: Bringing Engagement to Life</h3>
-    <p class="mb-4 text-royal-blue/80">One of the most exciting innovations in our live streaming platform is the <strong>Real-Time Animated Tips</strong> system. When viewers send tips to their favorite creators, these contributions don't just appear as static notifications – they come alive with dynamic animations that enhance the viewing experience for everyone.</p>
+    <p class="mb-4 text-royal-blue/80">One of the most exciting innovations in our live streaming platform is the <strong>Real-Time Animated Tips</strong> system. When viewers send tips to their favorite creators, these contributions don't just appear as static notifications - they come alive with dynamic animations that enhance the viewing experience for everyone.</p>
     
     <ul class="list-disc list-inside space-y-3 my-4 text-royal-blue/80 pl-4">
       <li><strong>Visual Impact:</strong> Tips trigger customizable animations that appear on the live stream, creating visual excitement and encouraging more participation from viewers.</li>
@@ -114,7 +114,7 @@ const liveStreamingPost: BlogPostType = {
     </ul>
     
     <h3 class="text-xl font-bold mt-8 mb-4 font-exo">Join the Streaming Revolution</h3>
-    <p class="mb-4 text-royal-blue/80">DeHub's interactive live streaming feature with animated tips and text-to-voice generation represents more than just a technological advancement – it's a fundamental reimagining of what live streaming can be. By combining the engagement of traditional platforms with the ownership and transparency of blockchain technology, we're creating an ecosystem where creators and viewers both benefit.</p>
+    <p class="mb-4 text-royal-blue/80">DeHub's interactive live streaming feature with animated tips and text-to-voice generation represents more than just a technological advancement - it's a fundamental reimagining of what live streaming can be. By combining the engagement of traditional platforms with the ownership and transparency of blockchain technology, we're creating an ecosystem where creators and viewers both benefit.</p>
     
     <p class="mb-4 text-royal-blue/80">Whether you're a content creator looking for new ways to monetize your work, or a viewer wanting to support your favorite creators more directly, DeHub's live streaming platform offers unprecedented opportunities for engagement, creativity, and financial empowerment.</p>
     
