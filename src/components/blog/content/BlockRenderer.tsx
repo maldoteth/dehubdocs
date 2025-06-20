@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { createSanitizedHtml, processLineForHtml } from './contentUtils';
 
@@ -243,7 +244,7 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
             </p>
             <ul className="list-disc list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
               <li><strong>Speed & Cost</strong>: upgrades targeting 🎯200 ms confirmations and sub‑$0.01 fees (<a href="https://www.mitrade.com/insights/news/live-news/article-3-841878-20250525" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">mitrade.com</a>)</li>
-              <li><strong>Mass Adoption</strong>: ~4.6 million weekly active addresses—>50% of overall L2 usage (<a href="https://cryptoslate.com/coinbase-backed-base-unveils-upgrades-to-beat-solana-performance-by-double/" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">cryptoslate.com</a>)</li>
+              <li><strong>Mass Adoption</strong>: ~4.6 million weekly active addresses—{'>'}50% of overall L2 usage (<a href="https://cryptoslate.com/coinbase-backed-base-unveils-upgrades-to-beat-solana-performance-by-double/" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">cryptoslate.com</a>)</li>
               <li><strong>Coinbase Ecosystem</strong>: users see Base and its tokens directly in their Coinbase wallets and can onboard instantly (<a href="https://thedefiant.io/news/defi/coinbase-to-integrate-base-dexs-on-its-main-app" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">thedefiant.io</a>)</li>
             </ul>
             <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
