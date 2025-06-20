@@ -211,7 +211,7 @@ export const useDocsSearch = () => {
 
   // Configure Fuse.js for fuzzy search
   const fuse = useMemo(() => {
-    const options: Fuse.IFuseOptions<SearchIndex> = {
+    const options = {
       keys: [
         { name: 'title', weight: 0.4 },
         { name: 'content', weight: 0.3 },
