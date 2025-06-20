@@ -14,6 +14,96 @@ export const excludedTitles = [
   'Interactive Streaming: On-Chain Live Streams with Animated Tips'
 ];
 
+const teamFirstClassAgencyPost: BlogPostType = {
+  id: 'leading-the-way-dehub-founders-official-tiktok-partner-agency-becomes-uk-1-with-1000-streamers',
+  slug: 'leading-the-way-dehub-founders-official-tiktok-partner-agency-becomes-uk-1-with-1000-streamers',
+  title: "Leading the Way: DeHub Founder's Official TikTok Partner Agency Becomes UK #1 with 1,000 Streamers",
+  excerpt: 'From a bold idea to a national force in livestreaming, Team First Class Agency has officially hit a milestone worth celebrating. Co-founded by Mike Hales and Indi Jay Cammish, the TikTok official partner agency has now grown to over 1,000 active live streamers.',
+  content: `
+    ## From Vision to Victory: The Rise of Team First Class Agency
+
+    From a bold idea to a national force in livestreaming, Team First Class Agency has officially hit a milestone worth celebrating. Co-founded by Mike Hales and Indi Jay Cammish, the TikTok official partner agency has now grown to over **1,000 active live streamers**—making it the **#1 TikTok agency in the UK**.
+
+    ### A Diverse Network of Digital Stars
+
+    What started as a passion project quickly turned into a powerhouse operation. Representing a vibrant mix of talent, from top-tier gamers and musicians to fashion influencers, lifestyle creators, and even beloved pet accounts, Team First Class has built a diverse, loyal, and ever-growing network of content creators.
+
+    The agency's roster reads like a who's who of TikTok's most engaging personalities. Whether it's high-energy gaming sessions that keep viewers on the edge of their seats, heartwarming pet content that brightens everyone's day, or cutting-edge lifestyle and fashion streams that set trends, Team First Class has cultivated talent across every niche imaginable.
+
+    ### Official Partnership Excellence
+
+    Operating directly within **TikTok's In-House Agency Programme**, the agency works closely with TikTok executives to scout, support, and scale some of the platform's most promising talent. Their official partnership status isn't just a title—it's a commitment to creator excellence and innovation that's delivering real results.
+
+    This exclusive partnership means Team First Class Agency has direct access to:
+    - Advanced creator tools and beta features
+    - Priority support from TikTok's technical teams  
+    - Exclusive monetization opportunities
+    - Data insights that drive strategic growth
+    - First access to new platform initiatives
+
+    ### The Leadership Behind the Success
+
+    This milestone also highlights the creative leadership of DeHub's own **Mike Hales**, whose vision for empowering digital creators continues to push boundaries. Alongside **Indi Jay Cammish**, the duo has shaped a creator-first culture that's redefining what it means to build community, influence, and impact on the world's fastest-growing platform.
+
+    Their approach combines:
+    - **Strategic Vision**: Understanding where the creator economy is heading
+    - **Technical Expertise**: Leveraging cutting-edge tools and platforms
+    - **Community Building**: Fostering genuine connections between creators and audiences
+    - **Innovation Focus**: Always staying ahead of platform trends and features
+
+    ### Numbers That Speak Volumes
+
+    Reaching 1,000 active streamers isn't just a number—it represents:
+    - Thousands of hours of live content created monthly
+    - Millions of viewers engaged across the network
+    - Countless success stories of creators achieving their dreams
+    - A thriving ecosystem that benefits everyone involved
+
+    The agency's growth trajectory shows no signs of slowing down, with new creators joining the network weekly and existing talent consistently hitting new milestones.
+
+    ### A Creator-First Philosophy
+
+    What sets Team First Class Agency apart isn't just their impressive roster or official partnership status—it's their unwavering commitment to putting creators first. Every decision, every strategy, and every initiative is designed with one question in mind: "How does this help our creators succeed?"
+
+    This philosophy extends to:
+    - **Transparent Revenue Sharing**: Creators know exactly how much they earn and when
+    - **Comprehensive Support**: From technical assistance to creative guidance
+    - **Growth Opportunities**: Regular collaborations and cross-promotion within the network
+    - **Educational Resources**: Workshops, training sessions, and one-on-one mentoring
+
+    ### The Future of Live Streaming
+
+    As TikTok continues to evolve and live streaming becomes an increasingly important part of the social media landscape, Team First Class Agency is perfectly positioned to lead the charge. Their combination of official partnership benefits, diverse talent roster, and creator-focused approach creates a winning formula that other agencies are now trying to replicate.
+
+    ### DeHub's Proud Moment
+
+    We couldn't be prouder of our co-founders and their ongoing mission to make content creation accessible, scalable, and world-class. This achievement perfectly aligns with DeHub's own vision of empowering creators through innovative technology and decentralized platforms.
+
+    The success of Team First Class Agency demonstrates that when you combine visionary leadership, genuine care for creators, and strategic partnerships, remarkable things happen. It's a testament to what's possible when you truly believe in the power of community and content creation.
+
+    ### Join the Journey
+
+    Want to stay updated on Team First Class Agency's continued growth and success? Follow their journey and see what the UK's #1 TikTok agency is up to next.
+
+    **👉 Follow the journey and stay updated:**
+    **🎥 [@teamfirstclassagency](https://www.tiktok.com/@teamfirstclassagency) on TikTok**
+
+    The journey from startup to market leader is never easy, but Team First Class Agency has proven that with the right vision, dedication, and creator-first approach, anything is possible. Here's to the next 1,000 streamers and beyond!
+  `,
+  bannerImage: '/lovable-uploads/13d7ca20-9fba-4ea4-963d-3b95ec9be963.png',
+  bannerImageAlt: 'Mike Hales at TikTok Live Fest event, representing Team First Class Agency\'s official partnership with TikTok',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2024-11-22T12:00:00.000Z',
+  tags: ['TikTok', 'Live Streaming', 'Agency', 'Mike Hales', 'Indi Jay Cammish', 'Creators'],
+  readingTime: 3,
+  featured: false,
+  status: 'published',
+  seoTitle: "Leading the Way: DeHub Founder's Official TikTok Partner Agency Becomes UK #1 with 1,000 Streamers | DeHub",
+  seoDescription: 'Team First Class Agency, co-founded by DeHub\'s Mike Hales and Indi Jay Cammish, becomes the UK\'s #1 TikTok agency with over 1,000 active live streamers as an official TikTok partner.',
+};
+
 const interactiveStreamingPost: BlogPostType = {
   id: 'interactive-streaming-on-chain-live-streams-with-animated-tip',
   slug: 'interactive-streaming-on-chain-live-streams-with-animated-tip',
@@ -800,6 +890,7 @@ const offRampServicePost: BlogPostType = {
 };
 
 export const newPosts: BlogPostType[] = [
+  teamFirstClassAgencyPost,
   offRampServicePost,
   freshExperiencePost,
   interactiveStreamingPost,
