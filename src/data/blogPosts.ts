@@ -265,7 +265,7 @@ export const blogPosts: BlogPost[] = [
     id: 'q1-overview-birds-eye-view',
     title: "Q1 Overview: A Bird's Eye View",
     slug: 'q1-overview-a-birds-eye-view',
-    excerpt: 'A bird’s eye view of plans for the rest of this quarter.',
+    excerpt: 'A bird's eye view of plans for the rest of this quarter.',
     content: `Given all that's going on with launches and listings, this Q1 overview is more of a marketing schedule we've put together to keep you all in the loop.
 
 ### Calendar
@@ -306,7 +306,7 @@ After an explosive start to the year, I trust you all share our excitement for h
     featured: true,
     status: 'published',
     seoTitle: "DeHub Q1 2024 Overview: A Bird's Eye View",
-    seoDescription: 'A bird’s eye view of plans for the rest of this quarter, including launches, listings, and marketing schedules for DeHub and its partners.'
+    seoDescription: 'A bird\'s eye view of plans for the rest of this quarter, including launches, listings, and marketing schedules for DeHub and its partners.'
   },
   // Q2 2024
   createPost("Q2 2024", 2024, 2, 0, "Listed SDHB on Base L2", "Layer 2 Expansion: SDHB Lists on Base"),
@@ -552,7 +552,6 @@ Thank you for trusting and supporting us through these unprecedented actions, al
   createPost("Q1 2025", 2025, 1, 1, "Implemented Livepeer infrastructure supporting 50,000+ concurrent viewers with the ability of unlimited (in theory) on higher spend tiers.", "Scaling New Heights: Livepeer Integration for 50k+ Concurrent Viewers"),
   createPost("Q1 2025", 2025, 1, 2, "Built custom CDN reducing latency to sub-200ms globally", "Speed of Light: Custom CDN Achieves Sub-200ms Global Latency"),
   createPost("Q1 2025", 2025, 1, 3, "Achieved 99.99% uptime across all streaming services", "Reliability Perfected: 99.99% Uptime for DeHub Streaming"),
-  createPost("Q1 2025", 2025, 1, 4, "Discontinue Ethereum Mainnet support", "Strategic Shift: Discontinuing Ethereum Mainnet Support for DHB"),
   createPost("Q1 2025", 2025, 1, 5, "Completed messaging system with paid or free DMs and unlockable chat content", "Connect and Converse: Advanced Messaging System with Paid/Free DMs"),
   createPost("Q1 2025", 2025, 1, 6, "Released full trailer for Last Chad Standing, picked up by major MMA promoters", "Main Event Ready: Last Chad Standing Full Trailer Gains MMA Promoter Attention"),
   // Q2 2025
