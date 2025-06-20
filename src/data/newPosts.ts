@@ -1,6 +1,7 @@
 import { BlogPost as BlogPostType } from '@/types/blog';
 
 export const excludedTitles = [
+  'Leading the Way: DeHub founder\'s agency Becomes UK #1 with 1,000 Streamers',
   'Fueling Growth: $1M Raised for Fan.site (BJ Fork)',
   'Worldwide Creators: Partnerships Spanning 15 Countries',
   'Leveling Up: Major App Upgrade Earns 95% Positive Feedback',
