@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { createSanitizedHtml, processLineForHtml } from '../contentUtils';
 import { strategicShiftContent } from '@/data/posts/strategicShiftPost';
@@ -11,11 +10,13 @@ interface PostSpecificRendererProps {
 export const PostSpecificRenderer: React.FC<PostSpecificRendererProps> = ({ block, index }) => {
   // Check if this is the strategic shift blog post
   if (window.location.pathname.includes('strategic-shift-discontinuing-ethereum-mainnet-support-for-dhb')) {
-    // If this is an empty paragraph, populate it with strategic shift content
-    if (block.trim() === '' || block.trim().length < 50) {
+    // For the first content block (index 0), replace with strategic shift content
+    if (index === 0) {
       const processedContent = processLineForHtml(strategicShiftContent);
       return <div key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
     }
+    // For subsequent blocks, don't render anything to avoid duplicate content
+    return null;
   }
 
   // Check if this is the live streaming blog post and add specific content
