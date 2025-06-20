@@ -49,7 +49,7 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
             <div className="bg-white/60 p-6 rounded-lg">
               <h4 className="font-semibold text-royal-blue mb-3 font-exo">📈 Mass Adoption</h4>
               <p className="text-royal-blue/70 text-sm font-exo">
-                ~4.6 million weekly active addresses—>50% of overall L2 usage
+                ~4.6 million weekly active addresses—{'>'}50% of overall L2 usage
               </p>
             </div>
             
