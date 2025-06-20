@@ -141,11 +141,11 @@ const createSearchIndex = (): SearchIndex[] => {
     {
       id: 'team',
       title: 'Team',
-      content: 'DeHub team members, founders, developers, advisors, company information',
+      content: 'DeHub team members, founders, developers, advisors, company information. Team includes Malik, CEO and founder of DeHub, leading the vision for decentralized infrastructure. Meet our core team of blockchain experts, developers, and business leaders.',
       path: '/docs/team',
       category: 'Main',
       type: 'page',
-      keywords: ['team', 'founders', 'developers', 'company', 'about']
+      keywords: ['team', 'founders', 'developers', 'company', 'about', 'malik', 'ceo', 'founder', 'leadership']
     },
     {
       id: 'security',

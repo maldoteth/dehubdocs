@@ -7,11 +7,16 @@ import { useDocsSearch } from '@/hooks/useDocsSearch';
 export const SearchTrigger = () => {
   const { setIsOpen } = useDocsSearch();
 
+  const handleClick = () => {
+    console.log('Search trigger clicked');
+    setIsOpen(true);
+  };
+
   return (
     <Button
       variant="outline"
       className="relative h-9 w-full justify-start text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64"
-      onClick={() => setIsOpen(true)}
+      onClick={handleClick}
     >
       <Search className="mr-2 h-4 w-4" />
       <span className="hidden lg:inline-flex">Search documentation...</span>
