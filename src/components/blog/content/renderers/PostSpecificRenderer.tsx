@@ -15,7 +15,7 @@ export const PostSpecificRenderer: React.FC<PostSpecificRendererProps> = ({ bloc
       const processedContent = processLineForHtml(strategicShiftContent);
       return <div key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
     }
-    // For subsequent blocks, don't render anything to avoid duplicate content
+    // For ALL subsequent blocks, don't render anything to avoid duplicate/template content
     return null;
   }
 
