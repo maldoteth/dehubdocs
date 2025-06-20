@@ -25,13 +25,6 @@ export const SearchDialog = () => {
     clearRecentSearches
   } = useDocsSearch();
 
-  console.log('SearchDialog render - isOpen:', isOpen);
-
-  // Force re-render when isOpen changes
-  useEffect(() => {
-    console.log('SearchDialog useEffect - isOpen changed to:', isOpen);
-  }, [isOpen]);
-
   const getIconForType = (type: string) => {
     switch (type) {
       case 'blog':
@@ -64,11 +57,9 @@ export const SearchDialog = () => {
   };
 
   const handleOpenChange = (open: boolean) => {
-    console.log('SearchDialog handleOpenChange called with:', open);
     setIsOpen(open);
   };
 
-  // Always render the dialog, let CommandDialog handle the open/close
   return (
     <CommandDialog 
       open={isOpen} 

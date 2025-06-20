@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { SearchProvider as SearchContextProvider } from '@/contexts/SearchContext';
 import { SearchDialog } from './SearchDialog';
 
 interface SearchProviderProps {
@@ -8,7 +9,7 @@ interface SearchProviderProps {
 
 export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
   return (
-    <>
+    <SearchContextProvider>
       {children}
       <SearchDialog />
       <style>{`
@@ -31,6 +32,6 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
           background-color: rgb(146 64 14) !important;
         }
       `}</style>
-    </>
+    </SearchContextProvider>
   );
 };

@@ -5,15 +5,11 @@ import { Button } from '@/components/ui/button';
 import { useDocsSearch } from '@/hooks/useDocsSearch';
 
 export const SearchTrigger = () => {
-  const { isOpen, setIsOpen } = useDocsSearch();
+  const { setIsOpen } = useDocsSearch();
 
   const handleClick = () => {
-    console.log('Search trigger clicked - current isOpen:', isOpen);
     setIsOpen(true);
-    console.log('Search trigger clicked - setIsOpen(true) called');
   };
-
-  console.log('SearchTrigger render - isOpen:', isOpen);
 
   return (
     <Button
