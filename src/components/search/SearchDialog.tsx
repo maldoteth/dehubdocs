@@ -26,15 +26,6 @@ export const SearchDialog = () => {
     clearRecentSearches
   } = useDocsSearch();
 
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  // Focus input when dialog opens
-  useEffect(() => {
-    if (isOpen && inputRef.current) {
-      setTimeout(() => inputRef.current?.focus(), 100);
-    }
-  }, [isOpen]);
-
   const getIconForType = (type: string) => {
     switch (type) {
       case 'blog':
@@ -68,21 +59,11 @@ export const SearchDialog = () => {
 
   return (
     <CommandDialog open={isOpen} onOpenChange={setIsOpen} shouldFilter={false}>
-      <div className="flex items-center border-b px-3">
-        <Search className="mr-2 h-4 w-4 shrink-0 opacity-50" />
-        <CommandInput
-          ref={inputRef}
-          placeholder="Search documentation..."
-          value={query}
-          onValueChange={setQuery}
-          className="flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
-        />
-        <div className="ml-2 flex items-center gap-1 text-xs text-muted-foreground">
-          <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground">
-            <span className="text-xs">⌘</span>K
-          </kbd>
-        </div>
-      </div>
+      <CommandInput
+        placeholder="Search documentation..."
+        value={query}
+        onValueChange={setQuery}
+      />
 
       <CommandList className="max-h-[400px] overflow-y-auto">
         {!query && recentSearches.length > 0 && (
