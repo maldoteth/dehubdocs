@@ -9,7 +9,7 @@ export interface SearchResult {
   path: string;
   category: string;
   type: 'page' | 'blog' | 'section';
-  matches?: Fuse.FuseResultMatch[];
+  matches?: any[];
   score?: number;
 }
 
