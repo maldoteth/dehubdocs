@@ -10,3 +10,8 @@ export const newPosts: BlogPost[] = [
 
 // No more excludedTitles - each post is independent
 export const excludedTitles: string[] = [];
+
+// Function to get a new post by its slug
+export const getNewPostBySlug = (slug: string): BlogPost | null => {
+  return newPosts.find(post => post.slug === slug) || null;
+};
