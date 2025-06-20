@@ -1,8 +1,10 @@
 
 import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export const useTextHighlight = () => {
   const highlightAppliedRef = useRef(false);
+  const location = useLocation();
 
   const highlightText = (searchTerm: string, containerElement?: HTMLElement) => {
     if (!searchTerm.trim() || highlightAppliedRef.current) return;
@@ -80,17 +82,25 @@ export const useTextHighlight = () => {
     highlights.forEach(highlight => {
       const parent = highlight.parentElement;
       if (parent) {
-        parent.replaceWith(...Array.from(parent.childNodes));
+        // Replace the parent span with just the text content
+        const textContent = parent.textContent || '';
+        const textNode = document.createTextNode(textContent);
+        parent.parentNode?.replaceChild(textNode, parent);
       }
     });
     highlightAppliedRef.current = false;
   };
 
+  // Clear highlights on route change
+  useEffect(() => {
+    clearHighlights();
+  }, [location.pathname]);
+
   // Check for search highlight on mount/route change
   useEffect(() => {
     const searchTerm = sessionStorage.getItem('search-highlight');
     if (searchTerm) {
-      // Clear previous highlights
+      // Clear previous highlights first
       clearHighlights();
       
       // Apply new highlights after a short delay to ensure content is rendered
@@ -98,10 +108,13 @@ export const useTextHighlight = () => {
         highlightText(searchTerm);
       }, 500);
       
-      // Clean up
+      // Clean up immediately after applying
       sessionStorage.removeItem('search-highlight');
     }
+  }, [location.pathname]);
 
+  // Cleanup on unmount
+  useEffect(() => {
     return () => {
       clearHighlights();
     };

@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
 import Fuse from 'fuse.js';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -306,10 +305,24 @@ export const SearchProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       saveRecentSearch(searchTerm);
     }
     
+    // Clear any existing highlights immediately
+    const existingHighlights = document.querySelectorAll('.search-highlight');
+    existingHighlights.forEach(highlight => {
+      const parent = highlight.parentElement;
+      if (parent) {
+        const textContent = parent.textContent || '';
+        const textNode = document.createTextNode(textContent);
+        parent.parentNode?.replaceChild(textNode, parent);
+      }
+    });
+    
+    // Clear any pending highlight requests
+    sessionStorage.removeItem('search-highlight');
+    
     setIsOpen(false);
     setQuery('');
     
-    // Store search term for highlighting
+    // Store search term for highlighting on the new page
     if (searchTerm) {
       sessionStorage.setItem('search-highlight', searchTerm);
     }
