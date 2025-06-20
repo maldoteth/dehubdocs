@@ -1,5 +1,6 @@
 import React from 'react';
 import { createSanitizedHtml, processLineForHtml } from './contentUtils';
+import { strategicShiftContent } from '@/data/posts/strategicShiftPost';
 
 interface BlockRendererProps {
   block: string;
@@ -81,6 +82,15 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
         })}
       </ol>
     );
+  }
+
+  // Check if this is the strategic shift blog post
+  if (window.location.pathname.includes('strategic-shift-discontinuing-ethereum-mainnet-support-for-dhb')) {
+    // If this is an empty paragraph, populate it with strategic shift content
+    if (block.trim() === '' || block.trim().length < 50) {
+      const processedContent = processLineForHtml(strategicShiftContent);
+      return <div key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
+    }
   }
 
   // Check if this is the live streaming blog post and add specific content
