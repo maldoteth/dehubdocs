@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { createSanitizedHtml, processLineForHtml } from './contentUtils';
 
@@ -200,7 +201,6 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
       ];
     }
 
-    // Add new card image near the end of the blog post (2 paragraphs from bottom)
     if (block.includes('This is just the beginning of our comprehensive financial services ecosystem')) {
       const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
       return [
@@ -209,6 +209,24 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
           <img 
             src="/lovable-uploads/dd33f339-f2d6-46ac-9e87-98b96f3060ca.png" 
             alt="Stack of DeHub Cards showing multiple card variants in elegant presentation" 
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      ];
+    }
+  }
+
+  // Check if this is the TikTok agency blog post and add TikTok Live Fest image
+  if (window.location.pathname.includes('leading-the-way-dehub-agency-becomes-uk-1-with-1000-streamers')) {
+    // Add TikTok Live Fest image after mentioning the agency's growth or achievements
+    if (block.includes('1000 streamers') || block.includes('UK #1') || block.includes('leading agency')) {
+      const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
+      return [
+        <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />,
+        <div key={`${index}-tiktok-image`} className="my-8 rounded-xl overflow-hidden">
+          <img 
+            src="/lovable-uploads/34eb0642-c35f-435e-9e5d-515f77c8ef21.png" 
+            alt="TikTok Live Fest event showcasing DeHub's presence in the streaming industry" 
             className="w-full h-auto object-cover"
           />
         </div>
