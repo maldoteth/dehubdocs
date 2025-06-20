@@ -185,23 +185,20 @@ const DocsLayoutContent = () => {
             <button onClick={() => setSidebarOpen(!sidebarOpen)} className="lg:hidden p-2 rounded-md hover:bg-sky-blue/10 transition-colors">
               <Menu className="w-5 h-5 text-royal-blue" />
             </button>
-            <Link to="/docs" className="hidden lg:flex items-center space-x-2 font-bold text-xl text-royal-blue">
+            <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-royal-blue">
               <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
             </Link>
           </div>
 
-          {/* Search Bar - Desktop */}
-          <div className="hidden md:flex flex-1 max-w-lg mx-4">
-            <SearchTrigger />
+          {/* Search Bar - Moved to right side for tablet and desktop */}
+          <div className="hidden sm:flex flex-1 max-w-lg justify-end">
+            <div className="w-full max-w-sm">
+              <SearchTrigger />
+            </div>
           </div>
 
-          {/* Mobile centered logo */}
-          <Link to="/docs" className="lg:hidden flex items-center justify-center absolute left-1/2 transform -translate-x-1/2">
-            <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
-          </Link>
-
           {/* Mobile Search Button */}
-          <div className="md:hidden">
+          <div className="sm:hidden">
             <Button
               variant="ghost"
               size="sm"
