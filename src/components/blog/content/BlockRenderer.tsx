@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { createSanitizedHtml, processLineForHtml } from './contentUtils';
 
@@ -216,8 +215,95 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
     }
   }
 
-  // Check if this is the TikTok agency blog post and add TikTok Live Fest image
+  // Check if this is the TikTok agency blog post and add content
   if (window.location.pathname.includes('leading-the-way-dehub-agency-becomes-uk-1-with-1000-streamers')) {
+    // If this is an empty paragraph, populate it with TikTok agency content
+    if (block.trim() === '' || block.trim().length < 50) {
+      return (
+        <div key={index} className="space-y-6">
+          <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border border-sky-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">The Rise of Team First Class Agency</h3>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              <strong>Mike Hales and Indi Jay Cammish</strong> have successfully grown their TikTok partner agency to an impressive <strong>1000 live streamers</strong>, establishing themselves as a powerhouse in the UK streaming landscape. Their journey from startup to industry leader showcases the incredible potential of the creator economy and the power of strategic partnership with major platforms.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg border border-sky-blue/20">
+              <h4 className="text-lg font-bold text-royal-blue mb-3 font-exo">🎮 Diverse Creator Portfolio</h4>
+              <p className="text-royal-blue/80 text-sm font-exo mb-3">
+                From top-tier gamers dominating the esports scene to charming dog accounts that capture hearts worldwide, the team have it all. This diverse portfolio demonstrates their ability to identify and nurture talent across every niche and demographic.
+              </p>
+              <ul className="text-royal-blue/80 text-sm font-exo space-y-1">
+                <li>• Professional gaming streamers</li>
+                <li>• Lifestyle and entertainment creators</li>
+                <li>• Pet and animal content specialists</li>
+                <li>• Educational and tutorial creators</li>
+              </ul>
+            </div>
+
+            <div className="p-6 bg-gradient-to-r from-green-50 to-teal-50 rounded-lg border border-sky-blue/20">
+              <h4 className="text-lg font-bold text-royal-blue mb-3 font-exo">🏆 Official TikTok Partnership</h4>
+              <p className="text-royal-blue/80 text-sm font-exo mb-3">
+                Working directly with TikTok executives as part of the in-house agency programme, Team First Class Agency operates as an official partner. This prestigious status reflects their proven track record and professional excellence.
+              </p>
+              <ul className="text-royal-blue/80 text-sm font-exo space-y-1">
+                <li>• Direct collaboration with TikTok executives</li>
+                <li>• Part of official in-house agency programme</li>
+                <li>• Verified partner status</li>
+                <li>• Access to exclusive platform features</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border border-sky-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">UK's Leading Agency Success Story</h3>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              Established as a true powerhouse in the UK, Team First Class Agency has redefined what it means to be a creator management company. Their success isn't just measured in numbers, but in the quality of support, guidance, and opportunities they provide to their extensive network of 1000 streamers.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Strategic Growth</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  From humble beginnings to managing 1000+ creators, their strategic approach to talent acquisition and development has set new industry standards.
+                </p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-lg">
+                <h5 className="font-semibold text-royal-blue mb-2 font-exo">Creator Success</h5>
+                <p className="text-royal-blue/70 text-sm font-exo">
+                  Each streamer in their network benefits from professional support, brand partnerships, and monetization strategies that maximize their potential.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-lg border border-royal-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Pride in Our Co-Founders</h3>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              As DeHub, we could not be prouder of our co-founders Mike Hales and Indi Jay Cammish. Their achievement in building Team First Class Agency into the UK's premier TikTok partner agency represents the entrepreneurial spirit and innovation that drives our entire ecosystem.
+            </p>
+            
+            <div className="pt-4 border-t border-royal-blue/30">
+              <h4 className="font-semibold text-royal-blue mb-3 font-exo">Follow Their Journey</h4>
+              <p className="text-royal-blue/80 font-exo text-sm mb-4">
+                Stay updated with Team First Class Agency's continued success and connect with their amazing community of creators.
+              </p>
+              <a 
+                href="https://www.tiktok.com/@teamfirstclassagency" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 font-exo"
+              >
+                Follow @teamfirstclassagency on TikTok
+              </a>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     // Add TikTok Live Fest image after mentioning the agency's growth or achievements
     if (block.includes('1000 streamers') || block.includes('UK #1') || block.includes('leading agency')) {
       const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
