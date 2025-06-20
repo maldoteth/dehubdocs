@@ -3,6 +3,8 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Button } from '@/components/ui/button';
+import { SearchTrigger } from '@/components/search/SearchTrigger';
+import { useTextHighlight } from '@/hooks/useTextHighlight';
 
 const menuItems = [{
   title: 'Main',
@@ -144,6 +146,9 @@ const DocsLayoutContent = () => {
     [key: string]: boolean;
   }>({});
   const location = useLocation();
+  
+  // Initialize text highlighting
+  useTextHighlight();
 
   // Prevent body scroll when sidebar is open on mobile
   useEffect(() => {
@@ -185,10 +190,27 @@ const DocsLayoutContent = () => {
             </Link>
           </div>
 
+          {/* Search Bar - Desktop */}
+          <div className="hidden md:flex flex-1 max-w-lg mx-4">
+            <SearchTrigger />
+          </div>
+
           {/* Mobile centered logo */}
           <Link to="/docs" className="lg:hidden flex items-center justify-center absolute left-1/2 transform -translate-x-1/2">
             <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
           </Link>
+
+          {/* Mobile Search Button */}
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {/* This will be handled by the SearchTrigger's global keyboard shortcut */}}
+              className="p-2"
+            >
+              <Search className="w-5 h-5 text-royal-blue" />
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -200,8 +222,11 @@ const DocsLayoutContent = () => {
         `}>
           <div className="h-full flex flex-col">
             {/* Mobile close button */}
-            <div className="lg:hidden flex justify-end p-4 border-b border-sky-blue/20">
-              <button onClick={closeSidebar} className="p-2 rounded-md hover:bg-sky-blue/10 transition-colors">
+            <div className="lg:hidden flex justify-between items-center p-4 border-b border-sky-blue/20">
+              <div className="flex-1">
+                <SearchTrigger />
+              </div>
+              <button onClick={closeSidebar} className="p-2 rounded-md hover:bg-sky-blue/10 transition-colors ml-2">
                 <X className="w-5 h-5 text-royal-blue" />
               </button>
             </div>

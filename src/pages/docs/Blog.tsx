@@ -7,6 +7,7 @@ import { BlogFeaturedSection } from '@/components/blog/sections/BlogFeaturedSect
 import { BlogAllPostsSection } from '@/components/blog/sections/BlogAllPostsSection';
 import { BlogPopularTags } from '@/components/blog/sections/BlogPopularTags';
 import { useBlogData } from '@/hooks/useBlogData';
+import { useTextHighlight } from '@/hooks/useTextHighlight';
 
 const Blog = () => {
   const {
@@ -18,6 +19,9 @@ const Blog = () => {
     allTags,
     filteredPosts
   } = useBlogData();
+
+  // Initialize text highlighting for blog content
+  useTextHighlight();
 
   return (
     <>
