@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Fuse from 'fuse.js';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -212,7 +211,7 @@ export const useDocsSearch = () => {
 
   // Configure Fuse.js for fuzzy search
   const fuse = useMemo(() => {
-    const options = {
+    const options: Fuse.IFuseOptions<SearchIndex> = {
       keys: [
         { name: 'title', weight: 0.4 },
         { name: 'content', weight: 0.3 },
