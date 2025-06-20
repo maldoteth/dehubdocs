@@ -1,10 +1,9 @@
 
+
 import { BlogPost } from '@/types/blog';
-import { novumPrincipiumPost } from './posts/novumPrincipiumPost';
 
 // Independent new posts - each post is completely self-contained
 export const newPosts: BlogPost[] = [
-  novumPrincipiumPost,
   // Add other independent posts here as needed
 ];
 
@@ -15,3 +14,4 @@ export const excludedTitles: string[] = [];
 export const getNewPostBySlug = (slug: string): BlogPost | null => {
   return newPosts.find(post => post.slug === slug) || null;
 };
+
