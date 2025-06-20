@@ -11,7 +11,7 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
     <>
       {children}
       <SearchDialog />
-      <style jsx global>{`
+      <style>{`
         @keyframes searchHighlight {
           0%, 100% { 
             background-color: rgb(254 240 138); 

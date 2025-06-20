@@ -259,7 +259,7 @@ export const useDocsSearch = () => {
           path: result.item.path,
           category: result.item.category,
           type: result.item.type,
-          matches: result.matches,
+          matches: result.matches ? [...result.matches] : undefined,
           score: result.score
         }));
         
