@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { createSanitizedHtml, processLineForHtml } from './contentUtils';
 
@@ -13,170 +12,146 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
   
   // Check for Strategic Shift blog post FIRST - before any other processing
   if (window.location.pathname.includes('strategic-shift-discontinuing-ethereum-mainnet-support-for-dhb')) {
-    // For the strategic shift post, render comprehensive content for any block
+    // For the strategic shift post, render the new comprehensive content
     return (
       <div key={index} className="space-y-8">
-        <div className="p-8 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border border-orange-200 shadow-lg">
-          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo">🚨 Strategic Shift: Discontinuing Ethereum Mainnet Support</h2>
+        <div className="p-8 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-sky-blue/30 shadow-lg">
+          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo flex items-center">
+            🚀 Why we're pivoting from Ethereum L1
+          </h2>
           <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
-            After extensive market analysis and community feedback, <strong>DeHub is officially discontinuing support for DHB token operations on Ethereum mainnet</strong>. This strategic decision represents a pivotal evolution toward more efficient, cost-effective blockchain infrastructure that better serves our community's needs.
+            Ethereum thought leaders—including the Ethereum Foundation and Vitalik Buterin—have been clear: scaling must happen via Layer 2, not by bloating the base chain. Vitalik has emphasized that modern rollups now scale Ethereum by ~17× while slashing fees by a similar margin, and that "layer‑2‑centric ecosystems" are essential for a pluralistic, decentralized future.
           </p>
-          <div className="bg-white/60 p-6 rounded-lg">
-            <h3 className="text-lg font-semibold text-royal-blue mb-3 font-exo">Key Decision Factors:</h3>
-            <ul className="text-royal-blue/80 font-exo space-y-2">
-              <li>• Ethereum gas fees averaging $25-60 per transaction</li>
-              <li>• 87% of users reported transaction costs as primary pain point</li>
-              <li>• Layer 2 and alternative chains offering 95%+ cost reduction</li>
-              <li>• Community voting: 91% support for chain migration</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-sky-blue/30">
-            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">📊 Market Analysis Results</h3>
-            <div className="space-y-4">
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h4 className="font-semibold text-royal-blue mb-2 font-exo">Transaction Cost Analysis</h4>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Average Ethereum mainnet transaction costs have increased 340% over the past 18 months, making micro-transactions and regular platform interactions economically unfeasible for most users.
-                </p>
-              </div>
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h4 className="font-semibold text-royal-blue mb-2 font-exo">User Experience Impact</h4>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  87% of platform users reported high gas fees as the primary barrier to regular platform engagement, with 65% reducing their activity by more than 50%.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-emerald-200">
-            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">🎯 New Multi-Chain Strategy</h3>
-            <div className="space-y-4">
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h4 className="font-semibold text-royal-blue mb-2 font-exo">Primary Migration: Polygon Network</h4>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Smart contracts deployed and audited. Transaction fees reduced by 98%. Enhanced staking rewards and cross-chain bridge operational.
-                </p>
-              </div>
-              <div className="bg-white/50 p-4 rounded-lg">
-                <h4 className="font-semibold text-royal-blue mb-2 font-exo">Future Expansion</h4>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Evaluating Arbitrum, Optimism, and Base for additional deployment to maximize user choice and network resilience.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-8 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl border border-purple-200">
-          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo">Migration Timeline & User Protection</h2>
           <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
-            The transition has been carefully orchestrated to ensure <strong>zero disruption to user holdings and platform functionality</strong>. All existing DHB tokens remain fully backed and transferable through our automated migration portal.
+            His 2025 roadmap reinforces that continued investment in L2 is crucial, both technically and socially.
+          </p>
+          <p className="text-royal-blue/80 leading-relaxed font-exo text-lg">
+            From an app development POV, this is a green light: focus on fastest, cheapest, most vibrant networks—especially Coinbase's Base, the dominant L2 that processes ~40% of all Ethereum Layer 2 activity.
+          </p>
+        </div>
+
+        <div className="p-8 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-emerald-200 shadow-lg">
+          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo flex items-center">
+            🎯 DHB's consumer-first approach: Why Base makes sense
+          </h2>
+          <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
+            As a consumer-facing product, DHB must run where users already are—where transactions are near-instant, gas fees are negligible, and wallet friction is minimal. Base checks all these boxes:
           </p>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="space-y-4">
             <div className="bg-white/60 p-6 rounded-lg">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                <span className="text-green-600 font-bold text-lg">✓</span>
-              </div>
-              <h4 className="font-semibold text-royal-blue mb-3 font-exo">Phase 1: Completed</h4>
+              <h4 className="font-semibold text-royal-blue mb-3 font-exo">⚡ Speed & Cost</h4>
               <p className="text-royal-blue/70 text-sm font-exo">
-                Smart contracts deployed and audited on target chains. User notifications sent. Migration portal tested and secured.
-              </p>
-            </div>
-            
-            <div className="bg-white/60 p-6 rounded-lg border-2 border-blue-200">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                <span className="text-blue-600 font-bold text-lg">⚡</span>
-              </div>
-              <h4 className="font-semibold text-royal-blue mb-3 font-exo">Phase 2: Active Now</h4>
-              <p className="text-royal-blue/70 text-sm font-exo">
-                One-click migration tool live. Gas fees covered by DeHub treasury for first 10,000 users. 24/7 support available.
+                Upgrades targeting 200ms confirmations and sub-$0.01 fees
               </p>
             </div>
             
             <div className="bg-white/60 p-6 rounded-lg">
-              <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                <span className="text-yellow-600 font-bold text-lg">⏳</span>
-              </div>
-              <h4 className="font-semibold text-royal-blue mb-3 font-exo">Phase 3: Q2 2025</h4>
+              <h4 className="font-semibold text-royal-blue mb-3 font-exo">📈 Mass Adoption</h4>
               <p className="text-royal-blue/70 text-sm font-exo">
-                Final Ethereum mainnet operations cessation. All users migrated. Enhanced features rolled out across new infrastructure.
+                ~4.6 million weekly active addresses—>50% of overall L2 usage
+              </p>
+            </div>
+            
+            <div className="bg-white/60 p-6 rounded-lg">
+              <h4 className="font-semibold text-royal-blue mb-3 font-exo">🔗 Coinbase Ecosystem</h4>
+              <p className="text-royal-blue/70 text-sm font-exo">
+                Users see Base and its tokens directly in their Coinbase wallets and can onboard instantly
               </p>
             </div>
           </div>
+          
+          <p className="text-royal-blue/80 mt-6 leading-relaxed font-exo text-lg italic">
+            This natural ecosystem synergy makes Base the logical primary chain for DHB.
+          </p>
         </div>
 
-        <div className="p-8 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl border border-amber-200">
-          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo">Enhanced Features & Capabilities</h2>
+        <div className="p-8 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl border border-purple-200 shadow-lg">
+          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo flex items-center">
+            🌊 Solana: next on our radar
+          </h2>
+          <p className="text-royal-blue/80 leading-relaxed font-exo text-lg">
+            Although Base is our initial focus, we're keeping Solana squarely on the roadmap. Its high-throughput, low-latency design complements Base's strengths, and a recent listing on Coinbase opens more seamless integration paths. Solana's vibrant DeFi and NFT ecosystems—combined with Coinbase's support—make it a powerful second leg for DHB's multi-chain ambitions.
+          </p>
+        </div>
+
+        <div className="p-8 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl border border-amber-200 shadow-lg">
+          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo flex items-center">
+            💸 Fueling growth: more LP, investment & campaigns ahead
+          </h2>
           <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
-            This strategic shift unlocks new possibilities previously constrained by Ethereum's limitations. Our new infrastructure supports <strong>advanced DeFi integrations, NFT marketplace functionality, and real-time micro-transactions</strong> that power our creator economy ecosystem.
+            With a realigned chain strategy, we're doubling down on:
           </p>
           
-          <div className="grid lg:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="bg-white/60 p-6 rounded-lg">
-                <h4 className="font-semibold text-royal-blue mb-3 font-exo">⚡ Lightning-Fast Transactions</h4>
+                <h4 className="font-semibold text-royal-blue mb-3 font-exo">💧 Liquidity provisioning</h4>
                 <p className="text-royal-blue/70 text-sm font-exo">
-                  Sub-second confirmation times enable real-time tipping, instant content monetization, and seamless user experiences across all DeHub services.
+                  Partnering with leading AMMs on Base (e.g. Uniswap v4, Sushi) to bootstrap organic depth.
                 </p>
               </div>
               
               <div className="bg-white/60 p-6 rounded-lg">
-                <h4 className="font-semibold text-royal-blue mb-3 font-exo">💰 Sustainable Economics</h4>
+                <h4 className="font-semibold text-royal-blue mb-3 font-exo">💰 Capital injection</h4>
                 <p className="text-royal-blue/70 text-sm font-exo">
-                  Drastically reduced costs make micro-payments viable, opening new revenue streams for creators and enabling innovative tokenomics models.
+                  Deploying treasury funds and leveraging Coinbase Ventures to support incentives and token unlocks.
                 </p>
               </div>
             </div>
             
             <div className="space-y-4">
               <div className="bg-white/60 p-6 rounded-lg">
-                <h4 className="font-semibold text-royal-blue mb-3 font-exo">🔗 Cross-Chain Interoperability</h4>
+                <h4 className="font-semibold text-royal-blue mb-3 font-exo">👥 User acquisition</h4>
                 <p className="text-royal-blue/70 text-sm font-exo">
-                  Seamless asset movement between supported chains, maximizing liquidity and user choice without compromising security.
+                  Launching targeted campaigns—DEX onboarding rewards, wallet connection bonuses, cross-chain bridge credits—to boost both DAU and volume.
                 </p>
               </div>
               
               <div className="bg-white/60 p-6 rounded-lg">
-                <h4 className="font-semibold text-royal-blue mb-3 font-exo">🛡️ Enhanced Security</h4>
+                <h4 className="font-semibold text-royal-blue mb-3 font-exo">🛠️ Developer engagement</h4>
                 <p className="text-royal-blue/70 text-sm font-exo">
-                  Multi-chain architecture reduces single-point-of-failure risks while maintaining institutional-grade security standards.
+                  Hackathons, grants, and tool integrations to build on Base (and later Solana) via DHB-native SDKs.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="p-8 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-xl border border-royal-blue/20">
-          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo">DeHub 2.0: The Future Starts Now</h2>
+        <div className="p-8 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-xl border border-royal-blue/20 shadow-lg">
+          <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo flex items-center">
+            🔭 Looking forward
+          </h2>
           <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
-            This discontinuation of Ethereum mainnet support marks the beginning of <strong>DeHub 2.0</strong> - a more agile, cost-effective, and user-centric platform. We're not just changing chains; we're evolving our entire approach to decentralized content creation and community building.
+            By discontinuing Ethereum Mainnet support, we're enabling DHB to:
           </p>
           
-          <div className="bg-white/40 p-6 rounded-lg mb-6">
-            <h3 className="text-lg font-semibold text-royal-blue mb-4 font-exo">What This Means for You:</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              <ul className="text-royal-blue/80 font-exo space-y-2">
-                <li>• Lower transaction costs (98% reduction)</li>
-                <li>• Faster transaction confirmation</li>
-                <li>• Enhanced platform features</li>
-                <li>• Improved user experience</li>
-              </ul>
-              <ul className="text-royal-blue/80 font-exo space-y-2">
-                <li>• No loss of token value or holdings</li>
-                <li>• Free migration assistance</li>
-                <li>• 24/7 customer support</li>
-                <li>• Future-proof infrastructure</li>
-              </ul>
+          <div className="space-y-4 mb-6">
+            <div className="bg-white/40 p-6 rounded-lg">
+              <h4 className="font-semibold text-royal-blue mb-2 font-exo">⚡ Focus on performance</h4>
+              <p className="text-royal-blue/70 text-sm font-exo">
+                Fastest and cheapest network with zero L1 baggage
+              </p>
+            </div>
+            
+            <div className="bg-white/40 p-6 rounded-lg">
+              <h4 className="font-semibold text-royal-blue mb-2 font-exo">🌊 Ride the L2 wave</h4>
+              <p className="text-royal-blue/70 text-sm font-exo">
+                Following the ecosystem's leader (Base) and trusted roadmap pushed by Vitalik and others
+              </p>
+            </div>
+            
+            <div className="bg-white/40 p-6 rounded-lg">
+              <h4 className="font-semibold text-royal-blue mb-2 font-exo">🔄 Stay flexible</h4>
+              <p className="text-royal-blue/70 text-sm font-exo">
+                Ready to add Solana and beyond where user value is proven
+              </p>
             </div>
           </div>
           
           <div className="pt-6 border-t border-royal-blue/30">
-            <p className="text-royal-blue/80 font-exo italic text-lg text-center">
-              Thank you for your continued support as we build the future of decentralized content creation. This strategic shift positions DeHub for sustainable growth and innovation in the rapidly evolving blockchain landscape.
+            <p className="text-royal-blue/80 font-exo text-lg leading-relaxed">
+              This is more than a technical shift—it's a strategic step to align DHB with the future of consumer crypto. We're excited to scale smarter, faster, and more cost‑effectively. <strong>The next chapter starts on Base… stay tuned.</strong>
             </p>
           </div>
         </div>
@@ -255,181 +230,6 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
         })}
       </ol>
     );
-  }
-
-  // Check if this is the Strategic Shift blog post and add specific content
-  if (window.location.pathname.includes('strategic-shift-discontinuing-ethereum-mainnet-support-for-dhb')) {
-    // For the strategic shift post, render comprehensive content for empty or short blocks
-    if (block.trim() === '' || block.trim().length < 100) {
-      return (
-        <div key={index} className="space-y-8">
-          <div className="p-8 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border border-orange-200 shadow-lg">
-            <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo">🚨 Strategic Shift: Discontinuing Ethereum Mainnet Support</h2>
-            <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
-              After extensive market analysis and community feedback, <strong>DeHub is officially discontinuing support for DHB token operations on Ethereum mainnet</strong>. This strategic decision represents a pivotal evolution toward more efficient, cost-effective blockchain infrastructure that better serves our community's needs.
-            </p>
-            <div className="bg-white/60 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-royal-blue mb-3 font-exo">Key Decision Factors:</h3>
-              <ul className="text-royal-blue/80 font-exo space-y-2">
-                <li>• Ethereum gas fees averaging $25-60 per transaction</li>
-                <li>• 87% of users reported transaction costs as primary pain point</li>
-                <li>• Layer 2 and alternative chains offering 95%+ cost reduction</li>
-                <li>• Community voting: 91% support for chain migration</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8">
-            <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-sky-blue/30">
-              <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">📊 Market Analysis Results</h3>
-              <div className="space-y-4">
-                <div className="bg-white/50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue mb-2 font-exo">Transaction Cost Analysis</h4>
-                  <p className="text-royal-blue/70 text-sm font-exo">
-                    Average Ethereum mainnet transaction costs have increased 340% over the past 18 months, making micro-transactions and regular platform interactions economically unfeasible for most users.
-                  </p>
-                </div>
-                <div className="bg-white/50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue mb-2 font-exo">User Experience Impact</h4>
-                  <p className="text-royal-blue/70 text-sm font-exo">
-                    87% of platform users reported high gas fees as the primary barrier to regular platform engagement, with 65% reducing their activity by more than 50%.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-emerald-200">
-              <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">🎯 New Multi-Chain Strategy</h3>
-              <div className="space-y-4">
-                <div className="bg-white/50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue mb-2 font-exo">Primary Migration: Polygon Network</h4>
-                  <p className="text-royal-blue/70 text-sm font-exo">
-                    Smart contracts deployed and audited. Transaction fees reduced by 98%. Enhanced staking rewards and cross-chain bridge operational.
-                  </p>
-                </div>
-                <div className="bg-white/50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue mb-2 font-exo">Future Expansion</h4>
-                  <p className="text-royal-blue/70 text-sm font-exo">
-                    Evaluating Arbitrum, Optimism, and Base for additional deployment to maximize user choice and network resilience.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-8 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl border border-purple-200">
-            <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo">Migration Timeline & User Protection</h2>
-            <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
-              The transition has been carefully orchestrated to ensure <strong>zero disruption to user holdings and platform functionality</strong>. All existing DHB tokens remain fully backed and transferable through our automated migration portal.
-            </p>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white/60 p-6 rounded-lg">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-green-600 font-bold text-lg">✓</span>
-                </div>
-                <h4 className="font-semibold text-royal-blue mb-3 font-exo">Phase 1: Completed</h4>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Smart contracts deployed and audited on target chains. User notifications sent. Migration portal tested and secured.
-                </p>
-              </div>
-              
-              <div className="bg-white/60 p-6 rounded-lg border-2 border-blue-200">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-blue-600 font-bold text-lg">⚡</span>
-                </div>
-                <h4 className="font-semibold text-royal-blue mb-3 font-exo">Phase 2: Active Now</h4>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  One-click migration tool live. Gas fees covered by DeHub treasury for first 10,000 users. 24/7 support available.
-                </p>
-              </div>
-              
-              <div className="bg-white/60 p-6 rounded-lg">
-                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-yellow-600 font-bold text-lg">⏳</span>
-                </div>
-                <h4 className="font-semibold text-royal-blue mb-3 font-exo">Phase 3: Q2 2025</h4>
-                <p className="text-royal-blue/70 text-sm font-exo">
-                  Final Ethereum mainnet operations cessation. All users migrated. Enhanced features rolled out across new infrastructure.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-8 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl border border-amber-200">
-            <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo">Enhanced Features & Capabilities</h2>
-            <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
-              This strategic shift unlocks new possibilities previously constrained by Ethereum's limitations. Our new infrastructure supports <strong>advanced DeFi integrations, NFT marketplace functionality, and real-time micro-transactions</strong> that power our creator economy ecosystem.
-            </p>
-            
-            <div className="grid lg:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="bg-white/60 p-6 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue mb-3 font-exo">⚡ Lightning-Fast Transactions</h4>
-                  <p className="text-royal-blue/70 text-sm font-exo">
-                    Sub-second confirmation times enable real-time tipping, instant content monetization, and seamless user experiences across all DeHub services.
-                  </p>
-                </div>
-                
-                <div className="bg-white/60 p-6 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue mb-3 font-exo">💰 Sustainable Economics</h4>
-                  <p className="text-royal-blue/70 text-sm font-exo">
-                    Drastically reduced costs make micro-payments viable, opening new revenue streams for creators and enabling innovative tokenomics models.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="bg-white/60 p-6 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue mb-3 font-exo">🔗 Cross-Chain Interoperability</h4>
-                  <p className="text-royal-blue/70 text-sm font-exo">
-                    Seamless asset movement between supported chains, maximizing liquidity and user choice without compromising security.
-                  </p>
-                </div>
-                
-                <div className="bg-white/60 p-6 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue mb-3 font-exo">🛡️ Enhanced Security</h4>
-                  <p className="text-royal-blue/70 text-sm font-exo">
-                    Multi-chain architecture reduces single-point-of-failure risks while maintaining institutional-grade security standards.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-8 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-xl border border-royal-blue/20">
-            <h2 className="text-2xl font-bold text-royal-blue mb-6 font-exo">DeHub 2.0: The Future Starts Now</h2>
-            <p className="text-royal-blue/80 mb-6 leading-relaxed font-exo text-lg">
-              This discontinuation of Ethereum mainnet support marks the beginning of <strong>DeHub 2.0</strong> - a more agile, cost-effective, and user-centric platform. We're not just changing chains; we're evolving our entire approach to decentralized content creation and community building.
-            </p>
-            
-            <div className="bg-white/40 p-6 rounded-lg mb-6">
-              <h3 className="text-lg font-semibold text-royal-blue mb-4 font-exo">What This Means for You:</h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                <ul className="text-royal-blue/80 font-exo space-y-2">
-                  <li>• Lower transaction costs (98% reduction)</li>
-                  <li>• Faster transaction confirmation</li>
-                  <li>• Enhanced platform features</li>
-                  <li>• Improved user experience</li>
-                </ul>
-                <ul className="text-royal-blue/80 font-exo space-y-2">
-                  <li>• No loss of token value or holdings</li>
-                  <li>• Free migration assistance</li>
-                  <li>• 24/7 customer support</li>
-                  <li>• Future-proof infrastructure</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="pt-6 border-t border-royal-blue/30">
-              <p className="text-royal-blue/80 font-exo italic text-lg text-center">
-                Thank you for your continued support as we build the future of decentralized content creation. This strategic shift positions DeHub for sustainable growth and innovation in the rapidly evolving blockchain landscape.
-              </p>
-            </div>
-          </div>
-        </div>
-      );
-    }
   }
 
   // Check if this is the live streaming blog post and add specific content
@@ -515,7 +315,7 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
             </div>
           </div>
 
-          <div className="p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-lg border border-royal-blue/20">
+          <div className="p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-xl border border-royal-blue/20">
             <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Advanced Analytics & Community Building</h3>
             <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
               Every stream generates detailed analytics about viewer engagement, tip patterns, peak viewing times, and audience demographics. This data helps creators optimize their content strategy while our community tools facilitate deeper connections between streamers and their most dedicated supporters.
