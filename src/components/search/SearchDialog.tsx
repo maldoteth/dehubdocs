@@ -26,6 +26,8 @@ export const SearchDialog = () => {
     clearRecentSearches
   } = useDocsSearch();
 
+  console.log('SearchDialog render - isOpen:', isOpen);
+
   const getIconForType = (type: string) => {
     switch (type) {
       case 'blog':
@@ -57,8 +59,13 @@ export const SearchDialog = () => {
     return content.substring(0, maxLength) + '...';
   };
 
+  const handleOpenChange = (open: boolean) => {
+    console.log('SearchDialog handleOpenChange called with:', open);
+    setIsOpen(open);
+  };
+
   return (
-    <CommandDialog open={isOpen} onOpenChange={setIsOpen} shouldFilter={false}>
+    <CommandDialog open={isOpen} onOpenChange={handleOpenChange} shouldFilter={false}>
       <CommandInput
         placeholder="Search documentation..."
         value={query}
