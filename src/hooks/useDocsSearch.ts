@@ -206,6 +206,11 @@ export const useDocsSearch = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  // Add logging to track state changes
+  useEffect(() => {
+    console.log('useDocsSearch isOpen state changed to:', isOpen);
+  }, [isOpen]);
+
   // Initialize search index
   const searchIndex = useMemo(() => createSearchIndex(), []);
 

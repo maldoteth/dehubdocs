@@ -1,5 +1,4 @@
-
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { Search, Clock, Hash, FileText, Book, ArrowRight } from 'lucide-react';
 import {
   CommandDialog,
@@ -27,6 +26,11 @@ export const SearchDialog = () => {
   } = useDocsSearch();
 
   console.log('SearchDialog render - isOpen:', isOpen);
+
+  // Force re-render when isOpen changes
+  useEffect(() => {
+    console.log('SearchDialog useEffect - isOpen changed to:', isOpen);
+  }, [isOpen]);
 
   const getIconForType = (type: string) => {
     switch (type) {
@@ -64,8 +68,13 @@ export const SearchDialog = () => {
     setIsOpen(open);
   };
 
+  // Always render the dialog, let CommandDialog handle the open/close
   return (
-    <CommandDialog open={isOpen} onOpenChange={handleOpenChange} shouldFilter={false}>
+    <CommandDialog 
+      open={isOpen} 
+      onOpenChange={handleOpenChange} 
+      shouldFilter={false}
+    >
       <CommandInput
         placeholder="Search documentation..."
         value={query}
@@ -143,7 +152,6 @@ export const SearchDialog = () => {
 
         {query && !isLoading && results.length > 0 && (
           <>
-            {/* Group results by category */}
             {['Main', 'Token', 'Blog'].map(category => {
               const categoryResults = results.filter(result => result.category === category);
               if (categoryResults.length === 0) return null;
