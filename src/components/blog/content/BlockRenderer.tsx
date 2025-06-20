@@ -216,6 +216,118 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
     }
   }
 
+  // Check if this is the Ethereum Mainnet discontinuation blog post
+  if (window.location.pathname.includes('strategic-shift-discontinuing-ethereum-mainnet-support-for-dhb')) {
+    // If this is an empty paragraph, populate it with the blog content
+    if (block.trim() === '' || block.trim().length < 50) {
+      return (
+        <div key={index} className="space-y-8">
+          <div className="text-center py-4">
+            <p className="text-royal-blue/60 font-exo italic text-sm">February 1, 2025 · 6‑minute read</p>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-royal-blue mb-4 font-exo">🚀 Why we're pivoting from Ethereum L1</h3>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              Ethereum thought leaders—including the Ethereum Foundation and Vitalik Buterin—have been clear: scaling <strong>must</strong> happen via Layer 2, not by bloating the base chain. Vitalik has emphasized that modern rollups now <strong>scale Ethereum by ~17×</strong> while slashing fees by a similar margin, and that "layer‑2‑centric ecosystems" are essential for a pluralistic, decentralized future (<a href="https://time.com/6147486/ethereum-book-cryptopians/" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">time.com</a>, <a href="https://vitalik.eth.limo/general/2025/01/23/l1l2future.html" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">vitalik.eth.limo</a>). His 2025 roadmap reinforces that continued investment in L2 is crucial, both technically and socially.
+            </p>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              From an app development POV, this is a green light: focus on <strong>fastest, cheapest, most vibrant networks</strong>—especially Coinbase's <strong>Base</strong>, the dominant L2 that processes ~40% of all Ethereum Layer 2 activity (<a href="https://vitalik.eth.limo/general/2025/01/23/l1l2future.html" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">vitalik.eth.limo</a>).
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-royal-blue mb-4 font-exo">🎯 DHB's consumer-first approach: Why Base makes sense</h3>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              As a consumer-facing product, DHB must run where users already are—where transactions are near-instant, gas fees are negligible, and wallet friction is minimal. Base checks all these boxes:
+            </p>
+            <ul className="list-disc list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+              <li><strong>Speed & Cost</strong>: upgrades targeting 🎯200 ms confirmations and sub‑$0.01 fees (<a href="https://www.mitrade.com/insights/news/live-news/article-3-841878-20250525" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">mitrade.com</a>)</li>
+              <li><strong>Mass Adoption</strong>: ~4.6 million weekly active addresses—>50% of overall L2 usage (<a href="https://cryptoslate.com/coinbase-backed-base-unveils-upgrades-to-beat-solana-performance-by-double/" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">cryptoslate.com</a>)</li>
+              <li><strong>Coinbase Ecosystem</strong>: users see Base and its tokens directly in their Coinbase wallets and can onboard instantly (<a href="https://thedefiant.io/news/defi/coinbase-to-integrate-base-dexs-on-its-main-app" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">thedefiant.io</a>)</li>
+            </ul>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              This natural ecosystem synergy makes Base the logical primary chain for DHB.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-royal-blue mb-4 font-exo">🌊 Solana: next on our radar</h3>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              Although Base is our initial focus, we're keeping <strong>Solana</strong> squarely on the roadmap. Its high-throughput, low-latency design complements Base's strengths, and a recent <strong>listing on Coinbase</strong> opens more seamless integration paths. Solana's vibrant DeFi and NFT ecosystems—combined with Coinbase's support—make it a powerful second leg for DHB's multi-chain ambitions.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-royal-blue mb-4 font-exo">💸 Fueling growth: more LP, investment & campaigns ahead</h3>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              With a realigned chain strategy, we're doubling down on:
+            </p>
+            <ol className="list-decimal list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+              <li><strong>Liquidity provisioning</strong>: partnering with leading AMMs on Base (e.g. Uniswap v4, Sushi) to bootstrap organic depth.</li>
+              <li><strong>Capital injection</strong>: deploying treasury funds and leveraging Coinbase Ventures to support incentives and token unlocks.</li>
+              <li><strong>User acquisition</strong>: launching targeted campaigns—DEX onboarding rewards, wallet connection bonuses, cross-chain bridge credits—to boost both DAU and volume.</li>
+              <li><strong>Developer engagement</strong>: hackathons, grants, and tool integrations to build on Base (and later Solana) via DHB-native SDKs.</li>
+            </ol>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-royal-blue mb-4 font-exo">🔭 Looking forward</h3>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              By <strong>discontinuing Ethereum Mainnet support</strong>, we're enabling DHB to:
+            </p>
+            <ul className="list-disc list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+              <li><strong>Focus on performance</strong> – fastest and cheapest network with zero L1 baggage</li>
+              <li><strong>Ride the L2 wave</strong>—following the ecosystem's leader (Base) and trusted roadmap pushed by Vitalik and others</li>
+              <li><strong>Stay flexible</strong>—ready to add Solana and beyond where user value is proven</li>
+            </ul>
+            <p className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+              This is more than a technical shift—it's a strategic step to align DHB with the future of consumer crypto. We're excited to scale smarter, faster, and more cost‑effectively. The next chapter starts on Base… stay tuned.
+            </p>
+          </div>
+
+          <div className="p-6 bg-gradient-to-r from-royal-blue/10 to-middle-blue/10 rounded-lg border border-royal-blue/20">
+            <h3 className="text-xl font-bold text-royal-blue mb-4 font-exo">Summary</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-royal-blue/20">
+                    <th className="text-left p-3 font-bold text-royal-blue font-exo">Reason</th>
+                    <th className="text-left p-3 font-bold text-royal-blue font-exo">Benefit</th>
+                  </tr>
+                </thead>
+                <tbody className="text-royal-blue/80 font-exo">
+                  <tr className="border-b border-royal-blue/10">
+                    <td className="p-3">L2 is Ethereum's scaling future</td>
+                    <td className="p-3">Backed by Vitalik & Ethereum Foundation</td>
+                  </tr>
+                  <tr className="border-b border-royal-blue/10">
+                    <td className="p-3">Base offers speed, cost, and users</td>
+                    <td className="p-3">Leading L2 with Coinbase ecosystem</td>
+                  </tr>
+                  <tr className="border-b border-royal-blue/10">
+                    <td className="p-3">Solana integration planned</td>
+                    <td className="p-3">Broader performance & DeFi reach</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3">Investment + campaigns</td>
+                    <td className="p-3">Ensures liquidity, users & growth</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="text-center py-6">
+            <p className="text-royal-blue font-exo font-semibold text-lg">
+              Let's build the next-gen of consumer crypto—on the right chains, right now.
+            </p>
+          </div>
+        </div>
+      );
+    }
+  }
+
   // Default to paragraph
   const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
   return <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
