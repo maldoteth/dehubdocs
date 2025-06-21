@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -181,24 +182,21 @@ const DocsLayoutContent = () => {
       {/* Header */}
       <header className="bg-plain-white/90 backdrop-blur-sm border-b border-sky-blue/20 sticky top-0 z-40">
         <div className="flex items-center justify-between px-4 h-16">
-          <div className="flex items-center space-x-4">
-            <button onClick={() => setSidebarOpen(!sidebarOpen)} className="lg:hidden p-2 rounded-md hover:bg-sky-blue/10 transition-colors">
+          {/* Mobile Layout */}
+          <div className="flex items-center lg:hidden w-full">
+            {/* Left: Hamburger Menu */}
+            <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2 rounded-md hover:bg-sky-blue/10 transition-colors">
               <Menu className="w-5 h-5 text-royal-blue" />
             </button>
-            <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-royal-blue">
-              <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
-            </Link>
-          </div>
-
-          {/* Search Bar - Moved to right side for tablet and desktop */}
-          <div className="hidden sm:flex flex-1 max-w-lg justify-end">
-            <div className="w-full max-w-sm">
-              <SearchTrigger />
+            
+            {/* Center: Logo */}
+            <div className="flex-1 flex justify-center">
+              <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-royal-blue">
+                <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
+              </Link>
             </div>
-          </div>
-
-          {/* Mobile Search Button */}
-          <div className="sm:hidden">
+            
+            {/* Right: Search Button */}
             <Button
               variant="ghost"
               size="sm"
@@ -207,6 +205,20 @@ const DocsLayoutContent = () => {
             >
               <Search className="w-5 h-5 text-royal-blue" />
             </Button>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-royal-blue">
+              <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
+            </Link>
+          </div>
+
+          {/* Desktop Search Bar */}
+          <div className="hidden lg:flex flex-1 max-w-lg justify-end">
+            <div className="w-full max-w-sm">
+              <SearchTrigger />
+            </div>
           </div>
         </div>
       </header>
