@@ -7,7 +7,7 @@ const FAQ = () => {
   const faqData = [
     {
       question: "What is DeHub?",
-      answer: "DeHub is a decentralised user owned alternative to legacy media apps such as X, Facebook, YouTube and Rumble, that utilises the advancements in blockchain to offer users a whole new world of possibilities."
+      answer: "DeHub is a decentralised user owned alternative to legacy media apps such as X, Facebook, YouTube and Rumble, that utilises the advancements in blockchain technology to offer users a whole new world of possibilities."
     },
     {
       question: "What is the DHB token used for?",
