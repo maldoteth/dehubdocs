@@ -5,9 +5,7 @@ const Games = () => {
       {/* Header Section */}
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-royal-blue mb-4">Games</h1>
-        <p className="text-xl text-royal-blue/80 max-w-3xl mx-auto">
-          Sustainable play and win to earn with no dilution or inflation.
-        </p>
+        <p className="text-xl text-royal-blue/80 max-w-3xl mx-auto">At the ever intertwining intersection of gaming and streaming.</p>
       </div>
 
       {/* Main Content */}
