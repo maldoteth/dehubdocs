@@ -1,4 +1,5 @@
 
+
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -214,9 +215,9 @@ const DocsLayoutContent = () => {
             </Link>
           </div>
 
-          {/* Desktop Search Bar */}
-          <div className="hidden lg:flex flex-1 max-w-lg justify-end">
-            <div className="w-full max-w-sm">
+          {/* Desktop Search Bar - Positioned at far right */}
+          <div className="hidden lg:block">
+            <div className="w-64">
               <SearchTrigger />
             </div>
           </div>
@@ -314,3 +315,4 @@ const DocsLayoutContent = () => {
 export const DocsLayout = () => {
   return <DocsLayoutContent />;
 };
+
