@@ -49,8 +49,9 @@ const DocsHome = () => {
   };
 
   // Manual last updated date - update this when you publish changes
-  const lastPublishedDate = new Date('2024-06-11T16:20:00'); // June 11, 2024 at 16:20
+  const lastPublishedDate = new Date('2024-06-19T16:20:00'); // June 19, 2024 at 16:20
 
+  // Quick Links
   const quickLinks = [{
     title: 'Basescan',
     description: 'View on Base network',
@@ -80,6 +81,8 @@ const DocsHome = () => {
     color: 'from-middle-blue to-royal-blue',
     external: true
   }];
+
+  // Features
   const features = [{
     icon: Zap,
     title: 'Fast & Reliable',
@@ -97,6 +100,7 @@ const DocsHome = () => {
     title: 'Community',
     description: 'An established and supportive community here since 2021'
   }];
+
   return <div className="space-y-12">
       {/* Hero Section */}
       <div className="text-center space-y-6">
