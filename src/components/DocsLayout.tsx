@@ -133,7 +133,7 @@ const menuItems = [{
     }
   ]
 }, {
-  title: 'More',
+  title: 'Key Info',
   items: [
     {
       title: 'Blog',
