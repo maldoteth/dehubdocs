@@ -1,4 +1,3 @@
-
 import { Suspense, lazy } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -39,6 +38,7 @@ const TokenStake = lazy(() => import("./pages/docs/TokenStake"));
 const Roadmap = lazy(() => import("./pages/docs/Roadmap"));
 const Blog = lazy(() => import("./pages/docs/Blog"));
 const BlogPost = lazy(() => import("./pages/docs/BlogPost"));
+const FAQ = lazy(() => import("./pages/docs/FAQ"));
 
 // Loading component for Suspense fallback
 const PageLoader = () => (
@@ -207,6 +207,7 @@ const App = () => (
                     <BlogPost />
                   </Suspense>
                 } />
+                <Route path="/docs/faq" element={<FAQ />} />
               </Route>
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

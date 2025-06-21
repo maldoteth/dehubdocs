@@ -135,6 +135,11 @@ const menuItems = [{
       title: 'Blog',
       path: '/docs/blog',
       icon: '📝'
+    },
+    {
+      title: 'FAQ',
+      path: '/docs/faq',
+      icon: '❓'
     }
   ]
 }, {
