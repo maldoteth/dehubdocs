@@ -130,7 +130,11 @@ const menuItems = [{
       path: 'https://www.coingecko.com/en/coins/dehub',
       icon: '🦎',
       external: true
-    },
+    }
+  ]
+}, {
+  title: 'More',
+  items: [
     {
       title: 'Blog',
       path: '/docs/blog',
