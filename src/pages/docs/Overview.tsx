@@ -8,7 +8,7 @@ const Overview = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [showEditControls, setShowEditControls] = useState(false);
   const [editableContent, setEditableContent] = useState({
-    title: "DeHub: The Future is Decentralised",
+    title: "DeHub: A Decentralised, User Owned Alternative To Legacy Media Apps.",
     subtitle: "Live forever onchain, free from censorship or limitations of legacy media apps.",
     paragraph1: "Imagine a world where creators own their audience data, control their content distribution, and never fear censorship or demonetization. DeHub makes this a reality as a decentralised and user owned alternative to apps such as YouTube, X, Rumble, Twitch and Patreon. Powered by its own utility token and cutting-edge DePIN infrastructure that's reshaping how content is hosted, transcoded, and delivered globally.",
     paragraph2: "Built by gamers & streamers, we've solved the crypto complexity problem. Our platform delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Just pure creative freedom with blockchain-verified earnings visible on our public leaderboards.",
