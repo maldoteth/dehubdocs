@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -754,11 +755,6 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Launch fiat off-ramp functionality for seamless token-to-cash conversion</span>
-                      </div>
-                      
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
                         <span>Begin Solana, Hyperliquid and Sui integrations for in-app use</span>
                       </div>
                       <div className="flex">
@@ -790,6 +786,10 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Launch fiat off-ramp functionality for seamless token-to-cash conversion</span>
+                      </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>App store re-listings</span>
