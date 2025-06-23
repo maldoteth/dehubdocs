@@ -867,7 +867,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Windows, MAC OS, TV & game console apps</span>
+                        <span>TV &amp; game console apps for maximum global accessbility </span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
