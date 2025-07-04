@@ -383,7 +383,7 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
           />
         </div>,
         <p key={`${index}-calculator-text`} className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Check your allocations here: <a href="https://lastchadstanding.com/docs#airdrop-calculator" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue transition-colors underline">https://lastchadstanding.com/docs#airdrop-calculator</a>
+          Check your allocations here: <a href="https://lastchadstanding.com/docs" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue transition-colors underline">https://lastchadstanding.com/docs</a>
         </p>
       ];
     }
@@ -400,7 +400,7 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
           />
         </div>,
         <p key={`${index}-calculator-text`} className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
-          Check your allocations here: <a href="https://lastchadstanding.com/docs#airdrop-calculator" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue transition-colors underline">https://lastchadstanding.com/docs#airdrop-calculator</a>
+          Check your allocations here: <a href="https://lastchadstanding.com/docs" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue transition-colors underline">https://lastchadstanding.com/docs</a>
         </p>
       ];
     }
