@@ -939,6 +939,8 @@ const flagshipGameLaunchPost: BlogPostType = {
     **Total DHB Holdings:** 2,903,416,217
 
     Your share equals your proportional stake or holdings.
+
+    Check your allocations here: https://lastchadstanding.com/docs#airdrop-calculator
   `,
   bannerImage: '/lovable-uploads/f8cf3fce-cacb-4696-b06d-8b1e2a5d170a.png',
   bannerImageAlt: 'Military helicopter in flight representing the flagship game launch and strategic partnerships',
