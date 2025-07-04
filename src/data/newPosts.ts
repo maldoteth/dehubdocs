@@ -897,45 +897,47 @@ const flagshipGameLaunchPost: BlogPostType = {
   content: `
     ## DeHub's Flag Ship Game Launch & Partner Airdrop
 
-    We're thrilled to officially confirm the airdrop allocation for our flagship game, Last Chad Standing (LCS) — and our most anticipated partner launch yet.
+    We're thrilled to officially confirm the airdrop allocation for our flagship game, Last Chad Standing (LCS) and our most anticipated partner launch yet.
 
-    ### 🏠 DeHub: The Home of Last Chad Standing
+    ### DeHub: The Home of Last Chad Standing
 
-    DeHub will serve as the central hub for all things LCS — from exclusive livestreams and high-stakes tournaments to wild community showdowns. If you're looking for the heart of the action, this is it.
+    DeHub will serve as the central hub for all things LCS, from exclusive livestreams and high-stakes tournaments to wild community showdowns. If you're looking for the heart of the action, this is it.
 
-    But that's not all — we've got something special for our day-one supporters.
+    But that's not all. We've got something special for our day-one supporters.
 
-    ### ⏳ OGs, We See You
+    ### OGs, We See You
 
-    The OG Bonus is a massive shoutout to anyone who's been staking $DHB since the protocol first launched 864 days ago. How time flies! 😲
+    The OG Bonus is a massive shoutout to anyone who's been staking DHB since the protocol first launched 864 days ago. How time flies!
 
     **Wallet address of original DeHub staking contract:**
-    🔗 View on BscScan
+    View on BscScan
 
-    ### 🌍 Taking the World by Storm
+    ### Taking the World by Storm
 
-    Our global launch campaign is about to hit full throttle. We're going beyond Web3 — tapping into legacy media platforms and teaming up with stars from the UFC, Bellator, Oktagon, and more to ensure everyone hears about Last Chad Standing.
+    Our global launch campaign is about to hit full throttle. We're going beyond Web3, tapping into legacy media platforms and teaming up with stars from the UFC, Bellator, Oktagon, and more to ensure everyone hears about Last Chad Standing.
 
-    ### 💰 DeHub Airdrop Allocation: What You Need to Know
+    ### DeHub Airdrop Allocation: What You Need to Know
 
     **Total DeHub Allocation: 10% of total supply**
-    → 10,000,000,000 $DHB
+    10,000,000,000 DHB
 
-    | Pool | Allocation |
-    |------|------------|
-    | Stakers | 7.5% (7.5B tokens) |
-    | Holders | 2.5% (2.5B tokens) |
+    **Pool Allocation:**
+    - Stakers: 7.5% (7.5B tokens)
+    - Holders: 2.5% (2.5B tokens)
 
-    ### 🎖 Bonus Breakdown
+    ### Bonus Breakdown
 
-    | Bonus Type | Eligibility | Multiplier |
-    |------------|-------------|------------|
-    | OG Bonus | Staked since protocol launch | 2x |
-    | Veteran Bonus | Staked before Nov 16, 2024 | 1.3x |
+    **OG Bonus**
+    - Eligibility: Staked since protocol launch
+    - Multiplier: 2x
 
-    ⚠️ **Bonuses are mutually exclusive. No stacking.**
+    **Veteran Bonus**
+    - Eligibility: Staked before Nov 16, 2024
+    - Multiplier: 1.3x
 
-    ### 📊 Token Generation Event (TGE) Estimates
+    **Important:** Bonuses are mutually exclusive. No stacking.
+
+    ### Token Generation Event (TGE) Estimates
 
     **Estimated TGE Price:** $0.0002
 
@@ -943,13 +945,14 @@ const flagshipGameLaunchPost: BlogPostType = {
 
     **Total DHB Holdings:** 2,903,416,217
 
-    Your share = proportional to your stake or holdings.
+    Your share equals your proportional stake or holdings.
 
-    ### 🏁 Ready for the Chad Era?
+    ### Ready for the Chad Era?
 
     The countdown to Last Chad Standing has begun. Whether you're an OG staker or just joining the DeHub revolution, this airdrop is your ticket to be part of gaming history.
 
     Stay tuned. Train hard. Stake smart.
+
     **The last Chad always stands tall.**
   `,
   bannerImage: '/lovable-uploads/f8cf3fce-cacb-4696-b06d-8b1e2a5d170a.png',
@@ -957,7 +960,7 @@ const flagshipGameLaunchPost: BlogPostType = {
   author: {
     name: 'DeHub Team',
   },
-  publishedAt: '2025-06-04T12:00:00.000Z',
+  publishedAt: '2025-07-04T12:00:00.000Z',
   tags: ['Gaming', 'Airdrop', 'Last Chad Standing', 'LCS', 'Partnership'],
   readingTime: 5,
   featured: false,
