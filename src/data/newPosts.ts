@@ -905,13 +905,6 @@ const flagshipGameLaunchPost: BlogPostType = {
 
     But that's not all. We've got something special for our day-one supporters.
 
-    ### OGs, We See You
-
-    The OG Bonus is a massive shoutout to anyone who's been staking DHB since the protocol first launched 864 days ago. How time flies!
-
-    **Wallet address of original DeHub staking contract:**
-    View on BscScan
-
     ### Taking the World by Storm
 
     Our global launch campaign is about to hit full throttle. We're going beyond Web3, tapping into legacy media platforms and teaming up with stars from the UFC, Bellator, Oktagon, and more to ensure everyone hears about Last Chad Standing.
