@@ -370,6 +370,27 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
     }
   }
 
+  // Check for flagship game blog post and add airdrop calculator
+  if (window.location.pathname.includes('dehub-flagship-game-launch-partner-airdrop')) {
+    // If this is the paragraph containing "The last Chad always stands tall"
+    if (block.includes('The last Chad always stands tall')) {
+      const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
+      return [
+        <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />,
+        <div key={`${index}-airdrop-calculator`} className="my-8 rounded-xl overflow-hidden">
+          <img 
+            src="/lovable-uploads/d306700c-5d81-4ec5-8010-864d72d705a2.png" 
+            alt="DeHub Airdrop Calculator interface showing allocation calculations" 
+            className="w-full h-auto object-cover"
+          />
+        </div>,
+        <p key={`${index}-calculator-text`} className="text-royal-blue/80 mb-4 leading-relaxed font-exo">
+          Check your allocations here: <a href="https://lastchadstanding.com/docs#airdrop-calculator" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue transition-colors underline">https://lastchadstanding.com/docs#airdrop-calculator</a>
+        </p>
+      ];
+    }
+  }
+
   // Default to paragraph
   const processedContent = processLineForHtml(block.replace(/\n/g, ' '));
   return <p key={index} className="text-royal-blue/80 mb-4 leading-relaxed font-exo" dangerouslySetInnerHTML={createSanitizedHtml(processedContent)} />;
