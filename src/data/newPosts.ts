@@ -915,7 +915,7 @@ const flagshipGameLaunchPost: BlogPostType = {
 
     This is the **only modern MMA game on PC** that delivers authentic mixed martial arts combat in a battle royale format. While other games focus on traditional fighting mechanics or generic battle royale gameplay, LCS combines the technical depth of MMA with the strategic intensity of last-person-standing competition.
 
-    What makes LCS truly special is that it's the **only pure fighter battle royale ever created**. Every aspect of the game is built around hand-to-hand combat, grappling, and mixed martial arts techniques—no weapons, no gimmicks, just raw fighting skill and strategy.
+    What makes LCS truly special is that it's the **only pure fighter battle royale ever created**. Every aspect of the game is built around hand-to-hand combat, grappling, and mixed martial arts techniques—no firearms, no gimmicks, just raw fighting skill and strategy.
 
     Stay updated on all the latest developments, fighter reveals, and gameplay features at [lastchadstanding.com](https://lastchadstanding.com) where you can dive deep into the world that's about to change gaming forever.
 
