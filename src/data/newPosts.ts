@@ -909,6 +909,16 @@ const flagshipGameLaunchPost: BlogPostType = {
 
     Our global launch campaign is about to hit full throttle. We're going beyond Web3, tapping into legacy media platforms and teaming up with stars from the UFC, Bellator, Oktagon, and more to ensure everyone hears about Last Chad Standing.
 
+    ### The First-Ever MMA Battle Royale
+
+    Last Chad Standing (LCS) isn't just another fighting game—it's a groundbreaking experience that's redefining what combat sports gaming can be. As the **first-ever MMA Battle Royale**, LCS breaks new ground in both the fighting game genre and the battle royale space.
+
+    This is the **only modern MMA game on PC** that delivers authentic mixed martial arts combat in a battle royale format. While other games focus on traditional fighting mechanics or generic battle royale gameplay, LCS combines the technical depth of MMA with the strategic intensity of last-person-standing competition.
+
+    What makes LCS truly special is that it's the **only pure fighter battle royale ever created**. Every aspect of the game is built around hand-to-hand combat, grappling, and mixed martial arts techniques—no weapons, no gimmicks, just raw fighting skill and strategy.
+
+    Stay updated on all the latest developments, fighter reveals, and gameplay features at [lastchadstanding.com](https://lastchadstanding.com) where you can dive deep into the world that's about to change gaming forever.
+
     ### DeHub Airdrop Allocation: What You Need to Know
 
     **Total DeHub Allocation: 10% of total supply**
