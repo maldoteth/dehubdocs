@@ -939,14 +939,6 @@ const flagshipGameLaunchPost: BlogPostType = {
     **Total DHB Holdings:** 2,903,416,217
 
     Your share equals your proportional stake or holdings.
-
-    ### Ready for the Chad Era?
-
-    The countdown to Last Chad Standing has begun. Whether you're an OG staker or just joining the DeHub revolution, this airdrop is your ticket to be part of gaming history.
-
-    Stay tuned. Train hard. Stake smart.
-
-    **The last Chad always stands tall.**
   `,
   bannerImage: '/lovable-uploads/f8cf3fce-cacb-4696-b06d-8b1e2a5d170a.png',
   bannerImageAlt: 'Military helicopter in flight representing the flagship game launch and strategic partnerships',
