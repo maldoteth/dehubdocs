@@ -8,12 +8,16 @@ import { BlogSEOHelper } from '@/components/blog/BlogSEOHelper';
 import { BlogPostHeader } from '@/components/blog/BlogPostHeader';
 import { BlogPostBody } from '@/components/blog/BlogPostBody';
 import { BlogPostFooter } from '@/components/blog/BlogPostFooter';
+import { RelatedPosts } from '@/components/blog/RelatedPosts';
+import { BreadcrumbNavigation } from '@/components/blog/BreadcrumbNavigation';
 import { raffleContent } from '@/data/raffleContent';
 import { getNewPostBySlug, excludedTitles } from '@/data/newPosts';
+import { useBlogData } from '@/hooks/useBlogData';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const location = useLocation();
+  const { allPosts } = useBlogData();
   
   let post = slug ? getNewPostBySlug(slug) || getPostBySlug(slug) : null;
 
@@ -70,7 +74,7 @@ const BlogPost = () => {
       />
       <BlogSEOHelper />
       <div className="max-w-4xl mx-auto">
-
+        <BreadcrumbNavigation currentPost={post} />
         <article>
           <BlogPostHeader 
             post={post} 
@@ -84,6 +88,7 @@ const BlogPost = () => {
             postTitle={post.title} 
             imageUrl={fullImageUrl || undefined}
           />
+          <RelatedPosts currentPost={post} allPosts={allPosts} />
         </article>
       </div>
     </>

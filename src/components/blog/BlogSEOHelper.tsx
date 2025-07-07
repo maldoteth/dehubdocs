@@ -24,11 +24,11 @@ export const BlogSEOHelper: React.FC = () => {
       <meta property="fb:app_id" content="your-facebook-app-id" />
       <meta name="twitter:domain" content="dehub.io" />
       
-      {/* Google Search Console verification */}
-      <meta name="google-site-verification" content="your-google-verification-code" />
+      {/* Google Search Console verification - replace with actual codes */}
+      <meta name="google-site-verification" content="dehub-google-verification-placeholder" />
       
-      {/* Bing Webmaster Tools verification */}
-      <meta name="msvalidate.01" content="your-bing-verification-code" />
+      {/* Bing Webmaster Tools verification - replace with actual codes */}
+      <meta name="msvalidate.01" content="dehub-bing-verification-placeholder" />
     </Helmet>
   );
 };

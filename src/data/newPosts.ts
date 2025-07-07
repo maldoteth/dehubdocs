@@ -206,7 +206,7 @@ const interactiveStreamingPost: BlogPostType = {
   author: {
     name: 'DeHub Team',
   },
-  publishedAt: '2025-03-10T12:00:00.000Z',
+  publishedAt: '2024-03-10T12:00:00.000Z',
   tags: ['Live Streaming', 'Blockchain', 'Interactive', 'Tips', 'Q1 2025'],
   readingTime: 8,
   featured: false,
