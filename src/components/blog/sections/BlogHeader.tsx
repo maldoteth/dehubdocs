@@ -1,18 +1,10 @@
-
 import React from 'react';
 import { AlertCircle } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-
 export const BlogHeader: React.FC = () => {
-  return (
-    <>
+  return <>
       {/* Construction Notice */}
-      <Alert className="bg-amber-50 border-amber-200">
-        <AlertCircle className="h-4 w-4 text-amber-600" />
-        <AlertDescription className="text-amber-800 font-exo">
-          Our new blog is under construction, stay tuned for the official release
-        </AlertDescription>
-      </Alert>
+      
 
       {/* Header */}
       <div className="text-center space-y-6">
@@ -25,6 +17,5 @@ export const BlogHeader: React.FC = () => {
           Stay updated with the latest news, insights, and stories from the DeHub ecosystem. From announcements to tech guides, everything can be found here.
         </p>
       </div>
-    </>
-  );
+    </>;
 };
