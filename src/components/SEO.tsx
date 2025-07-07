@@ -32,6 +32,7 @@ const SEO: React.FC<SEOProps> = ({
   // Enhanced structured data for cryptocurrency/finance articles
   const isCryptoArticle = title.includes('DHB') || title.includes('Coinbase') || title.includes('Token') || tags?.some(tag => ['cryptocurrency', 'blockchain', 'trading', 'defi'].includes(tag.toLowerCase()));
   
+  // Main structured data
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': type === 'article' ? 'Article' : 'WebSite',
@@ -46,10 +47,15 @@ const SEO: React.FC<SEOProps> = ({
       'publisher': {
         '@type': 'Organization',
         'name': 'DeHub',
+        'url': 'https://dehub.io',
         'logo': {
           '@type': 'ImageObject',
           'url': `${baseUrl}/lovable-uploads/b8f9c8a0-4e2b-4d5c-9a1f-3e7d6c8b9a0e.png`
-        }
+        },
+        'sameAs': [
+          'https://twitter.com/DeHubOfficial',
+          'https://t.me/DeHubOfficial'
+        ]
       },
       ...(authorName && {
         'author': {
@@ -57,6 +63,10 @@ const SEO: React.FC<SEOProps> = ({
           'name': authorName,
         }
       }),
+      'mainEntityOfPage': {
+        '@type': 'WebPage',
+        '@id': fullUrl
+      },
       ...(isCryptoArticle && {
         'about': [
           {
@@ -66,12 +76,34 @@ const SEO: React.FC<SEOProps> = ({
           {
             '@type': 'Thing', 
             'name': 'Blockchain Technology'
+          },
+          {
+            '@type': 'Thing',
+            'name': 'DeFi'
           }
         ],
         'keywords': tags?.join(', ') || 'cryptocurrency, blockchain, DHB token, Coinbase, crypto trading'
       })
     })
   };
+
+  // Blog-specific structured data for main blog page
+  const blogStructuredData = url === '/docs/blog' ? {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    'name': 'DeHub Community Blog',
+    'description': 'Stay updated with the latest news, insights, and stories from the DeHub ecosystem',
+    'url': fullUrl,
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'DeHub',
+      'url': 'https://dehub.io'
+    },
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': fullUrl
+    }
+  } : null;
 
   return (
     <Helmet>
@@ -121,6 +153,11 @@ const SEO: React.FC<SEOProps> = ({
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
+      {blogStructuredData && (
+        <script type="application/ld+json">
+          {JSON.stringify(blogStructuredData)}
+        </script>
+      )}
     </Helmet>
   );
 };

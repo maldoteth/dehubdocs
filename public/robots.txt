@@ -13,5 +13,11 @@ Allow: /
 
 User-agent: *
 Allow: /
+Crawl-delay: 1
+
+# Important pages for indexing
+Allow: /docs/blog
+Allow: /docs/blog/*
 
 Sitemap: https://dehub.io/sitemap.xml
+Sitemap: https://dehub.io/rss.xml

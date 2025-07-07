@@ -4,6 +4,7 @@ import { useParams, Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { getPostBySlug, formatDate } from '@/utils/blogUtils';
 import SEO from '@/components/SEO';
+import { BlogSEOHelper } from '@/components/blog/BlogSEOHelper';
 import { BlogPostHeader } from '@/components/blog/BlogPostHeader';
 import { BlogPostBody } from '@/components/blog/BlogPostBody';
 import { BlogPostFooter } from '@/components/blog/BlogPostFooter';
@@ -67,6 +68,7 @@ const BlogPost = () => {
         authorName={post.author.name}
         tags={post.tags}
       />
+      <BlogSEOHelper />
       <div className="max-w-4xl mx-auto">
 
         <article>
