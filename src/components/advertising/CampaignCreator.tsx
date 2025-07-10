@@ -217,7 +217,7 @@ const CampaignCreator = () => {
           </div>
           <CardTitle className="text-xl md:text-2xl flex items-center justify-center gap-2">
             <Handshake className="hidden md:block w-5 h-5 md:w-6 md:h-6 text-primary" />
-            Partner with DeHub for Our Launch
+            Partner with DeHub for Our App Launch
           </CardTitle>
           <p className="text-base md:text-lg text-muted-foreground px-2">
             Join forces and amplify both our brands with exclusive co-marketing opportunities
