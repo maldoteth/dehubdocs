@@ -244,6 +244,10 @@ const CampaignCreator = () => {
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <span>Revenue sharing on collaborative campaigns</span>
                 </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                  <span>Promote to a holder base which saw a peak all time high of over $500,000,000 FDV</span>
+                </li>
               </ul>
             </div>
             <div className="space-y-4">
