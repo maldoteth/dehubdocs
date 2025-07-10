@@ -105,17 +105,17 @@ const Advertising = () => {
         <CardContent>
           <Tabs defaultValue="creator" className="w-full">
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="creator" className="flex items-center gap-2">
+              <TabsTrigger value="creator" className="flex items-center justify-center gap-2">
                 <Target className="w-4 h-4" />
-                Campaign Creator
+                <span className="hidden sm:inline">Campaign Creator</span>
               </TabsTrigger>
-              <TabsTrigger value="analytics" className="flex items-center gap-2">
+              <TabsTrigger value="analytics" className="flex items-center justify-center gap-2">
                 <BarChart3 className="w-4 h-4" />
-                Analytics
+                <span className="hidden sm:inline">Analytics</span>
               </TabsTrigger>
-              <TabsTrigger value="calculator" className="flex items-center gap-2">
+              <TabsTrigger value="calculator" className="flex items-center justify-center gap-2">
                 <Calculator className="w-4 h-4" />
-                Budget Calculator
+                <span className="hidden sm:inline">Budget Calculator</span>
               </TabsTrigger>
             </TabsList>
             
