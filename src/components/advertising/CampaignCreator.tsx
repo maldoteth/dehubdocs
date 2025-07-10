@@ -271,18 +271,18 @@ const CampaignCreator = () => {
                 <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Early access to revolutionary POVR targeting technology</span>
                 </div>
-                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
+                <div className="p-3 md:p-4 rounded-lg bg-secondary/10 border border-secondary/20">
                   <span className="text-sm md:text-base">Featured placement as exclusive launch partner</span>
                 </div>
-                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
+                <div className="p-3 md:p-4 rounded-lg bg-accent/10 border border-accent/20">
                   <span className="text-sm md:text-base">Joint press releases and co-marketing campaigns</span>
                 </div>
                 
                 
-                <div className="p-3 md:p-4 rounded-lg bg-secondary/10 border border-secondary/20">
+                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Promote to a holder base which saw a peak all time high of over $500,000,000 FDV</span>
                 </div>
-                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
+                <div className="p-3 md:p-4 rounded-lg bg-secondary/10 border border-secondary/20">
                   <span className="text-sm md:text-base">Promote to a holder base which saw a peak all time high of over $500,000,000 FDV</span>
                 </div>
               </div>
