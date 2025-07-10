@@ -355,32 +355,26 @@ const CampaignCreator = () => {
                 <TrendingUp className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                 Partnership Benefits
               </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+              <div className="space-y-3">
+                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Early access to revolutionary POVR targeting technology</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                </div>
+                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Featured placement as exclusive launch partner</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                </div>
+                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Joint press releases and co-marketing campaigns</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                </div>
+                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Access to our growing verified user community</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                </div>
+                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Revenue sharing on collaborative campaigns</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                </div>
+                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Promote to a holder base which saw a peak all time high of over $500,000,000 FDV</span>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
             <div className="space-y-4">
               <h3 className="font-semibold text-base md:text-lg flex items-center gap-2">
