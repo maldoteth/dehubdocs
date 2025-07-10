@@ -8,13 +8,15 @@ import { Badge } from '@/components/ui/badge';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Target, DollarSign, Users, Eye, Handshake, Rocket, Star, TrendingUp } from 'lucide-react';
+import { Target, DollarSign, Users, Eye, Handshake, Rocket, Star, TrendingUp, MapPin, Globe } from 'lucide-react';
 import { badgeTiers } from './utils/badgeTiers';
 
 const CampaignCreator = () => {
   const [selectedTiers, setSelectedTiers] = useState<string[]>([]);
   const [campaignType, setCampaignType] = useState('');
   const [budget, setBudget] = useState('');
+  const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
+  const [geoTargetingType, setGeoTargetingType] = useState('worldwide');
 
   // Badge tier data with images for UI display
   const badgeImages: Record<string, string> = {
@@ -32,6 +34,21 @@ const CampaignCreator = () => {
     'Great White': '/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png',
     'Blue Whale': '/lovable-uploads/fb9dfd31-d278-49fa-8ec8-1eee9ab74aef.png',
     'Megalodon': '/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png'
+  };
+
+  // Common countries for targeting
+  const countries = [
+    'United States', 'Canada', 'United Kingdom', 'Australia', 'Germany', 
+    'France', 'Japan', 'South Korea', 'Singapore', 'Netherlands',
+    'Switzerland', 'Sweden', 'Norway', 'Denmark', 'Finland'
+  ];
+
+  const handleCountryToggle = (country: string) => {
+    setSelectedCountries(prev => 
+      prev.includes(country) 
+        ? prev.filter(c => c !== country)
+        : [...prev, country]
+    );
   };
 
   // Convert audience numbers to formatted threshold strings
@@ -128,12 +145,86 @@ const CampaignCreator = () => {
                     <span className="font-semibold">{calculateEstimatedCost()}</span>
                   </div>
                   <div className="flex justify-between">
+                    <span>Selected Countries:</span>
+                    <span className="font-semibold">
+                      {geoTargetingType === 'worldwide' ? 'Worldwide' : selectedCountries.length}
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
                     <span>Selected Tiers:</span>
                     <span className="font-semibold">{selectedTiers.length}</span>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <MapPin className="w-5 h-5 text-middle-blue" />
+            Geographic Targeting
+          </CardTitle>
+          <p className="text-sm text-muted-foreground">
+            Select regions and countries to target your campaign audience
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div className="space-y-4">
+            <div>
+              <Label>Targeting Type</Label>
+              <Select value={geoTargetingType} onValueChange={setGeoTargetingType}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select targeting type" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="worldwide">
+                    <div className="flex items-center gap-2">
+                      <Globe className="w-4 h-4" />
+                      Worldwide
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="specific">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      Specific Countries
+                    </div>
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            {geoTargetingType === 'specific' && (
+              <div className="space-y-4">
+                <Label>Select Countries</Label>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-h-60 overflow-y-auto p-4 border rounded-lg bg-muted/20">
+                  {countries.map((country) => (
+                    <div 
+                      key={country}
+                      className={`flex items-center space-x-2 p-2 rounded cursor-pointer transition-colors ${
+                        selectedCountries.includes(country) 
+                          ? 'bg-middle-blue/10 text-middle-blue' 
+                          : 'hover:bg-muted/40'
+                      }`}
+                      onClick={() => handleCountryToggle(country)}
+                    >
+                      <Checkbox 
+                        checked={selectedCountries.includes(country)}
+                        onChange={() => handleCountryToggle(country)}
+                      />
+                      <span className="text-sm">{country}</span>
+                    </div>
+                  ))}
+                </div>
+                {selectedCountries.length > 0 && (
+                  <div className="text-sm text-muted-foreground">
+                    Selected: {selectedCountries.join(', ')}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </CardContent>
       </Card>
