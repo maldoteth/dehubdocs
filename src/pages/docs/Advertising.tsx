@@ -92,7 +92,7 @@ const Advertising = () => {
 
       <AdvertisingPricing />
 
-      <Card>
+      <Card className="bg-gradient-to-br from-green-500/10 to-green-600/20 border-green-500/20">
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
             <BarChart3 className="w-5 h-5 text-middle-blue" />
