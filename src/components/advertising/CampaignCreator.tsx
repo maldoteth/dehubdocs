@@ -190,7 +190,7 @@ const CampaignCreator = () => {
             ))}
           </div>
           
-          <div className="flex justify-end space-x-4 pt-6 border-t">
+          <div className="flex justify-end space-x-4">
             <Button variant="outline">Save as Draft</Button>
             <Button className="bg-middle-blue hover:bg-middle-blue/90 text-white">
               Launch Campaign
