@@ -3,23 +3,24 @@ export interface BadgeTier {
   name: string;
   cpm: number;
   audience: number;
+  holdings: string;
 }
 
 export const badgeTiers: BadgeTier[] = [
-  { name: 'No Badge', cpm: 2.50, audience: 500000 },
-  { name: 'Crab', cpm: 5.00, audience: 100000 },
-  { name: 'Lobster', cpm: 7.50, audience: 50000 },
-  { name: 'Piranha', cpm: 10.00, audience: 25000 },
-  { name: 'Tortoise', cpm: 12.50, audience: 15000 },
-  { name: 'Cobra', cpm: 15.00, audience: 8000 },
-  { name: 'Octopus', cpm: 17.50, audience: 4000 },
-  { name: 'Crocodile', cpm: 20.00, audience: 2000 },
-  { name: 'Dolphin', cpm: 22.50, audience: 1000 },
-  { name: 'Tiger Shark', cpm: 25.00, audience: 500 },
-  { name: 'Killer Whale', cpm: 27.50, audience: 250 },
-  { name: 'Great White', cpm: 30.00, audience: 100 },
-  { name: 'Blue Whale', cpm: 32.50, audience: 50 },
-  { name: 'Megalodon', cpm: 35.00, audience: 25 }
+  { name: 'No Badge', cpm: 2.50, audience: 500000, holdings: '< 10,000' },
+  { name: 'Crab', cpm: 5.00, audience: 100000, holdings: '10k+' },
+  { name: 'Lobster', cpm: 7.50, audience: 50000, holdings: '25k+' },
+  { name: 'Piranha', cpm: 10.00, audience: 25000, holdings: '50k+' },
+  { name: 'Tortoise', cpm: 12.50, audience: 15000, holdings: '100k+' },
+  { name: 'Cobra', cpm: 15.00, audience: 8000, holdings: '250k+' },
+  { name: 'Octopus', cpm: 17.50, audience: 4000, holdings: '500k+' },
+  { name: 'Crocodile', cpm: 20.00, audience: 2000, holdings: '1m+' },
+  { name: 'Dolphin', cpm: 22.50, audience: 1000, holdings: '2.5m+' },
+  { name: 'Tiger Shark', cpm: 25.00, audience: 500, holdings: '5m+' },
+  { name: 'Killer Whale', cpm: 27.50, audience: 250, holdings: '7.5m+' },
+  { name: 'Great White', cpm: 30.00, audience: 100, holdings: '10m+' },
+  { name: 'Blue Whale', cpm: 32.50, audience: 50, holdings: '25m+' },
+  { name: 'Megalodon', cpm: 35.00, audience: 25, holdings: '50m+' }
 ];
 
 export interface CampaignCalculations {

@@ -74,13 +74,6 @@ const CampaignCreator = () => {
     setSelectedCountries(prev => prev.filter(c => c !== country));
   };
 
-  // Convert audience numbers to formatted threshold strings
-  const getThresholdDisplay = (name: string, audience: number): string => {
-    if (name === 'No Badge') return '< 10,000';
-    if (audience >= 1000000) return `${(audience / 1000000).toFixed(0)}m+`;
-    if (audience >= 1000) return `${(audience / 1000).toFixed(0)}k+`;
-    return `${audience.toLocaleString()}+`;
-  };
 
   const handleTierToggle = (tierName: string) => {
     setSelectedTiers(prev => 
@@ -306,7 +299,7 @@ const CampaignCreator = () => {
                     <div className="space-y-1 text-xs text-muted-foreground">
                       <div className="flex justify-between">
                         <span>Holdings:</span>
-                        <span>{getThresholdDisplay(tier.name, tier.audience)} $DHB</span>
+                        <span>{tier.holdings} $DHB</span>
                       </div>
                       <div className="flex justify-between">
                         <span>CPM:</span>
