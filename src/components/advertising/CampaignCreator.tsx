@@ -216,7 +216,7 @@ const CampaignCreator = () => {
             </Badge>
           </div>
           <CardTitle className="text-xl md:text-2xl flex items-center justify-center gap-2">
-            <Handshake className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+            <Handshake className="hidden md:block w-5 h-5 md:w-6 md:h-6 text-primary" />
             Partner with DeHub for Our Launch
           </CardTitle>
           <p className="text-base md:text-lg text-muted-foreground px-2">
@@ -285,12 +285,15 @@ const CampaignCreator = () => {
             </div>
           </div>
           <div className="text-center pt-4 border-t">
+            <div className="md:hidden flex justify-center mb-4">
+              <Handshake className="w-8 h-8 text-primary" />
+            </div>
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 md:px-8 w-full md:w-auto text-sm md:text-base"
               onClick={() => window.open('https://forms.google.com/create', '_blank')}
             >
-              <Handshake className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+              <Handshake className="hidden md:block w-4 h-4 md:w-5 md:h-5 mr-2" />
               Become a Launch Partner
             </Button>
             <p className="text-xs md:text-sm text-muted-foreground mt-2 px-2">
