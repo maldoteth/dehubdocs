@@ -276,7 +276,7 @@ const CampaignCreator = () => {
         <CardContent>
           <div className="flex flex-col lg:flex-row gap-6">
             <div className="flex-1 w-full">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
                 {badgeTiers.map((tier) => (
                   <div 
                     key={tier.name}
