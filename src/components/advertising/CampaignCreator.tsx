@@ -9,28 +9,44 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Target, DollarSign, Users, Eye } from 'lucide-react';
+import { badgeTiers } from './utils/badgeTiers';
 
 const CampaignCreator = () => {
   const [selectedTiers, setSelectedTiers] = useState<string[]>([]);
   const [campaignType, setCampaignType] = useState('');
   const [budget, setBudget] = useState('');
 
-  const badgeTiers = [
-    { id: 'crab', name: 'Crab Badge', threshold: '10,000+', cpm: '$5.00', image: '/lovable-uploads/60bc125c-8efd-4058-9e12-7ca393df4fce.png' },
-    { id: 'lobster', name: 'Lobster Badge', threshold: '25,000+', cpm: '$7.50', image: '/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png' },
-    { id: 'piranha', name: 'Piranha Badge', threshold: '50,000+', cpm: '$10.00', image: '/lovable-uploads/38387f75-fd38-4380-9588-1f19f68d8435.png' },
-    { id: 'tortoise', name: 'Tortoise Badge', threshold: '100,000+', cpm: '$12.50', image: '/lovable-uploads/fc47a759-390a-4f41-ba96-5bc0066e82b9.png' },
-    { id: 'cobra', name: 'Cobra Badge', threshold: '250,000+', cpm: '$15.00', image: '/lovable-uploads/b3306c99-31b8-4bfc-bc25-f73abc68fc38.png' },
-    { id: 'octopus', name: 'Octopus Badge', threshold: '500,000+', cpm: '$17.50', image: '/lovable-uploads/8fcbb3f6-223d-4e2f-9d82-30082a175491.png' },
-    { id: 'crocodile', name: 'Crocodile Badge', threshold: '1,000,000+', cpm: '$20.00', image: '/lovable-uploads/c84eee0a-97c7-4938-9b9c-c991c802593e.png' },
-    { id: 'megalodon', name: 'Megalodon Badge', threshold: '50,000,000+', cpm: '$35.00', image: '/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png' }
-  ];
+  // Badge tier data with images for UI display
+  const badgeImages: Record<string, string> = {
+    'No Badge': '',
+    'Crab': '/lovable-uploads/60bc125c-8efd-4058-9e12-7ca393df4fce.png',
+    'Lobster': '/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png',
+    'Piranha': '/lovable-uploads/38387f75-fd38-4380-9588-1f19f68d8435.png',
+    'Tortoise': '/lovable-uploads/fc47a759-390a-4f41-ba96-5bc0066e82b9.png',
+    'Cobra': '/lovable-uploads/b3306c99-31b8-4bfc-bc25-f73abc68fc38.png',
+    'Octopus': '/lovable-uploads/8fcbb3f6-223d-4e2f-9d82-30082a175491.png',
+    'Crocodile': '/lovable-uploads/c84eee0a-97c7-4938-9b9c-c991c802593e.png',
+    'Dolphin': '/lovable-uploads/4558c158-75d9-40fc-adfa-41125344a48e.png',
+    'Tiger Shark': '/lovable-uploads/6be493f1-51b4-481b-9ca1-340c030b2ef8.png',
+    'Killer Whale': '/lovable-uploads/fcc288eb-67d7-49a0-b561-94bb5d1b8896.png',
+    'Great White': '/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png',
+    'Blue Whale': '/lovable-uploads/fb9dfd31-d278-49fa-8ec8-1eee9ab74aef.png',
+    'Megalodon': '/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png'
+  };
 
-  const handleTierToggle = (tierId: string) => {
+  // Convert audience numbers to formatted threshold strings
+  const getThresholdDisplay = (name: string, audience: number): string => {
+    if (name === 'No Badge') return '< 10,000';
+    if (audience >= 1000000) return `${(audience / 1000000).toFixed(0)}m+`;
+    if (audience >= 1000) return `${(audience / 1000).toFixed(0)}k+`;
+    return `${audience.toLocaleString()}+`;
+  };
+
+  const handleTierToggle = (tierName: string) => {
     setSelectedTiers(prev => 
-      prev.includes(tierId) 
-        ? prev.filter(id => id !== tierId)
-        : [...prev, tierId]
+      prev.includes(tierName) 
+        ? prev.filter(name => name !== tierName)
+        : [...prev, tierName]
     );
   };
 
@@ -41,8 +57,8 @@ const CampaignCreator = () => {
 
   const calculateEstimatedCost = () => {
     if (!budget) return 0;
-    const selectedTierData = badgeTiers.filter(tier => selectedTiers.includes(tier.id));
-    const avgCpm = selectedTierData.reduce((sum, tier) => sum + parseFloat(tier.cpm.replace('$', '')), 0) / selectedTierData.length || 0;
+    const selectedTierData = badgeTiers.filter(tier => selectedTiers.includes(tier.name));
+    const avgCpm = selectedTierData.reduce((sum, tier) => sum + tier.cpm, 0) / selectedTierData.length || 0;
     const budgetNum = parseFloat(budget);
     return (budgetNum / avgCpm * 1000).toFixed(0);
   };
@@ -133,37 +149,41 @@ const CampaignCreator = () => {
           </p>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {badgeTiers.map((tier) => (
               <div 
-                key={tier.id}
+                key={tier.name}
                 className={`border rounded-lg p-4 cursor-pointer transition-all hover:shadow-md ${
-                  selectedTiers.includes(tier.id) 
+                  selectedTiers.includes(tier.name) 
                     ? 'border-middle-blue bg-middle-blue/5' 
                     : 'border-gray-200'
                 }`}
-                onClick={() => handleTierToggle(tier.id)}
+                onClick={() => handleTierToggle(tier.name)}
               >
                 <div className="flex items-center space-x-2 mb-3">
                   <Checkbox 
-                    checked={selectedTiers.includes(tier.id)}
-                    onChange={() => handleTierToggle(tier.id)}
+                    checked={selectedTiers.includes(tier.name)}
+                    onChange={() => handleTierToggle(tier.name)}
                   />
-                  <img 
-                    src={tier.image} 
-                    alt={tier.name}
-                    className="w-6 h-6 object-contain"
-                  />
-                  <span className="font-medium text-sm">{tier.name}</span>
+                  {badgeImages[tier.name] ? (
+                    <img 
+                      src={badgeImages[tier.name]} 
+                      alt={tier.name}
+                      className="w-6 h-6 object-contain"
+                    />
+                  ) : (
+                    <div className="w-6 h-6 rounded-full bg-gray-300"></div>
+                  )}
+                  <span className="font-medium text-sm">{tier.name === 'No Badge' ? 'No Badge' : `${tier.name} Badge`}</span>
                 </div>
                 <div className="space-y-1 text-xs text-muted-foreground">
                   <div className="flex justify-between">
                     <span>Holdings:</span>
-                    <span>{tier.threshold} $DHB</span>
+                    <span>{getThresholdDisplay(tier.name, tier.audience)} $DHB</span>
                   </div>
                   <div className="flex justify-between">
                     <span>CPM:</span>
-                    <Badge variant="outline" className="text-xs">{tier.cpm}</Badge>
+                    <Badge variant="outline" className="text-xs">${tier.cpm.toFixed(2)}</Badge>
                   </div>
                 </div>
               </div>
