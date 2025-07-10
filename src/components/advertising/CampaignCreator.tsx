@@ -168,7 +168,7 @@ const CampaignCreator = () => {
                     <span className="font-semibold">{calculateEstimatedCost()}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Selected Countries:</span>
+                    <span>Countries:</span>
                     <span className="font-semibold">
                       {geoTargetingType === 'worldwide' ? 'Worldwide' : selectedCountries.length}
                     </span>
