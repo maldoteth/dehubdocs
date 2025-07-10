@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -10,7 +9,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Checkbox } from '@/components/ui/checkbox';
 import { Target, DollarSign, Users, Eye, Handshake, Rocket, Star, TrendingUp, MapPin, Globe } from 'lucide-react';
 import { badgeTiers } from './utils/badgeTiers';
-
 const CampaignCreator = () => {
   const [selectedTiers, setSelectedTiers] = useState<string[]>([]);
   const [campaignType, setCampaignType] = useState('');
@@ -37,57 +35,22 @@ const CampaignCreator = () => {
   };
 
   // All world countries for targeting
-  const countries = [
-    'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan',
-    'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi',
-    'Cambodia', 'Cameroon', 'Canada', 'Cape Verde', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic',
-    'Democratic Republic of the Congo', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic',
-    'East Timor', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia',
-    'Fiji', 'Finland', 'France',
-    'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana',
-    'Haiti', 'Honduras', 'Hungary',
-    'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Ivory Coast',
-    'Jamaica', 'Japan', 'Jordan',
-    'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan',
-    'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg',
-    'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar',
-    'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway',
-    'Oman',
-    'Pakistan', 'Palau', 'Palestine', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal',
-    'Qatar',
-    'Romania', 'Russia', 'Rwanda',
-    'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria',
-    'Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu',
-    'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan',
-    'Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam',
-    'Yemen',
-    'Zambia', 'Zimbabwe'
-  ];
-
+  const countries = ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Cape Verde', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Democratic Republic of the Congo', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Ivory Coast', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Palestine', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria', 'Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe'];
   const handleCountrySelect = (country: string) => {
     if (!selectedCountries.includes(country)) {
       setSelectedCountries(prev => [...prev, country]);
     }
   };
-
   const handleCountryRemove = (country: string) => {
     setSelectedCountries(prev => prev.filter(c => c !== country));
   };
-
-
   const handleTierToggle = (tierName: string) => {
-    setSelectedTiers(prev => 
-      prev.includes(tierName) 
-        ? prev.filter(name => name !== tierName)
-        : [...prev, tierName]
-    );
+    setSelectedTiers(prev => prev.includes(tierName) ? prev.filter(name => name !== tierName) : [...prev, tierName]);
   };
-
   const calculateEstimatedReach = () => {
     const baseReach = 10000;
     return selectedTiers.length * baseReach * (selectedTiers.length * 0.5 + 1);
   };
-
   const calculateEstimatedCost = () => {
     if (!budget) return 0;
     const selectedTierData = badgeTiers.filter(tier => selectedTiers.includes(tier.name));
@@ -95,9 +58,7 @@ const CampaignCreator = () => {
     const budgetNum = parseFloat(budget);
     return (budgetNum / avgCpm * 1000).toFixed(0);
   };
-
-  return (
-    <div className="space-y-6">
+  return <div className="space-y-6">
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
@@ -130,13 +91,7 @@ const CampaignCreator = () => {
 
               <div>
                 <Label htmlFor="budget">Daily Budget ($)</Label>
-                <Input 
-                  id="budget" 
-                  type="number" 
-                  placeholder="Enter daily budget"
-                  value={budget}
-                  onChange={(e) => setBudget(e.target.value)}
-                />
+                <Input id="budget" type="number" placeholder="Enter daily budget" value={budget} onChange={e => setBudget(e.target.value)} />
               </div>
 
               <div>
@@ -212,46 +167,31 @@ const CampaignCreator = () => {
               </Select>
             </div>
 
-            {geoTargetingType === 'specific' && (
-              <div className="space-y-4">
+            {geoTargetingType === 'specific' && <div className="space-y-4">
                 <Label>Select Countries</Label>
                 <Select onValueChange={handleCountrySelect}>
                   <SelectTrigger>
                     <SelectValue placeholder="Choose countries to target" />
                   </SelectTrigger>
                   <SelectContent className="max-h-60">
-                    {countries.filter(country => !selectedCountries.includes(country)).map((country) => (
-                      <SelectItem key={country} value={country}>
+                    {countries.filter(country => !selectedCountries.includes(country)).map(country => <SelectItem key={country} value={country}>
                         {country}
-                      </SelectItem>
-                    ))}
+                      </SelectItem>)}
                   </SelectContent>
                 </Select>
                 
-                {selectedCountries.length > 0 && (
-                  <div className="space-y-2">
+                {selectedCountries.length > 0 && <div className="space-y-2">
                     <Label className="text-sm">Selected Countries ({selectedCountries.length})</Label>
                     <div className="flex flex-wrap gap-2 p-3 border rounded-lg bg-muted/20 max-h-32 overflow-y-auto">
-                      {selectedCountries.map((country) => (
-                        <Badge 
-                          key={country} 
-                          variant="secondary" 
-                          className="flex items-center gap-1"
-                        >
+                      {selectedCountries.map(country => <Badge key={country} variant="secondary" className="flex items-center gap-1">
                           {country}
-                          <button 
-                            onClick={() => handleCountryRemove(country)}
-                            className="ml-1 hover:bg-destructive/20 rounded-full w-4 h-4 flex items-center justify-center"
-                          >
+                          <button onClick={() => handleCountryRemove(country)} className="ml-1 hover:bg-destructive/20 rounded-full w-4 h-4 flex items-center justify-center">
                             ×
                           </button>
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
-                  </div>
-                )}
-              </div>
-            )}
+                  </div>}
+              </div>}
           </div>
         </CardContent>
       </Card>
@@ -270,30 +210,10 @@ const CampaignCreator = () => {
           <div className="flex flex-col gap-6">
             <div className="w-full">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {badgeTiers.map((tier) => (
-                  <div 
-                    key={tier.name}
-                    className={`border rounded-lg p-4 cursor-pointer transition-all hover:shadow-md ${
-                      selectedTiers.includes(tier.name) 
-                        ? 'border-middle-blue bg-middle-blue/5' 
-                        : 'border-gray-200'
-                    }`}
-                    onClick={() => handleTierToggle(tier.name)}
-                  >
+                {badgeTiers.map(tier => <div key={tier.name} className={`border rounded-lg p-4 cursor-pointer transition-all hover:shadow-md ${selectedTiers.includes(tier.name) ? 'border-middle-blue bg-middle-blue/5' : 'border-gray-200'}`} onClick={() => handleTierToggle(tier.name)}>
                     <div className="flex items-center space-x-2 mb-3">
-                      <Checkbox 
-                        checked={selectedTiers.includes(tier.name)}
-                        onChange={() => handleTierToggle(tier.name)}
-                      />
-                      {badgeImages[tier.name] ? (
-                        <img 
-                          src={badgeImages[tier.name]} 
-                          alt={tier.name}
-                          className="w-6 h-6 object-contain"
-                        />
-                      ) : (
-                        <div className="w-6 h-6 rounded-full bg-gray-300"></div>
-                      )}
+                      <Checkbox checked={selectedTiers.includes(tier.name)} onChange={() => handleTierToggle(tier.name)} />
+                      {badgeImages[tier.name] ? <img src={badgeImages[tier.name]} alt={tier.name} className="w-6 h-6 object-contain" /> : <div className="w-6 h-6 rounded-full bg-gray-300"></div>}
                       <span className="font-medium text-sm">{tier.name === 'No Badge' ? 'No Badge' : `${tier.name} Badge`}</span>
                     </div>
                     <div className="space-y-1 text-xs text-muted-foreground">
@@ -306,8 +226,7 @@ const CampaignCreator = () => {
                         <Badge variant="outline" className="text-xs">${tier.cpm.toFixed(2)}</Badge>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
@@ -358,12 +277,8 @@ const CampaignCreator = () => {
                 <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Joint press releases and co-marketing campaigns</span>
                 </div>
-                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
-                  <span className="text-sm md:text-base">Access to our growing verified user community</span>
-                </div>
-                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
-                  <span className="text-sm md:text-base">Revenue sharing on collaborative campaigns</span>
-                </div>
+                
+                
                 <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
                   <span className="text-sm md:text-base">Promote to a holder base which saw a peak all time high of over $500,000,000 FDV</span>
                 </div>
@@ -400,11 +315,7 @@ const CampaignCreator = () => {
             <div className="md:hidden flex justify-center mb-4">
               <Handshake className="w-8 h-8 text-primary" />
             </div>
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 md:px-8 w-full md:w-auto text-sm md:text-base"
-              onClick={() => window.open('https://forms.google.com/create', '_blank')}
-            >
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 md:px-8 w-full md:w-auto text-sm md:text-base" onClick={() => window.open('https://forms.google.com/create', '_blank')}>
               <Handshake className="hidden md:block w-4 h-4 md:w-5 md:h-5 mr-2" />
               Become a Launch Partner
             </Button>
@@ -414,8 +325,6 @@ const CampaignCreator = () => {
           </div>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default CampaignCreator;
