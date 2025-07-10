@@ -36,19 +36,42 @@ const CampaignCreator = () => {
     'Megalodon': '/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png'
   };
 
-  // Common countries for targeting
+  // All world countries for targeting
   const countries = [
-    'United States', 'Canada', 'United Kingdom', 'Australia', 'Germany', 
-    'France', 'Japan', 'South Korea', 'Singapore', 'Netherlands',
-    'Switzerland', 'Sweden', 'Norway', 'Denmark', 'Finland'
+    'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan',
+    'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi',
+    'Cambodia', 'Cameroon', 'Canada', 'Cape Verde', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic',
+    'Democratic Republic of the Congo', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic',
+    'East Timor', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia',
+    'Fiji', 'Finland', 'France',
+    'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana',
+    'Haiti', 'Honduras', 'Hungary',
+    'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Ivory Coast',
+    'Jamaica', 'Japan', 'Jordan',
+    'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan',
+    'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg',
+    'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar',
+    'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway',
+    'Oman',
+    'Pakistan', 'Palau', 'Palestine', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal',
+    'Qatar',
+    'Romania', 'Russia', 'Rwanda',
+    'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria',
+    'Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu',
+    'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan',
+    'Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam',
+    'Yemen',
+    'Zambia', 'Zimbabwe'
   ];
 
-  const handleCountryToggle = (country: string) => {
-    setSelectedCountries(prev => 
-      prev.includes(country) 
-        ? prev.filter(c => c !== country)
-        : [...prev, country]
-    );
+  const handleCountrySelect = (country: string) => {
+    if (!selectedCountries.includes(country)) {
+      setSelectedCountries(prev => [...prev, country]);
+    }
+  };
+
+  const handleCountryRemove = (country: string) => {
+    setSelectedCountries(prev => prev.filter(c => c !== country));
   };
 
   // Convert audience numbers to formatted threshold strings
@@ -91,7 +114,7 @@ const CampaignCreator = () => {
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-4">
+            <div className="space-y-4 w-full">
               <div>
                 <Label htmlFor="campaign-name">Campaign Name</Label>
                 <Input id="campaign-name" placeholder="Enter campaign name" />
@@ -129,8 +152,8 @@ const CampaignCreator = () => {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="p-4 border rounded-lg bg-muted/20">
+            <div className="space-y-4 w-full">
+              <div className="p-4 border rounded-lg bg-muted/20 w-full">
                 <h3 className="font-semibold mb-2 flex items-center gap-2">
                   <Eye className="w-4 h-4" />
                   Estimated Performance
@@ -199,28 +222,39 @@ const CampaignCreator = () => {
             {geoTargetingType === 'specific' && (
               <div className="space-y-4">
                 <Label>Select Countries</Label>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-h-60 overflow-y-auto p-4 border rounded-lg bg-muted/20">
-                  {countries.map((country) => (
-                    <div 
-                      key={country}
-                      className={`flex items-center space-x-2 p-2 rounded cursor-pointer transition-colors ${
-                        selectedCountries.includes(country) 
-                          ? 'bg-middle-blue/10 text-middle-blue' 
-                          : 'hover:bg-muted/40'
-                      }`}
-                      onClick={() => handleCountryToggle(country)}
-                    >
-                      <Checkbox 
-                        checked={selectedCountries.includes(country)}
-                        onChange={() => handleCountryToggle(country)}
-                      />
-                      <span className="text-sm">{country}</span>
-                    </div>
-                  ))}
-                </div>
+                <Select onValueChange={handleCountrySelect}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Choose countries to target" />
+                  </SelectTrigger>
+                  <SelectContent className="max-h-60">
+                    {countries.filter(country => !selectedCountries.includes(country)).map((country) => (
+                      <SelectItem key={country} value={country}>
+                        {country}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                
                 {selectedCountries.length > 0 && (
-                  <div className="text-sm text-muted-foreground">
-                    Selected: {selectedCountries.join(', ')}
+                  <div className="space-y-2">
+                    <Label className="text-sm">Selected Countries ({selectedCountries.length})</Label>
+                    <div className="flex flex-wrap gap-2 p-3 border rounded-lg bg-muted/20 max-h-32 overflow-y-auto">
+                      {selectedCountries.map((country) => (
+                        <Badge 
+                          key={country} 
+                          variant="secondary" 
+                          className="flex items-center gap-1"
+                        >
+                          {country}
+                          <button 
+                            onClick={() => handleCountryRemove(country)}
+                            className="ml-1 hover:bg-destructive/20 rounded-full w-4 h-4 flex items-center justify-center"
+                          >
+                            ×
+                          </button>
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -241,8 +275,8 @@ const CampaignCreator = () => {
         </CardHeader>
         <CardContent>
           <div className="flex flex-col lg:flex-row gap-6">
-            <div className="flex-1">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="flex-1 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {badgeTiers.map((tier) => (
                   <div 
                     key={tier.name}
