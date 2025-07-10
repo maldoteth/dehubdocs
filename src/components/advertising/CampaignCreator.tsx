@@ -192,6 +192,13 @@ const CampaignCreator = () => {
         </CardContent>
       </Card>
 
+      <div className="flex justify-end space-x-4">
+        <Button variant="outline">Save as Draft</Button>
+        <Button className="bg-middle-blue hover:bg-middle-blue/90 text-white">
+          Launch Campaign
+        </Button>
+      </div>
+
       {/* Partnership Promotional Section */}
       <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <CardHeader className="text-center">
@@ -281,13 +288,6 @@ const CampaignCreator = () => {
           </div>
         </CardContent>
       </Card>
-
-      <div className="flex justify-end space-x-4">
-        <Button variant="outline">Save as Draft</Button>
-        <Button className="bg-middle-blue hover:bg-middle-blue/90 text-white">
-          Launch Campaign
-        </Button>
-      </div>
     </div>
   );
 };
