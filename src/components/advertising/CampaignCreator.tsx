@@ -314,7 +314,7 @@ const CampaignCreator = () => {
               </div>
             </div>
           </div>
-          <div className="text-center pt-4 border-t">
+          <div className="text-center pt-4">
             <div className="md:hidden flex justify-center mb-4">
               <Handshake className="w-8 h-8 text-primary" />
             </div>
