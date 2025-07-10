@@ -345,7 +345,7 @@ const CampaignCreator = () => {
             Partner with DeHub for Our App Launch
           </CardTitle>
           <p className="text-base md:text-lg text-muted-foreground px-2">
-            Join forces and amplify both our brands with exclusive co-marketing opportunities
+            Promote your brand on the DeHub app for our heavily funded launch campaigns
           </p>
         </CardHeader>
         <CardContent className="space-y-6 px-4 pb-6">
