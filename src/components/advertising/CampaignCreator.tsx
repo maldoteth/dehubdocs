@@ -279,9 +279,6 @@ const CampaignCreator = () => {
                 </div>
                 
                 
-                <div className="p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/20">
-                  <span className="text-sm md:text-base">Promote to a holder base which saw a peak all time high of over $500,000,000 FDV</span>
-                </div>
                 <div className="p-3 md:p-4 rounded-lg bg-secondary/10 border border-secondary/20">
                   <span className="text-sm md:text-base">Promote to a holder base which saw a peak all time high of over $500,000,000 FDV</span>
                 </div>
