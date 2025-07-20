@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -27,7 +26,7 @@ const SEO: React.FC<SEOProps> = ({
   const fullTitle = `${title} | ${siteName}`;
   const baseUrl = window.location.origin || 'https://dehub.io';
   const fullUrl = `${baseUrl}${url}`;
-  const fullImage = image ? (image.startsWith('http') ? image : `${baseUrl}${image}`) : `${baseUrl}/lovable-uploads/b8f9c8a0-4e2b-4d5c-9a1f-3e7d6c8b9a0e.png`;
+  const fullImage = image ? (image.startsWith('http') ? image : `${baseUrl}${image}`) : `${baseUrl}/lovable-uploads/7668607f-3b0b-4512-ab17-e7ba5fce395f.png`;
 
   // Enhanced structured data for cryptocurrency/finance articles
   const isCryptoArticle = title.includes('DHB') || title.includes('Coinbase') || title.includes('Token') || tags?.some(tag => ['cryptocurrency', 'blockchain', 'trading', 'defi'].includes(tag.toLowerCase()));
@@ -145,7 +144,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={fullImage} />
-      <meta name="twitter:image:alt" content={`${title} - DeHub Blog`} />
+      <meta name="twitter:image:alt" content={`${title} - DeHub`} />
       <meta name="twitter:site" content="@DeHubOfficial" />
       <meta name="twitter:creator" content="@DeHubOfficial" />
 

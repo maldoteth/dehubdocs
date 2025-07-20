@@ -4,13 +4,13 @@ import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, Che
 import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
 import { getPublishedPosts } from '@/utils/blogUtils';
+import SEO from '@/components/SEO';
 
 // Declare the global build time variable
 declare const __BUILD_TIME__: string;
+
 const DocsHome = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
 
   // Monitor performance for this page
   usePerformance();
@@ -40,6 +40,7 @@ const DocsHome = () => {
       bannerImageAlt = 'Coinbase logo on mobile device with trading charts in background';
     }
   }
+
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
@@ -101,134 +102,144 @@ const DocsHome = () => {
     description: 'An established and supportive community here since 2021'
   }];
 
-  return <div className="space-y-12">
-      {/* Hero Section */}
-      <div className="text-center space-y-6">
-        
-        
-        <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
-          Welcome to
-          <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">Our Docs</span>
-        </h1>
-        
-        <p className="text-xl text-royal-blue/70 max-w-3xl mx-auto leading-relaxed font-exo">
-          Everything you need to use, integrate, build, and scale with our platform. From quick start guides to advanced configurations.
-        </p>
+  return (
+    <>
+      <SEO
+        title="DeHub Documentation - Build on the Decentralized Future"
+        description="Everything you need to use, integrate, build, and scale with DeHub platform. From quick start guides to advanced configurations for decentralized applications."
+        image="/lovable-uploads/7668607f-3b0b-4512-ab17-e7ba5fce395f.png"
+        url="/docs"
+        type="website"
+        tags={['DeHub', 'documentation', 'blockchain', 'decentralized', 'DHB token', 'developer tools']}
+      />
+      <div className="space-y-12">
+        {/* Hero Section */}
+        <div className="text-center space-y-6">
+          <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
+            Welcome to
+            <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">Our Docs</span>
+          </h1>
+          <p className="text-xl text-royal-blue/70 max-w-3xl mx-auto leading-relaxed font-exo">
+            Everything you need to use, integrate, build, and scale with our platform. From quick start guides to advanced configurations.
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link to="/docs/overview" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
-            Get Started
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Link>
-          <button onClick={handleComingSoonClick} className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
-            View API Reference
-          </button>
-        </div>
-      </div>
-
-      {/* Quick Links */}
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-sm sm:max-w-none">
-          {quickLinks.map(link => link.external ? <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
-                <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                  <link.icon className="w-6 h-6 text-plain-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-                <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
-                <div className="flex items-center justify-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
-                  Visit site
-                  <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
-                </div>
-              </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
-                <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                  <link.icon className="w-6 h-6 text-plain-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-                <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
-                <div className="flex items-center justify-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
-                  Learn more
-                  <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
-                </div>
-              </Link>)}
-        </div>
-      </div>
-
-      {/* Latest Blog Post Promotion */}
-      {latestPost && <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
-          <div className="flex flex-col lg:flex-row items-center gap-8">
-            <div className="lg:w-1/3">
-              <img src={bannerImage} alt={bannerImageAlt} className="w-full h-48 object-cover rounded-xl" />
-            </div>
-            <div className="lg:w-2/3 text-center lg:text-left">
-              <div className="mb-4">
-                <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-3 py-1 rounded-full text-sm font-semibold mb-3">From The Blog</span>
-                <h2 className="text-2xl lg:text-3xl font-bold text-royal-blue mb-3 font-exo">
-                  {latestPost.title}
-                </h2>
-                <p className="text-royal-blue/70 mb-6 font-exo">
-                  {latestPost.excerpt}
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link to={`/docs/blog/${latestPost.slug}`} className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
-                  Read Article
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-                <Link to="/docs/blog" className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
-                  Visit Our Blog
-                </Link>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/docs/overview" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
+              Get Started
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+            <button onClick={handleComingSoonClick} className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+              View API Reference
+            </button>
           </div>
-        </div>}
-
-      {/* Features */}
-      <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-royal-blue mb-4 font-exo">Why Build On DeHub?</h2>
-          <p className="text-royal-blue/70 max-w-2xl mx-auto font-exo">For true censorship resistance, decentralisation and permissionlessness that's guaranteed for the rest of time, choose DeHub.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map(feature => <div key={feature.title} className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-sky-blue/20 to-middle-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <feature.icon className="w-8 h-8 text-royal-blue" />
+        {/* Quick Links */}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-sm sm:max-w-none">
+            {quickLinks.map(link => link.external ? <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
+                  <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                    <link.icon className="w-6 h-6 text-plain-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
+                  <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
+                  <div className="flex items-center justify-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                    Visit site
+                    <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                  </div>
+                </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
+                  <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                    <link.icon className="w-6 h-6 text-plain-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
+                  <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
+                  <div className="flex items-center justify-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                    Learn more
+                    <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                  </div>
+                </Link>)}
+          </div>
+        </div>
+
+        {/* Latest Blog Post Promotion */}
+        {latestPost && <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
+              <div className="lg:w-1/3">
+                <img src={bannerImage} alt={bannerImageAlt} className="w-full h-48 object-cover rounded-xl" />
               </div>
-              <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{feature.title}</h3>
-              <p className="text-royal-blue/70 text-sm font-exo">{feature.description}</p>
-            </div>)}
+              <div className="lg:w-2/3 text-center lg:text-left">
+                <div className="mb-4">
+                  <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-3 py-1 rounded-full text-sm font-semibold mb-3">From The Blog</span>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-royal-blue mb-3 font-exo">
+                    {latestPost.title}
+                  </h2>
+                  <p className="text-royal-blue/70 mb-6 font-exo">
+                    {latestPost.excerpt}
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Link to={`/docs/blog/${latestPost.slug}`} className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
+                    Read Article
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                  <Link to="/docs/blog" className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+                    Visit Our Blog
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>}
+
+        {/* Features */}
+        <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-royal-blue mb-4 font-exo">Why Build On DeHub?</h2>
+            <p className="text-royal-blue/70 max-w-2xl mx-auto font-exo">For true censorship resistance, decentralisation and permissionlessness that's guaranteed for the rest of time, choose DeHub.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map(feature => <div key={feature.title} className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-sky-blue/20 to-middle-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <feature.icon className="w-8 h-8 text-royal-blue" />
+                </div>
+                <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{feature.title}</h3>
+                <p className="text-royal-blue/70 text-sm font-exo">{feature.description}</p>
+              </div>)}
+          </div>
+        </div>
+
+        {/* Getting Started */}
+        <div className="bg-gradient-to-r from-royal-blue to-middle-blue rounded-2xl p-8 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-plain-white font-exo">Ready to Get Started?</h2>
+          <p className="text-sky-blue/90 mb-6 max-w-2xl mx-auto font-exo text-zinc-50">
+            Follow our step-by-step guide to integrate our platform in minutes.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+              Start Building
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+            
+          </div>
+        </div>
+
+        {/* Last Updated */}
+        <div className="text-center pt-4 border-t border-sky-blue/20">
+          <p className="text-sm text-royal-blue/60 font-exo">
+            Last updated: {lastPublishedDate.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })} at {lastPublishedDate.toLocaleTimeString('en-US', {
+            hour12: false,
+            hour: '2-digit',
+            minute: '2-digit'
+          })}
+          </p>
         </div>
       </div>
-
-      {/* Getting Started */}
-      <div className="bg-gradient-to-r from-royal-blue to-middle-blue rounded-2xl p-8 text-center">
-        <h2 className="text-3xl font-bold mb-4 text-plain-white font-exo">Ready to Get Started?</h2>
-        <p className="text-sky-blue/90 mb-6 max-w-2xl mx-auto font-exo text-zinc-50">
-          Follow our step-by-step guide to integrate our platform in minutes.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
-            Start Building
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Link>
-          
-        </div>
-      </div>
-
-      {/* Last Updated */}
-      <div className="text-center pt-4 border-t border-sky-blue/20">
-        <p className="text-sm text-royal-blue/60 font-exo">
-          Last updated: {lastPublishedDate.toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        })} at {lastPublishedDate.toLocaleTimeString('en-US', {
-          hour12: false,
-          hour: '2-digit',
-          minute: '2-digit'
-        })}
-        </p>
-      </div>
-    </div>;
+    </>
+  );
 };
+
 export default DocsHome;
