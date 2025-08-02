@@ -1,6 +1,29 @@
 import SEO from '@/components/SEO';
+import { useState } from 'react';
+import { Copy, Check } from 'lucide-react';
+import { useToast } from '@/components/ui/use-toast';
 
 export default function TokenBridge() {
+  const { toast } = useToast();
+  const [copiedAddress, setCopiedAddress] = useState<string>('');
+
+  const copyToClipboard = async (address: string) => {
+    try {
+      await navigator.clipboard.writeText(address);
+      setCopiedAddress(address);
+      toast({
+        title: "Address copied!",
+        description: "The bridge address has been copied to your clipboard.",
+      });
+      setTimeout(() => setCopiedAddress(''), 2000);
+    } catch (err) {
+      toast({
+        title: "Copy failed",
+        description: "Please copy the address manually.",
+        variant: "destructive",
+      });
+    }
+  };
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <SEO 
@@ -23,8 +46,16 @@ export default function TokenBridge() {
             <p className="mb-4">
               To bridge to BASE from BNB simply send your tokens to this address. No fees deducted.
             </p>
-            <div className="bg-muted p-4 rounded-md font-mono text-sm break-all">
-              0x680D3113caf77B61b510f332D5Ef4cf5b41A761D
+            <div 
+              className="bg-muted p-4 rounded-md font-mono text-sm break-all cursor-pointer hover:bg-muted/80 transition-colors flex items-center justify-between group"
+              onClick={() => copyToClipboard('0x680D3113caf77B61b510f332D5Ef4cf5b41A761D')}
+            >
+              <span>0x680D3113caf77B61b510f332D5Ef4cf5b41A761D</span>
+              {copiedAddress === '0x680D3113caf77B61b510f332D5Ef4cf5b41A761D' ? (
+                <Check className="h-4 w-4 text-green-500" />
+              ) : (
+                <Copy className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+              )}
             </div>
           </div>
 
@@ -33,8 +64,16 @@ export default function TokenBridge() {
             <p className="mb-4">
               To bridge to BNB from Base simply send your tokens to this address. No fees deducted.
             </p>
-            <div className="bg-muted p-4 rounded-md font-mono text-sm break-all">
-              0x11D79aE9a0F8a8f9Fcf5BE71e403ed203EC2394d
+            <div 
+              className="bg-muted p-4 rounded-md font-mono text-sm break-all cursor-pointer hover:bg-muted/80 transition-colors flex items-center justify-between group"
+              onClick={() => copyToClipboard('0x11D79aE9a0F8a8f9Fcf5BE71e403ed203EC2394d')}
+            >
+              <span>0x11D79aE9a0F8a8f9Fcf5BE71e403ed203EC2394d</span>
+              {copiedAddress === '0x11D79aE9a0F8a8f9Fcf5BE71e403ed203EC2394d' ? (
+                <Check className="h-4 w-4 text-green-500" />
+              ) : (
+                <Copy className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+              )}
             </div>
           </div>
 
