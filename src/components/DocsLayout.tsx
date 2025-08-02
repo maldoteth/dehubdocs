@@ -46,6 +46,9 @@ const menuItems = [{
     }, {
       title: 'Stake',
       path: '/docs/token/stake'
+    }, {
+      title: 'Bridge',
+      path: '/docs/token/bridge'
     }]
   }, {
     title: 'DePIN',

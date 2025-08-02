@@ -35,6 +35,7 @@ const TermsOfService = lazy(() => import("./pages/docs/TermsOfService"));
 const Contact = lazy(() => import("./pages/docs/Contact"));
 const PrivacyPolicy = lazy(() => import("./pages/docs/PrivacyPolicy"));
 const TokenStake = lazy(() => import("./pages/docs/TokenStake"));
+const TokenBridge = lazy(() => import("./pages/docs/TokenBridge"));
 const Roadmap = lazy(() => import("./pages/docs/Roadmap"));
 const Blog = lazy(() => import("./pages/docs/Blog"));
 const BlogPost = lazy(() => import("./pages/docs/BlogPost"));
@@ -107,6 +108,11 @@ const App = () => (
                 <Route path="token/stake" element={
                   <Suspense fallback={<PageLoader />}>
                     <TokenStake />
+                  </Suspense>
+                } />
+                <Route path="token/bridge" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <TokenBridge />
                   </Suspense>
                 } />
                 <Route path="depin" element={
