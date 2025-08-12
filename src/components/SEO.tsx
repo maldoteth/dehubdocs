@@ -26,7 +26,7 @@ const SEO: React.FC<SEOProps> = ({
   const fullTitle = `${title} | ${siteName}`;
   const baseUrl = window.location.origin || 'https://dehub.io';
   const fullUrl = `${baseUrl}${url}`;
-  const fullImage = image ? (image.startsWith('http') ? image : `${baseUrl}${image}`) : `${baseUrl}/lovable-uploads/7668607f-3b0b-4512-ab17-e7ba5fce395f.png`;
+  const fullImage = image ? (image.startsWith('http') ? image : `${baseUrl}${image}`) : `${baseUrl}/lovable-uploads/a8b1baf2-99f3-4ff3-b2b5-4575f4ba8ace.png`;
 
   // Enhanced structured data for cryptocurrency/finance articles
   const isCryptoArticle = title.includes('DHB') || title.includes('Coinbase') || title.includes('Token') || tags?.some(tag => ['cryptocurrency', 'blockchain', 'trading', 'defi'].includes(tag.toLowerCase()));
@@ -49,7 +49,7 @@ const SEO: React.FC<SEOProps> = ({
         'url': 'https://dehub.io',
         'logo': {
           '@type': 'ImageObject',
-          'url': `${baseUrl}/lovable-uploads/b8f9c8a0-4e2b-4d5c-9a1f-3e7d6c8b9a0e.png`
+          'url': `${baseUrl}/lovable-uploads/a8b1baf2-99f3-4ff3-b2b5-4575f4ba8ace.png`
         },
         'sameAs': [
           'https://twitter.com/DeHubOfficial',
