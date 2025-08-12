@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Twitter, Facebook, Linkedin, Share2 } from 'lucide-react';
+import { Twitter, Facebook, Linkedin, Share2, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 interface ShareButtonsProps {
@@ -28,6 +28,9 @@ export const ShareButtons: React.FC<ShareButtonsProps> = ({ shareUrl, postTitle,
         break;
       case 'linkedin':
         url = `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrlEncoded}`;
+        break;
+      case 'telegram':
+        url = `https://t.me/share/url?url=${shareUrlEncoded}&text=${title}`;
         break;
       case 'copy':
         navigator.clipboard.writeText(shareUrl);
@@ -58,6 +61,12 @@ export const ShareButtons: React.FC<ShareButtonsProps> = ({ shareUrl, postTitle,
             >
               Share on LinkedIn
             </button>
+            <button
+              onClick={() => handleShare('telegram')}
+              className="px-6 py-3 border border-sky-blue text-royal-blue rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo"
+            >
+              Share on Telegram
+            </button>
         </div>
       )
   }
@@ -85,6 +94,13 @@ export const ShareButtons: React.FC<ShareButtonsProps> = ({ shareUrl, postTitle,
         aria-label="Share on LinkedIn"
       >
         <Linkedin className="w-4 h-4" />
+      </button>
+      <button
+        onClick={() => handleShare('telegram')}
+        className="p-2 rounded-lg bg-sky-blue/10 text-royal-blue hover:bg-sky-blue/20 transition-colors duration-200"
+        aria-label="Share on Telegram"
+      >
+        <Send className="w-4 h-4" />
       </button>
       <button
         onClick={() => handleShare('copy')}
