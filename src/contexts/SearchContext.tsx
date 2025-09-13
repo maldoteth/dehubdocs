@@ -127,6 +127,15 @@ const createSearchIndex = (): SearchIndex[] => {
       keywords: ['stake', 'staking', 'rewards', 'validation', 'security']
     },
     {
+      id: 'bridge',
+      title: 'Bridge',
+      content: 'Cross-chain token bridge for DHB tokens between BASE and BNB networks, token transfer, cross-chain swap',
+      path: '/docs/token/bridge',
+      category: 'Token',
+      type: 'page',
+      keywords: ['bridge', 'cross-chain', 'base', 'bnb', 'token', 'transfer', 'swap', 'network']
+    },
+    {
       id: 'depin',
       title: 'DePIN',
       content: 'Decentralized Physical Infrastructure Network, hardware nodes, network participation, rewards',
