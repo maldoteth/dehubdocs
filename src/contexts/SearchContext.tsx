@@ -215,6 +215,78 @@ const createSearchIndex = (): SearchIndex[] => {
       category: 'Blog',
       type: 'blog',
       keywords: ['blog', 'news', 'updates', 'announcements', 'community']
+    },
+    {
+      id: 'quickstart',
+      title: 'Quick Start',
+      content: 'Quick start guide for DeHub platform, getting started, first steps, setup instructions',
+      path: '/docs/quickstart',
+      category: 'Development',
+      type: 'page',
+      keywords: ['quickstart', 'getting started', 'setup', 'guide', 'first steps']
+    },
+    {
+      id: 'installation',
+      title: 'Installation',
+      content: 'Installation guide for DeHub tools, setup instructions, requirements, dependencies',
+      path: '/docs/installation',
+      category: 'Development',
+      type: 'page',
+      keywords: ['installation', 'setup', 'install', 'requirements', 'dependencies']
+    },
+    {
+      id: 'api-endpoints',
+      title: 'API Endpoints',
+      content: 'DeHub API endpoints documentation, REST API, GraphQL, webhooks, integration guide',
+      path: '/docs/endpoints',
+      category: 'Development',
+      type: 'page',
+      keywords: ['api', 'endpoints', 'rest', 'graphql', 'webhooks', 'integration']
+    },
+    {
+      id: 'terms',
+      title: 'Terms',
+      content: 'DeHub terms and conditions, user agreement, platform terms, legal terms',
+      path: '/docs/terms',
+      category: 'Legal',
+      type: 'page',
+      keywords: ['terms', 'conditions', 'agreement', 'legal', 'user terms']
+    },
+    {
+      id: 'terms-of-service',
+      title: 'Terms of Service',
+      content: 'DeHub terms of service, service agreement, user responsibilities, platform rules',
+      path: '/docs/terms-of-service',
+      category: 'Legal',
+      type: 'page',
+      keywords: ['terms of service', 'service agreement', 'responsibilities', 'rules']
+    },
+    {
+      id: 'privacy-policy',
+      title: 'Privacy Policy',
+      content: 'DeHub privacy policy, data protection, user privacy, information collection, GDPR compliance',
+      path: '/docs/privacy',
+      category: 'Legal',
+      type: 'page',
+      keywords: ['privacy', 'policy', 'data protection', 'gdpr', 'information']
+    },
+    {
+      id: 'brand-guidelines',
+      title: 'Brand Guidelines',
+      content: 'DeHub brand guidelines, brand identity, logo usage, design standards, marketing guidelines',
+      path: '/docs/brand-guidelines',
+      category: 'Brand',
+      type: 'page',
+      keywords: ['brand', 'guidelines', 'identity', 'logo', 'design', 'marketing']
+    },
+    {
+      id: 'faq',
+      title: 'FAQ',
+      content: 'Frequently asked questions about DeHub platform, common questions, troubleshooting, help',
+      path: '/docs/faq',
+      category: 'Support',
+      type: 'page',
+      keywords: ['faq', 'questions', 'help', 'troubleshooting', 'support', 'answers']
     }
   ];
 };
