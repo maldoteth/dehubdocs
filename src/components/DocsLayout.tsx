@@ -7,6 +7,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Button } from '@/components/ui/button';
 import { SearchTrigger } from '@/components/search/SearchTrigger';
 import { useTextHighlight } from '@/hooks/useTextHighlight';
+import { useDocsSearch } from '@/hooks/useDocsSearch';
 
 const menuItems = [{
   title: 'Main',
@@ -160,6 +161,7 @@ const DocsLayoutContent = () => {
     [key: string]: boolean;
   }>({});
   const location = useLocation();
+  const { setIsOpen } = useDocsSearch();
   
   // Initialize text highlighting
   useTextHighlight();
@@ -213,7 +215,7 @@ const DocsLayoutContent = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => {/* This will be handled by the SearchTrigger's global keyboard shortcut */}}
+              onClick={() => setIsOpen(true)}
               className="p-2"
             >
               <Search className="w-5 h-5 text-royal-blue" />
