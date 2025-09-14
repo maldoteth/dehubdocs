@@ -7,7 +7,6 @@ import { BlogSearchAndFilter } from '@/components/blog/sections/BlogSearchAndFil
 import { BlogFeaturedSection } from '@/components/blog/sections/BlogFeaturedSection';
 import { BlogAllPostsSection } from '@/components/blog/sections/BlogAllPostsSection';
 import { BlogPopularTags } from '@/components/blog/sections/BlogPopularTags';
-import { BreadcrumbNavigation } from '@/components/blog/BreadcrumbNavigation';
 import { useBlogData } from '@/hooks/useBlogData';
 import { useTextHighlight } from '@/hooks/useTextHighlight';
 
@@ -34,7 +33,6 @@ const Blog = () => {
       />
       <BlogSEOHelper />
       <div className="space-y-12">
-        <BreadcrumbNavigation />
         <BlogHeader />
 
         <BlogSearchAndFilter
