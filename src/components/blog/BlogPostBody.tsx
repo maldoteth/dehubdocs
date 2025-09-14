@@ -16,7 +16,7 @@ export const BlogPostBody: React.FC<BlogPostBodyProps> = ({ bannerImage, bannerI
                 <OptimizedImage 
                   src={bannerImage} 
                   alt={bannerImageAlt}
-                  className="w-full h-64 lg:h-96 object-cover"
+                  className="w-full h-48 lg:h-64 object-cover"
                   loading="eager"
                 />
             </div>
