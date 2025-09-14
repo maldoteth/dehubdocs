@@ -22,6 +22,10 @@ const FAQ = () => {
       answer: "DHB tokens are available on various exchanges. Check our 'Where to Buy' section for the most up-to-date list of supported exchanges and trading pairs."
     },
     {
+      question: "How do I bridge DHB tokens?",
+      answer: "You can bridge DHB tokens between BASE and BNB chains using our token bridge. Visit the Token Bridge section in our documentation for detailed instructions, bridge addresses, and processing times. Simply copy the appropriate bridge address and follow the step-by-step process."
+    },
+    {
       question: "Can I stake DHB tokens?",
       answer: "Yes, you can stake DHB tokens to earn real yield from protocol revenue buybacks and x-2-earn rewards. Staking also helps secure the network and provides enhanced rights within the ecosystem."
     },
