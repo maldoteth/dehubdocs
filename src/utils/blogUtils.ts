@@ -1,5 +1,6 @@
 import { BlogPost, BlogTag } from '@/types/blog';
 import { blogPosts } from '@/data/blogPosts';
+import { newPosts, excludedTitles } from '@/data/newPosts';
 
 const applyPostOverrides = (post: BlogPost): BlogPost => {
   const newPost = { ...post };
@@ -670,7 +671,8 @@ This AMA covered a lot of ground, and we're excited for what's to come. Stay tun
   return newPost;
 };
 
-const getAllPostsWithOverrides = (): BlogPost[] => {
+// Utility functions for blog operations
+export const getAllPostsWithOverrides = (): BlogPost[] => {
   const allPosts = [...blogPosts].filter(p => p.slug !== 'feature-spotlight-ad-tech');
 
   const devUpdatePost: BlogPost = {
@@ -951,4 +953,27 @@ export const formatDate = (dateString: string): string => {
     month: 'long',
     day: 'numeric'
   });
+};
+
+// Get the latest blog post from all sources (both blogPosts and newPosts)
+export const getLatestPost = (): BlogPost | undefined => {
+  // Combine original posts and new posts, similar to useBlogData logic
+  const originalPosts = blogPosts.filter(post => 
+    !excludedTitles.includes(post.title)
+  ).map(applyPostOverrides);
+  
+  // Combine all posts
+  const allPosts = [...originalPosts, ...newPosts];
+  
+  // Remove duplicates based on slug
+  const uniquePosts = allPosts.filter((post, index, self) =>
+    index === self.findIndex((p) => p.slug === post.slug)
+  );
+  
+  // Filter published posts and sort by date
+  const publishedPosts = uniquePosts
+    .filter(post => post.status !== 'draft')
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  
+  return publishedPosts[0];
 };

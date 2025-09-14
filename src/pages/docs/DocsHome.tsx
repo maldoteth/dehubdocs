@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
-import { getPublishedPosts } from '@/utils/blogUtils';
+import { getLatestPost } from '@/utils/blogUtils';
 import SEO from '@/components/SEO';
 
 // Declare the global build time variable
@@ -16,7 +16,7 @@ const DocsHome = () => {
   usePerformance();
 
   // Get the latest blog post
-  const latestPost = getPublishedPosts()[0];
+  const latestPost = getLatestPost();
   let bannerImage = latestPost?.bannerImage;
   let bannerImageAlt = latestPost?.bannerImageAlt;
   if (latestPost) {
