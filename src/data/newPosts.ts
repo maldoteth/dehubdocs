@@ -1095,7 +1095,7 @@ const coinbaseDHBPost: BlogPostType = {
 const bnbPoolUpdatePost: BlogPostType = {
   id: 'bnb-pool-update-recovery-876-bnb-stuck-2022-pool',
   slug: 'bnb-pool-update-recovery-876-bnb-stuck-2022-pool',
-  title: 'BNB Pool Update',
+  title: 'Old BNB Pool Update',
   excerpt: 'The road to recovering 876 BNB stuck in our old pool from 2022, & what happens if we do.',
   content: `
     ## The Road to Recovery: Our 876 BNB Journey
