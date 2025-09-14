@@ -12,7 +12,7 @@ interface BlogPostBodyProps {
 
 export const BlogPostBody: React.FC<BlogPostBodyProps> = ({ bannerImage, bannerImageAlt, content }) => {
     const { slug } = useParams<{ slug: string }>();
-    const isFullImagePost = slug === 'bnb-pool-update-recovery-876-bnb-stuck-2022-pool';
+    const isFullImagePost = slug === 'bnb-pool-update-recovery-876-bnb-stuck-2022-pool' || slug === '1-million-dollar-raise-completed';
     
     return (
         <>
