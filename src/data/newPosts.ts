@@ -966,6 +966,132 @@ const flagshipGameLaunchPost: BlogPostType = {
   seoDescription: "Official confirmation of the airdrop allocation for DeHub's flagship game Last Chad Standing (LCS). Learn about OG bonuses, allocation details, and how to participate.",
 };
 
+const coinbaseDHBPost: BlogPostType = {
+  id: 'dhb-now-trading-on-coinbase',
+  slug: 'dhb-now-trading-on-coinbase',
+  title: '$DHB now trading on Coinbase!',
+  excerpt: 'Coinbase officially lists all Base tokens, including $DHB with direct access to hundreds of millions of investors. A monumental step forward for decentralized trading.',
+  content: `
+    ## A New Era of Decentralized Trading Begins
+
+    Today marks a watershed moment for DeHub and the entire decentralized finance ecosystem. **$DHB is now officially trading on Coinbase**, the world's leading cryptocurrency exchange, giving our community direct access to hundreds of millions of potential investors and traders worldwide.
+
+    This milestone represents far more than just another exchange listing - it's a validation of our unwavering commitment to decentralization, transparency, and the future of trustless trading.
+
+    ### The Coinbase DEX Integration: Industry Game-Changer
+
+    Coinbase's decision to list all Base ecosystem tokens, including $DHB, signals a fundamental shift in how major exchanges approach decentralized assets. This integration provides:
+
+    - **Massive Liquidity Access**: Direct connection to Coinbase's vast user base of over 100 million verified users
+    - **Institutional Credibility**: Coinbase's rigorous listing standards provide institutional-grade validation for $DHB
+    - **Global Reach**: Access to markets in over 100 countries, expanding DeHub's international presence exponentially
+    - **Seamless User Experience**: Integration with Coinbase's intuitive interface makes $DHB accessible to both crypto veterans and newcomers
+
+    ### Leading the Decentralized Revolution
+
+    As **bastions of the decentralized future**, DeHub has consistently chosen the path of transparency and user empowerment over centralized control. Our listing on Coinbase through their DEX integration perfectly aligns with this philosophy, providing the benefits of a major exchange while maintaining the decentralized principles that define our ecosystem.
+
+    This achievement comes at a time when the industry is increasingly recognizing that the future belongs to platforms that prioritize:
+    - **User sovereignty** over centralized control
+    - **Transparent operations** over opaque business practices  
+    - **Community governance** over corporate decision-making
+    - **Decentralized infrastructure** over single points of failure
+
+    ### Strategic Evolution: From Gate.io to Full DEX
+
+    Our journey to this moment reflects a carefully planned strategic evolution. Earlier this year, DeHub made the bold decision to **voluntarily delist from Gate.io** and commit fully to decentralized exchange trading. This wasn't just a technical decision - it was a philosophical statement about the future we're building.
+
+    **Why we chose the DEX-first approach:**
+
+    - **Complete Transparency**: Every transaction, every trade, and every movement of $DHB is visible on-chain, eliminating any possibility of market manipulation or hidden practices
+    - **User Control**: Traders maintain complete custody of their assets throughout the trading process, never needing to trust a centralized intermediary
+    - **Censorship Resistance**: No single entity can freeze accounts, halt trading, or restrict access to $DHB
+    - **Global Accessibility**: DEX trading is available 24/7 to anyone with an internet connection, regardless of geographic location or regulatory restrictions
+
+    ### Trust Through Transparency
+
+    The traditional exchange model asks users to deposit funds, surrender custody, and trust that the exchange will act in their best interests. History has shown us repeatedly why this model is fundamentally flawed, with exchange hacks, freezes, and collapses affecting millions of users.
+
+    DeHub's commitment to DEX trading eliminates these risks entirely:
+
+    - **Your Keys, Your Coins**: Users always maintain full control of their $DHB tokens
+    - **Open Source Verification**: Smart contracts governing $DHB trading are publicly auditable
+    - **Real-Time Transparency**: All market activity is visible on-chain in real-time
+    - **No Hidden Fees**: Transaction costs are transparent and predictable, with no surprise charges
+
+    ### Industry Impact: Setting the New Standard
+
+    The Coinbase DEX integration for Base tokens, including $DHB, represents a seismic shift in how major exchanges approach decentralized assets. This move validates what we've long believed: the future of cryptocurrency trading is decentralized, transparent, and user-controlled.
+
+    **What this means for the broader industry:**
+
+    - **Validation of DEX Model**: Major exchanges are recognizing that decentralized trading is not just the future, but the present
+    - **Increased Adoption**: Integration with familiar platforms like Coinbase will accelerate mainstream adoption of DEX trading
+    - **Competitive Pressure**: Other exchanges will need to follow suit or risk being left behind in the decentralized revolution
+    - **Regulatory Clarity**: This integration provides a framework for how decentralized assets can operate within existing regulatory structures
+
+    ### Access to Institutional Capital
+
+    One of the most significant aspects of this development is the unprecedented access to institutional capital that Coinbase provides. With this integration, $DHB gains exposure to:
+
+    - **Institutional Investors**: Access to pension funds, endowments, and corporate treasuries seeking crypto exposure
+    - **Professional Traders**: Integration with advanced trading tools and professional-grade infrastructure
+    - **Retail Adoption**: Simplified access for millions of everyday users who prefer Coinbase's user-friendly interface
+    - **Global Liquidity**: Connection to the world's largest cryptocurrency trading volumes
+
+    ### Technical Excellence: Built for Scale
+
+    The Coinbase DEX integration showcases the technical robustness of the $DHB token and the Base ecosystem. Our token contract has been thoroughly vetted and meets the highest standards for:
+
+    - **Security**: Multi-layer security audits ensure $DHB remains safe and exploit-resistant
+    - **Scalability**: Built on Base's high-performance infrastructure for minimal fees and fast transactions
+    - **Interoperability**: Seamless integration with the broader Ethereum ecosystem and Layer 2 solutions
+    - **Upgradability**: Smart contract architecture allows for future enhancements while maintaining security
+
+    ### The DeHub Difference: Community-First Approach
+
+    What sets DeHub apart in this achievement is our unwavering commitment to our community. Unlike many projects that prioritize exchange listings for price appreciation, our Coinbase integration serves a deeper purpose:
+
+    - **Community Empowerment**: Increased liquidity and accessibility directly benefit all $DHB holders
+    - **Democratic Access**: No VIP tiers or preferential treatment - the same opportunities are available to all users
+    - **Educational Focus**: We're committed to helping our community understand and benefit from decentralized trading
+    - **Long-term Vision**: This integration supports our broader mission of building sustainable, decentralized infrastructure
+
+    ### Looking Forward: The Decentralized Future is Now
+
+    The $DHB listing on Coinbase through DEX integration is more than a milestone - it's proof that the decentralized future we've been building is becoming mainstream reality. As we continue to lead the way in trustless, transparent, and user-controlled systems, this achievement validates our approach and accelerates our mission.
+
+    **What comes next:**
+
+    - **Expanded DEX Partnerships**: Additional integrations with other major platforms embracing decentralized trading
+    - **Enhanced Liquidity Programs**: Community-driven initiatives to further improve $DHB trading depth and efficiency  
+    - **Educational Initiatives**: Resources to help users maximize the benefits of decentralized trading
+    - **Ecosystem Growth**: Continued development of DeHub's comprehensive decentralized infrastructure
+
+    ### Join the Revolution
+
+    The future of finance is decentralized, transparent, and community-controlled. With $DHB now accessible through Coinbase's DEX integration, we invite you to be part of this historic transformation.
+
+    Whether you're a seasoned DeFi veteran or new to decentralized trading, this integration provides the perfect opportunity to experience the benefits of truly trustless, transparent trading. No intermediaries, no hidden fees, no surrender of custody - just pure, decentralized access to one of the most innovative tokens in the Web3 ecosystem.
+
+    **The revolution is here. The future is decentralized. And $DHB is leading the way.**
+
+    *Trade $DHB on Coinbase today and experience the future of decentralized finance.*
+  `,
+  bannerImage: '/lovable-uploads/coinbase-dhb-banner.png',
+  bannerImageAlt: '$DHB now trading on Coinbase - DeHub leads the decentralized trading revolution',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2025-08-19T12:00:00.000Z',
+  tags: ['Coinbase', 'DHB', 'DEX', 'Decentralized Trading', 'Base', 'DeFi'],
+  readingTime: 3,
+  featured: false,
+  status: 'published',
+  seoTitle: '$DHB now trading on Coinbase! | DeHub Decentralized Trading Revolution',
+  seoDescription: 'Coinbase officially lists all Base tokens including $DHB, providing direct access to hundreds of millions of investors. DeHub leads the way in decentralized, transparent trading.',
+};
+
 export const newPosts: BlogPostType[] = [
   teamFirstClassAgencyPost,
   offRampServicePost,
@@ -979,7 +1105,8 @@ export const newPosts: BlogPostType[] = [
   dehubTakeoverPost,
   crusadersSponsorshipPost,
   publicBetaDappReportPost,
-  flagshipGameLaunchPost
+  flagshipGameLaunchPost,
+  coinbaseDHBPost
 ];
 
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
