@@ -1,7 +1,7 @@
 import React from 'react';
 import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network, ExternalLink, CreditCard } from 'lucide-react';
 const Dapp = () => {
   const feeReductions = [{
@@ -1473,6 +1473,30 @@ const Dapp = () => {
                 with no wallet address or private key management required.
               </p>
             </div>
+          </section>
+
+          {/* 2025 Shake Up */}
+          <section className="mt-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>2025 Shake Up</CardTitle>
+                <CardDescription>
+                  Latest product design slides and strategic updates for 2025.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="w-full overflow-hidden rounded-lg">
+                  <iframe 
+                    style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} 
+                    width="800" 
+                    height="450" 
+                    src="https://embed.figma.com/slides/22r8W9g98g3KZz5vUwqWND/Dehub-Product-Design?node-id=1-42&embed-host=share" 
+                    allowFullScreen={true} 
+                    className="w-full" 
+                  />
+                </div>
+              </CardContent>
+            </Card>
           </section>
         </section>
       </div>
