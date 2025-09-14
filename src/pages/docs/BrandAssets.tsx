@@ -133,6 +133,28 @@ const BrandAssets = () => {
         </CardContent>
       </Card>
 
+      {/* 2025 Shake Up */}
+      <Card>
+        <CardHeader>
+          <CardTitle>2025 Shake Up</CardTitle>
+          <CardDescription>
+            Latest product design slides and strategic updates for 2025.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="w-full overflow-hidden rounded-lg">
+            <iframe 
+              style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} 
+              width="800" 
+              height="450" 
+              src="https://embed.figma.com/slides/22r8W9g98g3KZz5vUwqWND/Dehub-Product-Design?node-id=21-31" 
+              allowFullScreen={true} 
+              className="w-full" 
+            />
+          </div>
+        </CardContent>
+      </Card>
+
       {/* Usage Guidelines */}
       <Card>
         
