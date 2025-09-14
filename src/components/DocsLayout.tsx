@@ -267,7 +267,7 @@ const DocsLayoutContent = () => {
                         {section.items.map(item => <li key={item.path}>
                             {item.external && (item.path.startsWith('http') || item.path.startsWith('https')) ? <a href={item.path} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue">
                                 <div className="flex items-center space-x-3">
-                                  {item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
+                                  {item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
                                   <span>{item.title}</span>
                                 </div>
                                 <ExternalLink className="w-3 h-3 text-royal-blue/50" />
@@ -298,7 +298,7 @@ const DocsLayoutContent = () => {
                                       ${isActivePath(item.path) ? 'bg-middle-blue/20 text-royal-blue font-medium border-l-4 border-middle-blue ml-0' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
                                     `}>
                                     <div className="flex items-center space-x-3">
-                                      {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-royal-blue/70" /> : item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
+                                      {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-royal-blue/70" /> : item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
                                       <span>{item.title}</span>
                                     </div>
                                     {item.hasSubmenu && !item.submenuItems && <ChevronRight className="w-4 h-4 text-royal-blue/50" />}
