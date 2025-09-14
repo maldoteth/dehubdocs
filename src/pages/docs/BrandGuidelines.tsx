@@ -32,7 +32,7 @@ const BrandGuidelines = () => {
             style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} 
             width="800" 
             height="450" 
-            src="https://embed.figma.com/slides/22r8W9g98g3KZz5vUwqWND/Dehub-Product-Design?node-id=21-31&"
+            src="https://embed.figma.com/slides/22r8W9g98g3KZz5vUwqWND/Dehub-Product-Design?node-id=21-31"
             className="w-full min-h-[450px]"
           />
         </div>
