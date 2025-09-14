@@ -214,7 +214,7 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
   // Unordered List
   if (lines.every(line => line.trim().startsWith('- ') || line.trim().startsWith('• '))) {
     return (
-      <ul key={index} className="list-disc list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+      <ul key={index} className="list-disc list-outside space-y-2 mb-4 font-exo text-royal-blue/80 pl-6">
         {lines.map((item, i) => {
           const content = item.trim().slice(2);
           const processedContent = processLineForHtml(content);
@@ -227,7 +227,7 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ block, index }) =>
   // Ordered List
   if (lines.every(line => /^\d+\./.test(line.trim()))) {
     return (
-      <ol key={index} className="list-decimal list-inside space-y-2 mb-4 font-exo text-royal-blue/80">
+      <ol key={index} className="list-decimal list-outside space-y-2 mb-4 font-exo text-royal-blue/80 pl-6">
         {lines.map((item, i) => {
           const content = item.trim().replace(/^\d+\.\s/, '');
           const processedContent = processLineForHtml(content);
