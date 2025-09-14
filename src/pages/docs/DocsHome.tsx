@@ -50,7 +50,7 @@ const DocsHome = () => {
   };
 
   // Manual last updated date - update this when you publish changes
-  const lastPublishedDate = new Date('2025-07-04T16:22:00'); // July 4, 2025 at 16:22
+  const lastPublishedDate = new Date('2025-09-14T14:20:00'); // September 14, 2025 at 14:20
 
   // Quick Links
   const quickLinks = [{
