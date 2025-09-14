@@ -132,8 +132,9 @@ const menuItems = [{
     }, {
       title: 'CoinGecko',
       path: 'https://www.coingecko.com/en/coins/dehub',
-      icon: '🦎',
-      external: true
+      icon: '/lovable-uploads/coingecko-logo.png',
+      external: true,
+      isImage: true
     }
   ]
 }, {
