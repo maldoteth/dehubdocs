@@ -1092,6 +1092,156 @@ const coinbaseDHBPost: BlogPostType = {
   seoDescription: 'Coinbase officially lists all Base tokens including $DHB, providing direct access to hundreds of millions of investors. DeHub leads the way in decentralized, transparent trading.',
 };
 
+const bnbPoolUpdatePost: BlogPostType = {
+  id: 'bnb-pool-update-recovery-876-bnb-stuck-2022-pool',
+  slug: 'bnb-pool-update-recovery-876-bnb-stuck-2022-pool',
+  title: 'BNB Pool Update',
+  excerpt: 'The road to recovering 876 BNB stuck in our old pool from 2022, & what happens if we do.',
+  content: `
+    ## The Road to Recovery: Our 876 BNB Journey
+
+    Back in 2022, we overcame a contract issue which resulted in **876 BNB being stuck in our old pool**. What started as a technical setback became a testament to our community's resilience and our team's unwavering determination to never give up on our holders.
+
+    Although we successfully migrated and relaunched, it was largely due to our **incredibly supportive community** and the team's **unwavering perseverance**. The challenges we faced could have ended many projects, but DeHub has always been built different—we don't quit, we adapt, overcome, and emerge stronger.
+
+    ### The Technical Context: What "Unlocked" Really Means
+
+    The 876 BNB is now officially **"unlocked"** from a technical standpoint, meaning it's no longer trapped by the original contract issues that caused the problem. However, recovering these funds requires coordination with the broader Binance ecosystem and their quarterly burn processes.
+
+    This isn't simply a matter of pressing a button—it involves complex negotiations with multiple stakeholders and requires approval from decision-makers who control the burn mechanisms that could facilitate our recovery.
+
+    ## Building Bridges: Our Partnership Journey
+
+    In order to recover the BNB now, we've met with **numerous members of the BNB / Binance / Labs team over the years**, who agreed it was **fair to give us our BNB from Binance's quarterly burns**, considering our pool as burned, and would try to help us convince the final decision makers.
+
+    ### The Conversations That Matter
+
+    These weren't casual meetings or surface-level discussions. We've engaged in deep, technical conversations with:
+
+    - **BNB Chain technical teams** who understand the contract mechanics
+    - **Binance Labs representatives** who recognize our ecosystem value
+    - **Strategic partners** within the Binance ecosystem who support our recovery efforts
+    - **Key decision makers** who have the authority to facilitate the recovery process
+
+    Each conversation has moved us closer to a resolution, building understanding and support for our position within the broader BNB ecosystem.
+
+    ### Recognition of DeHub's Impact
+
+    As **one of the top performing assets of the last cycle**, growing from 0 to hundreds of millions, driving **well over $20m in total volume on BNB**, giving back **over $1m to tens of thousands of holders**, few better communities deserve assistance.
+
+    Our track record speaks for itself:
+    - **Exponential Growth**: From zero to hundreds of millions in valuation
+    - **Volume Leadership**: Generated over $20 million in total trading volume on BNB Chain
+    - **Community Returns**: Distributed over $1 million directly back to our token holders
+    - **Holder Base**: Supported tens of thousands of community members
+    - **Ecosystem Contribution**: Consistently driven activity and value to the BNB Chain ecosystem
+
+    ## The Scale of Support: Putting 876 BNB in Perspective
+
+    Every quarter, **Binance burns roughly 1m BNB on average**, with **less than 1/1000th required to make DeHub whole again**. This puts our request in proper perspective—we're not asking for something unreasonable or unprecedented.
+
+    ### The Math That Matters
+
+    - **Quarterly Burn Volume**: ~1,000,000 BNB
+    - **DeHub Recovery Amount**: 876 BNB  
+    - **Percentage of Burn**: Less than 0.1%
+    - **Impact on Process**: Negligible effect on overall burn mechanics
+
+    The 876 BNB represents such a small fraction of the quarterly burn that supporting our recovery would have virtually no impact on Binance's token economics while making an enormous difference to our community and ecosystem.
+
+    ## Advanced Discussions: Where We Stand Today
+
+    We are in **advanced meetings with the BNB / Binance / Labs team** as we try and recover the LP, and will provide **further updates as and when we can**. These discussions have evolved from initial explanations to detailed implementation planning.
+
+    ### Current Status
+
+    While we can't share every detail of ongoing negotiations, we can confirm:
+
+    - **Active Engagement**: Regular meetings and communications continue
+    - **Technical Solutions**: Multiple recovery mechanisms are being evaluated
+    - **Timeline Clarity**: We're working toward specific deadlines and milestones
+    - **Stakeholder Alignment**: Growing support within the BNB ecosystem
+
+    The complexity of these discussions requires patience, but we're encouraged by the progress and the level of engagement from all parties involved.
+
+    ## What Next? Community-Driven Decision Making
+
+    ### If the BNB is Recovered
+
+    **If the BNB is recovered, we will open a governance poll on dehub.io** to decide as a community what to do with the funds in order to **maximize growth, users and revenue**.
+
+    This isn't just about getting our BNB back—it's about what we do with this recovered value to benefit the entire DeHub ecosystem. Potential options the community might consider include:
+
+    - **Liquidity Enhancement**: Adding to existing pools to improve trading conditions
+    - **Development Funding**: Accelerating product development and feature releases
+    - **Marketing Expansion**: Scaling our reach and user acquisition efforts
+    - **Community Rewards**: Direct distributions to long-term holders and active participants
+    - **Strategic Partnerships**: Funding collaborations that drive ecosystem growth
+    - **Innovation Investment**: Supporting research and development of new features
+
+    ### If the BNB is Not Recovered
+
+    **If the BNB is not recovered, it's business as usual** and we **continue strongly, as we have for the past 3+ years, never slowing down, never quitting**.
+
+    Our success has never been dependent on recovering these funds. While the recovery would certainly provide additional resources for growth, DeHub's core strength lies in:
+
+    - **Proven Resilience**: We've thrived despite challenges
+    - **Strong Community**: Our holders and users remain committed  
+    - **Continuous Innovation**: We keep building regardless of obstacles
+    - **Sustainable Growth**: Our business model doesn't require the recovered BNB to succeed
+
+    ## The DeHub Difference: Why We Deserve Support
+
+    ### A Track Record of Excellence
+
+    Our journey from a 2022 contract issue to becoming one of the top-performing assets demonstrates exactly why the BNB ecosystem should support our recovery:
+
+    1. **Crisis Management**: We turned a potential disaster into a comeback story
+    2. **Community First**: Every decision prioritizes our holders and users
+    3. **Ecosystem Contribution**: We consistently add value to BNB Chain through volume and activity
+    4. **Innovation Leadership**: We push boundaries and introduce new concepts to DeFi
+    5. **Long-term Thinking**: We build for sustainability, not quick profits
+
+    ### More Than Just Numbers
+
+    While our $20+ million in volume and $1+ million in community returns are impressive, they represent something deeper: a commitment to creating real value and sharing that value with our community. This philosophy is why recovery efforts have gained such strong support within the Binance ecosystem.
+
+    ## Looking Forward: Strength Through Unity
+
+    Regardless of the outcome of our recovery efforts, DeHub's future remains bright. We've proven that we can overcome any challenge when our community and team work together. The 876 BNB represents more than just stuck funds—it's a symbol of our resilience and determination.
+
+    ### Our Commitment Continues
+
+    Whether we recover these funds or not, our commitment to the DeHub community remains unchanged:
+
+    - **Continuous Development**: New features and improvements never stop
+    - **Community Support**: We always prioritize our holders' interests  
+    - **Ecosystem Growth**: We keep contributing to BNB Chain's success
+    - **Innovation Leadership**: We continue pushing the boundaries of what's possible
+    - **Transparency**: Regular updates and open communication with our community
+
+    ## The Next Chapter
+
+    The story of our 876 BNB recovery is still being written. What we know for certain is that DeHub will continue to thrive, grow, and serve our community regardless of the outcome. We've come this far through challenges that would have stopped lesser projects, and we're just getting started.
+
+    **Stay tuned for updates as this important chapter in DeHub's history unfolds. Together, we've built something extraordinary—and together, we'll continue reaching new heights.**
+
+    The road to recovery may be complex, but our destination remains clear: building the best possible ecosystem for our community while contributing meaningfully to the broader DeFi landscape on BNB Chain.
+  `,
+  bannerImage: '/lovable-uploads/bnb-pool-update-banner.png',
+  bannerImageAlt: 'BNB Pool Update - DeHub\'s journey to recover 876 BNB stuck from 2022 contract issue',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2025-09-14T12:00:00.000Z',
+  tags: ['BNB', 'Pool Recovery', 'Binance', 'Community', 'Governance'],
+  readingTime: 7,
+  featured: false,
+  status: 'published',
+  seoTitle: 'BNB Pool Update: The Road to Recovering 876 BNB Stuck in Our Old Pool from 2022 | DeHub',
+  seoDescription: 'DeHub provides an update on recovering 876 BNB stuck in our old pool from 2022, including advanced discussions with Binance teams and community governance plans.',
+};
+
 export const newPosts: BlogPostType[] = [
   teamFirstClassAgencyPost,
   offRampServicePost,
@@ -1106,7 +1256,8 @@ export const newPosts: BlogPostType[] = [
   crusadersSponsorshipPost,
   publicBetaDappReportPost,
   flagshipGameLaunchPost,
-  coinbaseDHBPost
+  coinbaseDHBPost,
+  bnbPoolUpdatePost
 ];
 
 export const getNewPostBySlug = (slug: string): BlogPostType | undefined => {
