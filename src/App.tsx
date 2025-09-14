@@ -213,7 +213,11 @@ const App = () => (
                     <BlogPost />
                   </Suspense>
                 } />
-                <Route path="/docs/faq" element={<FAQ />} />
+                <Route path="faq" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <FAQ />
+                  </Suspense>
+                } />
               </Route>
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
