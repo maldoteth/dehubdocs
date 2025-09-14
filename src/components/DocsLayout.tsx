@@ -102,7 +102,7 @@ const menuItems = [{
     {
       title: 'App',
       path: 'https://dehub.io',
-      icon: '/lovable-uploads/ca557554-cea2-41f1-8139-d456861beacb.png',
+      icon: '/lovable-uploads/dhb-icon-white-logo.png',
       external: true,
       isImage: true
     }, {
