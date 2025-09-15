@@ -1085,7 +1085,7 @@ const coinbaseDHBPost: BlogPostType = {
   },
   publishedAt: '2025-08-19T12:00:00.000Z',
   tags: ['Coinbase', 'DHB', 'DEX', 'Decentralized Trading', 'Base', 'DeFi'],
-  readingTime: 3,
+  readingTime: 5,
   featured: false,
   status: 'published',
   seoTitle: '$DHB now trading on Coinbase! | DeHub Decentralized Trading Revolution',
