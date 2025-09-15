@@ -1100,7 +1100,7 @@ const bnbPoolUpdatePost: BlogPostType = {
 
     Back in 2022, we overcame a contract issue which resulted in **876 BNB being stuck in our old pool**. What started as a technical setback became a testament to our community's resilience and our team's unwavering determination to never give up on our holders.
 
-    Although we successfully migrated and relaunched, it was largely due to our **incredibly supportive community** and the team's **unwavering perseverance**. The challenges we faced could have ended many projects, but DeHub has always been built different—we don't quit, we adapt, overcome, and emerge stronger.
+    Although we successfully migrated and relaunched, it was largely due to our **incredibly supportive community** and the team's **relentless dedication**. The challenges we faced could have ended many projects, but DeHub has always been built different—we don't quit, we adapt, overcome, and emerge stronger.
 
     ### The Technical Context: What "Unlocked" Really Means
 
