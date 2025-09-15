@@ -1106,7 +1106,7 @@ const bnbPoolUpdatePost: BlogPostType = {
 
     ### The Technical Context: What "Unlocked" Really Means
 
-    The 876 BNB is now officially **"unlocked"** from a technical standpoint, meaning it's no longer trapped by the original contract issues that caused the problem. However, recovering these funds requires coordination with the broader Binance ecosystem and their quarterly burn processes.
+    The 876 BNB is now officially **"unlocked"** from a technical standpoint. However, the funds are still stuck as our contract won't let us withdraw, though the pool is unlocked. Recovering these funds requires coordination with the broader Binance ecosystem and their quarterly burn processes.
 
     This isn't simply a matter of pressing a button—it involves complex negotiations with multiple stakeholders and requires approval from decision-makers who control the burn mechanisms that could facilitate our recovery.
 
