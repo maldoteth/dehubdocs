@@ -1075,8 +1075,6 @@ const coinbaseDHBPost: BlogPostType = {
     Whether you're a seasoned DeFi veteran or new to decentralized trading, this integration provides the perfect opportunity to experience the benefits of truly trustless, transparent trading. No intermediaries, no hidden fees, no surrender of custody - just pure, decentralized access to one of the most innovative tokens in the Web3 ecosystem.
 
     **The revolution is here. The future is decentralized. And $DHB is leading the way.**
-
-    *Trade $DHB on Coinbase today and experience the future of decentralized finance.*
   `,
   bannerImage: '/lovable-uploads/coinbase-dhb-banner.png',
   bannerImageAlt: '$DHB now trading on Coinbase - DeHub leads the decentralized trading revolution',
