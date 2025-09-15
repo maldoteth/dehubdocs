@@ -1226,7 +1226,7 @@ const bnbPoolUpdatePost: BlogPostType = {
 
     **Stay tuned for updates as this important chapter in DeHub's history unfolds. Together, we've built something extraordinary—and together, we'll continue reaching new heights.**
 
-    The road to recovery may be complex, but our destination remains clear: building the best possible ecosystem for our community while contributing meaningfully to the broader DeFi landscape on BNB Chain.
+    The road to recovery may be complex, but our destination remains clear: building the best possible ecosystem for our community while contributing meaningfully to the broader landscape on BNB Chain.
   `,
   bannerImage: '/lovable-uploads/bnb-pool-update-banner.png',
   bannerImageAlt: 'BNB Pool Update - DeHub\'s journey to recover 876 BNB stuck from 2022 contract issue',
