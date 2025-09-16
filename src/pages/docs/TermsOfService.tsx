@@ -160,6 +160,24 @@ const TermsOfService = () => {
         </CardContent>
       </Card>
 
+      {/* Token Protection Mechanisms */}
+      <Card className="border-sky-blue/20">
+        <CardHeader>
+          <CardTitle className="text-xl text-royal-blue font-exo flex items-center">
+            <Shield className="w-5 h-5 mr-2" />
+            Token Protection Mechanisms
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
+          <div>
+            <h3 className="font-semibold text-royal-blue mb-2">Burn & Mint Function</h3>
+            <p>
+              DeHub retains the right to use the burn & mint function designed to protect our holders from attacks, hacks or exchange bankruptcies. This mechanism serves as a security measure to safeguard the community and maintain the integrity of the token ecosystem in extraordinary circumstances.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
       {/* Permissions and Restrictions */}
       <Card className="border-sky-blue/20">
         <CardHeader>
