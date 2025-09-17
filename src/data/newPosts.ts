@@ -1127,12 +1127,6 @@ const bnbPoolUpdatePost: BlogPostType = {
 
     As **one of the top performing assets of the last cycle**, growing from 0 to hundreds of millions, driving **well over $30m in total volume on BNB**, giving back **over $1m to tens of thousands of holders**, few better communities deserve assistance.
 
-    Our track record speaks for itself:
-    - **Exponential Growth**: From zero to hundreds of millions in valuation
-    - **Volume Leadership**: Generated over $30 million in total trading volume on BNB Chain
-    - **Community Returns**: Distributed over $1 million directly back to our token holders
-    - **Holder Base**: Supported tens of thousands of community members
-    - **Ecosystem Contribution**: Consistently driven activity and value to the BNB Chain ecosystem
 
     ## The Scale of Support: Putting 876 BNB in Perspective
 
