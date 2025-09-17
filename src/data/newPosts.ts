@@ -1196,7 +1196,7 @@ const bnbPoolUpdatePost: BlogPostType = {
 
     ### More Than Just Numbers
 
-    While our $30+ million in volume and $1+ million in community returns are impressive, they represent something deeper: a commitment to creating real value and sharing that value with our community. This philosophy is why recovery efforts have gained such strong support within the Binance ecosystem.
+    While our $30+ million in volume and $1+ million in community rewards are impressive, they represent something deeper: a commitment to creating real value and sharing that value with our community. This philosophy is why recovery efforts have gained such strong support within the Binance ecosystem.
 
     ## Looking Forward: Strength Through Unity
 
