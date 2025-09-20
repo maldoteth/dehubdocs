@@ -172,7 +172,7 @@ const TermsOfService = () => {
           <div>
             <h3 className="font-semibold text-royal-blue mb-2">Burn & Mint Function</h3>
             <p>
-              DeHub retains the right to use the burn & mint function designed to protect our holders from attacks, hacks or exchange bankruptcies. This mechanism serves as a security measure to safeguard the community and maintain the integrity of the token ecosystem in extraordinary circumstances.
+              DeHub retains the right to use the burn & mint function designed to protect our holders from attacks, hacks, exploits, user errors or exchange bankruptcies. This mechanism serves as a security measure to safeguard the community and maintain the integrity of the token ecosystem in extraordinary circumstances.
             </p>
           </div>
         </CardContent>
