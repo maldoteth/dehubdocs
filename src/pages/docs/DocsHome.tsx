@@ -74,7 +74,6 @@ const DocsHome = () => {
   // Quick Links
   const quickLinks = [{
     title: 'Basescan',
-    description: 'View on Base network',
     icon: ExternalLink,
     path: 'https://basescan.org/token/0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c',
     color: 'from-middle-blue to-sky-blue',
@@ -82,7 +81,6 @@ const DocsHome = () => {
     contractAddress: '0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c'
   }, {
     title: 'BSCScan',
-    description: 'View on BNB Smart Chain',
     icon: ExternalLink,
     path: 'https://bscscan.com/token/0x680d3113caf77b61b510f332d5ef4cf5b41a761d',
     color: 'from-sky-blue to-middle-blue',
@@ -90,14 +88,12 @@ const DocsHome = () => {
     contractAddress: '0x680d3113caf77b61b510f332d5ef4cf5b41a761d'
   }, {
     title: 'DHBScan',
-    description: 'DeHub network explorer',
     icon: ExternalLink,
     path: 'https://dhbscan.com',
     color: 'from-royal-blue to-sky-blue',
     external: true
   }, {
     title: 'DeHub App',
-    description: 'Access the DeHub application',
     icon: ExternalLink,
     path: 'https://dehub.io',
     color: 'from-middle-blue to-royal-blue',
@@ -163,7 +159,6 @@ const DocsHome = () => {
                     <link.icon className="w-6 h-6 text-plain-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-                  <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
                   <div className="flex flex-row lg:flex-col items-center gap-2 mt-3">
                     <div className="flex items-center justify-center text-sm text-middle-blue group-hover:text-royal-blue font-exo">
                       Visit site
@@ -197,7 +192,6 @@ const DocsHome = () => {
                     <link.icon className="w-6 h-6 text-plain-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-                  <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
                   <div className="flex items-center justify-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
                     Learn more
                     <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
