@@ -159,7 +159,7 @@ const DocsHome = () => {
                     <link.icon className="w-6 h-6 text-plain-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-                  <div className="flex flex-row lg:flex-col items-center gap-2 mt-3">
+                  <div className="flex flex-row lg:flex-col items-center justify-center gap-2 mt-3">
                     <div className="flex items-center justify-center text-sm text-middle-blue group-hover:text-royal-blue font-exo">
                       Visit site
                       <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
