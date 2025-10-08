@@ -180,60 +180,6 @@ const DePIN = () => {
             </div>
           </section>
 
-          {/* Code Examples */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">Full System Code Implementation</h2>
-            
-            <h3 className="text-lg font-semibold text-slate-800 mb-4">Miner Client Code</h3>
-            <div className="bg-slate-900 p-6 rounded-lg mb-6 overflow-x-auto">
-              <pre className="text-green-400 text-sm">
-              {`import requests
-import time
-import hashlib
-
-API_BASE = "https://depin-coordinator.dehub.net"
-
-class MinerClient:
-    def __init__(self, device_id, cpu_cores, ram_gb, bandwidth_mbps):
-        self.device_id = device_id
-        self.cpu_cores = cpu_cores
-        self.ram_gb = ram_gb
-        self.bandwidth_mbps = bandwidth_mbps
-        self.session_token = None
-
-    def register_device(self):
-        payload = {
-            "device_id": self.device_id,
-            "cpu_cores": self.cpu_cores,
-            "ram_gb": self.ram_gb,
-            "bandwidth_mbps": self.bandwidth_mbps
-        }
-        response = requests.post(f"{API_BASE}/register", json=payload)
-        if response.status_code == 200:
-            self.session_token = response.json().get("session_token")
-            print("Registered successfully.")
-        else:
-            print("Registration failed:", response.text)`}
-              </pre>
-            </div>
-
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-200 mb-6">
-              <div className="flex items-start space-x-3">
-                <Calculator className="w-6 h-6 text-purple-600 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold text-purple-800 mb-2">Reward Calculator</h3>
-                  <p className="text-purple-700 mb-3">
-                    The DePIN includes a reward calculator that estimates miners' earnings based on their contributions.
-                  </p>
-                  <div className="bg-white p-4 rounded-lg">
-                    <p className="text-purple-800 font-mono text-sm">
-                      Reward = (Task Weight × Resource Score × Revenue Pool Share)
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
           {/* Scalability and Security */}
           <section className="mb-12">
