@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink } from 'lucide-react';
+import { ArrowRight, Book, Code, Zap, Shield, Users, Database, Rocket, Star, CheckCircle, ExternalLink, Copy, Check } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
 import { getLatestPost } from '@/utils/blogUtils';
@@ -11,6 +11,7 @@ declare const __BUILD_TIME__: string;
 
 const DocsHome = () => {
   const { toast } = useToast();
+  const [copiedAddress, setCopiedAddress] = useState<string>('');
 
   // Monitor performance for this page
   usePerformance();
@@ -41,6 +42,24 @@ const DocsHome = () => {
     }
   }
 
+  const copyToClipboard = async (address: string) => {
+    try {
+      await navigator.clipboard.writeText(address);
+      setCopiedAddress(address);
+      toast({
+        title: "Contract address copied!",
+        description: "The contract address has been copied to your clipboard.",
+      });
+      setTimeout(() => setCopiedAddress(''), 2000);
+    } catch (err) {
+      toast({
+        title: "Copy failed",
+        description: "Please copy the address manually.",
+        variant: "destructive",
+      });
+    }
+  };
+
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
@@ -59,14 +78,16 @@ const DocsHome = () => {
     icon: ExternalLink,
     path: 'https://basescan.org/token/0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c',
     color: 'from-middle-blue to-sky-blue',
-    external: true
+    external: true,
+    contractAddress: '0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c'
   }, {
     title: 'BSCScan',
     description: 'View on BNB Smart Chain',
     icon: ExternalLink,
     path: 'https://bscscan.com/token/0x680d3113caf77b61b510f332d5ef4cf5b41a761d',
     color: 'from-sky-blue to-middle-blue',
-    external: true
+    external: true,
+    contractAddress: '0x680d3113caf77b61b510f332d5ef4cf5b41a761d'
   }, {
     title: 'DHBScan',
     description: 'DeHub network explorer',
@@ -143,9 +164,33 @@ const DocsHome = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
                   <p className="text-royal-blue/70 text-sm font-exo">{link.description}</p>
-                  <div className="flex items-center justify-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
-                    Visit site
-                    <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                  <div className="flex flex-row lg:flex-col items-center gap-2 mt-3">
+                    <div className="flex items-center justify-center text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                      Visit site
+                      <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                    </div>
+                    {link.contractAddress && (
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          copyToClipboard(link.contractAddress!);
+                        }}
+                        className="flex items-center gap-1 text-xs text-middle-blue hover:text-royal-blue transition-colors px-2 py-1 rounded hover:bg-sky-blue/10"
+                      >
+                        {copiedAddress === link.contractAddress ? (
+                          <>
+                            <Check className="w-3 h-3 text-green-500" />
+                            <span className="text-green-500">Copied!</span>
+                          </>
+                        ) : (
+                          <>
+                            <Copy className="w-3 h-3" />
+                            <span>Copy CA</span>
+                          </>
+                        )}
+                      </button>
+                    )}
                   </div>
                 </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
                   <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
