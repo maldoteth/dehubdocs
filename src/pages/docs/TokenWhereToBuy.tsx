@@ -56,7 +56,7 @@ const TokenWhereToBuy = () => {
             <a href="https://www.mexc.com/dex/trade?pair_ca=0xebDeacaf03Ba54Eb18128FD1FD042bc747af9295&chain_id=8453&token_ca=0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c&from=search" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
               <div>
                 <h4 className="font-semibold text-slate-700">MEXC</h4>
-                <p className="text-slate-600">Centralized Exchange</p>
+                <p className="text-slate-600">Centralized DEX Integration</p>
               </div>
               <ExternalLink className="w-5 h-5 text-slate-400" />
             </a>
