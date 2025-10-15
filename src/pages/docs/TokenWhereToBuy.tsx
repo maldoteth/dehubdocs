@@ -48,18 +48,35 @@ const TokenWhereToBuy = () => {
       
       <Card>
         <CardHeader>
-          <CardTitle className="text-xl text-slate-800 flex items-center gap-2">
-            Coming Soon
-            <Clock className="w-5 h-5" />
-          </CardTitle>
+          <CardTitle className="text-xl text-slate-800">CEXs</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors">
-            <div>
-              <h4 className="font-semibold text-slate-700">Coinbase</h4>
-              <p className="text-slate-600">Centralized Exchange (CEX)</p>
-            </div>
-            <span className="text-sm font-medium text-slate-500">Listing soon!</span>
+          <div className="space-y-4">
+            <a 
+              href="https://www.coinbase.com/en-es/trade-crypto/dex"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
+            >
+              <div>
+                <h4 className="font-semibold text-slate-700">Coinbase</h4>
+                <p className="text-slate-600">Centralized Exchange</p>
+              </div>
+              <ExternalLink className="w-5 h-5 text-slate-400" />
+            </a>
+
+            <a 
+              href="https://www.mexc.com/dex/trade?pair_ca=0xebDeacaf03Ba54Eb18128FD1FD042bc747af9295&chain_id=8453&token_ca=0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c&from=search"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
+            >
+              <div>
+                <h4 className="font-semibold text-slate-700">MEXC</h4>
+                <p className="text-slate-600">Centralized Exchange</p>
+              </div>
+              <ExternalLink className="w-5 h-5 text-slate-400" />
+            </a>
           </div>
         </CardContent>
       </Card>
