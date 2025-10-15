@@ -1,16 +1,17 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink, Zap, Shield, CreditCard, Clock } from 'lucide-react';
-
 const TokenWhereToBuy = () => {
-  const exchanges = [
-    { name: "Uniswap", network: "Base", url: "https://app.uniswap.org/explore/tokens/base/0xd20ab1015f6a2de4a6fddebab270113f689c2f7c" },
-    { name: "Pancakeswap / Marketplace", network: "BNB", url: "https://pancakeswap.finance/swap?inputCurrency=0x680d3113caf77b61b510f332d5ef4cf5b41a761d&outputCurrency=0x55d398326f99059ff775485246999027b3197955&ref=coingecko&user=Coingecko&discount=0&perps=false" }
-  ];
-
-  return (
-    <div className="max-w-4xl mx-auto space-y-8">
+  const exchanges = [{
+    name: "Uniswap",
+    network: "Base",
+    url: "https://app.uniswap.org/explore/tokens/base/0xd20ab1015f6a2de4a6fddebab270113f689c2f7c"
+  }, {
+    name: "Pancakeswap / Marketplace",
+    network: "BNB",
+    url: "https://pancakeswap.finance/swap?inputCurrency=0x680d3113caf77b61b510f332d5ef4cf5b41a761d&outputCurrency=0x55d398326f99059ff775485246999027b3197955&ref=coingecko&user=Coingecko&discount=0&perps=false"
+  }];
+  return <div className="max-w-4xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Where to Buy</h1>
       </div>
@@ -21,21 +22,13 @@ const TokenWhereToBuy = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
-            {exchanges.map((exchange, index) => (
-              <a 
-                key={index} 
-                href={exchange.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
-              >
+            {exchanges.map((exchange, index) => <a key={index} href={exchange.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
                 <div>
                   <h4 className="font-semibold text-slate-700">{exchange.network}</h4>
                   <p className="text-slate-600">{exchange.name}</p>
                 </div>
                 <ExternalLink className="w-5 h-5 text-slate-400" />
-              </a>
-            ))}
+              </a>)}
           </div>
           
           <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
@@ -52,25 +45,15 @@ const TokenWhereToBuy = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
-            <a 
-              href="https://www.coinbase.com/en-es/trade-crypto/dex"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
-            >
+            <a href="https://www.coinbase.com/en-es/trade-crypto/dex" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
               <div>
                 <h4 className="font-semibold text-slate-700">Coinbase</h4>
-                <p className="text-slate-600">Centralized Exchange</p>
+                <p className="text-slate-600">Centralized DEX Integration</p>
               </div>
               <ExternalLink className="w-5 h-5 text-slate-400" />
             </a>
 
-            <a 
-              href="https://www.mexc.com/dex/trade?pair_ca=0xebDeacaf03Ba54Eb18128FD1FD042bc747af9295&chain_id=8453&token_ca=0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c&from=search"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
-            >
+            <a href="https://www.mexc.com/dex/trade?pair_ca=0xebDeacaf03Ba54Eb18128FD1FD042bc747af9295&chain_id=8453&token_ca=0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c&from=search" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
               <div>
                 <h4 className="font-semibold text-slate-700">MEXC</h4>
                 <p className="text-slate-600">Centralized Exchange</p>
@@ -90,12 +73,7 @@ const TokenWhereToBuy = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-6">
-            <a 
-              href="https://dehub.io/dpay"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer"
-            >
+            <a href="https://dehub.io/dpay" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
               <div>
                 <h4 className="font-semibold text-slate-700">dehub.io/dpay</h4>
                 <p className="text-slate-600">Direct purchase with Stripe</p>
@@ -148,8 +126,6 @@ const TokenWhereToBuy = () => {
           </p>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default TokenWhereToBuy;
