@@ -107,7 +107,7 @@ const Dapp = () => {
           </p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Scaled via our decentralized miner network, providing computing power to host, transcode, and deliver content that by design, should live forever.
+            The app is scaled via a decentralized miner network, providing shared computing power to host, transcode, and deliver content that by design, should live forever.
           </p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
