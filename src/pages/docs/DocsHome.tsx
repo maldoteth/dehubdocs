@@ -251,7 +251,7 @@ const DocsHome = () => {
 
         {/* Getting Started */}
         <div className="bg-gradient-to-r from-royal-blue to-middle-blue rounded-2xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-plain-white font-exo">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-bold mb-4 text-jet-black font-exo">Ready to Get Started?</h2>
           <p className="text-sky-blue/90 mb-6 max-w-2xl mx-auto font-exo text-zinc-50">
             Follow our step-by-step guide to integrate our platform in minutes.
           </p>
