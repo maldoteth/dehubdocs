@@ -2,13 +2,13 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { Users, Linkedin, Instagram } from 'lucide-react';
+import { Users, Linkedin } from 'lucide-react';
 import tiktokLogo from '@/assets/tiktok-logo.png';
 import xLogo from '@/assets/x-logo.png';
+import instagramLogo from '@/assets/instagram-logo.png';
 
 const socialIcons = {
   LinkedIn: Linkedin,
-  Instagram: Instagram,
 };
 
 const teamMembers = [{
@@ -127,6 +127,8 @@ export default function Team() {
                             <img src={tiktokLogo} alt="TikTok" className="w-4 h-4" />
                           ) : social.platform === 'X' ? (
                             <img src={xLogo} alt="X" className="w-4 h-4" />
+                          ) : social.platform === 'Instagram' ? (
+                            <img src={instagramLogo} alt="Instagram" className="w-4 h-4" />
                           ) : SocialIcon ? (
                             <SocialIcon className="w-4 h-4" />
                           ) : null}
