@@ -1,4 +1,5 @@
 import { BlogPost } from '@/types/blog';
+import { e2eePost } from './posts/e2eePost';
 
 // Placeholder images - using a few from the provided list and cycling through them
 const unsplashBase = "https://images.unsplash.com/";
@@ -185,6 +186,7 @@ const createPost = (
 };
 
 export const blogPosts: BlogPost[] = [
+  e2eePost,
   // 2021
   // Q1 2021
   createPost("Q1 2021", 2021, 1, 0, "Assembled core development team", "Building the Dream: DeHub's Core Team Assembled"),
