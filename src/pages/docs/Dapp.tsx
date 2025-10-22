@@ -103,15 +103,15 @@ const Dapp = () => {
       <div className="space-y-8">
         <section>
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            As a social & streaming app, there is only a certain level of censorship resistance that would be deemed acceptable, given the illegal and immoral content that could be uploaded.
+            DeHub is a censorship resistant, open source alternative to legacy media platforms.
           </p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Therefore, we have built an articulate on-chain protocol with decentralised moderation mining as well as instant 2 click watch-to-earn, content locking or PPVs for any token. Every upload automatically mints an NFT stored on IPFS while A.I remove unlawful content and directs adult content to a dedicated 18+ zone.
+            Scaled via our decentralized miner network, providing computing power to host, transcode, and deliver content that by design, should live forever.
           </p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Our d'app is unique as it empowers creators by enabling full ownership of subscriber data. You can now take your business anywhere you want and reach your audiences no matter what.
+            As the first protocol to tokenise content back in 2023, we've built a sustainable socialfi solution that empowers creators and consumers alike.
           </p>
           
           <div className="my-6">
