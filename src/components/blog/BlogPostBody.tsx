@@ -20,7 +20,7 @@ export const BlogPostBody: React.FC<BlogPostBodyProps> = ({ bannerImage, bannerI
                 <OptimizedImage 
                   src={bannerImage} 
                   alt={bannerImageAlt}
-                  className={`w-full ${isFullImagePost ? 'h-auto' : 'h-64 lg:h-96'} ${isFullImagePost ? 'object-contain' : 'object-cover object-center'}`}
+                  className={`w-full h-auto ${isFullImagePost ? 'object-contain' : 'object-contain max-h-96'}`}
                   loading="eager"
                 />
             </div>
