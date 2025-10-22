@@ -2,7 +2,14 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Users } from 'lucide-react';
+import { ExternalLink, Users, Linkedin, Instagram, Music } from 'lucide-react';
+
+const socialIcons = {
+  LinkedIn: Linkedin,
+  X: ExternalLink,
+  Instagram: Instagram,
+  TikTok: Music,
+};
 
 const teamMembers = [{
   name: 'Malik Jan',
@@ -111,12 +118,16 @@ export default function Team() {
               
               {/* Social Links */}
               {member.socials.length > 0 && <div className="flex flex-wrap gap-3 pt-6 border-t border-slate-200">
-                  {member.socials.map((social, idx) => <Button key={idx} variant="outline" size="sm" asChild className="flex-1 min-w-0">
-                      <a href={social.url} className="flex items-center justify-center space-x-2">
-                        <span className="truncate">{social.platform}</span>
-                        <ExternalLink className="w-3 h-3 flex-shrink-0" />
-                      </a>
-                    </Button>)}
+                  {member.socials.map((social, idx) => {
+                    const SocialIcon = socialIcons[social.platform as keyof typeof socialIcons];
+                    return (
+                      <Button key={idx} variant="outline" size="sm" asChild className="flex-1 min-w-0">
+                        <a href={social.url} className="flex items-center justify-center" aria-label={social.platform}>
+                          {SocialIcon && <SocialIcon className="w-4 h-4" />}
+                        </a>
+                      </Button>
+                    );
+                  })}
                 </div>}
             </CardContent>
           </Card>)}
