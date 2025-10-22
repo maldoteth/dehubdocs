@@ -1,15 +1,11 @@
 import React from 'react';
 import { Lock, Shield, Key, CheckCircle, XCircle, AlertTriangle, Zap, Clock, QrCode, Smartphone } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-
 const E2EEncryption = () => {
-  return (
-    <div className="space-y-8">
+  return <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-slate-900">
-          E2E Encryption
-        </h1>
+        <h1 className="text-4xl font-bold text-slate-900">End To End Encryption</h1>
         <p className="text-lg text-slate-600 max-w-2xl mx-auto">
           Military-grade privacy protection for your conversations
         </p>
@@ -130,7 +126,7 @@ const E2EEncryption = () => {
               <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
                 <h4 className="font-semibold text-slate-800 mb-2">2. Private Key Generation</h4>
                 <pre className="bg-slate-900 text-green-400 p-4 rounded-lg text-xs overflow-x-auto font-mono">
-{`Your Wallet Signature
+                {`Your Wallet Signature
      ↓ [SHA-256 hash]
 32-byte seed
      ↓ [HKDF derivation]
@@ -146,7 +142,7 @@ Your Private Key (32 bytes)`}
               <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
                 <h4 className="font-semibold text-slate-800 mb-2">3. Public Key Creation</h4>
                 <pre className="bg-slate-900 text-green-400 p-4 rounded-lg text-xs overflow-x-auto font-mono">
-{`Private Key
+                {`Private Key
      ↓ [X25519 operation]
 Public Key (32 bytes)
      ↓ [Base64 encoding]
@@ -175,7 +171,7 @@ Uploaded to DeHub database`}
             <p className="text-slate-700 mb-4">When you chat with someone who also has E2EE enabled:</p>
             
             <pre className="bg-slate-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto font-mono">
-{`Your Private Key (from your device)
+            {`Your Private Key (from your device)
     +
 Their Public Key (from DeHub database)
     ↓ [X25519 ECDH Magic]
@@ -203,7 +199,7 @@ Session Key (32 bytes)`}
               <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
                 <h4 className="font-semibold text-slate-800 mb-2">1. Message Preparation</h4>
                 <pre className="bg-slate-900 text-green-400 p-4 rounded-lg text-xs overflow-x-auto font-mono">
-{`"Hello, world!"
+                {`"Hello, world!"
     ↓ [UTF-8 encoding]
 Plaintext bytes: [72, 101, 108, 108, 111, ...]`}
                 </pre>
@@ -212,7 +208,7 @@ Plaintext bytes: [72, 101, 108, 108, 111, ...]`}
               <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
                 <h4 className="font-semibold text-slate-800 mb-2">2. Encryption</h4>
                 <pre className="bg-slate-900 text-green-400 p-4 rounded-lg text-xs overflow-x-auto font-mono">
-{`Plaintext bytes
+                {`Plaintext bytes
     +
 Session Key
     +
@@ -274,7 +270,7 @@ Ready for DeHub servers`}
               <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
                 <h4 className="font-semibold text-slate-800 mb-2">2. Session Key Retrieval</h4>
                 <pre className="bg-slate-900 text-green-400 p-4 rounded-lg text-xs overflow-x-auto font-mono">
-{`Check cache → If found, use it
+                {`Check cache → If found, use it
              ↓ If not found
 Derive fresh session key using ECDH (same as Phase 2)`}
                 </pre>
@@ -283,7 +279,7 @@ Derive fresh session key using ECDH (same as Phase 2)`}
               <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
                 <h4 className="font-semibold text-slate-800 mb-2">3. Decryption</h4>
                 <pre className="bg-slate-900 text-green-400 p-4 rounded-lg text-xs overflow-x-auto font-mono">
-{`Ciphertext + Authentication Tag
+                {`Ciphertext + Authentication Tag
     +
 Nonce
     +
@@ -540,8 +536,6 @@ Plaintext bytes (authentication verified!)
           </div>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default E2EEncryption;
