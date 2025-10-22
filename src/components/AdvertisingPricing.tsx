@@ -28,10 +28,10 @@ const AdvertisingPricing = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <DollarSign className="w-5 h-5 text-middle-blue" />
+            <DollarSign className="w-5 h-5 text-medium-silver" />
             <span>POVR Advertising Pricing System</span>
           </CardTitle>
-          <p className="text-royal-blue/80">
+          <p className="text-gray-700">
             Our linear tier-based pricing system ensures fair and scalable advertising costs based on audience value. The value is priced in USD for ease of management however payments will be prompted in $DHB at the time of execution.
           </p>
         </CardHeader>
@@ -82,32 +82,32 @@ const AdvertisingPricing = () => {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
-              <TrendingUp className="w-5 h-5 text-middle-blue" />
+              <TrendingUp className="w-5 h-5 text-medium-silver" />
               <span>Pricing Benefits</span>
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
             <div className="flex items-start space-x-3">
-              <div className="w-2 h-2 rounded-full bg-middle-blue mt-2"></div>
-              <p className="text-sm text-royal-blue/80">
+              <div className="w-2 h-2 rounded-full bg-medium-silver mt-2"></div>
+              <p className="text-sm text-gray-700">
                 <strong>Linear progression:</strong> Predictable $2.50 CPM increases per tier
               </p>
             </div>
             <div className="flex items-start space-x-3">
-              <div className="w-2 h-2 rounded-full bg-middle-blue mt-2"></div>
-              <p className="text-sm text-royal-blue/80">
+              <div className="w-2 h-2 rounded-full bg-medium-silver mt-2"></div>
+              <p className="text-sm text-gray-700">
                 <strong>Fair pricing:</strong> Costs reflect actual audience value and purchasing power
               </p>
             </div>
             <div className="flex items-start space-x-3">
-              <div className="w-2 h-2 rounded-full bg-middle-blue mt-2"></div>
-              <p className="text-sm text-royal-blue/80">
+              <div className="w-2 h-2 rounded-full bg-medium-silver mt-2"></div>
+              <p className="text-sm text-gray-700">
                 <strong>Fraud protection:</strong> POVR verification ensures real, valuable audiences
               </p>
             </div>
             <div className="flex items-start space-x-3">
-              <div className="w-2 h-2 rounded-full bg-middle-blue mt-2"></div>
-              <p className="text-sm text-royal-blue/80">
+              <div className="w-2 h-2 rounded-full bg-medium-silver mt-2"></div>
+              <p className="text-sm text-gray-700">
                 <strong>Scalable targeting:</strong> Choose specific tiers or ranges for optimal ROI
               </p>
             </div>
@@ -117,7 +117,7 @@ const AdvertisingPricing = () => {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
-              <Users className="w-5 h-5 text-middle-blue" />
+              <Users className="w-5 h-5 text-medium-silver" />
               <span>Package Options</span>
             </CardTitle>
           </CardHeader>

@@ -24,12 +24,13 @@ export default {
 				'exo': ['Exo', 'sans-serif'],
 			},
 			colors: {
-				// Brand Colors
+				// Brand Colors - Black/White/Silver
 				'jet-black': '#000000',
 				'plain-white': '#FFFFFF',
-				'sky-blue': '#76A7E3',
-				'middle-blue': '#45BFD6',
-				'royal-blue': '#091d4b',
+				'light-silver': '#D3D3D3',
+				'medium-silver': '#A8A8A8',
+				'dark-silver': '#6B6B6B',
+				'charcoal': '#2C2C2C',
 				
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -37,11 +38,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#091d4b', // Royal Blue
+					DEFAULT: '#000000', // Jet Black
 					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: '#76A7E3', // Sky Blue
+					DEFAULT: '#D3D3D3', // Light Silver
 					foreground: '#000000'
 				},
 				destructive: {
@@ -53,7 +54,7 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: '#45BFD6', // Middle Blue
+					DEFAULT: '#A8A8A8', // Medium Silver
 					foreground: '#000000'
 				},
 				popover: {
@@ -67,12 +68,12 @@ export default {
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: '#091d4b', // Royal Blue
+					primary: '#000000', // Jet Black
 					'primary-foreground': '#FFFFFF',
-					accent: '#76A7E3', // Sky Blue
+					accent: '#D3D3D3', // Light Silver
 					'accent-foreground': '#000000',
 					border: 'hsl(var(--sidebar-border))',
-					ring: '#45BFD6' // Middle Blue
+					ring: '#A8A8A8' // Medium Silver
 				}
 			},
 			borderRadius: {

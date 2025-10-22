@@ -10,9 +10,9 @@ interface BlogPostFooterProps {
 
 export const BlogPostFooter: React.FC<BlogPostFooterProps> = ({ shareUrl, postTitle, imageUrl }) => {
     return (
-        <footer className="border-t border-sky-blue/20 pt-8">
+    <footer className="border-t border-gray-200 pt-8">
             <div className="text-center">
-                <p className="text-royal-blue/70 mb-4 font-exo">
+                <p className="text-gray-600 mb-4 font-exo">
                     Enjoyed this article? Share it with your network!
                 </p>
                 <ShareButtons shareUrl={shareUrl} postTitle={postTitle} imageUrl={imageUrl} variant="text" />

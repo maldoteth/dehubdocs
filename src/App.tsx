@@ -46,8 +46,8 @@ const FAQ = lazy(() => import("./pages/docs/FAQ"));
 const PageLoader = () => (
   <div className="flex items-center justify-center min-h-[400px]">
     <div className="flex flex-col items-center space-y-4">
-      <div className="w-8 h-8 border-4 border-sky-blue/20 border-t-middle-blue rounded-full animate-spin"></div>
-      <p className="text-royal-blue/70 text-sm">Loading...</p>
+      <div className="w-8 h-8 border-4 border-gray-200 border-t-gray-600 rounded-full animate-spin"></div>
+      <p className="text-gray-700 text-sm">Loading...</p>
     </div>
   </div>
 );

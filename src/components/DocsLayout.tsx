@@ -198,20 +198,20 @@ const DocsLayoutContent = () => {
     setSidebarOpen(false);
   };
 
-  return <div className="min-h-screen bg-gradient-to-br from-sky-blue/10 to-middle-blue/10">
+  return <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header */}
-      <header className="bg-plain-white/90 backdrop-blur-sm border-b border-sky-blue/20 sticky top-0 z-40">
+      <header className="bg-plain-white/90 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-40">
         <div className="flex items-center justify-between px-4 h-16">
           {/* Mobile Layout */}
           <div className="flex items-center lg:hidden w-full">
             {/* Left: Hamburger Menu */}
-            <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2 rounded-md hover:bg-sky-blue/10 transition-colors">
-              <Menu className="w-5 h-5 text-royal-blue" />
+            <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2 rounded-md hover:bg-gray-100 transition-colors">
+              <Menu className="w-5 h-5 text-jet-black" />
             </button>
             
             {/* Center: Logo */}
             <div className="flex-1 flex justify-center">
-              <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-royal-blue">
+              <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-jet-black">
                 <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
               </Link>
             </div>
@@ -223,13 +223,13 @@ const DocsLayoutContent = () => {
               onClick={() => setIsOpen(true)}
               className="p-2"
             >
-              <Search className="w-5 h-5 text-royal-blue" />
+              <Search className="w-5 h-5 text-jet-black" />
             </Button>
           </div>
 
           {/* Desktop Layout */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-royal-blue">
+            <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-jet-black">
               <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
             </Link>
           </div>
@@ -246,17 +246,17 @@ const DocsLayoutContent = () => {
       <div className="flex">
         {/* Sidebar */}
         <aside className={`
-          fixed lg:sticky lg:top-16 inset-y-0 lg:inset-y-auto left-0 z-30 w-64 h-screen lg:h-[calc(100vh-4rem)] bg-plain-white/95 backdrop-blur-sm border-r border-sky-blue/20 transform transition-transform duration-300 ease-in-out
+          fixed lg:sticky lg:top-16 inset-y-0 lg:inset-y-auto left-0 z-30 w-64 h-screen lg:h-[calc(100vh-4rem)] bg-plain-white/95 backdrop-blur-sm border-r border-gray-200 transform transition-transform duration-300 ease-in-out
           ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}>
           <div className="h-full flex flex-col">
             {/* Mobile close button */}
-            <div className="lg:hidden flex justify-between items-center p-4 border-b border-sky-blue/20">
+            <div className="lg:hidden flex justify-between items-center p-4 border-b border-gray-200">
               <div className="flex-1">
                 <SearchTrigger />
               </div>
-              <button onClick={closeSidebar} className="p-2 rounded-md hover:bg-sky-blue/10 transition-colors ml-2">
-                <X className="w-5 h-5 text-royal-blue" />
+              <button onClick={closeSidebar} className="p-2 rounded-md hover:bg-gray-100 transition-colors ml-2">
+                <X className="w-5 h-5 text-jet-black" />
               </button>
             </div>
             
@@ -264,34 +264,34 @@ const DocsLayoutContent = () => {
               <div className="py-6">
                 <nav className="px-4 space-y-6">
                   {menuItems.map(section => <div key={section.title}>
-                      {section.title !== 'Main' && <h3 className="text-sm font-semibold text-royal-blue/70 uppercase tracking-wider mb-3">
+                      {section.title !== 'Main' && <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">
                           {section.title}
                         </h3>}
                       <ul className="space-y-1">
                         {section.items.map(item => <li key={item.path}>
-                            {item.external && (item.path.startsWith('http') || item.path.startsWith('https')) ? <a href={item.path} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue">
+                            {item.external && (item.path.startsWith('http') || item.path.startsWith('https')) ? <a href={item.path} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 text-gray-700 hover:bg-gray-100 hover:text-jet-black">
                                 <div className="flex items-center space-x-3">
                                   {item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
                                   <span>{item.title}</span>
                                 </div>
-                                <ExternalLink className="w-3 h-3 text-royal-blue/50" />
+                                <ExternalLink className="w-3 h-3 text-gray-500" />
                               </a> : <div>
                                 {item.hasSubmenu && item.submenuItems ? <div>
                                     <button onClick={() => toggleSubmenu(item.title)} className={`
                                         w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
-                                        ${isActivePath(item.path) ? 'bg-middle-blue/20 text-royal-blue font-medium border-l-4 border-middle-blue ml-0' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
+                                        ${isActivePath(item.path) ? 'bg-gray-200 text-jet-black font-medium border-l-4 border-gray-600 ml-0' : 'text-gray-700 hover:bg-gray-100 hover:text-jet-black'}
                                       `}>
                                       <div className="flex items-center space-x-3">
-                                        {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-royal-blue/70" /> : <span className="text-base">{item.icon}</span>}
+                                        {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-gray-600" /> : <span className="text-base">{item.icon}</span>}
                                         <span>{item.title}</span>
                                       </div>
-                                      <ChevronDown className={`w-4 h-4 text-royal-blue/50 transition-transform duration-200 ${expandedMenus[item.title] ? 'rotate-180' : ''}`} />
+                                      <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${expandedMenus[item.title] ? 'rotate-180' : ''}`} />
                                     </button>
                                     {expandedMenus[item.title] && <ul className="ml-6 mt-1 space-y-1">
                                         {item.submenuItems.map(subItem => <li key={subItem.path}>
                                             <Link to={subItem.path} onClick={closeSidebar} className={`
                                                 flex items-center px-3 py-2 rounded-lg text-sm transition-all duration-200
-                                                ${isActivePath(subItem.path) ? 'bg-sky-blue/20 text-royal-blue font-medium' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
+                                                ${isActivePath(subItem.path) ? 'bg-gray-200 text-jet-black font-medium' : 'text-gray-700 hover:bg-gray-100 hover:text-jet-black'}
                                               `}>
                                               <span>{subItem.title}</span>
                                             </Link>
@@ -299,14 +299,14 @@ const DocsLayoutContent = () => {
                                       </ul>}
                                   </div> : <Link to={item.path} onClick={closeSidebar} className={`
                                       flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
-                                      ${isActivePath(item.path) ? 'bg-middle-blue/20 text-royal-blue font-medium border-l-4 border-middle-blue ml-0' : 'text-royal-blue/80 hover:bg-sky-blue/10 hover:text-royal-blue'}
+                                      ${isActivePath(item.path) ? 'bg-gray-200 text-jet-black font-medium border-l-4 border-gray-600 ml-0' : 'text-gray-700 hover:bg-gray-100 hover:text-jet-black'}
                                     `}>
                                     <div className="flex items-center space-x-3">
-                                      {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-royal-blue/70" /> : item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
+                                      {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-gray-600" /> : item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
                                       <span>{item.title}</span>
                                     </div>
-                                    {item.hasSubmenu && !item.submenuItems && <ChevronRight className="w-4 h-4 text-royal-blue/50" />}
-                                    {item.external && <ExternalLink className="w-3 h-3 text-royal-blue/50" />}
+                                    {item.hasSubmenu && !item.submenuItems && <ChevronRight className="w-4 h-4 text-gray-500" />}
+                                    {item.external && <ExternalLink className="w-3 h-3 text-gray-500" />}
                                   </Link>}
                               </div>}
                           </li>)}

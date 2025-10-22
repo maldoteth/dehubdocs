@@ -16,7 +16,7 @@ const BackButton: React.FC = () => {
     <Button
       variant="ghost"
       onClick={handleBack}
-      className="mb-6 text-royal-blue hover:text-middle-blue hover:bg-sky-blue/10 transition-colors duration-200 font-exo"
+      className="mb-6 text-jet-black hover:text-gray-600 hover:bg-gray-100 transition-colors duration-200 font-exo"
     >
       <ArrowLeft className="w-4 h-4 mr-2" />
       Back to Blog
