@@ -103,7 +103,7 @@ const Dapp = () => {
       <div className="space-y-8">
         <section>
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            DeHub is a censorship resistant, open source alternative to legacy media platforms servicing the content creation, streaming and gaming industries.
+            DeHub is a censorship resistant, open source alternative to legacy media platforms servicing the content creation, streaming and gaming industries. An ecosystem where anyone can monetise from the first view, without fear of being deplatformed, shadow banned, silenced or manipulated in anyway to be anything but their true self. To speak and think free, away from the hive mind, express as desired.
           </p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
