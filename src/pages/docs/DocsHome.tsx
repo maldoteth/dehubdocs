@@ -271,11 +271,7 @@ const DocsHome = () => {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
-          })} at {lastPublishedDate.toLocaleTimeString('en-US', {
-            hour12: false,
-            hour: '2-digit',
-            minute: '2-digit'
-          })}
+          })}, 04:44
           </p>
         </div>
       </div>
