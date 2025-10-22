@@ -132,11 +132,11 @@ const DocsHome = () => {
       <div className="space-y-12">
         {/* Hero Section */}
         <div className="text-center space-y-6">
-          <h1 className="text-5xl font-bold text-royal-blue leading-tight font-exo">
+          <h1 className="text-5xl font-bold text-jet-black leading-tight font-exo">
             Welcome to
-            <span className="block bg-gradient-to-r from-royal-blue to-middle-blue bg-clip-text text-transparent">Our Docs</span>
+            <span className="block bg-gradient-to-r from-jet-black to-gray-600 bg-clip-text text-transparent">Our Docs</span>
           </h1>
-          <p className="text-xl text-royal-blue/70 max-w-3xl mx-auto leading-relaxed font-exo">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-exo">
             Everything you need to use, integrate, build, and scale with our platform. From quick start guides to advanced configurations.
           </p>
 
