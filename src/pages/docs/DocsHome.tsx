@@ -210,7 +210,7 @@ const DocsHome = () => {
               </div>
               <div className="lg:w-2/3 text-center lg:text-left">
                 <div className="mb-4">
-                  <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-3 py-1 rounded-full text-sm font-semibold mb-3">From The Blog</span>
+                  <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-jet-black px-3 py-1 rounded-full text-sm font-semibold mb-3">From The Blog</span>
                   <h2 className="text-2xl lg:text-3xl font-bold text-royal-blue mb-3 font-exo">
                     {latestPost.title}
                   </h2>
