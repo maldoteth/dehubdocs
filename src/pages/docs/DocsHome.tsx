@@ -156,7 +156,7 @@ const DocsHome = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-sm sm:max-w-none">
             {quickLinks.map(link => link.external ? <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
                   <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                    <link.icon className="w-6 h-6 text-plain-white" />
+                    <link.icon className="w-6 h-6 text-jet-black" />
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
                   <div className="flex flex-row lg:flex-col items-center justify-center gap-2 mt-3">
@@ -189,7 +189,7 @@ const DocsHome = () => {
                   </div>
                 </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
                   <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                    <link.icon className="w-6 h-6 text-plain-white" />
+                    <link.icon className="w-6 h-6 text-jet-black" />
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
                   <div className="flex items-center justify-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
