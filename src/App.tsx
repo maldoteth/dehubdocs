@@ -15,6 +15,7 @@ import ComingSoonPage from "./components/ComingSoonPage";
 const DocsHome = lazy(() => import("./pages/docs/DocsHome"));
 const Overview = lazy(() => import("./pages/docs/Overview"));
 const DePIN = lazy(() => import("./pages/docs/DePIN"));
+const E2EEncryption = lazy(() => import("./pages/docs/E2EEncryption"));
 const AIToolkits = lazy(() => import("./pages/docs/AIToolkits"));
 const Advertising = lazy(() => import("./pages/docs/Advertising"));
 const QuickStart = lazy(() => import("./pages/docs/QuickStart"));
@@ -118,6 +119,11 @@ const App = () => (
                 <Route path="depin" element={
                   <Suspense fallback={<PageLoader />}>
                     <DePIN />
+                  </Suspense>
+                } />
+                <Route path="e2e-encryption" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <E2EEncryption />
                   </Suspense>
                 } />
                 <Route path="ai-toolkits" element={

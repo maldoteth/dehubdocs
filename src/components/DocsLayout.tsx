@@ -56,6 +56,10 @@ const menuItems = [{
     path: '/docs/depin',
     icon: '🔧'
   }, {
+    title: 'E2E Encryption',
+    path: '/docs/e2e-encryption',
+    icon: '🔐'
+  }, {
     title: 'AI Toolkits',
     path: '/docs/ai-toolkits',
     icon: '🤖'
