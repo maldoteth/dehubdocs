@@ -111,7 +111,7 @@ const Dapp = () => {
           </p>
           
           <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            As the first protocol to tokenise content back in 2023, we've built a sustainable socialfi solution that empowers creators and consumers alike.
+            As the first protocol to tokenise content back in 2023, we've built a sustainable socialfi solution that empowers creators and consumers with a plethora of tools. Features include encrypted private communications, on-chain PPV, tradable subscriptions, paid DMs, unlockable content and many more these docs cover in full.
           </p>
           
           <div className="my-6">
