@@ -38,8 +38,8 @@ const teamMembers = [{
 }, {
   name: 'Indi Jay Cammish',
   role: 'Co-Founder',
-  bio: 'Social media, content & dance expert overseeing communications & corporate relations.',
-  experience: ["Highly experienced working directly alongside global stars such as Mabel on long term world tours", "Performed at the Platinum Party at The Palace event for her majesty, the Queen of England in the summer of 2022", "Co-founder of First Class, the UK's leading TikTok partner agency"],
+  bio: 'Social media, content & dance expert overseeing communications & corporate relations. Co-founder of First Class, the UK\'s largest TikTok partner agency working directly for TikTok at the UK HQ as part of the in house agency programme.',
+  experience: ["Highly experienced working directly alongside global stars such as Mabel on long term world tours", "Performed at the Platinum Party at The Palace event for her majesty, the Queen of England in the summer of 2022", "Co-founder of First Class, the UK's largest TikTok partner agency working directly for TikTok at the UK HQ as part of the in house agency programme"],
   socials: [{
     platform: 'Instagram',
     url: 'https://www.instagram.com/indijayofficial/?hl=es'
