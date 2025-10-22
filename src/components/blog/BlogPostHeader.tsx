@@ -18,7 +18,7 @@ export const BlogPostHeader: React.FC<BlogPostHeaderProps> = ({ post, displayDat
       <BackButton />
       
       {post.featured && (
-        <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+        <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-black px-4 py-2 rounded-full text-sm font-semibold mb-4">
           Featured Post
         </span>
       )}
