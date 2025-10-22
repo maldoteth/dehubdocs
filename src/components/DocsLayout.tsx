@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { SearchTrigger } from '@/components/search/SearchTrigger';
 import { useTextHighlight } from '@/hooks/useTextHighlight';
 import { useDocsSearch } from '@/hooks/useDocsSearch';
+import dehubCoinIcon from '@/assets/dehub-coin.png';
 
 const menuItems = [{
   title: 'Main',
@@ -30,7 +31,8 @@ const menuItems = [{
   }, {
     title: 'Token',
     path: '/docs/token',
-    iconComponent: Coins,
+    icon: dehubCoinIcon,
+    isImage: true,
     hasSubmenu: true,
     submenuItems: [{
       title: 'Economics & Emissions',
@@ -282,7 +284,7 @@ const DocsLayoutContent = () => {
                                         ${isActivePath(item.path) ? 'bg-gray-200 text-jet-black font-medium border-l-4 border-gray-600 ml-0' : 'text-gray-700 hover:bg-gray-100 hover:text-jet-black'}
                                       `}>
                                       <div className="flex items-center space-x-3">
-                                        {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-gray-600" /> : <span className="text-base">{item.icon}</span>}
+                                        {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-gray-600" /> : item.isImage ? <img src={item.icon} alt={item.title} className="w-4 h-4" /> : <span className="text-base">{item.icon}</span>}
                                         <span>{item.title}</span>
                                       </div>
                                       <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${expandedMenus[item.title] ? 'rotate-180' : ''}`} />
