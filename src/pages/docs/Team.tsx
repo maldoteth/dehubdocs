@@ -22,7 +22,7 @@ const teamMembers = [{
   name: 'Mike Hales',
   role: 'Co-Founder',
   bio: "Founder and CEO of Rapz, a notable high end MMA fightwear brand backed by top UFC and boxing stars, with exclusive supplier rights to BKFC. Founder of First Class, the UK's largest TikTok partner agency working directly for TikTok at the UK HQ as part of the in house agency programme, approaching 1000 streamers signed on and reporting directly for the in-house executive team with offices in the UK and Asia.",
-  experience: ["Selected by TikTok executives after 10 months of leading the UK charts with his live streams", "Digital and mixed martial artist behind the Lean Chad Fight Club and Rapz Sport", "Owner of the UK's leading cobra bag provider that recently merged with NGNE"],
+  experience: ["Selected by TikTok executives after 10 months of leading the UK charts with his live streams", "Digital and mixed martial artist behind the Lean Chad Fight Club and Rapz Sport", "Owner of the UK's leading cobra bag provider that recently merged with NGNE", "Exclusive fight gear supplier to BKFC, owned by Connor Mcgregor, and also trained under the same coach John Kavanagh"],
   socials: [{
     platform: 'TikTok',
     url: 'https://www.tiktok.com/@mikehalesmma?lang=en'
