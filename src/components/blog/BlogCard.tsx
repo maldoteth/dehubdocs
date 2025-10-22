@@ -94,9 +94,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
             className={`w-full object-cover transition-transform duration-200 group-hover:scale-105 ${featured ? 'h-48' : 'h-40'}`}
           />
           {post.featured && (
-            <span className="absolute top-4 left-4 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white px-3 py-1 rounded-full text-sm font-semibold">
-              Featured
-            </span>
+          <span className="absolute top-4 left-4 bg-gradient-to-r from-royal-blue to-middle-blue text-black px-3 py-1 rounded-full text-sm font-semibold">
+            Featured
+          </span>
           )}
         </div>
         
