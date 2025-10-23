@@ -5,7 +5,7 @@ const E2EEncryption = () => {
   return <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-slate-900">End To End Encryption</h1>
+        <h1 className="text-4xl font-bold text-slate-900">End To End Encryption (E2EE)</h1>
         <p className="text-lg text-slate-600 max-w-2xl mx-auto">
           Military-grade privacy protection for your conversations
         </p>
