@@ -83,7 +83,7 @@ const TokenEconomics = () => {
                             {payload?.map((entry: any, index: number) => (
                               <div key={`legend-${index}`} className="flex items-center gap-2">
                                 <div 
-                                  className="w-12 h-8 flex items-center justify-center text-white text-xs font-semibold rounded"
+                                  className="w-10 h-6 flex items-center justify-center text-white text-xs font-semibold rounded"
                                   style={{ backgroundColor: entry.color }}
                                 >
                                   {entry.payload.value}%
