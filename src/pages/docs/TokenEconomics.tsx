@@ -3,31 +3,40 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
-
-const supplyData = [
-  { name: 'Community Sales & Airdrops', value: 42, fill: '#1a1a1a' },
-  { name: 'Burn', value: 42, fill: '#4a4a4a' },
-  { name: 'Team', value: 8, fill: '#7a7a7a' },
-  { name: 'Operations', value: 8, fill: '#b0b0b0' },
-];
-
+const supplyData = [{
+  name: 'Community Sales & Airdrops',
+  value: 42,
+  fill: '#1a1a1a'
+}, {
+  name: 'Burn',
+  value: 42,
+  fill: '#4a4a4a'
+}, {
+  name: 'Team',
+  value: 8,
+  fill: '#7a7a7a'
+}, {
+  name: 'Operations',
+  value: 8,
+  fill: '#b0b0b0'
+}];
 const chartConfig = {
   community: {
     label: "Community Sales & Airdrops",
-    color: "#1a1a1a",
+    color: "#1a1a1a"
   },
   burn: {
     label: "Burn",
-    color: "#4a4a4a",
+    color: "#4a4a4a"
   },
   team: {
     label: "Team",
-    color: "#7a7a7a",
+    color: "#7a7a7a"
   },
   operations: {
     label: "Operations",
-    color: "#b0b0b0",
-  },
+    color: "#b0b0b0"
+  }
 };
 const TokenEconomics = () => {
   return <div className="max-w-4xl mx-auto space-y-8">
@@ -44,30 +53,18 @@ const TokenEconomics = () => {
             <CardTitle className="text-xl text-slate-800">Supply Distribution</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-2xl font-bold text-slate-900 text-center">8,000,000,000</p>
+            <p className="text-2xl font-bold text-slate-900 text-center">Total: 8,000,000,000 $DHB</p>
             <ChartContainer config={chartConfig} className="h-[400px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
-                    <Pie
-                      data={supplyData}
-                      cx="50%"
-                      cy="50%"
-                      labelLine={false}
-                      label={({ name, value }) => `${value}%`}
-                      outerRadius={120}
-                      fill="#8884d8"
-                      dataKey="value"
-                    >
-                      {supplyData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={entry.fill} />
-                      ))}
+                    <Pie data={supplyData} cx="50%" cy="50%" labelLine={false} label={({
+                  name,
+                  value
+                }) => `${value}%`} outerRadius={120} fill="#8884d8" dataKey="value">
+                      {supplyData.map((entry, index) => <Cell key={`cell-${index}`} fill={entry.fill} />)}
                     </Pie>
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Legend 
-                      verticalAlign="bottom" 
-                      height={36}
-                      formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`}
-                    />
+                    <Legend verticalAlign="bottom" height={36} formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`} />
                   </PieChart>
                 </ResponsiveContainer>
             </ChartContainer>
