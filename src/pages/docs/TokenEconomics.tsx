@@ -39,14 +39,13 @@ const TokenEconomics = () => {
       </div>
 
       <div className="grid gap-6">
-        <div>
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">Token Supply: 8,000,000,000</h2>
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-xl text-slate-800">Supply Distribution</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ChartContainer config={chartConfig} className="h-[400px] w-full">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-xl text-slate-800">Supply Distribution</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-2xl font-bold text-slate-900 text-center">8,000,000,000</p>
+            <ChartContainer config={chartConfig} className="h-[400px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie
@@ -71,10 +70,9 @@ const TokenEconomics = () => {
                     />
                   </PieChart>
                 </ResponsiveContainer>
-              </ChartContainer>
-            </CardContent>
-          </Card>
-        </div>
+            </ChartContainer>
+          </CardContent>
+        </Card>
 
         <Card>
           <CardHeader>
