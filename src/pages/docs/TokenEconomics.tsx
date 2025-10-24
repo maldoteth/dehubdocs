@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
+import { ChartContainer } from '@/components/ui/chart';
 const supplyData = [{
   name: 'Community Sales & Airdrops',
   value: 42,
@@ -63,8 +63,38 @@ const TokenEconomics = () => {
                 }) => `${value}%`} outerRadius={120} fill="#8884d8" dataKey="value">
                       {supplyData.map((entry, index) => <Cell key={`cell-${index}`} fill={entry.fill} />)}
                     </Pie>
-                    <ChartTooltip content={<ChartTooltipContent />} />
-                    <Legend verticalAlign="bottom" height={36} formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`} />
+                    <Tooltip content={({ active, payload }) => {
+                      if (active && payload && payload.length) {
+                        return (
+                          <div className="rounded-lg border bg-background p-2 shadow-sm">
+                            <div className="text-sm font-medium">{payload[0].name}</div>
+                          </div>
+                        );
+                      }
+                      return null;
+                    }} />
+                    <Legend 
+                      verticalAlign="bottom" 
+                      height={36} 
+                      content={(props) => {
+                        const { payload } = props;
+                        return (
+                          <div className="flex flex-wrap justify-center gap-4 mt-4">
+                            {payload?.map((entry: any, index: number) => (
+                              <div key={`legend-${index}`} className="flex items-center gap-2">
+                                <div 
+                                  className="w-10 h-6 flex items-center justify-center text-white text-xs font-semibold rounded"
+                                  style={{ backgroundColor: entry.color }}
+                                >
+                                  {entry.payload.value}%
+                                </div>
+                                <span className="text-sm text-slate-700">{entry.value}</span>
+                              </div>
+                            ))}
+                          </div>
+                        );
+                      }}
+                    />
                   </PieChart>
                 </ResponsiveContainer>
             </ChartContainer>
@@ -128,7 +158,7 @@ const TokenEconomics = () => {
             </div>
             <Separator />
             <div>
-              <h4 className="font-semibold text-slate-700 mb-2">All supply is fully diluted from day 1, team wallets are not permitted to liquidate any tokens past rewards and should never go below original balance barring un-staking fees. In theory, we are already at a fully diluted valuation (FDV).</h4>
+              <h4 className="font-semibold text-slate-700 mb-2">Operational Allocation</h4>
               <p className="text-slate-600 mb-2">8% of the total supply is allocated for:</p>
               <ul className="list-disc list-inside text-slate-600 space-y-1 ml-4">
                 <li>Operations & Awareness Raising</li>
