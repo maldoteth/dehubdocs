@@ -123,40 +123,6 @@ const TokenEconomics = () => {
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-xl text-slate-800">Allocations</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">Team Allocation</h4>
-              <p className="text-slate-600 leading-relaxed">
-                8% of the total supply is reserved for DeHub contributors. No team wallet can sell below their percentage allocation and only rewards are tradable.
-              </p>
-            </div>
-            <Separator />
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">Operational Allocation</h4>
-              <p className="text-slate-600 mb-2">8% of the total supply is allocated for:</p>
-              <ul className="list-disc list-inside text-slate-600 space-y-1 ml-4">
-                <li>Operations & Awareness Raising</li>
-                <li>Research & Development</li>
-                <li>Partnerships & Licensing</li>
-              </ul>
-              <p className="text-slate-600 mt-3 leading-relaxed">
-                No operational wallet can sell below their percentage allocation and only the rewards are tradable. This in theory means the supply will never dilute beyond its current point and it's safe to assume we are at fully diluted valuation. This also technically means that there was no premine as none can be sold. No funds where raised to build the protocol which was already in beta prior to a token release.
-              </p>
-            </div>
-            <Separator />
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">Burn Wallet</h4>
-              <p className="text-slate-600 leading-relaxed">
-                42% of the supply will be burnt on launch to ensure the burn wallet accumulates rewards or airdrops holders are entitled for further reducing the supply automatically. All profits are used to buy back $DHB. This is 100% distributed to stakeholders and the burn wallet in proportion to holdings.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-
         <Card className="border-amber-200 bg-amber-50">
           <CardHeader>
             <CardTitle className="text-xl text-amber-800">Disclaimer</CardTitle>
