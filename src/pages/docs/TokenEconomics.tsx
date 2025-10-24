@@ -103,28 +103,6 @@ const TokenEconomics = () => {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-xl text-slate-800">Burn & Tax Schedule</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">Burn Schedule</h4>
-              <p className="text-slate-600">42% on launch. Then periodic and dynamic down to final supply</p>
-            </div>
-            <Separator />
-            <div>
-              
-              
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">Seed or Private Unlocks</h4>
-              <p className="text-slate-600">0 on launch as no VCs were involved in building DeHub</p>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
             <CardTitle className="text-xl text-slate-800">Dilution/Emission Schedule</CardTitle>
           </CardHeader>
           <CardContent>
