@@ -63,8 +63,7 @@ const TokenEconomics = () => {
                 }) => `${value}%`} outerRadius={120} fill="#8884d8" dataKey="value">
                       {supplyData.map((entry, index) => <Cell key={`cell-${index}`} fill={entry.fill} />)}
                     </Pie>
-                    <ChartTooltip content={<ChartTooltipContent />} />
-                    <Legend verticalAlign="bottom" height={36} formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`} />
+                    <Legend verticalAlign="bottom" height={36} formatter={(value) => value} />
                   </PieChart>
                 </ResponsiveContainer>
             </ChartContainer>
