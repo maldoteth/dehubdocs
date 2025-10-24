@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
+import { ChartContainer } from '@/components/ui/chart';
 const supplyData = [{
   name: 'Community Sales & Airdrops',
   value: 42,
@@ -63,8 +63,17 @@ const TokenEconomics = () => {
                 }) => `${value}%`} outerRadius={120} fill="#8884d8" dataKey="value">
                       {supplyData.map((entry, index) => <Cell key={`cell-${index}`} fill={entry.fill} />)}
                     </Pie>
-                    <ChartTooltip content={<ChartTooltipContent />} />
-                    <Legend verticalAlign="bottom" height={36} formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`} />
+                    <Tooltip content={({ active, payload }) => {
+                      if (active && payload && payload.length) {
+                        return (
+                          <div className="rounded-lg border bg-background p-2 shadow-sm">
+                            <div className="text-sm font-medium">{payload[0].name}</div>
+                          </div>
+                        );
+                      }
+                      return null;
+                    }} />
+                    <Legend verticalAlign="bottom" height={36} formatter={(value) => value} />
                   </PieChart>
                 </ResponsiveContainer>
             </ChartContainer>
