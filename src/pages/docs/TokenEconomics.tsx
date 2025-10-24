@@ -1,6 +1,34 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
+
+const supplyData = [
+  { name: 'Community Sales & Airdrops', value: 42, fill: 'hsl(var(--primary))' },
+  { name: 'Burn', value: 42, fill: 'hsl(var(--destructive))' },
+  { name: 'Team', value: 8, fill: 'hsl(var(--accent))' },
+  { name: 'Operations', value: 8, fill: 'hsl(var(--secondary))' },
+];
+
+const chartConfig = {
+  community: {
+    label: "Community Sales & Airdrops",
+    color: "hsl(var(--primary))",
+  },
+  burn: {
+    label: "Burn",
+    color: "hsl(var(--destructive))",
+  },
+  team: {
+    label: "Team",
+    color: "hsl(var(--accent))",
+  },
+  operations: {
+    label: "Operations",
+    color: "hsl(var(--secondary))",
+  },
+};
 const TokenEconomics = () => {
   return <div className="max-w-4xl mx-auto space-y-8">
       <div>
@@ -11,6 +39,40 @@ const TokenEconomics = () => {
       </div>
 
       <div className="grid gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-xl text-slate-800">Supply Distribution</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ChartContainer config={chartConfig} className="h-[400px] w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={supplyData}
+                    cx="50%"
+                    cy="50%"
+                    labelLine={false}
+                    label={({ name, value }) => `${value}%`}
+                    outerRadius={120}
+                    fill="#8884d8"
+                    dataKey="value"
+                  >
+                    {supplyData.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.fill} />
+                    ))}
+                  </Pie>
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Legend 
+                    verticalAlign="bottom" 
+                    height={36}
+                    formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
+            </ChartContainer>
+          </CardContent>
+        </Card>
+
         <Card>
           <CardHeader>
             <CardTitle className="text-xl text-slate-800">Token Supply</CardTitle>
