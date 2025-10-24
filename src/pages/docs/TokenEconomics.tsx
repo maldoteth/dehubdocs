@@ -39,65 +39,42 @@ const TokenEconomics = () => {
       </div>
 
       <div className="grid gap-6">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-xl text-slate-800">Supply Distribution</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ChartContainer config={chartConfig} className="h-[400px] w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <Pie
-                    data={supplyData}
-                    cx="50%"
-                    cy="50%"
-                    labelLine={false}
-                    label={({ name, value }) => `${value}%`}
-                    outerRadius={120}
-                    fill="#8884d8"
-                    dataKey="value"
-                  >
-                    {supplyData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.fill} />
-                    ))}
-                  </Pie>
-                  <ChartTooltip content={<ChartTooltipContent />} />
-                  <Legend 
-                    verticalAlign="bottom" 
-                    height={36}
-                    formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`}
-                  />
-                </PieChart>
-              </ResponsiveContainer>
-            </ChartContainer>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-xl text-slate-800">Token Supply</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <h4 className="font-semibold text-slate-700">Total Supply</h4>
-                <p className="text-slate-600">8,000,000,000</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-slate-700">Burn at LGE</h4>
-                <p className="text-slate-600">3,360,000,000</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-slate-700">Circulating Supply at last LGE</h4>
-                <p className="text-slate-600">2,154,403,105</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-slate-700">Final Supply</h4>
-                <p className="text-slate-600">1,000,000,000</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        <div>
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">Token Supply: 8,000,000,000</h2>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl text-slate-800">Supply Distribution</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ChartContainer config={chartConfig} className="h-[400px] w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                  <PieChart>
+                    <Pie
+                      data={supplyData}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      label={({ name, value }) => `${value}%`}
+                      outerRadius={120}
+                      fill="#8884d8"
+                      dataKey="value"
+                    >
+                      {supplyData.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={entry.fill} />
+                      ))}
+                    </Pie>
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend 
+                      verticalAlign="bottom" 
+                      height={36}
+                      formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`}
+                    />
+                  </PieChart>
+                </ResponsiveContainer>
+              </ChartContainer>
+            </CardContent>
+          </Card>
+        </div>
 
         <Card>
           <CardHeader>
