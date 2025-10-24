@@ -5,28 +5,28 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recha
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
 
 const supplyData = [
-  { name: 'Community Sales & Airdrops', value: 42, fill: 'hsl(var(--primary))' },
-  { name: 'Burn', value: 42, fill: 'hsl(var(--destructive))' },
-  { name: 'Team', value: 8, fill: 'hsl(var(--accent))' },
-  { name: 'Operations', value: 8, fill: 'hsl(var(--secondary))' },
+  { name: 'Community Sales & Airdrops', value: 42, fill: '#1a1a1a' },
+  { name: 'Burn', value: 42, fill: '#4a4a4a' },
+  { name: 'Team', value: 8, fill: '#7a7a7a' },
+  { name: 'Operations', value: 8, fill: '#b0b0b0' },
 ];
 
 const chartConfig = {
   community: {
     label: "Community Sales & Airdrops",
-    color: "hsl(var(--primary))",
+    color: "#1a1a1a",
   },
   burn: {
     label: "Burn",
-    color: "hsl(var(--destructive))",
+    color: "#4a4a4a",
   },
   team: {
     label: "Team",
-    color: "hsl(var(--accent))",
+    color: "#7a7a7a",
   },
   operations: {
     label: "Operations",
-    color: "hsl(var(--secondary))",
+    color: "#b0b0b0",
   },
 };
 const TokenEconomics = () => {
