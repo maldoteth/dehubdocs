@@ -53,7 +53,7 @@ const TokenEconomics = () => {
             <CardTitle className="text-xl text-slate-800">Supply Distribution</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-2xl font-bold text-slate-900 text-center">Total: 8,000,000,000 $DHB</p>
+            <p className="font-bold text-slate-900 text-center text-sm">Total: 8,000,000,000 $DHB</p>
             <ChartContainer config={chartConfig} className="h-[400px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
@@ -63,7 +63,8 @@ const TokenEconomics = () => {
                 }) => `${value}%`} outerRadius={120} fill="#8884d8" dataKey="value">
                       {supplyData.map((entry, index) => <Cell key={`cell-${index}`} fill={entry.fill} />)}
                     </Pie>
-                    <Legend verticalAlign="bottom" height={36} formatter={(value) => value} />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Legend verticalAlign="bottom" height={36} formatter={(value, entry: any) => `${value}: ${entry.payload.value}%`} />
                   </PieChart>
                 </ResponsiveContainer>
             </ChartContainer>
