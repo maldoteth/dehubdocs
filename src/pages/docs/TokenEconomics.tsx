@@ -73,7 +73,28 @@ const TokenEconomics = () => {
                       }
                       return null;
                     }} />
-                    <Legend verticalAlign="bottom" height={36} formatter={(value) => value} />
+                    <Legend 
+                      verticalAlign="bottom" 
+                      height={36} 
+                      content={(props) => {
+                        const { payload } = props;
+                        return (
+                          <div className="flex flex-wrap justify-center gap-4 mt-4">
+                            {payload?.map((entry: any, index: number) => (
+                              <div key={`legend-${index}`} className="flex items-center gap-2">
+                                <div 
+                                  className="w-12 h-8 flex items-center justify-center text-white text-xs font-semibold rounded"
+                                  style={{ backgroundColor: entry.color }}
+                                >
+                                  {entry.payload.value}%
+                                </div>
+                                <span className="text-sm text-slate-700">{entry.value}</span>
+                              </div>
+                            ))}
+                          </div>
+                        );
+                      }}
+                    />
                   </PieChart>
                 </ResponsiveContainer>
             </ChartContainer>
