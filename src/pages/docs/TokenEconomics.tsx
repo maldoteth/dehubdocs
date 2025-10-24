@@ -107,7 +107,7 @@ const TokenEconomics = () => {
           </CardHeader>
           <CardContent>
             <p className="text-slate-600 leading-relaxed">
-              Net negative - operational & team wallets are not permitted to liquidate any tokens past rewards and should never go below original balance barring un-staking fees. In theory, we are already at a fully diluted valuation (FDV).
+              All supply is fully diluted, unlocked or burned from TGE apart from team wallets which are not permitted to liquidate any tokens past rewards and should never go below original balance barring un-staking fees. In theory, we are already at a fully diluted valuation (FDV).
             </p>
           </CardContent>
         </Card>
