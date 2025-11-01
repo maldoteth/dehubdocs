@@ -48,10 +48,10 @@ export default function TokenBridge() {
             </p>
             <div 
               className="bg-muted p-4 rounded-md font-mono text-sm break-all cursor-pointer hover:bg-muted/80 transition-colors flex items-center justify-between group"
-              onClick={() => copyToClipboard('0x680D3113caf77B61b510f332D5Ef4cf5b41A761D')}
+              onClick={() => copyToClipboard('0x11D79aE9a0F8a8f9Fcf5BE71e403ed203EC2394d')}
             >
-              <span>0x680D3113caf77B61b510f332D5Ef4cf5b41A761D</span>
-              {copiedAddress === '0x680D3113caf77B61b510f332D5Ef4cf5b41A761D' ? (
+              <span>0x11D79aE9a0F8a8f9Fcf5BE71e403ed203EC2394d</span>
+              {copiedAddress === '0x11D79aE9a0F8a8f9Fcf5BE71e403ed203EC2394d' ? (
                 <Check className="h-4 w-4 text-green-500" />
               ) : (
                 <Copy className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
