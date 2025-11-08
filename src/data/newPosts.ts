@@ -6,6 +6,8 @@ const massiveWeekPost: BlogPostType = {
   title: "DeHub's Massive Week: BNB Recognition, First Class Partnership, App Store Launch, and a Pipeline of Game-Changing Features",
   excerpt: 'What a week! DeHub finally earned serious recognition from the BNB Chain team, launched an official partnership with First Class Agency onboarding 1,200+ streamers, submitted to app stores, and unveiled a massive pipeline of game-changing features.',
   content: `
+    Enjoy a transcript of the recent spaces held by Rayn, head of game development for DeHub Games.
+
     ## BNB Chain Recognition: We're Officially on Binance's Radar
 
     First and foremost, what a week! We finally got some serious recognition from BNB Chain. DeHub was tweeted out and introduced to the entire BNB community. We're incredibly proud to have been approved and now on Binance's radar.
