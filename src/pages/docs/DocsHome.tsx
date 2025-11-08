@@ -206,7 +206,7 @@ const DocsHome = () => {
         {latestPost && <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
             <div className="flex flex-col gap-6">
               <div className="w-full">
-                <img src={bannerImage} alt={bannerImageAlt} className="w-full h-64 object-cover rounded-xl" />
+                <img src={bannerImage} alt={bannerImageAlt} className="w-full h-80 object-cover rounded-xl" />
               </div>
               <div className="text-center">
                 <div className="mb-4">
