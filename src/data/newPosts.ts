@@ -8,50 +8,71 @@ const massiveWeekPost: BlogPostType = {
   content: `
     ## BNB Chain Recognition: We're Officially on Binance's Radar
 
-    What a week! DeHub finally earned serious recognition from the BNB Chain team. We were tweeted out and introduced to the entire BNB community. This isn't just a shoutout—it's approval to build deeper in their ecosystem, and we're incredibly proud.
+    First and foremost, what a week! We finally got some serious recognition from BNB Chain. DeHub was tweeted out and introduced to the entire BNB community. We're incredibly proud to have been approved and now on Binance's radar.
 
-    The elephant in the room? That old LP with over $1M locked in. It might not be stuck forever. Our team has exhausted every avenue with the BNB crew. We've completed the first steps: DApp Bay integration and the intro tweet. Everyone at BNB has expressed willingness to help, and now we wait for confirmation. No guarantees (as we've always said), but given their track record—supporting traders who've lost funds, charity initiatives, builder grants—we're knocking until the door opens.
+    ### The Elephant in the Room: The LP
 
-    This was the news we held the spaces for, and seeing that BNB tweet? It validates everything. **We're doubling down on this chain.**
+    The elephant in the room is the LP—I know, I know. Over $1M is now in our old LP, and it looks like it may not be stuck forever anymore.
 
-    ## First Class Partnership Goes Official: Onboarding 1,200+ Streamers Starts Now
+    Our team has done all they can with the BNB team. We were given the first steps: DApp Bay integration and the intro tweet, to be introduced to the BNB ecosystem. Everyone at BNB said they want to help, and now we just wait and see. Everything has been done on our end that's been asked, and the team will confirm either way sooner or later. 
 
-    The buzz in the community has been electric, especially as Mike and Indi's agency explodes to over 1,200 TikTok live streamers. The burning question: Wen DeHub?
+    No guarantees as we always said, but given all the work BNB has done with traders who lost money, charity initiatives, supporting builders and grants—we're going to knock on the door until it opens.
 
-    We're thrilled to make it official. **DeHub and First Class have launched a joint venture gaming division.** This isn't a side deal—it's structured to introduce streamers to DeHub while keeping TikTok priorities aligned. No conflicts; everything benefits all parties.
+    That was the big news for this week we were waiting to announce and the reason the spaces was pushed back. We got the tweet from BNB, so we're super proud to keep building on this chain.
 
-    Here's what's rolling out immediately:
+    ## First Class Partnership Goes Official: The Gaming Division
 
-    - **Weekly tournaments** on TikTok and DeHub, featuring top 100 Fortnite gamers and elite TikTok streamers.
-    - All participants must sign up and stream on DeHub, plus enter clip-sharing contests.
-    - Over 100 of the 1,200 agency streamers are already confirmed.
+    Another big bit of news that dropped this week was the partnership with First Class being made official. There has been lots of talk in the community—every day as Mike and Indi's agency grows, with over 1,200 TikTok live streamers now, the question burned: wen DeHub?
 
-    The question isn't if or how we'll onboard this network—it's when. And the answer? **It's happening right now.**
+    So I trust everyone was pleased with that reveal, and we're going to talk about that more now so you know exactly what's going to happen.
 
-    ## App Store Submission: Live in Weeks, First Tournament Nov 15
+    ### The Joint Venture Structure
 
-    As I write this, Mal is buried with the devs finalizing everything—**the app is being submitted to the Play Store and App Store today**. We'll be live in the coming weeks.
+    The new gaming division of First Class was set up by DeHub and First Class as a joint venture. It's our way to introduce streamers to DeHub while still servicing TikTok. As you know, our team works directly for the execs, and all activity has to benefit all parties with no conflicts of interest.
 
-    We've built fully custom branded streaming banners and overlays to showcase DeHub to millions every month. First Class currently hits 20M+ impressions per month across streamers—10% of that is now funneled directly to DeHub.
+    ### Weekly Tournaments and Onboarding
 
-    **Mark your calendars: First tournament drops November 15.**
+    We will be hosting **weekly tournaments on TikTok and DeHub** with the agency streamers, including many top 100 Fortnite gamers and top TikTok streamers. All will be required to sign up and stream on DeHub too, as well as participate in clip sharing contests on DeHub.
 
-    ## Dev Update: The (Slightly Boring but) Epic Pipeline Ahead
+    Over 100 of the 1,200 agency streamers have been confirmed already. So the question isn't IF or HOW we're going to onboard our network—it's WHEN. And the answer is: **it's all happening right now.**
 
-    Beyond the app launch, here's what's queued post-store approval (some features may face Apple/Google scrutiny, but we're ready):
+    ## App Store Submission: Going Live in Weeks
 
-    - **VR Streaming** – An entirely new level beyond YouTube or any platform. Full VR immersion goes live in-app next year.
-    - **TV & Console Apps** – Simple, secure account linking for Smart TVs, Xbox, and PS5. A mass-adoption essential, also slated for next year.
-    - **DePIN Mining** – Mine DHB from your phone. Next test release in early Q1. This fully decentralizes DeHub, making content truly censorship-resistant.
-    - **AI Toolkits** – Now integrating x402 standards. Bots on DeHub can chat and pay each other over standard HTTPS. Huge narrative play—targeting release before year-end.
+    Which brings us to the next bit of news.
 
-    ## Final Thoughts: After 4 Years, We're Here—and the Market's Wrong
+    We are submitting the app to stores as I speak. That's why I'm hosting the spaces today and Mal is busy with the devs finalizing everything. It's being submitted as we speak. Which means we will be live on the Play Store and App Store in the coming weeks, with the first tournament already scheduled for **November 15**.
 
-    What a pipeline of catalysts, execution, and momentum. After four long years, DeHub is back on app stores with a battle-tested product, ready to promote globally. In that time, we've built one of the world's largest exclusive streamer networks—1,200 TikTok live talents signed directly to TikTok execs in London HQ.
+    ### Branded Streaming Integration
 
-    We're a microcap only because the market mispriced us. Mistakes like the Gate listing, trusting shady marketers (AB & co.), or the Caduceus capital bait-and-switch? All done in good faith to accelerate growth. Nothing else. That'll be proven soon.
+    We've designed fully custom branded streaming banners and overlays that will be showing DeHub to millions of people every month. With current reach of First Class being over 20 million impressions per month across all streamers, 10% of that is now expected to directly funnel to DeHub.
 
-    No community questions this time, so we'll wrap here. **Have an amazing night, DeHub family. The best is yet to come.**
+    This kickstarts with the launch of our app on stores but will be in full motion for the game release—[Last Chad Standing](https://lastchadstanding.com), the first ever MMA battle royale.
+
+    ## Dev Update: The Pipeline Ahead
+
+    Okay, so this is the slightly boring part with the general dev update.
+
+    Besides all the news we've already shared for the app, there are some features that will be going live after the store releases. Some features may be contested by Apple or Google, some may require further attention. We don't know yet until we hear back from our app submission review, but some key things that will be going live later everyone should know about are:
+
+    ### 1. VR Streaming
+    We've been working on an epic VR streaming platform, on an entirely different level to anything YouTube or any other streaming app offers. With full VR features going live in-app at some point next year.
+
+    ### 2. TV & Console Apps
+    We've found a way to link accounts that's both simple and secure, so users of DeHub can sign up and use the app on any Smart TV, Xbox, and PS5 consoles. This is an essential step in mass adoption and something also set to go live next year.
+
+    ### 3. DePIN Mining
+    You will soon be able to mine DHB from as little as a mobile, with our next DePIN test release scheduled for early Q1. This is what fully decentralizes DeHub and ensures content is truly censorship-resistant. A huge and essential step in our plans.
+
+    ### 4. AI Toolkits
+    Our AI toolkits recently started integrating x402 standards, allowing any bots using DeHub to chat to each other and pay each other over HTTPS, the existing internet security protocol. This has a large narrative right now and something we're looking to execute fast. Expected release before end of year.
+
+    ## Final Thoughts: After 4 Years, We're Here
+
+    So there you have it folks—what a huge pipeline of catalysts, plans, and execution. After 4 long years, we're finally here, back on the app stores with a fully built app ready to promote to the world. In that time, our team has built one of the largest streamer networks in the world, with 1,200 TikTok live streamers exclusively signed, working directly for the TikTok execs in their London HQ.
+
+    We are a microcap, but only because the market is wrong. We made some serious errors in our years like the Gate listing, trusting those marketing goons AB & co., and being seduced by Caduceus for capital they never planned to give us. It was all done with the intention to better DeHub, never anything else, and that will be proven to you all soon.
+
+    We had no questions submitted, and nobody has raised their hand to speak for the open mic, so we'll wrap it up there everyone. **Have an amazing night, DeHub family. The best is yet to come.**
   `,
   bannerImage: '/lovable-uploads/town-hall-ama-banner-new.png',
   bannerImageAlt: 'DeHub Town Hall and AMA Highlights showcasing major announcements',
