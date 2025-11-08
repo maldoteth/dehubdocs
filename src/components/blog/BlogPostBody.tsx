@@ -16,11 +16,11 @@ export const BlogPostBody: React.FC<BlogPostBodyProps> = ({ bannerImage, bannerI
     
     return (
         <>
-            <div className="mb-8 rounded-xl overflow-hidden">
+            <div className="mb-8 rounded-2xl overflow-hidden w-full">
                 <OptimizedImage 
                   src={bannerImage} 
                   alt={bannerImageAlt}
-                  className={`w-full h-auto ${isFullImagePost ? 'object-contain' : 'object-contain max-h-96'}`}
+                  className={`w-full h-auto ${isFullImagePost ? 'object-cover' : 'object-cover'}`}
                   loading="eager"
                 />
             </div>
