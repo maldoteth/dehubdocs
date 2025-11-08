@@ -205,12 +205,14 @@ const DocsHome = () => {
         {/* Latest Blog Post Promotion */}
         {latestPost && <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
             <div className="flex flex-col gap-6">
-              <div className="w-full">
-                <img src={bannerImage} alt={bannerImageAlt} className="w-full h-80 object-cover rounded-xl" />
+              <div className="text-center">
+                <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-jet-black px-3 py-1 rounded-full text-sm font-semibold">Latest From The Blog</span>
               </div>
+              <Link to={`/docs/blog/${latestPost.slug}`} className="w-full block">
+                <img src={bannerImage} alt={bannerImageAlt} className="w-full h-80 object-cover rounded-xl hover:opacity-95 transition-opacity cursor-pointer" />
+              </Link>
               <div className="text-center">
                 <div className="mb-4">
-                  <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-jet-black px-3 py-1 rounded-full text-sm font-semibold mb-3">Latest From The Blog</span>
                   <h2 className="text-2xl lg:text-3xl font-bold text-royal-blue mb-3 font-exo">
                     {latestPost.title}
                   </h2>
