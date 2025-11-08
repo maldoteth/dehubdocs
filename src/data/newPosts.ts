@@ -53,7 +53,7 @@ const massiveWeekPost: BlogPostType = {
 
     No community questions this time, so we'll wrap here. **Have an amazing night, DeHub family. The best is yet to come.**
   `,
-  bannerImage: '/lovable-uploads/town-hall-ama-banner.png',
+  bannerImage: '/lovable-uploads/town-hall-ama-banner-new.png',
   bannerImageAlt: 'DeHub Town Hall and AMA Highlights showcasing major announcements',
   author: {
     name: 'DeHub Team',
