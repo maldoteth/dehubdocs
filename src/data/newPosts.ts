@@ -10,6 +10,8 @@ const massiveWeekPost: BlogPostType = {
 
     ## BNB Chain Recognition: We're Officially on Binance's Radar
 
+    ### Big News!
+
     First and foremost, what a week! We finally got some serious recognition from BNB Chain. DeHub was tweeted out and introduced to the entire BNB community. We're incredibly proud to have been approved and now on Binance's radar.
 
     ### The Elephant in the Room: The LP
