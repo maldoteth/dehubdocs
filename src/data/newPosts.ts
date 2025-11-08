@@ -74,8 +74,6 @@ const massiveWeekPost: BlogPostType = {
 
     So there you have it folks—what a huge pipeline of catalysts, plans, and execution. After 4 long years, we're finally here, back on the app stores with a fully built app ready to promote to the world. In that time, our team has built one of the largest streamer networks in the world, with 1,200 TikTok live streamers exclusively signed, working directly for the TikTok execs in their London HQ.
 
-    We are a microcap, but only because the market is wrong. We made some serious errors in our years like the Gate listing, trusting those marketing goons AB & co., and being seduced by Caduceus for capital they never planned to give us. It was all done with the intention to better DeHub, never anything else, and that will be proven to you all soon.
-
     We had no questions submitted, and nobody has raised their hand to speak for the open mic, so we'll wrap it up there everyone. **Have an amazing night, DeHub family. The best is yet to come.**
   `,
   bannerImage: '/lovable-uploads/town-hall-ama-banner-new.png',
