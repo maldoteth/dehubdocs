@@ -31,7 +31,7 @@ export const RelatedPosts: React.FC<RelatedPostsProps> = ({ currentPost, allPost
             to={`/docs/blog/${post.slug}`}
             className="group bg-plain-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden border border-sky-blue/10"
           >
-            <div className="h-48 overflow-hidden">
+            <div className="h-24 overflow-hidden">
               <OptimizedImage
                 src={post.bannerImage}
                 alt={post.bannerImageAlt}
