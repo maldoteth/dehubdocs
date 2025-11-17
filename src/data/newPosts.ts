@@ -45,8 +45,8 @@ const countdownBeginsPost: BlogPostType = {
 const massiveWeekPost: BlogPostType = {
   id: 'dehub-massive-week-bnb-recognition-first-class-partnership-app-store-launch',
   slug: 'dehub-massive-week-bnb-recognition-first-class-partnership-app-store-launch',
-  title: "DeHub's Massive Week: BNB Recognition, First Class Partnership, App Store Launch, and a Pipeline of Game-Changing Features",
-  excerpt: 'What a week! DeHub finally earned serious recognition from the BNB Chain team, launched an official partnership with First Class Agency onboarding 1,200+ streamers, submitted to app stores, and unveiled a massive pipeline of game-changing features.',
+  title: "DeHub's Special Week: BNB Recognition, First Class Partnership, App Store Launch, and a Pipeline of Game-Changing Features",
+  excerpt: 'What a week! DeHub finally earned serious recognition from the BNB Chain team, launched an official partnership with First Class Agency onboarding 1,200+ streamers, submitted to app stores, and unveiled a special pipeline of game-changing features.',
   content: `
     Enjoy a transcript of the recent spaces held by Rayn, head of game development for DeHub Games.
 
