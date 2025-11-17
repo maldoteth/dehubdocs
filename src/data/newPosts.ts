@@ -36,7 +36,7 @@ const countdownBeginsPost: BlogPostType = {
   publishedAt: '2025-11-17T00:00:00.000Z',
   tags: ['App Store', 'Launch', 'Milestone', 'Google Play', 'iOS'],
   readingTime: 4,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'The Countdown Begins! DeHub App Store Launch Imminent | DeHub',
   seoDescription: "DeHub's app launch across stores is imminent. After 4 years of building, the countdown is live on dehub.io. Watch as we prepare to go live on Apple App Store and Google Play Store.",
