@@ -1,5 +1,47 @@
 import { BlogPost as BlogPostType } from '@/types/blog';
 
+const countdownBeginsPost: BlogPostType = {
+  id: 'countdown-begins-dehub-app-store-launch',
+  slug: 'countdown-begins-dehub-app-store-launch',
+  title: 'The Countdown Begins!',
+  excerpt: "DeHub's app launch across stores is imminent. The countdown is live on dehub.io and the moment we've been building towards for 4 years is finally here.",
+  content: `
+    ## Four Years in the Making
+
+    For four long years, the DeHub team has been on an extraordinary journey building a platform that could revolutionize decentralized infrastructure. The path hasn't been easy—crypto apps have historically faced significant challenges getting approved by major app stores. Apple and Google's stringent policies around cryptocurrency applications meant that many promising projects never made it past the approval stage. But we persisted, refined our approach, and remained committed to delivering something truly exceptional.
+
+    ## From Test Phase to Main Event
+
+    The web app we released in 2023 wasn't just a soft launch—it was a crucial test phase that allowed us to fine-tune our features, gather invaluable user feedback, and prove our concept in a real-world environment. While it had limited success, it served its purpose perfectly: preparing us for the main event. We always said that the official app store launch would be the biggest catalyst in DeHub's history, and that moment is now upon us.
+
+    ## The Countdown is Live
+
+    The countdown now live on dehub.io is set to end on the last day of app store approval window.
+
+    If the process goes smoothly as expected, then this countdown remains valid, and we will be live on stores when it hits 0.
+
+    If edits are required, the countdown will be updated accordingly.
+
+    ## What This Means for DeHub
+
+    This isn't just another milestone—it's THE milestone. After years of development, testing, and refinement, we're about to put DeHub in the hands of millions of potential users through the world's most trusted app distribution platforms. The countdown on dehub.io represents more than just time ticking down; it represents the culmination of countless hours of work, dedication, and unwavering belief in our vision.
+
+    **The wait is almost over. Visit dehub.io to watch the countdown and be part of this historic moment. The future starts now.**
+  `,
+  bannerImage: '/lovable-uploads/countdown-clock-banner.png',
+  bannerImageAlt: 'Countdown clock for DeHub app store launch',
+  author: {
+    name: 'DeHub Team',
+  },
+  publishedAt: '2025-11-17T00:00:00.000Z',
+  tags: ['App Store', 'Launch', 'Milestone', 'Google Play', 'iOS'],
+  readingTime: 4,
+  featured: true,
+  status: 'published',
+  seoTitle: 'The Countdown Begins! DeHub App Store Launch Imminent | DeHub',
+  seoDescription: "DeHub's app launch across stores is imminent. After 4 years of building, the countdown is live on dehub.io. Watch as we prepare to go live on Apple App Store and Google Play Store.",
+};
+
 const massiveWeekPost: BlogPostType = {
   id: 'dehub-massive-week-bnb-recognition-first-class-partnership-app-store-launch',
   slug: 'dehub-massive-week-bnb-recognition-first-class-partnership-app-store-launch',
@@ -1323,6 +1365,7 @@ const bnbPoolUpdatePost: BlogPostType = {
 };
 
 export const newPosts: BlogPostType[] = [
+  countdownBeginsPost,
   massiveWeekPost,
   teamFirstClassAgencyPost,
   offRampServicePost,
