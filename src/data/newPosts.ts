@@ -8,7 +8,7 @@ const countdownBeginsPost: BlogPostType = {
   content: `
     ## Four Years in the Making
 
-    For four long years, the DeHub team has been on an extraordinary journey building a platform that could revolutionize decentralized infrastructure. The path hasn't been easy—crypto apps have historically faced significant challenges getting approved by major app stores. Apple and Google's stringent policies around cryptocurrency applications meant that many promising projects never made it past the approval stage. But we persisted, refined our approach, and remained committed to delivering something truly exceptional.
+    For four long years, the DeHub team has been on an extraordinary journey building a platform that could revolutionize and democratize media. The team believes that, after fixing money, which Bitcoin did, the next most important is media. The path hasn't been easy—crypto apps have historically faced significant challenges getting approved by major app stores. Apple and Google's stringent policies around cryptocurrency applications meant that many promising projects never made it past the approval stage. But we persisted, refined our approach, and remained committed to delivering something truly exceptional.
 
     ## From Test Phase to Main Event
 
