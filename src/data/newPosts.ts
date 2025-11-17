@@ -128,6 +128,8 @@ const massiveWeekPost: BlogPostType = {
   readingTime: 9,
   featured: false,
   status: 'published' as const,
+  seoTitle: "DeHub's Special Week: BNB Chain Recognition, First Class Partnership & App Store Launch | DeHub Blog",
+  seoDescription: 'DeHub celebrates a special week of milestones: official BNB Chain recognition and DApp Bay integration, First Class Agency partnership bringing 1,200+ streamers, app store submission, and unveiling a pipeline of revolutionary features including AI toolkits, games, and more.',
 };
 
 export const excludedTitles = [
