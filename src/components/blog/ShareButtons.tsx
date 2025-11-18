@@ -51,7 +51,7 @@ export const ShareButtons: React.FC<ShareButtonsProps> = ({ shareUrl, postTitle,
         <div className="flex justify-center gap-4">
             <button
               onClick={() => handleShare('twitter')}
-              className="px-6 py-3 bg-gradient-to-r from-sky-blue to-middle-blue text-plain-white rounded-lg hover:from-sky-blue/90 hover:to-middle-blue/90 transition-all duration-200 font-exo"
+              className="px-6 py-3 border border-sky-blue text-royal-blue rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo"
             >
               Share on Twitter
             </button>
