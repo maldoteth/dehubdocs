@@ -10,7 +10,7 @@ const Contact = () => {
     {
       title: 'Telegram',
       description: 'Join our Telegram community',
-      link: 'https://t.me/dehub_tg',
+      link: 'https://t.me/dehub_dhb',
       icon: Send,
       color: 'from-sky-blue to-middle-blue'
     },
@@ -188,7 +188,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://t.me/dehub_tg"
+              href="https://t.me/dehub_dhb"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo"
