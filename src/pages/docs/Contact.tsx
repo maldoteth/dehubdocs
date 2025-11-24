@@ -116,32 +116,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Email Contacts */}
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold text-royal-blue font-exo">Email Contacts</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {emailContacts.map((contact) => (
-            <Card key={contact.email} className="border-sky-blue/20">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg font-semibold text-royal-blue font-exo flex items-center">
-                  <Mail className="w-5 h-5 mr-2 text-middle-blue" />
-                  {contact.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <a
-                  href={`mailto:${contact.email}`}
-                  className="text-middle-blue hover:text-royal-blue font-medium font-exo block mb-2"
-                >
-                  {contact.email}
-                </a>
-                <p className="text-royal-blue/70 text-sm font-exo">{contact.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-
       {/* Community Channels */}
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-royal-blue font-exo">Community Channels</h2>
@@ -164,6 +138,32 @@ const Contact = () => {
                 </CardContent>
               </Card>
             </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Email Contacts */}
+      <div className="space-y-6">
+        <h2 className="text-2xl font-bold text-royal-blue font-exo">Email Contacts</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {emailContacts.map((contact) => (
+            <Card key={contact.email} className="border-sky-blue/20">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg font-semibold text-royal-blue font-exo flex items-center">
+                  <Mail className="w-5 h-5 mr-2 text-middle-blue" />
+                  {contact.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="text-middle-blue hover:text-royal-blue font-medium font-exo block mb-2"
+                >
+                  {contact.email}
+                </a>
+                <p className="text-royal-blue/70 text-sm font-exo">{contact.description}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
