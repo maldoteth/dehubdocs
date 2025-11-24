@@ -102,9 +102,9 @@ const Contact = () => {
                 <CardContent className="p-6 text-center">
                   <div className={`w-16 h-16 bg-gradient-to-r ${option.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
                     {option.iconImage ? (
-                      <img src={option.iconImage} alt={option.title} className="w-8 h-8 filter brightness-0 invert" />
+                      <img src={option.iconImage} alt={option.title} className="w-8 h-8 filter brightness-0" />
                     ) : (
-                      <option.icon className="w-8 h-8 text-plain-white" />
+                      <option.icon className="w-8 h-8 text-royal-blue" />
                     )}
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{option.title}</h3>
@@ -157,7 +157,7 @@ const Contact = () => {
               <Card className="border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
                 <CardContent className="p-6 text-center">
                   <div className={`w-16 h-16 bg-gradient-to-r ${channel.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                    <channel.icon className="w-8 h-8 text-plain-white" />
+                    <channel.icon className="w-8 h-8 text-royal-blue" />
                   </div>
                   <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{channel.title}</h3>
                   <p className="text-royal-blue/70 text-sm font-exo">{channel.description}</p>
