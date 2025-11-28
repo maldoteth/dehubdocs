@@ -10,7 +10,7 @@ const Donate = () => {
 
   const addresses = [
     {
-      network: 'EVM (Ethereum, BSC, Polygon, etc.)',
+      network: 'EVM (Ethereum, BNB, Polygon, etc.)',
       address: '0x1759ceb6255dbebfe2c0c51edbcd29ad7efb9229',
       icon: '⟠'
     },
