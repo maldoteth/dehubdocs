@@ -98,7 +98,7 @@ const Donate = () => {
       {/* Thank You */}
       <Card className="border-royal-blue/20 bg-gradient-to-r from-royal-blue/5 to-middle-blue/5">
         <CardContent className="p-6 text-center">
-          <Heart className="w-8 h-8 text-royal-blue mx-auto mb-3" />
+          <Heart className="w-8 h-8 text-red-500 mx-auto mb-3" />
           <p className="text-gray-700">
             Thank you for supporting the DeHub community and helping us build a better decentralised future.
           </p>
