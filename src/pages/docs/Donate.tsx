@@ -66,28 +66,28 @@ const Donate = () => {
           {addresses.map((item) => (
             <Card key={item.network} className="border-gray-200 hover:border-royal-blue/30 transition-colors">
               <CardContent className="p-6">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="space-y-2 flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <span className="text-2xl">{item.icon}</span>
-                      <h3 className="font-semibold text-jet-black">{item.network}</h3>
-                    </div>
-                    <p className="font-mono text-sm text-gray-600 break-all bg-gray-100 p-3 rounded-lg">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">{item.icon}</span>
+                    <h3 className="font-semibold text-jet-black">{item.network}</h3>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <p className="font-mono text-sm text-gray-600 break-all bg-gray-100 p-3 rounded-lg flex-1">
                       {item.address}
                     </p>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => copyToClipboard(item.address, item.network)}
+                      className="shrink-0"
+                    >
+                      {copiedAddress === item.address ? (
+                        <Check className="w-4 h-4 text-green-500" />
+                      ) : (
+                        <Copy className="w-4 h-4" />
+                      )}
+                    </Button>
                   </div>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={() => copyToClipboard(item.address, item.network)}
-                    className="shrink-0"
-                  >
-                    {copiedAddress === item.address ? (
-                      <Check className="w-4 h-4 text-green-500" />
-                    ) : (
-                      <Copy className="w-4 h-4" />
-                    )}
-                  </Button>
                 </div>
               </CardContent>
             </Card>
