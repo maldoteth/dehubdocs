@@ -51,10 +51,10 @@ const Donate = () => {
         </CardHeader>
         <CardContent className="space-y-4 text-gray-700">
           <p>
-            DeHub is a <strong>non-profit, decentralised, user-owned protocol</strong>. All net profit is used to buy back and share $DHB tokens with stakeholders.
+            DeHub is a non-profit, decentralised, user-owned protocol. All net profit is used to buy back and share $DHB tokens with stakeholders.
           </p>
           <p>
-            All revenue is spent in accordance with <strong>DAO proposals</strong>, ensuring 100% reinvestment into the ecosystem. DeHub will forever be maintained as a <strong>public good</strong> through revenue and is also open to donations.
+            All revenue is spent in accordance with DAO proposals, ensuring 100% reinvestment into the ecosystem. DeHub will forever be maintained as a public good through revenue and is also open to donations.
           </p>
         </CardContent>
       </Card>
