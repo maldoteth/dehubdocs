@@ -36,7 +36,7 @@ const Donate = () => {
       {/* Header */}
       <div className="text-center space-y-4">
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-royal-blue to-middle-blue mb-4">
-          <Heart className="w-8 h-8 text-plain-white" />
+          <Heart className="w-8 h-8 text-red-500" />
         </div>
         <h1 className="text-4xl font-bold text-jet-black font-exo">Donate</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
