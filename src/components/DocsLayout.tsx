@@ -155,6 +155,11 @@ const menuItems = [{
       title: 'FAQ',
       path: '/docs/faq',
       icon: '❓'
+    },
+    {
+      title: 'Donate',
+      path: '/docs/donate',
+      icon: '❤️'
     }
   ]
 }, {

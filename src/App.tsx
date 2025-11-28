@@ -41,6 +41,7 @@ const Roadmap = lazy(() => import("./pages/docs/Roadmap"));
 const Blog = lazy(() => import("./pages/docs/Blog"));
 const BlogPost = lazy(() => import("./pages/docs/BlogPost"));
 const FAQ = lazy(() => import("./pages/docs/FAQ"));
+const Donate = lazy(() => import("./pages/docs/Donate"));
 
 // Loading component for Suspense fallback
 const PageLoader = () => (
@@ -222,6 +223,11 @@ const App = () => (
                 <Route path="faq" element={
                   <Suspense fallback={<PageLoader />}>
                     <FAQ />
+                  </Suspense>
+                } />
+                <Route path="donate" element={
+                  <Suspense fallback={<PageLoader />}>
+                    <Donate />
                   </Suspense>
                 } />
               </Route>
