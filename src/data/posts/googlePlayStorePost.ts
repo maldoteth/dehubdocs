@@ -15,11 +15,15 @@ While we celebrate this Google Play milestone, we want to keep our community inf
 
 ## What Comes Next: A Serious Marketing Push
 
-With app store presence secured, we're now gearing up for what will be one of the largest marketing campaigns in DeHub's history. Our co-founders, Mike and Indy, have already announced a strategic partnership with one of the biggest TikTok agencies in the world—a powerhouse with access to over 1,200 streamers. This isn't just any partnership; we're talking about an agency that reports directly to TikTok executives, hosts talks for major stakeholders, and runs events at TikTok headquarters. This is serious business, and it signals exactly where DeHub is headed. We're not here to play small—we're here to revolutionize decentralized media, and we have the partnerships and infrastructure to make it happen.`,
+With app store presence secured, we're now gearing up for what will be one of the largest marketing campaigns in DeHub's history. Our co-founders, Mike and Indy, have already announced a strategic partnership with one of the biggest TikTok agencies in the world—a powerhouse with access to over 1,200 streamers. This isn't just any partnership; we're talking about an agency that reports directly to TikTok executives, hosts talks for major stakeholders, and runs events at TikTok headquarters. This is serious business, and it signals exactly where DeHub is headed. We're not here to play small—we're here to revolutionize decentralized media, and we have the partnerships and infrastructure to make it happen.
+
+---
+
+**[Download DeHub on Google Play Store](https://play.google.com/store/apps/details?id=io.dehub.mobile&hl)**`,
   bannerImage: '/lovable-uploads/google-playstore-banner.png',
   bannerImageAlt: 'DeHub Google Play Store listing announcement banner',
   author: { name: 'DeHub Team' },
-  publishedAt: new Date().toISOString(),
+  publishedAt: '2024-12-01T00:00:00.000Z',
   tags: ['Announcement', 'App Store', 'Google Play', 'Milestone', '2024'],
   readingTime: 3,
   featured: false,
