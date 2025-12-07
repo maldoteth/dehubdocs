@@ -26,7 +26,7 @@ With app store presence secured, we're now gearing up for what will be one of th
   publishedAt: '2025-12-01T00:00:00.000Z',
   tags: ['Announcement', 'App Store', 'Google Play', 'Milestone', '2025'],
   readingTime: 3,
-  featured: false,
+  featured: true,
   status: 'published',
   seoTitle: 'Google Play Store Listing Confirmed | DeHub Official Announcement',
   seoDescription: 'DeHub DApp has been approved and is now live on the Google Play Store. Learn about our app store journey and upcoming marketing campaigns.',
