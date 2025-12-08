@@ -145,9 +145,10 @@ const DocsHome = () => {
               Get Started
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
-            <button onClick={handleComingSoonClick} className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
-              View API Reference
-            </button>
+            <a href="https://play.google.com/store/apps/details?id=io.dehub.mobile&hl" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+              Download App
+              <ExternalLink className="w-4 h-4 ml-2" />
+            </a>
           </div>
         </div>
 
