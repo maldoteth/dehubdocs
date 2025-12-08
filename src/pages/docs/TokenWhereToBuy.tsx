@@ -81,10 +81,10 @@ const TokenWhereToBuy = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-6">
-            <a href="https://dehub.io/dpay" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
+            <a href="https://play.google.com/store/apps/details?id=io.dehub.mobile&hl" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
               <div>
-                <h4 className="font-semibold text-slate-700">dehub.io/dpay</h4>
-                <p className="text-slate-600">Direct purchase with Stripe</p>
+                <h4 className="font-semibold text-slate-700">Direct Purchase In-App</h4>
+                <p className="text-slate-600">Buy directly with Stripe via the DeHub app</p>
               </div>
               <ExternalLink className="w-5 h-5 text-slate-400" />
             </a>
