@@ -775,10 +775,6 @@ const Roadmap = () => {
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Launch fiat off-ramp functionality for seamless token-to-cash conversion</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
                         <span>App store re-listings ✅</span>
                       </div>
                       <div className="flex">
@@ -795,15 +791,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Launch comprehensive SDKs enabling third-party developers to build mini apps and games</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
                         <span>Establish developer marketplace for community-built applications and integrations</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Multi-posting software so users can post to all major web2+3 socials from one place</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
@@ -872,6 +860,18 @@ const Roadmap = () => {
                       </Badge>
                     </div>
                     <div className="text-gray-600 text-sm leading-relaxed space-y-1">
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Launch fiat off-ramp functionality for seamless token-to-cash conversion</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Launch comprehensive SDKs enabling third-party developers to build mini apps and games</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Multi-posting software so users can post to all major web2+3 socials from one place</span>
+                      </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Leading licensing partners, latest blockbusters and major PPVs</span>
