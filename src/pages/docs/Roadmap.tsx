@@ -732,15 +732,15 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q3 2025 */}
-                <div id="q3-2025" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                <div id="q3-2025" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-blue-500" />
+                    <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-slate-900">Q3 2025</h3>
-                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                        Pending
+                      <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
+                        Completed
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
@@ -754,19 +754,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Begin Solana, Hyperliquid and Sui integrations for in-app use</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as financial transactions and guidance</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Custom advertising stack with advanced user targeting based on wallet balance & activity</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
-                        <span>DePIN phase 2</span>
+                        <span>Begin Solana, Hyperliquid and Sui integrations for in-app use ✅</span>
                       </div>
                     </div>
                   </div>
@@ -841,6 +829,37 @@ const Roadmap = () => {
             </CardHeader>
             <CardContent>
               <div className="grid gap-4">
+                
+                {/* Q1 2026 */}
+                <div id="q1-2026" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                  <div className="flex-shrink-0">
+                    <Calendar className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-semibold text-slate-900">Q1 2026</h3>
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
+                        Planned
+                      </Badge>
+                    </div>
+                    <div className="text-slate-600 text-sm leading-relaxed space-y-1">
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as financial transactions and guidance</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Custom advertising stack with advanced user targeting based on wallet balance & activity</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>DePIN phase 2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 2026 and Beyond */}
                 <div className="flex items-start space-x-4 p-4 rounded-lg border bg-gray-50/50">
                   <div className="flex-shrink-0">
                     <Calendar className="w-6 h-6 text-gray-500" />
