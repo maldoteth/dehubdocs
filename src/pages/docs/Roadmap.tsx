@@ -779,11 +779,11 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>App store re-listings</span>
+                        <span>App store re-listings ✅</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Release multi-account access and delegation features for streamlined management</span>
+                        <span>Release multi-account access and delegation features for streamlined management ✅</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
@@ -791,7 +791,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Open source the entire DeHub protocol for community development</span>
+                        <span>Open source the entire DeHub protocol for community development ✅</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
@@ -807,7 +807,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Last Chad Standing release schedule begins</span>
+                        <span>Last Chad Standing release schedule begins ✅</span>
                       </div>
                     </div>
                   </div>
