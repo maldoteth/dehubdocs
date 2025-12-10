@@ -795,10 +795,6 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Establish developer marketplace for community-built applications and integrations</span>
-                      </div>
-                      <div className="flex">
-                        <span className="mr-2 flex-shrink-0">•</span>
                         <span>Last Chad Standing release schedule begins ✅</span>
                       </div>
                     </div>
@@ -875,6 +871,10 @@ const Roadmap = () => {
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
                         <span>Multi-posting software so users can post to all major web2+3 socials from one place</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Establish developer marketplace for community-built applications and integrations</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
