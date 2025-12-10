@@ -626,7 +626,11 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Released DePIN Phase 1</span>
+                        <span>Released DePIN Phase 1</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>End-to-end encrypted privacy chat features ✅</span>
                       </div>
                     </div>
                   </div>
