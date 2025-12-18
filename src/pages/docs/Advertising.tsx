@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Eye, Shield, TrendingUp, Users, Zap, Star, ExternalLink, BarChart3, Target, Calculator } from 'lucide-react';
+import { Eye, Shield, TrendingUp, Users, Zap, Star, ExternalLink, BarChart3, Target, Calculator, AlertTriangle, DollarSign, Bot, TrendingDown } from 'lucide-react';
 import AdvertisingPricing from '@/components/AdvertisingPricing';
 import CampaignCreator from '@/components/advertising/CampaignCreator';
 import CampaignAnalytics from '@/components/advertising/CampaignAnalytics';
@@ -43,6 +43,68 @@ const Advertising = () => {
           <p className="text-royal-blue/80 font-semibold">
             We are calling it "proof-of-view-and-rank" or "POVR".
           </p>
+        </CardContent>
+      </Card>
+
+      <Card className="border-destructive/30 bg-destructive/5">
+        <CardHeader>
+          <CardTitle className="flex items-center space-x-2">
+            <AlertTriangle className="w-5 h-5 text-destructive" />
+            <span>The Problem</span>
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <p className="text-royal-blue/80">
+            Ad fraud costs businesses billions annually, with estimates for 2023-2024 ranging from <span className="font-semibold text-destructive">$84 billion to over $125 billion per year</span>, projected to rise to $170 billion by 2028. Fraudsters use sophisticated bots and tactics to steal ad spend, impacting metrics and ROI, with ~20-30% of digital spend often wasted on fake traffic.
+          </p>
+          
+          <div>
+            <h4 className="font-semibold text-royal-blue flex items-center gap-2 mb-3">
+              <TrendingDown className="w-4 h-4 text-destructive" />
+              Key Figures & Trends
+            </h4>
+            <ul className="space-y-2 text-royal-blue/80 ml-6">
+              <li className="flex items-start gap-2">
+                <span className="text-destructive font-medium">2023 Costs:</span> Around $84 billion to $88 billion
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-destructive font-medium">2024 Projections:</span> Potentially reaching $125 billion to $140 billion
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-destructive font-medium">Future Growth:</span> Expected to hit $170 billion by 2028
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-destructive font-medium">Spend Lost:</span> Globally, 20-30% of digital ad spend is lost to fraud in 2025
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-destructive font-medium">Impact:</span> This waste can mean £100k-£150k lost on a £500k budget, affecting real ROI
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-royal-blue flex items-center gap-2 mb-3">
+              <Bot className="w-4 h-4 text-destructive" />
+              Why Ad Fraud is So Costly
+            </h4>
+            <ul className="space-y-2 text-royal-blue/80 ml-6">
+              <li><span className="font-medium">Sophisticated Bots:</span> Advanced bots mimic human behavior, creating fake clicks, video views, and form fills.</li>
+              <li><span className="font-medium">Incentives:</span> Ad tech platforms historically rewarded scale, not necessarily real humans, creating opportunities for fraud.</li>
+              <li><span className="font-medium">Follow the Money:</span> As digital ad spend increases, so does the incentive for fraudsters to divert funds.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-royal-blue flex items-center gap-2 mb-3">
+              <DollarSign className="w-4 h-4 text-destructive" />
+              Consequences
+            </h4>
+            <ul className="space-y-2 text-royal-blue/80 ml-6">
+              <li><span className="font-medium">Wasted Budget:</span> Money goes to bots instead of real customers.</li>
+              <li><span className="font-medium">Skewed Data:</span> Pollutes analytics, leading to poor business decisions.</li>
+              <li><span className="font-medium">Lost ROI:</span> Prevents brands from achieving goals, even with large campaigns.</li>
+            </ul>
+          </div>
         </CardContent>
       </Card>
 
