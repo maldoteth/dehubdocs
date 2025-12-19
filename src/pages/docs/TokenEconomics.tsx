@@ -42,9 +42,6 @@ const TokenEconomics = () => {
   return <div className="max-w-4xl mx-auto space-y-8">
       <div>
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Economics & Emissions</h1>
-        <p className="text-lg text-slate-600 leading-relaxed">
-          The DHB token is now only on BASE and BNB as we concentrate development on BASE and slowly phase out BNB.
-        </p>
       </div>
 
       <div className="grid gap-6">
