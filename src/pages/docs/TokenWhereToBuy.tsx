@@ -32,9 +32,7 @@ const TokenWhereToBuy = () => {
           </div>
           
           <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-            <p className="text-blue-800 leading-relaxed">
-              $DHB will only ever be officially tradable on decentralised exchanges (DEXs) that enforce our tokenomics and ensure every single transactions is on-chain, as it should be.
-            </p>
+            <p className="text-blue-800 leading-relaxed">$DHB will only ever be officially tradable on decentralised exchanges (DEXs) that ensure every single transactions is publicly verifiable on-chain, as it should be.</p>
           </div>
         </CardContent>
       </Card>
