@@ -7,7 +7,7 @@ const TokenWhereToBuy = () => {
     network: "Base",
     url: "https://app.uniswap.org/explore/tokens/base/0xd20ab1015f6a2de4a6fddebab270113f689c2f7c"
   }, {
-    name: "Pancakeswap / Marketplace",
+    name: "Pancakeswap",
     network: "BNB",
     url: "https://pancakeswap.finance/swap?inputCurrency=0x680d3113caf77b61b510f332d5ef4cf5b41a761d&outputCurrency=0x55d398326f99059ff775485246999027b3197955&ref=coingecko&user=Coingecko&discount=0&perps=false"
   }];
