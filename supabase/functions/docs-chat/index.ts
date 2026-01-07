@@ -6,65 +6,14 @@ const corsHeaders = {
 };
 
 const DEHUB_KNOWLEDGE = `
-# DeHub Documentation Knowledge Base
+# DeHub Complete Documentation Knowledge Base
 
 ## What is DeHub?
-DeHub is a decentralised, user-owned alternative to legacy media apps like YouTube, X, Rumble, Twitch, and Patreon. Powered by its own utility token ($DHB) and cutting-edge DePIN infrastructure that reshapes how content is hosted, transcoded, and delivered globally.
+DeHub is a decentralised, user-owned alternative to legacy media apps like YouTube, X, Rumble, Twitch, and Patreon. It's a censorship resistant, open source platform for content creation, streaming and gaming. Powered by its own utility token ($DHB) and cutting-edge DePIN infrastructure that reshapes how content is hosted, transcoded, and delivered globally.
 
-Built by gamers & streamers, DeHub delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Launch PPV events, monetise with subscriptions or paid messages, create Watch2Earn experiences, or distribute exclusive token-gated content—all without traditional banking or KYC processes.
+Built by gamers & streamers, DeHub delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Users can sign up with socials or email and have a wallet generated automatically. Launch PPV events, monetise with subscriptions or paid messages, create Watch2Earn experiences, or distribute exclusive token-gated content—all without traditional banking or KYC processes.
 
-## DHB Token Utility
-The DHB token provides:
-- Access to games, content, events & enhanced features across all d'apps
-- Global, instant, permissionless transactions
-- Tipping creators & rewarding viewers with bounties
-- Purchasing products, digital collectables, assets and services on the Phygital NFT Marketplace
-- Proposing & voting on protocol decisions (governance)
-- Staking to earn real yield from protocol revenue buybacks & x-2-earn rewards
-- Securing the network through staking while accessing enhanced rights
-- Mining via dispute management, content moderation & Hub Improvement Proposals (HIPS)
-
-## Where to Buy DHB
-DHB tokens are available on:
-- Uniswap (BASE chain)
-- Pancakeswap (BNB chain)
-
-## Token Bridge
-You can bridge DHB tokens between BASE and BNB chains. The bridge addresses are available in the documentation.
-
-## DePIN (Decentralized Physical Infrastructure Network)
-DeHub's DePIN leverages shared computing power from a network of miners who contribute resources for:
-- Data hosting
-- Transcoding
-- Content delivery
-
-Miners are rewarded directly from application revenue and token transaction fees, ensuring a sustainable, inflation-free model. Anyone can participate from mobile phones to dedicated servers.
-
-### Miner Requirements:
-- Mobile Phones: Quad-core CPU, 4GB RAM, 100,000 DHB stake (Hosting only)
-- PCs/Laptops: 4-core CPU, 8GB RAM, GPU, 1,000,000 DHB stake (Transcoding, Hosting, Delivery)
-- Dedicated Servers: 8-core CPU, 16GB RAM, SSD, 10,000,000 DHB stake (High-volume Hosting, Delivery)
-
-## Governance
-DeHub uses a novel fair voting logic where stakeholder weight is multiplied by limited amounts to prevent whale manipulation. Each vote requires burning 50 DHB tokens to discourage bad actors while incentivizing meaningful participation.
-
-## Security
-DeHub has undergone security audits by Certik and maintains a bug bounty program. Security is prioritized across all smart contracts and infrastructure.
-
-## Advertising (POVR System)
-DeHub offers POVR (Proof-Of-View-Rewards) advertising system that eliminates ad fraud:
-- Uses tokenized tiers for participation
-- Verified human engagement through staking requirements
-- Direct value flow between advertisers and viewers
-- Blockchain-verified transparency
-
-Traditional ad fraud costs businesses $84-125 billion annually with 20-30% of digital spend wasted on fake traffic. POVR solves this.
-
-## AI Toolkits
-DeHub provides AI-powered tools and services integrated into the ecosystem, enhancing functionality across d'Apps and games.
-
-## E2E Encryption
-All communications and content on DeHub support end-to-end encryption for user privacy and security.
+The app is scaled via a decentralized miner network providing shared computing power to host, transcode, and deliver content that by design, should live forever. DeHub was the first protocol to tokenise content back in 2023.
 
 ## Team & Founders
 DeHub was founded by a diverse team of entrepreneurs, social media experts, and gaming professionals:
@@ -81,13 +30,157 @@ Social media, content & dance expert overseeing communications & corporate relat
 ### Bailey Young - Co-Founder
 Operational powerhouse and former pro-gamer. Investments and tokenomics expert who played an instrumental role in DeHub's growth in 2021. Oversaw the Blocjerk fundraise of $1,000,000 in 2023 (peak ROI 1,000%). Former professional gamer ranking globally in top 3 COD MW2 and top 100 on Warzone.
 
+## DHB Token Utility
+The DHB token provides:
+- Access to games, content, events & enhanced features across all d'apps
+- Global, instant, permissionless transactions
+- Tipping creators & rewarding viewers with bounties
+- Purchasing products, digital collectables, assets and services on the Phygital NFT Marketplace
+- Proposing & voting on protocol decisions (governance)
+- Staking to earn real yield from protocol revenue buybacks & x-2-earn rewards
+- Securing the network through staking while accessing enhanced rights
+- Mining via dispute management, content moderation & Hub Improvement Proposals (HIPS)
+
+## Token Economics
+- Total Supply: 8,000,000,000 $DHB
+- Distribution: 42% Community Sales & Airdrops, 42% Burn, 8% Team, 8% Operations
+- All supply is fully diluted, unlocked or burned from TGE apart from team wallets
+- Team wallets are staked to accrue rewards, not locked
+- 100% of liquidity raised was locked into pools for traders
+- No pre-sale events or investment raised to fund development
+- DeHub launched as FTV with a fully built app on Google Play Store prior to any token release
+
+## Where to Buy DHB
+DHB tokens are available on:
+- Uniswap (BASE chain)
+- Pancakeswap (BNB chain)
+- In-app purchase with fiat via Stripe (130+ currencies supported)
+
+## Token Bridge
+You can bridge DHB tokens between BASE and BNB chains. The bridge addresses are available in the documentation.
+
+## Staking
+Stake DHB to access different club tiers with enhanced features across all d'apps. There are three staking tiers based on duration:
+- Tier 1: Stake 1-2 quarters, share 25% of rewards
+- Tier 2: Stake 3-4 quarters, share 25% of rewards  
+- Tier 3: Stake 5+ quarters, share 50% of rewards
+
+Staking badges are displayed on your dehub.io profile, comments, uploads and live chat. Users can unstake only 88% before unlock date (12% fee). Rewards come from protocol fees including subscriptions, PPV, Watch2Earn, paid DMs, premium subscriptions, NFT sales, advertising, and partner launches.
+
+## Badge System (13 Tiers)
+Based on DHB holdings, users unlock badges with reduced platform fees:
+- No Badge (<10,000 DHB): 10% fee
+- Crab (10,000+ DHB): 9.31% fee
+- Lobster (25k+ DHB): 8.62% fee
+- Piranha (50k+ DHB): 7.93% fee
+- Tortoise (100k+ DHB): 7.24% fee
+- Cobra (250k+ DHB): 6.55% fee
+- Octopus (500k+ DHB): 5.86% fee
+- Crocodile (1m+ DHB): 5.17% fee
+- Dolphin (2m+ DHB): 4.48% fee
+- Tiger Shark (3m+ DHB): 3.79% fee
+- Killer Whale (5m+ DHB): 3.10% fee
+- Great White Shark (10m+ DHB): 2.41% fee
+- Blue Whale (25m+ DHB): 1.72% fee
+- Megalodon (50m+ DHB): 1% fee
+
+## D'App Features
+The DeHub app includes:
+- **Upload**: Instantly upload content with Watch2Earn, token-gated content, PPV events, NFT collectables, tips, and subscriber-only content
+- **Tokenised Content**: Every upload mints an ERC-1155 NFT split into 1,000 tradeable fractions. Creators control how many to sell. Content earns ad revenue for life - passive, permissionless, censorship-resistant income forever.
+- **Live Streaming**: On-chain live streams with real-time tip animations, Livepeer infrastructure supporting 50,000+ concurrent viewers, sub-200ms latency globally, 99.99% uptime
+- **Messaging**: E2E encrypted private communications, paid or free DMs, unlockable chat content
+- **Tradable Subscriptions**: On-chain subscriptions that can be traded
+- **Multi-streaming**: Stream keys allow streaming on multiple apps simultaneously
+
+## DePIN (Decentralized Physical Infrastructure Network)
+DeHub's DePIN leverages shared computing power from miners who contribute resources for data hosting, transcoding, and content delivery. Miners are rewarded from application revenue and token fees (inflation-free model).
+
+### Miner Requirements:
+- Mobile Phones: Quad-core CPU, 4GB RAM, 100,000 DHB stake (Hosting only)
+- PCs/Laptops: 4-core CPU, 8GB RAM, GPU, 1,000,000 DHB stake (Transcoding, Hosting, Delivery)
+- Dedicated Servers: 8-core CPU, 16GB RAM, SSD, 10,000,000 DHB stake (High-volume Hosting, Delivery)
+
+## Games
+DeHub offers blockchain-integrated games including arcade games and the upcoming flagship game:
+- **Last Chad Standing**: First ever MMA Battle Royale with hyper-realistic graphics, featuring top UFC stars, developers from Ubisoft, and leading meme skins. Website: lastchadstanding.com
+- **Released Games**: Whack A Schifff, Gas Guzzler, Rocket Blaster, Street Slayer - available at arcade.dehub.net
+- Play and earn model sustained entirely on fee generation (no dilution or inflation)
+
+## Governance
+DeHub uses novel fair voting logic where stakeholder weight is multiplied by limited amounts to prevent whale manipulation. Each vote requires burning 50 DHB tokens to discourage bad actors.
+
+## Advertising (POVR System)
+POVR (Proof-Of-View-And-Rank) is DeHub's revolutionary ad-tech solution:
+- 13-tier ranking system combined with verification badges
+- Targets users based on wallet balance and activity (financial data targeting)
+- Eliminates ad fraud (which costs $84-125 billion annually globally)
+- Higher holdings = higher badge = more ad revenue earned = companies pay more to advertise to you
+- Benefits creators, consumers, holders, and advertisers
+
+## Security
+- Certik audited
+- Bug bounty program
+- End-to-end encryption for communications and content
+
+## Roadmap Highlights
+
+### 2021 - Foundation Year
+- Assembled core team, launched beta app with 500+ testers and 2,000 DAUs
+- Launched v1 token, established liquidity pools on PancakeSwap
+- Rebranded to DeHub with full Certik Audit
+- Released prediction and raffle games
+- Listed on Gate.io after near 1000x price surge
+
+### 2022 - Expansion & Innovation
+- Released arcade with 5 games, achieved 5,000+ monthly active gamers
+- Released 4K streaming app with 99.9% uptime
+- Produced first tokenised documentary featuring Jorge Masvidal, Brad Pickett
+- Acquired $1,000,000 home for largest crypto raffle ever (15,000+ participants)
+- Incorporated DeLabs LTD
+
+### 2023 - Recognition & Decentralization
+- Won Most Innovative Company award at UK's Corporate Livewire (competing against 900+ companies backed by Sony, Samsung)
+- Released tokenised uploads with on-chain ad revenue sharing (creators earning 90%)
+- Featured in TechCrunch and VentureBeat
+- Voluntary delisting from Gate.io to prioritize decentralization
+
+### 2024 - Scale & Professional Growth
+- Listed DHB on ETH mainnet and Base L2
+- Dubai event expanded Middle East presence
+- First Class agency grew to UK #1 with 1,000 live streamers
+- Released DePIN Phase 1
+- Released E2E encrypted privacy chat
+- Released on-chain tradable subscriptions
+- Teaser for Last Chad Standing got 1M+ views
+
+### 2025 - Current Year
+- Q1: Released on-chain live streams, Livepeer infrastructure (50k+ concurrent viewers), sub-200ms latency, 99.99% uptime, completed messaging system, released Last Chad Standing trailer
+- Q2: UGC ambassadorship program (50 vacancies), released dhbscan.com, revamped feed, audio replies and live talk spaces, final snapshot for Last Chad Standing airdrop
+- Q3: Released live stream keys for multi-platform streaming, fiat onramp with Stripe (130+ currencies), began Solana/Hyperliquid/Sui integrations
+- Q4 (Planned): App store re-listings, multi-account access, CRM system for agency management, open source protocol, Last Chad Standing release begins
+
+### 2026+ - Future Vision
+- AI toolkits for automated tips, engagement, and financial guidance
+- Custom advertising stack with wallet-based targeting
+- DePIN phase 2
+- Fiat off-ramp, SDKs for third-party developers
+- Multi-posting to all major socials from one place
+- TV & game console apps
+- VR/AR profile hub
+- Educational AI integrations
+
 ## Contact
 - Technical Support: tech@dehub.net
 - Twitter/X: @dehub_official
 - Instagram: @dehub_official
+- Website: dehub.net
+- Staking: dehub.net/staking
+- Arcade: arcade.dehub.net
+- Token tracker: dhbscan.com
 
 ## Important Disclaimer
-DHB tokens are strictly for utility purposes (like in-game currencies) and are NOT investment vehicles. Markets are highly volatile and you could lose all your money. Only spend what you can afford to lose.
+DHB tokens are strictly for utility purposes (like in-game currencies) and are NOT investment vehicles. Markets are highly volatile and you could lose all your money due to hacks, technical errors, or unforeseen events. Only spend what you can afford to lose completely.
 `;
 
 serve(async (req) => {
