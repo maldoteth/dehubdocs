@@ -263,23 +263,14 @@ export const DocsChatBot = () => {
           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0 pointer-events-none"
         )}
       >
-        {/* Header */}
-        <div className="bg-gradient-to-r from-royal-blue to-middle-blue p-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full overflow-hidden">
-              <img src={robotAvatar} alt="DeHub Assistant" className="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 className="font-semibold text-white">DeHub Assistant</h3>
-              <p className="text-xs text-white/80">Documentation Help</p>
-            </div>
-          </div>
+        {/* Header - Close button only */}
+        <div className="p-3 flex justify-end border-b border-slate-100">
           <button
             onClick={() => setIsOpen(false)}
-            className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors"
+            className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
             aria-label="Close chat"
           >
-            <X className="w-4 h-4 text-white" />
+            <X className="w-4 h-4 text-slate-600" />
           </button>
         </div>
 
