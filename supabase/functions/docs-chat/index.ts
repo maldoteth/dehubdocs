@@ -292,6 +292,65 @@ Through content creation (tips, subscriptions, PPV, Watch2Earn), staking rewards
 ### What makes DeHub different?
 True decentralization, on-chain transparency, tokenized content ownership, E2EE privacy, and the DePIN infrastructure ensuring censorship resistance.
 
+## Contract Addresses
+- BASE Chain: 0xD20ab1015f6a2De4a6FdDEbAB270113F689c2F7c
+- BNB Chain: 0x680d3113caf77b61b510f332d5ef4cf5b41a761d
+
+## Donate
+DeHub is a non-profit, decentralised, user-owned protocol. All net profit is used to buy back and share $DHB tokens with stakeholders. All revenue is spent in accordance with DAO proposals, ensuring 100% reinvestment into the ecosystem.
+
+### Donation Addresses:
+- EVM (Ethereum, BNB, Polygon, etc.): 0x1759ceb6255dbebfe2c0c51edbcd29ad7efb9229
+- Bitcoin (BTC): bc1qldncd2fejalxjjpa4z5rhkd8rnd0lmchvpdxr2
+
+## Privacy Policy Summary
+DeHub prioritizes user privacy and data sovereignty as a decentralized application.
+
+### Core Principle:
+DeHub does not store, collect, or process personal data on centralized servers.
+
+### What DeHub Doesn't Collect:
+- Personal identification information
+- Email addresses or contact information
+- Browsing history or behavioral data
+- Location data
+- Device fingerprinting information
+- Centralized user accounts or profiles
+
+### Blockchain Data:
+Interactions may be recorded on public blockchains. This data is:
+- Publicly accessible by nature of blockchain technology
+- Pseudonymous (linked to wallet addresses, not personal identity)
+- Immutable and permanent
+- Not controlled or stored by DeHub
+
+### User Rights:
+- You maintain full control over your data
+- No central authority can access your private information
+- You can discontinue use at any time
+- Your wallet and keys remain under your sole control
+
+### Content Moderation:
+Handled through decentralized community governance with token holder voting and transparent on-chain processes. No centralized censorship authority.
+
+## Terms of Service Summary
+Key points from DeHub's terms of service:
+
+### Wallet Connections:
+Users connect their own Web3 wallets. DeHub never has access to private keys. Users are responsible for wallet security.
+
+### Token Purchases:
+All token transactions are on-chain and irreversible. Users acknowledge the volatile nature of crypto assets.
+
+### Monetization Rights:
+Creators retain ownership of their content. DeHub provides infrastructure for monetization. Revenue sharing is governed by smart contracts.
+
+### Content Governance:
+Content policies are determined by community governance. Users must comply with applicable laws. Community can vote on content removal through governance.
+
+### Legal Terms:
+DeHub is provided "as is" without warranties. Users assume all risks associated with decentralized applications. DeHub is not liable for losses from market volatility, smart contract bugs, or user errors.
+
 ## Important Disclaimer
 DHB tokens are strictly for utility purposes (like in-game currencies) and are NOT investment vehicles. As the token lives on-chain, DeHub can offer added utility and unprecedented levels of verifiable transparency. However, markets are highly volatile and you could lose all your money due to hacks, technical errors, competency failures, or unforeseen events. Only spend what you can afford to lose completely. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs.
 `;
