@@ -140,13 +140,13 @@ export const DocsChatBot = () => {
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
           "fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center",
-          "bg-gradient-to-r from-royal-blue to-middle-blue hover:from-royal-blue/90 hover:to-middle-blue/90",
+          "bg-white hover:bg-slate-50 border border-slate-200",
           "hover:scale-110 hover:shadow-xl",
           isOpen && "scale-0 opacity-0"
         )}
         aria-label="Open chat"
       >
-        <MessageCircle className="w-6 h-6 text-white" />
+        <MessageCircle className="w-6 h-6 text-black" />
       </button>
 
       {/* Chat Window */}
