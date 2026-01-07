@@ -66,6 +66,21 @@ DeHub provides AI-powered tools and services integrated into the ecosystem, enha
 ## E2E Encryption
 All communications and content on DeHub support end-to-end encryption for user privacy and security.
 
+## Team & Founders
+DeHub was founded by a diverse team of entrepreneurs, social media experts, and gaming professionals:
+
+### Malik Jan - Co-Founder
+Founder of UK-registered Web3 developers DeLabs LTD and Co-founder of Puso Group, a SEC licensed construction & development company in the Philippines. Previously raised over $1m at Guide Dogs as fundraising manager, was Senior consultant at Randstad ($8bn market cap), and built offices from scratch at ITS Construction including signing Berkeley Homes and winning exclusive supplier at the $100bn Horsham Highwood project.
+
+### Mike Hales - Co-Founder
+Founder and CEO of Rapz, a high-end MMA fightwear brand backed by top UFC and boxing stars with exclusive supplier rights to BKFC (owned by Conor McGregor). Founder of First Class, the UK's largest TikTok partner agency working directly for TikTok at UK HQ, with nearly 1000 streamers signed. Selected by TikTok executives after 10 months of leading UK charts with his live streams. Trained under John Kavanagh (Conor McGregor's coach).
+
+### Indi Jay Cammish - Co-Founder
+Social media, content & dance expert overseeing communications & corporate relations. Co-founder of First Class (UK's largest TikTok partner agency). Performed at the Platinum Party at The Palace for the Queen of England in 2022. Highly experienced working alongside global stars like Mabel on world tours.
+
+### Bailey Young - Co-Founder
+Operational powerhouse and former pro-gamer. Investments and tokenomics expert who played an instrumental role in DeHub's growth in 2021. Oversaw the Blocjerk fundraise of $1,000,000 in 2023 (peak ROI 1,000%). Former professional gamer ranking globally in top 3 COD MW2 and top 100 on Warzone.
+
 ## Contact
 - Technical Support: tech@dehub.net
 - Twitter/X: @dehub_official
