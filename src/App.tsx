@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import { SearchProvider } from "@/components/search/SearchProvider";
+import { DocsChatBot } from "@/components/chat/DocsChatBot";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { DocsLayout } from "./components/DocsLayout";
@@ -61,6 +62,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <DocsChatBot />
         <BrowserRouter>
           <SearchProvider>
             <Routes>
