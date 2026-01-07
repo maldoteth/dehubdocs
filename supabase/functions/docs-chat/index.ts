@@ -92,6 +92,7 @@ The DeHub app includes:
 - **Messaging**: E2E encrypted private communications, paid or free DMs, unlockable chat content
 - **Tradable Subscriptions**: On-chain subscriptions that can be traded
 - **Multi-streaming**: Stream keys allow streaming on multiple apps simultaneously
+- **Microtransactions & PPV**: DeHub is the only app in the world where anyone can monetize pay-per-view (PPV) without a bank or KYC. Microtransactions are the solution coming to all social platforms eventually - DeHub is ahead of the curve.
 
 ## End-to-End Encryption (E2EE)
 DeHub implements military-grade E2EE for private conversations using:
