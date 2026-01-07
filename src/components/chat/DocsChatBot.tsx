@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { MessageCircle, X, Send, Bot, User, Loader2 } from 'lucide-react';
+import { MessageCircle, X, Send, User, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import robotAvatar from '@/assets/robot-avatar.png';
 
 type Message = {
   role: 'user' | 'assistant';
@@ -175,8 +176,8 @@ export const DocsChatBot = () => {
         {/* Header */}
         <div className="bg-gradient-to-r from-royal-blue to-middle-blue p-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-              <Bot className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 rounded-full overflow-hidden">
+              <img src={robotAvatar} alt="DeHub Assistant" className="w-full h-full object-cover" />
             </div>
             <div>
               <h3 className="font-semibold text-white">DeHub Assistant</h3>
@@ -202,18 +203,17 @@ export const DocsChatBot = () => {
                 message.role === 'user' ? "flex-row-reverse" : "flex-row"
               )}
             >
-              <div
-                className={cn(
-                  "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
-                  message.role === 'user' ? "bg-slate-200" : "bg-gradient-to-r from-royal-blue to-middle-blue"
-                )}
-              >
-                {message.role === 'user' ? (
+              {message.role === 'user' ? (
+                <div
+                  className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-slate-200"
+                >
                   <User className="w-4 h-4 text-slate-600" />
-                ) : (
-                  <Bot className="w-4 h-4 text-white" />
-                )}
-              </div>
+                </div>
+              ) : (
+                <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                  <img src={robotAvatar} alt="Assistant" className="w-full h-full object-cover" />
+                </div>
+              )}
               <div
                 className={cn(
                   "max-w-[75%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
@@ -228,8 +228,8 @@ export const DocsChatBot = () => {
           ))}
           {isLoading && messages[messages.length - 1]?.role === 'user' && (
             <div className="flex gap-3">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-royal-blue to-middle-blue flex items-center justify-center flex-shrink-0">
-                <Bot className="w-4 h-4 text-white" />
+              <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                <img src={robotAvatar} alt="Assistant" className="w-full h-full object-cover" />
               </div>
               <div className="bg-slate-100 rounded-2xl rounded-bl-md px-4 py-2.5">
                 <Loader2 className="w-4 h-4 text-slate-500 animate-spin" />
