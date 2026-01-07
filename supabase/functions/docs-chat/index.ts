@@ -351,6 +351,104 @@ Content policies are determined by community governance. Users must comply with 
 ### Legal Terms:
 DeHub is provided "as is" without warranties. Users assume all risks associated with decentralized applications. DeHub is not liable for losses from market volatility, smart contract bugs, or user errors.
 
+## Historical Milestones and Events
+
+### Major Blog Posts and Announcements
+
+**Coinbase Listing (December 2024)**
+DHB token confirmed available directly on Coinbase CEX - a major milestone for accessibility and mainstream adoption.
+
+**Google Play Store Launch**
+DeHub D'App officially live on Google Play Store, making the platform accessible to millions of Android users worldwide.
+
+**End-to-End Encryption Launch**
+Full implementation of military-grade E2EE using XChaCha20-Poly1305 encryption, providing Signal-level privacy for all private communications.
+
+**Corporate LiveWire Award (Q2 2023)**
+Won the Innovation & Excellence Award in the Gaming category, beating 900+ companies backed by Sony and Samsung with over 27,000 public votes. First Web3 company to ever win this award.
+
+**Tokenized Uploads Launch (June 2023)**
+Revolutionary feature where every upload becomes a fractionalized ERC-1155 NFT split into 1,000 tradeable fractions, sharing ad revenue with holders forever.
+
+**Dubai Events (Q2 2024)**
+Expanded Middle East presence with presence at major blockchain events including Blockchain Life, Token2049, ETH Dubai, and World Blockchain Summit.
+
+**Fan.site $1M Raise (March 2024)**
+Adult fork of DeHub raised $1M backed by VCs and launchpads including Homeless Ventures and strategic investors.
+
+**Gate.io Voluntary Delisting (Q4 2023)**
+Voluntarily delisted from Gate.io to prioritize decentralization principles and DEX-first approach. Over 120M tokens were burned as part of this process.
+
+### Detailed Chronological History
+
+**2021 - Foundation Year**
+- Q1: Core team assembled with 10+ years combined experience, beta app launched with 500+ testers, achieved 2,000+ daily active users, conducted 50+ user interviews for feedback
+- Q2: V1 token launched on BNB chain, first liquidity pools established on PancakeSwap, grew to 2,000+ early adopters, community-driven development began
+- Q3: Major rebrand from original name to DeHub, complete React Native app rebuild, full Certik Audit completed for smart contract security
+- Q4: Prediction and raffle games launched, listed on Gate.io exchange after near 1000x price surge with $10M liquidity pool, community grew to 8,000+ members
+
+**2022 - Expansion & Innovation**
+- Q1: Arcade launched with 5 blockchain-integrated games, achieved 5,000+ monthly active gamers, on-chain leaderboards implemented
+- Q2: Stream app released with 4K content support, produced first tokenized documentary featuring UFC stars Jorge Masvidal and Brad Pickett, launched Chads NFT collection, completed Philippine SEC company registration
+- Q3: DeLabs LTD incorporated in UK, acquired $1,000,000 home for largest ever crypto raffle (15,000+ participants), attempted Palawan real estate tokenization partnership
+- Q4: V1 contract tax malfunction discovered forcing V2 relaunch, successfully migrated 25,000+ token holders to new contract with no losses
+
+**2023 - Recognition & Decentralization**
+- Q1: Alpha launch of integrated d'app combining all features, tokenized uploads released with 90% creator revenue share, V2 trading resumed on Gate.io
+- Q2: Won Corporate LiveWire Innovation & Excellence Award (27,000+ votes), featured in TechCrunch and VentureBeat, filed patent applications for streaming technology
+- Q3: Partner airdrop announced for Fan.site adult platform fork, demonstrated commitment to decentralization principles
+- Q4: Voluntary Gate.io delisting completed, all-DEX policy implemented, transparency reports published, 120M+ tokens burned from exchange
+
+**2024 - Scale & Professional Growth**
+- Q1: Listed DHB on Ethereum mainnet for broader accessibility, raised $1M seed funding for Fan.site fork
+- Q2: Listed SDHB on Base L2 for lower fees, Dubai blockchain events expanded Middle East presence, TikTok partner agency First Class founded
+- Q3: Major app upgrade with 95% positive user feedback, 200% backend speed improvement, streamlined UX
+- Q4: On-chain tradable subscriptions launched, Last Chad Standing game teaser achieved 1M+ views, DePIN Phase 1 released, First Class agency became UK #1 TikTok partner
+
+**2025 - Current Year Progress**
+- Q1: On-chain live streams with real-time tip animations, Livepeer integration supporting 50,000+ concurrent viewers, sub-200ms global latency achieved, 99.99% uptime, advanced messaging system completed, Last Chad Standing official trailer released
+- Q2: UGC ambassadorship program launched (50 vacancies), dhbscan.com token tracker released, revamped app feed with audio replies and live talk spaces, final snapshot for Last Chad Standing airdrop eligibility
+
+### Key Challenges Overcome
+
+**V1 Smart Contract Security Issue (Q2 2021)**
+Early security vulnerability identified and addressed through comprehensive Certik Audit, establishing security-first development practices.
+
+**Gate.io Listing Agent Fraud (Q4 2021)**
+Listing agent stole fundraise proceeds and dumped on chart. Team recovered, refunded affected users, and implemented stricter partner vetting.
+
+**Contract Tax Malfunction (Q4 2022)**
+V1 contract developed an unexpected tax issue forcing complete V2 migration. Successfully migrated 25,000+ holders with zero losses.
+
+**Gate.io Token Burn (Q4 2023)**
+After voluntary delisting, over 120M tokens held on the exchange were permanently burned, reducing supply and demonstrating commitment to decentralization.
+
+### Key Partnerships and Recognition
+
+**Awards:**
+- Corporate LiveWire 2023 Innovation & Excellence Award (Gaming category)
+- First Web3 company to win Corporate LiveWire award
+- Beat 900+ companies including Sony and Samsung backed ventures
+
+**Media Features:**
+- TechCrunch
+- VentureBeat
+- Entrepreneur.com
+- BigFish Boxing
+- Yahoo Finance
+- Benzinga
+
+**Strategic Partnerships:**
+- Raceline (supercars and luxury experiences)
+- TikTok UK (First Class agency partnership)
+- Major UFC fighters (Jorge Masvidal, Brad Pickett for documentaries)
+- Livepeer (decentralized streaming infrastructure)
+
+**Strategic Investors:**
+- Homeless Ventures
+- Brian D Evans (Forbes 40 under 40)
+- Ferrum's TDI program
+
 ## Important Disclaimer
 DHB tokens are strictly for utility purposes (like in-game currencies) and are NOT investment vehicles. As the token lives on-chain, DeHub can offer added utility and unprecedented levels of verifiable transparency. However, markets are highly volatile and you could lose all your money due to hacks, technical errors, competency failures, or unforeseen events. Only spend what you can afford to lose completely. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs.
 `;
