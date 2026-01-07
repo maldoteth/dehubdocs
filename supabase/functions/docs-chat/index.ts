@@ -16,7 +16,6 @@ Built by gamers & streamers, DeHub delivers a seamless Web2 experience while eve
 The app is scaled via a decentralized miner network providing shared computing power to host, transcode, and deliver content that by design, should live forever. DeHub was the first protocol to tokenise content back in 2023.
 
 ## Team & Founders
-DeHub was founded by a diverse team of entrepreneurs, social media experts, and gaming professionals:
 
 ### Malik Jan - Co-Founder
 Founder of UK-registered Web3 developers DeLabs LTD and Co-founder of Puso Group, a SEC licensed construction & development company in the Philippines. Previously raised over $1m at Guide Dogs as fundraising manager, was Senior consultant at Randstad ($8bn market cap), and built offices from scratch at ITS Construction including signing Berkeley Homes and winning exclusive supplier at the $100bn Horsham Highwood project.
@@ -55,9 +54,10 @@ DHB tokens are available on:
 - Uniswap (BASE chain)
 - Pancakeswap (BNB chain)
 - In-app purchase with fiat via Stripe (130+ currencies supported)
+- CEX integrations: Coinbase, MEXC, OKX (via their DEX integration features)
 
 ## Token Bridge
-You can bridge DHB tokens between BASE and BNB chains. The bridge addresses are available in the documentation.
+You can bridge DHB tokens between BASE and BNB chains. The bridge is currently a manual process with processing times of up to 24 hours. An automated bridge is coming soon.
 
 ## Staking
 Stake DHB to access different club tiers with enhanced features across all d'apps. There are three staking tiers based on duration:
@@ -82,7 +82,7 @@ Based on DHB holdings, users unlock badges with reduced platform fees:
 - Killer Whale (5m+ DHB): 3.10% fee
 - Great White Shark (10m+ DHB): 2.41% fee
 - Blue Whale (25m+ DHB): 1.72% fee
-- Megalodon (50m+ DHB): 1% fee
+- Megalodon (50m+ DHB): 1% fee (minimum fee)
 
 ## D'App Features
 The DeHub app includes:
@@ -93,22 +93,86 @@ The DeHub app includes:
 - **Tradable Subscriptions**: On-chain subscriptions that can be traded
 - **Multi-streaming**: Stream keys allow streaming on multiple apps simultaneously
 
+## End-to-End Encryption (E2EE)
+DeHub implements military-grade E2EE for private conversations using:
+- **XChaCha20-Poly1305** for message encryption (same as Signal, WhatsApp)
+- **X25519 ECDH** for secure key exchange with Perfect Forward Secrecy
+- **HKDF-SHA256** for key derivation
+- Uses audited @noble cryptographic libraries
+
+### How E2EE Works:
+1. Enable E2EE by signing a message with your wallet
+2. Private key is derived from your wallet signature (never transmitted)
+3. Public key is uploaded to DeHub database
+4. Session keys are generated using ECDH for each conversation
+5. Messages are encrypted with unique nonces before transmission
+6. Only you and the recipient can decrypt messages - DeHub cannot read them
+
+### What's Protected:
+- Message content (fully encrypted)
+- Message integrity (tamper-proof)
+- Private keys (never leave your device)
+- Forward secrecy (unique keys per conversation)
+
+### What's Not Protected (Metadata):
+- Who you're talking to
+- When messages are sent
+- Message count
+
 ## DePIN (Decentralized Physical Infrastructure Network)
 DeHub's DePIN leverages shared computing power from miners who contribute resources for data hosting, transcoding, and content delivery. Miners are rewarded from application revenue and token fees (inflation-free model).
+
+### System Architecture:
+DeHub Application ↔ DePIN Coordinator ↔ Miners (Mobile/PC/Server) → Hosting/Transcode/Deliver
+
+### Core Components:
+- **Contributors (Miners)**: Individuals providing computing resources
+- **DePIN Coordinator**: Smart contract system managing rewards and task distribution
+- **DeHub Application**: The streaming/gaming app interfacing with DePIN
+- **Clients**: End users consuming content
 
 ### Miner Requirements:
 - Mobile Phones: Quad-core CPU, 4GB RAM, 100,000 DHB stake (Hosting only)
 - PCs/Laptops: 4-core CPU, 8GB RAM, GPU, 1,000,000 DHB stake (Transcoding, Hosting, Delivery)
 - Dedicated Servers: 8-core CPU, 16GB RAM, SSD, 10,000,000 DHB stake (High-volume Hosting, Delivery)
 
+### Revenue Pool Sources:
+- In-app revenue (subscriptions, ads, purchases)
+- Token transaction fees
+- Distributed based on volume and quality of contributions
+
 ## Games
 DeHub offers blockchain-integrated games including arcade games and the upcoming flagship game:
-- **Last Chad Standing**: First ever MMA Battle Royale with hyper-realistic graphics, featuring top UFC stars, developers from Ubisoft, and leading meme skins. Website: lastchadstanding.com
-- **Released Games**: Whack A Schifff, Gas Guzzler, Rocket Blaster, Street Slayer - available at arcade.dehub.net
+
+### Last Chad Standing (Upcoming)
+- First ever MMA Battle Royale with hyper-realistic graphics
+- Features top UFC stars
+- Developers from Ubisoft
+- Leading meme skins available
+- Website: lastchadstanding.com
+
+### Released Games (arcade.dehub.net):
+- Whack A Schifff
+- Gas Guzzler
+- Rocket Blaster
+- Street Slayer
+
 - Play and earn model sustained entirely on fee generation (no dilution or inflation)
 
+## AI Toolkits (Coming Soon)
+DeHub users will have access to an uncensored AI assistant with features including:
+- **Content Creation**: AI-powered writing, editing, and optimization
+- **Automated Engagement**: Automate engagement and tipping based on preferences
+- **Finance Management**: Track earnings, manage tips, optimize monetization
+- **Performance Analytics**: Track, analyze, and monitor performance & trends
+- **Global Translation**: Translate and clarify content for global audiences
+- **Content Analysis**: AI-powered content analysis and interpretation
+
 ## Governance
-DeHub uses novel fair voting logic where stakeholder weight is multiplied by limited amounts to prevent whale manipulation. Each vote requires burning 50 DHB tokens to discourage bad actors.
+DeHub uses novel fair voting logic where stakeholder weight is multiplied by limited amounts to prevent whale manipulation. Each vote requires burning 50 DHB tokens to discourage bad actors. This ensures:
+- Fair representation regardless of holding size
+- Prevention of vote buying
+- Active participation requirements
 
 ## Advertising (POVR System)
 POVR (Proof-Of-View-And-Rank) is DeHub's revolutionary ad-tech solution:
@@ -118,10 +182,22 @@ POVR (Proof-Of-View-And-Rank) is DeHub's revolutionary ad-tech solution:
 - Higher holdings = higher badge = more ad revenue earned = companies pay more to advertise to you
 - Benefits creators, consumers, holders, and advertisers
 
+### Advertiser Dashboard Features:
+- Campaign creation and management
+- Real-time analytics (impressions, CTR, ROAS)
+- Budget calculator
+- Multiple campaign types supported
+
 ## Security
-- Certik audited
-- Bug bounty program
-- End-to-end encryption for communications and content
+- **Certik Audited**: Full smart contract security audit
+- **Bug Bounty Program**: Report bugs to tech@dehub.net
+- **E2EE**: Military-grade encryption for communications
+
+## Brand Assets
+- Official brand font: Exo
+- Logo downloads available in documentation
+- Brand guidelines presentation available
+- Contact marketing@dehub.net for full brand kit (SVG, EPS, vector formats)
 
 ## Roadmap Highlights
 
@@ -170,17 +246,54 @@ POVR (Proof-Of-View-And-Rank) is DeHub's revolutionary ad-tech solution:
 - VR/AR profile hub
 - Educational AI integrations
 
-## Contact
+## Contact Information
+
+### Quick Contact:
+- Telegram: t.me/dehub_dhb
+- Discord: discord.gg/dehub
+- Direct Message: Coming soon in-app
+
+### Email Contacts:
 - Technical Support: tech@dehub.net
+- Marketing/Partnerships: marketing@dehub.net
+- Human Resources/Careers: hr@dehub.net
+
+### Community Channels:
+- Turkish Community: t.me/Dehub_Turkish
+- Arabic Community: t.me/Dehub_Arabic
+- Holders Channel: Exclusive for token holders
+- Whales Channel: For holders over 10m DHB tokens
+
+### Social Media:
 - Twitter/X: @dehub_official
 - Instagram: @dehub_official
-- Website: dehub.net
+
+### Websites:
+- Main: dehub.net
 - Staking: dehub.net/staking
 - Arcade: arcade.dehub.net
 - Token tracker: dhbscan.com
+- Last Chad Standing: lastchadstanding.com
+
+## FAQ - Frequently Asked Questions
+
+### What is DeHub?
+A decentralized social media and streaming platform powered by the $DHB token, offering censorship-resistant content creation, live streaming, and gaming.
+
+### How do I get started?
+Download the app, sign up with socials or email (wallet created automatically), and start creating or consuming content.
+
+### Is DHB an investment?
+No. DHB is strictly a utility token for platform features, like in-game currencies. It is NOT an investment vehicle.
+
+### How do I earn on DeHub?
+Through content creation (tips, subscriptions, PPV, Watch2Earn), staking rewards, DePIN mining, or playing games.
+
+### What makes DeHub different?
+True decentralization, on-chain transparency, tokenized content ownership, E2EE privacy, and the DePIN infrastructure ensuring censorship resistance.
 
 ## Important Disclaimer
-DHB tokens are strictly for utility purposes (like in-game currencies) and are NOT investment vehicles. Markets are highly volatile and you could lose all your money due to hacks, technical errors, or unforeseen events. Only spend what you can afford to lose completely.
+DHB tokens are strictly for utility purposes (like in-game currencies) and are NOT investment vehicles. As the token lives on-chain, DeHub can offer added utility and unprecedented levels of verifiable transparency. However, markets are highly volatile and you could lose all your money due to hacks, technical errors, competency failures, or unforeseen events. Only spend what you can afford to lose completely. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs.
 `;
 
 serve(async (req) => {
