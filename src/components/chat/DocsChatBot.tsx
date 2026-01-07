@@ -10,6 +10,96 @@ type Message = {
   content: string;
 };
 
+// Simple markdown parser for chat messages
+const parseMarkdown = (text: string): React.ReactNode[] => {
+  const parts: React.ReactNode[] = [];
+  let key = 0;
+  
+  // Split by lines first to handle lists
+  const lines = text.split('\n');
+  
+  lines.forEach((line, lineIndex) => {
+    if (lineIndex > 0) {
+      parts.push(<br key={`br-${key++}`} />);
+    }
+    
+    // Handle bullet points
+    if (line.trim().startsWith('- ') || line.trim().startsWith('• ')) {
+      const content = line.trim().slice(2);
+      parts.push(
+        <span key={`bullet-${key++}`} className="flex gap-1">
+          <span>•</span>
+          <span>{parseInlineMarkdown(content)}</span>
+        </span>
+      );
+      return;
+    }
+    
+    // Handle numbered lists
+    const numberedMatch = line.trim().match(/^(\d+)\.\s+(.+)$/);
+    if (numberedMatch) {
+      parts.push(
+        <span key={`num-${key++}`} className="flex gap-1">
+          <span>{numberedMatch[1]}.</span>
+          <span>{parseInlineMarkdown(numberedMatch[2])}</span>
+        </span>
+      );
+      return;
+    }
+    
+    // Regular line with inline formatting
+    parts.push(<span key={`line-${key++}`}>{parseInlineMarkdown(line)}</span>);
+  });
+  
+  return parts;
+};
+
+// Parse inline markdown (bold, italic, code)
+const parseInlineMarkdown = (text: string): React.ReactNode[] => {
+  const parts: React.ReactNode[] = [];
+  let remaining = text;
+  let key = 0;
+  
+  while (remaining.length > 0) {
+    // Bold: **text** or __text__
+    const boldMatch = remaining.match(/^(.*?)(\*\*|__)(.+?)\2(.*)$/s);
+    if (boldMatch) {
+      if (boldMatch[1]) parts.push(boldMatch[1]);
+      parts.push(<strong key={`bold-${key++}`}>{boldMatch[3]}</strong>);
+      remaining = boldMatch[4];
+      continue;
+    }
+    
+    // Italic: *text* or _text_ (not preceded by * or _)
+    const italicMatch = remaining.match(/^(.*?)(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)(.*)$/s);
+    if (italicMatch) {
+      if (italicMatch[1]) parts.push(italicMatch[1]);
+      parts.push(<em key={`italic-${key++}`}>{italicMatch[2]}</em>);
+      remaining = italicMatch[3];
+      continue;
+    }
+    
+    // Inline code: `code`
+    const codeMatch = remaining.match(/^(.*?)`([^`]+)`(.*)$/s);
+    if (codeMatch) {
+      if (codeMatch[1]) parts.push(codeMatch[1]);
+      parts.push(
+        <code key={`code-${key++}`} className="bg-slate-200 px-1 py-0.5 rounded text-xs font-mono">
+          {codeMatch[2]}
+        </code>
+      );
+      remaining = codeMatch[3];
+      continue;
+    }
+    
+    // No more matches, add remaining text
+    parts.push(remaining);
+    break;
+  }
+  
+  return parts;
+};
+
 const CHAT_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/docs-chat`;
 
 export const DocsChatBot = () => {
@@ -222,7 +312,7 @@ export const DocsChatBot = () => {
                     : "bg-slate-100 text-slate-700 rounded-bl-md"
                 )}
               >
-                {message.content}
+                {message.role === 'assistant' ? parseMarkdown(message.content) : message.content}
               </div>
             </div>
           ))}
