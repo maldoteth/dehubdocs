@@ -141,11 +141,11 @@ const DocsHome = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to="/docs/overview" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-jet-black font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
+            <Link to="/docs/overview" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-jet-black font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
               Get Started
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
-            <a href="https://play.google.com/store/apps/details?id=io.dehub.mobile&hl" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+            <a href="https://play.google.com/store/apps/details?id=io.dehub.mobile&hl" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
               Download App
               <ExternalLink className="w-4 h-4 ml-2" />
             </a>
