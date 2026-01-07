@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { MessageCircle, X, Send, Bot, User, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -20,6 +20,7 @@ export const DocsChatBot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const chatWindowRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
 
   const scrollToBottom = () => {
@@ -34,6 +35,18 @@ export const DocsChatBot = () => {
     if (isOpen && inputRef.current) {
       inputRef.current.focus();
     }
+  }, [isOpen]);
+
+  // Close on click outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isOpen && chatWindowRef.current && !chatWindowRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isOpen]);
 
   const streamChat = async (userMessages: Message[]) => {
@@ -151,6 +164,7 @@ export const DocsChatBot = () => {
 
       {/* Chat Window */}
       <div
+        ref={chatWindowRef}
         className={cn(
           "fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-48px)] h-[500px] max-h-[calc(100vh-120px)]",
           "bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden",
