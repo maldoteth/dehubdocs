@@ -132,20 +132,20 @@ const DocsHome = () => {
       <div className="space-y-12">
         {/* Hero Section */}
         <div className="text-center space-y-6">
-          <h1 className="text-5xl font-bold text-jet-black leading-tight font-exo">
+          <h1 className="text-5xl font-bold text-foreground leading-tight font-exo">
             Welcome to
-            <span className="block bg-gradient-to-r from-jet-black to-gray-600 bg-clip-text text-transparent">Our Docs</span>
+            <span className="block bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">Our Docs</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-exo">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-exo">
             Everything you need to use, integrate, build, and scale with our platform. From quick start guides to advanced configurations.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to="/docs/overview" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-jet-black font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
+            <Link to="/docs/overview" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
               Get Started
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
-            <a href="https://play.google.com/store/apps/details?id=io.dehub.mobile&hl" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+            <a href="https://play.google.com/store/apps/details?id=io.dehub.mobile&hl" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 border border-border text-foreground font-semibold rounded-lg hover:bg-muted transition-all duration-200 font-exo">
               Download App
               <ExternalLink className="w-4 h-4 ml-2" />
             </a>
@@ -155,14 +155,14 @@ const DocsHome = () => {
         {/* Quick Links */}
         <div className="flex justify-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-sm sm:max-w-none">
-            {quickLinks.map(link => link.external ? <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
-                  <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                    <link.icon className="w-6 h-6 text-jet-black" />
+            {quickLinks.map(link => link.external ? <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer" className="group block p-6 bg-card rounded-xl border border-border hover:border-primary/40 transition-all duration-200 hover:shadow-lg text-center">
+                  <div className={`w-12 h-12 bg-muted rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                    <link.icon className="w-6 h-6 text-foreground" />
                   </div>
-                  <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-2 font-exo">{link.title}</h3>
                   <div className="flex flex-row lg:flex-col items-center justify-center gap-2 mt-3">
                     {!link.contractAddress && (
-                      <div className="flex items-center justify-center text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                      <div className="flex items-center justify-center text-sm text-muted-foreground group-hover:text-foreground font-exo">
                         Visit site
                         <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
                       </div>
@@ -174,7 +174,7 @@ const DocsHome = () => {
                           e.stopPropagation();
                           copyToClipboard(link.contractAddress!);
                         }}
-                        className="flex items-center gap-1 text-xs text-middle-blue hover:text-royal-blue transition-colors px-2 py-1 rounded hover:bg-sky-blue/10"
+                        className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-muted"
                       >
                         {copiedAddress === link.contractAddress ? (
                           <>
@@ -190,12 +190,12 @@ const DocsHome = () => {
                       </button>
                     )}
                   </div>
-                </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg text-center">
-                  <div className={`w-12 h-12 bg-gradient-to-r ${link.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                    <link.icon className="w-6 h-6 text-jet-black" />
+                </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-card rounded-xl border border-border hover:border-primary/40 transition-all duration-200 hover:shadow-lg text-center">
+                  <div className={`w-12 h-12 bg-muted rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                    <link.icon className="w-6 h-6 text-foreground" />
                   </div>
-                  <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{link.title}</h3>
-                  <div className="flex items-center justify-center mt-3 text-sm text-middle-blue group-hover:text-royal-blue font-exo">
+                  <h3 className="text-lg font-semibold text-foreground mb-2 font-exo">{link.title}</h3>
+                  <div className="flex items-center justify-center mt-3 text-sm text-muted-foreground group-hover:text-foreground font-exo">
                     Learn more
                     <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
@@ -204,29 +204,29 @@ const DocsHome = () => {
         </div>
 
         {/* Latest Blog Post Promotion */}
-        {latestPost && <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
+        {latestPost && <div className="bg-card rounded-2xl border border-border p-8">
             <div className="flex flex-col gap-6">
               <div className="text-center">
-                <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-jet-black px-3 py-1 rounded-full text-sm font-semibold">Latest From The Blog</span>
+                <span className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">Latest From The Blog</span>
               </div>
               <Link to={`/docs/blog/${latestPost.slug}`} className="w-full block">
                 <img src={bannerImage} alt={bannerImageAlt} className="w-full aspect-video object-cover rounded-xl hover:opacity-95 transition-opacity cursor-pointer" />
               </Link>
               <div className="text-center">
                 <div className="mb-4">
-                  <h2 className="text-2xl lg:text-3xl font-bold text-royal-blue mb-3 font-exo">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-3 font-exo">
                     {latestPost.title}
                   </h2>
-                  <p className="text-royal-blue/70 mb-6 font-exo">
+                  <p className="text-muted-foreground mb-6 font-exo">
                     {latestPost.excerpt}
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link to={`/docs/blog/${latestPost.slug}`} className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-jet-black font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
+                  <Link to={`/docs/blog/${latestPost.slug}`} className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
                     Read Article
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
-                  <Link to="/docs/blog" className="inline-flex items-center px-6 py-3 border border-sky-blue text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+                  <Link to="/docs/blog" className="inline-flex items-center px-6 py-3 border border-border text-foreground font-semibold rounded-lg hover:bg-muted transition-all duration-200 font-exo">
                     Visit Our Blog
                   </Link>
                 </div>
@@ -235,31 +235,31 @@ const DocsHome = () => {
           </div>}
 
         {/* Features */}
-        <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-8">
+        <div className="bg-card rounded-2xl border border-border p-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-royal-blue mb-4 font-exo">Why Build On DeHub?</h2>
-            <p className="text-royal-blue/70 max-w-2xl mx-auto font-exo">For true censorship resistance, decentralisation and permissionlessness that's guaranteed for the rest of time, choose DeHub.</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4 font-exo">Why Build On DeHub?</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto font-exo">For true censorship resistance, decentralisation and permissionlessness that's guaranteed for the rest of time, choose DeHub.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map(feature => <div key={feature.title} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-sky-blue/20 to-middle-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <feature.icon className="w-8 h-8 text-royal-blue" />
+                <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <feature.icon className="w-8 h-8 text-foreground" />
                 </div>
-                <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{feature.title}</h3>
-                <p className="text-royal-blue/70 text-sm font-exo">{feature.description}</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2 font-exo">{feature.title}</h3>
+                <p className="text-muted-foreground text-sm font-exo">{feature.description}</p>
               </div>)}
           </div>
         </div>
 
         {/* Getting Started */}
-        <div className="bg-gradient-to-r from-royal-blue to-middle-blue rounded-2xl p-8 text-center shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-          <h2 className="text-3xl font-bold mb-4 text-jet-black font-exo">Ready to Get Started?</h2>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto font-exo">
+        <div className="bg-primary rounded-2xl p-8 text-center shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+          <h2 className="text-3xl font-bold mb-4 text-primary-foreground font-exo">Ready to Get Started?</h2>
+          <p className="text-primary-foreground/70 mb-6 max-w-2xl mx-auto font-exo">
             Follow our step-by-step guide to integrate our platform in minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-plain-white text-royal-blue font-semibold rounded-lg hover:bg-sky-blue/10 transition-all duration-200 font-exo">
+            <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-card text-foreground font-semibold rounded-lg hover:bg-muted transition-all duration-200 font-exo">
               Start Building
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
@@ -268,8 +268,8 @@ const DocsHome = () => {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center pt-4 border-t border-sky-blue/20">
-          <p className="text-sm text-royal-blue/60 font-exo">
+        <div className="text-center pt-4 border-t border-border">
+          <p className="text-sm text-muted-foreground font-exo">
             Last updated: {lastPublishedDate.toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',

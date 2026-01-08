@@ -18,12 +18,12 @@ export const BlogAllPostsSection: React.FC<BlogAllPostsSectionProps> = ({
   return (
     <section>
       <div className="flex items-center gap-3 mb-6">
-        <Calendar className="w-6 h-6 text-royal-blue" />
-        <h2 className="text-2xl font-bold text-royal-blue font-exo">
+        <Calendar className="w-6 h-6 text-foreground" />
+        <h2 className="text-2xl font-bold text-foreground font-exo">
           {searchQuery || selectedTag ? 'Search Results' : 'Latest Posts'}
         </h2>
         {(searchQuery || selectedTag) && (
-          <span className="text-royal-blue/60 font-exo">
+          <span className="text-muted-foreground font-exo">
             ({filteredPosts.length} post{filteredPosts.length !== 1 ? 's' : ''})
           </span>
         )}
@@ -36,9 +36,9 @@ export const BlogAllPostsSection: React.FC<BlogAllPostsSectionProps> = ({
           ))}
         </div>
       ) : (
-        <div className="text-center py-12 bg-plain-white rounded-xl border border-sky-blue/20">
-          <h3 className="text-xl font-semibold text-royal-blue mb-2 font-exo">No Posts Found</h3>
-          <p className="text-royal-blue/70 font-exo">
+        <div className="text-center py-12 bg-card rounded-xl border border-border">
+          <h3 className="text-xl font-semibold text-foreground mb-2 font-exo">No Posts Found</h3>
+          <p className="text-muted-foreground font-exo">
             {searchQuery || selectedTag ? 'Try adjusting your search criteria or browse all posts.' : 'Check back soon for new content!'}
           </p>
         </div>

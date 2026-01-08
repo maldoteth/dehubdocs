@@ -85,7 +85,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
   };
 
   return (
-    <article className={`group bg-plain-white rounded-xl border border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg overflow-hidden ${featured ? 'lg:col-span-2' : ''}`}>
+    <article className={`group bg-card rounded-xl border border-border hover:border-primary/40 transition-all duration-200 hover:shadow-lg overflow-hidden ${featured ? 'lg:col-span-2' : ''}`}>
       <Link to={`/docs/blog/${post.slug}`} className="block" onClick={handleLinkClick}>
         <div className="relative">
           <img 
@@ -94,14 +94,14 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
             className={`w-full object-cover transition-transform duration-200 group-hover:scale-105 ${featured ? 'h-48' : 'h-40'}`}
           />
           {post.featured && (
-          <span className="absolute top-4 left-4 bg-gradient-to-r from-royal-blue to-middle-blue text-black px-3 py-1 rounded-full text-sm font-semibold">
+          <span className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
             Featured
           </span>
           )}
         </div>
         
         <div className={`p-6 ${featured ? 'lg:p-8' : ''}`}>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-royal-blue/70 mb-3">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-3">
             <div className="flex items-center gap-1">
               <Calendar className="w-4 h-4" />
               <span>{displayDate}</span>
@@ -112,11 +112,11 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
             </div>
           </div>
 
-          <h2 className={`font-bold text-royal-blue mb-3 group-hover:text-middle-blue transition-colors duration-200 font-exo ${featured ? 'text-2xl lg:text-3xl' : 'text-xl'}`}>
+          <h2 className={`font-bold text-foreground mb-3 group-hover:text-muted-foreground transition-colors duration-200 font-exo ${featured ? 'text-2xl lg:text-3xl' : 'text-xl'}`}>
             {post.title}
           </h2>
 
-          <p className={`text-royal-blue/80 mb-4 font-exo ${featured ? 'text-lg' : 'text-base'}`}>
+          <p className={`text-muted-foreground mb-4 font-exo ${featured ? 'text-lg' : 'text-base'}`}>
             {excerpt}
           </p>
 
@@ -124,19 +124,19 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
             {post.tags.slice(0, 3).map(tag => (
               <span 
                 key={tag}
-                className="bg-sky-blue/10 text-royal-blue px-3 py-1 rounded-full text-sm font-medium"
+                className="bg-muted text-foreground px-3 py-1 rounded-full text-sm font-medium"
               >
                 {tag}
               </span>
             ))}
             {post.tags.length > 3 && (
-              <span className="text-royal-blue/60 text-sm">
+              <span className="text-muted-foreground text-sm">
                 +{post.tags.length - 3} more
               </span>
             )}
           </div>
 
-          <div className="flex items-center text-middle-blue group-hover:text-royal-blue transition-colors duration-200 font-semibold">
+          <div className="flex items-center text-foreground group-hover:text-muted-foreground transition-colors duration-200 font-semibold">
             Read More
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
           </div>

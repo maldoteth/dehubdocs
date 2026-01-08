@@ -18,8 +18,8 @@ export const BlogFeaturedSection: React.FC<BlogFeaturedSectionProps> = ({
   return (
     <section>
       <div className="flex items-center gap-3 mb-6">
-        <TrendingUp className="w-6 h-6 text-royal-blue" />
-        <h2 className="text-2xl font-bold text-royal-blue font-exo">Featured Posts</h2>
+        <TrendingUp className="w-6 h-6 text-foreground" />
+        <h2 className="text-2xl font-bold text-foreground font-exo">Featured Posts</h2>
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

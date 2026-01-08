@@ -8,12 +8,12 @@ export const BlogHeader: React.FC = () => {
 
       {/* Header */}
       <div className="text-center space-y-6">
-        <h1 className="text-5xl font-bold text-jet-black leading-tight font-exo">
+        <h1 className="text-5xl font-bold text-foreground leading-tight font-exo">
           DeHub
-          <span className="block bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">Community Blog</span>
+          <span className="block bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">Community Blog</span>
         </h1>
         
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-exo">
+        <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-exo">
           Stay updated with the latest news, insights, and stories from the DeHub ecosystem. From announcements to tech guides, everything can be found here.
         </p>
       </div>
