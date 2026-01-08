@@ -203,7 +203,7 @@ const DocsHome = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link to={`/docs/blog/${latestPost.slug}`} className="flex justify-center sm:inline-flex sm:items-center px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo text-center">
                     Read Article
-                    <ArrowRight className="w-4 h-4 ml-2 hidden sm:block" />
+                    <ArrowRight className="w-4 h-4 ml-2 hidden sm:block dark:text-black" />
                   </Link>
                   <Link to="/docs/blog" className="flex justify-center sm:inline-flex sm:items-center px-6 py-3 border border-border text-foreground font-semibold rounded-lg hover:bg-muted transition-all duration-200 font-exo text-center">
                     Visit Our Blog
