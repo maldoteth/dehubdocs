@@ -67,7 +67,7 @@
     --accent: 0 0% 18%; /* Slightly lighter for accents */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 75% 65%; /* Lighter red for dark mode readability */
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 20%; /* Dark border */
@@ -124,11 +124,15 @@
   .dark [class*="text-indigo-"],
   .dark [class*="text-cyan-"],
   .dark [class*="text-orange-"],
-  .dark [class*="text-red-"],
   .dark [class*="text-emerald-"],
   .dark [class*="text-teal-"],
   .dark [class*="text-black"] {
     color: hsl(0 0% 100%) !important;
+  }
+
+  /* Red text should be a lighter, more readable shade in dark mode */
+  .dark [class*="text-red-"] {
+    color: hsl(0 75% 70%) !important;
   }
 
   /* Force dark mode background colors - all light backgrounds become dark */
@@ -163,9 +167,19 @@
     background-color: hsl(0 0% 8%) !important;
   }
 
-  /* Force dark mode gradients to dark */
-  .dark [class*="bg-gradient-to-"] {
+  /* Force dark mode gradients to dark - but NOT gradient text (text-transparent) */
+  .dark [class*="bg-gradient-to-"]:not([class*="text-transparent"]):not(.bg-clip-text) {
     background: hsl(0 0% 10%) !important;
+  }
+
+  /* Preserve gradient text styling */
+  .dark .text-transparent {
+    color: transparent !important;
+  }
+
+  .dark .bg-clip-text {
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
   }
 
   /* Force dark mode borders */
