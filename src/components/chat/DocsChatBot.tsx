@@ -263,8 +263,9 @@ export const DocsChatBot = () => {
           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0 pointer-events-none"
         )}
       >
-        {/* Header - Close button only */}
-        <div className="p-3 flex justify-end border-b border-slate-100">
+        {/* Header */}
+        <div className="p-3 flex items-center justify-between border-b border-slate-100">
+          <span className="text-sm font-semibold text-slate-700">AI Assistant</span>
           <button
             onClick={() => setIsOpen(false)}
             className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
