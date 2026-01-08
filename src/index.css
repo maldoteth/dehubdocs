@@ -46,42 +46,42 @@
   }
 
   .dark {
-    --background: 0 0% 0%; /* Jet Black background */
-    --foreground: 0 0% 100%;
+    --background: 0 0% 0%; /* Pure black background */
+    --foreground: 0 0% 100%; /* Pure white text */
 
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 8%; /* Slightly lighter black for cards/bentos */
+    --card-foreground: 0 0% 100%; /* White text on cards */
 
-    --popover: 0 0% 10%;
+    --popover: 0 0% 8%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 0 0% 100%; /* White primary */
+    --primary-foreground: 0 0% 0%; /* Black text on primary */
 
-    --secondary: 0 0% 66%; /* Medium Silver */
+    --secondary: 0 0% 15%; /* Dark gray */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 12%; /* Darker muted for subtle backgrounds */
+    --muted-foreground: 0 0% 70%; /* Light gray for muted text */
 
-    --accent: 0 0% 83%; /* Light Silver */
-    --accent-foreground: 0 0% 0%;
+    --accent: 0 0% 18%; /* Slightly lighter for accents */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 0 0% 66%; /* Medium Silver */
+    --border: 0 0% 20%; /* Dark border */
+    --input: 0 0% 15%;
+    --ring: 0 0% 40%;
     
-    --sidebar-background: 0 0% 10%;
+    --sidebar-background: 0 0% 5%; /* Near-black sidebar */
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 0 0% 66%; /* Medium Silver */
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 15%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 0 0% 66%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 40%;
   }
 }
 
@@ -92,5 +92,179 @@
 
   body {
     @apply bg-background text-foreground font-exo;
+  }
+
+  /* ========================================
+     DARK MODE OVERRIDES - FORCE BLACK/WHITE
+     ======================================== */
+
+  /* Force ALL text to white in dark mode */
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
+  .dark p, .dark span, .dark li, .dark a, .dark strong, .dark b,
+  .dark label, .dark div {
+    color: hsl(0 0% 100%);
+  }
+
+  /* Muted text slightly dimmer */
+  .dark .text-muted-foreground {
+    color: hsl(0 0% 70%) !important;
+  }
+
+  /* Force dark mode text colors on all common text color classes */
+  .dark [class*="text-royal-blue"],
+  .dark [class*="text-middle-blue"],
+  .dark [class*="text-sky-blue"],
+  .dark [class*="text-jet-black"],
+  .dark [class*="text-gray-"],
+  .dark [class*="text-slate-"],
+  .dark [class*="text-purple-"],
+  .dark [class*="text-blue-"],
+  .dark [class*="text-green-"],
+  .dark [class*="text-amber-"],
+  .dark [class*="text-indigo-"],
+  .dark [class*="text-cyan-"],
+  .dark [class*="text-orange-"],
+  .dark [class*="text-red-"],
+  .dark [class*="text-emerald-"],
+  .dark [class*="text-teal-"],
+  .dark [class*="text-black"] {
+    color: hsl(0 0% 100%) !important;
+  }
+
+  /* Force dark mode background colors - all light backgrounds become dark */
+  .dark [class*="bg-plain-white"],
+  .dark [class*="bg-white"],
+  .dark [class*="bg-gray-50"],
+  .dark [class*="bg-gray-100"],
+  .dark [class*="bg-gray-200"],
+  .dark [class*="bg-slate-50"],
+  .dark [class*="bg-slate-100"],
+  .dark [class*="bg-slate-200"],
+  .dark [class*="bg-purple-50"],
+  .dark [class*="bg-purple-100"],
+  .dark [class*="bg-indigo-50"],
+  .dark [class*="bg-indigo-100"],
+  .dark [class*="bg-blue-50"],
+  .dark [class*="bg-blue-100"],
+  .dark [class*="bg-green-50"],
+  .dark [class*="bg-green-100"],
+  .dark [class*="bg-emerald-50"],
+  .dark [class*="bg-emerald-100"],
+  .dark [class*="bg-amber-50"],
+  .dark [class*="bg-amber-100"],
+  .dark [class*="bg-orange-50"],
+  .dark [class*="bg-orange-100"],
+  .dark [class*="bg-red-50"],
+  .dark [class*="bg-red-100"],
+  .dark [class*="bg-cyan-50"],
+  .dark [class*="bg-cyan-100"],
+  .dark [class*="bg-sky-blue"],
+  .dark [class*="bg-royal-blue"] {
+    background-color: hsl(0 0% 8%) !important;
+  }
+
+  /* Force dark mode gradients to dark */
+  .dark [class*="bg-gradient-to-"] {
+    background: hsl(0 0% 10%) !important;
+  }
+
+  /* Force dark mode borders */
+  .dark [class*="border-slate-"],
+  .dark [class*="border-gray-"],
+  .dark [class*="border-sky-blue"],
+  .dark [class*="border-purple-"],
+  .dark [class*="border-blue-"],
+  .dark [class*="border-green-"],
+  .dark [class*="border-amber-"],
+  .dark [class*="border-orange-"],
+  .dark [class*="border-red-"],
+  .dark [class*="border-indigo-"],
+  .dark [class*="border-cyan-"] {
+    border-color: hsl(0 0% 20%) !important;
+  }
+
+  /* Force table styling in dark mode */
+  .dark table,
+  .dark thead,
+  .dark tbody,
+  .dark tr,
+  .dark th,
+  .dark td {
+    background-color: hsl(0 0% 8%) !important;
+    color: hsl(0 0% 100%) !important;
+    border-color: hsl(0 0% 20%) !important;
+  }
+
+  .dark thead tr,
+  .dark th {
+    background-color: hsl(0 0% 12%) !important;
+  }
+
+  /* Card components */
+  .dark .Card,
+  .dark [class*="Card"] {
+    background-color: hsl(0 0% 8%) !important;
+    border-color: hsl(0 0% 20%) !important;
+  }
+
+  /* Force icons to be visible (white/light gray) */
+  .dark svg {
+    color: hsl(0 0% 85%);
+  }
+
+  /* Images - keep visible but invert some icons */
+  .dark img[class*="brightness-0"] {
+    filter: invert(1) !important;
+  }
+
+  /* Ensure links are visible */
+  .dark a {
+    color: hsl(0 0% 100%);
+  }
+
+  .dark a:hover {
+    color: hsl(0 0% 80%);
+  }
+
+  /* Button primary styles in dark mode */
+  .dark .bg-primary {
+    background-color: hsl(0 0% 100%) !important;
+    color: hsl(0 0% 0%) !important;
+  }
+
+  .dark .bg-primary:hover {
+    background-color: hsl(0 0% 90%) !important;
+  }
+
+  .dark .text-primary-foreground {
+    color: hsl(0 0% 0%) !important;
+  }
+
+  /* Ensure inputs/forms are styled properly */
+  .dark input,
+  .dark textarea,
+  .dark select {
+    background-color: hsl(0 0% 8%) !important;
+    color: hsl(0 0% 100%) !important;
+    border-color: hsl(0 0% 25%) !important;
+  }
+
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: hsl(0 0% 50%) !important;
+  }
+
+  /* Code blocks */
+  .dark code,
+  .dark pre {
+    background-color: hsl(0 0% 12%) !important;
+    color: hsl(0 0% 90%) !important;
+  }
+
+  /* Badges */
+  .dark [class*="badge"],
+  .dark [class*="Badge"] {
+    background-color: hsl(0 0% 15%) !important;
+    color: hsl(0 0% 100%) !important;
   }
 }
