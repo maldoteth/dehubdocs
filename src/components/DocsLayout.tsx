@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Book, ChevronRight, Menu, X, Search, Home, FileText, Settings, Code, Database, Shield, Zap, Users, ExternalLink, ChevronDown, Coins, Github, Phone } from 'lucide-react';
@@ -8,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { SearchTrigger } from '@/components/search/SearchTrigger';
 import { useTextHighlight } from '@/hooks/useTextHighlight';
 import { useDocsSearch } from '@/hooks/useDocsSearch';
+import { DarkModeToggle } from '@/components/DarkModeToggle';
 import dehubCoinIcon from '@/assets/dehub-coin.png';
 
 const menuItems = [{
@@ -205,20 +204,20 @@ const DocsLayoutContent = () => {
     setSidebarOpen(false);
   };
 
-  return <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-plain-white/90 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-40">
+      <header className="bg-card/90 backdrop-blur-sm border-b border-border sticky top-0 z-40">
         <div className="flex items-center justify-between px-4 h-16">
           {/* Mobile Layout */}
           <div className="flex items-center lg:hidden w-full">
             {/* Left: Hamburger Menu */}
-            <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2 rounded-md hover:bg-gray-100 transition-colors">
-              <Menu className="w-5 h-5 text-jet-black" />
+            <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2 rounded-md hover:bg-muted transition-colors">
+              <Menu className="w-5 h-5 text-foreground" />
             </button>
             
             {/* Center: Logo */}
             <div className="flex-1 flex justify-center">
-              <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-jet-black">
+              <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-foreground">
                 <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
               </Link>
             </div>
@@ -230,13 +229,13 @@ const DocsLayoutContent = () => {
               onClick={() => setIsOpen(true)}
               className="p-2"
             >
-              <Search className="w-5 h-5 text-jet-black" />
+              <Search className="w-5 h-5 text-foreground" />
             </Button>
           </div>
 
           {/* Desktop Layout */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-jet-black">
+            <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-foreground">
               <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
             </Link>
           </div>
@@ -253,52 +252,57 @@ const DocsLayoutContent = () => {
       <div className="flex">
         {/* Sidebar */}
         <aside className={`
-          fixed lg:sticky lg:top-16 inset-y-0 lg:inset-y-auto left-0 z-30 w-64 h-screen lg:h-[calc(100vh-4rem)] bg-plain-white/95 backdrop-blur-sm border-r border-gray-200 transform transition-transform duration-300 ease-in-out
+          fixed lg:sticky lg:top-16 inset-y-0 lg:inset-y-auto left-0 z-30 w-64 h-screen lg:h-[calc(100vh-4rem)] bg-card/95 backdrop-blur-sm border-r border-border transform transition-transform duration-300 ease-in-out
           ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}>
           <div className="h-full flex flex-col">
             {/* Mobile close button */}
-            <div className="lg:hidden flex justify-between items-center p-4 border-b border-gray-200">
+            <div className="lg:hidden flex justify-between items-center p-4 border-b border-border">
               <div className="flex-1">
                 <SearchTrigger />
               </div>
-              <button onClick={closeSidebar} className="p-2 rounded-md hover:bg-gray-100 transition-colors ml-2">
-                <X className="w-5 h-5 text-jet-black" />
+              <button onClick={closeSidebar} className="p-2 rounded-md hover:bg-muted transition-colors ml-2">
+                <X className="w-5 h-5 text-foreground" />
               </button>
+            </div>
+            
+            {/* Dark Mode Toggle at top */}
+            <div className="px-4 py-3 border-b border-border">
+              <DarkModeToggle />
             </div>
             
             <ScrollArea className="flex-1 overscroll-contain">
               <div className="py-6">
                 <nav className="px-4 space-y-6">
                   {menuItems.map(section => <div key={section.title}>
-                      {section.title !== 'Main' && <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">
+                      {section.title !== 'Main' && <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">
                           {section.title}
                         </h3>}
                       <ul className="space-y-1">
                         {section.items.map(item => <li key={item.path}>
-                            {item.external && (item.path.startsWith('http') || item.path.startsWith('https')) ? <a href={item.path} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 text-gray-700 hover:bg-gray-100 hover:text-jet-black">
+                            {item.external && (item.path.startsWith('http') || item.path.startsWith('https')) ? <a href={item.path} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200 text-muted-foreground hover:bg-muted hover:text-foreground">
                                 <div className="flex items-center space-x-3">
-                                  {item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
+                                  {item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'dark:invert' : ''}`} /> : <span className="text-base">{item.icon}</span>}
                                   <span>{item.title}</span>
                                 </div>
-                                <ExternalLink className="w-3 h-3 text-gray-500" />
+                                <ExternalLink className="w-3 h-3 text-muted-foreground" />
                               </a> : <div>
                                 {item.hasSubmenu && item.submenuItems ? <div>
                                     <button onClick={() => toggleSubmenu(item.title)} className={`
                                         w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
-                                        ${isActivePath(item.path) ? 'bg-gray-200 text-jet-black font-medium border-l-4 border-gray-600 ml-0' : 'text-gray-700 hover:bg-gray-100 hover:text-jet-black'}
+                                        ${isActivePath(item.path) ? 'bg-muted text-foreground font-medium border-l-4 border-primary ml-0' : 'text-muted-foreground hover:bg-muted hover:text-foreground'}
                                       `}>
                                       <div className="flex items-center space-x-3">
-                                        {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-gray-600" /> : item.isImage ? <img src={item.icon} alt={item.title} className="w-4 h-4" /> : <span className="text-base">{item.icon}</span>}
+                                        {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-muted-foreground" /> : item.isImage ? <img src={item.icon} alt={item.title} className="w-4 h-4" /> : <span className="text-base">{item.icon}</span>}
                                         <span>{item.title}</span>
                                       </div>
-                                      <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${expandedMenus[item.title] ? 'rotate-180' : ''}`} />
+                                      <ChevronDown className={`w-4 h-4 text-muted-foreground transition-transform duration-200 ${expandedMenus[item.title] ? 'rotate-180' : ''}`} />
                                     </button>
                                     {expandedMenus[item.title] && <ul className="ml-6 mt-1 space-y-1">
                                         {item.submenuItems.map(subItem => <li key={subItem.path}>
                                             <Link to={subItem.path} onClick={closeSidebar} className={`
                                                 flex items-center px-3 py-2 rounded-lg text-sm transition-all duration-200
-                                                ${isActivePath(subItem.path) ? 'bg-gray-200 text-jet-black font-medium' : 'text-gray-700 hover:bg-gray-100 hover:text-jet-black'}
+                                                ${isActivePath(subItem.path) ? 'bg-muted text-foreground font-medium' : 'text-muted-foreground hover:bg-muted hover:text-foreground'}
                                               `}>
                                               <span>{subItem.title}</span>
                                             </Link>
@@ -306,14 +310,14 @@ const DocsLayoutContent = () => {
                                       </ul>}
                                   </div> : <Link to={item.path} onClick={closeSidebar} className={`
                                       flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-all duration-200
-                                      ${isActivePath(item.path) ? 'bg-gray-200 text-jet-black font-medium border-l-4 border-gray-600 ml-0' : 'text-gray-700 hover:bg-gray-100 hover:text-jet-black'}
+                                      ${isActivePath(item.path) ? 'bg-muted text-foreground font-medium border-l-4 border-primary ml-0' : 'text-muted-foreground hover:bg-muted hover:text-foreground'}
                                     `}>
                                     <div className="flex items-center space-x-3">
-                                      {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-gray-600" /> : item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'filter brightness-0' : ''}`} /> : <span className="text-base">{item.icon}</span>}
+                                      {item.iconComponent ? <item.iconComponent className="w-4 h-4 text-muted-foreground" /> : item.isImage ? <img src={item.icon} alt={item.title} className={`w-4 h-4 ${item.title !== 'App' && item.title !== 'CoinGecko' ? 'dark:invert' : ''}`} /> : <span className="text-base">{item.icon}</span>}
                                       <span>{item.title}</span>
                                     </div>
-                                    {item.hasSubmenu && !item.submenuItems && <ChevronRight className="w-4 h-4 text-gray-500" />}
-                                    {item.external && <ExternalLink className="w-3 h-3 text-gray-500" />}
+                                    {item.hasSubmenu && !item.submenuItems && <ChevronRight className="w-4 h-4 text-muted-foreground" />}
+                                    {item.external && <ExternalLink className="w-3 h-3 text-muted-foreground" />}
                                   </Link>}
                               </div>}
                           </li>)}
@@ -326,7 +330,7 @@ const DocsLayoutContent = () => {
         </aside>
 
         {/* Overlay for mobile */}
-        {sidebarOpen && <div className="fixed inset-0 bg-jet-black bg-opacity-50 z-20 lg:hidden" onClick={closeSidebar} />}
+        {sidebarOpen && <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-20 lg:hidden" onClick={closeSidebar} />}
 
         {/* Main content */}
         <main className="flex-1 min-w-0">

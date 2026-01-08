@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import { SearchProvider } from "@/components/search/SearchProvider";
 import { DocsChatBot } from "@/components/chat/DocsChatBot";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { DocsLayout } from "./components/DocsLayout";
@@ -58,11 +59,12 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <DocsChatBot />
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+      <HelmetProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <DocsChatBot />
         <BrowserRouter>
           <SearchProvider>
             <Routes>
@@ -240,6 +242,7 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </HelmetProvider>
+  </ThemeProvider>
   </QueryClientProvider>
 );
 
