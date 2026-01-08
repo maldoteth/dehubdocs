@@ -232,7 +232,7 @@ const DocsHome = () => {
         </div>
 
         {/* Getting Started */}
-        <div className="bg-primary rounded-2xl p-8 text-center shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+        <div className="rounded-2xl p-8 text-center shadow-2xl hover:shadow-3xl transition-shadow duration-300 bg-muted">
           <h2 className="text-3xl font-bold mb-4 text-primary-foreground font-exo">Ready to Get Started?</h2>
           <p className="mb-6 max-w-2xl mx-auto font-exo text-black">
             Follow our step-by-step guide to integrate our platform in minutes.
