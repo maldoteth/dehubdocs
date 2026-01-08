@@ -133,7 +133,7 @@ const DocsHome = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/docs/overview" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
               Get Started
-              <ArrowRight className="w-4 h-4 ml-2 text-black" />
+              <ArrowRight className="w-4 h-4 ml-2 text-white dark:text-black" />
             </Link>
             <a href="https://play.google.com/store/apps/details?id=io.dehub.mobile&hl" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 border border-border text-foreground font-semibold rounded-lg hover:bg-muted transition-all duration-200 font-exo">
               Download App
