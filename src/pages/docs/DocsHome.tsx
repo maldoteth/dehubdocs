@@ -8,9 +8,10 @@ import SEO from '@/components/SEO';
 
 // Declare the global build time variable
 declare const __BUILD_TIME__: string;
-
 const DocsHome = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [copiedAddress, setCopiedAddress] = useState<string>('');
 
   // Monitor performance for this page
@@ -41,25 +42,23 @@ const DocsHome = () => {
       bannerImageAlt = 'Coinbase logo on mobile device with trading charts in background';
     }
   }
-
   const copyToClipboard = async (address: string) => {
     try {
       await navigator.clipboard.writeText(address);
       setCopiedAddress(address);
       toast({
         title: "Contract address copied!",
-        description: "The contract address has been copied to your clipboard.",
+        description: "The contract address has been copied to your clipboard."
       });
       setTimeout(() => setCopiedAddress(''), 2000);
     } catch (err) {
       toast({
         title: "Copy failed",
         description: "Please copy the address manually.",
-        variant: "destructive",
+        variant: "destructive"
       });
     }
   };
-
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
@@ -118,17 +117,8 @@ const DocsHome = () => {
     title: 'Community',
     description: 'An established and supportive community here since 2021'
   }];
-
-  return (
-    <>
-      <SEO
-        title="DeHub Documentation - Build on the Decentralized Future"
-        description="Everything you need to use, integrate, build, and scale with DeHub platform. From quick start guides to advanced configurations for decentralized applications."
-        image="/lovable-uploads/7668607f-3b0b-4512-ab17-e7ba5fce395f.png"
-        url="/docs"
-        type="website"
-        tags={['DeHub', 'documentation', 'blockchain', 'decentralized', 'DHB token', 'developer tools']}
-      />
+  return <>
+      <SEO title="DeHub Documentation - Build on the Decentralized Future" description="Everything you need to use, integrate, build, and scale with DeHub platform. From quick start guides to advanced configurations for decentralized applications." image="/lovable-uploads/7668607f-3b0b-4512-ab17-e7ba5fce395f.png" url="/docs" type="website" tags={['DeHub', 'documentation', 'blockchain', 'decentralized', 'DHB token', 'developer tools']} />
       <div className="space-y-12">
         {/* Hero Section */}
         <div className="text-center space-y-6">
@@ -161,34 +151,23 @@ const DocsHome = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2 font-exo">{link.title}</h3>
                   <div className="flex flex-row lg:flex-col items-center justify-center gap-2 mt-3">
-                    {!link.contractAddress && (
-                      <div className="flex items-center justify-center text-sm text-muted-foreground group-hover:text-foreground font-exo">
+                    {!link.contractAddress && <div className="flex items-center justify-center text-sm text-muted-foreground group-hover:text-foreground font-exo">
                         Visit site
                         <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
-                      </div>
-                    )}
-                    {link.contractAddress && (
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          copyToClipboard(link.contractAddress!);
-                        }}
-                        className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-muted"
-                      >
-                        {copiedAddress === link.contractAddress ? (
-                          <>
+                      </div>}
+                    {link.contractAddress && <button onClick={e => {
+                e.preventDefault();
+                e.stopPropagation();
+                copyToClipboard(link.contractAddress!);
+              }} className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-muted">
+                        {copiedAddress === link.contractAddress ? <>
                             <Check className="w-3 h-3 text-green-500" />
                             <span className="text-green-500">Copied!</span>
-                          </>
-                        ) : (
-                          <>
+                          </> : <>
                             <Copy className="w-3 h-3" />
                             <span>Copy CA</span>
-                          </>
-                        )}
-                      </button>
-                    )}
+                          </>}
+                      </button>}
                   </div>
                 </a> : <Link key={link.path} to={link.path} className="group block p-6 bg-card rounded-xl border border-border hover:border-primary/40 transition-all duration-200 hover:shadow-lg text-center">
                   <div className={`w-12 h-12 bg-muted rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
@@ -255,7 +234,7 @@ const DocsHome = () => {
         {/* Getting Started */}
         <div className="bg-primary rounded-2xl p-8 text-center shadow-2xl hover:shadow-3xl transition-shadow duration-300">
           <h2 className="text-3xl font-bold mb-4 text-primary-foreground font-exo">Ready to Get Started?</h2>
-          <p className="text-primary-foreground/70 mb-6 max-w-2xl mx-auto font-exo">
+          <p className="mb-6 max-w-2xl mx-auto font-exo text-neutral-950">
             Follow our step-by-step guide to integrate our platform in minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -278,8 +257,6 @@ const DocsHome = () => {
           </p>
         </div>
       </div>
-    </>
-  );
+    </>;
 };
-
 export default DocsHome;
