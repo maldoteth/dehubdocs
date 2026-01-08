@@ -234,7 +234,7 @@ const DocsHome = () => {
         {/* Getting Started */}
         <div className="rounded-2xl p-8 text-center shadow-2xl hover:shadow-3xl transition-shadow duration-300 bg-muted">
           <h2 className="text-3xl font-bold mb-4 font-exo text-popover-foreground">Ready to Get Started?</h2>
-          <p className="mb-6 max-w-2xl mx-auto font-exo text-black">
+          <p className="mb-6 max-w-2xl mx-auto font-exo text-muted-foreground dark:text-black">
             Follow our step-by-step guide to integrate our platform in minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
