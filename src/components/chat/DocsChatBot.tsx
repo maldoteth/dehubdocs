@@ -244,13 +244,13 @@ export const DocsChatBot = () => {
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
           "fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center",
-          "bg-white hover:bg-slate-50 border border-slate-200",
+          "bg-card hover:bg-muted border border-border",
           "hover:scale-110 hover:shadow-xl",
           isOpen && "scale-0 opacity-0"
         )}
         aria-label="Open chat"
       >
-        <MessageCircle className="w-6 h-6 text-black" />
+        <MessageCircle className="w-6 h-6 text-foreground" />
       </button>
 
       {/* Chat Window */}
@@ -258,20 +258,20 @@ export const DocsChatBot = () => {
         ref={chatWindowRef}
         className={cn(
           "fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-48px)] h-[500px] max-h-[calc(100vh-120px)]",
-          "bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden",
+          "bg-card rounded-2xl shadow-2xl border border-border flex flex-col overflow-hidden",
           "transition-all duration-300 transform origin-bottom-right",
           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0 pointer-events-none"
         )}
       >
         {/* Header */}
-        <div className="p-3 flex items-center justify-between border-b border-slate-100">
-          <span className="text-sm font-semibold text-slate-700">AI Assistant</span>
+        <div className="p-3 flex items-center justify-between border-b border-border">
+          <span className="text-sm font-semibold text-foreground">AI Assistant</span>
           <button
             onClick={() => setIsOpen(false)}
-            className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
+            className="w-8 h-8 rounded-full bg-muted hover:bg-muted/80 flex items-center justify-center transition-colors"
             aria-label="Close chat"
           >
-            <X className="w-4 h-4 text-slate-600" />
+            <X className="w-4 h-4 text-foreground" />
           </button>
         </div>
 
@@ -287,9 +287,9 @@ export const DocsChatBot = () => {
             >
               {message.role === 'user' ? (
                 <div
-                  className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-slate-200"
+                  className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-muted"
                 >
-                  <User className="w-4 h-4 text-slate-600" />
+                  <User className="w-4 h-4 text-foreground" />
                 </div>
               ) : (
                 <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
@@ -300,8 +300,8 @@ export const DocsChatBot = () => {
                 className={cn(
                   "max-w-[75%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
                   message.role === 'user'
-                    ? "bg-gradient-to-r from-royal-blue to-middle-blue text-white rounded-br-md"
-                    : "bg-slate-100 text-slate-700 rounded-bl-md"
+                    ? "bg-primary text-primary-foreground rounded-br-md"
+                    : "bg-muted text-foreground rounded-bl-md"
                 )}
               >
                 {message.role === 'assistant' ? parseMarkdown(message.content) : message.content}
@@ -313,8 +313,8 @@ export const DocsChatBot = () => {
               <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
                 <img src={robotAvatar} alt="Assistant" className="w-full h-full object-cover" />
               </div>
-              <div className="bg-slate-100 rounded-2xl rounded-bl-md px-4 py-2.5">
-                <Loader2 className="w-4 h-4 text-slate-500 animate-spin" />
+              <div className="bg-muted rounded-2xl rounded-bl-md px-4 py-2.5">
+                <Loader2 className="w-4 h-4 text-muted-foreground animate-spin" />
               </div>
             </div>
           )}
@@ -322,7 +322,7 @@ export const DocsChatBot = () => {
         </div>
 
         {/* Input */}
-        <div className="p-4 border-t border-slate-200 bg-slate-50">
+        <div className="p-4 border-t border-border bg-muted/50">
           <div className="flex gap-2">
             <input
               ref={inputRef}
@@ -331,14 +331,14 @@ export const DocsChatBot = () => {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Ask about DeHub..."
-              className="flex-1 px-4 py-2.5 rounded-full border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-royal-blue/50 focus:border-royal-blue"
+              className="flex-1 px-4 py-2.5 rounded-full border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
               disabled={isLoading}
             />
             <Button
               onClick={handleSend}
               disabled={!input.trim() || isLoading}
               size="icon"
-              className="rounded-full bg-gradient-to-r from-royal-blue to-middle-blue hover:from-royal-blue/90 hover:to-middle-blue/90 w-10 h-10"
+              className="rounded-full bg-primary hover:bg-primary/90 w-10 h-10"
             >
               <Send className="w-4 h-4" />
             </Button>
