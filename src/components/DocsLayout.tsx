@@ -218,7 +218,7 @@ const DocsLayoutContent = () => {
             {/* Center: Logo */}
             <div className="flex-1 flex justify-center">
               <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-foreground">
-                <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
+                <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6 dark:invert" />
               </Link>
             </div>
             
@@ -236,7 +236,7 @@ const DocsLayoutContent = () => {
           {/* Desktop Layout */}
           <div className="hidden lg:flex items-center space-x-4">
             <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-foreground">
-              <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6" />
+              <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6 dark:invert" />
             </Link>
           </div>
 
