@@ -88,7 +88,7 @@ const Contact = () => {
       color: 'from-sky-blue to-middle-blue'
     },
     {
-      title: 'DACH',
+      title: 'Germany',
       description: 'German speaking community',
       link: 'https://t.me/dehub_dach',
       icon: Send,
