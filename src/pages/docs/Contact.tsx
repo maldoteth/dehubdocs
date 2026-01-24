@@ -67,6 +67,51 @@ const Contact = () => {
       color: 'from-middle-blue to-royal-blue'
     },
     {
+      title: 'Hindi',
+      description: 'Hindi speaking community',
+      link: 'https://t.me/dehub_hindi',
+      icon: Send,
+      color: 'from-royal-blue to-sky-blue'
+    },
+    {
+      title: 'China',
+      description: 'Chinese speaking community',
+      link: 'https://t.me/dehub_china',
+      icon: Send,
+      color: 'from-sky-blue to-royal-blue'
+    },
+    {
+      title: 'Indonesia',
+      description: 'Indonesian speaking community',
+      link: 'https://t.me/dehub_indonesia',
+      icon: Send,
+      color: 'from-sky-blue to-middle-blue'
+    },
+    {
+      title: 'DACH',
+      description: 'German speaking community',
+      link: 'https://t.me/dehub_dach',
+      icon: Send,
+      color: 'from-middle-blue to-royal-blue'
+    },
+    {
+      title: 'Vietnam',
+      description: 'Vietnamese speaking community',
+      link: 'https://t.me/dehub_vietnam',
+      icon: Send,
+      color: 'from-royal-blue to-sky-blue'
+    },
+    {
+      title: 'Philippines',
+      description: 'Filipino speaking community',
+      link: 'https://t.me/DeHub_Philippines',
+      icon: Send,
+      color: 'from-sky-blue to-royal-blue'
+    }
+  ];
+
+  const gatedChannels = [
+    {
       title: 'Holders',
       description: 'Exclusive channel for token holders',
       link: 'https://t.me/c/2488788799/1/10563',
@@ -132,6 +177,32 @@ const Contact = () => {
         <h2 className="text-2xl font-bold text-royal-blue font-exo">Community Channels</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {communityChannels.map((channel) => (
+            <a
+              key={channel.title}
+              href={channel.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block"
+            >
+              <Card className="border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+                <CardContent className="p-6 text-center">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${channel.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                    <channel.icon className="w-8 h-8 text-royal-blue" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{channel.title}</h3>
+                  <p className="text-royal-blue/70 text-sm font-exo">{channel.description}</p>
+                </CardContent>
+              </Card>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Gated Channels */}
+      <div className="space-y-6">
+        <h2 className="text-2xl font-bold text-royal-blue font-exo">Gated Channels</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {gatedChannels.map((channel) => (
             <a
               key={channel.title}
               href={channel.link}
