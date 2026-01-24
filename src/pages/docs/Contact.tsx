@@ -23,11 +23,8 @@ const Contact = () => {
     },
     {
       title: 'Direct Message',
-      description: 'Send us a direct message',
-      onClick: () => toast({
-        title: "Coming Soon!",
-        description: "DM us in app soon!"
-      }),
+      description: 'DM on DeHub',
+      link: 'https://dehub.io/d',
       icon: MessageCircle,
       color: 'from-royal-blue to-sky-blue'
     }
@@ -141,34 +138,29 @@ const Contact = () => {
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-royal-blue font-exo">Quick Contact</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {contactOptions.map((option) => {
-            const CardWrapper = option.onClick ? 'button' : 'a';
-            const wrapperProps = option.onClick 
-              ? { onClick: option.onClick, type: 'button' as const }
-              : { href: option.link, target: '_blank', rel: 'noopener noreferrer' };
-            
-            return (
-              <CardWrapper
-                key={option.title}
-                {...wrapperProps}
-                className="group block w-full text-left"
-              >
-                <Card className="border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
-                  <CardContent className="p-6 text-center">
-                    <div className={`w-16 h-16 bg-gradient-to-r ${option.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
-                      {option.iconImage ? (
-                        <img src={option.iconImage} alt={option.title} className="w-8 h-8 filter brightness-0" />
-                      ) : (
-                        <option.icon className="w-8 h-8 text-royal-blue" />
-                      )}
-                    </div>
-                    <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{option.title}</h3>
-                    <p className="text-royal-blue/70 text-sm font-exo">{option.description}</p>
-                  </CardContent>
-                </Card>
-              </CardWrapper>
-            );
-          })}
+          {contactOptions.map((option) => (
+            <a
+              key={option.title}
+              href={option.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block"
+            >
+              <Card className="border-sky-blue/20 hover:border-sky-blue/40 transition-all duration-200 hover:shadow-lg">
+                <CardContent className="p-6 text-center">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${option.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
+                    {option.iconImage ? (
+                      <img src={option.iconImage} alt={option.title} className="w-8 h-8 filter brightness-0" />
+                    ) : (
+                      <option.icon className="w-8 h-8 text-royal-blue" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-semibold text-royal-blue mb-2 font-exo">{option.title}</h3>
+                  <p className="text-royal-blue/70 text-sm font-exo">{option.description}</p>
+                </CardContent>
+              </Card>
+            </a>
+          ))}
         </div>
       </div>
 
