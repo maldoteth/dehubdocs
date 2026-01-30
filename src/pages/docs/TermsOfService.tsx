@@ -128,7 +128,7 @@ const TermsOfService = () => {
           <div>
             <h3 className="font-semibold text-royal-blue mb-2">Purchase Limits</h3>
             <p>
-              The maximum daily purchase limit is $500 USD equivalent. This limit is in place for security and regulatory compliance purposes.
+              The maximum daily purchase limit via bank card is $500 USD equivalent. This limit is in place for security and regulatory compliance purposes.
             </p>
           </div>
 
