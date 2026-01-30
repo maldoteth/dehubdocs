@@ -11,23 +11,28 @@ const QuickStart = () => {
     setTimeout(() => setCopiedCode(''), 2000);
   };
 
-  const installCode = `npm install @yourplatform/sdk`;
-  const initCode = `import { YourPlatform } from '@yourplatform/sdk';
+  const apiBaseUrl = `https://api.dehub.io/api/docxx`;
+  
+  const initCode = `// DeHub API Base URL
+const API_BASE = 'https://api.dehub.io/api/docxx';
 
-const client = new YourPlatform({
-  apiKey: 'your-api-key',
-  environment: 'production'
-});`;
+// Set up your request headers
+const headers = {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer your-api-key'
+};`;
 
   const exampleCode = `// Make your first API call
-const response = await client.getData({
-  filters: {
-    status: 'active',
-    limit: 10
+const response = await fetch('https://api.dehub.io/api/docxx', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer your-api-key'
   }
 });
 
-console.log(response.data);`;
+const data = await response.json();
+console.log(data);`;
 
   return (
     <div className="max-w-4xl space-y-8">
@@ -60,26 +65,26 @@ console.log(response.data);`;
         </ul>
       </div>
 
-      {/* Step 1: Installation */}
+      {/* Step 1: API Base URL */}
       <div className="space-y-4">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center">
           <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
-          Installation
+          API Base URL
         </h2>
         
-        <p className="text-slate-600">Install our SDK using your preferred package manager:</p>
+        <p className="text-slate-600">Use the following base URL for all API requests:</p>
         
         <div className="bg-slate-900 rounded-lg p-4 relative">
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center space-x-2">
               <Terminal className="w-4 h-4 text-green-400" />
-              <span className="text-slate-300 text-sm">Terminal</span>
+              <span className="text-slate-300 text-sm">API Endpoint</span>
             </div>
             <button
-              onClick={() => copyToClipboard(installCode, 'install')}
+              onClick={() => copyToClipboard(apiBaseUrl, 'api')}
               className="flex items-center space-x-1 text-slate-400 hover:text-white transition-colors"
             >
-              {copiedCode === 'install' ? (
+              {copiedCode === 'api' ? (
                 <CheckCircle className="w-4 h-4 text-green-400" />
               ) : (
                 <Copy className="w-4 h-4" />
@@ -87,7 +92,7 @@ console.log(response.data);`;
               <span className="text-sm">Copy</span>
             </button>
           </div>
-          <code className="text-green-400 font-mono text-sm">{installCode}</code>
+          <code className="text-green-400 font-mono text-sm">{apiBaseUrl}</code>
         </div>
       </div>
 
