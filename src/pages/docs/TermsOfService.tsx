@@ -45,14 +45,17 @@ const TermsOfService = () => {
         </CardContent>
       </Card>
 
-      {/* Service Provider */}
+      {/* Software Developers */}
       <Card className="border-sky-blue/20">
         <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Your Service Provider</CardTitle>
+          <CardTitle className="text-xl text-royal-blue font-exo">Not Service Providers</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
           <p>
-            The entity providing the Service is DeLabs LTD (14204474), office 4, 219 Kensington High Street, London, UK, W68BD (referred to as "DeHub", "we", "us", or "our").
+            The entity providing the Service is DeLabs LTD (14204474), office 4, 219 Kensington High Street, London, UK, W8 6BD (referred to as "DeHub", "we", "us", or "our").
+          </p>
+          <p>
+            DeLabs is hired by the DeHub DAO to assist in developing the ecosystem however full control and governance lies with the token holders, the community.
           </p>
         </CardContent>
       </Card>
