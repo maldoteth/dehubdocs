@@ -24,10 +24,6 @@ const Terms = () => {
         </CardHeader>
         <CardContent className="space-y-6 text-royal-blue/80 leading-relaxed font-exo">
           <p>
-            DeHub is a protocol built and managed by DeLabs LTD (14204474) office 4, 219 Kensington Highstreet, London, UK, W68BD.
-          </p>
-
-          <p>
             All information provided directly or indirectly by the DeHub team, community or affiliates is for general information purposes or promotions only. It does not constitute investment or financial advice, recommendations or any form of solicitation. Any information provided is at all times subject to change by the sole discretion of DeHub Group and should this occur, all users will be notified by our social channels. There is no presale or premine of the DeHub Tokens and only liquidity generation events also referred to as LGEs where all funds raised are added to liquidity pools to facilitate trading. At no point will DeHub use promotional materials to solicit investment in DeHub. Through the development of DeHub, we do not grant any rights, express or implied, other than the right to use DeHub on the DeHub Platform or within the DAO. In particular, DeHub expressly denies any ability of the DeHub token to represent or confer any ownership right or stake, share, security, or equivalent rights, or any right to receive future revenue shares, intellectual property rights or any other form of participation in or relating to any DeHub product and/or DeHub and/or any of its corporate affiliates. DeHub created the DeHub tokens as decentralised smart contracts, and in no way are meant to be a security, commodity or any kind of financial instrument.
           </p>
 
