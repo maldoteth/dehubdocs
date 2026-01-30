@@ -48,7 +48,7 @@ const TermsOfService = () => {
       {/* Software Developers */}
       <Card className="border-sky-blue/20">
         <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Not Service Providers</CardTitle>
+          <CardTitle className="text-xl text-royal-blue font-exo">Software Developers</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
           <p>
