@@ -55,7 +55,7 @@ const TermsOfService = () => {
             The entity providing the Service is DeLabs LTD (14204474), office 4, 219 Kensington High Street, London, UK, W8 6BD (referred to as "DeHub", "we", "us", or "our").
           </p>
           <p>
-            DeLabs is hired by the DeHub DAO to assist in developing the ecosystem however full control and governance lies with the token holders, the community.
+            DeLabs is hired by the DeHub DAO to assist in developing the ecosystem however full control and governance lies with the token holders, the community. DeLabs LTD holds no ownership or decision making powers of the DeHub ecosystem and can be replaced, or removed as and when required.
           </p>
         </CardContent>
       </Card>
