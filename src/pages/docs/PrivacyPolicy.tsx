@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
             DeHub is built as a decentralized application that prioritizes user privacy and data sovereignty. This Privacy Policy explains how we handle information in our decentralized ecosystem.
           </p>
           <p className="font-semibold text-royal-blue">
-            Core Principle: We do not store, collect, or process personal data on centralized servers.
+            Core Principle: We do not store, collect, or process personal data.
           </p>
         </CardContent>
       </Card>
