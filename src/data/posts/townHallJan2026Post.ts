@@ -68,7 +68,7 @@ We will maintain consistent communication through February, with regular updates
   publishedAt: '2026-01-28T12:00:00.000Z',
   tags: ['Town Hall', 'Private Sale', 'TGE', 'Last Chad Standing', 'Liquidity', 'Roadmap', '2026'],
   readingTime: 7,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'Town Hall: $200K Private Sale Complete & TGE March 2026 | DeHub',
   seoDescription: 'DeHub Town Hall recap — $200,000 private sale complete, TGE timeline confirmed for March 2026, new liquidity pools, public sale mechanics, and an accelerated growth strategy.',
