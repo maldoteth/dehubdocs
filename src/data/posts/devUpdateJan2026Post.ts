@@ -27,7 +27,7 @@ Waiting around on markets or perfect products is no longer viable. With the rise
   publishedAt: '2026-02-02T14:22:00.000Z',
   tags: ['Development', 'Update', 'App Launch', 'Google Play', 'Apple', '2026'],
   readingTime: 3,
-  featured: true,
+  featured: false,
   status: 'published',
   seoTitle: 'Development Update: The DeHub Era Starts | DeHub',
   seoDescription: 'DeHub development update — final updates and bug fixes shipping soon as we begin app promotions. Web app and Google Play updates coming in days, with Apple listing to follow.',
