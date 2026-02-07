@@ -24,7 +24,7 @@ Waiting around on markets or perfect products is no longer viable. With the rise
   author: {
     name: 'DeHub Team',
   },
-  publishedAt: '2026-02-01T12:00:00.000Z',
+  publishedAt: '2026-02-02T14:22:00.000Z',
   tags: ['Development', 'Update', 'App Launch', 'Google Play', 'Apple', '2026'],
   readingTime: 3,
   featured: true,
