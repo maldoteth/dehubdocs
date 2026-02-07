@@ -1,6 +1,7 @@
 import { BlogPost as BlogPostType } from '@/types/blog';
 import { yearlyWrapUp2025Post } from './posts/yearlyWrapUp2025Post';
 import { townHallJan2026Post } from './posts/townHallJan2026Post';
+import { devUpdateJan2026Post } from './posts/devUpdateJan2026Post';
 
 const countdownBeginsPost: BlogPostType = {
   id: 'countdown-begins-dehub-app-store-launch',
@@ -1357,6 +1358,7 @@ const bnbPoolUpdatePost: BlogPostType = {
 };
 
 export const newPosts: BlogPostType[] = [
+  devUpdateJan2026Post,
   townHallJan2026Post,
   yearlyWrapUp2025Post,
   countdownBeginsPost,
