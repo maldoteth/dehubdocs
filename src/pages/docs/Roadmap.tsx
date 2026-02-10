@@ -845,7 +845,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Dual app launch marketing campaigns across X, TikTok, YouTube, Instagram, and Twitch</span>
+                        <span>App launch marketing campaigns across X, TikTok, YouTube, Instagram, and Twitch</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
