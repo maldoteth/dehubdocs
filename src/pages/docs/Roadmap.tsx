@@ -825,7 +825,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-slate-900">Q1 2026</h3>
+                      <h3 className="font-semibold text-slate-900">Q1–Q2 2026</h3>
                       <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
                         In Progress
                       </Badge>
