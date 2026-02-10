@@ -837,7 +837,7 @@ const Roadmap = () => {
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>TGE and official LCS listing — March 2026</span>
+                        <span>TGE for LCS listing — March 2026</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
