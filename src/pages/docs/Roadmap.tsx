@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Calendar, Zap, Trophy, Users, Coins, Globe, Gamepad2, Video, Shield, Sparkles } from 'lucide-react';
 const Roadmap = () => {
-  const [selectedYear, setSelectedYear] = useState('2025');
+  const [selectedYear, setSelectedYear] = useState('2026');
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
@@ -765,15 +765,15 @@ const Roadmap = () => {
                 </div>
 
                 {/* Q4 2025 */}
-                <div id="q4-2025" className="flex items-start space-x-4 p-4 rounded-lg border bg-blue-50/50">
+                <div id="q4-2025" className="flex items-start space-x-4 p-4 rounded-lg border bg-slate-50/50">
                   <div className="flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-blue-500" />
+                    <CheckCircle className="w-6 h-6 text-green-500" />
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-slate-900">Q4 2025</h3>
-                      <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                        Planned
+                      <Badge variant="outline" className="bg-green-100 text-green-800 border-green-200">
+                        Completed
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
@@ -812,7 +812,7 @@ const Roadmap = () => {
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
                 <Calendar className="w-5 h-5" />
-                <span>2026 - Future Vision</span>
+                <span>2026 - Current Year</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -827,21 +827,45 @@ const Roadmap = () => {
                     <div className="flex items-center justify-between">
                       <h3 className="font-semibold text-slate-900">Q1 2026</h3>
                       <Badge variant="outline" className="bg-blue-100 text-blue-800 border-blue-200">
-                        Planned
+                        In Progress
                       </Badge>
                     </div>
                     <div className="text-slate-600 text-sm leading-relaxed space-y-1">
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Integrate AI toolkits so users can automate tips or engagement to their favourite creators as well as financial transactions and guidance</span>
+                        <span>Last Chad Standing open beta release with new game developer onboarded</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>Custom advertising stack with advanced user targeting based on wallet balance & activity</span>
+                        <span>TGE and official LCS listing — March 2026</span>
                       </div>
                       <div className="flex">
                         <span className="mr-2 flex-shrink-0">•</span>
-                        <span>DePIN phase 2</span>
+                        <span>Apple App Store listing</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Dual app launch marketing campaigns across X, TikTok, YouTube, Instagram, and Twitch</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>New web app release</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>LP farming with community yields</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>DHB staking on Base</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>AI toolkits for automated tips, engagement, and financial guidance</span>
+                      </div>
+                      <div className="flex">
+                        <span className="mr-2 flex-shrink-0">•</span>
+                        <span>Custom advertising stack with advanced wallet-based targeting</span>
                       </div>
                     </div>
                   </div>
@@ -854,7 +878,7 @@ const Roadmap = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h3 className="font-semibold text-gray-900">2026 and Beyond</h3>
+                      <h3 className="font-semibold text-gray-900">Q2–Q4 2026 and Beyond</h3>
                       <Badge variant="outline" className="bg-gray-100 text-gray-800 border-gray-200">
                         Planned
                       </Badge>
