@@ -7,102 +7,107 @@ import { SearchTrigger } from '@/components/search/SearchTrigger';
 import { useTextHighlight } from '@/hooks/useTextHighlight';
 import { useDocsSearch } from '@/hooks/useDocsSearch';
 import { DarkModeToggle } from '@/components/DarkModeToggle';
+import { LanguageSelector } from '@/components/LanguageSelector';
+import { useLanguage } from '@/contexts/LanguageContext';
 import dehubCoinIcon from '@/assets/dehub-coin.png';
 
-const menuItems = [{
-  title: 'Main',
+// Navigation key mapping for translations
+const getMenuItems = (t: (key: string) => string) => [{
+  title: t('nav.main'),
+  titleKey: 'Main',
   items: [{
-    title: 'Home',
+    title: t('nav.home'),
     path: '/docs',
     icon: '🏠'
   }, {
-    title: 'Overview',
+    title: t('nav.overview'),
     path: '/docs/overview',
     icon: '📋'
   }, {
-    title: 'd\'App',
+    title: t('nav.dapp'),
     path: '/docs/dapps',
     icon: '🖥️'
   }, {
-    title: 'Games',
+    title: t('nav.games'),
     path: '/docs/games',
     icon: '🎮'
   }, {
-    title: 'Token',
+    title: t('nav.token'),
     path: '/docs/token',
     icon: dehubCoinIcon,
     isImage: true,
     hasSubmenu: true,
     submenuItems: [{
-      title: 'Economics & Emissions',
+      title: t('nav.tokenEconomics'),
       path: '/docs/token/economics'
     }, {
-      title: 'Utility / Holder Benefits',
+      title: t('nav.tokenUtility'),
       path: '/docs/token/utility'
     }, {
-      title: 'Where to Buy',
+      title: t('nav.tokenWhereToBuy'),
       path: '/docs/token/where-to-buy'
     }, {
-      title: 'Governance',
+      title: t('nav.tokenGovernance'),
       path: '/docs/token/governance'
     }, {
-      title: 'Stake',
+      title: t('nav.tokenStake'),
       path: '/docs/token/stake'
     }, {
-      title: 'Bridge',
+      title: t('nav.tokenBridge'),
       path: '/docs/token/bridge'
     }]
   }, {
-    title: 'DePIN',
+    title: t('nav.depin'),
     path: '/docs/depin',
     icon: '🔧'
   }, {
-    title: 'E2E Encryption',
+    title: t('nav.e2eEncryption'),
     path: '/docs/e2e-encryption',
     icon: '🔐'
   }, {
-    title: 'AI Toolkits',
+    title: t('nav.aiToolkits'),
     path: '/docs/ai-toolkits',
     icon: '🤖'
   }, {
-    title: 'Advertising',
+    title: t('nav.advertising'),
     path: '/docs/advertising',
     icon: '📺'
   }, {
-    title: 'Team',
+    title: t('nav.team'),
     path: '/docs/team',
     icon: '👥'
   }, {
-    title: 'Security',
+    title: t('nav.security'),
     path: '/docs/security',
     icon: '🔒'
   }, {
-    title: 'Roadmap',
+    title: t('nav.roadmap'),
     path: '/docs/roadmap',
     icon: '🗺️'
   }, {
-    title: 'Brand Assets',
+    title: t('nav.brandAssets'),
     path: '/docs/brand-assets',
     icon: '🏷️'
   }, {
-    title: 'Legal Disclaimer',
+    title: t('nav.legalDisclaimer'),
     path: '/docs/terms',
     icon: '⚖️'
   }, {
-    title: 'Terms of Service',
+    title: t('nav.termsOfService'),
     path: '/docs/terms-of-service',
     icon: '📋'
   }, {
-    title: 'Privacy Policy',
+    title: t('nav.privacyPolicy'),
     path: '/docs/privacy',
     icon: '🔒'
   }, {
-    title: 'Contact',
+    title: t('nav.contact'),
     path: '/docs/contact',
     iconComponent: Phone,
   }]
 }, {
-  title: 'Key Links',
+  title: t('nav.keyLinks'),
+  titleKey: 'Key Links',
   items: [
     {
       title: 'App',
@@ -143,26 +148,28 @@ const menuItems = [{
     }
   ]
 }, {
-  title: 'Key Info',
+  title: t('nav.keyInfo'),
+  titleKey: 'Key Info',
   items: [
     {
-      title: 'Blog',
+      title: t('nav.blog'),
       path: '/docs/blog',
       icon: '📝'
     },
     {
-      title: 'FAQ',
+      title: t('nav.faq'),
       path: '/docs/faq',
       icon: '❓'
     },
     {
-      title: 'Donate',
+      title: t('nav.donate'),
       path: '/docs/donate',
       icon: '❤️'
     }
   ]
 }, {
   title: '',
+  titleKey: '',
   items: []
 }];
 
@@ -173,6 +180,8 @@ const DocsLayoutContent = () => {
   }>({});
   const location = useLocation();
   const { setIsOpen } = useDocsSearch();
+  const { t, dir } = useLanguage();
+  const menuItems = getMenuItems(t);
   
   // Initialize text highlighting
   useTextHighlight();
@@ -266,16 +275,17 @@ const DocsLayoutContent = () => {
               </button>
             </div>
             
-            {/* Dark Mode Toggle at top */}
-            <div className="px-4 py-3 border-b border-border">
+            {/* Dark Mode Toggle & Language Selector at top */}
+            <div className="px-4 py-3 border-b border-border space-y-1">
               <DarkModeToggle />
+              <LanguageSelector />
             </div>
             
             <ScrollArea className="flex-1 overscroll-contain">
               <div className="py-6">
                 <nav className="px-4 space-y-6">
-                  {menuItems.map(section => <div key={section.title}>
-                      {section.title !== 'Main' && <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+                  {menuItems.map(section => <div key={section.titleKey || section.title}>
+                      {section.titleKey !== 'Main' && section.title && <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">
                           {section.title}
                         </h3>}
                       <ul className="space-y-1">

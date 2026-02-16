@@ -2,10 +2,12 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { t } = useLanguage();
 
   // Avoid hydration mismatch
   useEffect(() => {
@@ -16,7 +18,7 @@ export function DarkModeToggle() {
     return (
       <Button variant="ghost" size="sm" className="w-full justify-start gap-3 px-3 py-2">
         <div className="w-4 h-4" />
-        <span>Theme</span>
+        <span>{t('common.theme')}</span>
       </Button>
     );
   }
@@ -35,7 +37,7 @@ export function DarkModeToggle() {
       ) : (
         <Moon className="w-4 h-4" />
       )}
-      <span>{isDark ? "Light Mode" : "Dark Mode"}</span>
+      <span>{isDark ? t('common.lightMode') : t('common.darkMode')}</span>
     </Button>
   );
 }
