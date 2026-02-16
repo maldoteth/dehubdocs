@@ -19,8 +19,18 @@ import { pl } from '@/i18n/pl';
 import { vi } from '@/i18n/vi';
 import { th } from '@/i18n/th';
 import { uk } from '@/i18n/uk';
+import { sw } from '@/i18n/sw';
+import { ms } from '@/i18n/ms';
+import { fa } from '@/i18n/fa';
+import { ta } from '@/i18n/ta';
+import { ur } from '@/i18n/ur';
+import { tl } from '@/i18n/tl';
+import { ro } from '@/i18n/ro';
+import { cs } from '@/i18n/cs';
+import { el } from '@/i18n/el';
+import { hu } from '@/i18n/hu';
 
-export type Language = 'en' | 'ar' | 'zh' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk';
+export type Language = 'en' | 'ar' | 'zh' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu';
 
 export interface LanguageOption {
   code: Language;
@@ -34,27 +44,37 @@ export const languages: LanguageOption[] = [
   { code: 'ar', label: 'Arabic', nativeLabel: 'العربية', dir: 'rtl' },
   { code: 'bn', label: 'Bengali', nativeLabel: 'বাংলা', dir: 'ltr' },
   { code: 'zh', label: 'Chinese', nativeLabel: '中文', dir: 'ltr' },
+  { code: 'cs', label: 'Czech', nativeLabel: 'Čeština', dir: 'ltr' },
   { code: 'nl', label: 'Dutch', nativeLabel: 'Nederlands', dir: 'ltr' },
+  { code: 'tl', label: 'Filipino', nativeLabel: 'Filipino', dir: 'ltr' },
   { code: 'fr', label: 'French', nativeLabel: 'Français', dir: 'ltr' },
   { code: 'de', label: 'German', nativeLabel: 'Deutsch', dir: 'ltr' },
+  { code: 'el', label: 'Greek', nativeLabel: 'Ελληνικά', dir: 'ltr' },
   { code: 'hi', label: 'Hindi', nativeLabel: 'हिन्दी', dir: 'ltr' },
+  { code: 'hu', label: 'Hungarian', nativeLabel: 'Magyar', dir: 'ltr' },
   { code: 'id', label: 'Indonesian', nativeLabel: 'Bahasa Indonesia', dir: 'ltr' },
   { code: 'it', label: 'Italian', nativeLabel: 'Italiano', dir: 'ltr' },
   { code: 'ja', label: 'Japanese', nativeLabel: '日本語', dir: 'ltr' },
   { code: 'ko', label: 'Korean', nativeLabel: '한국어', dir: 'ltr' },
+  { code: 'ms', label: 'Malay', nativeLabel: 'Bahasa Melayu', dir: 'ltr' },
+  { code: 'fa', label: 'Persian', nativeLabel: 'فارسی', dir: 'rtl' },
   { code: 'pl', label: 'Polish', nativeLabel: 'Polski', dir: 'ltr' },
   { code: 'pt', label: 'Portuguese', nativeLabel: 'Português', dir: 'ltr' },
+  { code: 'ro', label: 'Romanian', nativeLabel: 'Română', dir: 'ltr' },
   { code: 'ru', label: 'Russian', nativeLabel: 'Русский', dir: 'ltr' },
   { code: 'es', label: 'Spanish', nativeLabel: 'Español', dir: 'ltr' },
+  { code: 'sw', label: 'Swahili', nativeLabel: 'Kiswahili', dir: 'ltr' },
+  { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்', dir: 'ltr' },
   { code: 'th', label: 'Thai', nativeLabel: 'ไทย', dir: 'ltr' },
   { code: 'tr', label: 'Turkish', nativeLabel: 'Türkçe', dir: 'ltr' },
   { code: 'uk', label: 'Ukrainian', nativeLabel: 'Українська', dir: 'ltr' },
+  { code: 'ur', label: 'Urdu', nativeLabel: 'اردو', dir: 'rtl' },
   { code: 'vi', label: 'Vietnamese', nativeLabel: 'Tiếng Việt', dir: 'ltr' },
 ];
 
 type Translations = typeof en;
 
-const translationMap: Record<Language, Translations> = { en, ar, zh, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk };
+const translationMap: Record<Language, Translations> = { en, ar, zh, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu };
 
 interface LanguageContextType {
   language: Language;
