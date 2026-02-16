@@ -8,6 +8,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { SearchProvider } from "@/components/search/SearchProvider";
 import { DocsChatBot } from "@/components/chat/DocsChatBot";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { LanguageProvider } from "./contexts/LanguageContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { DocsLayout } from "./components/DocsLayout";
@@ -60,6 +61,7 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+      <LanguageProvider>
       <HelmetProvider>
         <TooltipProvider>
           <Toaster />
@@ -242,6 +244,7 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </HelmetProvider>
+    </LanguageProvider>
   </ThemeProvider>
   </QueryClientProvider>
 );

@@ -5,6 +5,7 @@ import { useToast } from '@/hooks/use-toast';
 import { usePerformance } from '@/hooks/usePerformance';
 import { getLatestPost } from '@/utils/blogUtils';
 import SEO from '@/components/SEO';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 // Declare the global build time variable
 declare const __BUILD_TIME__: string;
@@ -13,6 +14,7 @@ const DocsHome = () => {
     toast
   } = useToast();
   const [copiedAddress, setCopiedAddress] = useState<string>('');
+  const { t } = useLanguage();
 
   // Monitor performance for this page
   usePerformance();
@@ -47,14 +49,14 @@ const DocsHome = () => {
       await navigator.clipboard.writeText(address);
       setCopiedAddress(address);
       toast({
-        title: "Contract address copied!",
-        description: "The contract address has been copied to your clipboard."
+        title: t('common.contractAddressCopied'),
+        description: t('common.contractAddressCopiedDesc'),
       });
       setTimeout(() => setCopiedAddress(''), 2000);
     } catch (err) {
       toast({
-        title: "Copy failed",
-        description: "Please copy the address manually.",
+        title: t('common.copyFailed'),
+        description: t('common.copyFailedDesc'),
         variant: "destructive"
       });
     }
@@ -62,8 +64,8 @@ const DocsHome = () => {
   const handleComingSoonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     toast({
-      title: "Coming Soon",
-      description: "This feature is currently under development and will be available soon."
+      title: t('common.comingSoon'),
+      description: t('common.comingSoonDesc'),
     });
   };
 
@@ -102,20 +104,20 @@ const DocsHome = () => {
   // Features
   const features = [{
     icon: Zap,
-    title: 'Fast & Reliable',
-    description: 'Building on the safest and speediest chains across L1s and EVM L2s.'
+    title: t('home.featureFast'),
+    description: t('home.featureFastDesc'),
   }, {
     icon: Shield,
-    title: 'Secure',
-    description: 'Token holders run nodes globally to power the network and earn rewards'
+    title: t('home.featureSecure'),
+    description: t('home.featureSecureDesc'),
   }, {
     icon: Code,
-    title: 'Dev Support',
-    description: 'We fund community projects and initiatives where we can'
+    title: t('home.featureDevSupport'),
+    description: t('home.featureDevSupportDesc'),
   }, {
     icon: Users,
-    title: 'Community',
-    description: 'An established and supportive community here since 2021'
+    title: t('home.featureCommunity'),
+    description: t('home.featureCommunityDesc'),
   }];
   return <>
       <SEO title="DeHub Documentation - Build on the Decentralized Future" description="Everything you need to use, integrate, build, and scale with DeHub platform. From quick start guides to advanced configurations for decentralized applications." image="/lovable-uploads/7668607f-3b0b-4512-ab17-e7ba5fce395f.png" url="/docs" type="website" tags={['DeHub', 'documentation', 'blockchain', 'decentralized', 'DHB token', 'developer tools']} />
@@ -123,19 +125,19 @@ const DocsHome = () => {
         {/* Hero Section */}
         <div className="text-center space-y-6">
           <h1 className="text-5xl font-bold text-foreground leading-tight font-exo">
-            Welcome to
-            <span className="block bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">Our Docs</span>
+            {t('home.welcomeTo')}
+            <span className="block bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">{t('home.ourDocs')}</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-exo">
-            Everything you need to use, integrate, build, and scale with our platform. From quick start guides to advanced configurations.
+            {t('home.heroDescription')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/docs/overview" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo">
-              Get Started
+              {t('common.getStarted')}
             </Link>
             <a href="https://play.google.com/store/apps/details?id=io.dehub.mobile&hl" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center min-w-[180px] px-6 py-3 border border-border text-foreground font-semibold rounded-lg hover:bg-muted transition-all duration-200 font-exo">
-              Download App
+              {t('common.downloadApp')}
               <ExternalLink className="w-4 h-4 ml-2" />
             </a>
           </div>
@@ -161,10 +163,10 @@ const DocsHome = () => {
               }} className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded hover:bg-muted">
                         {copiedAddress === link.contractAddress ? <>
                             <Check className="w-3 h-3 text-green-500" />
-                            <span className="text-green-500">Copied!</span>
+                            <span className="text-green-500">{t('common.copied')}</span>
                           </> : <>
                             <Copy className="w-3 h-3" />
-                            <span>Copy CA</span>
+                            <span>{t('common.copyCA')}</span>
                           </>}
                       </button>}
                   </div>
@@ -174,7 +176,7 @@ const DocsHome = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2 font-exo">{link.title}</h3>
                   <div className="flex items-center justify-center mt-3 text-sm text-muted-foreground group-hover:text-foreground font-exo">
-                    Learn more
+                    {t('common.learnMore')}
                     <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
                 </Link>)}
@@ -185,7 +187,7 @@ const DocsHome = () => {
         {latestPost && <div className="bg-card rounded-2xl border border-border p-8">
             <div className="flex flex-col gap-6">
               <div className="text-center">
-                <span className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">Latest From The Blog</span>
+                <span className="inline-block bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">{t('home.latestFromBlog')}</span>
               </div>
               <Link to={`/docs/blog/${latestPost.slug}`} className="w-full block">
                 <img src={bannerImage} alt={bannerImageAlt} className="w-full aspect-video object-cover rounded-xl hover:opacity-95 transition-opacity cursor-pointer" />
@@ -201,10 +203,10 @@ const DocsHome = () => {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link to={`/docs/blog/${latestPost.slug}`} className="flex justify-center sm:inline-flex sm:items-center px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl font-exo text-center">
-                    Read Article
+                    {t('common.readArticle')}
                   </Link>
                   <Link to="/docs/blog" className="flex justify-center sm:inline-flex sm:items-center px-6 py-3 border border-border text-foreground font-semibold rounded-lg hover:bg-muted transition-all duration-200 font-exo text-center">
-                    Visit Our Blog
+                    {t('common.visitOurBlog')}
                   </Link>
                 </div>
               </div>
@@ -214,8 +216,8 @@ const DocsHome = () => {
         {/* Features */}
         <div className="bg-card rounded-2xl border border-border p-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-foreground mb-4 font-exo">Why Build On DeHub?</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto font-exo">For true censorship resistance, decentralisation and permissionlessness that's guaranteed for the rest of time, choose DeHub.</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4 font-exo">{t('home.whyBuildOnDeHub')}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto font-exo">{t('home.whyBuildDescription')}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -231,13 +233,13 @@ const DocsHome = () => {
 
         {/* Getting Started */}
         <div className="rounded-2xl p-8 text-center shadow-2xl hover:shadow-3xl transition-shadow duration-300 bg-muted">
-          <h2 className="text-3xl font-bold mb-4 font-exo text-popover-foreground">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-bold mb-4 font-exo text-popover-foreground">{t('home.readyToGetStarted')}</h2>
           <p className="mb-6 max-w-2xl mx-auto font-exo text-muted-foreground dark:text-black">
-            Follow our step-by-step guide to integrate our platform in minutes.
+            {t('home.readyDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/docs/quickstart" className="inline-flex items-center px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-200 font-exo">
-              Start Building
+              {t('common.startBuilding')}
               <ArrowRight className="w-4 h-4 ml-2 text-black" />
             </Link>
             
@@ -247,7 +249,7 @@ const DocsHome = () => {
         {/* Last Updated */}
         <div className="text-center pt-4 border-t border-border">
           <p className="text-sm text-muted-foreground font-exo">
-            Last updated: {lastPublishedDate.toLocaleDateString('en-US', {
+            {t('common.lastUpdated')}: {lastPublishedDate.toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
