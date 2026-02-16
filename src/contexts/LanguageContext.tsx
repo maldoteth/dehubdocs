@@ -3,8 +3,14 @@ import { en } from '@/i18n/en';
 import { ar } from '@/i18n/ar';
 import { zh } from '@/i18n/zh';
 import { tr } from '@/i18n/tr';
+import { es } from '@/i18n/es';
+import { de } from '@/i18n/de';
+import { fr } from '@/i18n/fr';
+import { bn } from '@/i18n/bn';
+import { ru } from '@/i18n/ru';
+import { pt } from '@/i18n/pt';
 
-export type Language = 'en' | 'ar' | 'zh' | 'tr';
+export type Language = 'en' | 'ar' | 'zh' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt';
 
 export interface LanguageOption {
   code: Language;
@@ -16,13 +22,19 @@ export interface LanguageOption {
 export const languages: LanguageOption[] = [
   { code: 'en', label: 'English', nativeLabel: 'English', dir: 'ltr' },
   { code: 'ar', label: 'Arabic', nativeLabel: 'العربية', dir: 'rtl' },
+  { code: 'bn', label: 'Bengali', nativeLabel: 'বাংলা', dir: 'ltr' },
   { code: 'zh', label: 'Chinese', nativeLabel: '中文', dir: 'ltr' },
+  { code: 'fr', label: 'French', nativeLabel: 'Français', dir: 'ltr' },
+  { code: 'de', label: 'German', nativeLabel: 'Deutsch', dir: 'ltr' },
+  { code: 'pt', label: 'Portuguese', nativeLabel: 'Português', dir: 'ltr' },
+  { code: 'ru', label: 'Russian', nativeLabel: 'Русский', dir: 'ltr' },
+  { code: 'es', label: 'Spanish', nativeLabel: 'Español', dir: 'ltr' },
   { code: 'tr', label: 'Turkish', nativeLabel: 'Türkçe', dir: 'ltr' },
 ];
 
 type Translations = typeof en;
 
-const translationMap: Record<Language, Translations> = { en, ar, zh, tr };
+const translationMap: Record<Language, Translations> = { en, ar, zh, tr, es, de, fr, bn, ru, pt };
 
 interface LanguageContextType {
   language: Language;
