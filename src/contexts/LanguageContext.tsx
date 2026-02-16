@@ -9,8 +9,18 @@ import { fr } from '@/i18n/fr';
 import { bn } from '@/i18n/bn';
 import { ru } from '@/i18n/ru';
 import { pt } from '@/i18n/pt';
+import { hi } from '@/i18n/hi';
+import { ja } from '@/i18n/ja';
+import { ko } from '@/i18n/ko';
+import { id } from '@/i18n/id';
+import { it } from '@/i18n/it';
+import { nl } from '@/i18n/nl';
+import { pl } from '@/i18n/pl';
+import { vi } from '@/i18n/vi';
+import { th } from '@/i18n/th';
+import { uk } from '@/i18n/uk';
 
-export type Language = 'en' | 'ar' | 'zh' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt';
+export type Language = 'en' | 'ar' | 'zh' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk';
 
 export interface LanguageOption {
   code: Language;
@@ -24,17 +34,27 @@ export const languages: LanguageOption[] = [
   { code: 'ar', label: 'Arabic', nativeLabel: 'العربية', dir: 'rtl' },
   { code: 'bn', label: 'Bengali', nativeLabel: 'বাংলা', dir: 'ltr' },
   { code: 'zh', label: 'Chinese', nativeLabel: '中文', dir: 'ltr' },
+  { code: 'nl', label: 'Dutch', nativeLabel: 'Nederlands', dir: 'ltr' },
   { code: 'fr', label: 'French', nativeLabel: 'Français', dir: 'ltr' },
   { code: 'de', label: 'German', nativeLabel: 'Deutsch', dir: 'ltr' },
+  { code: 'hi', label: 'Hindi', nativeLabel: 'हिन्दी', dir: 'ltr' },
+  { code: 'id', label: 'Indonesian', nativeLabel: 'Bahasa Indonesia', dir: 'ltr' },
+  { code: 'it', label: 'Italian', nativeLabel: 'Italiano', dir: 'ltr' },
+  { code: 'ja', label: 'Japanese', nativeLabel: '日本語', dir: 'ltr' },
+  { code: 'ko', label: 'Korean', nativeLabel: '한국어', dir: 'ltr' },
+  { code: 'pl', label: 'Polish', nativeLabel: 'Polski', dir: 'ltr' },
   { code: 'pt', label: 'Portuguese', nativeLabel: 'Português', dir: 'ltr' },
   { code: 'ru', label: 'Russian', nativeLabel: 'Русский', dir: 'ltr' },
   { code: 'es', label: 'Spanish', nativeLabel: 'Español', dir: 'ltr' },
+  { code: 'th', label: 'Thai', nativeLabel: 'ไทย', dir: 'ltr' },
   { code: 'tr', label: 'Turkish', nativeLabel: 'Türkçe', dir: 'ltr' },
+  { code: 'uk', label: 'Ukrainian', nativeLabel: 'Українська', dir: 'ltr' },
+  { code: 'vi', label: 'Vietnamese', nativeLabel: 'Tiếng Việt', dir: 'ltr' },
 ];
 
 type Translations = typeof en;
 
-const translationMap: Record<Language, Translations> = { en, ar, zh, tr, es, de, fr, bn, ru, pt };
+const translationMap: Record<Language, Translations> = { en, ar, zh, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk };
 
 interface LanguageContextType {
   language: Language;
