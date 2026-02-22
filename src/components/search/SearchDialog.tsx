@@ -143,7 +143,7 @@ export const SearchDialog = () => {
 
         {query && !isLoading && results.length > 0 && (
           <>
-            {['Main', 'Token', 'Blog'].map(category => {
+            {['Main', 'Token', 'Development', 'Blog', 'Legal', 'Brand', 'Support'].map(category => {
               const categoryResults = results.filter(result => result.category === category);
               if (categoryResults.length === 0) return null;
 

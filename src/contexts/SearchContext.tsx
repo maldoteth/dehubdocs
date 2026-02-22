@@ -65,7 +65,7 @@ const createSearchIndex = (): SearchIndex[] => {
     },
     {
       id: 'dapps',
-      title: 'd\'App',
+      title: "d'App",
       content: 'Decentralized applications on DeHub platform, development tools, APIs, SDKs, smart contracts',
       path: '/docs/dapps',
       category: 'Main',
@@ -75,56 +75,83 @@ const createSearchIndex = (): SearchIndex[] => {
     {
       id: 'games',
       title: 'Games',
-      content: 'Gaming ecosystem on DeHub, play-to-earn, NFT integration, gaming infrastructure, tournaments',
+      content: 'Gaming ecosystem on DeHub, play-to-earn, NFT integration, gaming infrastructure, tournaments, raffle, lottery',
       path: '/docs/games',
       category: 'Main',
       type: 'page',
-      keywords: ['games', 'gaming', 'play-to-earn', 'nft', 'tournaments']
+      keywords: ['games', 'gaming', 'play-to-earn', 'nft', 'tournaments', 'raffle', 'lottery']
     },
     {
       id: 'token-economics',
       title: 'Token Economics & Emissions',
-      content: 'DHB token economics, emission schedule, tokenomics model, distribution, supply mechanics',
+      content: 'DHB token economics, emission schedule, tokenomics model, distribution, supply mechanics, burn, deflation',
       path: '/docs/token/economics',
       category: 'Token',
       type: 'page',
-      keywords: ['token', 'economics', 'emissions', 'tokenomics', 'dhb']
+      keywords: ['token', 'economics', 'emissions', 'tokenomics', 'dhb', 'burn', 'supply', 'deflation']
     },
     {
       id: 'token-utility',
       title: 'Token Utility & Holder Benefits',
-      content: 'DHB token utility, holder benefits, staking rewards, governance rights, ecosystem benefits',
+      content: 'DHB token utility, holder benefits, staking rewards, governance rights, ecosystem benefits, badges, tipping, content creation, moderation',
       path: '/docs/token/utility',
       category: 'Token',
       type: 'page',
-      keywords: ['utility', 'benefits', 'staking', 'governance', 'rewards']
+      keywords: ['utility', 'benefits', 'staking', 'governance', 'rewards', 'badges', 'tipping', 'holder']
+    },
+    {
+      id: 'badges',
+      title: 'Badges & Tiers',
+      content: 'Badge system, badge tiers, Crab, Lobster, Piranha, Tortoise, Cobra, Octopus, Crocodile, Dolphin, Tiger Shark, Killer Whale, Great White, Blue Whale, Megalodon, holder badges, token holdings, badge levels, tier system, badge rewards',
+      path: '/docs/token/utility',
+      category: 'Token',
+      type: 'section',
+      keywords: ['badge', 'badges', 'tier', 'tiers', 'crab', 'lobster', 'piranha', 'tortoise', 'cobra', 'octopus', 'crocodile', 'dolphin', 'tiger shark', 'killer whale', 'great white', 'blue whale', 'megalodon', 'holder', 'level', 'rank']
+    },
+    {
+      id: 'tipping',
+      title: 'Tipping System',
+      content: 'Tipping system for content creators, send tips, receive tips, DHB tipping, reward creators, community support',
+      path: '/docs/token/utility',
+      category: 'Token',
+      type: 'section',
+      keywords: ['tipping', 'tips', 'tip', 'reward', 'creators', 'send', 'receive', 'support']
+    },
+    {
+      id: 'moderation',
+      title: 'Content Moderation',
+      content: 'Content moderation system, reporting, flagging, community guidelines, content policy, moderators',
+      path: '/docs/token/utility',
+      category: 'Token',
+      type: 'section',
+      keywords: ['moderation', 'moderate', 'report', 'flag', 'guidelines', 'policy', 'content']
     },
     {
       id: 'where-to-buy',
       title: 'Where to Buy',
-      content: 'Buy DHB token on exchanges, trading pairs, liquidity pools, DEX, CEX listings',
+      content: 'Buy DHB token on exchanges, trading pairs, liquidity pools, DEX, CEX listings, Uniswap, PancakeSwap',
       path: '/docs/token/where-to-buy',
       category: 'Token',
       type: 'page',
-      keywords: ['buy', 'exchange', 'trading', 'dex', 'cex', 'liquidity']
+      keywords: ['buy', 'exchange', 'trading', 'dex', 'cex', 'liquidity', 'uniswap', 'pancakeswap', 'purchase']
     },
     {
       id: 'governance',
       title: 'Governance',
-      content: 'DeHub governance system, voting mechanisms, proposals, DAO structure, community decisions',
+      content: 'DeHub governance system, voting mechanisms, proposals, DAO structure, community decisions, voting power',
       path: '/docs/token/governance',
       category: 'Token',
       type: 'page',
-      keywords: ['governance', 'voting', 'dao', 'proposals', 'community']
+      keywords: ['governance', 'voting', 'dao', 'proposals', 'community', 'vote', 'decision']
     },
     {
       id: 'stake',
       title: 'Stake',
-      content: 'Staking DHB tokens, staking rewards, validation, network security, staking pools',
+      content: 'Staking DHB tokens, staking rewards, validation, network security, staking pools, APY, yield',
       path: '/docs/token/stake',
       category: 'Token',
       type: 'page',
-      keywords: ['stake', 'staking', 'rewards', 'validation', 'security']
+      keywords: ['stake', 'staking', 'rewards', 'validation', 'security', 'apy', 'yield', 'pool']
     },
     {
       id: 'bridge',
@@ -138,34 +165,61 @@ const createSearchIndex = (): SearchIndex[] => {
     {
       id: 'depin',
       title: 'DePIN',
-      content: 'Decentralized Physical Infrastructure Network, hardware nodes, network participation, rewards',
+      content: 'Decentralized Physical Infrastructure Network, hardware nodes, network participation, rewards, mining',
       path: '/docs/depin',
       category: 'Main',
       type: 'page',
-      keywords: ['depin', 'infrastructure', 'physical', 'nodes', 'hardware']
+      keywords: ['depin', 'infrastructure', 'physical', 'nodes', 'hardware', 'mining', 'network']
     },
     {
       id: 'ai-toolkits',
       title: 'AI Toolkits',
-      content: 'Artificial intelligence tools, machine learning, AI development, APIs, toolkits',
+      content: 'Artificial intelligence tools, machine learning, AI development, APIs, toolkits, chatbot, automation',
       path: '/docs/ai-toolkits',
       category: 'Main',
       type: 'page',
-      keywords: ['ai', 'artificial intelligence', 'machine learning', 'toolkits']
+      keywords: ['ai', 'artificial intelligence', 'machine learning', 'toolkits', 'chatbot', 'automation']
     },
     {
       id: 'advertising',
       title: 'Advertising',
-      content: 'Advertising platform, ad campaigns, monetization, content creators, advertising revenue',
+      content: 'Advertising platform, ad campaigns, monetization, content creators, advertising revenue, CPM, impressions, badge-based targeting',
       path: '/docs/advertising',
       category: 'Main',
       type: 'page',
-      keywords: ['advertising', 'ads', 'campaigns', 'monetization', 'revenue']
+      keywords: ['advertising', 'ads', 'campaigns', 'monetization', 'revenue', 'cpm', 'impressions', 'targeting']
+    },
+    {
+      id: 'advertiser-dashboard',
+      title: 'Advertiser Dashboard',
+      content: 'Advertiser dashboard for managing campaigns, analytics, budget management, ad performance, campaign creation, ROI tracking',
+      path: '/docs/advertiser-dashboard',
+      category: 'Main',
+      type: 'page',
+      keywords: ['advertiser', 'dashboard', 'campaign', 'analytics', 'budget', 'performance', 'roi']
+    },
+    {
+      id: 'e2ee',
+      title: 'End-to-End Encryption',
+      content: 'End-to-end encryption, E2EE, secure messaging, privacy, encrypted communication, data protection, cryptography',
+      path: '/docs/e2ee',
+      category: 'Main',
+      type: 'page',
+      keywords: ['e2ee', 'encryption', 'end-to-end', 'privacy', 'secure', 'messaging', 'encrypted', 'cryptography']
+    },
+    {
+      id: 'donate',
+      title: 'Donate',
+      content: 'Donate to DeHub project, support development, community donations, funding, contribute',
+      path: '/docs/donate',
+      category: 'Main',
+      type: 'page',
+      keywords: ['donate', 'donation', 'support', 'funding', 'contribute', 'help']
     },
     {
       id: 'team',
       title: 'Team',
-      content: 'DeHub team members, founders, developers, advisors, company information. Team includes Malik, CEO and founder of DeHub, leading the vision for decentralized infrastructure. Meet our core team of blockchain experts, developers, and business leaders.',
+      content: 'DeHub team members, founders, developers, advisors, company information. Malik CEO and founder.',
       path: '/docs/team',
       category: 'Main',
       type: 'page',
@@ -174,47 +228,47 @@ const createSearchIndex = (): SearchIndex[] => {
     {
       id: 'security',
       title: 'Security',
-      content: 'Security measures, audits, smart contract security, platform security, best practices',
+      content: 'Security measures, audits, smart contract security, platform security, best practices, token security',
       path: '/docs/security',
       category: 'Main',
       type: 'page',
-      keywords: ['security', 'audits', 'smart contracts', 'safety']
+      keywords: ['security', 'audits', 'smart contracts', 'safety', 'audit']
     },
     {
       id: 'roadmap',
       title: 'Roadmap',
-      content: 'DeHub development roadmap, future plans, milestones, upcoming features, timeline',
+      content: 'DeHub development roadmap, future plans, milestones, upcoming features, timeline, phases',
       path: '/docs/roadmap',
       category: 'Main',
       type: 'page',
-      keywords: ['roadmap', 'future', 'plans', 'milestones', 'development']
+      keywords: ['roadmap', 'future', 'plans', 'milestones', 'development', 'timeline', 'phases']
     },
     {
       id: 'brand-assets',
       title: 'Brand Assets',
-      content: 'DeHub brand assets, logos, graphics, brand guidelines, marketing materials',
+      content: 'DeHub brand assets, logos, graphics, brand guidelines, marketing materials, downloads',
       path: '/docs/brand-assets',
-      category: 'Main',
+      category: 'Brand',
       type: 'page',
-      keywords: ['brand', 'assets', 'logos', 'graphics', 'marketing']
+      keywords: ['brand', 'assets', 'logos', 'graphics', 'marketing', 'download']
     },
     {
       id: 'contact',
       title: 'Contact',
-      content: 'Contact DeHub team, support, partnerships, business inquiries, community',
+      content: 'Contact DeHub team, support, partnerships, business inquiries, community, email, social media',
       path: '/docs/contact',
       category: 'Main',
       type: 'page',
-      keywords: ['contact', 'support', 'partnerships', 'business', 'help']
+      keywords: ['contact', 'support', 'partnerships', 'business', 'help', 'email', 'social']
     },
     {
       id: 'blog',
       title: 'Community Blog',
-      content: 'DeHub community blog, latest news, updates, announcements, insights, stories',
+      content: 'DeHub community blog, latest news, updates, announcements, insights, stories, articles',
       path: '/docs/blog',
       category: 'Blog',
       type: 'blog',
-      keywords: ['blog', 'news', 'updates', 'announcements', 'community']
+      keywords: ['blog', 'news', 'updates', 'announcements', 'community', 'articles']
     },
     {
       id: 'quickstart',
@@ -228,11 +282,11 @@ const createSearchIndex = (): SearchIndex[] => {
     {
       id: 'installation',
       title: 'Installation',
-      content: 'Installation guide for DeHub tools, setup instructions, requirements, dependencies',
+      content: 'Installation guide for DeHub tools, setup instructions, requirements, dependencies, download app',
       path: '/docs/installation',
       category: 'Development',
       type: 'page',
-      keywords: ['installation', 'setup', 'install', 'requirements', 'dependencies']
+      keywords: ['installation', 'setup', 'install', 'requirements', 'dependencies', 'download', 'app']
     },
     {
       id: 'api-endpoints',
@@ -287,6 +341,134 @@ const createSearchIndex = (): SearchIndex[] => {
       category: 'Support',
       type: 'page',
       keywords: ['faq', 'questions', 'help', 'troubleshooting', 'support', 'answers']
+    },
+    // Blog posts
+    {
+      id: 'blog-coinbase',
+      title: 'Coinbase DHB Listing',
+      content: 'Coinbase listing for DHB token, exchange listing, trading, centralized exchange',
+      path: '/docs/blog/coinbase-dhb',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['coinbase', 'listing', 'exchange', 'dhb', 'trading']
+    },
+    {
+      id: 'blog-e2ee',
+      title: 'E2EE Announcement',
+      content: 'End-to-end encryption launch, secure messaging feature, privacy update',
+      path: '/docs/blog/e2ee',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['e2ee', 'encryption', 'privacy', 'secure', 'messaging']
+    },
+    {
+      id: 'blog-google-play',
+      title: 'Google Play Store Launch',
+      content: 'DeHub app on Google Play Store, Android app, mobile download, app launch',
+      path: '/docs/blog/google-play-store',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['google play', 'android', 'app', 'mobile', 'download', 'play store']
+    },
+    {
+      id: 'blog-dev-update',
+      title: 'Developer Update January 2026',
+      content: 'Development update, new features, improvements, technical progress, changelog',
+      path: '/docs/blog/dev-update-jan-2026',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['dev update', 'development', 'features', 'improvements', 'changelog']
+    },
+    {
+      id: 'blog-town-hall',
+      title: 'Town Hall AMA January 2026',
+      content: 'Town hall meeting, AMA session, community questions, answers, live event',
+      path: '/docs/blog/town-hall-jan-2026',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['town hall', 'ama', 'community', 'meeting', 'questions', 'live']
+    },
+    {
+      id: 'blog-yearly-wrap',
+      title: 'Yearly Wrap Up 2025',
+      content: 'Year in review 2025, annual summary, achievements, milestones, yearly recap',
+      path: '/docs/blog/yearly-wrap-up-2025',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['yearly', 'wrap up', 'review', '2025', 'annual', 'recap', 'summary']
+    },
+    {
+      id: 'blog-dubai',
+      title: 'Dubai Event',
+      content: 'DeHub Dubai event, blockchain conference, crypto event, networking, partnership',
+      path: '/docs/blog/dubai-event',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['dubai', 'event', 'conference', 'blockchain', 'networking']
+    },
+    {
+      id: 'blog-award',
+      title: 'Award-Winning Innovation',
+      content: 'DeHub award winning innovation, recognition, blockchain award, technology prize',
+      path: '/docs/blog/award-winning-innovation',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['award', 'innovation', 'winning', 'recognition', 'prize']
+    },
+    {
+      id: 'blog-tokenised-uploads',
+      title: 'Tokenised Uploads',
+      content: 'Tokenised uploads feature, content tokenisation, upload rewards, NFT content',
+      path: '/docs/blog/tokenised-uploads',
+      category: 'Blog',
+      type: 'blog',
+      keywords: ['tokenised', 'uploads', 'content', 'nft', 'tokenization']
+    },
+    // Sub-topic sections for better discoverability
+    {
+      id: 'ad-badge-targeting',
+      title: 'Badge-Based Ad Targeting',
+      content: 'Target ads based on user badge tiers, CPM rates per badge, Crab Lobster Piranha Tortoise Cobra Octopus Crocodile Dolphin advertising costs',
+      path: '/docs/advertising',
+      category: 'Main',
+      type: 'section',
+      keywords: ['badge', 'targeting', 'cpm', 'ad', 'tier', 'crab', 'lobster', 'advertising', 'cost', 'rate']
+    },
+    {
+      id: 'wallet',
+      title: 'Wallet & Holdings',
+      content: 'DHB wallet, token holdings, balance, portfolio, wallet connect, MetaMask, crypto wallet',
+      path: '/docs/token/utility',
+      category: 'Token',
+      type: 'section',
+      keywords: ['wallet', 'holdings', 'balance', 'portfolio', 'metamask', 'connect']
+    },
+    {
+      id: 'rewards',
+      title: 'Rewards & Earnings',
+      content: 'Earning rewards on DeHub, content rewards, staking earnings, referral rewards, passive income',
+      path: '/docs/token/utility',
+      category: 'Token',
+      type: 'section',
+      keywords: ['rewards', 'earnings', 'earn', 'income', 'referral', 'passive']
+    },
+    {
+      id: 'nft',
+      title: 'NFTs & Digital Assets',
+      content: 'NFT marketplace, digital assets, non-fungible tokens, collectibles, NFT creation, minting',
+      path: '/docs/dapps',
+      category: 'Main',
+      type: 'section',
+      keywords: ['nft', 'digital assets', 'collectibles', 'minting', 'marketplace', 'non-fungible']
+    },
+    {
+      id: 'social',
+      title: 'Social Features',
+      content: 'Social media features, messaging, groups, channels, community, feed, posts, sharing, chat',
+      path: '/docs/dapps',
+      category: 'Main',
+      type: 'section',
+      keywords: ['social', 'messaging', 'chat', 'groups', 'channels', 'feed', 'posts', 'sharing', 'community']
     }
   ];
 };
