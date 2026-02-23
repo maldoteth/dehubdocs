@@ -66,11 +66,11 @@ const createSearchIndex = (): SearchIndex[] => {
     {
       id: 'dapps',
       title: "d'App",
-      content: 'Decentralized applications on DeHub platform, development tools, APIs, SDKs, smart contracts',
+      content: 'Decentralized applications on DeHub platform, development tools, APIs, SDKs, smart contracts, badges, tipping, moderation, wallet, rewards, games, raffle',
       path: '/docs/dapps',
       category: 'Main',
       type: 'page',
-      keywords: ['dapp', 'decentralized', 'applications', 'development']
+      keywords: ['dapp', 'decentralized', 'applications', 'development', 'badge', 'badges', 'tipping', 'moderation', 'wallet', 'rewards', 'games', 'raffle']
     },
     {
       id: 'games',
