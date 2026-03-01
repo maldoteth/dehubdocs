@@ -234,7 +234,7 @@ const DocsLayoutContent = () => {
                 <Menu className="w-5 h-5 text-foreground" />
               </button>
               <a href="https://dehub.io/app" className="p-2 rounded-md hover:bg-muted transition-colors">
-                <Home className="w-5 h-5 text-foreground" />
+                <Home className="w-6 h-6 text-foreground" />
               </a>
             </div>
             
@@ -262,7 +262,7 @@ const DocsLayoutContent = () => {
               <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6 dark:invert" />
             </Link>
             <a href="https://dehub.io/app" className="p-2 rounded-lg hover:bg-muted transition-colors" title="Go to DeHub App">
-              <Home className="w-5 h-5 text-foreground" />
+              <Home className="w-6 h-6 text-foreground" />
             </a>
           </div>
 
