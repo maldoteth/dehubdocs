@@ -204,7 +204,7 @@ const DocsLayoutContent = () => {
     if (window.parent !== window) {
       window.parent.postMessage(
         { type: 'docs-route-change', path: location.pathname },
-        'https://dehub.io'
+        '*'
       );
     }
   }, [location.pathname]);
