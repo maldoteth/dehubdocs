@@ -228,10 +228,15 @@ const DocsLayoutContent = () => {
         <div className="flex items-center justify-between px-4 h-16">
           {/* Mobile Layout */}
           <div className="flex items-center lg:hidden w-full">
-            {/* Left: Hamburger Menu */}
-            <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2 rounded-md hover:bg-muted transition-colors">
-              <Menu className="w-5 h-5 text-foreground" />
-            </button>
+            {/* Left: Hamburger Menu & Home */}
+            <div className="flex items-center">
+              <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2 rounded-md hover:bg-muted transition-colors">
+                <Menu className="w-5 h-5 text-foreground" />
+              </button>
+              <a href="https://dehub.io/app" className="p-2 rounded-md hover:bg-muted transition-colors">
+                <Home className="w-5 h-5 text-foreground" />
+              </a>
+            </div>
             
             {/* Center: Logo */}
             <div className="flex-1 flex justify-center">
@@ -252,10 +257,13 @@ const DocsLayoutContent = () => {
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-3">
             <Link to="/docs" className="flex items-center space-x-2 font-bold text-xl text-foreground">
               <img src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" alt="DeHub Logo" className="w-6 h-6 dark:invert" />
             </Link>
+            <a href="https://dehub.io/app" className="p-2 rounded-lg hover:bg-muted transition-colors" title="Go to DeHub App">
+              <Home className="w-5 h-5 text-foreground" />
+            </a>
           </div>
 
           {/* Desktop Search Bar - Positioned at far right */}
