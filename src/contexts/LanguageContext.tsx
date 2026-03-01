@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import { en } from '@/i18n/en';
 import { ar } from '@/i18n/ar';
 import { zh } from '@/i18n/zh';
+import { zh_tw } from '@/i18n/zh_tw';
 import { tr } from '@/i18n/tr';
 import { es } from '@/i18n/es';
 import { de } from '@/i18n/de';
@@ -31,8 +32,20 @@ import { el } from '@/i18n/el';
 import { hu } from '@/i18n/hu';
 import { gsw } from '@/i18n/gsw';
 import { hr } from '@/i18n/hr';
+import { sv } from '@/i18n/sv';
+import { no } from '@/i18n/no';
+import { da } from '@/i18n/da';
+import { fi } from '@/i18n/fi';
+import { he } from '@/i18n/he';
+import { zu } from '@/i18n/zu';
+import { qu } from '@/i18n/qu';
+import { ht } from '@/i18n/ht';
+import { yo } from '@/i18n/yo';
+import { am } from '@/i18n/am';
+import { ig } from '@/i18n/ig';
+import { ha } from '@/i18n/ha';
 
-export type Language = 'en' | 'ar' | 'zh' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu' | 'gsw' | 'hr';
+export type Language = 'en' | 'ar' | 'zh' | 'zh_tw' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu' | 'gsw' | 'hr' | 'sv' | 'no' | 'da' | 'fi' | 'he' | 'zu' | 'qu' | 'ht' | 'yo' | 'am' | 'ig' | 'ha';
 
 export interface LanguageOption {
   code: Language;
@@ -43,42 +56,55 @@ export interface LanguageOption {
 
 export const languages: LanguageOption[] = [
   { code: 'en', label: 'English', nativeLabel: 'English', dir: 'ltr' },
+  { code: 'am', label: 'Amharic', nativeLabel: 'አማርኛ', dir: 'ltr' },
   { code: 'ar', label: 'Arabic', nativeLabel: 'العربية', dir: 'rtl' },
   { code: 'bn', label: 'Bengali', nativeLabel: 'বাংলা', dir: 'ltr' },
-  { code: 'zh', label: 'Chinese', nativeLabel: '中文', dir: 'ltr' },
+  { code: 'zh', label: 'Chinese (Simplified)', nativeLabel: '简体中文', dir: 'ltr' },
+  { code: 'zh_tw', label: 'Chinese (Traditional)', nativeLabel: '繁體中文', dir: 'ltr' },
   { code: 'hr', label: 'Croatian', nativeLabel: 'Hrvatski', dir: 'ltr' },
   { code: 'cs', label: 'Czech', nativeLabel: 'Čeština', dir: 'ltr' },
+  { code: 'da', label: 'Danish', nativeLabel: 'Dansk', dir: 'ltr' },
   { code: 'nl', label: 'Dutch', nativeLabel: 'Nederlands', dir: 'ltr' },
   { code: 'tl', label: 'Filipino', nativeLabel: 'Filipino', dir: 'ltr' },
+  { code: 'fi', label: 'Finnish', nativeLabel: 'Suomi', dir: 'ltr' },
   { code: 'fr', label: 'French', nativeLabel: 'Français', dir: 'ltr' },
   { code: 'de', label: 'German', nativeLabel: 'Deutsch', dir: 'ltr' },
   { code: 'el', label: 'Greek', nativeLabel: 'Ελληνικά', dir: 'ltr' },
-  { code: 'gsw', label: 'Swiss German', nativeLabel: 'Schwiizerdütsch', dir: 'ltr' },
+  { code: 'ht', label: 'Haitian Creole', nativeLabel: 'Kreyòl Ayisyen', dir: 'ltr' },
+  { code: 'ha', label: 'Hausa', nativeLabel: 'Hausa', dir: 'ltr' },
+  { code: 'he', label: 'Hebrew', nativeLabel: 'עברית', dir: 'rtl' },
   { code: 'hi', label: 'Hindi', nativeLabel: 'हिन्दी', dir: 'ltr' },
   { code: 'hu', label: 'Hungarian', nativeLabel: 'Magyar', dir: 'ltr' },
+  { code: 'ig', label: 'Igbo', nativeLabel: 'Igbo', dir: 'ltr' },
   { code: 'id', label: 'Indonesian', nativeLabel: 'Bahasa Indonesia', dir: 'ltr' },
   { code: 'it', label: 'Italian', nativeLabel: 'Italiano', dir: 'ltr' },
   { code: 'ja', label: 'Japanese', nativeLabel: '日本語', dir: 'ltr' },
   { code: 'ko', label: 'Korean', nativeLabel: '한국어', dir: 'ltr' },
   { code: 'ms', label: 'Malay', nativeLabel: 'Bahasa Melayu', dir: 'ltr' },
+  { code: 'no', label: 'Norwegian', nativeLabel: 'Norsk', dir: 'ltr' },
   { code: 'fa', label: 'Persian', nativeLabel: 'فارسی', dir: 'rtl' },
   { code: 'pl', label: 'Polish', nativeLabel: 'Polski', dir: 'ltr' },
   { code: 'pt', label: 'Portuguese', nativeLabel: 'Português', dir: 'ltr' },
+  { code: 'qu', label: 'Quechua', nativeLabel: 'Runasimi', dir: 'ltr' },
   { code: 'ro', label: 'Romanian', nativeLabel: 'Română', dir: 'ltr' },
   { code: 'ru', label: 'Russian', nativeLabel: 'Русский', dir: 'ltr' },
   { code: 'es', label: 'Spanish', nativeLabel: 'Español', dir: 'ltr' },
   { code: 'sw', label: 'Swahili', nativeLabel: 'Kiswahili', dir: 'ltr' },
+  { code: 'sv', label: 'Swedish', nativeLabel: 'Svenska', dir: 'ltr' },
+  { code: 'gsw', label: 'Swiss German', nativeLabel: 'Schwiizerdütsch', dir: 'ltr' },
   { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்', dir: 'ltr' },
   { code: 'th', label: 'Thai', nativeLabel: 'ไทย', dir: 'ltr' },
   { code: 'tr', label: 'Turkish', nativeLabel: 'Türkçe', dir: 'ltr' },
   { code: 'uk', label: 'Ukrainian', nativeLabel: 'Українська', dir: 'ltr' },
   { code: 'ur', label: 'Urdu', nativeLabel: 'اردو', dir: 'rtl' },
   { code: 'vi', label: 'Vietnamese', nativeLabel: 'Tiếng Việt', dir: 'ltr' },
+  { code: 'yo', label: 'Yoruba', nativeLabel: 'Yorùbá', dir: 'ltr' },
+  { code: 'zu', label: 'Zulu', nativeLabel: 'isiZulu', dir: 'ltr' },
 ];
 
 type Translations = typeof en;
 
-const translationMap: Record<Language, Translations> = { en, ar, zh, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu, gsw, hr };
+const translationMap: Record<Language, Translations> = { en, ar, zh, zh_tw, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu, gsw, hr, sv, no, da, fi, he, zu, qu, ht, yo, am, ig, ha };
 
 interface LanguageContextType {
   language: Language;
