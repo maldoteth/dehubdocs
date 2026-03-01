@@ -29,8 +29,10 @@ import { ro } from '@/i18n/ro';
 import { cs } from '@/i18n/cs';
 import { el } from '@/i18n/el';
 import { hu } from '@/i18n/hu';
+import { gsw } from '@/i18n/gsw';
+import { hr } from '@/i18n/hr';
 
-export type Language = 'en' | 'ar' | 'zh' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu';
+export type Language = 'en' | 'ar' | 'zh' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu' | 'gsw' | 'hr';
 
 export interface LanguageOption {
   code: Language;
@@ -44,12 +46,14 @@ export const languages: LanguageOption[] = [
   { code: 'ar', label: 'Arabic', nativeLabel: 'العربية', dir: 'rtl' },
   { code: 'bn', label: 'Bengali', nativeLabel: 'বাংলা', dir: 'ltr' },
   { code: 'zh', label: 'Chinese', nativeLabel: '中文', dir: 'ltr' },
+  { code: 'hr', label: 'Croatian', nativeLabel: 'Hrvatski', dir: 'ltr' },
   { code: 'cs', label: 'Czech', nativeLabel: 'Čeština', dir: 'ltr' },
   { code: 'nl', label: 'Dutch', nativeLabel: 'Nederlands', dir: 'ltr' },
   { code: 'tl', label: 'Filipino', nativeLabel: 'Filipino', dir: 'ltr' },
   { code: 'fr', label: 'French', nativeLabel: 'Français', dir: 'ltr' },
   { code: 'de', label: 'German', nativeLabel: 'Deutsch', dir: 'ltr' },
   { code: 'el', label: 'Greek', nativeLabel: 'Ελληνικά', dir: 'ltr' },
+  { code: 'gsw', label: 'Swiss German', nativeLabel: 'Schwiizerdütsch', dir: 'ltr' },
   { code: 'hi', label: 'Hindi', nativeLabel: 'हिन्दी', dir: 'ltr' },
   { code: 'hu', label: 'Hungarian', nativeLabel: 'Magyar', dir: 'ltr' },
   { code: 'id', label: 'Indonesian', nativeLabel: 'Bahasa Indonesia', dir: 'ltr' },
@@ -74,7 +78,7 @@ export const languages: LanguageOption[] = [
 
 type Translations = typeof en;
 
-const translationMap: Record<Language, Translations> = { en, ar, zh, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu };
+const translationMap: Record<Language, Translations> = { en, ar, zh, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu, gsw, hr };
 
 interface LanguageContextType {
   language: Language;
