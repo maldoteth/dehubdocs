@@ -1,6 +1,7 @@
 import { BlogPost } from '@/types/blog';
 import { e2eePost } from './posts/e2eePost';
 import { googlePlayStorePost } from './posts/googlePlayStorePost';
+import { townHallFeb2026Post } from './posts/townHallFeb2026Post';
 
 // Placeholder images - using a few from the provided list and cycling through them
 const unsplashBase = "https://images.unsplash.com/";
@@ -187,6 +188,7 @@ const createPost = (
 };
 
 export const blogPosts: BlogPost[] = [
+  townHallFeb2026Post,
   googlePlayStorePost,
   e2eePost,
   // 2021
