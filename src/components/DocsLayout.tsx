@@ -200,6 +200,15 @@ const DocsLayoutContent = () => {
     };
   }, [sidebarOpen]);
 
+  useEffect(() => {
+    if (window.parent !== window) {
+      window.parent.postMessage(
+        { type: 'docs-route-change', path: location.pathname },
+        'https://dehub.io'
+      );
+    }
+  }, [location.pathname]);
+
   const isActivePath = (path: string) => {
     return location.pathname === path;
   };
