@@ -44,8 +44,9 @@ import { yo } from '@/i18n/yo';
 import { am } from '@/i18n/am';
 import { ig } from '@/i18n/ig';
 import { ha } from '@/i18n/ha';
+import { ka } from '@/i18n/ka';
 
-export type Language = 'en' | 'ar' | 'zh' | 'zh_tw' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu' | 'gsw' | 'hr' | 'sv' | 'no' | 'da' | 'fi' | 'he' | 'zu' | 'qu' | 'ht' | 'yo' | 'am' | 'ig' | 'ha';
+export type Language = 'en' | 'ar' | 'zh' | 'zh_tw' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu' | 'gsw' | 'hr' | 'sv' | 'no' | 'da' | 'fi' | 'he' | 'zu' | 'qu' | 'ht' | 'yo' | 'am' | 'ig' | 'ha' | 'ka';
 
 export interface LanguageOption {
   code: Language;
@@ -68,6 +69,7 @@ export const languages: LanguageOption[] = [
   { code: 'tl', label: 'Filipino', nativeLabel: 'Filipino', dir: 'ltr' },
   { code: 'fi', label: 'Finnish', nativeLabel: 'Suomi', dir: 'ltr' },
   { code: 'fr', label: 'French', nativeLabel: 'Français', dir: 'ltr' },
+  { code: 'ka', label: 'Georgian', nativeLabel: 'ქართული', dir: 'ltr' },
   { code: 'de', label: 'German', nativeLabel: 'Deutsch', dir: 'ltr' },
   { code: 'el', label: 'Greek', nativeLabel: 'Ελληνικά', dir: 'ltr' },
   { code: 'ht', label: 'Haitian Creole', nativeLabel: 'Kreyòl Ayisyen', dir: 'ltr' },
@@ -104,7 +106,7 @@ export const languages: LanguageOption[] = [
 
 type Translations = typeof en;
 
-const translationMap: Record<Language, Translations> = { en, ar, zh, zh_tw, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu, gsw, hr, sv, no, da, fi, he, zu, qu, ht, yo, am, ig, ha };
+const translationMap: Record<Language, Translations> = { en, ar, zh, zh_tw, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu, gsw, hr, sv, no, da, fi, he, zu, qu, ht, yo, am, ig, ha, ka };
 
 interface LanguageContextType {
   language: Language;
