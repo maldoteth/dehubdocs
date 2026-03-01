@@ -243,7 +243,7 @@ export const DocsChatBot = () => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          "fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center",
+          "fixed bottom-6 right-6 z-50 w-14 h-14 rounded-2xl shadow-lg transition-all duration-300 flex items-center justify-center",
           "bg-card hover:bg-muted border border-border",
           "hover:scale-110 hover:shadow-xl",
           isOpen && "scale-0 opacity-0"
