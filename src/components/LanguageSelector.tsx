@@ -24,7 +24,7 @@ export function LanguageSelector() {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
-        <button className="flex items-center gap-1.5 w-full text-sm text-white hover:opacity-80 transition-opacity px-1 py-1 min-w-0">
+        <button className="flex items-center gap-1.5 w-full text-sm text-foreground hover:opacity-80 transition-opacity px-1 py-1 min-w-0">
           <Globe className="w-4 h-4 flex-shrink-0" />
           <span className="truncate">{current?.nativeLabel}</span>
         </button>
