@@ -285,9 +285,9 @@ const DocsLayoutContent = () => {
             </div>
             
             {/* Dark Mode Toggle & Language Selector at top */}
-            <div className="px-4 py-3 border-b border-border flex items-center gap-2">
-              <div className="flex-1"><DarkModeToggle /></div>
-              <div className="flex-1"><LanguageSelector /></div>
+            <div className="px-4 py-3 border-b border-border flex items-center gap-2 min-w-0">
+              <div className="flex-shrink-0"><DarkModeToggle /></div>
+              <div className="flex-1 min-w-0 overflow-hidden"><LanguageSelector /></div>
             </div>
             
             <ScrollArea className="flex-1 overscroll-contain">
