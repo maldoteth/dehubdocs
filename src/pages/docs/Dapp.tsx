@@ -3,7 +3,11 @@ import BadgeFlowchart from '../../components/BadgeFlowchart';
 import TippingFlowchart from '../../components/TippingFlowchart';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video, Coins, Shield, Users, Settings, Eye, Zap, Crown, MessageCircle, Lock, Banknote, TrendingUp, Infinity, Percent, Vote, Scale, CheckCircle2, AlertTriangle, Layers, Network, ExternalLink, CreditCard } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+
 const Dapp = () => {
+  const { t } = useLanguage();
+
   const feeReductions = [{
     badge: "No Badge",
     threshold: "< 10,000 $DHB",
@@ -89,175 +93,151 @@ const Dapp = () => {
     color: "bg-purple-800",
     image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png"
   }];
+
   return <div className="space-y-8">
       {/* Header */}
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-royal-blue font-exo">A Complete Ecosystem</h1>
-        <p className="text-xl text-royal-blue/70 max-w-2xl mx-auto font-exo"></p>
+        <h1 className="text-4xl font-bold text-foreground font-exo">{t('dapp.title')}</h1>
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-exo"></p>
       </div>
       
       <div className="my-6">
-        <img src="/lovable-uploads/d06e2852-219e-4946-960f-0830ebb81716.png" alt="DeHub Games streaming platform interface showing video content grid with leaderboard" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+        <img src="/lovable-uploads/d06e2852-219e-4946-960f-0830ebb81716.png" alt="DeHub Games streaming platform interface showing video content grid with leaderboard" className="w-full rounded-lg border border-border shadow-sm" />
       </div>
       
       <div className="space-y-8">
         <section>
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            DeHub is a censorship resistant, open source alternative to legacy media platforms servicing the content creation, streaming and gaming industries. An ecosystem where anyone can monetise from the first view, without fear of being deplatformed, shadow banned, silenced or manipulated in anyway to be anything but their true self. To speak and think free, away from the hive mind, express as desired.
-          </p>
-          
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            The app is scaled via a decentralized miner network, providing shared computing power to host, transcode, and deliver content that by design, should live forever.
-          </p>
-          
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            As the first protocol to tokenise content back in 2023, we've built a sustainable socialfi solution that empowers creators and consumers with a plethora of tools. Features include encrypted private communications, on-chain PPV releases, tradable subscriptions, paid DMs, unlockable content, shared ad revenue and many more these docs cover in full.
-          </p>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.intro1')}</p>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.intro2')}</p>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.intro3')}</p>
           
           <div className="my-6">
-            <img src="/lovable-uploads/49985a5d-354f-48c8-888c-516c56c41f51.png" alt="Connect a Wallet interface showing various wallet options including MetaMask, WalletConnect, Trust Wallet, Rainbow, Coinbase Wallet, Google, and Twitter" className="w-full rounded-lg border border-slate-200 shadow-sm" />
-            <p className="text-center text-sm text-royal-blue/70 mt-3 italic font-exo">
-              Sign up with socials or email and have a wallet generated for you in a few clicks. No private key management or custody, you are in full control of your assets and we never access your funds.
-            </p>
+            <img src="/lovable-uploads/49985a5d-354f-48c8-888c-516c56c41f51.png" alt="Connect a Wallet interface" className="w-full rounded-lg border border-border shadow-sm" />
+            <p className="text-center text-sm text-muted-foreground mt-3 italic font-exo">{t('dapp.walletCaption')}</p>
           </div>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Given that data is the new oil, it may be wise to build your core community base here and utilise your existing social media apps to funnel users in to grow your own valuable database and ensure you remain censorship resistant. No matter what happens, never lose touch with your audience, fans, community or customers.
-          </p>
-          
-          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo"></p>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.intro4')}</p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Upload</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.uploadTitle')}</h2>
           
           <div className="my-6">
-            <img src="/lovable-uploads/c6d5f1cc-f829-445e-8a5d-c5ea9fa4c720.png" alt="Content uploading interface showing video info form and upload preview" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+            <img src="/lovable-uploads/c6d5f1cc-f829-445e-8a5d-c5ea9fa4c720.png" alt="Content uploading interface" className="w-full rounded-lg border border-border shadow-sm" />
           </div>
           
           <div className="my-6">
-            <img src="/lovable-uploads/3f101ce6-83a6-435b-8a41-58668a7fdb53.png" alt="Upload settings interface showing Lock Content, Pay Per View, Watch2Earn, and Add Subscription options" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+            <img src="/lovable-uploads/3f101ce6-83a6-435b-8a41-58668a7fdb53.png" alt="Upload settings interface" className="w-full rounded-lg border border-border shadow-sm" />
           </div>
 
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            On the above user upload dashboard, notice how simple it is for anyone to instantly upload content and in a few clicks enable the following:
-          </p>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.uploadDesc')}</p>
           
-          <ul className="list-disc pl-6 space-y-2 text-royal-blue/80 font-exo">
-            <li><strong>Watch2earn:</strong> every token now has sustainable watch2earn utility at the click of a button</li>
-            <li><strong>Token gated content:</strong> stream or upload content locked behind any token contract viewers must hold</li>
-            <li><strong>PPV events:</strong> charge any token for a pay-per-view or live stream</li>
-            <li><strong>NFT collectables:</strong> every post mints an NFT that earns the lifetime royalty attached to the video</li>
-            <li><strong>Earn:</strong> DeHub tokens via tips through supporters and rise up on the leaderboards for larger shares of ad revenue</li>
-            <li><strong>Subscribers:</strong> Upload or stream content exclusively for your subscribers</li>
+          <ul className="list-disc pl-6 space-y-2 text-foreground/80 font-exo">
+            <li><strong>Watch2earn:</strong> {t('dapp.uploadWatch2earn')}</li>
+            <li><strong>Token gated content:</strong> {t('dapp.uploadTokenGated')}</li>
+            <li><strong>PPV events:</strong> {t('dapp.uploadPPV')}</li>
+            <li><strong>NFT collectables:</strong> {t('dapp.uploadNFT')}</li>
+            <li><strong>Earn:</strong> {t('dapp.uploadEarn')}</li>
+            <li><strong>Subscribers:</strong> {t('dapp.uploadSubscribers')}</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+          <h2 className="text-3xl font-bold text-foreground mb-6 font-exo flex items-center gap-3">
             <Layers className="w-8 h-8" />
-            Tokenised Content & Fractionalised Ownership
+            {t('dapp.tokenisedTitle')}
           </h2>
           
-          <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg border border-purple-200 mb-6">
-            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Revolutionary ERC-1155 Content Tokenisation</h3>
-            <p className="text-royal-blue/80 leading-relaxed font-exo">
-              Every upload and livestream on DeHub automatically mints an ERC-1155 NFT fractionalised into exactly 1,000 pieces. 
-              Creators have complete control over how many fractions to sell or keep, creating a novel monetisation model where 
-              fans can invest in content they believe will succeed - essentially "betting" on the future of potential stars through 
-              a revolutionary form of fan tokens.
-            </p>
+          <div className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30 p-6 rounded-lg border border-purple-200 dark:border-purple-800 mb-6">
+            <h3 className="text-xl font-semibold text-foreground mb-3 font-exo">{t('dapp.tokenisedSubtitle')}</h3>
+            <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.tokenisedDesc')}</p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
-            <Card className="border-purple-200 bg-purple-50">
+            <Card className="border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950/30">
               <CardHeader className="pb-3">
-                <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                <CardTitle className="text-lg text-purple-800 dark:text-purple-300 font-exo flex items-center gap-2">
                   <TrendingUp className="w-4 h-4" />
-                  Automatic Fractionalisation
+                  {t('dapp.autoFractionalisation')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="text-sm text-purple-700 space-y-2 font-exo">
-                  <li>• Every upload/stream mints ERC-1155 NFT</li>
-                  <li>• Automatically split into 1,000 fractions</li>
-                  <li>• Instant tokenisation on content creation</li>
-                  <li>• No additional setup required</li>
-                  <li>• Seamless blockchain integration</li>
+                <ul className="text-sm text-purple-700 dark:text-purple-400 space-y-2 font-exo">
+                  <li>• {t('dapp.autoFrac1')}</li>
+                  <li>• {t('dapp.autoFrac2')}</li>
+                  <li>• {t('dapp.autoFrac3')}</li>
+                  <li>• {t('dapp.autoFrac4')}</li>
+                  <li>• {t('dapp.autoFrac5')}</li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-blue-200 bg-blue-50">
+            <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
               <CardHeader className="pb-3">
-                <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                <CardTitle className="text-lg text-blue-800 dark:text-blue-300 font-exo flex items-center gap-2">
                   <Coins className="w-4 h-4" />
-                  Creator Control
+                  {t('dapp.creatorControl')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="text-sm text-blue-700 space-y-2 font-exo">
-                  <li>• Choose how many fractions to sell</li>
-                  <li>• Retain control over distribution</li>
-                  <li>• Set custom pricing strategies</li>
-                  <li>• Decide release timing</li>
-                  <li>• Maintain creative ownership</li>
+                <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-2 font-exo">
+                  <li>• {t('dapp.creatorControl1')}</li>
+                  <li>• {t('dapp.creatorControl2')}</li>
+                  <li>• {t('dapp.creatorControl3')}</li>
+                  <li>• {t('dapp.creatorControl4')}</li>
+                  <li>• {t('dapp.creatorControl5')}</li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-green-200 bg-green-50">
+            <Card className="border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/30">
               <CardHeader className="pb-3">
-                <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
+                <CardTitle className="text-lg text-green-800 dark:text-green-300 font-exo flex items-center gap-2">
                   <Infinity className="w-4 h-4" />
-                  Eternal Revenue
+                  {t('dapp.eternalRevenue')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="text-sm text-green-700 space-y-2 font-exo">
-                  <li>• Content earns ad revenue for life</li>
-                  <li>• Permissionless residual income</li>
-                  <li>• Censorship-resistant earnings</li>
-                  <li>• No ongoing value creation required</li>
-                  <li>• Passive income for all eternity</li>
+                <ul className="text-sm text-green-700 dark:text-green-400 space-y-2 font-exo">
+                  <li>• {t('dapp.eternalRev1')}</li>
+                  <li>• {t('dapp.eternalRev2')}</li>
+                  <li>• {t('dapp.eternalRev3')}</li>
+                  <li>• {t('dapp.eternalRev4')}</li>
+                  <li>• {t('dapp.eternalRev5')}</li>
                 </ul>
               </CardContent>
             </Card>
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Revolutionary Fan Investment Model</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.fanInvestmentTitle')}</h3>
             
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200 mb-6">
-              <h4 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Betting on Future Stars</h4>
-              <p className="text-royal-blue/80 leading-relaxed font-exo">
-                DeHub creates the first platform where fans can financially invest in creators they believe will become successful. 
-                By purchasing fractions of content NFTs, supporters become stakeholders in a creator's journey, earning returns 
-                when their chosen creators achieve success through ad revenue, tips, and other monetisation streams.
-              </p>
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 p-6 rounded-lg border border-green-200 dark:border-green-800 mb-6">
+              <h4 className="text-xl font-semibold text-foreground mb-3 font-exo">{t('dapp.bettingTitle')}</h4>
+              <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.bettingDesc')}</p>
             </div>
             
             <div className="grid gap-6 md:grid-cols-2">
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                  <CardTitle className="flex items-center gap-2 text-foreground font-exo">
                     <Settings className="w-5 h-5" />
-                    How Fractionalisation Works
+                    {t('dapp.howFracWorks')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">1. Automatic Minting</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Every piece of content instantly becomes an ERC-1155 NFT split into exactly 1,000 tradeable fractions.</p>
+                    <div className="p-3 bg-muted rounded-lg">
+                      <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.fracStep1Title')}</h4>
+                      <p className="text-sm text-muted-foreground font-exo">{t('dapp.fracStep1Desc')}</p>
                     </div>
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">2. Creator Decision</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Creators choose how many of their 1,000 fractions to sell, keep, or distribute to their community.</p>
+                    <div className="p-3 bg-muted rounded-lg">
+                      <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.fracStep2Title')}</h4>
+                      <p className="text-sm text-muted-foreground font-exo">{t('dapp.fracStep2Desc')}</p>
                     </div>
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">3. Fan Investment</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Supporters purchase fractions, becoming stakeholders who earn proportional returns from all revenue streams.</p>
+                    <div className="p-3 bg-muted rounded-lg">
+                      <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.fracStep3Title')}</h4>
+                      <p className="text-sm text-muted-foreground font-exo">{t('dapp.fracStep3Desc')}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -265,24 +245,24 @@ const Dapp = () => {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                  <CardTitle className="flex items-center gap-2 text-foreground font-exo">
                     <Users className="w-5 h-5" />
-                    Benefits for All Parties
+                    {t('dapp.benefitsTitle')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">For Creators</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Instant monetisation, community funding, aligned incentives, and lifetime passive income from successful content.</p>
+                    <div className="p-3 bg-muted rounded-lg">
+                      <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.forCreators')}</h4>
+                      <p className="text-sm text-muted-foreground font-exo">{t('dapp.forCreatorsDesc')}</p>
                     </div>
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">For Fans</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Financial upside from supporting rising stars, tradeable assets, and direct participation in creator success.</p>
+                    <div className="p-3 bg-muted rounded-lg">
+                      <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.forFans')}</h4>
+                      <p className="text-sm text-muted-foreground font-exo">{t('dapp.forFansDesc')}</p>
                     </div>
-                    <div className="p-3 bg-royal-blue/5 rounded-lg">
-                      <h4 className="font-semibold text-royal-blue font-exo mb-2">For Everyone</h4>
-                      <p className="text-sm text-royal-blue/70 font-exo">Censorship-resistant, permissionless system that creates value for all participants without platform dependency.</p>
+                    <div className="p-3 bg-muted rounded-lg">
+                      <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.forEveryone')}</h4>
+                      <p className="text-sm text-muted-foreground font-exo">{t('dapp.forEveryoneDesc')}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -291,63 +271,59 @@ const Dapp = () => {
           </div>
 
           <div className="mt-8">
-            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">SocialFi Platform Comparison</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.comparisonTitle')}</h3>
             
-            <div className="bg-gradient-to-r from-amber-50 to-orange-50 p-6 rounded-lg border border-amber-200 mb-6">
-              <h4 className="text-xl font-semibold text-royal-blue mb-3 font-exo">The Key Difference: Residual vs. Active Value Creation</h4>
-              <p className="text-royal-blue/80 leading-relaxed font-exo">
-                Unlike other SocialFi platforms where creators must continuously add value for their tokens, shares, or keys to maintain worth, 
-                DeHub content generates residual income for life. Once created, content earns ad revenue permanently - providing passive, 
-                permissionless, censorship-resistant income for all eternity without requiring ongoing creator effort.
-              </p>
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30 p-6 rounded-lg border border-amber-200 dark:border-amber-800 mb-6">
+              <h4 className="text-xl font-semibold text-foreground mb-3 font-exo">{t('dapp.comparisonSubtitle')}</h4>
+              <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.comparisonDesc')}</p>
             </div>
             
             <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-slate-300 bg-white rounded-lg">
+              <table className="w-full border-collapse border border-border bg-card rounded-lg">
                 <thead>
-                  <tr className="bg-slate-50">
-                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Platform</th>
-                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Content Model</th>
-                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Value Creation Requirement</th>
-                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Revenue Model</th>
-                    <th className="border border-slate-300 p-3 text-left font-semibold text-royal-blue font-exo">Ownership Structure</th>
+                  <tr className="bg-muted">
+                    <th className="border border-border p-3 text-left font-semibold text-foreground font-exo">{t('dapp.thPlatform')}</th>
+                    <th className="border border-border p-3 text-left font-semibold text-foreground font-exo">{t('dapp.thContentModel')}</th>
+                    <th className="border border-border p-3 text-left font-semibold text-foreground font-exo">{t('dapp.thValueCreation')}</th>
+                    <th className="border border-border p-3 text-left font-semibold text-foreground font-exo">{t('dapp.thRevenueModel')}</th>
+                    <th className="border border-border p-3 text-left font-semibold text-foreground font-exo">{t('dapp.thOwnership')}</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border border-slate-300 p-3 font-semibold text-royal-blue font-exo">DeHub</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">ERC-1155 fractionalised into 1,000 pieces per upload</td>
-                    <td className="border border-slate-300 p-3 text-green-700 font-exo font-semibold">NONE - Residual income for life</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Eternal ad revenue + tips + PPV</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator controls fraction distribution</td>
-                  </tr>
-                  <tr className="bg-slate-25">
-                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Friend.tech</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Social keys for access to creator chats</td>
-                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Continuous engagement required</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Key trading fees, creator keeps chat revenue</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns content, users own access keys</td>
+                    <td className="border border-border p-3 font-semibold text-foreground font-exo">DeHub</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.dehubModel')}</td>
+                    <td className="border border-border p-3 text-green-700 dark:text-green-400 font-exo font-semibold">{t('dapp.dehubValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.dehubRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.dehubOwnership')}</td>
                   </tr>
                   <tr>
-                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Lens Protocol</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">NFT-based social graph with follows/posts</td>
-                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Active posting and community building</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator retains all content revenue</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Users own their social graph via NFTs</td>
-                  </tr>
-                  <tr className="bg-slate-25">
-                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Zora</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Everything is a token - hyper-speculative social tokens</td>
-                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Constant hype and speculation maintenance</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Token trading, minting fees, speculation</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Token holders speculate on creator success</td>
+                    <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Friend.tech</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Social keys for access to creator chats</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Continuous engagement required</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Key trading fees, creator keeps chat revenue</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator owns content, users own access keys</td>
                   </tr>
                   <tr>
-                    <td className="border border-slate-300 p-3 font-semibold text-slate-600 font-exo">Patreon</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Subscription tiers for creator support</td>
-                    <td className="border border-slate-300 p-3 text-red-700 font-exo font-semibold">Regular content delivery to maintain subs</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator keeps 90-95%, platform takes 5-10%</td>
-                    <td className="border border-slate-300 p-3 text-slate-700 font-exo">Creator owns content, platform controls distribution</td>
+                    <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Lens Protocol</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">NFT-based social graph with follows/posts</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Active posting and community building</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator retains all content revenue</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Users own their social graph via NFTs</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Zora</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Everything is a token - hyper-speculative social tokens</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Constant hype and speculation maintenance</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Token trading, minting fees, speculation</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Token holders speculate on creator success</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Patreon</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Subscription tiers for creator support</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Regular content delivery to maintain subs</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator keeps 90-95%, platform takes 5-10%</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator owns content, platform controls distribution</td>
                   </tr>
                 </tbody>
               </table>
@@ -355,447 +331,398 @@ const Dapp = () => {
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <Card className="border-green-200 bg-green-50">
+            <Card className="border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/30">
               <CardHeader>
-                <CardTitle className="text-green-800 font-exo">DeHub Unique Advantages</CardTitle>
+                <CardTitle className="text-green-800 dark:text-green-300 font-exo">{t('dapp.uniqueAdvantages')}</CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="text-sm text-green-700 space-y-2 font-exo">
-                  <li>• <strong>Set and Forget:</strong> Content earns revenue forever without additional work</li>
-                  <li>• <strong>Fan Investment:</strong> Supporters financially benefit from creator success</li>
-                  <li>• <strong>Automatic Tokenisation:</strong> Every upload becomes a tradeable asset</li>
-                  <li>• <strong>Censorship Resistance:</strong> Sustained by shared computing power globally so you live forever onchain</li>
-                  <li>• <strong>Creator Control:</strong> Full control over token distribution strategy</li>
-                  <li>• <strong>Permissionless:</strong> No platform dependency for earnings</li>
+                <ul className="text-sm text-green-700 dark:text-green-400 space-y-2 font-exo">
+                  <li>• <strong>Set and Forget:</strong> {t('dapp.adv1')}</li>
+                  <li>• <strong>Fan Investment:</strong> {t('dapp.adv2')}</li>
+                  <li>• <strong>Automatic Tokenisation:</strong> {t('dapp.adv3')}</li>
+                  <li>• <strong>Censorship Resistance:</strong> {t('dapp.adv4')}</li>
+                  <li>• <strong>Creator Control:</strong> {t('dapp.adv5')}</li>
+                  <li>• <strong>Permissionless:</strong> {t('dapp.adv6')}</li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-blue-200 bg-blue-50">
+            <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
               <CardHeader>
-                <CardTitle className="text-blue-800 font-exo">Revolutionary Use Cases</CardTitle>
+                <CardTitle className="text-blue-800 dark:text-blue-300 font-exo">{t('dapp.revolutionaryUseCases')}</CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="text-sm text-blue-700 space-y-2 font-exo">
-                  <li>• <strong>Early Talent Investment:</strong> Discover and invest in rising creators</li>
-                  <li>• <strong>Content Portfolio Building:</strong> Diversify across multiple creators</li>
-                  <li>• <strong>Creator Funding:</strong> Raise capital for productions through fraction sales</li>
-                  <li>• <strong>Fan Loyalty Rewards:</strong> Give fractions to top supporters</li>
-                  <li>• <strong>Viral Content Betting:</strong> Speculate on which content will succeed</li>
-                  <li>• <strong>Passive Income Streams:</strong> Earn from successful content forever</li>
+                <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-2 font-exo">
+                  <li>• <strong>Early Talent Investment:</strong> {t('dapp.useCase1')}</li>
+                  <li>• <strong>Content Portfolio Building:</strong> {t('dapp.useCase2')}</li>
+                  <li>• <strong>Creator Funding:</strong> {t('dapp.useCase3')}</li>
+                  <li>• <strong>Fan Loyalty Rewards:</strong> {t('dapp.useCase4')}</li>
+                  <li>• <strong>Viral Content Betting:</strong> {t('dapp.useCase5')}</li>
+                  <li>• <strong>Passive Income Streams:</strong> {t('dapp.useCase6')}</li>
                 </ul>
               </CardContent>
             </Card>
           </div>
 
-          <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border border-purple-200 mt-8">
-            <h4 className="font-semibold text-royal-blue font-exo mb-3 flex items-center gap-2">
+          <div className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-950/30 dark:to-blue-950/30 p-6 rounded-lg border border-purple-200 dark:border-purple-800 mt-8">
+            <h4 className="font-semibold text-foreground font-exo mb-3 flex items-center gap-2">
               <Infinity className="w-5 h-5" />
-              The Future of Content Economics
+              {t('dapp.futureTitle')}
             </h4>
-            <p className="text-royal-blue/80 leading-relaxed font-exo">
-              DeHub's ERC-1155 fractionalised content model represents the evolution from temporary creator-fan relationships to 
-              permanent economic partnerships. By automatically tokenising every upload into 1,000 tradeable fractions, we're creating 
-              the first platform where content success directly and permanently benefits everyone involved - creators, fans, and investors - 
-              for all eternity, without requiring ongoing effort or platform dependency.
-            </p>
+            <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.futureDesc')}</p>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Customise and update your public profile or channel</h2>
-          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
-            Control what users can or can't see while being able to export your followers' data at any time. This gives you full ownership of your channel and allows you to take your business anywhere with you, no matter what happens.
-          </p>
+          <h2 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.profileTitle')}</h2>
+          <p className="text-foreground/80 leading-relaxed mb-6 font-exo">{t('dapp.profileDesc')}</p>
           
           <div className="my-6">
-            <img src="/lovable-uploads/05231fa1-3aa1-4ba6-973c-775c8e39c297.png" alt="User profile interface showing customizable profile settings and follower management" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+            <img src="/lovable-uploads/05231fa1-3aa1-4ba6-973c-775c8e39c297.png" alt="User profile interface" className="w-full rounded-lg border border-border shadow-sm" />
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Top Up Tokens In 2 Clicks</h2>
-          
-          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
-            We have our own in app currency, similar to Vbucks you get on Fortnite or TikTok coins, ours are called DeHub Tokens or DHB for short. You will see these as gold coins across the app. You need DHB tokens to transact across the app and use the services such as tips, subs & more. Top up in 2 clicks with below.
-          </p>
+          <h2 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.topUpTitle')}</h2>
+          <p className="text-foreground/80 leading-relaxed mb-6 font-exo">{t('dapp.topUpDesc')}</p>
           
           <Card>
             <CardHeader>
-              <CardTitle className="text-xl text-royal-blue flex items-center gap-2">
-                Direct
+              <CardTitle className="text-xl text-foreground flex items-center gap-2">
+                {t('dapp.directTitle')}
                 <CreditCard className="w-5 h-5" />
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
-                <a href="https://dehub.io/dpay" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border hover:bg-slate-100 transition-colors cursor-pointer">
+                <a href="https://dehub.io/dpay" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-muted rounded-lg border hover:bg-muted/80 transition-colors cursor-pointer">
                   <div>
-                    <h4 className="font-semibold text-slate-700 font-exo">dehub.io/dpay</h4>
-                    <p className="text-slate-600 font-exo">Direct purchase with Stripe</p>
+                    <h4 className="font-semibold text-foreground font-exo">dehub.io/dpay</h4>
+                    <p className="text-muted-foreground font-exo">{t('dapp.dpayDesc')}</p>
                   </div>
-                  <ExternalLink className="w-5 h-5 text-slate-400" />
+                  <ExternalLink className="w-5 h-5 text-muted-foreground" />
                 </a>
 
                 <div className="grid md:grid-cols-3 gap-4">
-                  <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                  <div className="p-4 bg-green-50 dark:bg-green-950/30 rounded-lg border border-green-200 dark:border-green-800">
                     <div className="flex items-center gap-2 mb-2">
-                      <Zap className="w-5 h-5 text-green-600" />
-                      <h4 className="font-semibold text-green-800 font-exo">DeHub Token</h4>
+                      <Zap className="w-5 h-5 text-green-600 dark:text-green-400" />
+                      <h4 className="font-semibold text-green-800 dark:text-green-300 font-exo">{t('dapp.dehubTokenTitle')}</h4>
                     </div>
-                    <p className="text-green-700 text-sm font-exo">
-                      Tokens are used for subscribing to creators, tipping streamers or unlocking content. The more you hold, the lower your fees are and the more superpowers you unlock like timeline trend boosts and verification badges.
-                    </p>
+                    <p className="text-green-700 dark:text-green-400 text-sm font-exo">{t('dapp.dehubTokenDesc')}</p>
                   </div>
 
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-950/30 rounded-lg border border-blue-200 dark:border-blue-800">
                     <div className="flex items-center gap-2 mb-2">
-                      <CreditCard className="w-5 h-5 text-blue-600" />
-                      <h4 className="font-semibold text-blue-800 font-exo">Instant Payments</h4>
+                      <CreditCard className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                      <h4 className="font-semibold text-blue-800 dark:text-blue-300 font-exo">{t('dapp.instantPayments')}</h4>
                     </div>
-                    <p className="text-blue-700 text-sm font-exo">
-                      Using stripe, you can buy tokens instantly and seamlessly into whatever account you're logged into. DeHub makes tokens simple and for all. If you need more support, just pop up in our 24/7 live community chat and ask for admin support.
-                    </p>
+                    <p className="text-blue-700 dark:text-blue-400 text-sm font-exo">{t('dapp.instantPaymentsDesc')}</p>
                   </div>
 
-                  <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                  <div className="p-4 bg-purple-50 dark:bg-purple-950/30 rounded-lg border border-purple-200 dark:border-purple-800">
                     <div className="flex items-center gap-2 mb-2">
-                      <Shield className="w-5 h-5 text-purple-600" />
-                      <h4 className="font-semibold text-purple-800 font-exo">Secure Gateway</h4>
+                      <Shield className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+                      <h4 className="font-semibold text-purple-800 dark:text-purple-300 font-exo">{t('dapp.secureGateway')}</h4>
                     </div>
-                    <p className="text-purple-700 text-sm font-exo">
-                      All payment details are encrypted and processed securely by Stripe, we can't access or store your sensitive information or card details giving you ultimate peace of mind.
-                    </p>
+                    <p className="text-purple-700 dark:text-purple-400 text-sm font-exo">{t('dapp.secureGatewayDesc')}</p>
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
 
-          <div className="bg-amber-50 border-l-4 border-amber-400 p-6 mt-6 rounded-r-lg">
-            <h4 className="font-semibold text-amber-800 font-exo mb-3 flex items-center gap-2">
+          <div className="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-400 p-6 mt-6 rounded-r-lg">
+            <h4 className="font-semibold text-amber-800 dark:text-amber-300 font-exo mb-3 flex items-center gap-2">
               <Shield className="w-5 h-5" />
-              Important Notice
+              {t('dapp.importantNotice')}
             </h4>
-            <p className="text-amber-800/90 leading-relaxed font-exo">
-              DeHub tokens serve as utility tokens within our ecosystem, similar to in-game currencies, and are not investment vehicles. While our blockchain infrastructure provides unprecedented transparency and verifiable on-chain data for educational purposes, all markets carry inherent risks. You could lose your entire investment due to market volatility, technical issues, security breaches, or unforeseen circumstances. Only participate with funds you can afford to lose completely. DeHub and its affiliates assume no responsibility for any financial losses incurred.
-            </p>
+            <p className="text-amber-800/90 dark:text-amber-400 leading-relaxed font-exo">{t('dapp.tokenDisclaimer')}</p>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Explore The App & Beyond</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.exploreTitle')}</h2>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.exploreDesc')}</p>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Search bars aggregate YouTube and other major streaming app APIs to save you juggling multiple apps, while the explore page also houses our live community chat and dedicated leaderboards for:
-          </p>
-          
-          <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 mb-4 font-exo">
+          <ul className="list-disc pl-6 space-y-1 text-foreground/80 mb-4 font-exo">
             <li>Most views (MV)</li>
             <li>Most subscribers (MS)</li>
             <li>Biggest earners (BE)</li>
             <li>Biggest spenders (BS)</li>
           </ul>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            That together will determine ad revenue share (RS). The exact algorithm to this is under beta and subject to change depending on revenue generated (RG)
-          </p>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.exploreFormula')}</p>
           
-          <div className="bg-sky-blue/10 p-4 rounded-lg mb-4 border border-sky-blue/20">
-            <code className="text-royal-blue font-exo">MV + MS + BE + BS = (RG / RS)</code>
+          <div className="bg-muted p-4 rounded-lg mb-4 border border-border">
+            <code className="text-foreground font-exo">MV + MS + BE + BS = (RG / RS)</code>
           </div>
           
-          <p className="text-royal-blue/80 leading-relaxed font-exo">
-            This is the core algorithm, and experimentations in rewards will continue on a trial and error basis until the perfect equilibrium is found.
-          </p>
+          <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.exploreAlgorithm')}</p>
         </section>
 
         <div className="my-6">
-          <img src="/lovable-uploads/e66cc5a1-ea1a-4e5b-8760-490c174f0b24.png" alt="DeHub streaming platform interface showing content feed with trending topics and creator leaderboard" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+          <img src="/lovable-uploads/e66cc5a1-ea1a-4e5b-8760-490c174f0b24.png" alt="DeHub streaming platform interface" className="w-full rounded-lg border border-border shadow-sm" />
         </div>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Flex Your Badge</h2>
-          <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Badge of Honour Model</h3>
-          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
-            The more you $DHB tokens you hold, the more rewarding it is, simple as that. This includes but is not limited to the Badge of Honour system that unlocks improved cosmetics on your public profile as well as further enhanced, premium features.
-          </p>
+          <h2 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.badgeTitle')}</h2>
+          <h3 className="text-xl font-medium text-foreground mb-3 font-exo">{t('dapp.badgeSubtitle')}</h3>
+          <p className="text-foreground/80 leading-relaxed mb-6 font-exo">{t('dapp.badgeDesc')}</p>
           
           <BadgeFlowchart />
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Tip Your Favourites</h2>
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Our Integrated tipping services across all uploads and live streams only come with a 10% fee, compared to the usual 60% charged by the likes of TikTok and other industry leaders while also having the ability to vote on video cancellations putting the power back into the viewer's hands.
-          </p>
-          
-          <p className="text-royal-blue/80 leading-relaxed mb-6 font-exo">
-            Tips received for creators and tips given by viewers are logged in separate leaderboards along with viewer counts and subscribers that determine shares in ad revenue. Stakeholders of DeHub tokens receive their proportionate shares of overall protocol profit.
-          </p>
+          <h2 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.tipTitle')}</h2>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.tipDesc1')}</p>
+          <p className="text-foreground/80 leading-relaxed mb-6 font-exo">{t('dapp.tipDesc2')}</p>
           
           <TippingFlowchart />
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Mine Through Content Moderation</h2>
-          <h3 className="text-xl font-medium text-royal-blue mb-3 font-exo">Decentralised moderation mining and revenue share model</h3>
+          <h2 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.mineTitle')}</h2>
+          <h3 className="text-xl font-medium text-foreground mb-3 font-exo">{t('dapp.mineSubtitle')}</h3>
           
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Only a few wallets hold over 50m $DHB tokens, of which most are operational wallets, with the remaining being known community members.
-          </p>
-          
-          <p className="text-royal-blue/80 leading-relaxed mb-4 font-exo">
-            Only the core team or top tier badge holders will have the power to instantly remove a video by burning the NFT associated. Subsequently, all the ad revenue generated and any play to earn bounties strapped to the video will be shared with all voting wallets to further deter bad actors and incentivise an engaged community.
-          </p>
-          
-          <p className="italic text-royal-blue/60 font-exo text-base text-sidebar-primary text-left py-0 my-[30px]">The Amount of $DHB required for all utility is a dynamic variable, so must be subject to be changed at any time in relation to price. Any changes will be announced publicly on all official channels.</p>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.mineDesc1')}</p>
+          <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.mineDesc2')}</p>
+          <p className="italic text-muted-foreground font-exo text-base text-left py-0 my-[30px]">{t('dapp.mineDynamic')}</p>
 
-          <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg border border-indigo-200 mb-6">
-            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Governance + Moderation System Design</h3>
-            <p className="text-royal-blue/80 leading-relaxed font-exo">
-              Our comprehensive governance and moderation system creates a fair, transparent, and community-driven platform 
-              that prevents centralized censorship while maintaining quality standards through economic incentives and advanced mechanisms.
-            </p>
+          <div className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-950/30 dark:to-purple-950/30 p-6 rounded-lg border border-indigo-200 dark:border-indigo-800 mb-6">
+            <h3 className="text-xl font-semibold text-foreground mb-3 font-exo">{t('dapp.govTitle')}</h3>
+            <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.govDesc')}</p>
           </div>
 
           <div className="space-y-8">
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Token Utility Design</h4>
-              <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">By default, our native governance token $DHB enables the following roles:</p>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Moderation staking</li>
-                <li>Voting on content disputes and platform rules</li>
-                <li>Curation and promotion of content</li>
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo">{t('dapp.tokenUtilityDesign')}</h4>
+              <p className="text-foreground/80 leading-relaxed mb-3 font-exo">{t('dapp.tokenUtilityDesc')}</p>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-4">
+                <li>{t('dapp.tokenUtilityRole1')}</li>
+                <li>{t('dapp.tokenUtilityRole2')}</li>
+                <li>{t('dapp.tokenUtilityRole3')}</li>
               </ul>
-              <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
-                <p className="text-blue-800 font-medium font-exo">
-                  <strong>Key Principle:</strong> More tokens = more influence, but influence ≠ unchecked power.
+              <div className="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-400 p-4 mb-4">
+                <p className="text-blue-800 dark:text-blue-300 font-medium font-exo">
+                  <strong>Key Principle:</strong> {t('dapp.keyPrinciple')}
                 </p>
               </div>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Quadratic Voting</h4>
-              <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
-                To reduce whale dominance:
-              </p>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>We use quadratic voting for key moderation decisions.</li>
-                <li>Example: Voting power = √(tokens staked)</li>
-                <li>So, staking 100 tokens = 10 votes, 10,000 tokens = 100 votes (not 10,000 votes).</li>
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo">{t('dapp.quadraticVoting')}</h4>
+              <p className="text-foreground/80 leading-relaxed mb-3 font-exo">{t('dapp.quadraticDesc')}</p>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-4">
+                <li>{t('dapp.quadratic1')}</li>
+                <li>{t('dapp.quadratic2')}</li>
+                <li>{t('dapp.quadratic3')}</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Moderation Staking Pools</h4>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Users can stake tokens to become moderators.</li>
-                <li>Each flagged piece of content enters a moderation queue.</li>
-                <li>Stakers vote on the outcome (ban, warn, ignore, etc).</li>
-                <li>Correct votes (as per final outcome) earn rewards; wrong votes may result in slashing.</li>
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo">{t('dapp.modStakingPools')}</h4>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-4">
+                <li>{t('dapp.modStaking1')}</li>
+                <li>{t('dapp.modStaking2')}</li>
+                <li>{t('dapp.modStaking3')}</li>
+                <li>{t('dapp.modStaking4')}</li>
               </ul>
-              <div className="bg-green-50 border-l-4 border-green-400 p-4 mb-4">
-                <p className="text-green-800 font-medium font-exo">
-                  <strong>Incentive:</strong> Stake = skin in the game. Higher-quality moderation = higher rewards.
+              <div className="bg-green-50 dark:bg-green-950/30 border-l-4 border-green-400 p-4 mb-4">
+                <p className="text-green-800 dark:text-green-300 font-medium font-exo">
+                  <strong>Incentive:</strong> {t('dapp.modStakingIncentive')}
                 </p>
               </div>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Delegated Moderation (for scaling)</h4>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Users can delegate their votes to trusted curators or moderation pools (think: staking to a validator in PoS).</li>
-                <li>Curators/moderators can be swapped anytime.</li>
-                <li>This allows passive users to participate in governance while rewarding active ones.</li>
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo">{t('dapp.delegatedMod')}</h4>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-4">
+                <li>{t('dapp.delegated1')}</li>
+                <li>{t('dapp.delegated2')}</li>
+                <li>{t('dapp.delegated3')}</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Content Tiering via Curation Markets</h4>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Users stake tokens to "curate" or promote content.</li>
-                <li>The market decides what rises (token-weighted attention), not an algorithm.</li>
-                <li>If bad content is boosted and flagged, curators may be slashed.</li>
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo">{t('dapp.contentTiering')}</h4>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-4">
+                <li>{t('dapp.curation1')}</li>
+                <li>{t('dapp.curation2')}</li>
+                <li>{t('dapp.curation3')}</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">DAO-Based Appeals</h4>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Content creators can appeal moderation decisions via DAO proposals.</li>
-                <li>Token holders vote (again with quadratic logic).</li>
-                <li>Helps prevent abuse by moderation cartels or brigading.</li>
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo">{t('dapp.daoAppeals')}</h4>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-4">
+                <li>{t('dapp.dao1')}</li>
+                <li>{t('dapp.dao2')}</li>
+                <li>{t('dapp.dao3')}</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Progressive Access Control</h4>
-              <p className="text-royal-blue/80 leading-relaxed mb-3 font-exo">
-                Instead of "1 token = 1 power", implement progressive caps:
-              </p>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Your influence decays beyond certain staking thresholds.</li>
-                <li>Encourages wider distribution of token holdings.</li>
-                <li>Could use sigmoid functions or bonding curves.</li>
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo">{t('dapp.progressiveAccess')}</h4>
+              <p className="text-foreground/80 leading-relaxed mb-3 font-exo">{t('dapp.progressiveDesc')}</p>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-4">
+                <li>{t('dapp.progressive1')}</li>
+                <li>{t('dapp.progressive2')}</li>
+                <li>{t('dapp.progressive3')}</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo">Incentive Flywheel</h4>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-4">
-                <li>Watchers earn token rewards for passive viewing (engagement mining).</li>
-                <li>Curators earn more if their promoted content performs well.</li>
-                <li>Moderators earn based on accuracy, rewarding good behaviour</li>
-                <li>Governance participants (voters on proposals) get small boosts for activity.</li>
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo">{t('dapp.incentiveFlywheel')}</h4>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-4">
+                <li>{t('dapp.flywheel1')}</li>
+                <li>{t('dapp.flywheel2')}</li>
+                <li>{t('dapp.flywheel3')}</li>
+                <li>{t('dapp.flywheel4')}</li>
               </ul>
-              <div className="bg-purple-50 border-l-4 border-purple-400 p-4 mb-6">
-                <p className="text-purple-800 font-medium font-exo">This creates a circular economy that drives participation & incentivises good beh</p>
+              <div className="bg-purple-50 dark:bg-purple-950/30 border-l-4 border-purple-400 p-4 mb-6">
+                <p className="text-purple-800 dark:text-purple-300 font-medium font-exo">{t('dapp.flywheelSummary')}</p>
               </div>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-royal-blue mb-4 font-exo flex items-center gap-2">
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-exo flex items-center gap-2">
                 <Shield className="w-5 h-5" />
-                🔐 Anti-Manipulation Measures
+                🔐 {t('dapp.antiManipulation')}
               </h4>
-              <ul className="list-disc pl-6 space-y-1 text-royal-blue/80 font-exo mb-6">
-                <li>Sybil resistance: Require staking + reputation for key votes.</li>
-                <li>Multi-signature council fallback: In case of DAO malfunction (only for emergencies).</li>
-                <li>Transparent moderation history: Every decision logged on-chain.</li>
+              <ul className="list-disc pl-6 space-y-1 text-foreground/80 font-exo mb-6">
+                <li>{t('dapp.anti1')}</li>
+                <li>{t('dapp.anti2')}</li>
+                <li>{t('dapp.anti3')}</li>
               </ul>
             </div>
-
-            
           </div>
 
           <div className="mt-8">
-            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Architecture</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.architecture')}</h3>
             <div className="my-6">
-              <img src="/lovable-uploads/a083bba0-a7c6-4c03-9a01-2402717f9f20.png" alt="Decentralized Streaming App Architecture showing interconnected components including Delegation Layer, Token, Users, Moderation Staking Pools, Content Curation Market, Quadratic Voting Engine, Governance Interface, DAO Appeals System, Reputation System, Frontend UI, Smart Contracts, and IPFS/Arweave storage" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+              <img src="/lovable-uploads/a083bba0-a7c6-4c03-9a01-2402717f9f20.png" alt="Decentralized Streaming App Architecture" className="w-full rounded-lg border border-border shadow-sm" />
             </div>
           </div>
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+          <h2 className="text-3xl font-bold text-foreground mb-6 font-exo flex items-center gap-3">
             <Video className="w-8 h-8" />
-            Live Streaming
+            {t('dapp.liveStreamingTitle')}
           </h2>
           
-          <div className="bg-gradient-to-r from-royal-blue/10 to-sky-blue/10 p-6 rounded-lg border border-royal-blue/20 mb-6">
-            <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Platform Overview</h3>
-            <p className="text-royal-blue/80 leading-relaxed font-exo">Our livestreaming platform leverages Livepeer for video streaming infrastructure, powered by a Next.js backend and frontend. Every livestream is permissionless and censorship resistant, offering creators unprecedented control and monetization opportunities while providing viewers with engaging, token-enabled experiences.</p>
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-lg border border-border mb-6">
+            <h3 className="text-xl font-semibold text-foreground mb-3 font-exo">{t('dapp.liveStreamOverview')}</h3>
+            <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.liveStreamDesc')}</p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 mb-8">
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                <CardTitle className="flex items-center gap-2 text-foreground font-exo">
                   <Zap className="w-5 h-5" />
-                  Key Features
+                  {t('dapp.keyFeatures')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-royal-blue/80 font-exo">
-                  <li>• NFT-backed livestreams minted on BNB or Base chain</li>
-                  <li>• Integrated tipping with visual effects and tiers</li>
-                  <li>• Token-gated access for exclusive content</li>
-                  <li>• Pay-per-view and bounty reward systems</li>
-                  <li>• Real-time chat and engagement metrics</li>
-                  <li>• Support for OBS/Streamlabs integration</li>
+                <ul className="space-y-2 text-foreground/80 font-exo">
+                  <li>• {t('dapp.keyFeat1')}</li>
+                  <li>• {t('dapp.keyFeat2')}</li>
+                  <li>• {t('dapp.keyFeat3')}</li>
+                  <li>• {t('dapp.keyFeat4')}</li>
+                  <li>• {t('dapp.keyFeat5')}</li>
+                  <li>• {t('dapp.keyFeat6')}</li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                <CardTitle className="flex items-center gap-2 text-foreground font-exo">
                   <Coins className="w-5 h-5" />
-                  Supported Tokens
+                  {t('dapp.supportedTokens')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {['DHB', 'FLOKI', 'USDC', 'USDT', 'BNB', 'ETH', 'PEPE', 'DOGE'].map(token => <span key={token} className="px-3 py-1 bg-royal-blue/10 text-royal-blue rounded-full text-sm font-medium font-exo">
+                  {['DHB', 'FLOKI', 'USDC', 'USDT', 'BNB', 'ETH', 'PEPE', 'DOGE'].map(token => <span key={token} className="px-3 py-1 bg-muted text-foreground rounded-full text-sm font-medium font-exo">
                       {token}
                     </span>)}
                 </div>
-                <p className="text-sm text-royal-blue/70 mt-3 font-exo">
-                  All tipping, token-gating, and bounty systems support these tokens
-                </p>
+                <p className="text-sm text-muted-foreground mt-3 font-exo">{t('dapp.supportedTokensDesc')}</p>
               </CardContent>
             </Card>
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Livestream Features</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.livestreamFeatures')}</h3>
             
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-              <Card className="border-green-200 bg-green-50">
+              <Card className="border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-green-800 dark:text-green-300 font-exo flex items-center gap-2">
                     <Zap className="w-4 h-4" />
-                    Stream Creation
+                    {t('dapp.streamCreation')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-green-700 space-y-1 font-exo">
-                    <li>• Instant NFT minting</li>
-                    <li>• On-chain registration</li>
-                    <li>• Customizable settings</li>
-                    <li>• Multi-network support</li>
+                  <ul className="text-sm text-green-700 dark:text-green-400 space-y-1 font-exo">
+                    <li>• {t('dapp.streamCreation1')}</li>
+                    <li>• {t('dapp.streamCreation2')}</li>
+                    <li>• {t('dapp.streamCreation3')}</li>
+                    <li>• {t('dapp.streamCreation4')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 bg-blue-50">
+              <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-blue-800 dark:text-blue-300 font-exo flex items-center gap-2">
                     <Coins className="w-4 h-4" />
-                    Tipping System
+                    {t('dapp.tippingSystem')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-blue-700 space-y-1 font-exo">
-                    <li>• Visual effects & tiers</li>
-                    <li>• Custom minimum amounts</li>
-                    <li>• Message attachments</li>
-                    <li>• Real-time rewards</li>
+                  <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-1 font-exo">
+                    <li>• {t('dapp.tipping1')}</li>
+                    <li>• {t('dapp.tipping2')}</li>
+                    <li>• {t('dapp.tipping3')}</li>
+                    <li>• {t('dapp.tipping4')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="border-purple-200 bg-purple-50">
+              <Card className="border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-purple-800 dark:text-purple-300 font-exo flex items-center gap-2">
                     <Shield className="w-4 h-4" />
-                    Token Gating
+                    {t('dapp.tokenGating')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-purple-700 space-y-1 font-exo">
-                    <li>• Balance-based access</li>
-                    <li>• Exclusive content</li>
-                    <li>• Multi-token support</li>
-                    <li>• Instant verification</li>
+                  <ul className="text-sm text-purple-700 dark:text-purple-400 space-y-1 font-exo">
+                    <li>• {t('dapp.gating1')}</li>
+                    <li>• {t('dapp.gating2')}</li>
+                    <li>• {t('dapp.gating3')}</li>
+                    <li>• {t('dapp.gating4')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="border-orange-200 bg-orange-50">
+              <Card className="border-orange-200 dark:border-orange-800 bg-orange-50 dark:bg-orange-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-orange-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-orange-800 dark:text-orange-300 font-exo flex items-center gap-2">
                     <Users className="w-4 h-4" />
-                    PPV & Bounties
+                    {t('dapp.ppvBounties')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-orange-700 space-y-1 font-exo">
-                    <li>• One-time payments</li>
-                    <li>• Viewer rewards</li>
-                    <li>• First-come basis</li>
-                    <li>• Custom distributions</li>
+                  <ul className="text-sm text-orange-700 dark:text-orange-400 space-y-1 font-exo">
+                    <li>• {t('dapp.ppv1')}</li>
+                    <li>• {t('dapp.ppv2')}</li>
+                    <li>• {t('dapp.ppv3')}</li>
+                    <li>• {t('dapp.ppv4')}</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -805,20 +732,20 @@ const Dapp = () => {
           <div className="grid gap-6 md:grid-cols-2 mt-8">
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                <CardTitle className="flex items-center gap-2 text-foreground font-exo">
                   <Settings className="w-5 h-5" />
-                  Streaming Methods
+                  {t('dapp.streamingMethods')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="p-3 bg-royal-blue/5 rounded-lg">
-                    <h4 className="font-semibold text-royal-blue font-exo">Web Streaming</h4>
-                    <p className="text-sm text-royal-blue/70 font-exo">Go live directly from your browser using your webcam</p>
+                  <div className="p-3 bg-muted rounded-lg">
+                    <h4 className="font-semibold text-foreground font-exo">{t('dapp.webStreaming')}</h4>
+                    <p className="text-sm text-muted-foreground font-exo">{t('dapp.webStreamingDesc')}</p>
                   </div>
-                  <div className="p-3 bg-royal-blue/5 rounded-lg">
-                    <h4 className="font-semibold text-royal-blue font-exo">External Streaming</h4>
-                    <p className="text-sm text-royal-blue/70 font-exo">Use OBS, Streamlabs, or other software with custom stream keys and server URLs</p>
+                  <div className="p-3 bg-muted rounded-lg">
+                    <h4 className="font-semibold text-foreground font-exo">{t('dapp.externalStreaming')}</h4>
+                    <p className="text-sm text-muted-foreground font-exo">{t('dapp.externalStreamingDesc')}</p>
                   </div>
                 </div>
               </CardContent>
@@ -826,255 +753,169 @@ const Dapp = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                <CardTitle className="flex items-center gap-2 text-foreground font-exo">
                   <Eye className="w-5 h-5" />
-                  Analytics & Metrics
+                  {t('dapp.analyticsMetrics')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-royal-blue/80 font-exo">Live Viewers</span>
-                    <span className="text-sm bg-green-100 text-green-800 px-2 py-1 rounded font-exo">Real-time</span>
+                    <span className="text-foreground/80 font-exo">{t('dapp.liveViewers')}</span>
+                    <span className="text-sm bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-300 px-2 py-1 rounded font-exo">{t('dapp.realtime')}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-royal-blue/80 font-exo">Tips Received</span>
-                    <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded font-exo">Multi-token</span>
+                    <span className="text-foreground/80 font-exo">{t('dapp.tipsReceived')}</span>
+                    <span className="text-sm bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 px-2 py-1 rounded font-exo">{t('dapp.multiToken')}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-royal-blue/80 font-exo">Stream Likes</span>
-                    <span className="text-sm bg-purple-100 text-purple-800 px-2 py-1 rounded font-exo">Engagement</span>
+                    <span className="text-foreground/80 font-exo">{t('dapp.streamLikes')}</span>
+                    <span className="text-sm bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-300 px-2 py-1 rounded font-exo">{t('dapp.engagement')}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-royal-blue/80 font-exo">Chat Activity</span>
-                    <span className="text-sm bg-orange-100 text-orange-800 px-2 py-1 rounded font-exo">Interactive</span>
+                    <span className="text-foreground/80 font-exo">{t('dapp.chatActivity')}</span>
+                    <span className="text-sm bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-300 px-2 py-1 rounded font-exo">{t('dapp.interactive')}</span>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </div>
 
-          <Card className="mt-6 border-sky-blue/30 bg-gradient-to-r from-sky-blue/10 to-royal-blue/10">
+          <Card className="mt-6 border-border bg-gradient-to-r from-accent/10 to-primary/10">
             <CardHeader>
-              <CardTitle className="text-royal-blue font-exo">Technical Infrastructure</CardTitle>
+              <CardTitle className="text-foreground font-exo">{t('dapp.techInfrastructure')}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 md:grid-cols-3">
-                <div className="p-3 bg-white/50 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue font-exo">Backend</h4>
-                  <p className="text-sm text-royal-blue/80 font-exo">Next.JS manages stream lifecycle, token-gating logic, NFT minting, and tipping systems</p>
+                <div className="p-3 bg-card/50 rounded-lg">
+                  <h4 className="font-semibold text-foreground font-exo">{t('dapp.backendLabel')}</h4>
+                  <p className="text-sm text-foreground/80 font-exo">{t('dapp.backendDesc')}</p>
                 </div>
-                <div className="p-3 bg-white/50 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue font-exo">Frontend</h4>
-                  <p className="text-sm text-royal-blue/80 font-exo">Next.js provides responsive UI/UX for streaming, chat, tipping, and stream management</p>
+                <div className="p-3 bg-card/50 rounded-lg">
+                  <h4 className="font-semibold text-foreground font-exo">{t('dapp.frontendLabel')}</h4>
+                  <p className="text-sm text-foreground/80 font-exo">{t('dapp.frontendDesc')}</p>
                 </div>
-                <div className="p-3 bg-white/50 rounded-lg">
-                  <h4 className="font-semibold text-royal-blue font-exo">Streaming</h4>
-                  <p className="text-sm text-royal-blue/80 font-exo">Livepeer handles video ingestion, delivery, and generates custom stream keys for external apps</p>
+                <div className="p-3 bg-card/50 rounded-lg">
+                  <h4 className="font-semibold text-foreground font-exo">{t('dapp.streamingLabel')}</h4>
+                  <p className="text-sm text-foreground/80 font-exo">{t('dapp.streamingLabelDesc')}</p>
                 </div>
               </div>
             </CardContent>
           </Card>
 
           <section className="mt-12">
-            <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-foreground mb-6 font-exo flex items-center gap-3">
               <Crown className="w-8 h-8" />
-              Subscriptions
+              {t('dapp.subscriptionsTitle')}
             </h2>
             
-            <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border border-purple-200 mb-6">
-              <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Revolutionary On-Chain Subscriptions</h3>
-              <p className="text-royal-blue/80 leading-relaxed font-exo">
-                DeHub is the first protocol to release fully on-chain subscriptions, transforming how creators monetize their content 
-                and build communities. Our subscription system combines the benefits of traditional creator subscriptions with the power 
-                of blockchain technology, creating tradeable subscription NFTs and unprecedented creator-subscriber relationships.
-              </p>
+            <div className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-950/30 dark:to-blue-950/30 p-6 rounded-lg border border-purple-200 dark:border-purple-800 mb-6">
+              <h3 className="text-xl font-semibold text-foreground mb-3 font-exo">{t('dapp.subsOverview')}</h3>
+              <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.subsDesc')}</p>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
-              <Card className="border-purple-200 bg-purple-50">
+              <Card className="border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-purple-800 dark:text-purple-300 font-exo flex items-center gap-2">
                     <Crown className="w-4 h-4" />
-                    Creator Control
+                    {t('dapp.subsCreatorControl')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-purple-700 space-y-2 font-exo">
-                    <li>• Set custom pricing for each tier</li>
-                    <li>• Define unique perks and benefits</li>
-                    <li>• Control subscription availability</li>
-                    <li>• Manage tier-specific content access</li>
-                    <li>• Track subscriber analytics</li>
+                  <ul className="text-sm text-purple-700 dark:text-purple-400 space-y-2 font-exo">
+                    <li>• {t('dapp.subsCc1')}</li>
+                    <li>• {t('dapp.subsCc2')}</li>
+                    <li>• {t('dapp.subsCc3')}</li>
+                    <li>• {t('dapp.subsCc4')}</li>
+                    <li>• {t('dapp.subsCc5')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 bg-blue-50">
+              <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-blue-800 dark:text-blue-300 font-exo flex items-center gap-2">
                     <Zap className="w-4 h-4" />
-                    NFT Integration
+                    {t('dapp.nftIntegration')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-blue-700 space-y-2 font-exo">
-                    <li>• Automatic NFT minting on purchase</li>
-                    <li>• Tradeable subscription assets</li>
-                    <li>• Secondary market liquidity</li>
-                    <li>• Proof of subscription ownership</li>
-                    <li>• Collectible subscription history</li>
+                  <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-2 font-exo">
+                    <li>• {t('dapp.nft1')}</li>
+                    <li>• {t('dapp.nft2')}</li>
+                    <li>• {t('dapp.nft3')}</li>
                   </ul>
                 </CardContent>
               </Card>
-
-              <Card className="border-green-200 bg-green-50">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
-                    <Lock className="w-4 h-4" />
-                    Exclusive Content
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="text-sm text-green-700 space-y-2 font-exo">
-                    <li>• Subscriber-only content uploads</li>
-                    <li>• Tier-based access control</li>
-                    <li>• Private group chats</li>
-                    <li>• Early access privileges</li>
-                    <li>• Premium community features</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">How It Works</h3>
-              
-              <div className="grid gap-6 md:grid-cols-2">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
-                      <Settings className="w-5 h-5" />
-                      For Creators
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Tier Creation</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Create multiple subscription tiers with custom pricing, limited availability, and unique perks tailored to different audience segments.</p>
-                      </div>
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Content Management</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Upload subscriber-exclusive content, organize tier-specific materials, and manage access permissions with granular control.</p>
-                      </div>
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Community Building</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Create dedicated group chats for different subscription tiers, fostering closer relationships with your most loyal supporters.</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
-                      <Users className="w-5 h-5" />
-                      For Subscribers
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">NFT Ownership</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Receive a unique NFT upon subscription purchase that serves as proof of access and can be traded on secondary markets.</p>
-                      </div>
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Exclusive Access</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Gain access to premium content, private community chats, and special perks based on your subscription tier level.</p>
-                      </div>
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Tradeable Assets</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Trade your subscription NFTs on secondary markets, potentially profiting from popular creator subscriptions or rare tier access.</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
 
             <div className="mt-8">
-              <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Community Features</h3>
+              <h3 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.communityFeatures')}</h3>
               
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                <Card className="border-indigo-200 bg-indigo-50">
+                <Card className="border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-950/30">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-indigo-800 font-exo flex items-center gap-2">
+                    <CardTitle className="text-lg text-indigo-800 dark:text-indigo-300 font-exo flex items-center gap-2">
                       <MessageCircle className="w-4 h-4" />
-                      Tier-Based Chats
+                      {t('dapp.tierBasedChats')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-indigo-700 font-exo">
-                      Create separate group chats for different subscription tiers, allowing for exclusive discussions and closer community interaction based on support level.
-                    </p>
+                    <p className="text-sm text-indigo-700 dark:text-indigo-400 font-exo">{t('dapp.tierChatsDesc')}</p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-pink-200 bg-pink-50">
+                <Card className="border-pink-200 dark:border-pink-800 bg-pink-50 dark:bg-pink-950/30">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-pink-800 font-exo flex items-center gap-2">
+                    <CardTitle className="text-lg text-pink-800 dark:text-pink-300 font-exo flex items-center gap-2">
                       <Crown className="w-4 h-4" />
-                      Premium Perks
+                      {t('dapp.premiumPerks')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-pink-700 font-exo">
-                      Offer exclusive perks like early access to content, private livestreams, personalized messages, merchandise discounts, and special recognition.
-                    </p>
+                    <p className="text-sm text-pink-700 dark:text-pink-400 font-exo">{t('dapp.premiumPerksDesc')}</p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-amber-200 bg-amber-50">
+                <Card className="border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-amber-800 font-exo flex items-center gap-2">
+                    <CardTitle className="text-lg text-amber-800 dark:text-amber-300 font-exo flex items-center gap-2">
                       <Eye className="w-4 h-4" />
-                      Subscriber Analytics
+                      {t('dapp.subscriberAnalytics')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-amber-700 font-exo">
-                      Track subscription metrics, engagement rates, tier performance, and community growth with comprehensive analytics and insights.
-                    </p>
+                    <p className="text-sm text-amber-700 dark:text-amber-400 font-exo">{t('dapp.subscriberAnalyticsDesc')}</p>
                   </CardContent>
                 </Card>
               </div>
             </div>
 
-            <Card className="mt-6 border-purple-200 bg-gradient-to-r from-purple-50 to-indigo-50">
+            <Card className="mt-6 border-purple-200 dark:border-purple-800 bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30">
               <CardHeader>
-                <CardTitle className="text-royal-blue font-exo">Subscription Benefits</CardTitle>
+                <CardTitle className="text-foreground font-exo">{t('dapp.subscriptionBenefits')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid gap-4 md:grid-cols-2">
                   <div>
-                    <h4 className="font-semibold text-royal-blue font-exo mb-2">For Creators</h4>
-                    <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
-                      <li>• Predictable recurring revenue stream</li>
-                      <li>• Stronger community engagement</li>
-                      <li>• Premium content monetization</li>
-                      <li>• Direct subscriber relationships</li>
-                      <li>• NFT royalties from secondary sales</li>
+                    <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.forCreators')}</h4>
+                    <ul className="text-sm text-foreground/80 space-y-1 font-exo">
+                      <li>• {t('dapp.forCreatorsSubs1')}</li>
+                      <li>• {t('dapp.forCreatorsSubs2')}</li>
+                      <li>• {t('dapp.forCreatorsSubs3')}</li>
+                      <li>• {t('dapp.forCreatorsSubs4')}</li>
+                      <li>• {t('dapp.forCreatorsSubs5')}</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-royal-blue font-exo mb-2">For Subscribers</h4>
-                    <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
-                      <li>• Exclusive content and community access</li>
-                      <li>• Tradeable subscription assets</li>
-                      <li>• Direct creator interaction</li>
-                      <li>• Investment potential through NFT trading</li>
-                      <li>• Supporting favorite creators directly</li>
+                    <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.forSubscribers')}</h4>
+                    <ul className="text-sm text-foreground/80 space-y-1 font-exo">
+                      <li>• {t('dapp.forSubs1')}</li>
+                      <li>• {t('dapp.forSubs2')}</li>
+                      <li>• {t('dapp.forSubs3')}</li>
+                      <li>• {t('dapp.forSubs4')}</li>
+                      <li>• {t('dapp.forSubs5')}</li>
                     </ul>
                   </div>
                 </div>
@@ -1083,100 +924,96 @@ const Dapp = () => {
           </section>
 
           <section className="mt-12">
-            <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-foreground mb-6 font-exo flex items-center gap-3">
               <MessageCircle className="w-8 h-8" />
-              Messages
+              {t('dapp.messagesTitle')}
             </h2>
             
-            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border border-blue-200 mb-6">
-              <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Secure, Private Communication</h3>
-              <p className="text-royal-blue/80 leading-relaxed font-exo">
-                DeHub's messaging system combines traditional social communication with Web3 innovation, offering encrypted messaging, 
-                monetized interactions, and advanced privacy controls. Connect with creators and community members through secure, 
-                decentralized communication that puts you in complete control of your conversations and data.
-              </p>
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 p-6 rounded-lg border border-blue-200 dark:border-blue-800 mb-6">
+              <h3 className="text-xl font-semibold text-foreground mb-3 font-exo">{t('dapp.messagesOverview')}</h3>
+              <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.messagesDesc')}</p>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
-              <Card className="border-blue-200 bg-blue-50">
+              <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-blue-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-blue-800 dark:text-blue-300 font-exo flex items-center gap-2">
                     <MessageCircle className="w-4 h-4" />
-                    Direct & Group Messaging
+                    {t('dapp.directGroupMessaging')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-blue-700 space-y-2 font-exo">
-                    <li>• Send direct messages to any platform user</li>
-                    <li>• Create group chats with multiple participants</li>
-                    <li>• Real-time message delivery and notifications</li>
-                    <li>• Rich media support for photos and videos</li>
-                    <li>• Cross-platform accessibility</li>
+                  <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-2 font-exo">
+                    <li>• {t('dapp.msg1')}</li>
+                    <li>• {t('dapp.msg2')}</li>
+                    <li>• {t('dapp.msg3')}</li>
+                    <li>• {t('dapp.msg4')}</li>
+                    <li>• {t('dapp.msg5')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="border-purple-200 bg-purple-50">
+              <Card className="border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-purple-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-purple-800 dark:text-purple-300 font-exo flex items-center gap-2">
                     <Shield className="w-4 h-4" />
-                    Privacy Controls
+                    {t('dapp.privacyControls')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-purple-700 space-y-2 font-exo">
-                    <li>• Block unwanted users instantly</li>
-                    <li>• Do Not Disturb modes for focused time</li>
-                    <li>• Custom privacy settings per contact</li>
-                    <li>• Anonymous messaging options</li>
-                    <li>• Granular notification controls</li>
+                  <ul className="text-sm text-purple-700 dark:text-purple-400 space-y-2 font-exo">
+                    <li>• {t('dapp.priv1')}</li>
+                    <li>• {t('dapp.priv2')}</li>
+                    <li>• {t('dapp.priv3')}</li>
+                    <li>• {t('dapp.priv4')}</li>
+                    <li>• {t('dapp.priv5')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="border-green-200 bg-green-50">
+              <Card className="border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/30">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg text-green-800 font-exo flex items-center gap-2">
+                  <CardTitle className="text-lg text-green-800 dark:text-green-300 font-exo flex items-center gap-2">
                     <Coins className="w-4 h-4" />
-                    Monetized Messaging
+                    {t('dapp.monetizedMessaging')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-green-700 space-y-2 font-exo">
-                    <li>• Paid DMs for priority message delivery</li>
-                    <li>• Premium messages appear at top of inbox</li>
-                    <li>• Custom pricing for exclusive access</li>
-                    <li>• Token-gated conversation starters</li>
-                    <li>• Creator monetization opportunities</li>
+                  <ul className="text-sm text-green-700 dark:text-green-400 space-y-2 font-exo">
+                    <li>• {t('dapp.mon1')}</li>
+                    <li>• {t('dapp.mon2')}</li>
+                    <li>• {t('dapp.mon3')}</li>
+                    <li>• {t('dapp.mon4')}</li>
+                    <li>• {t('dapp.mon5')}</li>
                   </ul>
                 </CardContent>
               </Card>
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Advanced Features</h3>
+              <h3 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.advancedFeatures')}</h3>
               
               <div className="grid gap-6 md:grid-cols-2">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                    <CardTitle className="flex items-center gap-2 text-foreground font-exo">
                       <Lock className="w-5 h-5" />
-                      Paywall Protected Content
+                      {t('dapp.paywallTitle')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-4">
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Media Monetization</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Share photos and videos locked behind custom paywalls, allowing recipients to unlock premium content for any supported token.</p>
+                      <div className="p-3 bg-muted rounded-lg">
+                        <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.mediaMonetization')}</h4>
+                        <p className="text-sm text-muted-foreground font-exo">{t('dapp.mediaMonDesc')}</p>
                       </div>
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Flexible Pricing</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Set custom unlock prices in DHB, USDC, ETH, or any supported cryptocurrency for exclusive message content.</p>
+                      <div className="p-3 bg-muted rounded-lg">
+                        <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.flexiblePricing')}</h4>
+                        <p className="text-sm text-muted-foreground font-exo">{t('dapp.flexiblePricingDesc')}</p>
                       </div>
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Preview System</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Recipients see message previews with clear unlock options, creating anticipation and driving engagement.</p>
+                      <div className="p-3 bg-muted rounded-lg">
+                        <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.previewSystem')}</h4>
+                        <p className="text-sm text-muted-foreground font-exo">{t('dapp.previewSystemDesc')}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -1184,24 +1021,24 @@ const Dapp = () => {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-royal-blue font-exo">
+                    <CardTitle className="flex items-center gap-2 text-foreground font-exo">
                       <Shield className="w-5 h-5" />
-                      End-to-End Encryption
+                      {t('dapp.e2eTitle')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-4">
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Military-Grade Security</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">All messages are encrypted end-to-end, ensuring only you and your intended recipients can read your conversations.</p>
+                      <div className="p-3 bg-muted rounded-lg">
+                        <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.militaryGrade')}</h4>
+                        <p className="text-sm text-muted-foreground font-exo">{t('dapp.militaryGradeDesc')}</p>
                       </div>
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Private by Design</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">No third parties, including DeHub, can access your message content. Your privacy is guaranteed by cryptographic protocols.</p>
+                      <div className="p-3 bg-muted rounded-lg">
+                        <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.privateByDesign')}</h4>
+                        <p className="text-sm text-muted-foreground font-exo">{t('dapp.privateByDesignDesc')}</p>
                       </div>
-                      <div className="p-3 bg-royal-blue/5 rounded-lg">
-                        <h4 className="font-semibold text-royal-blue font-exo mb-2">Secure Media Sharing</h4>
-                        <p className="text-sm text-royal-blue/70 font-exo">Photos, videos, and files are encrypted before transmission and stored securely on decentralized infrastructure.</p>
+                      <div className="p-3 bg-muted rounded-lg">
+                        <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.secureMediaSharing')}</h4>
+                        <p className="text-sm text-muted-foreground font-exo">{t('dapp.secureMediaDesc')}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -1210,91 +1047,91 @@ const Dapp = () => {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-2xl font-semibold text-royal-blue mb-4 font-exo">Message Types & Features</h3>
+              <h3 className="text-2xl font-semibold text-foreground mb-4 font-exo">{t('dapp.messageTypes')}</h3>
               
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                <Card className="border-indigo-200 bg-indigo-50">
+                <Card className="border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-950/30">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-indigo-800 font-exo">Standard Messages</CardTitle>
+                    <CardTitle className="text-lg text-indigo-800 dark:text-indigo-300 font-exo">{t('dapp.standardMessages')}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="text-sm text-indigo-700 space-y-1 font-exo">
-                      <li>• Free text messaging</li>
-                      <li>• Media attachments</li>
-                      <li>• Emoji reactions</li>
-                      <li>• Message forwarding</li>
+                    <ul className="text-sm text-indigo-700 dark:text-indigo-400 space-y-1 font-exo">
+                      <li>• {t('dapp.std1')}</li>
+                      <li>• {t('dapp.std2')}</li>
+                      <li>• {t('dapp.std3')}</li>
+                      <li>• {t('dapp.std4')}</li>
                     </ul>
                   </CardContent>
                 </Card>
 
-                <Card className="border-amber-200 bg-amber-50">
+                <Card className="border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-amber-800 font-exo">Priority Messages</CardTitle>
+                    <CardTitle className="text-lg text-amber-800 dark:text-amber-300 font-exo">{t('dapp.priorityMessages')}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="text-sm text-amber-700 space-y-1 font-exo">
-                      <li>• Paid delivery guarantee</li>
-                      <li>• Top-of-inbox placement</li>
-                      <li>• Enhanced notifications</li>
-                      <li>• Creator attention focus</li>
+                    <ul className="text-sm text-amber-700 dark:text-amber-400 space-y-1 font-exo">
+                      <li>• {t('dapp.pri1')}</li>
+                      <li>• {t('dapp.pri2')}</li>
+                      <li>• {t('dapp.pri3')}</li>
+                      <li>• {t('dapp.pri4')}</li>
                     </ul>
                   </CardContent>
                 </Card>
 
-                <Card className="border-rose-200 bg-rose-50">
+                <Card className="border-rose-200 dark:border-rose-800 bg-rose-50 dark:bg-rose-950/30">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-rose-800 font-exo">Premium Content</CardTitle>
+                    <CardTitle className="text-lg text-rose-800 dark:text-rose-300 font-exo">{t('dapp.premiumContent')}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="text-sm text-rose-700 space-y-1 font-exo">
-                      <li>• Paywall-protected media</li>
-                      <li>• Exclusive photo/video access</li>
-                      <li>• Custom unlock pricing</li>
-                      <li>• Creator revenue streams</li>
+                    <ul className="text-sm text-rose-700 dark:text-rose-400 space-y-1 font-exo">
+                      <li>• {t('dapp.prem1')}</li>
+                      <li>• {t('dapp.prem2')}</li>
+                      <li>• {t('dapp.prem3')}</li>
+                      <li>• {t('dapp.prem4')}</li>
                     </ul>
                   </CardContent>
                 </Card>
 
-                <Card className="border-emerald-200 bg-emerald-50">
+                <Card className="border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/30">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-emerald-800 font-exo">Group Features</CardTitle>
+                    <CardTitle className="text-lg text-emerald-800 dark:text-emerald-300 font-exo">{t('dapp.groupFeatures')}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="text-sm text-emerald-700 space-y-1 font-exo">
-                      <li>• Multi-user conversations</li>
-                      <li>• Admin controls</li>
-                      <li>• Member management</li>
-                      <li>• Shared media galleries</li>
+                    <ul className="text-sm text-emerald-700 dark:text-emerald-400 space-y-1 font-exo">
+                      <li>• {t('dapp.grp1')}</li>
+                      <li>• {t('dapp.grp2')}</li>
+                      <li>• {t('dapp.grp3')}</li>
+                      <li>• {t('dapp.grp4')}</li>
                     </ul>
                   </CardContent>
                 </Card>
               </div>
             </div>
 
-            <Card className="mt-6 border-cyan-200 bg-gradient-to-r from-cyan-50 to-blue-50">
+            <Card className="mt-6 border-cyan-200 dark:border-cyan-800 bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-950/30 dark:to-blue-950/30">
               <CardHeader>
-                <CardTitle className="text-royal-blue font-exo">Communication Revolution</CardTitle>
+                <CardTitle className="text-foreground font-exo">{t('dapp.commRevolution')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid gap-4 md:grid-cols-2">
                   <div>
-                    <h4 className="font-semibold text-royal-blue font-exo mb-2">For Creators</h4>
-                    <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
-                      <li>• Monetize direct fan interactions</li>
-                      <li>• Control message accessibility and pricing</li>
-                      <li>• Build exclusive communities through group chats</li>
-                      <li>• Share premium content with guaranteed security</li>
-                      <li>• Generate revenue from every interaction</li>
+                    <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.forCreators')}</h4>
+                    <ul className="text-sm text-foreground/80 space-y-1 font-exo">
+                      <li>• {t('dapp.commCreator1')}</li>
+                      <li>• {t('dapp.commCreator2')}</li>
+                      <li>• {t('dapp.commCreator3')}</li>
+                      <li>• {t('dapp.commCreator4')}</li>
+                      <li>• {t('dapp.commCreator5')}</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-royal-blue font-exo mb-2">For Users</h4>
-                    <ul className="text-sm text-royal-blue/80 space-y-1 font-exo">
-                      <li>• Secure, private communication guaranteed</li>
-                      <li>• Access exclusive content from favorite creators</li>
-                      <li>• Priority messaging for important conversations</li>
-                      <li>• Complete control over privacy and notifications</li>
-                      <li>• Seamless integration with Web3 features</li>
+                    <h4 className="font-semibold text-foreground font-exo mb-2">{t('dapp.commForUsers')}</h4>
+                    <ul className="text-sm text-foreground/80 space-y-1 font-exo">
+                      <li>• {t('dapp.commUser1')}</li>
+                      <li>• {t('dapp.commUser2')}</li>
+                      <li>• {t('dapp.commUser3')}</li>
+                      <li>• {t('dapp.commUser4')}</li>
+                      <li>• {t('dapp.commUser5')}</li>
                     </ul>
                   </div>
                 </div>
@@ -1303,65 +1140,57 @@ const Dapp = () => {
           </section>
 
           <section className="mt-12">
-            <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo">SuperPowers</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6 font-exo">{t('dapp.superPowersTitle')}</h2>
             
             <div className="space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed font-exo">App super powers provide users with hacks to boost engagement or raise awareness. Think of it like boosted posts on legacy social platforms, however not limited to just companies or products, anyone can get involved. Paid in DHB tokens, the price fluctuates due to auction style mechanic. Badge holders also unlock a number of superpowers depending on tier.</p>
+              <p className="text-lg text-muted-foreground leading-relaxed font-exo">{t('dapp.superPowersDesc')}</p>
               
               <div className="grid gap-6 md:grid-cols-2">
-                <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
+                <Card className="border-border hover:border-primary/40 transition-colors">
                   <CardHeader>
-                    <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                    <CardTitle className="text-foreground font-exo flex items-center gap-2">
                       <TrendingUp className="w-5 h-5" />
-                      1) Trend Jacker
+                      {t('dapp.trendJacker')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 font-exo">
-                      Have your desired topic appear on the trending list
-                    </p>
+                    <p className="text-muted-foreground font-exo">{t('dapp.trendJackerDesc')}</p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
+                <Card className="border-border hover:border-primary/40 transition-colors">
                   <CardHeader>
-                    <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                    <CardTitle className="text-foreground font-exo flex items-center gap-2">
                       <Zap className="w-5 h-5" />
-                      2) Timeline Bomber
+                      {t('dapp.timelineBomber')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 font-exo">
-                      Appear on the timeline of all profiles you follow
-                    </p>
+                    <p className="text-muted-foreground font-exo">{t('dapp.timelineBomberDesc')}</p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
+                <Card className="border-border hover:border-primary/40 transition-colors">
                   <CardHeader>
-                    <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                    <CardTitle className="text-foreground font-exo flex items-center gap-2">
                       <Eye className="w-5 h-5" />
-                      3) Precision Strike
+                      {t('dapp.precisionStrike')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 font-exo">
-                      Appear on the timeline of users following accounts you target
-                    </p>
+                    <p className="text-muted-foreground font-exo">{t('dapp.precisionStrikeDesc')}</p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-royal-blue/20 hover:border-royal-blue/40 transition-colors">
+                <Card className="border-border hover:border-primary/40 transition-colors">
                   <CardHeader>
-                    <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                    <CardTitle className="text-foreground font-exo flex items-center gap-2">
                       <Crown className="w-5 h-5" />
-                      4) Harpoon
+                      {t('dapp.harpoon')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 font-exo">
-                      Appear on the timeline of selected badge holders, such as whales, sharks, etc
-                    </p>
+                    <p className="text-muted-foreground font-exo">{t('dapp.harpoonDesc')}</p>
                   </CardContent>
                 </Card>
               </div>
@@ -1369,22 +1198,18 @@ const Dapp = () => {
           </section>
 
           <section className="mt-12">
-            <h2 className="text-3xl font-bold text-royal-blue mb-6 font-exo">Fee Tier System</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6 font-exo">{t('dapp.feeTierTitle')}</h2>
             
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200 mb-6">
-              <h3 className="text-xl font-semibold text-royal-blue mb-3 font-exo">Badge-Based Fee Reduction</h3>
-              <p className="text-royal-blue/80 leading-relaxed font-exo">
-                Our revolutionary fee structure rewards $DHB token holders with significantly reduced platform fees. 
-                Starting at a standard 10% fee, each badge tier earned through increased $DHB holdings reduces fees by 0.69%, 
-                ultimately reaching just 1% for Megalodon badge holders - a 99% fee reduction for our most dedicated community members.
-              </p>
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 p-6 rounded-lg border border-green-200 dark:border-green-800 mb-6">
+              <h3 className="text-xl font-semibold text-foreground mb-3 font-exo">{t('dapp.feeTierSubtitle')}</h3>
+              <p className="text-foreground/80 leading-relaxed font-exo">{t('dapp.feeTierDesc')}</p>
             </div>
 
             <Card className="mb-6">
               <CardHeader>
-                <CardTitle className="text-royal-blue font-exo flex items-center gap-2">
+                <CardTitle className="text-foreground font-exo flex items-center gap-2">
                   <Percent className="w-5 h-5" />
-                  Platform Fee Structure
+                  {t('dapp.platformFeeStructure')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -1398,8 +1223,8 @@ const Dapp = () => {
                         </div>
                       </div>
                       <div className="text-right">
-                        <span className="text-lg font-bold text-royal-blue">{tier.fee}</span>
-                        <span className="text-sm text-muted-foreground ml-1">fee</span>
+                        <span className="text-lg font-bold text-foreground">{tier.fee}</span>
+                        <span className="text-sm text-muted-foreground ml-1">{t('dapp.fee')}</span>
                       </div>
                     </div>)}
                 </div>
@@ -1407,71 +1232,67 @@ const Dapp = () => {
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border-green-200 bg-green-50">
+              <Card className="border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/30">
                 <CardHeader>
-                  <CardTitle className="text-green-800 font-exo">Fee Calculation Benefits</CardTitle>
+                  <CardTitle className="text-green-800 dark:text-green-300 font-exo">{t('dapp.feeCalcBenefits')}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-green-700 space-y-2 font-exo">
-                    <li>• Linear 0.69% reduction per badge tier</li>
-                    <li>• Maximum 99% fee reduction for Megalodons</li>
-                    <li>• Applies to certain platform services</li>
-                    <li>• Instant activation upon badge qualification</li>
-                    <li>• Encourages long-term $DHB holding</li>
+                  <ul className="text-sm text-green-700 dark:text-green-400 space-y-2 font-exo">
+                    <li>• {t('dapp.feeCalc1')}</li>
+                    <li>• {t('dapp.feeCalc2')}</li>
+                    <li>• {t('dapp.feeCalc3')}</li>
+                    <li>• {t('dapp.feeCalc4')}</li>
+                    <li>• {t('dapp.feeCalc5')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 bg-blue-50">
+              <Card className="border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
                 <CardHeader>
-                  <CardTitle className="text-blue-800 font-exo">Affected Transactions</CardTitle>
+                  <CardTitle className="text-blue-800 dark:text-blue-300 font-exo">{t('dapp.affectedTransactions')}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-sm text-blue-700 space-y-2 font-exo">
-                    <li>• Tipping and donations</li>
-                    <li>• Pay-per-view purchases</li>
-                    <li>• Bounty distributions</li>
-                    <li>• Subscription payments</li>
-                    <li>• Tokenised upload trading</li>
+                  <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-2 font-exo">
+                    <li>• {t('dapp.affected1')}</li>
+                    <li>• {t('dapp.affected2')}</li>
+                    <li>• {t('dapp.affected3')}</li>
+                    <li>• {t('dapp.affected4')}</li>
+                    <li>• {t('dapp.affected5')}</li>
                   </ul>
                 </CardContent>
               </Card>
             </div>
 
-            <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg border border-purple-200 mt-6">
-              <h4 className="font-semibold text-royal-blue font-exo mb-3">Example Savings</h4>
+            <div className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30 p-6 rounded-lg border border-purple-200 dark:border-purple-800 mt-6">
+              <h4 className="font-semibold text-foreground font-exo mb-3">{t('dapp.exampleSavings')}</h4>
               <div className="grid gap-4 md:grid-cols-3">
-                <div className="p-3 bg-white/50 rounded-lg">
-                  <h5 className="font-medium text-royal-blue font-exo">$1,000 Transaction</h5>
-                  <p className="text-sm text-royal-blue/70 font-exo">Standard: $100 fee</p>
-                  <p className="text-sm text-royal-blue/70 font-exo">Megalodon: $10 fee</p>
-                  <p className="text-sm font-semibold text-green-700 font-exo">Saves: $90</p>
+                <div className="p-3 bg-card/50 rounded-lg">
+                  <h5 className="font-medium text-foreground font-exo">$1,000 Transaction</h5>
+                  <p className="text-sm text-muted-foreground font-exo">Standard: $100 fee</p>
+                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $10 fee</p>
+                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $90</p>
                 </div>
-                <div className="p-3 bg-white/50 rounded-lg">
-                  <h5 className="font-medium text-royal-blue font-exo">$10,000 Transaction</h5>
-                  <p className="text-sm text-royal-blue/70 font-exo">Standard: $1,000 fee</p>
-                  <p className="text-sm text-royal-blue/70 font-exo">Megalodon: $100 fee</p>
-                  <p className="text-sm font-semibold text-green-700 font-exo">Saves: $900</p>
+                <div className="p-3 bg-card/50 rounded-lg">
+                  <h5 className="font-medium text-foreground font-exo">$10,000 Transaction</h5>
+                  <p className="text-sm text-muted-foreground font-exo">Standard: $1,000 fee</p>
+                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $100 fee</p>
+                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $900</p>
                 </div>
-                <div className="p-3 bg-white/50 rounded-lg">
-                  <h5 className="font-medium text-royal-blue font-exo">$100,000 Transaction</h5>
-                  <p className="text-sm text-royal-blue/70 font-exo">Standard: $10,000 fee</p>
-                  <p className="text-sm text-royal-blue/70 font-exo">Megalodon: $1,000 fee</p>
-                  <p className="text-sm font-semibold text-green-700 font-exo">Saves: $9,000</p>
+                <div className="p-3 bg-card/50 rounded-lg">
+                  <h5 className="font-medium text-foreground font-exo">$100,000 Transaction</h5>
+                  <p className="text-sm text-muted-foreground font-exo">Standard: $10,000 fee</p>
+                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $1,000 fee</p>
+                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $9,000</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-amber-50 border-l-4 border-amber-400 p-6 mt-6 rounded-r-lg">
-              <h4 className="font-semibold text-amber-800 font-exo mb-3 flex items-center gap-2">
+            <div className="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-400 p-6 mt-6 rounded-r-lg">
+              <h4 className="font-semibold text-amber-800 dark:text-amber-300 font-exo mb-3 flex items-center gap-2">
                 <Banknote className="w-5 h-5" />
-                Important Fee Disclaimer
+                {t('dapp.feeDisclaimer')}
               </h4>
-              <p className="text-amber-800/90 leading-relaxed font-exo">
-                Fees only apply to certain services such as tips, subscriptions, pay-per-views, and watch2earn bounties. 
-                Users can send tokens to other users for free across the app and make use of our abstraction tools to do it 
-                with no wallet address or private key management required.
-              </p>
+              <p className="text-amber-800/90 dark:text-amber-400 leading-relaxed font-exo">{t('dapp.feeDisclaimerDesc')}</p>
             </div>
           </section>
 
@@ -1479,10 +1300,8 @@ const Dapp = () => {
           <section className="mt-8">
             <Card>
               <CardHeader>
-                <CardTitle>2025 Shake Up</CardTitle>
-                <CardDescription>
-                  Latest product design slides and strategic updates for 2025.
-                </CardDescription>
+                <CardTitle>{t('dapp.shakeUpTitle')}</CardTitle>
+                <CardDescription>{t('dapp.shakeUpDesc')}</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="w-full overflow-hidden rounded-lg">
