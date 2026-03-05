@@ -14,9 +14,6 @@ import { raffleContent } from '@/data/raffleContent';
 import { getNewPostBySlug, excludedTitles } from '@/data/newPosts';
 import { useBlogData } from '@/hooks/useBlogData';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { raffleContent } from '@/data/raffleContent';
-import { getNewPostBySlug, excludedTitles } from '@/data/newPosts';
-import { useBlogData } from '@/hooks/useBlogData';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
