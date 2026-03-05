@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Search, Tag } from 'lucide-react';
 import { BlogTag } from '@/types/blog';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface BlogSearchAndFilterProps {
   searchQuery: string;
@@ -18,22 +18,22 @@ export const BlogSearchAndFilter: React.FC<BlogSearchAndFilterProps> = ({
   setSelectedTag,
   allTags
 }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="bg-plain-white rounded-2xl border border-sky-blue/20 p-6">
       <div className="flex flex-col lg:flex-row gap-4">
-        {/* Search */}
         <div className="flex-1 relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-royal-blue/40 w-5 h-5" />
           <input
             type="text"
-            placeholder="Search blog posts..."
+            placeholder={t('blog.searchPlaceholder')}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-10 pr-4 py-3 border border-sky-blue/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-middle-blue/20 focus:border-middle-blue font-exo"
           />
         </div>
 
-        {/* Tag Filter */}
         <div className="lg:w-64 relative">
           <Tag className="absolute left-3 top-1/2 transform -translate-y-1/2 text-royal-blue/40 w-5 h-5" />
           <select
@@ -41,7 +41,7 @@ export const BlogSearchAndFilter: React.FC<BlogSearchAndFilterProps> = ({
             onChange={(e) => setSelectedTag(e.target.value)}
             className="w-full pl-10 pr-4 py-3 border border-sky-blue/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-middle-blue/20 focus:border-middle-blue font-exo appearance-none bg-white"
           >
-            <option value="">All Tags</option>
+            <option value="">{t('blog.allTags')}</option>
             {allTags.map(tag => (
               <option key={tag.name} value={tag.name}>
                 {tag.name} ({tag.count})
@@ -50,7 +50,6 @@ export const BlogSearchAndFilter: React.FC<BlogSearchAndFilterProps> = ({
           </select>
         </div>
 
-        {/* Clear Filters */}
         {(searchQuery || selectedTag) && (
           <button
             onClick={() => {
@@ -59,7 +58,7 @@ export const BlogSearchAndFilter: React.FC<BlogSearchAndFilterProps> = ({
             }}
             className="px-4 py-3 border border-sky-blue/20 text-royal-blue rounded-lg hover:bg-sky-blue/10 transition-colors duration-200 font-exo"
           >
-            Clear Filters
+            {t('blog.clearFilters')}
           </button>
         )}
       </div>
