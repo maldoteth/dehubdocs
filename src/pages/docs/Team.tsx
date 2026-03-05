@@ -121,7 +121,7 @@ export default function Team() {
                   {member.socials.map((social, idx) => {
                     const SocialIcon = socialIcons[social.platform as keyof typeof socialIcons];
                     return (
-                      <Button key={idx} variant="outline" size="sm" asChild className="flex-1 min-w-0 bg-white text-black hover:bg-gray-100">
+                      <Button key={idx} variant="outline" size="sm" asChild className="flex-1 min-w-0 !bg-white !text-black hover:!bg-gray-100 !border-gray-300">
                         <a href={social.url} className="flex items-center justify-center" aria-label={social.platform}>
                           {social.platform === 'TikTok' ? (
                             <img src={tiktokLogo} alt="TikTok" className="w-4 h-4" />
