@@ -1,38 +1,38 @@
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
 import { Coins, Lock, TrendingUp, Users, Zap, Shield, ExternalLink } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+
 const TokenStake = () => {
-  return <div className="space-y-8">
+  const { t } = useLanguage();
+
+  const userFlowItems = t('tokenStake.userFlowItems') as unknown as string[];
+
+  return (
+    <div className="space-y-8">
       <div>
         <div className="flex items-center space-x-4 mb-4">
-          <h1 className="text-4xl font-bold text-royal-blue font-exo">Stake</h1>
-          <a href="https://dehub.net/staking" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-middle-blue hover:text-royal-blue transition-colors text-sm font-medium bg-sky-blue/10 px-3 py-1 rounded-lg hover:bg-sky-blue/20">
-            <span>Stake Now</span>
+          <h1 className="text-4xl font-bold text-foreground">{t('tokenStake.title')}</h1>
+          <a href="https://dehub.net/staking" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-primary hover:text-primary/80 transition-colors text-sm font-medium bg-primary/10 px-3 py-1 rounded-lg hover:bg-primary/20">
+            <span>{t('tokenStake.stakeNow')}</span>
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>
-        <p className="text-lg text-royal-blue/80 leading-relaxed">
-          Stake to access different club tiers the enhanced features across all d'apps and provide your computing power or storage space from with little as a mobile to mine your share of protocol revenue.
-        </p>
-        <p className="text-lg text-royal-blue/80 leading-relaxed mt-4">As further allocations will now be dynamic, dependant on protocol fees, designations will be subject to requirements at any given moment ensuring the protocol needs are at the forefront at all times. The staking protocol is also being upgraded currently with release on Base soon.</p>
+        <p className="text-lg text-muted-foreground leading-relaxed">{t('tokenStake.introDesc')}</p>
+        <p className="text-lg text-muted-foreground leading-relaxed mt-4">{t('tokenStake.introDesc2')}</p>
       </div>
 
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <Zap className="w-5 h-5 text-middle-blue" />
-            <span>Technicals</span>
+            <Zap className="w-5 h-5 text-primary" />
+            <span>{t('tokenStake.technicals')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-royal-blue/80 mb-4">
-            Joining clubs also unlocks the below badges that are displayed on your dehub.io profile, comments, uploads and live chat communications.
-          </p>
-          <p className="text-royal-blue/80">
-            Beyond the perks for the amount of $DHB staked, there are also three pre-defined tiers determined by stake duration which define user rewards.
-          </p>
+          <p className="text-muted-foreground mb-4">{t('tokenStake.technicalsDesc1')}</p>
+          <p className="text-muted-foreground">{t('tokenStake.technicalsDesc2')}</p>
         </CardContent>
       </Card>
 
@@ -40,36 +40,36 @@ const TokenStake = () => {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
-              <span>Tier 1</span>
-              <Badge variant="secondary">25% Rewards</Badge>
+              <span>{t('tokenStake.tier1')}</span>
+              <Badge variant="secondary">{t('tokenStake.tier1Rewards')}</Badge>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-royal-blue/80">Stake 1 to 2 quarters, and share 25% of rewards</p>
+            <p className="text-muted-foreground">{t('tokenStake.tier1Desc')}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
-              <span>Tier 2</span>
-              <Badge variant="secondary">25% Rewards</Badge>
+              <span>{t('tokenStake.tier2')}</span>
+              <Badge variant="secondary">{t('tokenStake.tier2Rewards')}</Badge>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-royal-blue/80">Stake 3 to 4 quarters, and share 25% of rewards</p>
+            <p className="text-muted-foreground">{t('tokenStake.tier2Desc')}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
-              <span>Tier 3</span>
-              <Badge variant="default" className="bg-middle-blue">50% Rewards</Badge>
+              <span>{t('tokenStake.tier3')}</span>
+              <Badge variant="default">{t('tokenStake.tier3Rewards')}</Badge>
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-royal-blue/80">Stake 5+ quarters, and share 50% of rewards</p>
+            <p className="text-muted-foreground">{t('tokenStake.tier3Desc')}</p>
           </CardContent>
         </Card>
       </div>
@@ -77,20 +77,15 @@ const TokenStake = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <Users className="w-5 h-5 text-middle-blue" />
-            <span>Staking User Flow</span>
+            <Users className="w-5 h-5 text-primary" />
+            <span>{t('tokenStake.userFlow')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <ul className="space-y-2 text-royal-blue/80">
-            <li>• Users stake $DHB tokens in staking pool, and choose one of 3 tiers to stake in a reward period. Users can't stake multiple tiers in the same reward period.</li>
-            <li>• Users can see their current shares on the tier which they have chosen to stake and total unlocked amount, as well as the token unlock date.</li>
-            <li>• Prior to the unlock date, the users can unstake only 88% of their staked tokens. Once they reach the unlock date, they can choose to unstake or restake free of fees.</li>
-            <li>• When users unstake, they receive back their original $DHB token allocation.</li>
-            <li>• Users can automatically restake or manually restake. Restaking starts from the time users confirm the `Restake` button. When restaking, users can change their original tier.</li>
-            <li>• DeHub team funds reward anytime, users get reward immediately.</li>
-            <li>• Users can claim their rewards anytime without unstaking if they have any to.</li>
-            <li>• Users can increase their staked amount in the current reward period, but this is only available for Tier 3 stakers.</li>
+          <ul className="space-y-2 text-muted-foreground">
+            {Array.isArray(userFlowItems) && userFlowItems.map((item, i) => (
+              <li key={i}>• {item}</li>
+            ))}
           </ul>
         </CardContent>
       </Card>
@@ -98,37 +93,31 @@ const TokenStake = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <TrendingUp className="w-5 h-5 text-middle-blue" />
-            <span>Reward Calculation</span>
+            <TrendingUp className="w-5 h-5 text-primary" />
+            <span>{t('tokenStake.rewardCalc')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <p className="text-royal-blue/80">
-            DeHub team funds reward at variable times dependant on protocol fees, with announcements to the community.
-          </p>
-          <p className="text-royal-blue/80">
-            Users might get rewards immediately from staking, or they might have to wait for injections depending on when they staked.
-          </p>
+          <p className="text-muted-foreground">{t('tokenStake.rewardCalcDesc1')}</p>
+          <p className="text-muted-foreground">{t('tokenStake.rewardCalcDesc2')}</p>
           
-          <div className="bg-sky-blue/10 p-4 rounded-lg">
-            <h4 className="font-semibold text-royal-blue mb-2">Calculation Formula:</h4>
-            <div className="space-y-2 text-sm text-royal-blue/80 font-mono">
-              <p>Locking percent = 100% * (Now - Staking start time) / Staking period</p>
-              <p>Staking amount = Current locked amount * Locking percent</p>
-              <p>Staking share of user = 100% * Staking amount</p>
-              <p>Rewards = Staking share * Funded rewards * Tier percent</p>
+          <div className="bg-primary/10 p-4 rounded-lg">
+            <h4 className="font-semibold text-foreground mb-2">{t('tokenStake.calcFormula')}</h4>
+            <div className="space-y-2 text-sm text-muted-foreground font-mono">
+              <p>{t('tokenStake.formulaLine1')}</p>
+              <p>{t('tokenStake.formulaLine2')}</p>
+              <p>{t('tokenStake.formulaLine3')}</p>
+              <p>{t('tokenStake.formulaLine4')}</p>
             </div>
           </div>
 
-          <div className="bg-middle-blue/10 p-4 rounded-lg">
-            <h4 className="font-semibold text-royal-blue mb-2">Example:</h4>
-            <p className="text-sm text-royal-blue/80">
-              User A, B, C stakes 1000 $DHB tokens on different tiers. Reward 1, 2, 3 indicates the times that 5000 $DHB tokens were injected as rewards by the DeHub team.
-            </p>
-            <ul className="text-sm text-royal-blue/80 mt-2 space-y-1">
-              <li>• User A staked on Tier 1 for 1 quarter</li>
-              <li>• User B staked on Tier 2 for 3 quarters after first rewarding</li>
-              <li>• User C staked on Tier 3 for 5 quarters after first rewarding</li>
+          <div className="bg-primary/5 p-4 rounded-lg">
+            <h4 className="font-semibold text-foreground mb-2">{t('tokenStake.example')}</h4>
+            <p className="text-sm text-muted-foreground">{t('tokenStake.exampleDesc')}</p>
+            <ul className="text-sm text-muted-foreground mt-2 space-y-1">
+              <li>• {t('tokenStake.exampleA')}</li>
+              <li>• {t('tokenStake.exampleB')}</li>
+              <li>• {t('tokenStake.exampleC')}</li>
             </ul>
           </div>
         </CardContent>
@@ -137,22 +126,20 @@ const TokenStake = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <Lock className="w-5 h-5 text-middle-blue" />
-            <span>Restake Rules</span>
+            <Lock className="w-5 h-5 text-primary" />
+            <span>{t('tokenStake.restakeRules')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <p className="text-royal-blue/80">
-            Users can choose either automatic or manual restaking, during harvest. For automatic restaking, simply click the restake button and watch as the magic unfolds on chain. For the manual process, simply unstake, play about with your metamask for a while then follow the original staking process.
-          </p>
+          <p className="text-muted-foreground">{t('tokenStake.restakeDesc')}</p>
           
-          <div className="bg-amber-50 border border-amber-200 p-4 rounded-lg">
-            <h4 className="font-semibold text-amber-800 mb-2">Important Notes:</h4>
-            <ul className="text-sm text-amber-700 space-y-1">
-              <li>• Restaking means unstake all the unlocked/locked tokens and stake again</li>
-              <li>• Users can use the automatic restake button before they reach the unlock date yet this comes at a 12% fee, outside of harvest dates</li>
-              <li>• When automatically restake, users can change locking period</li>
-              <li>• If users force to restake locked tokens manually, only 88% of total amount will stake in the pool and 12% will be transferred to the dev wallet</li>
+          <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 p-4 rounded-lg">
+            <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-2">{t('tokenStake.importantNotes')}</h4>
+            <ul className="text-sm text-yellow-700 dark:text-yellow-300 space-y-1">
+              <li>• {t('tokenStake.restakeNote1')}</li>
+              <li>• {t('tokenStake.restakeNote2')}</li>
+              <li>• {t('tokenStake.restakeNote3')}</li>
+              <li>• {t('tokenStake.restakeNote4')}</li>
             </ul>
           </div>
         </CardContent>
@@ -161,74 +148,54 @@ const TokenStake = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <Coins className="w-5 h-5 text-middle-blue" />
-            <span>How to Stake</span>
+            <Coins className="w-5 h-5 text-primary" />
+            <span>{t('tokenStake.howToStake')}</span>
           </CardTitle>
-          <CardDescription>
-            The steps are very simple and consist of minimal clicks or technical requirements.
-          </CardDescription>
+          <CardDescription>{t('tokenStake.howToStakeDesc')}</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div className="text-center p-4 bg-sky-blue/10 rounded-lg">
-              <div className="w-8 h-8 bg-middle-blue text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">1</div>
-              <p className="font-semibold text-royal-blue">Connect Wallet</p>
-            </div>
-            <div className="text-center p-4 bg-sky-blue/10 rounded-lg">
-              <div className="w-8 h-8 bg-middle-blue text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">2</div>
-              <p className="font-semibold text-royal-blue">Click "Stake" Button</p>
-            </div>
-            <div className="text-center p-4 bg-sky-blue/10 rounded-lg">
-              <div className="w-8 h-8 bg-middle-blue text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">3</div>
-              <p className="font-semibold text-royal-blue">Input Amount & Duration</p>
-            </div>
-            <div className="text-center p-4 bg-sky-blue/10 rounded-lg">
-              <div className="w-8 h-8 bg-middle-blue text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">4</div>
-              <p className="font-semibold text-royal-blue">Confirm Transaction</p>
-            </div>
+            {[t('tokenStake.step1'), t('tokenStake.step2'), t('tokenStake.step3'), t('tokenStake.step4')].map((step, i) => (
+              <div key={i} className="text-center p-4 bg-primary/10 rounded-lg">
+                <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">{i + 1}</div>
+                <p className="font-semibold text-foreground">{step}</p>
+              </div>
+            ))}
           </div>
-          <p className="text-sm text-royal-blue/60 mt-4">
-            Note: during the first transaction you will have to approve the staking contract first. This will happen only once.
-          </p>
+          <p className="text-sm text-muted-foreground mt-4">{t('tokenStake.stakeNote')}</p>
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
-          <CardTitle>How Staking Rewards are Generated</CardTitle>
+          <CardTitle>{t('tokenStake.howRewardsGenerated')}</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-royal-blue/80 mb-4">
-            Staking rewards are generated from all fees taken by the network's streams of revenue as well as a base allocation from initial injection.
-          </p>
-          
-          <h4 className="font-semibold text-royal-blue mb-3">Fee Sources:</h4>
-          <ul className="space-y-2 text-royal-blue/80">
-            <li>• Fees from in app services like subscriptions, PPV, Watch2Earn, paid DMs and more.</li>
-            <li>• DeHub premium: ad free usage & access to AI toolkits via monthly / annual fees.</li>
-            <li>• Token & NFT primary sales & secondary trading fees.</li>
-            <li>• Advertising across video, lives & scroll feeds.</li>
-            <li>• Partner launches and airdrops.</li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <p className="text-muted-foreground mb-4">{t('tokenStake.howRewardsDesc')}</p>
+          <h4 className="font-semibold text-foreground mb-3">{t('tokenStake.feeSources')}</h4>
+          <ul className="space-y-2 text-muted-foreground">
+            <li>• {t('tokenStake.feeSource1')}</li>
+            <li>• {t('tokenStake.feeSource2')}</li>
+            <li>• {t('tokenStake.feeSource3')}</li>
+            <li>• {t('tokenStake.feeSource4')}</li>
+            <li>• {t('tokenStake.feeSource5')}</li>
           </ul>
         </CardContent>
       </Card>
 
-      <Card className="border-amber-200 bg-amber-50">
+      <Card className="border-yellow-200 bg-yellow-50 dark:bg-yellow-900/20 dark:border-yellow-800">
         <CardHeader>
-          <CardTitle className="flex items-center space-x-2 text-amber-800">
+          <CardTitle className="flex items-center space-x-2 text-yellow-800 dark:text-yellow-200">
             <Shield className="w-5 h-5" />
-            <span>Disclaimer</span>
+            <span>{t('tokenStake.disclaimer')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-sm text-amber-700 leading-relaxed">
-            DeHub tokens are strictly for utility purposes in the same way that any in-game or in-app digital tokens or currencies and strictly not an investment. As our token lives on-chain, we can offer added utility as well as unprecedented levels of verifiable transparency. The above data is solely compiled for transparency, educational and informative purposes only. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs we release. Markets are highly volatile, especially ones in their infancy like ours. You could also lose all your money due to a hack, competency failure or technical error. Therefore, you should only ever spend what you can afford to lose.
-          </p>
+          <p className="text-sm text-yellow-700 dark:text-yellow-300 leading-relaxed">{t('tokenStake.disclaimerText')}</p>
         </CardContent>
       </Card>
-    </div>;
+    </div>
+  );
 };
+
 export default TokenStake;
