@@ -70,12 +70,12 @@ const Dapp = () => {
           <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.uploadDesc')}</p>
           
           <ul className="list-disc pl-6 space-y-2 text-foreground/80 font-exo">
-            <li><strong>Watch2earn:</strong> {t('dapp.uploadWatch2earn')}</li>
-            <li><strong>Token gated content:</strong> {t('dapp.uploadTokenGated')}</li>
-            <li><strong>PPV events:</strong> {t('dapp.uploadPPV')}</li>
-            <li><strong>NFT collectables:</strong> {t('dapp.uploadNFT')}</li>
-            <li><strong>Earn:</strong> {t('dapp.uploadEarn')}</li>
-            <li><strong>Subscribers:</strong> {t('dapp.uploadSubscribers')}</li>
+            <li><strong>{t('dapp.labelWatch2earn')}</strong> {t('dapp.uploadWatch2earn')}</li>
+            <li><strong>{t('dapp.labelTokenGated')}</strong> {t('dapp.uploadTokenGated')}</li>
+            <li><strong>{t('dapp.labelPPV')}</strong> {t('dapp.uploadPPV')}</li>
+            <li><strong>{t('dapp.labelNFT')}</strong> {t('dapp.uploadNFT')}</li>
+            <li><strong>{t('dapp.labelEarn')}</strong> {t('dapp.uploadEarn')}</li>
+            <li><strong>{t('dapp.labelSubscribers')}</strong> {t('dapp.uploadSubscribers')}</li>
           </ul>
         </section>
 
@@ -236,31 +236,31 @@ const Dapp = () => {
                   </tr>
                   <tr>
                     <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Friend.tech</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Social keys for access to creator chats</td>
-                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Continuous engagement required</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Key trading fees, creator keeps chat revenue</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator owns content, users own access keys</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.friendTechModel')}</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">{t('dapp.friendTechValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.friendTechRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.friendTechOwnership')}</td>
                   </tr>
                   <tr>
                     <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Lens Protocol</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">NFT-based social graph with follows/posts</td>
-                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Active posting and community building</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator retains all content revenue</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Users own their social graph via NFTs</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.lensModel')}</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">{t('dapp.lensValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.lensRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.lensOwnership')}</td>
                   </tr>
                   <tr>
                     <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Zora</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Everything is a token - hyper-speculative social tokens</td>
-                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Constant hype and speculation maintenance</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Token trading, minting fees, speculation</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Token holders speculate on creator success</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.zoraModel')}</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">{t('dapp.zoraValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.zoraRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.zoraOwnership')}</td>
                   </tr>
                   <tr>
                     <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Patreon</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Subscription tiers for creator support</td>
-                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Regular content delivery to maintain subs</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator keeps 90-95%, platform takes 5-10%</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator owns content, platform controls distribution</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.patreonModel')}</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">{t('dapp.patreonValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.patreonRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.patreonOwnership')}</td>
                   </tr>
                 </tbody>
               </table>
@@ -274,12 +274,12 @@ const Dapp = () => {
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-green-700 dark:text-green-400 space-y-2 font-exo">
-                  <li>• <strong>Set and Forget:</strong> {t('dapp.adv1')}</li>
-                  <li>• <strong>Fan Investment:</strong> {t('dapp.adv2')}</li>
-                  <li>• <strong>Automatic Tokenisation:</strong> {t('dapp.adv3')}</li>
-                  <li>• <strong>Censorship Resistance:</strong> {t('dapp.adv4')}</li>
-                  <li>• <strong>Creator Control:</strong> {t('dapp.adv5')}</li>
-                  <li>• <strong>Permissionless:</strong> {t('dapp.adv6')}</li>
+                   <li>• <strong>{t('dapp.labelSetAndForget')}</strong> {t('dapp.adv1')}</li>
+                   <li>• <strong>{t('dapp.labelFanInvestment')}</strong> {t('dapp.adv2')}</li>
+                   <li>• <strong>{t('dapp.labelAutoTokenisation')}</strong> {t('dapp.adv3')}</li>
+                   <li>• <strong>{t('dapp.labelCensorshipResistance')}</strong> {t('dapp.adv4')}</li>
+                   <li>• <strong>{t('dapp.labelCreatorControl')}</strong> {t('dapp.adv5')}</li>
+                  <li>• <strong>{t('dapp.labelPermissionless')}</strong> {t('dapp.adv6')}</li>
                 </ul>
               </CardContent>
             </Card>
@@ -290,12 +290,12 @@ const Dapp = () => {
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-2 font-exo">
-                  <li>• <strong>Early Talent Investment:</strong> {t('dapp.useCase1')}</li>
-                  <li>• <strong>Content Portfolio Building:</strong> {t('dapp.useCase2')}</li>
-                  <li>• <strong>Creator Funding:</strong> {t('dapp.useCase3')}</li>
-                  <li>• <strong>Fan Loyalty Rewards:</strong> {t('dapp.useCase4')}</li>
-                  <li>• <strong>Viral Content Betting:</strong> {t('dapp.useCase5')}</li>
-                  <li>• <strong>Passive Income Streams:</strong> {t('dapp.useCase6')}</li>
+                   <li>• <strong>{t('dapp.labelEarlyTalent')}</strong> {t('dapp.useCase1')}</li>
+                   <li>• <strong>{t('dapp.labelPortfolio')}</strong> {t('dapp.useCase2')}</li>
+                   <li>• <strong>{t('dapp.labelCreatorFunding')}</strong> {t('dapp.useCase3')}</li>
+                   <li>• <strong>{t('dapp.labelFanLoyalty')}</strong> {t('dapp.useCase4')}</li>
+                   <li>• <strong>{t('dapp.labelViralBetting')}</strong> {t('dapp.useCase5')}</li>
+                   <li>• <strong>{t('dapp.labelPassiveIncome')}</strong> {t('dapp.useCase6')}</li>
                 </ul>
               </CardContent>
             </Card>
@@ -383,10 +383,10 @@ const Dapp = () => {
           <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.exploreDesc')}</p>
           
           <ul className="list-disc pl-6 space-y-1 text-foreground/80 mb-4 font-exo">
-            <li>Most views (MV)</li>
-            <li>Most subscribers (MS)</li>
-            <li>Biggest earners (BE)</li>
-            <li>Biggest spenders (BS)</li>
+            <li>{t('dapp.leaderMV')}</li>
+            <li>{t('dapp.leaderMS')}</li>
+            <li>{t('dapp.leaderBE')}</li>
+            <li>{t('dapp.leaderBS')}</li>
           </ul>
           
           <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.exploreFormula')}</p>
@@ -441,8 +441,8 @@ const Dapp = () => {
                 <li>{t('dapp.tokenUtilityRole3')}</li>
               </ul>
               <div className="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-400 p-4 mb-4">
-                <p className="text-blue-800 dark:text-blue-300 font-medium font-exo">
-                  <strong>Key Principle:</strong> {t('dapp.keyPrinciple')}
+                 <p className="text-blue-800 dark:text-blue-300 font-medium font-exo">
+                   <strong>{t('dapp.labelKeyPrinciple')}</strong> {t('dapp.keyPrinciple')}
                 </p>
               </div>
             </div>
@@ -466,8 +466,8 @@ const Dapp = () => {
                 <li>{t('dapp.modStaking4')}</li>
               </ul>
               <div className="bg-green-50 dark:bg-green-950/30 border-l-4 border-green-400 p-4 mb-4">
-                <p className="text-green-800 dark:text-green-300 font-medium font-exo">
-                  <strong>Incentive:</strong> {t('dapp.modStakingIncentive')}
+                 <p className="text-green-800 dark:text-green-300 font-medium font-exo">
+                   <strong>{t('dapp.labelIncentive')}</strong> {t('dapp.modStakingIncentive')}
                 </p>
               </div>
             </div>
@@ -1151,11 +1151,11 @@ const Dapp = () => {
               </CardHeader>
               <CardContent>
                 <div className="grid gap-2">
-                  {feeReductions.map((tier, index) => <div key={tier.badge} className="flex items-center justify-between p-3 rounded-lg border bg-muted/20">
+                  {feeReductions.map((tier, index) => <div key={tier.badgeKey} className="flex items-center justify-between p-3 rounded-lg border bg-muted/20">
                       <div className="flex items-center gap-3">
-                        {tier.image ? <img src={tier.image} alt={tier.badge} className="w-8 h-8 object-contain" /> : <div className="w-8 h-8 rounded-full bg-gray-300"></div>}
+                        {tier.image ? <img src={tier.image} alt={t(`dapp.${tier.badgeKey}`)} className="w-8 h-8 object-contain" /> : <div className="w-8 h-8 rounded-full bg-gray-300"></div>}
                         <div className="flex flex-col">
-                          <span className="font-medium">{tier.badge}</span>
+                          <span className="font-medium">{t(`dapp.${tier.badgeKey}`)}</span>
                           <span className="text-sm text-muted-foreground">{tier.threshold}</span>
                         </div>
                       </div>
@@ -1203,24 +1203,24 @@ const Dapp = () => {
             <div className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30 p-6 rounded-lg border border-purple-200 dark:border-purple-800 mt-6">
               <h4 className="font-semibold text-foreground font-exo mb-3">{t('dapp.exampleSavings')}</h4>
               <div className="grid gap-4 md:grid-cols-3">
-                <div className="p-3 bg-card/50 rounded-lg">
-                  <h5 className="font-medium text-foreground font-exo">$1,000 Transaction</h5>
-                  <p className="text-sm text-muted-foreground font-exo">Standard: $100 fee</p>
-                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $10 fee</p>
-                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $90</p>
-                </div>
-                <div className="p-3 bg-card/50 rounded-lg">
-                  <h5 className="font-medium text-foreground font-exo">$10,000 Transaction</h5>
-                  <p className="text-sm text-muted-foreground font-exo">Standard: $1,000 fee</p>
-                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $100 fee</p>
-                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $900</p>
-                </div>
-                <div className="p-3 bg-card/50 rounded-lg">
-                  <h5 className="font-medium text-foreground font-exo">$100,000 Transaction</h5>
-                  <p className="text-sm text-muted-foreground font-exo">Standard: $10,000 fee</p>
-                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $1,000 fee</p>
-                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $9,000</p>
-                </div>
+                 <div className="p-3 bg-card/50 rounded-lg">
+                   <h5 className="font-medium text-foreground font-exo">$1,000 {t('dapp.exTransaction')}</h5>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exStandard')} $100</p>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exMegalodon')} $10</p>
+                   <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">{t('dapp.exSaves')} $90</p>
+                 </div>
+                 <div className="p-3 bg-card/50 rounded-lg">
+                   <h5 className="font-medium text-foreground font-exo">$10,000 {t('dapp.exTransaction')}</h5>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exStandard')} $1,000</p>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exMegalodon')} $100</p>
+                   <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">{t('dapp.exSaves')} $900</p>
+                 </div>
+                 <div className="p-3 bg-card/50 rounded-lg">
+                   <h5 className="font-medium text-foreground font-exo">$100,000 {t('dapp.exTransaction')}</h5>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exStandard')} $10,000</p>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exMegalodon')} $1,000</p>
+                   <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">{t('dapp.exSaves')} $9,000</p>
+                 </div>
               </div>
             </div>
 
