@@ -86,8 +86,23 @@ import { et } from '@/i18n/et';
 import { lt } from '@/i18n/lt';
 import { mi } from '@/i18n/mi';
 import { ca } from '@/i18n/ca';
+import { az } from '@/i18n/az';
+import { ku } from '@/i18n/ku';
+import { jv } from '@/i18n/jv';
+import { so } from '@/i18n/so';
+import { af } from '@/i18n/af';
+import { kn } from '@/i18n/kn';
+import { yue } from '@/i18n/yue';
+import { wuu } from '@/i18n/wuu';
+import { ti } from '@/i18n/ti';
+import { bho } from '@/i18n/bho';
+import { arz } from '@/i18n/arz';
+import { apd } from '@/i18n/apd';
+import { ary } from '@/i18n/ary';
+import { pcm } from '@/i18n/pcm';
+import { ceb } from '@/i18n/ceb';
 
-export type Language = 'en' | 'ar' | 'zh' | 'zh_tw' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu' | 'gsw' | 'hr' | 'sv' | 'no' | 'da' | 'fi' | 'he' | 'zu' | 'qu' | 'ht' | 'yo' | 'am' | 'ig' | 'ha' | 'ka' | 'uz' | 'kk' | 'om' | 'my' | 'si' | 'be' | 'km' | 'ne' | 'pa' | 'te' | 'mr' | 'sr' | 'bg' | 'sk' | 'lo' | 'cjy' | 'aec' | 'mag' | 'skr' | 'hne' | 'acm' | 'tts' | 'acw' | 'ctg' | 'dcc' | 'dyu' | 'sck' | 'wes' | 'syl' | 'ajp' | 'ayn' | 'mnp' | 'pbt' | 'rkt' | 'mn' | 'bo' | 'lv' | 'et' | 'lt' | 'mi' | 'ca';
+export type Language = 'en' | 'ar' | 'zh' | 'zh_tw' | 'tr' | 'es' | 'de' | 'fr' | 'bn' | 'ru' | 'pt' | 'hi' | 'ja' | 'ko' | 'id' | 'it' | 'nl' | 'pl' | 'vi' | 'th' | 'uk' | 'sw' | 'ms' | 'fa' | 'ta' | 'ur' | 'tl' | 'ro' | 'cs' | 'el' | 'hu' | 'gsw' | 'hr' | 'sv' | 'no' | 'da' | 'fi' | 'he' | 'zu' | 'qu' | 'ht' | 'yo' | 'am' | 'ig' | 'ha' | 'ka' | 'uz' | 'kk' | 'om' | 'my' | 'si' | 'be' | 'km' | 'ne' | 'pa' | 'te' | 'mr' | 'sr' | 'bg' | 'sk' | 'lo' | 'cjy' | 'aec' | 'mag' | 'skr' | 'hne' | 'acm' | 'tts' | 'acw' | 'ctg' | 'dcc' | 'dyu' | 'sck' | 'wes' | 'syl' | 'ajp' | 'ayn' | 'mnp' | 'pbt' | 'rkt' | 'mn' | 'bo' | 'lv' | 'et' | 'lt' | 'mi' | 'ca' | 'az' | 'ku' | 'jv' | 'so' | 'af' | 'kn' | 'yue' | 'wuu' | 'ti' | 'bho' | 'arz' | 'apd' | 'ary' | 'pcm' | 'ceb';
 
 export interface LanguageOption {
   code: Language;
