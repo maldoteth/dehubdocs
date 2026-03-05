@@ -1,360 +1,170 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Users, Zap, Globe, CreditCard } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+
+const Section = ({ title, icon, children }: { title: string; icon?: React.ReactNode; children: React.ReactNode }) => (
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-xl font-exo flex items-center gap-2">
+        {icon}
+        {title}
+      </CardTitle>
+    </CardHeader>
+    <CardContent className="space-y-4 text-muted-foreground leading-relaxed font-exo">
+      {children}
+    </CardContent>
+  </Card>
+);
+
+const SubSection = ({ title, children }: { title: string; children: React.ReactNode }) => (
+  <div>
+    <h3 className="font-semibold text-foreground mb-2">{title}</h3>
+    {children}
+  </div>
+);
+
+const ItemList = ({ items }: { items: string[] }) => (
+  <ul className="list-disc list-inside space-y-1 ml-4">
+    {items.map((item, i) => <li key={i}>{item}</li>)}
+  </ul>
+);
+
 const TermsOfService = () => {
-  return <div className="space-y-8">
-      {/* Header */}
+  const { t } = useLanguage();
+
+  return (
+    <div className="space-y-8">
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold text-royal-blue font-exo">
-          DeHub Terms of Service
-        </h1>
-        
-        <div className="text-royal-blue/70 space-y-1 font-exo">
-          <p><strong>Last updated:</strong> December 2, 2024</p>
-          <p><strong>Effective:</strong> December 2, 2024</p>
+        <h1 className="text-4xl font-bold text-foreground font-exo">{t('termsOfService.title')}</h1>
+        <div className="text-muted-foreground space-y-1 font-exo">
+          <p><strong>{t('termsOfService.lastUpdated')}</strong> {t('termsOfService.lastUpdatedDate')}</p>
+          <p><strong>{t('termsOfService.effective')}</strong> {t('termsOfService.effectiveDate')}</p>
         </div>
       </div>
 
-      {/* Introduction */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-2xl text-royal-blue font-exo flex items-center">
-            <Globe className="w-6 h-6 mr-2" />
-            Welcome to DeHub!
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <p>
-            Thank you for using the DeHub platform and the products, services and features we make available to you as part of the platform (collectively, the "Service").
-          </p>
-        </CardContent>
-      </Card>
+      <Section title={t('termsOfService.welcomeTitle')} icon={<Globe className="w-6 h-6" />}>
+        <p>{t('termsOfService.welcomeText')}</p>
+      </Section>
 
-      {/* Our Service */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Our Service</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <p>
-            The Service allows you to discover, share and monetize content in a completely decentralized environment, provides a forum for people to connect, inform, and inspire others across the globe, and acts as a distribution platform for original content creators without centralized restrictions. We provide a censorship-resistant platform where anyone can monetize their content through community governance rather than corporate control.
-          </p>
-          <p>
-            DeHub operates as a decentralized protocol where content moderation is handled by community governance, ensuring that only illegal content or content violating community-approved guidelines may be restricted.
-          </p>
-        </CardContent>
-      </Card>
+      <Section title={t('termsOfService.ourService')}>
+        <p>{t('termsOfService.ourServiceText1')}</p>
+        <p>{t('termsOfService.ourServiceText2')}</p>
+      </Section>
 
-      {/* Software Developers */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Software Developers</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <p>
-            The entity providing the Service is DeLabs LTD (14204474), office 4, 219 Kensington High Street, London, UK, W8 6BD (referred to as "DeHub", "we", "us", or "our").
-          </p>
-          <p>
-            DeLabs is hired by the DeHub DAO to assist in developing the ecosystem however full control and governance lies with the token holders, the community. DeLabs LTD holds no ownership or decision making powers of the DeHub ecosystem and can be replaced, or removed as and when required.
-          </p>
-        </CardContent>
-      </Card>
+      <Section title={t('termsOfService.softwareDevelopers')}>
+        <p>{t('termsOfService.softwareDevText1')}</p>
+        <p>{t('termsOfService.softwareDevText2')}</p>
+      </Section>
 
-      {/* Who May Use */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Who May Use the Service?</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-6 text-royal-blue/80 leading-relaxed font-exo">
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Age Requirements</h3>
-            <p>You may use the Service if you are at least 14 years old; however, children of all ages may use the Service if enabled by a parent or legal guardian.</p>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Permission by Parent or Guardian</h3>
-            <p>If you are under 18, you must have your parent or legal guardian's permission to use the Service. Please have them read this Agreement with you.</p>
-          </div>
+      <Section title={t('termsOfService.whoMayUse')}>
+        <SubSection title={t('termsOfService.ageRequirements')}>
+          <p>{t('termsOfService.ageRequirementsText')}</p>
+        </SubSection>
+        <SubSection title={t('termsOfService.parentPermission')}>
+          <p>{t('termsOfService.parentPermissionText')}</p>
+        </SubSection>
+        <SubSection title={t('termsOfService.businesses')}>
+          <p>{t('termsOfService.businessesText')}</p>
+        </SubSection>
+      </Section>
 
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Businesses</h3>
-            <p>If you are using the Service on behalf of a company or organisation, you confirm to us that you have authority to act on behalf of that entity, and that entity accepts this Agreement.</p>
-          </div>
-        </CardContent>
-      </Card>
+      <Section title={t('termsOfService.walletConnections')}>
+        <p>{t('termsOfService.walletText1')}</p>
+        <p>{t('termsOfService.walletText2')}</p>
+        <ItemList items={[t('termsOfService.walletItem1'), t('termsOfService.walletItem2'), t('termsOfService.walletItem3')]} />
+      </Section>
 
-      {/* Content and Wallets */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Wallet Connections and Identity</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <p>
-            You can use parts of the Service, such as browsing and discovering content, without connecting a wallet. However, you do need a compatible crypto wallet to use monetization features and participate in governance.
-          </p>
-          <p>
-            Creating content and participating in the platform economy requires wallet connection. You are fully responsible for:
-          </p>
-          <ul className="list-disc list-inside space-y-1 ml-4">
-            <li>Securing your wallet and private keys</li>
-            <li>All transactions made through your wallet</li>
-            <li>Understanding the irreversible nature of blockchain transactions</li>
-          </ul>
-        </CardContent>
-      </Card>
+      <Section title={t('termsOfService.tokenPurchases')} icon={<CreditCard className="w-5 h-5" />}>
+        <SubSection title={t('termsOfService.tokenUsage')}>
+          <p>{t('termsOfService.tokenUsageText')}</p>
+          <ItemList items={[t('termsOfService.tokenUsageItem1'), t('termsOfService.tokenUsageItem2'), t('termsOfService.tokenUsageItem3'), t('termsOfService.tokenUsageItem4')]} />
+        </SubSection>
+        <SubSection title={t('termsOfService.purchaseLimits')}>
+          <p>{t('termsOfService.purchaseLimitsText')}</p>
+        </SubSection>
+        <SubSection title={t('termsOfService.refundsPolicy')}>
+          <p>{t('termsOfService.refundsPolicyText')}</p>
+        </SubSection>
+        <SubSection title={t('termsOfService.feesAndGas')}>
+          <p>{t('termsOfService.feesAndGasText')}</p>
+        </SubSection>
+        <SubSection title={t('termsOfService.fiatOnRamp')}>
+          <p>{t('termsOfService.fiatOnRampText')}</p>
+          <ItemList items={[t('termsOfService.fiatOnRampItem1'), t('termsOfService.fiatOnRampItem2'), t('termsOfService.fiatOnRampItem3'), t('termsOfService.fiatOnRampItem4'), t('termsOfService.fiatOnRampItem5')]} />
+          <p className="mt-2">{t('termsOfService.fiatOnRampNote')}</p>
+        </SubSection>
+      </Section>
 
-      {/* Token Purchases */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo flex items-center">
-            <CreditCard className="w-5 h-5 mr-2" />
-            Token Purchases
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Token Usage</h3>
-            <p>
-              Tokens are used within our application for various activities including:
-            </p>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>Tipping content creators or profiles</li>
-              <li>Subscribing to creators</li>
-              <li>Unlocking premium content</li>
-              <li>Accessing super powers like trending boosts</li>
-            </ul>
-          </div>
+      <Section title={t('termsOfService.tokenProtection')} icon={<Shield className="w-5 h-5" />}>
+        <SubSection title={t('termsOfService.burnMint')}>
+          <p>{t('termsOfService.burnMintText')}</p>
+        </SubSection>
+      </Section>
 
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Purchase Limits</h3>
-            <p>
-              The maximum daily purchase limit via bank card is $500 USD equivalent. This limit is in place for security and regulatory compliance purposes.
-            </p>
-          </div>
+      <Section title={t('termsOfService.permissionsRestrictions')}>
+        <p>{t('termsOfService.permissionsText')}</p>
+        <SubSection title={t('termsOfService.notAllowed')}>
+          <ItemList items={Array.from({ length: 7 }, (_, i) => t(`termsOfService.notAllowedItem${i + 1}`))} />
+        </SubSection>
+      </Section>
 
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Refunds Policy</h3>
-            <p>Due to the irreversible nature of blockchain transactions, refunds are only applicable if sale is not as described or does not do what it's supposed to applicable in any capacity. All token purchases are final and cannot be reversed, canceled, or refunded unless the above conditions are broken.</p>
-          </div>
+      <Section title={t('termsOfService.monetizationRights')} icon={<Zap className="w-5 h-5" />}>
+        <p className="font-semibold text-foreground">{t('termsOfService.monetizationPrinciple')}</p>
+        <p>{t('termsOfService.monetizationText')}</p>
+        <ItemList items={[t('termsOfService.monetizationItem1'), t('termsOfService.monetizationItem2'), t('termsOfService.monetizationItem3')]} />
+        <p>{t('termsOfService.monetizationOwnership')}</p>
+      </Section>
 
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Fees and Gas Costs</h3>
-            <p>
-              Every token purchase includes an additional 1% fee to cover gas costs and service fees. These fees may vary based on network conditions and third-party service providers.
-            </p>
-          </div>
+      <Section title={t('termsOfService.communityGovernance')} icon={<Users className="w-5 h-5" />}>
+        <SubSection title={t('termsOfService.decentralizedModeration')}>
+          <p>{t('termsOfService.decentralizedModerationText')}</p>
+          <ItemList items={Array.from({ length: 4 }, (_, i) => t(`termsOfService.decentralizedModerationItem${i + 1}`))} />
+        </SubSection>
+        <SubSection title={t('termsOfService.contentRestrictions')}>
+          <p>{t('termsOfService.contentRestrictionsText')}</p>
+          <ItemList items={Array.from({ length: 3 }, (_, i) => t(`termsOfService.contentRestrictionsItem${i + 1}`))} />
+        </SubSection>
+      </Section>
 
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Fiat On-Ramp Services</h3>
-            <p>
-              We may provide access to third-party fiat on-ramp services to facilitate token purchases. These services are provided by independent third parties and are subject to their own terms and conditions. We are not responsible for:
-            </p>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>The availability or reliability of third-party payment processors</li>
-              <li>Payment processing delays or failures</li>
-              <li>Third-party service fees or charges</li>
-              <li>Compliance with local payment regulations in your jurisdiction</li>
-              <li>Customer support for payment-related issues (handled by the payment provider)</li>
-            </ul>
-            <p className="mt-2">
-              You agree to comply with all applicable laws and regulations regarding digital asset purchases in your jurisdiction.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
+      <Section title={t('termsOfService.rightsYouGrant')}>
+        <p>{t('termsOfService.rightsYouGrantText')}</p>
+        <SubSection title={t('termsOfService.licenseToDeHub')}>
+          <p>{t('termsOfService.licenseToDeHubText')}</p>
+        </SubSection>
+        <SubSection title={t('termsOfService.licenseToOthers')}>
+          <p>{t('termsOfService.licenseToOthersText')}</p>
+        </SubSection>
+      </Section>
 
-      {/* Token Protection Mechanisms */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo flex items-center">
-            <Shield className="w-5 h-5 mr-2" />
-            Token Protection Mechanisms
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Burn & Mint Function</h3>
-            <p>
-              DeHub retains the right to use the burn & mint function designed to protect our holders from attacks, hacks, exploits, user errors or exchange bankruptcies. This mechanism serves as a security measure to safeguard the community and maintain the integrity of the token ecosystem in extraordinary circumstances.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
+      <Section title={t('termsOfService.accountManagement')}>
+        <SubSection title={t('termsOfService.terminationByYou')}>
+          <p>{t('termsOfService.terminationByYouText')}</p>
+        </SubSection>
+        <SubSection title={t('termsOfService.restrictionsByDeHub')}>
+          <p>{t('termsOfService.restrictionsByDeHubText')}</p>
+          <ItemList items={[t('termsOfService.restrictionsItem1'), t('termsOfService.restrictionsItem2'), t('termsOfService.restrictionsItem3')]} />
+        </SubSection>
+      </Section>
 
-      {/* Permissions and Restrictions */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Permissions and Restrictions</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <p>You may access and use the Service as made available to you, as long as you comply with this Agreement and applicable law.</p>
-          
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">You are not allowed to:</h3>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>Use the Service to distribute content that is illegal under applicable law</li>
-              <li>Circumvent, disable, or interfere with security-related features of the Service</li>
-              <li>Use automated means to access the Service except as explicitly permitted</li>
-              <li>Collect personal information without consent</li>
-              <li>Use the Service to distribute spam or unwanted mass solicitations</li>
-              <li>Artificially manipulate engagement metrics through paid or incentivized interactions</li>
-              <li>Misuse reporting, flagging, or governance processes</li>
-            </ul>
-          </div>
-        </CardContent>
-      </Card>
+      <Section title={t('termsOfService.otherLegalTerms')}>
+        <SubSection title={t('termsOfService.disclaimerTitle')}>
+          <p>{t('termsOfService.disclaimerText')}</p>
+        </SubSection>
+        <SubSection title={t('termsOfService.limitationOfLiability')}>
+          <p>{t('termsOfService.limitationText')}</p>
+          <ItemList items={[t('termsOfService.limitationItem1'), t('termsOfService.limitationItem2'), t('termsOfService.limitationItem3'), t('termsOfService.limitationItem4')]} />
+        </SubSection>
+        <SubSection title={t('termsOfService.changesToAgreement')}>
+          <p>{t('termsOfService.changesToAgreementText')}</p>
+        </SubSection>
+      </Section>
 
-      {/* Monetization Rights */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo flex items-center">
-            <Zap className="w-5 h-5 mr-2" />
-            Decentralized Monetization Rights
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <p className="font-semibold text-royal-blue">
-            Core Principle: Anyone can monetize their content without centralized censorship.
-          </p>
-          <p>
-            Unlike traditional platforms, DeHub provides unrestricted monetization rights to all users, subject only to:
-          </p>
-          <ul className="list-disc list-inside space-y-1 ml-4">
-            <li>Legal compliance in applicable jurisdictions</li>
-            <li>Community governance decisions made through transparent voting</li>
-            <li>Basic technical requirements for platform functionality</li>
-          </ul>
-          <p>
-            You retain full ownership of your content and the right to monetize it through various mechanisms including tips, subscriptions, NFT sales, and other blockchain-based revenue streams.
-          </p>
-        </CardContent>
-      </Card>
-
-      {/* Content Governance */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo flex items-center">
-            <Users className="w-5 h-5 mr-2" />
-            Community Governance & Content Moderation
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Decentralized Moderation</h3>
-            <p>Content moderation on DeHub is handled through community governance mechanisms:</p>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>Token holders vote on content policies and enforcement actions</li>
-              <li>Transparent, on-chain voting processes for all moderation decisions</li>
-              <li>Appeals process managed by community governance</li>
-              <li>No single entity has unilateral censorship power</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Content Restrictions</h3>
-            <p>Content may only be restricted for:</p>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>Illegal content as defined by applicable law</li>
-              <li>Content violating community-approved guidelines through governance votes</li>
-              <li>Technical spam or malicious activities that threaten platform security</li>
-            </ul>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Rights You Grant */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Rights You Grant</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <p>You retain all ownership rights in your content. What belongs to you stays yours.</p>
-          
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">License to DeHub</h3>
-            <p>
-              By providing content to the Service, you grant DeHub a worldwide, non-exclusive, royalty-free license to host and distribute your content through the decentralized platform for the purpose of operating the Service.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">License to Other Users</h3>
-            <p>
-              You grant other users of the Service the right to access and view your content as enabled by the platform features, while you retain all monetization and ownership rights.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Account Management */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Account Management</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Termination by You</h3>
-            <p>You may stop using the Service at any time by disconnecting your wallet and ceasing to use the platform.</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Restrictions by DeHub</h3>
-            <p>Due to our decentralized nature, DeHub has limited ability to restrict access. Restrictions may only occur for:</p>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>Legal compliance requirements</li>
-              <li>Community governance decisions</li>
-              <li>Technical security threats to the platform</li>
-            </ul>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Legal Terms */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Other Legal Terms</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4 text-royal-blue/80 leading-relaxed font-exo">
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Disclaimer</h3>
-            <p>
-              DeHub operates as a decentralized protocol. We provide the platform "as is" without warranties. Due to the decentralized nature, we cannot guarantee continuous availability or specific performance metrics.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Limitation of Liability</h3>
-            <p>
-              As a decentralized platform, DeHub's liability is limited to the technical operation of the protocol. We are not responsible for:
-            </p>
-            <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>Content posted by users</li>
-              <li>Financial losses from crypto transactions</li>
-              <li>Community governance decisions</li>
-              <li>Third-party integrations or services</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-royal-blue mb-2">Changes to Agreement</h3>
-            <p>
-              Changes to these terms will be proposed through community governance mechanisms. Major changes require community approval through token holder voting.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Contact */}
-      <Card className="border-sky-blue/20">
-        <CardHeader>
-          <CardTitle className="text-xl text-royal-blue font-exo">Contact</CardTitle>
-        </CardHeader>
-        <CardContent className="text-royal-blue/80 leading-relaxed font-exo">
-          <p>
-            For questions about these Terms of Service, please engage with our community governance channels or submit proposals through the DAO mechanism.
-          </p>
-        </CardContent>
-      </Card>
-    </div>;
+      <Section title={t('termsOfService.contact')}>
+        <p>{t('termsOfService.contactText')}</p>
+      </Section>
+    </div>
+  );
 };
+
 export default TermsOfService;
