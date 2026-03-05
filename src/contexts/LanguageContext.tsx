@@ -160,6 +160,7 @@ export const languages: LanguageOption[] = [
   { code: 'lv', label: 'Latvian', nativeLabel: 'Latviešu', dir: 'ltr' },
   { code: 'lt', label: 'Lithuanian', nativeLabel: 'Lietuvių', dir: 'ltr' },
   { code: 'mag', label: 'Magahi', nativeLabel: 'मगही', dir: 'ltr' },
+  { code: 'ml', label: 'Malayalam', nativeLabel: 'മലയാളം', dir: 'ltr' },
   { code: 'ms', label: 'Malay', nativeLabel: 'Bahasa Melayu', dir: 'ltr' },
   { code: 'mi', label: 'Māori', nativeLabel: 'Te Reo Māori', dir: 'ltr' },
   { code: 'mr', label: 'Marathi', nativeLabel: 'मराठी', dir: 'ltr' },
