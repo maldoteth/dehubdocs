@@ -162,6 +162,7 @@ export const languages: LanguageOption[] = [
   { code: 'sv', label: 'Swedish', nativeLabel: 'Svenska', dir: 'ltr' },
   { code: 'syl', label: 'Sylheti', nativeLabel: 'ꠍꠤꠟꠐꠤ', dir: 'ltr' },
   { code: 'te', label: 'Telugu', nativeLabel: 'తెలుగు', dir: 'ltr' },
+  { code: 'bo', label: 'Tibetan', nativeLabel: 'བོད་སྐད', dir: 'ltr' },
   { code: 'gsw', label: 'Swiss German', nativeLabel: 'Schwiizerdütsch', dir: 'ltr' },
   { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்', dir: 'ltr' },
   { code: 'th', label: 'Thai', nativeLabel: 'ไทย', dir: 'ltr' },
