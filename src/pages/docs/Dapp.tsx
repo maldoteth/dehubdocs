@@ -8,91 +8,28 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const Dapp = () => {
   const { t } = useLanguage();
 
-  const feeReductions = [{
-    badge: "No Badge",
-    threshold: "< 10,000 $DHB",
-    fee: "10.00%",
-    color: "bg-gray-300",
-    image: null
-  }, {
-    badge: "Crab Badge",
-    threshold: "10,000+ $DHB",
-    fee: "9.31%",
-    color: "bg-orange-500",
-    image: "/lovable-uploads/60bc125c-8efd-4058-9e12-7ca393df4fce.png"
-  }, {
-    badge: "Lobster Badge",
-    threshold: "25k+ $DHB",
-    fee: "8.62%",
-    color: "bg-red-500",
-    image: "/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png"
-  }, {
-    badge: "Piranha Badge",
-    threshold: "50k+ $DHB",
-    fee: "7.93%",
-    color: "bg-purple-500",
-    image: "/lovable-uploads/38387f75-fd38-4380-9588-1f19f68d8435.png"
-  }, {
-    badge: "Tortoise Badge",
-    threshold: "100k+ $DHB",
-    fee: "7.24%",
-    color: "bg-green-600",
-    image: "/lovable-uploads/fc47a759-390a-4f41-ba96-5bc0066e82b9.png"
-  }, {
-    badge: "Cobra Badge",
-    threshold: "250k+ $DHB",
-    fee: "6.55%",
-    color: "bg-gray-800",
-    image: "/lovable-uploads/b3306c99-31b8-4bfc-bc25-f73abc68fc38.png"
-  }, {
-    badge: "Octopus Badge",
-    threshold: "500k+ $DHB",
-    fee: "5.86%",
-    color: "bg-blue-600",
-    image: "/lovable-uploads/8fcbb3f6-223d-4e2f-9d82-30082a175491.png"
-  }, {
-    badge: "Crocodile Badge",
-    threshold: "1m+ $DHB",
-    fee: "5.17%",
-    color: "bg-green-800",
-    image: "/lovable-uploads/c84eee0a-97c7-4938-9b9c-c991c802593e.png"
-  }, {
-    badge: "Dolphin Badge",
-    threshold: "2m+ $DHB",
-    fee: "4.48%",
-    color: "bg-cyan-500",
-    image: "/lovable-uploads/4558c158-75d9-40fc-adfa-41125344a48e.png"
-  }, {
-    badge: "Tiger Shark Badge",
-    threshold: "3m+ $DHB",
-    fee: "3.79%",
-    color: "bg-slate-600",
-    image: "/lovable-uploads/6be493f1-51b4-481b-9ca1-340c030b2ef8.png"
-  }, {
-    badge: "Killer Whale Badge",
-    threshold: "5m+ $DHB",
-    fee: "3.10%",
-    color: "bg-gray-900",
-    image: "/lovable-uploads/fcc288eb-67d7-49a0-b561-94bb5d1b8896.png"
-  }, {
-    badge: "Great White Shark Badge",
-    threshold: "10m+ $DHB",
-    fee: "2.41%",
-    color: "bg-blue-800",
-    image: "/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png"
-  }, {
-    badge: "Blue Whale Badge",
-    threshold: "25m+ $DHB",
-    fee: "1.72%",
-    color: "bg-indigo-700",
-    image: "/lovable-uploads/bc6b4bb7-aa43-4015-adb0-194568cc0858.png"
-  }, {
-    badge: "Megalodon Badge",
-    threshold: "50m+ $DHB",
-    fee: "1.00%",
-    color: "bg-purple-800",
-    image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png"
-  }];
+  const badgeKeys = [
+    'badgeNone', 'badgeCrab', 'badgeLobster', 'badgePiranha', 'badgeTortoise',
+    'badgeCobra', 'badgeOctopus', 'badgeCrocodile', 'badgeDolphin', 'badgeTigerShark',
+    'badgeKillerWhale', 'badgeGreatWhiteShark', 'badgeBlueWhale', 'badgeMegalodon'
+  ];
+
+  const feeReductions = [
+    { badgeKey: 'badgeNone', threshold: "< 10,000 $DHB", fee: "10.00%", color: "bg-gray-300", image: null },
+    { badgeKey: 'badgeCrab', threshold: "10,000+ $DHB", fee: "9.31%", color: "bg-orange-500", image: "/lovable-uploads/60bc125c-8efd-4058-9e12-7ca393df4fce.png" },
+    { badgeKey: 'badgeLobster', threshold: "25k+ $DHB", fee: "8.62%", color: "bg-red-500", image: "/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png" },
+    { badgeKey: 'badgePiranha', threshold: "50k+ $DHB", fee: "7.93%", color: "bg-purple-500", image: "/lovable-uploads/38387f75-fd38-4380-9588-1f19f68d8435.png" },
+    { badgeKey: 'badgeTortoise', threshold: "100k+ $DHB", fee: "7.24%", color: "bg-green-600", image: "/lovable-uploads/fc47a759-390a-4f41-ba96-5bc0066e82b9.png" },
+    { badgeKey: 'badgeCobra', threshold: "250k+ $DHB", fee: "6.55%", color: "bg-gray-800", image: "/lovable-uploads/b3306c99-31b8-4bfc-bc25-f73abc68fc38.png" },
+    { badgeKey: 'badgeOctopus', threshold: "500k+ $DHB", fee: "5.86%", color: "bg-blue-600", image: "/lovable-uploads/8fcbb3f6-223d-4e2f-9d82-30082a175491.png" },
+    { badgeKey: 'badgeCrocodile', threshold: "1m+ $DHB", fee: "5.17%", color: "bg-green-800", image: "/lovable-uploads/c84eee0a-97c7-4938-9b9c-c991c802593e.png" },
+    { badgeKey: 'badgeDolphin', threshold: "2m+ $DHB", fee: "4.48%", color: "bg-cyan-500", image: "/lovable-uploads/4558c158-75d9-40fc-adfa-41125344a48e.png" },
+    { badgeKey: 'badgeTigerShark', threshold: "3m+ $DHB", fee: "3.79%", color: "bg-slate-600", image: "/lovable-uploads/6be493f1-51b4-481b-9ca1-340c030b2ef8.png" },
+    { badgeKey: 'badgeKillerWhale', threshold: "5m+ $DHB", fee: "3.10%", color: "bg-gray-900", image: "/lovable-uploads/fcc288eb-67d7-49a0-b561-94bb5d1b8896.png" },
+    { badgeKey: 'badgeGreatWhiteShark', threshold: "10m+ $DHB", fee: "2.41%", color: "bg-blue-800", image: "/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png" },
+    { badgeKey: 'badgeBlueWhale', threshold: "25m+ $DHB", fee: "1.72%", color: "bg-indigo-700", image: "/lovable-uploads/bc6b4bb7-aa43-4015-adb0-194568cc0858.png" },
+    { badgeKey: 'badgeMegalodon', threshold: "50m+ $DHB", fee: "1.00%", color: "bg-purple-800", image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png" },
+  ];
 
   return <div className="space-y-8">
       {/* Header */}
@@ -133,12 +70,12 @@ const Dapp = () => {
           <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.uploadDesc')}</p>
           
           <ul className="list-disc pl-6 space-y-2 text-foreground/80 font-exo">
-            <li><strong>Watch2earn:</strong> {t('dapp.uploadWatch2earn')}</li>
-            <li><strong>Token gated content:</strong> {t('dapp.uploadTokenGated')}</li>
-            <li><strong>PPV events:</strong> {t('dapp.uploadPPV')}</li>
-            <li><strong>NFT collectables:</strong> {t('dapp.uploadNFT')}</li>
-            <li><strong>Earn:</strong> {t('dapp.uploadEarn')}</li>
-            <li><strong>Subscribers:</strong> {t('dapp.uploadSubscribers')}</li>
+            <li><strong>{t('dapp.labelWatch2earn')}</strong> {t('dapp.uploadWatch2earn')}</li>
+            <li><strong>{t('dapp.labelTokenGated')}</strong> {t('dapp.uploadTokenGated')}</li>
+            <li><strong>{t('dapp.labelPPV')}</strong> {t('dapp.uploadPPV')}</li>
+            <li><strong>{t('dapp.labelNFT')}</strong> {t('dapp.uploadNFT')}</li>
+            <li><strong>{t('dapp.labelEarn')}</strong> {t('dapp.uploadEarn')}</li>
+            <li><strong>{t('dapp.labelSubscribers')}</strong> {t('dapp.uploadSubscribers')}</li>
           </ul>
         </section>
 
@@ -299,31 +236,31 @@ const Dapp = () => {
                   </tr>
                   <tr>
                     <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Friend.tech</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Social keys for access to creator chats</td>
-                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Continuous engagement required</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Key trading fees, creator keeps chat revenue</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator owns content, users own access keys</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.friendTechModel')}</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">{t('dapp.friendTechValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.friendTechRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.friendTechOwnership')}</td>
                   </tr>
                   <tr>
                     <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Lens Protocol</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">NFT-based social graph with follows/posts</td>
-                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Active posting and community building</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator retains all content revenue</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Users own their social graph via NFTs</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.lensModel')}</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">{t('dapp.lensValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.lensRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.lensOwnership')}</td>
                   </tr>
                   <tr>
                     <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Zora</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Everything is a token - hyper-speculative social tokens</td>
-                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Constant hype and speculation maintenance</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Token trading, minting fees, speculation</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Token holders speculate on creator success</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.zoraModel')}</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">{t('dapp.zoraValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.zoraRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.zoraOwnership')}</td>
                   </tr>
                   <tr>
                     <td className="border border-border p-3 font-semibold text-muted-foreground font-exo">Patreon</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Subscription tiers for creator support</td>
-                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">Regular content delivery to maintain subs</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator keeps 90-95%, platform takes 5-10%</td>
-                    <td className="border border-border p-3 text-muted-foreground font-exo">Creator owns content, platform controls distribution</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.patreonModel')}</td>
+                    <td className="border border-border p-3 text-red-700 dark:text-red-400 font-exo font-semibold">{t('dapp.patreonValue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.patreonRevenue')}</td>
+                    <td className="border border-border p-3 text-muted-foreground font-exo">{t('dapp.patreonOwnership')}</td>
                   </tr>
                 </tbody>
               </table>
@@ -337,12 +274,12 @@ const Dapp = () => {
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-green-700 dark:text-green-400 space-y-2 font-exo">
-                  <li>• <strong>Set and Forget:</strong> {t('dapp.adv1')}</li>
-                  <li>• <strong>Fan Investment:</strong> {t('dapp.adv2')}</li>
-                  <li>• <strong>Automatic Tokenisation:</strong> {t('dapp.adv3')}</li>
-                  <li>• <strong>Censorship Resistance:</strong> {t('dapp.adv4')}</li>
-                  <li>• <strong>Creator Control:</strong> {t('dapp.adv5')}</li>
-                  <li>• <strong>Permissionless:</strong> {t('dapp.adv6')}</li>
+                   <li>• <strong>{t('dapp.labelSetAndForget')}</strong> {t('dapp.adv1')}</li>
+                   <li>• <strong>{t('dapp.labelFanInvestment')}</strong> {t('dapp.adv2')}</li>
+                   <li>• <strong>{t('dapp.labelAutoTokenisation')}</strong> {t('dapp.adv3')}</li>
+                   <li>• <strong>{t('dapp.labelCensorshipResistance')}</strong> {t('dapp.adv4')}</li>
+                   <li>• <strong>{t('dapp.labelCreatorControl')}</strong> {t('dapp.adv5')}</li>
+                  <li>• <strong>{t('dapp.labelPermissionless')}</strong> {t('dapp.adv6')}</li>
                 </ul>
               </CardContent>
             </Card>
@@ -353,12 +290,12 @@ const Dapp = () => {
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-2 font-exo">
-                  <li>• <strong>Early Talent Investment:</strong> {t('dapp.useCase1')}</li>
-                  <li>• <strong>Content Portfolio Building:</strong> {t('dapp.useCase2')}</li>
-                  <li>• <strong>Creator Funding:</strong> {t('dapp.useCase3')}</li>
-                  <li>• <strong>Fan Loyalty Rewards:</strong> {t('dapp.useCase4')}</li>
-                  <li>• <strong>Viral Content Betting:</strong> {t('dapp.useCase5')}</li>
-                  <li>• <strong>Passive Income Streams:</strong> {t('dapp.useCase6')}</li>
+                   <li>• <strong>{t('dapp.labelEarlyTalent')}</strong> {t('dapp.useCase1')}</li>
+                   <li>• <strong>{t('dapp.labelPortfolio')}</strong> {t('dapp.useCase2')}</li>
+                   <li>• <strong>{t('dapp.labelCreatorFunding')}</strong> {t('dapp.useCase3')}</li>
+                   <li>• <strong>{t('dapp.labelFanLoyalty')}</strong> {t('dapp.useCase4')}</li>
+                   <li>• <strong>{t('dapp.labelViralBetting')}</strong> {t('dapp.useCase5')}</li>
+                   <li>• <strong>{t('dapp.labelPassiveIncome')}</strong> {t('dapp.useCase6')}</li>
                 </ul>
               </CardContent>
             </Card>
@@ -446,10 +383,10 @@ const Dapp = () => {
           <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.exploreDesc')}</p>
           
           <ul className="list-disc pl-6 space-y-1 text-foreground/80 mb-4 font-exo">
-            <li>Most views (MV)</li>
-            <li>Most subscribers (MS)</li>
-            <li>Biggest earners (BE)</li>
-            <li>Biggest spenders (BS)</li>
+            <li>{t('dapp.leaderMV')}</li>
+            <li>{t('dapp.leaderMS')}</li>
+            <li>{t('dapp.leaderBE')}</li>
+            <li>{t('dapp.leaderBS')}</li>
           </ul>
           
           <p className="text-foreground/80 leading-relaxed mb-4 font-exo">{t('dapp.exploreFormula')}</p>
@@ -504,8 +441,8 @@ const Dapp = () => {
                 <li>{t('dapp.tokenUtilityRole3')}</li>
               </ul>
               <div className="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-400 p-4 mb-4">
-                <p className="text-blue-800 dark:text-blue-300 font-medium font-exo">
-                  <strong>Key Principle:</strong> {t('dapp.keyPrinciple')}
+                 <p className="text-blue-800 dark:text-blue-300 font-medium font-exo">
+                   <strong>{t('dapp.labelKeyPrinciple')}</strong> {t('dapp.keyPrinciple')}
                 </p>
               </div>
             </div>
@@ -529,8 +466,8 @@ const Dapp = () => {
                 <li>{t('dapp.modStaking4')}</li>
               </ul>
               <div className="bg-green-50 dark:bg-green-950/30 border-l-4 border-green-400 p-4 mb-4">
-                <p className="text-green-800 dark:text-green-300 font-medium font-exo">
-                  <strong>Incentive:</strong> {t('dapp.modStakingIncentive')}
+                 <p className="text-green-800 dark:text-green-300 font-medium font-exo">
+                   <strong>{t('dapp.labelIncentive')}</strong> {t('dapp.modStakingIncentive')}
                 </p>
               </div>
             </div>
@@ -1214,11 +1151,11 @@ const Dapp = () => {
               </CardHeader>
               <CardContent>
                 <div className="grid gap-2">
-                  {feeReductions.map((tier, index) => <div key={tier.badge} className="flex items-center justify-between p-3 rounded-lg border bg-muted/20">
+                  {feeReductions.map((tier, index) => <div key={tier.badgeKey} className="flex items-center justify-between p-3 rounded-lg border bg-muted/20">
                       <div className="flex items-center gap-3">
-                        {tier.image ? <img src={tier.image} alt={tier.badge} className="w-8 h-8 object-contain" /> : <div className="w-8 h-8 rounded-full bg-gray-300"></div>}
+                        {tier.image ? <img src={tier.image} alt={t(`dapp.${tier.badgeKey}`)} className="w-8 h-8 object-contain" /> : <div className="w-8 h-8 rounded-full bg-gray-300"></div>}
                         <div className="flex flex-col">
-                          <span className="font-medium">{tier.badge}</span>
+                          <span className="font-medium">{t(`dapp.${tier.badgeKey}`)}</span>
                           <span className="text-sm text-muted-foreground">{tier.threshold}</span>
                         </div>
                       </div>
@@ -1266,24 +1203,24 @@ const Dapp = () => {
             <div className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-950/30 dark:to-indigo-950/30 p-6 rounded-lg border border-purple-200 dark:border-purple-800 mt-6">
               <h4 className="font-semibold text-foreground font-exo mb-3">{t('dapp.exampleSavings')}</h4>
               <div className="grid gap-4 md:grid-cols-3">
-                <div className="p-3 bg-card/50 rounded-lg">
-                  <h5 className="font-medium text-foreground font-exo">$1,000 Transaction</h5>
-                  <p className="text-sm text-muted-foreground font-exo">Standard: $100 fee</p>
-                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $10 fee</p>
-                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $90</p>
-                </div>
-                <div className="p-3 bg-card/50 rounded-lg">
-                  <h5 className="font-medium text-foreground font-exo">$10,000 Transaction</h5>
-                  <p className="text-sm text-muted-foreground font-exo">Standard: $1,000 fee</p>
-                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $100 fee</p>
-                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $900</p>
-                </div>
-                <div className="p-3 bg-card/50 rounded-lg">
-                  <h5 className="font-medium text-foreground font-exo">$100,000 Transaction</h5>
-                  <p className="text-sm text-muted-foreground font-exo">Standard: $10,000 fee</p>
-                  <p className="text-sm text-muted-foreground font-exo">Megalodon: $1,000 fee</p>
-                  <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">Saves: $9,000</p>
-                </div>
+                 <div className="p-3 bg-card/50 rounded-lg">
+                   <h5 className="font-medium text-foreground font-exo">$1,000 {t('dapp.exTransaction')}</h5>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exStandard')} $100</p>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exMegalodon')} $10</p>
+                   <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">{t('dapp.exSaves')} $90</p>
+                 </div>
+                 <div className="p-3 bg-card/50 rounded-lg">
+                   <h5 className="font-medium text-foreground font-exo">$10,000 {t('dapp.exTransaction')}</h5>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exStandard')} $1,000</p>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exMegalodon')} $100</p>
+                   <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">{t('dapp.exSaves')} $900</p>
+                 </div>
+                 <div className="p-3 bg-card/50 rounded-lg">
+                   <h5 className="font-medium text-foreground font-exo">$100,000 {t('dapp.exTransaction')}</h5>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exStandard')} $10,000</p>
+                   <p className="text-sm text-muted-foreground font-exo">{t('dapp.exMegalodon')} $1,000</p>
+                   <p className="text-sm font-semibold text-green-700 dark:text-green-400 font-exo">{t('dapp.exSaves')} $9,000</p>
+                 </div>
               </div>
             </div>
 
