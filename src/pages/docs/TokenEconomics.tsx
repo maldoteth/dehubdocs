@@ -1,136 +1,109 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import { ChartContainer } from '@/components/ui/chart';
-const supplyData = [{
-  name: 'Community Sales & Airdrops',
-  value: 42,
-  fill: '#1a1a1a'
-}, {
-  name: 'Burn',
-  value: 42,
-  fill: '#4a4a4a'
-}, {
-  name: 'Team',
-  value: 8,
-  fill: '#7a7a7a'
-}, {
-  name: 'Operations',
-  value: 8,
-  fill: '#b0b0b0'
-}];
-const chartConfig = {
-  community: {
-    label: "Community Sales & Airdrops",
-    color: "#1a1a1a"
-  },
-  burn: {
-    label: "Burn",
-    color: "#4a4a4a"
-  },
-  team: {
-    label: "Team",
-    color: "#7a7a7a"
-  },
-  operations: {
-    label: "Operations",
-    color: "#b0b0b0"
-  }
-};
+import { useLanguage } from '@/contexts/LanguageContext';
+
 const TokenEconomics = () => {
-  return <div className="max-w-4xl mx-auto space-y-8">
+  const { t } = useLanguage();
+
+  const supplyData = [
+    { name: t('tokenEconomics.communitySales'), value: 42, fill: '#1a1a1a' },
+    { name: t('tokenEconomics.burn'), value: 42, fill: '#4a4a4a' },
+    { name: t('tokenEconomics.team'), value: 8, fill: '#7a7a7a' },
+    { name: t('tokenEconomics.operations'), value: 8, fill: '#b0b0b0' },
+  ];
+
+  const chartConfig = {
+    community: { label: t('tokenEconomics.communitySales'), color: "#1a1a1a" },
+    burn: { label: t('tokenEconomics.burn'), color: "#4a4a4a" },
+    team: { label: t('tokenEconomics.team'), color: "#7a7a7a" },
+    operations: { label: t('tokenEconomics.operations'), color: "#b0b0b0" },
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto space-y-8">
       <div>
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">Economics & Emissions</h1>
+        <h1 className="text-4xl font-bold text-foreground mb-4">{t('tokenEconomics.title')}</h1>
       </div>
 
       <div className="grid gap-6">
         <Card>
           <CardHeader>
-            <CardTitle className="text-xl text-slate-800">Supply Distribution</CardTitle>
+            <CardTitle className="text-xl">{t('tokenEconomics.supplyDistribution')}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="font-bold text-slate-900 text-center text-sm">Total: 8,000,000,000 $DHB</p>
+            <p className="font-bold text-foreground text-center text-sm">{t('tokenEconomics.totalSupply')}</p>
             <ChartContainer config={chartConfig} className="h-[400px] w-full">
-                <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie data={supplyData} cx="50%" cy="50%" labelLine={false} label={({
-                  name,
-                  value
-                }) => `${value}%`} outerRadius={120} fill="#8884d8" dataKey="value">
-                      {supplyData.map((entry, index) => <Cell key={`cell-${index}`} fill={entry.fill} />)}
-                    </Pie>
-                    <Tooltip content={({ active, payload }) => {
-                      if (active && payload && payload.length) {
-                        return (
-                          <div className="rounded-lg border bg-background p-2 shadow-sm">
-                            <div className="text-sm font-medium">{payload[0].name}</div>
-                          </div>
-                        );
-                      }
-                      return null;
-                    }} />
-                    <Legend 
-                      verticalAlign="bottom" 
-                      height={36} 
-                      content={(props) => {
-                        const { payload } = props;
-                        return (
-                          <div className="flex flex-wrap justify-center gap-4 mt-4">
-                            {payload?.map((entry: any, index: number) => (
-                              <div key={`legend-${index}`} className="flex items-center gap-2">
-                                <div 
-                                  className="w-10 h-6 flex items-center justify-center text-white text-xs font-semibold rounded"
-                                  style={{ backgroundColor: entry.color }}
-                                >
-                                  {entry.payload.value}%
-                                </div>
-                                <span className="text-sm text-slate-700">{entry.value}</span>
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie data={supplyData} cx="50%" cy="50%" labelLine={false} label={({ value }) => `${value}%`} outerRadius={120} fill="#8884d8" dataKey="value">
+                    {supplyData.map((entry, index) => <Cell key={`cell-${index}`} fill={entry.fill} />)}
+                  </Pie>
+                  <Tooltip content={({ active, payload }) => {
+                    if (active && payload && payload.length) {
+                      return (
+                        <div className="rounded-lg border bg-background p-2 shadow-sm">
+                          <div className="text-sm font-medium">{payload[0].name}</div>
+                        </div>
+                      );
+                    }
+                    return null;
+                  }} />
+                  <Legend 
+                    verticalAlign="bottom" 
+                    height={36} 
+                    content={(props) => {
+                      const { payload } = props;
+                      return (
+                        <div className="flex flex-wrap justify-center gap-4 mt-4">
+                          {payload?.map((entry: any, index: number) => (
+                            <div key={`legend-${index}`} className="flex items-center gap-2">
+                              <div className="w-10 h-6 flex items-center justify-center text-white text-xs font-semibold rounded" style={{ backgroundColor: entry.color }}>
+                                {entry.payload.value}%
                               </div>
-                            ))}
-                          </div>
-                        );
-                      }}
-                    />
-                  </PieChart>
-                </ResponsiveContainer>
+                              <span className="text-sm text-muted-foreground">{entry.value}</span>
+                            </div>
+                          ))}
+                        </div>
+                      );
+                    }}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
             </ChartContainer>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-xl text-slate-800">Dilution/Emission Schedule</CardTitle>
+            <CardTitle className="text-xl">{t('tokenEconomics.dilutionTitle')}</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-slate-600 leading-relaxed">
-              All supply is fully diluted, unlocked or burned from TGE apart from team wallets which are not permitted to liquidate any tokens past rewards and should never go below original balance barring un-staking fees. In theory, we are already at a fully diluted valuation (FDV) as team wallets are staked to accrue rewards, not locked.
-            </p>
+            <p className="text-muted-foreground leading-relaxed">{t('tokenEconomics.dilutionDesc')}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-xl text-slate-800">Sales</CardTitle>
+            <CardTitle className="text-xl">{t('tokenEconomics.salesTitle')}</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-slate-600 leading-relaxed">
-              100% of liquidity raised was locked into pools for traders. No pre sale events or investment where raised to fund development and DeHub launched as FTV with a fully built app on the google play store prior to any token release or fundraise. Only liquidity generation events (LGE) on behalf of the community to facilitate trading occurred. BNB, therefore DeHub can only be acquired via KYCd wallets meaning we did not need extra layers for our own sales.
-            </p>
+            <p className="text-muted-foreground leading-relaxed">{t('tokenEconomics.salesDesc')}</p>
           </CardContent>
         </Card>
 
-        <Card className="border-amber-200 bg-amber-50">
+        <Card className="border-yellow-200 bg-yellow-50 dark:bg-yellow-900/20 dark:border-yellow-800">
           <CardHeader>
-            <CardTitle className="text-xl text-amber-800">Disclaimer</CardTitle>
+            <CardTitle className="text-xl text-yellow-800 dark:text-yellow-200">{t('tokenEconomics.disclaimer')}</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-amber-700 leading-relaxed text-sm">
-              DeHub tokens are strictly for utility purposes in the same way that any in-game or in-app digital tokens or currencies except where as ours operate on-chain, we can offer added utility as well as unprecedented levels of verifiable transparency. The above data is solely compiled for transparency, educational and informative purposes only. DeHub and all affiliates hold no liability for financial losses incurred from purchasing any tokens or NFTs we release. Markets are highly volatile. You could also lose all your money due to any unforseen events such as hacks, competency failures or technical errors. Therefore, you should only ever invest what you can afford to lose.
-            </p>
+            <p className="text-yellow-700 dark:text-yellow-300 leading-relaxed text-sm">{t('tokenEconomics.disclaimerText')}</p>
           </CardContent>
         </Card>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default TokenEconomics;
