@@ -135,6 +135,7 @@ export const languages: LanguageOption[] = [
   { code: 'ja', label: 'Japanese', nativeLabel: '日本語', dir: 'ltr' },
   { code: 'ko', label: 'Korean', nativeLabel: '한국어', dir: 'ltr' },
   { code: 'lo', label: 'Lao', nativeLabel: 'ລາວ', dir: 'ltr' },
+  { code: 'lv', label: 'Latvian', nativeLabel: 'Latviešu', dir: 'ltr' },
   { code: 'mag', label: 'Magahi', nativeLabel: 'मगही', dir: 'ltr' },
   { code: 'ms', label: 'Malay', nativeLabel: 'Bahasa Melayu', dir: 'ltr' },
   { code: 'mr', label: 'Marathi', nativeLabel: 'मराठी', dir: 'ltr' },
