@@ -182,6 +182,7 @@ export const languages: LanguageOption[] = [
   { code: 'skr', label: 'Saraiki', nativeLabel: 'سرائیکی', dir: 'rtl' },
   { code: 'sck', label: 'Sadri', nativeLabel: 'सदरी', dir: 'ltr' },
   { code: 'ru', label: 'Russian', nativeLabel: 'Русский', dir: 'ltr' },
+  { code: 'sd', label: 'Sindhi', nativeLabel: 'سنڌي', dir: 'rtl' },
   { code: 'si', label: 'Sinhala', nativeLabel: 'සිංහල', dir: 'ltr' },
   { code: 'sk', label: 'Slovak', nativeLabel: 'Slovenčina', dir: 'ltr' },
   { code: 'sr', label: 'Serbian', nativeLabel: 'Српски', dir: 'ltr' },
