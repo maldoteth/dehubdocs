@@ -117,6 +117,7 @@ export const languages: LanguageOption[] = [
   { code: 'da', label: 'Danish', nativeLabel: 'Dansk', dir: 'ltr' },
   { code: 'dyu', label: 'Jula', nativeLabel: 'Julakan', dir: 'ltr' },
   { code: 'nl', label: 'Dutch', nativeLabel: 'Nederlands', dir: 'ltr' },
+  { code: 'et', label: 'Estonian', nativeLabel: 'Eesti', dir: 'ltr' },
   { code: 'tl', label: 'Filipino', nativeLabel: 'Filipino', dir: 'ltr' },
   { code: 'fi', label: 'Finnish', nativeLabel: 'Suomi', dir: 'ltr' },
   { code: 'fr', label: 'French', nativeLabel: 'Français', dir: 'ltr' },
@@ -181,7 +182,7 @@ export const languages: LanguageOption[] = [
 
 type Translations = typeof en;
 
-const translationMap: Record<Language, Translations> = { en, ar, zh, zh_tw, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu, gsw, hr, sv, no, da, fi, he, zu, qu, ht, yo, am, ig, ha, ka, uz, kk, om, my, si, be, km, ne, pa, te, mr, sr, bg, sk, lo, cjy, aec, mag, skr, hne, acm, tts, acw, ctg, dcc, dyu, sck, wes, syl, ajp, ayn, mnp, pbt, rkt, mn, bo, lv };
+const translationMap: Record<Language, Translations> = { en, ar, zh, zh_tw, tr, es, de, fr, bn, ru, pt, hi, ja, ko, id, it, nl, pl, vi, th, uk, sw, ms, fa, ta, ur, tl, ro, cs, el, hu, gsw, hr, sv, no, da, fi, he, zu, qu, ht, yo, am, ig, ha, ka, uz, kk, om, my, si, be, km, ne, pa, te, mr, sr, bg, sk, lo, cjy, aec, mag, skr, hne, acm, tts, acw, ctg, dcc, dyu, sck, wes, syl, ajp, ayn, mnp, pbt, rkt, mn, bo, lv, et };
 
 interface LanguageContextType {
   language: Language;
