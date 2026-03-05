@@ -8,91 +8,28 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const Dapp = () => {
   const { t } = useLanguage();
 
-  const feeReductions = [{
-    badge: "No Badge",
-    threshold: "< 10,000 $DHB",
-    fee: "10.00%",
-    color: "bg-gray-300",
-    image: null
-  }, {
-    badge: "Crab Badge",
-    threshold: "10,000+ $DHB",
-    fee: "9.31%",
-    color: "bg-orange-500",
-    image: "/lovable-uploads/60bc125c-8efd-4058-9e12-7ca393df4fce.png"
-  }, {
-    badge: "Lobster Badge",
-    threshold: "25k+ $DHB",
-    fee: "8.62%",
-    color: "bg-red-500",
-    image: "/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png"
-  }, {
-    badge: "Piranha Badge",
-    threshold: "50k+ $DHB",
-    fee: "7.93%",
-    color: "bg-purple-500",
-    image: "/lovable-uploads/38387f75-fd38-4380-9588-1f19f68d8435.png"
-  }, {
-    badge: "Tortoise Badge",
-    threshold: "100k+ $DHB",
-    fee: "7.24%",
-    color: "bg-green-600",
-    image: "/lovable-uploads/fc47a759-390a-4f41-ba96-5bc0066e82b9.png"
-  }, {
-    badge: "Cobra Badge",
-    threshold: "250k+ $DHB",
-    fee: "6.55%",
-    color: "bg-gray-800",
-    image: "/lovable-uploads/b3306c99-31b8-4bfc-bc25-f73abc68fc38.png"
-  }, {
-    badge: "Octopus Badge",
-    threshold: "500k+ $DHB",
-    fee: "5.86%",
-    color: "bg-blue-600",
-    image: "/lovable-uploads/8fcbb3f6-223d-4e2f-9d82-30082a175491.png"
-  }, {
-    badge: "Crocodile Badge",
-    threshold: "1m+ $DHB",
-    fee: "5.17%",
-    color: "bg-green-800",
-    image: "/lovable-uploads/c84eee0a-97c7-4938-9b9c-c991c802593e.png"
-  }, {
-    badge: "Dolphin Badge",
-    threshold: "2m+ $DHB",
-    fee: "4.48%",
-    color: "bg-cyan-500",
-    image: "/lovable-uploads/4558c158-75d9-40fc-adfa-41125344a48e.png"
-  }, {
-    badge: "Tiger Shark Badge",
-    threshold: "3m+ $DHB",
-    fee: "3.79%",
-    color: "bg-slate-600",
-    image: "/lovable-uploads/6be493f1-51b4-481b-9ca1-340c030b2ef8.png"
-  }, {
-    badge: "Killer Whale Badge",
-    threshold: "5m+ $DHB",
-    fee: "3.10%",
-    color: "bg-gray-900",
-    image: "/lovable-uploads/fcc288eb-67d7-49a0-b561-94bb5d1b8896.png"
-  }, {
-    badge: "Great White Shark Badge",
-    threshold: "10m+ $DHB",
-    fee: "2.41%",
-    color: "bg-blue-800",
-    image: "/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png"
-  }, {
-    badge: "Blue Whale Badge",
-    threshold: "25m+ $DHB",
-    fee: "1.72%",
-    color: "bg-indigo-700",
-    image: "/lovable-uploads/bc6b4bb7-aa43-4015-adb0-194568cc0858.png"
-  }, {
-    badge: "Megalodon Badge",
-    threshold: "50m+ $DHB",
-    fee: "1.00%",
-    color: "bg-purple-800",
-    image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png"
-  }];
+  const badgeKeys = [
+    'badgeNone', 'badgeCrab', 'badgeLobster', 'badgePiranha', 'badgeTortoise',
+    'badgeCobra', 'badgeOctopus', 'badgeCrocodile', 'badgeDolphin', 'badgeTigerShark',
+    'badgeKillerWhale', 'badgeGreatWhiteShark', 'badgeBlueWhale', 'badgeMegalodon'
+  ];
+
+  const feeReductions = [
+    { badgeKey: 'badgeNone', threshold: "< 10,000 $DHB", fee: "10.00%", color: "bg-gray-300", image: null },
+    { badgeKey: 'badgeCrab', threshold: "10,000+ $DHB", fee: "9.31%", color: "bg-orange-500", image: "/lovable-uploads/60bc125c-8efd-4058-9e12-7ca393df4fce.png" },
+    { badgeKey: 'badgeLobster', threshold: "25k+ $DHB", fee: "8.62%", color: "bg-red-500", image: "/lovable-uploads/2c7200c2-681e-4499-863b-ea24fdbdb70c.png" },
+    { badgeKey: 'badgePiranha', threshold: "50k+ $DHB", fee: "7.93%", color: "bg-purple-500", image: "/lovable-uploads/38387f75-fd38-4380-9588-1f19f68d8435.png" },
+    { badgeKey: 'badgeTortoise', threshold: "100k+ $DHB", fee: "7.24%", color: "bg-green-600", image: "/lovable-uploads/fc47a759-390a-4f41-ba96-5bc0066e82b9.png" },
+    { badgeKey: 'badgeCobra', threshold: "250k+ $DHB", fee: "6.55%", color: "bg-gray-800", image: "/lovable-uploads/b3306c99-31b8-4bfc-bc25-f73abc68fc38.png" },
+    { badgeKey: 'badgeOctopus', threshold: "500k+ $DHB", fee: "5.86%", color: "bg-blue-600", image: "/lovable-uploads/8fcbb3f6-223d-4e2f-9d82-30082a175491.png" },
+    { badgeKey: 'badgeCrocodile', threshold: "1m+ $DHB", fee: "5.17%", color: "bg-green-800", image: "/lovable-uploads/c84eee0a-97c7-4938-9b9c-c991c802593e.png" },
+    { badgeKey: 'badgeDolphin', threshold: "2m+ $DHB", fee: "4.48%", color: "bg-cyan-500", image: "/lovable-uploads/4558c158-75d9-40fc-adfa-41125344a48e.png" },
+    { badgeKey: 'badgeTigerShark', threshold: "3m+ $DHB", fee: "3.79%", color: "bg-slate-600", image: "/lovable-uploads/6be493f1-51b4-481b-9ca1-340c030b2ef8.png" },
+    { badgeKey: 'badgeKillerWhale', threshold: "5m+ $DHB", fee: "3.10%", color: "bg-gray-900", image: "/lovable-uploads/fcc288eb-67d7-49a0-b561-94bb5d1b8896.png" },
+    { badgeKey: 'badgeGreatWhiteShark', threshold: "10m+ $DHB", fee: "2.41%", color: "bg-blue-800", image: "/lovable-uploads/dfcc3420-f654-486b-bc94-f84f0209ba5c.png" },
+    { badgeKey: 'badgeBlueWhale', threshold: "25m+ $DHB", fee: "1.72%", color: "bg-indigo-700", image: "/lovable-uploads/bc6b4bb7-aa43-4015-adb0-194568cc0858.png" },
+    { badgeKey: 'badgeMegalodon', threshold: "50m+ $DHB", fee: "1.00%", color: "bg-purple-800", image: "/lovable-uploads/9282e1c6-fa68-4b7c-b3cd-22d860df35af.png" },
+  ];
 
   return <div className="space-y-8">
       {/* Header */}
