@@ -13,11 +13,16 @@ import { BreadcrumbNavigation } from '@/components/blog/BreadcrumbNavigation';
 import { raffleContent } from '@/data/raffleContent';
 import { getNewPostBySlug, excludedTitles } from '@/data/newPosts';
 import { useBlogData } from '@/hooks/useBlogData';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { raffleContent } from '@/data/raffleContent';
+import { getNewPostBySlug, excludedTitles } from '@/data/newPosts';
+import { useBlogData } from '@/hooks/useBlogData';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const location = useLocation();
   const { allPosts } = useBlogData();
+  const { t } = useLanguage();
   
   let post = slug ? getNewPostBySlug(slug) || getPostBySlug(slug) : null;
 
@@ -26,21 +31,20 @@ const BlogPost = () => {
   }
 
   useLayoutEffect(() => {
-    // Always scroll to top when loading a blog post directly
     window.scrollTo(0, 0);
   }, [slug]);
 
   if (!post) {
     return (
       <div className="text-center py-12">
-        <h1 className="text-3xl font-bold text-royal-blue mb-4 font-exo">Blog Post Not Found</h1>
-        <p className="text-royal-blue/70 mb-6 font-exo">The blog post you're looking for doesn't exist.</p>
+        <h1 className="text-3xl font-bold text-royal-blue mb-4 font-exo">{t('blog.postNotFound')}</h1>
+        <p className="text-royal-blue/70 mb-6 font-exo">{t('blog.postNotFoundDesc')}</p>
         <Link 
           to="/docs/blog" 
           className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-royal-blue to-middle-blue text-plain-white font-semibold rounded-lg hover:from-royal-blue/90 hover:to-middle-blue/90 transition-all duration-200 font-exo"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Blog
+          {t('blog.backToBlog')}
         </Link>
       </div>
     );

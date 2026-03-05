@@ -1,53 +1,38 @@
-
 import React from 'react';
 import { Package, Download, Settings, CheckCircle, AlertTriangle, Terminal } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Installation = () => {
+  const { t } = useLanguage();
+
   const installMethods = [
-    {
-      name: 'npm',
-      code: 'npm install @yourplatform/sdk',
-      description: 'Most popular package manager'
-    },
-    {
-      name: 'yarn',
-      code: 'yarn add @yourplatform/sdk',
-      description: 'Fast and reliable package manager'
-    },
-    {
-      name: 'pnpm',
-      code: 'pnpm add @yourplatform/sdk',
-      description: 'Efficient package manager'
-    }
+    { name: 'npm', code: 'npm install @yourplatform/sdk', description: t('installation.mostPopular') },
+    { name: 'yarn', code: 'yarn add @yourplatform/sdk', description: t('installation.fastReliable') },
+    { name: 'pnpm', code: 'pnpm add @yourplatform/sdk', description: t('installation.efficient') }
   ];
 
   return (
     <div className="max-w-4xl space-y-8">
-      {/* Header */}
       <div className="space-y-4">
         <div className="flex items-center space-x-2 text-sm text-slate-500">
-          <span>Documentation</span>
+          <span>{t('installation.breadcrumbDocs')}</span>
           <span>/</span>
-          <span>Getting Started</span>
+          <span>{t('installation.breadcrumbGettingStarted')}</span>
           <span>/</span>
-          <span className="text-slate-900">Installation</span>
+          <span className="text-slate-900">{t('installation.title')}</span>
         </div>
-        
-        <h1 className="text-4xl font-bold text-slate-900">Installation</h1>
-        <p className="text-xl text-slate-600">
-          Multiple ways to install and set up our platform in your project.
-        </p>
+        <h1 className="text-4xl font-bold text-slate-900">{t('installation.title')}</h1>
+        <p className="text-xl text-slate-600">{t('installation.subtitle')}</p>
       </div>
 
-      {/* System Requirements */}
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
         <div className="flex items-center mb-4">
           <Settings className="w-5 h-5 text-blue-600 mr-2" />
-          <h3 className="text-lg font-semibold text-blue-900">System Requirements</h3>
+          <h3 className="text-lg font-semibold text-blue-900">{t('installation.systemRequirements')}</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <h4 className="font-medium text-blue-900 mb-2">Node.js Environment</h4>
+            <h4 className="font-medium text-blue-900 mb-2">{t('installation.nodeEnvironment')}</h4>
             <ul className="space-y-1 text-blue-800 text-sm">
               <li>• Node.js 16.0.0 or higher</li>
               <li>• npm 7.0.0 or higher</li>
@@ -55,7 +40,7 @@ const Installation = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium text-blue-900 mb-2">Browser Support</h4>
+            <h4 className="font-medium text-blue-900 mb-2">{t('installation.browserSupport')}</h4>
             <ul className="space-y-1 text-blue-800 text-sm">
               <li>• Chrome 90+</li>
               <li>• Firefox 88+</li>
@@ -66,17 +51,12 @@ const Installation = () => {
         </div>
       </div>
 
-      {/* Package Manager Installation */}
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center">
           <Package className="w-6 h-6 mr-3 text-blue-600" />
-          Package Manager Installation
+          {t('installation.packageManagerInstallation')}
         </h2>
-        
-        <p className="text-slate-600">
-          Choose your preferred package manager to install the SDK:
-        </p>
-
+        <p className="text-slate-600">{t('installation.packageManagerDesc')}</p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {installMethods.map((method) => (
             <div key={method.name} className="bg-white border border-slate-200 rounded-lg p-6">
@@ -93,17 +73,12 @@ const Installation = () => {
         </div>
       </div>
 
-      {/* CDN Installation */}
       <div className="space-y-4">
         <h2 className="text-2xl font-bold text-slate-900 flex items-center">
           <Download className="w-6 h-6 mr-3 text-blue-600" />
-          CDN Installation
+          {t('installation.cdnInstallation')}
         </h2>
-        
-        <p className="text-slate-600">
-          For quick prototyping or if you prefer not to use a build system:
-        </p>
-
+        <p className="text-slate-600">{t('installation.cdnDesc')}</p>
         <div className="bg-slate-900 rounded-lg p-4">
           <pre className="text-slate-300 font-mono text-sm overflow-x-auto">
             <code>{`<!-- Latest version -->
@@ -115,26 +90,20 @@ const Installation = () => {
         </div>
       </div>
 
-      {/* Environment Setup */}
       <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-slate-900">Environment Setup</h2>
-        
-        <p className="text-slate-600">
-          After installation, configure your environment variables:
-        </p>
-
+        <h2 className="text-2xl font-bold text-slate-900">{t('installation.environmentSetup')}</h2>
+        <p className="text-slate-600">{t('installation.environmentSetupDesc')}</p>
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
           <div className="flex items-start">
             <AlertTriangle className="w-5 h-5 text-yellow-600 mr-2 mt-0.5" />
             <div>
-              <p className="text-yellow-800 font-medium">Environment Variables</p>
+              <p className="text-yellow-800 font-medium">{t('installation.environmentVariables')}</p>
               <p className="text-yellow-700 text-sm mt-1">
-                Create a <code className="bg-yellow-200 px-1 rounded">.env</code> file in your project root:
+                {t('installation.envFileDesc')}
               </p>
             </div>
           </div>
         </div>
-
         <div className="bg-slate-900 rounded-lg p-4">
           <pre className="text-slate-300 font-mono text-sm">
             <code>{`# API Configuration
@@ -149,14 +118,9 @@ YOURPLATFORM_RETRY_ATTEMPTS=3`}</code>
         </div>
       </div>
 
-      {/* Verification */}
       <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-slate-900">Verify Installation</h2>
-        
-        <p className="text-slate-600">
-          Test your installation with this simple verification script:
-        </p>
-
+        <h2 className="text-2xl font-bold text-slate-900">{t('installation.verifyInstallation')}</h2>
+        <p className="text-slate-600">{t('installation.verifyDesc')}</p>
         <div className="bg-slate-900 rounded-lg p-4">
           <pre className="text-slate-300 font-mono text-sm overflow-x-auto">
             <code>{`import { YourPlatform } from '@yourplatform/sdk';
@@ -174,34 +138,30 @@ console.log('✅ Installation successful!');`}</code>
         </div>
       </div>
 
-      {/* Success Message */}
       <div className="bg-green-50 border border-green-200 rounded-lg p-6">
         <div className="flex items-center">
           <CheckCircle className="w-6 h-6 text-green-600 mr-3" />
           <div>
-            <h3 className="text-lg font-semibold text-green-900 mb-1">Installation Complete!</h3>
-            <p className="text-green-800">
-              Your platform SDK is now installed and ready to use. Continue with the Quick Start guide to make your first API call.
-            </p>
+            <h3 className="text-lg font-semibold text-green-900 mb-1">{t('installation.installationComplete')}</h3>
+            <p className="text-green-800">{t('installation.installationCompleteDesc')}</p>
           </div>
         </div>
       </div>
 
-      {/* Next Steps */}
       <div className="bg-white border border-slate-200 rounded-lg p-6">
-        <h3 className="text-xl font-bold text-slate-900 mb-4">Next Steps</h3>
+        <h3 className="text-xl font-bold text-slate-900 mb-4">{t('installation.nextSteps')}</h3>
         <div className="space-y-3">
           <a href="/docs/quickstart" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
-            <span className="font-medium">Quick Start Guide →</span>
-            <span className="ml-2 text-slate-600">Make your first API call</span>
+            <span className="font-medium">{t('installation.quickStartGuide')}</span>
+            <span className="ml-2 text-slate-600">{t('installation.quickStartGuideDesc')}</span>
           </a>
           <a href="/docs/configuration" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
-            <span className="font-medium">Configuration →</span>
-            <span className="ml-2 text-slate-600">Advanced setup options</span>
+            <span className="font-medium">{t('installation.configuration')}</span>
+            <span className="ml-2 text-slate-600">{t('installation.configurationDesc')}</span>
           </a>
           <a href="/docs/auth" className="flex items-center text-blue-600 hover:text-blue-700 transition-colors">
-            <span className="font-medium">Authentication →</span>
-            <span className="ml-2 text-slate-600">Set up API authentication</span>
+            <span className="font-medium">{t('installation.authentication')}</span>
+            <span className="ml-2 text-slate-600">{t('installation.authenticationDesc')}</span>
           </a>
         </div>
       </div>
