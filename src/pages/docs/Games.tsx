@@ -1,51 +1,41 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useLanguage } from '@/contexts/LanguageContext';
+
 const Games = () => {
-  return <div className="space-y-8">
-      {/* Header Section */}
+  const { t } = useLanguage();
+
+  return (
+    <div className="space-y-8">
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-royal-blue mb-4">Games</h1>
-        <p className="text-xl text-royal-blue/80 max-w-3xl mx-auto">At the ever intertwining intersection of gaming and streaming.</p>
+        <h1 className="text-4xl font-bold text-foreground mb-4">{t('games.title')}</h1>
+        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t('games.subtitle')}</p>
       </div>
 
-      {/* Main Content */}
       <div className="space-y-8">
-        {/* Introduction */}
-        <div className="bg-plain-white/50 rounded-lg p-6 border border-sky-blue/20">
-          <p className="text-royal-blue/90 mb-4">As a team full of gamers & streamers, we built and released a number of fun, free arcade games and are working towards our first flagship game, Last Chad Standing, the first ever MMA Battle Royale, with a team of devs from the likes of Ubisoft as well as a founding team heavily involved with UFC, Oktagon and PFL stars, having filmed documentaries with champs like Jorge Masvidal, and trained under Conor Mcgregor's Coach Kavannah. The documentaries were also filmed by Luke Barnatt, the head of Andrew Tate's War room and former UFC slugger, on Behalf of DeHub.
-        </p>
-          <p className="text-royal-blue/90 mb-4"></p>
-          <p className="text-royal-blue/90 mb-4">
-            A play and earn model sustained entirely on fee generation ensuring no dilution or inflation is needed to incentivise engagement, positive feedback loops & general growth.
-          </p>
-          <p className="text-royal-blue/90">
-            This also has the added benefit of incentivising the team and community to consistently work harder to achieve the common goal as the more users we have, the more revenue we make, the more rewards are generated and the more users we can attract.
-          </p>
-          <p className="text-royal-blue/90 mt-4 font-semibold">
-            A truly self enhancing and sustainable ecosystem.
-          </p>
+        <div className="bg-card/50 rounded-lg p-6 border border-border">
+          <p className="text-foreground/90 mb-4">{t('games.intro1')}</p>
+          <p className="text-foreground/90 mb-4">{t('games.intro2')}</p>
+          <p className="text-foreground/90">{t('games.intro3')}</p>
+          <p className="text-foreground/90 mt-4 font-semibold">{t('games.intro4')}</p>
         </div>
 
-        {/* Tabs for different sections */}
         <Tabs defaultValue="upcoming" className="w-full">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="upcoming">Upcoming</TabsTrigger>
-            <TabsTrigger value="released">Released</TabsTrigger>
-            <TabsTrigger value="features">Features</TabsTrigger>
+            <TabsTrigger value="upcoming">{t('games.tabUpcoming')}</TabsTrigger>
+            <TabsTrigger value="released">{t('games.tabReleased')}</TabsTrigger>
+            <TabsTrigger value="features">{t('games.tabFeatures')}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="upcoming" className="space-y-6">
-            <div className="bg-plain-white/50 rounded-lg p-6 border border-sky-blue/20">
-              <h3 className="text-2xl font-semibold text-royal-blue mb-4">Upcoming Releases</h3>
-              
+            <div className="bg-card/50 rounded-lg p-6 border border-border">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">{t('games.upcomingTitle')}</h3>
               <div className="space-y-4">
-                <h4 className="text-xl font-semibold text-royal-blue">Last Chad Standing</h4>
-                <p className="text-royal-blue/90">
-                  Hyper realistic and gory battle royale featuring top UFC stars, game developers from Ubisoft and leading memes with their own skins.
-                </p>
+                <h4 className="text-xl font-semibold text-foreground">{t('games.lcsTitle')}</h4>
+                <p className="text-foreground/90">{t('games.lcsDesc')}</p>
                 <div className="mt-4">
-                  <span className="font-semibold text-royal-blue">Website: </span>
-                  <a href="https://lastchadstanding.com" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline">
+                  <span className="font-semibold text-foreground">{t('games.website')}: </span>
+                  <a href="https://lastchadstanding.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">
                     lastchadstanding.com
                   </a>
                 </div>
@@ -54,43 +44,28 @@ const Games = () => {
           </TabsContent>
 
           <TabsContent value="released" className="space-y-6">
-            <div className="bg-plain-white/50 rounded-lg p-6 border border-sky-blue/20">
-              <h3 className="text-2xl font-semibold text-royal-blue mb-6">Titles Released</h3>
-              
+            <div className="bg-card/50 rounded-lg p-6 border border-border">
+              <h3 className="text-2xl font-semibold text-foreground mb-6">{t('games.releasedTitle')}</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-lg font-semibold text-royal-blue mb-2">Whack A Schifff</h4>
-                  <p className="text-royal-blue/90">
-                    Whack Peter Schiff on the head every time he squirms out his mole hole to rack up points while avoiding the bombs to stay alive for a limited time.
-                  </p>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">{t('games.whackTitle')}</h4>
+                  <p className="text-foreground/90">{t('games.whackDesc')}</p>
                 </div>
-
                 <div>
-                  <h4 className="text-lg font-semibold text-royal-blue mb-2">Gas Guzzler</h4>
-                  <p className="text-royal-blue/90">
-                    Keep your ETH gas topped up while collecting dehub coins and avoiding other moon boys in their Lambos. Be sure to hit the NOS for a boost as you maximise your score in this endless driver!
-                  </p>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">{t('games.gasTitle')}</h4>
+                  <p className="text-foreground/90">{t('games.gasDesc')}</p>
                 </div>
-
                 <div>
-                  <h4 className="text-lg font-semibold text-royal-blue mb-2">Rocket Blaster</h4>
-                  <p className="text-royal-blue/90">
-                    Avoid those cursed laser beams on your 100km mission back to the moon in this endless blaster
-                  </p>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">{t('games.rocketTitle')}</h4>
+                  <p className="text-foreground/90">{t('games.rocketDesc')}</p>
                 </div>
-
                 <div>
-                  <h4 className="text-lg font-semibold text-royal-blue mb-2">Street Slayer</h4>
-                  <p className="text-royal-blue/90">
-                    Rid the streets of the greedy banking mafia and save the club at all cost in this endless fighter that's free for all, yet comes with full play and earn for Lean Chad Fight Club (LCFC) holders. LCFC are our genesis NFT mint partners and the first of many coming to the DeHub ecosystem.
-                  </p>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">{t('games.streetTitle')}</h4>
+                  <p className="text-foreground/90">{t('games.streetDesc')}</p>
                 </div>
-
-                <div className="mt-6 pt-4 border-t border-sky-blue/20">
-                  <p className="text-royal-blue/90 mb-3">
-                    Play all these games and more at our arcade:
-                  </p>
-                  <a href="https://arcade.dehub.net" target="_blank" rel="noopener noreferrer" className="text-middle-blue hover:text-royal-blue underline font-semibold">
+                <div className="mt-6 pt-4 border-t border-border">
+                  <p className="text-foreground/90 mb-3">{t('games.playArcade')}</p>
+                  <a href="https://arcade.dehub.net" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline font-semibold">
                     arcade.dehub.net
                   </a>
                 </div>
@@ -99,34 +74,22 @@ const Games = () => {
           </TabsContent>
 
           <TabsContent value="features" className="space-y-6">
-            <div className="bg-plain-white/50 rounded-lg p-6 border border-sky-blue/20">
-              <h3 className="text-2xl font-semibold text-royal-blue mb-6">Key Features</h3>
-              
+            <div className="bg-card/50 rounded-lg p-6 border border-border">
+              <h3 className="text-2xl font-semibold text-foreground mb-6">{t('games.featuresTitle')}</h3>
               <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-middle-blue rounded-full mt-2"></div>
-                  <p className="text-royal-blue/90">Barrier free play and win to earn</p>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-middle-blue rounded-full mt-2"></div>
-                  <p className="text-royal-blue/90">Classic arcade mini games, tournaments & top tier independent/indi games</p>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-middle-blue rounded-full mt-2"></div>
-                  <p className="text-royal-blue/90">Stream gaming content directly on our streaming app</p>
-                </div>
-                
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-middle-blue rounded-full mt-2"></div>
-                  <p className="text-royal-blue/90">Build decentralised guilds and e-sports divisions with existing pro gamers</p>
-                </div>
+                {[t('games.feature1'), t('games.feature2'), t('games.feature3'), t('games.feature4')].map((feature, i) => (
+                  <div key={i} className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                    <p className="text-foreground/90">{feature}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </TabsContent>
         </Tabs>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Games;
