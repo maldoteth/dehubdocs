@@ -130,7 +130,7 @@ export default function Team() {
                           ) : social.platform === 'Instagram' ? (
                             <img src={instagramLogo} alt="Instagram" className="w-4 h-4" />
                           ) : SocialIcon ? (
-                            <SocialIcon className="w-4 h-4 text-black" />
+                            <SocialIcon className="w-4 h-4" style={{ color: '#000000' }} />
                           ) : null}
                         </a>
                       </Button>
