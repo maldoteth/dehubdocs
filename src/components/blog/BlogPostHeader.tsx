@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Calendar, Clock } from 'lucide-react';
 import { BlogPost } from '@/types/blog';
 import { ShareButtons } from './ShareButtons';
 import BackButton from './BackButton';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface BlogPostHeaderProps {
   post: BlogPost;
@@ -13,13 +13,15 @@ interface BlogPostHeaderProps {
 }
 
 export const BlogPostHeader: React.FC<BlogPostHeaderProps> = ({ post, displayDate, shareUrl, imageUrl }) => {
+  const { t } = useLanguage();
+
   return (
     <header className="mb-8">
       <BackButton />
       
       {post.featured && (
         <span className="inline-block bg-gradient-to-r from-royal-blue to-middle-blue text-black px-4 py-2 rounded-full text-sm font-semibold mb-4">
-          Featured Post
+          {t('blog.featuredPost')}
         </span>
       )}
       
@@ -34,7 +36,7 @@ export const BlogPostHeader: React.FC<BlogPostHeaderProps> = ({ post, displayDat
         </div>
         <div className="flex items-center gap-1">
           <Clock className="w-4 h-4" />
-          <span className="font-exo">{post.readingTime} min read</span>
+          <span className="font-exo">{post.readingTime} {t('blog.minRead')}</span>
         </div>
       </div>
 

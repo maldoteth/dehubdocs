@@ -1,20 +1,18 @@
 import React from 'react';
-import { AlertCircle } from 'lucide-react';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-export const BlogHeader: React.FC = () => {
-  return <>
-      {/* Construction Notice */}
-      
+import { useLanguage } from '@/contexts/LanguageContext';
 
-      {/* Header */}
+export const BlogHeader: React.FC = () => {
+  const { t } = useLanguage();
+
+  return <>
       <div className="text-center space-y-6">
         <h1 className="text-5xl font-bold text-foreground leading-tight font-exo">
           DeHub
-          <span className="block bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">Community Blog</span>
+          <span className="block bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">{t('blog.communityBlog')}</span>
         </h1>
         
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-exo">
-          Stay updated with the latest news, insights, and stories from the DeHub ecosystem. From announcements to tech guides, everything can be found here.
+          {t('blog.blogSubtitle')}
         </p>
       </div>
     </>;
