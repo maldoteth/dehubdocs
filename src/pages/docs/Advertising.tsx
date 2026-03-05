@@ -1,48 +1,36 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Eye, Shield, TrendingUp, Users, Zap, Star, ExternalLink, BarChart3, Target, Calculator, AlertTriangle, DollarSign, Bot, TrendingDown } from 'lucide-react';
+import { Eye, Shield, TrendingUp, AlertTriangle, DollarSign, Bot, TrendingDown, BarChart3, Target, Calculator } from 'lucide-react';
 import AdvertisingPricing from '@/components/AdvertisingPricing';
 import CampaignCreator from '@/components/advertising/CampaignCreator';
 import CampaignAnalytics from '@/components/advertising/CampaignAnalytics';
 import BudgetCalculator from '@/components/advertising/BudgetCalculator';
+import { useLanguage } from '@/contexts/LanguageContext';
+
 const Advertising = () => {
-  return <div className="space-y-8">
+  const { t } = useLanguage();
+
+  return (
+    <div className="space-y-8">
       <div>
-        <h1 className="text-4xl font-bold text-royal-blue font-exo mb-4">Advertising</h1>
-        <p className="text-lg text-royal-blue/80 leading-relaxed">
-          Taking digital advertising to new horizons.
-        </p>
+        <h1 className="text-4xl font-bold text-foreground mb-4">{t('advertising.title')}</h1>
+        <p className="text-lg text-muted-foreground leading-relaxed">{t('advertising.subtitle')}</p>
       </div>
 
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <Eye className="w-5 h-5 text-middle-blue" />
-            <span>POVR: Proof of View & Rank</span>
+            <Eye className="w-5 h-5 text-primary" />
+            <span>{t('advertising.povrTitle')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <p className="text-royal-blue/80">
-            Our ad-tech solution is unlike anything else seen across legacy or blockchain markets, and serves a unique purpose within our own app.
-          </p>
-          
-          <p className="text-royal-blue/80">
-            "Proof of View" is one dimensional and beyond identification, adds little benefit for users or holders.
-          </p>
-          
-          <p className="text-royal-blue/80">
-            What if you could prove viewers were real without wasting block space or gas? What if you could leverage each wallet's financial data, not just for saving costs, but also to maximise ROI for your campaigns? Don't just save more money, make more too!
-          </p>
-          
-          <p className="text-royal-blue/80">
-            Our software, with patents pending, does this via an unprecedented 13-tier ranking system combined with our verification badges, which were highlighted in this previous feature spotlight.
-          </p>
-          
-          <p className="text-royal-blue/80 font-semibold">
-            We are calling it "proof-of-view-and-rank" or "POVR".
-          </p>
+          <p className="text-muted-foreground">{t('advertising.povrDesc1')}</p>
+          <p className="text-muted-foreground">{t('advertising.povrDesc2')}</p>
+          <p className="text-muted-foreground">{t('advertising.povrDesc3')}</p>
+          <p className="text-muted-foreground">{t('advertising.povrDesc4')}</p>
+          <p className="text-muted-foreground font-semibold">{t('advertising.povrDesc5')}</p>
         </CardContent>
       </Card>
 
@@ -50,59 +38,49 @@ const Advertising = () => {
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
             <AlertTriangle className="w-5 h-5 text-destructive" />
-            <span>The Problem</span>
+            <span>{t('advertising.problemTitle')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-          <p className="text-royal-blue/80">
-            Ad fraud costs businesses billions annually, with estimates for 2023-2024 ranging from <span className="font-semibold text-destructive">$84 billion to over $125 billion per year</span>, projected to rise to $170 billion by 2028. Fraudsters use sophisticated bots and tactics to steal ad spend, impacting metrics and ROI, with ~20-30% of digital spend often wasted on fake traffic.
+          <p className="text-muted-foreground">
+            {t('advertising.problemDesc')} <span className="font-semibold text-destructive">{t('advertising.problemAmount')}</span>{t('advertising.problemDesc2')}
           </p>
           
           <div>
-            <h4 className="font-semibold text-royal-blue flex items-center gap-2 mb-3">
+            <h4 className="font-semibold text-foreground flex items-center gap-2 mb-3">
               <TrendingDown className="w-4 h-4 text-destructive" />
-              Key Figures & Trends
+              {t('advertising.keyFigures')}
             </h4>
-            <ul className="space-y-2 text-royal-blue/80 ml-6">
-              <li className="flex items-start gap-2">
-                <span className="text-destructive font-medium">2023 Costs:</span> Around $84 billion to $88 billion
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-destructive font-medium">2024 Projections:</span> Potentially reaching $125 billion to $140 billion
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-destructive font-medium">Future Growth:</span> Expected to hit $170 billion by 2028
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-destructive font-medium">Spend Lost:</span> Globally, 20-30% of digital ad spend is lost to fraud in 2025
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-destructive font-medium">Impact:</span> This waste can mean £100k-£150k lost on a £500k budget, affecting real ROI
-              </li>
+            <ul className="space-y-2 text-muted-foreground ml-6">
+              <li className="flex items-start gap-2"><span className="text-destructive font-medium">{t('advertising.costs2023')}</span> {t('advertising.costs2023Desc')}</li>
+              <li className="flex items-start gap-2"><span className="text-destructive font-medium">{t('advertising.projections2024')}</span> {t('advertising.projections2024Desc')}</li>
+              <li className="flex items-start gap-2"><span className="text-destructive font-medium">{t('advertising.futureGrowth')}</span> {t('advertising.futureGrowthDesc')}</li>
+              <li className="flex items-start gap-2"><span className="text-destructive font-medium">{t('advertising.spendLost')}</span> {t('advertising.spendLostDesc')}</li>
+              <li className="flex items-start gap-2"><span className="text-destructive font-medium">{t('advertising.impact')}</span> {t('advertising.impactDesc')}</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-royal-blue flex items-center gap-2 mb-3">
+            <h4 className="font-semibold text-foreground flex items-center gap-2 mb-3">
               <Bot className="w-4 h-4 text-destructive" />
-              Why Ad Fraud is So Costly
+              {t('advertising.whyCostly')}
             </h4>
-            <ul className="space-y-2 text-royal-blue/80 ml-6">
-              <li><span className="font-medium">Sophisticated Bots:</span> Advanced bots mimic human behavior, creating fake clicks, video views, and form fills.</li>
-              <li><span className="font-medium">Incentives:</span> Ad tech platforms historically rewarded scale, not necessarily real humans, creating opportunities for fraud.</li>
-              <li><span className="font-medium">Follow the Money:</span> As digital ad spend increases, so does the incentive for fraudsters to divert funds.</li>
+            <ul className="space-y-2 text-muted-foreground ml-6">
+              <li><span className="font-medium">{t('advertising.sophisticatedBots')}</span> {t('advertising.sophisticatedBotsDesc')}</li>
+              <li><span className="font-medium">{t('advertising.incentives')}</span> {t('advertising.incentivesDesc')}</li>
+              <li><span className="font-medium">{t('advertising.followMoney')}</span> {t('advertising.followMoneyDesc')}</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-royal-blue flex items-center gap-2 mb-3">
+            <h4 className="font-semibold text-foreground flex items-center gap-2 mb-3">
               <DollarSign className="w-4 h-4 text-destructive" />
-              Consequences
+              {t('advertising.consequences')}
             </h4>
-            <ul className="space-y-2 text-royal-blue/80 ml-6">
-              <li><span className="font-medium">Wasted Budget:</span> Money goes to bots instead of real customers.</li>
-              <li><span className="font-medium">Skewed Data:</span> Pollutes analytics, leading to poor business decisions.</li>
-              <li><span className="font-medium">Lost ROI:</span> Prevents brands from achieving goals, even with large campaigns.</li>
+            <ul className="space-y-2 text-muted-foreground ml-6">
+              <li><span className="font-medium">{t('advertising.wastedBudget')}</span> {t('advertising.wastedBudgetDesc')}</li>
+              <li><span className="font-medium">{t('advertising.skewedData')}</span> {t('advertising.skewedDataDesc')}</li>
+              <li><span className="font-medium">{t('advertising.lostRoi')}</span> {t('advertising.lostRoiDesc')}</li>
             </ul>
           </div>
         </CardContent>
@@ -111,44 +89,28 @@ const Advertising = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <TrendingUp className="w-5 h-5 text-middle-blue" />
-            <span>How it works</span>
+            <TrendingUp className="w-5 h-5 text-primary" />
+            <span>{t('advertising.howItWorks')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <p className="text-royal-blue/80">
-            The higher your total holdings, the higher-ranking badge you unlock, the more you earn from ads, the more companies pay to advertise to you.
-          </p>
-          
-          <p className="text-royal-blue/80">
-            This way benefits the whole ecosystem and not just a single party. Content creators, consumers, holders & companies advertising on the platform all reap more rewards.
-          </p>
-          
-          <p className="text-royal-blue/80">
-            Financial data is the most lucrative, and ours is uniquely combined into one system advertisers can use to target audiences. This isn't even something you can do off-chain, as bank statements are private whereas the blockchain is public.
-          </p>
-          
-          <p className="text-royal-blue/80">
-            Being able to target whales and big spenders while also tailoring special deals or discounts for smaller fish in the sea will re-shape how advertising works across the globe. Why wouldn't anyone want this?
-          </p>
+          <p className="text-muted-foreground">{t('advertising.howItWorksDesc1')}</p>
+          <p className="text-muted-foreground">{t('advertising.howItWorksDesc2')}</p>
+          <p className="text-muted-foreground">{t('advertising.howItWorksDesc3')}</p>
+          <p className="text-muted-foreground">{t('advertising.howItWorksDesc4')}</p>
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <Shield className="w-5 h-5 text-middle-blue" />
-            <span>How does this prevent fraud?</span>
+            <Shield className="w-5 h-5 text-primary" />
+            <span>{t('advertising.preventFraud')}</span>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <p className="text-royal-blue/80">
-            Botting becomes less profitable while activity is trackable on-chain, easily connecting bad actors & eventually curating the entire user base. Advertisers target higher ranks, leaving minimal extractable value at the bottom layer, where any remaining fraud remains. On top of that, our decentralised moderation allows more efficient illicit activity detection and prevention.
-          </p>
-          
-          <p className="text-royal-blue/80">
-            For more information on our ad revenue sharing, refer to this thread and our whitepaper below. Also, be sure to follow us for all the latest news on app features and updates.
-          </p>
+          <p className="text-muted-foreground">{t('advertising.preventFraudDesc1')}</p>
+          <p className="text-muted-foreground">{t('advertising.preventFraudDesc2')}</p>
         </CardContent>
       </Card>
 
@@ -157,48 +119,42 @@ const Advertising = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
-            <BarChart3 className="w-5 h-5 text-middle-blue" />
-            <span>Advertiser Dashboard Preview</span>
+            <BarChart3 className="w-5 h-5 text-primary" />
+            <span>{t('advertising.dashboardPreview')}</span>
           </CardTitle>
-          <CardDescription>
-            Experience the POVR advertising platform from an advertiser's perspective. This interactive preview shows the tools and analytics available to companies advertising on DeHub.
-          </CardDescription>
+          <CardDescription>{t('advertising.dashboardDesc')}</CardDescription>
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="creator" className="w-full">
             <TabsList className="grid w-full grid-cols-3">
               <TabsTrigger value="creator" className="flex items-center justify-center gap-2">
                 <Target className="w-4 h-4" />
-                <span className="hidden sm:inline">Campaign Creator</span>
+                <span className="hidden sm:inline">{t('advertising.campaignCreator')}</span>
               </TabsTrigger>
               <TabsTrigger value="analytics" className="flex items-center justify-center gap-2">
                 <BarChart3 className="w-4 h-4" />
-                <span className="hidden sm:inline">Analytics</span>
+                <span className="hidden sm:inline">{t('advertising.analytics')}</span>
               </TabsTrigger>
               <TabsTrigger value="calculator" className="flex items-center justify-center gap-2">
                 <Calculator className="w-4 h-4" />
-                <span className="hidden sm:inline">Budget Calculator</span>
+                <span className="hidden sm:inline">{t('advertising.budgetCalculator')}</span>
               </TabsTrigger>
             </TabsList>
             
             <TabsContent value="creator" className="mt-6">
               <CampaignCreator />
             </TabsContent>
-            
             <TabsContent value="analytics" className="mt-6">
               <CampaignAnalytics />
             </TabsContent>
-            
             <TabsContent value="calculator" className="mt-6">
               <BudgetCalculator />
             </TabsContent>
           </Tabs>
         </CardContent>
       </Card>
-
-      <Card className="bg-gradient-to-br from-middle-blue/10 to-royal-blue/5 border-middle-blue/20">
-        
-      </Card>
-    </div>;
+    </div>
+  );
 };
+
 export default Advertising;
