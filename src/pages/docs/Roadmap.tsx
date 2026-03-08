@@ -38,7 +38,7 @@ const QuarterBlock = ({ quarter, t }: { quarter: QuarterData; t: (key: string) =
           <Badge variant="outline" className={statusClass}>{statusLabel}</Badge>
         </div>
         <div className="text-muted-foreground text-sm leading-relaxed space-y-1">
-          {(quarter.items as string[]).map((item, i) => (
+          {(Array.isArray(quarter.items) ? quarter.items : []).map((item, i) => (
             <div key={i} className="flex">
               <span className="mr-2 flex-shrink-0">•</span>
               <span>{item}</span>
