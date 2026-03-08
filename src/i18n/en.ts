@@ -1151,7 +1151,7 @@ export const en = {
     q1q2_2026: 'Q1–Q2 2026',
     q1q2_2026_items: [
       'Last Chad Standing open beta release with new game developer onboarded',
-      'TGE for LCS listing — March 2026',
+      'TGE begins for LCS listing — March 2026',
       'Apple App Store listing',
       'App launch marketing campaigns across X, TikTok, YouTube, Instagram, and Twitch',
       'New web app release',
