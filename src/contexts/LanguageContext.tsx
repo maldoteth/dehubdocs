@@ -252,21 +252,22 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     document.documentElement.setAttribute('lang', language);
   }, [language, dir]);
 
-  const t = useCallback((key: string): string => {
+  const t = useCallback((key: string): any => {
     const translations = translationMap[language];
     const keys = key.split('.');
     let value: any = translations;
     for (const k of keys) {
       value = value?.[k];
     }
-    if (typeof value === 'string') return value;
+    if (typeof value === 'string' || Array.isArray(value)) return value;
     
     // Fallback to English
     let fallback: any = translationMap.en;
     for (const k of keys) {
       fallback = fallback?.[k];
     }
-    return typeof fallback === 'string' ? fallback : key;
+    if (typeof fallback === 'string' || Array.isArray(fallback)) return fallback;
+    return key;
   }, [language]);
 
   return (
