@@ -340,7 +340,7 @@ export const DocsChatBot = () => {
               size="icon"
               className="rounded-full bg-primary hover:bg-primary/90 w-10 h-10"
             >
-              <Send className="w-4 h-4" />
+              <Send className="w-4 h-4 text-primary-foreground dark:text-primary-foreground" style={{ color: 'inherit' }} />
             </Button>
           </div>
         </div>
