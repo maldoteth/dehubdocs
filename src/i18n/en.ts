@@ -167,7 +167,7 @@ export const en = {
     profileTitle: 'Customise and update your public profile or channel',
     profileDesc: "Control what users can or can't see while being able to export your followers' data at any time. This gives you full ownership of your channel and allows you to take your business anywhere with you, no matter what happens.",
     topUpTitle: 'Top Up Tokens In 2 Clicks',
-    topUpDesc: 'We have our own in app currency, similar to Vbucks you get on Fortnite or TikTok coins, ours are called DeHub Tokens or DHB for short. You will see these as gold coins across the app. You need DHB tokens to transact across the app and use the services such as tips, subs & more. Top up in 2 clicks with below.',
+    topUpDesc: 'We have our own in app currency, similar to Vbucks you get on Fortnite or TikTok coins, ours are called DeHub Tokens or DHB for short. You will see these as gold coins across the app. DHB tokens are used for premium services such as tips, subscriptions & more. Posting and browsing are completely free — if you sign up with socials, email or SMS, we sponsor all gas fees for you. Wallet users pay standard ETH or BNB gas. Top up DHB in 2 clicks with below.',
     directTitle: 'Direct',
     dpayDesc: 'Direct purchase with Stripe',
     dehubTokenTitle: 'DeHub Token',

@@ -11,7 +11,7 @@ const DEHUB_KNOWLEDGE = `
 ## What is DeHub?
 DeHub is a decentralised, user-owned alternative to legacy media apps like YouTube, X, Rumble, Twitch, and Patreon. It's a censorship resistant, open source platform for content creation, streaming and gaming. Powered by its own utility token ($DHB) and cutting-edge DePIN infrastructure that reshapes how content is hosted, transcoded, and delivered globally.
 
-Built by gamers & streamers, DeHub delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Users can sign up with socials or email and have a wallet generated automatically. Launch PPV events, monetise with subscriptions or paid messages, create Watch2Earn experiences, or distribute exclusive token-gated content—all without traditional banking or KYC processes.
+Built by gamers & streamers, DeHub delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no technical barriers. Users can sign up with socials, email or SMS and have a wallet generated automatically — gas fees are fully sponsored for these users so posting, browsing, and interacting is completely free. Only users who connect their own external wallet need to pay standard ETH or BNB gas fees. DHB tokens are NOT required to post or browse — they are used for premium services like tipping, subscriptions, PPV, and unlocking enhanced features. Launch PPV events, monetise with subscriptions or paid messages, create Watch2Earn experiences, or distribute exclusive token-gated content—all without traditional banking or KYC processes.
 
 The app is scaled via a decentralized miner network providing shared computing power to host, transcode, and deliver content that by design, should live forever. DeHub was the first protocol to tokenise content back in 2023.
 
@@ -30,15 +30,22 @@ Social media, content & dance expert overseeing communications & corporate relat
 Operational powerhouse and former pro-gamer. Investments and tokenomics expert who played an instrumental role in DeHub's growth in 2021. Oversaw the Blocjerk fundraise of $1,000,000 in 2023 (peak ROI 1,000%). Former professional gamer ranking globally in top 3 COD MW2 and top 100 on Warzone.
 
 ## DHB Token Utility
-The DHB token provides:
+The DHB token is used for premium services and enhanced features (NOT required to post or browse):
+- Tipping creators & rewarding viewers with bounties
+- Subscribing to creators and unlocking premium content
+- Pay-per-view events and live streams
 - Access to games, content, events & enhanced features across all d'apps
 - Global, instant, permissionless transactions
-- Tipping creators & rewarding viewers with bounties
 - Purchasing products, digital collectables, assets and services on the Phygital NFT Marketplace
 - Proposing & voting on protocol decisions (governance)
 - Staking to earn real yield from protocol revenue buybacks & x-2-earn rewards
 - Securing the network through staking while accessing enhanced rights
 - Mining via dispute management, content moderation & Hub Improvement Proposals (HIPS)
+
+## Gas Fees
+- Users who sign up with socials, email, or SMS: Gas is fully sponsored by DeHub (FREE)
+- Users who connect their own external wallet: Standard ETH or BNB gas fees apply
+- DHB tokens are NOT used for gas and are NOT required to post content
 
 ## Token Economics
 - Total Supply: 8,000,000,000 $DHB

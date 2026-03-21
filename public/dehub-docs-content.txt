@@ -10,7 +10,7 @@ Resist censorship & live forever onchain.
 
 Imagine a world where creators own their audience data, control their content distribution, and never fear censorship or demonetization. DeHub makes this a reality as a decentralised and user owned alternative to apps such as YouTube, X, Rumble, Twitch and Patreon. Powered by its own utility token and cutting-edge DePIN infrastructure that's reshaping how content is hosted, transcoded, and delivered globally.
 
-Built by gamers & streamers, we've solved the crypto complexity problem. Our platform delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no gas fees, no technical barriers. Just pure creative freedom with blockchain-verified earnings visible on our public leaderboards.
+Built by gamers & streamers, we've solved the crypto complexity problem. Our platform delivers a seamless Web2 experience while everything runs on-chain with full transparency—no wallet setup, no technical barriers. Gas fees are fully sponsored for users who sign up with socials, email, or SMS. Wallet users pay standard ETH or BNB gas. Just pure creative freedom with blockchain-verified earnings visible on our public leaderboards.
 
 Launch PPV events, monetise with subscriptions or paid messages, create Watch2Earn experiences to grow an audience or reward existing communities, or distribute exclusive token-gated content—all without traditional banking or KYC processes. Your content, your rules, your revenue. Direct creator-to-fan relationships in a censorship-resistant ecosystem where your success is entirely in your hands.
 
@@ -155,7 +155,7 @@ DeHub Unique Advantages:
 • Permissionless: No platform dependency for earnings
 
 Top Up Tokens In 2 Clicks:
-DeHub has an in-app currency called DHB tokens (shown as gold coins). You need DHB tokens to transact across the app and use services such as tips, subs & more. Top up directly with Stripe at dehub.io/dpay.
+DeHub has an in-app currency called DHB tokens (shown as gold coins). DHB tokens are used for premium services such as tips, subscriptions & more. Posting and browsing are completely free. Gas is sponsored for social/email/SMS signups; wallet users pay ETH or BNB gas. Top up directly with Stripe at dehub.io/dpay.
 
 Badge of Honour Model:
 The more $DHB tokens you hold, the more rewarding it is. This includes the Badge of Honour system that unlocks improved cosmetics on your public profile as well as further enhanced, premium features.
