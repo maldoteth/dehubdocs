@@ -469,6 +469,10 @@ serve(async (req) => {
   try {
     const { messages } = await req.json();
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+    const latestUserMessage = [...(messages ?? [])]
+      .reverse()
+      .find((message: { role?: string }) => message?.role === "user")?.content ?? "";
+    const isGasFeeQuestion = /\bgas\b|\bfees?\b|\bwallet\b/i.test(latestUserMessage);
     
     if (!LOVABLE_API_KEY) {
       throw new Error("LOVABLE_API_KEY is not configured");
@@ -504,9 +508,18 @@ Guidelines:
 - If asked about something not in the knowledge base, say you don't have that information and suggest contacting tech@dehub.net
 - Never provide financial advice or suggest DHB as an investment
 - Always remind users that DHB is a utility token, not an investment, when relevant
+- Gas fee rule (must be accurate every time): users who sign up with socials, email, or SMS have sponsored gas; users connecting their own external wallet must pay standard native ETH or BNB gas fees
+- Never claim that all users can post without gas; always include the external wallet exception when discussing gas, posting costs, or transaction fees
 - Direct users to specific documentation sections when appropriate
 - Keep responses clear and well-formatted`
           },
+          ...(isGasFeeQuestion
+            ? [{
+                role: "system",
+                content:
+                  "When answering this gas-related question, explicitly state: social/email/SMS signups have sponsored gas, but users connecting their own external wallet must pay ETH or BNB gas. Also state DHB is not used for gas.",
+              }]
+            : []),
           ...messages,
         ],
         stream: true,
