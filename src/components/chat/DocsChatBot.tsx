@@ -331,14 +331,14 @@ export const DocsChatBot = () => {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Ask about DeHub..."
-              className="flex-1 px-4 py-2.5 rounded-full border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              className="flex-1 px-4 py-2.5 rounded-xl border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
               disabled={isLoading}
             />
             <Button
               onClick={handleSend}
               disabled={!input.trim() || isLoading}
               size="icon"
-              className="rounded-full bg-background border border-border text-foreground hover:bg-muted w-10 h-10 disabled:opacity-100 disabled:bg-background disabled:text-foreground"
+              className="rounded-xl bg-background border border-border text-foreground hover:bg-muted w-10 h-10 disabled:opacity-100 disabled:bg-background disabled:text-foreground"
             >
               <Send className="w-4 h-4 text-foreground" />
             </Button>
