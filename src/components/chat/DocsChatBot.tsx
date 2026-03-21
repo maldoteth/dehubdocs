@@ -338,9 +338,9 @@ export const DocsChatBot = () => {
               onClick={handleSend}
               disabled={!input.trim() || isLoading}
               size="icon"
-              className="rounded-full bg-foreground hover:bg-foreground/90 text-background w-10 h-10"
+              className="rounded-full bg-background border border-border text-foreground hover:bg-muted w-10 h-10 disabled:opacity-100 disabled:bg-background disabled:text-foreground"
             >
-              <Send className="w-4 h-4" />
+              <Send className="w-4 h-4 text-foreground" />
             </Button>
           </div>
         </div>
