@@ -1,27 +1,28 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import ShaderBackground from '@/components/ShaderBackground';
 
 const Index = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black text-white">
-      {/* Animated shader background */}
-      <div className="absolute inset-0">
-        <ShaderBackground />
+      {/* Plain white logo background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <img
+          src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png"
+          alt=""
+          aria-hidden="true"
+          className="w-[70vmin] h-[70vmin] opacity-10 brightness-0 invert"
+        />
       </div>
-
-      {/* Subtle vignette for legibility */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/40 pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center">
         <img
           src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png"
           alt="DeHub Logo"
-          className="w-20 h-20 mb-8 drop-shadow-[0_0_20px_rgba(255,87,34,0.6)]"
+          className="w-20 h-20 mb-8 brightness-0 invert"
         />
 
-        <h1 className="text-5xl md:text-6xl font-bold font-exo mb-6 bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent">
+        <h1 className="text-5xl md:text-6xl font-bold font-exo mb-6">
           The docs have moved
         </h1>
 
