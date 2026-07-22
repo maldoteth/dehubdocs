@@ -119,10 +119,17 @@ export default function ShaderBackground() {
     <div className="absolute inset-0 w-full h-full">
       <MeshGradient
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
-        colors={["#000000", "#ff5722", "#1a1a2e", "#ff8a65"]}
-        speed={0.35}
+        colors={["#0a0a0a", "#ff5722", "#7c1e00", "#ffab8a", "#2a0a00"]}
+        speed={0.6}
         distortion={1}
-        swirl={0.8}
+        swirl={1}
+      />
+      <MeshGradient
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", mixBlendMode: "screen", opacity: 0.6 }}
+        colors={["#000000", "#ff8a65", "#ff5722", "#000000"]}
+        speed={0.9}
+        distortion={0.8}
+        swirl={0.6}
       />
       <Canvas
         camera={{ position: [0, 0, 3], fov: 60 }}
