@@ -1,34 +1,47 @@
-
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
+import ShaderBackground from '@/components/ShaderBackground';
 
 const Index = () => {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    // Redirect to docs home page after a brief moment
-    const timer = setTimeout(() => {
-      navigate('/docs');
-    }, 100);
-
-    return () => clearTimeout(timer);
-  }, [navigate]);
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
-      <div className="text-center space-y-4">
-        <img 
-          src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png" 
-          alt="DeHub Logo" 
-          className="w-16 h-16 mx-auto"
+    <div className="relative min-h-screen w-full overflow-hidden bg-black text-white">
+      {/* Animated shader background */}
+      <div className="absolute inset-0">
+        <ShaderBackground />
+      </div>
+
+      {/* Dark vignette for legibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70 pointer-events-none" />
+
+      {/* Content */}
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center">
+        <img
+          src="/lovable-uploads/bca432dc-7ef2-4a07-99b6-fac376265184.png"
+          alt="DeHub Logo"
+          className="w-20 h-20 mb-8 drop-shadow-[0_0_20px_rgba(255,87,34,0.6)]"
         />
-        <h1 className="text-4xl font-bold text-jet-black font-exo">DeHub</h1>
-        <p className="text-xl text-gray-600 font-exo">Redirecting to documentation...</p>
-        <div className="flex justify-center space-x-2">
-          <div className="w-2 h-2 bg-light-silver rounded-full animate-bounce" style={{ animationDelay: '0s' }} />
-          <div className="w-2 h-2 bg-medium-silver rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
-          <div className="w-2 h-2 bg-jet-black rounded-full animate-bounce" style={{ animationDelay: '0.4s' }} />
-        </div>
+
+        <h1 className="text-5xl md:text-6xl font-bold font-exo mb-6 bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent">
+          The docs have moved
+        </h1>
+
+        <p className="text-lg md:text-xl text-white/80 max-w-xl mb-10 font-exo leading-relaxed">
+          To learn about DeHub, click the link below.
+        </p>
+
+        <a
+          href="https://dehub.io/docs"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-black font-semibold font-exo text-lg shadow-2xl hover:bg-white/90 transition-all duration-200 hover:scale-105"
+        >
+          Go to DeHub Docs
+          <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" />
+        </a>
+
+        <p className="mt-6 text-sm text-white/50 font-exo">
+          dehub.io/docs
+        </p>
       </div>
     </div>
   );
