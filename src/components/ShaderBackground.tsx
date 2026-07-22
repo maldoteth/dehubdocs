@@ -3,21 +3,22 @@
 import { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { MeshGradient } from "@paper-design/shaders-react";
 
 const vertexShader = `
   uniform float time;
   uniform float intensity;
   varying vec2 vUv;
   varying vec3 vPosition;
-  
+
   void main() {
     vUv = uv;
     vPosition = position;
-    
+
     vec3 pos = position;
     pos.y += sin(pos.x * 10.0 + time) * 0.1 * intensity;
     pos.x += cos(pos.y * 8.0 + time * 1.5) * 0.05 * intensity;
-    
+
     gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
   }
 `;
@@ -29,19 +30,19 @@ const fragmentShader = `
   uniform vec3 color2;
   varying vec2 vUv;
   varying vec3 vPosition;
-  
+
   void main() {
     vec2 uv = vUv;
-    
+
     float noise = sin(uv.x * 20.0 + time) * cos(uv.y * 15.0 + time * 0.8);
     noise += sin(uv.x * 35.0 - time * 2.0) * cos(uv.y * 25.0 + time * 1.2) * 0.5;
-    
+
     vec3 color = mix(color1, color2, noise * 0.5 + 0.5);
     color = mix(color, vec3(1.0), pow(abs(noise), 2.0) * intensity);
-    
+
     float glow = 1.0 - length(uv - 0.5) * 2.0;
     glow = pow(glow, 2.0);
-    
+
     gl_FragColor = vec4(color * glow, glow * 0.8);
   }
 `;
@@ -50,12 +51,10 @@ function ShaderPlane({
   position,
   color1 = "#ff5722",
   color2 = "#ffffff",
-  scale = 2,
 }: {
   position: [number, number, number];
   color1?: string;
   color2?: string;
-  scale?: number;
 }) {
   const mesh = useRef<THREE.Mesh>(null);
 
@@ -66,7 +65,7 @@ function ShaderPlane({
       color1: { value: new THREE.Color(color1) },
       color2: { value: new THREE.Color(color2) },
     }),
-    [color1, color2],
+    [color1, color2]
   );
 
   useFrame((state) => {
@@ -77,7 +76,7 @@ function ShaderPlane({
   });
 
   return (
-    <mesh ref={mesh} position={position} scale={scale}>
+    <mesh ref={mesh} position={position}>
       <planeGeometry args={[2, 2, 32, 32]} />
       <shaderMaterial
         uniforms={uniforms}
@@ -93,43 +92,49 @@ function ShaderPlane({
 function EnergyRing({
   radius = 1,
   position = [0, 0, 0],
-  color = "#ff5722",
 }: {
   radius?: number;
   position?: [number, number, number];
-  color?: string;
 }) {
   const mesh = useRef<THREE.Mesh>(null);
 
   useFrame((state) => {
     if (mesh.current) {
-      mesh.current.rotation.z = state.clock.elapsedTime * 0.5;
+      mesh.current.rotation.z = state.clock.elapsedTime;
       const mat = mesh.current.material as THREE.MeshBasicMaterial;
-      mat.opacity = 0.4 + Math.sin(state.clock.elapsedTime * 3) * 0.25;
+      mat.opacity = 0.5 + Math.sin(state.clock.elapsedTime * 3) * 0.3;
     }
   });
 
   return (
     <mesh ref={mesh} position={position}>
-      <ringGeometry args={[radius * 0.8, radius, 64]} />
-      <meshBasicMaterial color={color} transparent opacity={0.6} side={THREE.DoubleSide} />
+      <ringGeometry args={[radius * 0.8, radius, 32]} />
+      <meshBasicMaterial color="#ff5722" transparent opacity={0.6} side={THREE.DoubleSide} />
     </mesh>
   );
 }
 
 export default function ShaderBackground() {
   return (
-    <Canvas
-      className="absolute inset-0"
-      camera={{ position: [0, 0, 5], fov: 60 }}
-      gl={{ antialias: true, alpha: true }}
-    >
-      <ShaderPlane position={[-1.5, 0.8, 0]} color1="#ff5722" color2="#ffb199" scale={2.5} />
-      <ShaderPlane position={[1.5, -0.6, -0.5]} color1="#4f46e5" color2="#a5b4fc" scale={2.2} />
-      <ShaderPlane position={[0, 0, -1]} color1="#0ea5e9" color2="#ffffff" scale={3} />
-      <EnergyRing radius={1.4} position={[-1.2, 0.6, 0.3]} color="#ff5722" />
-      <EnergyRing radius={1.1} position={[1.4, -0.4, 0.4]} color="#4f46e5" />
-      <EnergyRing radius={0.7} position={[0.2, 0.2, 0.6]} color="#ffffff" />
-    </Canvas>
+    <div className="absolute inset-0 w-full h-full">
+      <MeshGradient
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
+        colors={["#000000", "#ff5722", "#1a1a2e", "#ff8a65"]}
+        speed={0.35}
+        distortion={1}
+        swirl={0.8}
+      />
+      <Canvas
+        camera={{ position: [0, 0, 3], fov: 60 }}
+        style={{ position: "absolute", inset: 0 }}
+        gl={{ alpha: true, antialias: true }}
+      >
+        <ambientLight intensity={0.5} />
+        <ShaderPlane position={[-1.2, 0.4, 0]} color1="#ff5722" color2="#ffffff" />
+        <ShaderPlane position={[1.3, -0.5, 0.2]} color1="#ff8a65" color2="#1a1a2e" />
+        <EnergyRing radius={1.2} position={[0, 0, 0.5]} />
+        <EnergyRing radius={0.7} position={[1, 0.6, 0.6]} />
+      </Canvas>
+    </div>
   );
 }
