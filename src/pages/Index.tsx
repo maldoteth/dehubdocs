@@ -10,8 +10,8 @@ const Index = () => {
         <ShaderBackground />
       </div>
 
-      {/* Dark vignette for legibility */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70 pointer-events-none" />
+      {/* Subtle vignette for legibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/40 pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center">

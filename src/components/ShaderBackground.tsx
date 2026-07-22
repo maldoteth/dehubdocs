@@ -116,18 +116,28 @@ function EnergyRing({
 
 export default function ShaderBackground() {
   return (
-    <div className="absolute inset-0 w-full h-full">
+    <div className="absolute inset-0 w-full h-full bg-black">
       <MeshGradient
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
-        colors={["#000000", "#ff5722", "#1a1a2e", "#ff8a65"]}
-        speed={0.35}
+        colors={["#1a0500", "#ff5722", "#ff8a65", "#7c1e00", "#ffb599"]}
+        speed={0.6}
         distortion={1}
-        swirl={0.8}
+        swirl={1}
+      />
+      <MeshGradient
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", mixBlendMode: "overlay", opacity: 0.8 }}
+        colors={["#2a0800", "#ff8a65", "#ffffff", "#ff5722"]}
+        speed={0.9}
+        distortion={0.8}
+        swirl={0.6}
       />
       <Canvas
         camera={{ position: [0, 0, 3], fov: 60 }}
-        style={{ position: "absolute", inset: 0 }}
-        gl={{ alpha: true, antialias: true }}
+        style={{ position: "absolute", inset: 0, mixBlendMode: "screen" }}
+        gl={{ alpha: true, antialias: true, premultipliedAlpha: false }}
+        onCreated={({ gl }) => {
+          gl.setClearColor(0x000000, 0);
+        }}
       >
         <ambientLight intensity={0.5} />
         <ShaderPlane position={[-1.2, 0.4, 0]} color1="#ff5722" color2="#ffffff" />
